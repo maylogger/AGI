@@ -1,0 +1,35 @@
+# L3 決策卡 sidecar — Tripadvisor Design System Logos
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Tripadvisor_Logo_Guidelines_2020
+decisions:
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 先以黑色 logo 用於淺色品牌色或清楚背景，背景深色或複雜時改用核准的深色背景容器版本，以對比與可讀性決定版本
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - Logo 顏色規範應基於對比與背景風險，而非只列色票
+      - 對比與可讀性是 logo 變體選用的主要依據
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: Tripadvisor_Logo_Guidelines_2020
+        chapter: ch-04
+        excerpt: "logo 理想上以黑色用於淺色品牌色或清楚背景；若背景複雜或深色，不得直接使用主要黑色版本，應改用相容的 secondary/dark-background 版本。"
+      - brand_id: Tripadvisor_Logo_Guidelines_2020
+        chapter: ch-03-03
+        excerpt: "Background Compatibility Matrix：light background 與 dark background 對應不同資產；對比與可讀性是 logo 變體選用的主要依據。"
+    status: extracted

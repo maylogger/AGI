@@ -1,0 +1,82 @@
+title: "Prime Video Branding Guidelines: Logos & Lock-Ups"
+source: "sources/PV_Branding_Guidelines_Logos_Lock_Ups._CB1539191655_.pdf"
+version: "August 2018 V3"
+language: "en"
+summary: "Prime Video 的品牌規範，聚焦服務定位、品牌層級、Logo 使用、社群與影片品牌露出，以及命名、在地化與行銷 FAQ。"
+chapters:
+  - id: "ch-01"
+    title: "Introduction"
+    level: 1
+    order: 1
+    pages: "1-8"
+    summary: "說明 Prime Video 如何在 Amazon 與 Prime 品牌架構下定位服務、內容、會員與觀看方式。"
+    children:
+      - id: "ch-01-01"
+        title: "Welcome and Brand Hierarchy"
+        level: 2
+        order: 1
+        pages: "1-2"
+        summary: "以 Amazon、Prime、Prime Video 的層級建立品牌歸屬與溝通責任。"
+      - id: "ch-01-02"
+        title: "Service Overview"
+        level: 2
+        order: 2
+        pages: "3-8"
+        summary: "整理 Prime Video 的服務公式、三種觀看方式、可用裝置、Prime 會員關係與全球可得性。"
+  - id: "ch-02"
+    title: "Core Brand Elements"
+    level: 1
+    order: 2
+    pages: "9-12"
+    summary: "定義 Prime Video 的主要服務 Logo 與全球行銷 Logo，以及尺寸、留白、文字稱呼與市場適用情境。"
+    children:
+      - id: "ch-02-01"
+        title: "Primary Service Logo"
+        level: 2
+        order: 1
+        pages: "10-11"
+        summary: "指定 Prime Video mark 在服務 UI、社群與美英德市場 off-platform 行銷中的使用。"
+      - id: "ch-02-02"
+        title: "Global Marketing Logo"
+        level: 2
+        order: 2
+        pages: "10,12"
+        summary: "指定含 amazon 歸因的 Prime Video mark，用於 Prime 認知較低的全球市場建立信任。"
+  - id: "ch-03"
+    title: "Marketing Branding"
+    level: 1
+    order: 3
+    pages: "13-15"
+    summary: "規範社群影片 bug、YouTube 例外、透明度與 endcard 文案，確保行銷素材能清楚標示服務與內容權益。"
+    children:
+      - id: "ch-03-01"
+        title: "Bug Placement for Social"
+        level: 2
+        order: 1
+        pages: "14"
+        summary: "依社群版型與平台慣例定義 Prime Video bug 的位置、尺寸與透明度。"
+      - id: "ch-03-02"
+        title: "Prime Video Endcard"
+        level: 2
+        order: 2
+        pages: "15"
+        summary: "定義 endcard 內 Only on 與 Included with Prime 的使用情境與不可改寫文字。"
+  - id: "ch-04"
+    title: "Resources"
+    level: 1
+    order: 4
+    pages: "16-22"
+    summary: "以 FAQ 與設計工具包補足品牌命名、法律市場差異、內容標籤、CTA 與支援流程。"
+    children:
+      - id: "ch-04-01"
+        title: "FAQ"
+        level: 2
+        order: 1
+        pages: "17-20"
+        summary: "回答品牌策略、原創內容命名、全球在地化、Logo 改作、廣告識別、內容權益與 CTA 用語。"
+      - id: "ch-04-02"
+        title: "Design Toolkit"
+        level: 2
+        order: 2
+        pages: "21-22"
+        summary: "提供 Logos & Lockups 作為執行素材入口。"

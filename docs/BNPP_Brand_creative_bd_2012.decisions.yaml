@@ -1,0 +1,63 @@
+# L3 決策卡 sidecar — BNP Paribas Brand Creative Guide
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: BNPP_Brand_creative_bd_2012
+decisions:
+  - id: dp-restrained-palette-for-trust
+    title: 用克制的配色與權威主色傳達信任
+    problem:
+      statement: 受規範、以信任為核心的機構，若用高彩度或隨意配色會削弱權威與可信度。
+      signals: [trust, public_trust, regulatory_compliance]
+    solution:
+      module: Color System
+      move: 用色彩角色（brand → primary → additional → general）治理，核心色須可見、輔助色不得稀釋核心色
+      layer: visual_core
+    reason:
+      - 信任型品牌的色彩應強調穩定與權威而非情緒刺激
+      - 色彩系統應先保護品牌記憶，再提供可控彈性；輔助色不能稀釋核心色
+    applicable_when:
+      industries: [finance]
+      brand_types: [institutional_public_trust, heritage_legacy]
+      conditions: [trust]
+      archetypes: [brand_experience_guide, full_brand_system]
+    dependencies:
+      requires: [Color System]
+      enables: [Accessibility, Design Tokens]
+    anti_patterns:
+      - 不同創作物各自延展色盤
+      - 用輔助色單獨取代品牌色
+    evidence:
+      - brand_id: BNPP_Brand_creative_bd_2012
+        chapter: ch-02-01
+        excerpt: "以 brand color → primary → additional → general palette 的色彩角色治理：核心品牌綠須在主要接觸點可見，輔助色不得單獨取代品牌色，並維持核准色票與合理對比。"
+    status: extracted
+
+  - id: dp-from-to-voice-translation
+    title: 技術品牌語氣指南要給「轉譯規則」，不只是列形容詞
+    problem:
+      statement: 科學與技術公司容易陷入術語化，受眾停在「所以呢？」而非「原來如此」。
+      signals: [technical_jargon_risk, expert_audience, b2b]
+    solution:
+      module: Voice and Tone
+      move: 從品牌人格產生 voice rule，把變化描述成可理解的客戶利益，並以例句與禁忌維持一致
+      layer: language
+    reason:
+      - 提供轉譯規則比列 tone adjectives 更可執行
+      - 品牌文案應清楚、有用、有人味，且能把變化描述成可理解的客戶利益
+    applicable_when:
+      industries: [finance, industrial_materials_science, tech_software]
+      brand_types: [institutional_public_trust, heritage_legacy]
+      conditions: [expert_audience, technical_translation]
+      archetypes: [full_brand_system, brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Messaging]
+      enables: [Content Design]
+    anti_patterns:
+      - 文案堆疊金融術語
+      - 語氣自誇、冷漠或含糊
+    evidence:
+      - brand_id: BNPP_Brand_creative_bd_2012
+        chapter: ch-04-01
+        excerpt: "把品牌人格轉成 editorial tone：文案應避免金融術語堆疊，每段主要訊息應包含受眾利益，語氣不得自誇、冷漠或含糊。"
+    status: extracted

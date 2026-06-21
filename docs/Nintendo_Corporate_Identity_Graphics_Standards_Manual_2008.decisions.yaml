@@ -1,0 +1,98 @@
+# L3 決策卡 sidecar — Nintendo Corporate Identity & Graphics Standards Manual
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: Nintendo_Corporate_Identity_Graphics_Standards_Manual_2008
+decisions:
+  - id: dp-asset-protection-for-legacy
+    title: 把歷史品牌的核心識別當成不可妥協的資產來保護
+    problem:
+      statement: 歷史悠久的品牌，其 logo、色彩與材質是長期累積的資產；任何外部合作或內部輸出都可能在不經意間稀釋它。
+      signals: [heritage, asset_protection, consistency_over_time, brand_dilution_risk]
+    solution:
+      module: Visual Identity
+      move: 把 logo 版本、光學幾何、最小尺寸、清除區與色彩重製定為不可妥協的資產規則，並要求以 Pantone/CMYK 準確匹配
+      layer: visual_core
+    reason:
+      - 保護歷史奢華零售品牌的核心識別，讓所有合作與內部輸出不削弱品牌資產
+      - 奢侈品牌的顏色是資產，不是裝飾選項
+      - 高端品牌規範應明確處理光學校正與印刷材質
+    applicable_when:
+      industries: [luxury_premium]
+      brand_types: [heritage_legacy, premium_luxury]
+      conditions: [heritage, asset_protection]
+      archetypes: [brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 以螢幕或列印稿視覺匹配色彩，造成跨媒介色差
+      - 允許合作方任意替換金屬色／foil 與核心色
+    evidence:
+      - brand_id: Nintendo_Corporate_Identity_Graphics_Standards_Manual_2008
+        chapter: ch-01
+        excerpt: "以商標保護與全球一致性為核心，先建立這不是美術喜好文件，而是全球商標治理工具；全球品牌需要可證明的一致使用，否則商標權與信任都會被削弱。"
+      - brand_id: Nintendo_Corporate_Identity_Graphics_Standards_Manual_2008
+        chapter: ch-02
+        excerpt: "必須使用最新 corporate logo，不得使用舊版或自行重製；以版本控制與正式命名規則保護品牌資產。"
+      - brand_id: Nintendo_Corporate_Identity_Graphics_Standards_Manual_2008
+        chapter: ch-05
+        excerpt: "降低桌面軟體任意操作造成的商標稀釋；不得拉伸、壓縮、旋轉或重繪 logo，或套用未授權陰影、外框、漸層與顏色。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - 留白是識別權重與可讀性的保護機制，需隨標誌縮放
+      - 相對單位可建立 scalable spacing token，不被固定像素綁死
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - minimum clear space = 1x o，optimal = 2x o
+    evidence:
+      - brand_id: Nintendo_Corporate_Identity_Graphics_Standards_Manual_2008
+        chapter: ch-03
+        excerpt: "以 n 字高度／寬度與 logo 自身比例（左右各為 logo 寬度 10%、上下各為高度 35%）把保護區留白轉成可測量規則。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗與照片複雜度建立對比決策樹，限定白／深色兩種標誌
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - Logo 顏色規範應基於對比與背景風險，而非只列色票
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: Nintendo_Corporate_Identity_Graphics_Standards_Manual_2008
+        chapter: ch-04
+        excerpt: "建立 logo 顏色決策樹：白底優先用標準灰，灰色可見度不足時用白，白色不足時才用黑，並不得新增其他 logo 顏色。"
+    status: extracted

@@ -1,0 +1,187 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: kinokuniya_brand_guidelines
+index_ref: docs/kinokuniya_brand_guidelines.index.yaml
+note_ref: docs/kinokuniya_brand_guidelines.note.md
+archetype: brand_experience_guide
+industry: consumer_retail_hospitality
+modules:
+- Brand Strategy
+- Messaging
+- Legal and Trademark
+- Typography System
+- Visual Identity
+- Localization
+- Visual Language
+- Color System
+- Examples
+- Operations
+depth:
+  strategy: medium
+  visual: medium
+  governance: medium
+  top_level_chapter_count: 4
+  section_count: 7
+chapter_sequence:
+- id: ch-01
+  title: Brand Strategy
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Personality Traits
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Brand Purpose
+  order: 2
+  level: 2
+- id: ch-02
+  title: Brand Identity Assets
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Brandmark and Logo Usage
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Color, Typography, Photography, Patterns
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Brand Summary Assets
+  order: 3
+  level: 2
+- id: ch-03
+  title: Brand Identity System
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: System Use and Applications
+  order: 1
+  level: 2
+- id: ch-04
+  title: Week of Kino Campaign
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Campaign Touchpoints
+  order: 1
+  level: 2
+frameworks:
+- name: trait-to-purpose framework：人格特質先界定語氣，再由 purpose 給予視覺方向
+  chapter: ch-01
+  chapter_title: Brand Strategy
+- name: asset governance framework：mark integrity、naming context、secondary localization、size, color, type, image
+  chapter: ch-02
+  chapter_title: Brand Identity Assets
+- name: localized lockup framework：core mark + descriptor/language layer
+  chapter: ch-02-01
+  chapter_title: Brandmark and Logo Usage
+- name: display/body typography split：品牌字體負責記憶，Roboto 負責閱讀
+  chapter: ch-02-02
+  chapter_title: Color, Typography, Photography, Patterns
+- name: touchpoint translation framework：asset token -> medium constraint -> layout expression
+  chapter: ch-03
+  chapter_title: Brand Identity System
+- name: environmental branding framework
+  chapter: ch-03-01
+  chapter_title: System Use and Applications
+- name: launch campaign framework：identity assets + cultural ritual + physical/digital touchpoints
+  chapter: ch-04
+  chapter_title: Week of Kino Campaign
+- name: cross-channel campaign kit
+  chapter: ch-04-01
+  chapter_title: Campaign Touchpoints
+patterns:
+- name: 以簡短人格詞建立 creative brief，讓後續每個視覺元素都可回扣到 open-minded、curious、adventurous。
+  chapter: ch-01
+  chapter_title: Brand Strategy
+- name: 將品牌名稱在文字中與 logo 使用分開管理，避免在正文中插入 wordmark。
+  chapter: ch-02
+  chapter_title: Brand Identity Assets
+- name: 主標不變，附屬文字調整，維持全球一致與地方辨識。
+  chapter: ch-02-01
+  chapter_title: Brandmark and Logo Usage
+- name: 以 pattern 和 photography 填補品牌場域，讓書店不只靠 logo 辨識。
+  chapter: ch-02-02
+  chapter_title: Color, Typography, Photography, Patterns
+- name: 把同一套圖樣與字體放入 storefront、poster、card，形成重複記憶。
+  chapter: ch-03
+  chapter_title: Brand Identity System
+- name: 店面、店內、會員卡與 poster 共用同一套色彩與圖樣。
+  chapter: ch-03-01
+  chapter_title: System Use and Applications
+- name: 把願望紙、旗幟、booth、OOH 和 microsite 作為從現場到線上的連續體驗。
+  chapter: ch-04
+  chapter_title: Week of Kino Campaign
+- name: 小型參與物件與大型廣告物並行，增加觸及層次。
+  chapter: ch-04-01
+  chapter_title: Campaign Touchpoints
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: brandmark 不得 skew、stretch、condense、drop shadow、holding device 或使用非 palette 色；文字中應使用 `KINOKUNIYA®`，不得把主 wordmark
+    插入內文句子；最小寬度不得低於 guideline 指定值。
+  chapter: ch-02
+  chapter_title: Brand Identity Assets
+- module: Visual Identity
+  criterion: secondary logo 不得改變主 brandmark；附加語言應置於主標下方；不得新增未定義 holding shape。
+  chapter: ch-02-01
+  chapter_title: Brandmark and Logo Usage
+- module: Brand Strategy
+  criterion: 每個應用至少應包含一個主要品牌識別元素與一致 palette；不可只套用 unrelated image。
+  chapter: ch-03
+  chapter_title: Brand Identity System
+- module: ''
+  criterion: 若應用媒介缺少 brandmark 或指定 palette，應視為不可辨識。
+  chapter: ch-03-01
+  chapter_title: System Use and Applications
+- module: ''
+  criterion: campaign touchpoint 應明確使用 Kinokuniya visual system，並能連結 Week of Kino、50th anniversary 或 summer festival 主題。
+  chapter: ch-04
+  chapter_title: Week of Kino Campaign
+chapters:
+- id: ch-01
+  title: Brand Strategy
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-02
+  title: Brand Identity Assets
+  modules:
+  - Legal and Trademark
+  - Typography System
+  - Visual Identity
+- id: ch-02-01
+  title: Brandmark and Logo Usage
+  modules:
+  - Localization
+  - Visual Identity
+- id: ch-02-02
+  title: Color, Typography, Photography, Patterns
+  modules:
+  - Typography System
+  - Visual Language
+  - Color System
+- id: ch-03
+  title: Brand Identity System
+  modules:
+  - Examples
+  - Operations
+- id: ch-03-01
+  title: System Use and Applications
+  modules:
+  - Examples
+  - Visual Language
+- id: ch-04
+  title: Week of Kino Campaign
+  modules:
+  - Examples
+  - Brand Strategy
+- id: ch-04-01
+  title: Campaign Touchpoints
+  modules:
+  - Examples
+  - Operations

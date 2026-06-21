@@ -1,0 +1,57 @@
+title: 'Facebook Brand Assets Guide'
+source: 'sources/Facebook_Brand_Assets_Guide_2019.pdf'
+version: '1.3'
+date: '2019-04'
+language: 'en'
+summary: '這份文件規範 Facebook 品牌資產、商標使用、permission flow、f logo、thumb icon、Find Us On Facebook badge、Reactions 與 UI templates。'
+chapters:
+  - id: 'ch-01'
+    title: 'Welcome and General Guidelines'
+    level: 1
+    order: 1
+    pages: '3-8'
+    summary: '說明指南目的、適用對象、一般 do/don’t、談論 Facebook 的文字規則與 permission request。'
+    children:
+      - id: 'ch-01-01'
+        title: 'General usage and talking about Facebook'
+        level: 2
+        order: 1
+        pages: '5-7'
+        summary: '要求只使用 Brand Resource Center 資產，並規範 Facebook 商標在文案中的大小寫、語法與不可替代性。'
+      - id: 'ch-01-02'
+        title: 'Requesting Permission'
+        level: 2
+        order: 2
+        pages: '8'
+        summary: '定義 marketing、TV/film、print packaging、news/commentary 等需要申請 permission 的情境與提交資料。'
+  - id: 'ch-02'
+    title: 'Facebook Brand Assets'
+    level: 1
+    order: 2
+    pages: '9-21'
+    summary: '規範 f logo、social channel representation、thumb icon、Find Us On Facebook badge 與 Reactions。'
+    children:
+      - id: 'ch-02-01'
+        title: 'f Logo, Thumb Icon, and Badge'
+        level: 2
+        order: 1
+        pages: '10-16'
+        summary: '定義三種主要行動導向資產的用途、clear space、比例、尺寸、顏色與禁止事項。'
+      - id: 'ch-02-02'
+        title: 'Reactions'
+        level: 2
+        order: 2
+        pages: '17-21'
+        summary: '要求 Reactions 只能以 Facebook UI 中的完整 collection 或正確情境呈現，不可當作 emoji 或單獨創意圖示。'
+  - id: 'ch-03'
+    title: 'User Interface Templates'
+    level: 1
+    order: 3
+    pages: '23-25'
+    summary: '規範可自訂 UI template、device context、cropping、font matching 與不得將 UI 元素拆離使用。'
+  - id: 'ch-04'
+    title: 'FAQs'
+    level: 1
+    order: 4
+    pages: '27'
+    summary: '用問答形式強化商標保護、permission、merchandise、verb usage、assets source 與 media usage。'

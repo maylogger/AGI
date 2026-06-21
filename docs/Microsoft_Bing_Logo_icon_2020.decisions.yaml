@@ -1,0 +1,93 @@
+# L3 決策卡 sidecar — Microsoft Bing（商標與 logo/icon 使用指引）
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Microsoft_Bing_Logo_icon_2020
+decisions:
+  - id: dp-trademark-permission-flow
+    title: 用授權閘門治理第三方商標使用，先處理混淆與背書風險
+    problem:
+      statement: 平台品牌被大量第三方使用商標與資產，若無授權流程，會造成商標混淆與誤導性背書風險。
+      signals: [trademark_protection, partner_governance, endorsement_risk, third_party_usage]
+    solution:
+      module: Legal and Trademark
+      move: 以授權流程（既有協議 → 一般商標守則 → business owner license → brand team）作為入口，再提供少量視覺規格
+      layer: governance
+    reason:
+      - 平台品牌 guideline 應優先處理 trademark confusion 與 endorsement risk，再處理美學一致
+      - 品牌資產使用不是設計問題的第一步，而是關係與授權問題
+      - 任何第三方 logo guideline 都應先問「是否有合法關係」而不是「該放哪個版本」
+    applicable_when:
+      industries: [tech_software]
+      brand_types: [platform_ecosystem]
+      conditions: [third_party_usage, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Legal and Trademark]
+      enables: [Governance]
+    anti_patterns:
+      - 只給視覺規格而無使用情境風險表與審核材料清單
+      - 放任第三方自行判斷法律與背書風險
+    evidence:
+      - brand_id: Microsoft_Bing_Logo_icon_2020
+        chapter: ch-01
+        excerpt: "若使用 logo、名稱或暗示 Microsoft Bing 贊助、背書、相容性，即需確認 license；authorization flow：existing agreement → general Microsoft guidelines → business owner license → brand team contact。"
+      - brand_id: Microsoft_Bing_Logo_icon_2020
+        chapter: ch-02
+        excerpt: "若使用 Results from Microsoft Bing 或類似語句，需與實際資料來源/相容關係一致，不可用元素暗示超出事實的合作關係。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗二元判斷選擇 positive 或 knock-out 版本，支援快速審核
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - 小型商標 guideline 的核心是減少選項與例外，而不是建立完整設計系統
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: Microsoft_Bing_Logo_icon_2020
+        chapter: ch-03
+        excerpt: "light/white background 使用 positive version；dark background 或照片暗部使用 knock-out version；不得選用導致低對比或不可讀的版本。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以 icon base width（X）作為 clear space 與標籤間距的比例單位，並設最小尺寸下限
+      layer: visual_core
+    reason:
+      - icon 規格需要可縮放的比例系統，而不只是固定像素
+      - 用 X-based spacing 讓 icon 在不同尺寸下仍能被一致再製
+      - 相對單位可建立 scalable spacing token，不被固定像素綁死
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - 標籤與 icon 的間距遵循 X、1/2X、1/8X 比例，icon width 不得小於 16 px
+    evidence:
+      - brand_id: Microsoft_Bing_Logo_icon_2020
+        chapter: ch-04
+        excerpt: "以 X、1/2X、1/8X 的比例標註 icon 與 Microsoft Bing 標籤之間的空間與尺度；icon width 不得小於 0.16 in / 4.23 mm / 16 px。"
+    status: extracted

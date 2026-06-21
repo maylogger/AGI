@@ -1,0 +1,111 @@
+# L3 決策卡 sidecar — Sterling Bank
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Sterling_Brand_Guidelines
+decisions:
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 用 logo 內部元素（x-height、y-height 與球體尺寸）描述安全區與比例，使保護規則可量測
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 用內部元素作比例尺，可讀性、階層與比例一致比局部創意更重要
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    evidence:
+      - brand_id: Sterling_Brand_Guidelines
+        chapter: ch-02-02
+        excerpt: "使用 x-height、y-height 與球體尺寸描述安全區、字標長度與 icon-wordmark 距離；安全區內不得有圖像、文字或元素侵入。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 依輸出能力與背景選版本（照片/色彩背景用 reverse，複製受限時用 monochrome 僅限 black/white/light gray）
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - 品牌彈性應以 approved variants 實現，而不是讓使用者創造新 logo
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: Sterling_Brand_Guidelines
+        chapter: ch-02-01
+        excerpt: "照片或色彩背景上使用 reverse logo 並確保可讀；有限色彩或低品質複製時 monochrome 僅限 black、white、light gray，不得錯放在紅底上。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 vertical／horizontal co-branding zone 限定 partner logo 的尺寸與位置，並要求其高度不超出主品牌 wordmark
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - 合作不等於平分版面；主品牌需要清楚且一致的視覺階層
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: Sterling_Brand_Guidelines
+        chapter: ch-02-03
+        excerpt: "partner logo 必須置於指定 co-branding zone，其高度不得超出 Sterling wordmark 高度（partner-logo containment model）。"
+    status: extracted
+
+  - id: dp-media-split-typography
+    title: 依媒介分流字體系統（print / digital / body）
+    problem:
+      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+      signals: [print_and_digital, readability, licensing]
+    solution:
+      module: Typography System
+      move: 依「品牌資產字體、廣告溝通字體、email-safe 字體」分層，每層指定用途與字級
+      layer: visual_core
+    reason:
+      - 不同媒介的可讀性與授權條件不同
+      - 字體治理可依「品牌資產、廣告溝通、日常 email」拆分
+    applicable_when:
+      industries: [finance, public_sector, education]
+      brand_types: []
+      conditions: [print_and_digital]
+      archetypes: [brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: []
+    examples:
+      - logo typeface 用 FF Cocon、advertising typeface 用 Museo Sans、email 用 Century Gothic
+    evidence:
+      - brand_id: Sterling_Brand_Guidelines
+        chapter: ch-03
+        excerpt: "media-specific typography framework：logo typeface 是 FF Cocon、advertising typeface 是 Museo Sans、email 字體是 Century Gothic。"
+    status: extracted

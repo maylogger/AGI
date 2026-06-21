@@ -1,0 +1,155 @@
+# L3 決策卡 sidecar — Renasant Bank Visual Standards
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: RenasantBank_brandstandards_2020
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌不是單一標誌，而是組織如何行動與如何溝通
+      - 品牌是決策系統，不是美術風格；每個視覺與文案選擇都應能回推到品牌支柱
+      - 先建立判斷標準，後續視覺與語氣才有可回溯的語義來源
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: RenasantBank_brandstandards_2020
+        chapter: ch-01
+        excerpt: "開頭先說明品牌風險而非只列規格：Renasant Bank 品牌代表 security、reliability 與理解客戶及社群需求，任何不一致都會削弱市場穿透與信任；以使命與信任 → 品牌完整性 → 嚴格標準 → 市場穿透建立判斷標準後，才進入視覺、語氣與應用規格。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - 留白是識別權重與可讀性的保護機制，需隨標誌縮放
+      - 相對單位可建立 scalable spacing token，不被固定像素綁死
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - minimum clear space = 1x o，optimal = 2x o
+    evidence:
+      - brand_id: RenasantBank_brandstandards_2020
+        chapter: ch-02-02
+        excerpt: "以 RENASANT lettering 字高作為 clear space 單位，並要求鎖定比例；用標誌自身幾何視覺化留白，使規則可隨縮放維持。"
+    status: extracted
+
+  - id: dp-media-split-typography
+    title: 依媒介分流字體系統（print / digital / body）
+    problem:
+      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+      signals: [print_and_digital, readability, licensing]
+    solution:
+      module: Typography System
+      move: 區分 print font、digital font 與 secondary/body font，並各自規範字級與行距
+      layer: visual_core
+    reason:
+      - 不同媒介的可讀性與授權條件不同
+      - 字體規範應搭配用途說明，而非只列字體名稱
+    applicable_when:
+      industries: [finance, public_sector, education]
+      brand_types: []
+      conditions: [print_and_digital]
+      archetypes: [brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: []
+    examples:
+      - body copy 使用 Segoe UI Regular 10pt / 14pt leading
+    evidence:
+      - brand_id: RenasantBank_brandstandards_2020
+        chapter: ch-03
+        excerpt: "字體不是任選美感，而是依 medium、placement、hierarchy 分工：Trajan Pro Bold 只用於 Logo、Univers LT Std 為主要印刷字體、Glypha 只用於 Mortgage Lending、Archivo Narrow 與 Muli 只用於 Web。"
+    status: extracted
+
+  - id: dp-restrained-palette-for-trust
+    title: 用克制的配色與權威主色傳達信任
+    problem:
+      statement: 受規範、以信任為核心的機構，若用高彩度或隨意配色會削弱權威與可信度。
+      signals: [trust, regulatory_compliance, public_trust, consistency_across_partners]
+    solution:
+      module: Color System
+      move: 以深色／中性權威主色為主、點綴色克制，並把色彩限定為列出的核准值
+      layer: visual_core
+    reason:
+      - 信任型品牌的色彩應強調穩定與權威而非情緒刺激
+      - 新增色彩需被視為不符合規定，避免機構溝通失序
+      - 限定主色與比例可在多市場維持一致辨識
+    applicable_when:
+      industries: [finance, public_sector]
+      brand_types: [institutional_public_trust, heritage_legacy]
+      conditions: [trust, regulatory_compliance]
+      archetypes: [brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Color System]
+      enables: [Accessibility, Design Tokens]
+    anti_patterns:
+      - 自行新增色彩或使用未列出的色值
+    evidence:
+      - brand_id: RenasantBank_brandstandards_2020
+        chapter: ch-04
+        excerpt: "Logo 外色彩應多使用藍色調以保持安全與可靠印象，主色含 RNST Dark Blue #15467B；additional colors 未經 Marketing permission 不得使用，色彩規範把『可見到』與『可使用』分開。"
+    status: extracted
+
+  - id: dp-approval-gate-for-exceptions
+    title: 例外不是漏洞，用審核閘門把差異收進可治理的模組
+    problem:
+      statement: 規則無法窮舉所有情境，現實組織總會有例外；若放任各單位自行決定，例外會逐步擴張成破壞系統的破口。
+      signals: [exception_handling, multi_unit_consistency, governance, scaling_risk]
+    solution:
+      module: Governance
+      move: 例外章節須明確寫出「為何例外／何時可用／不可擴張到哪裡」，並交由品牌管理單位審核
+      layer: governance
+    reason:
+      - 例外章節應寫出「為何例外」「何時可用」「不可擴張到哪裡」
+      - 品牌一致性不是取消差異，而是把差異收進可治理的模組
+    applicable_when:
+      industries: [public_sector, finance]
+      brand_types: [institutional_public_trust, platform_ecosystem, heritage_legacy]
+      conditions: [multi_unit_consistency, exception_handling]
+      archetypes: [multi_brand_architecture, corporate_toolkit]
+    dependencies:
+      requires: [Governance]
+      enables: []
+    anti_patterns:
+      - 例外只寫「可以這樣做」卻不寫適用邊界與審核者
+      - 各單位把一次性例外當成通用替代方案沿用
+    evidence:
+      - brand_id: RenasantBank_brandstandards_2020
+        chapter: ch-06
+        excerpt: "官方素材需向 Marketing 取得、工作檔不共享，例外需提交 Director of Marketing & Public Relations；把例外與資產修訂權收回品牌管理單位。"
+      - brand_id: RenasantBank_brandstandards_2020
+        chapter: ch-02-03
+        excerpt: "department logos 只能由 Renasant Marketing request and approval 建立，且仍受本文件與個別附加規範約束；部門需求須進入審批流程而非各部門自創。"
+    status: extracted

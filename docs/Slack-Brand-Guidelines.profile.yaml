@@ -1,0 +1,227 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Slack-Brand-Guidelines
+index_ref: docs/Slack-Brand-Guidelines.index.yaml
+note_ref: docs/Slack-Brand-Guidelines.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Brand Strategy
+- Voice and Tone
+- Content Safety
+- Product Language
+- Messaging
+- Content Design
+- Visual Language
+- Visual Identity
+- Color System
+- Accessibility
+- Localization
+- Typography System
+- Operations
+- Legal and Trademark
+- Compliance
+- Governance
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 3
+  section_count: 7
+chapter_sequence:
+- id: ch-01
+  title: Defining Our Brand
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Who We Are and Need for Slack
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Values, Persona, Voice and Tone
+  order: 2
+  level: 2
+- id: ch-02
+  title: Design Elements
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo and Color
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Typography and Localization
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Architecture and Visual Assets
+  order: 3
+  level: 2
+- id: ch-03
+  title: Governance
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Trademarks and Logo Use
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Third-Party Design Restrictions
+  order: 2
+  level: 2
+frameworks:
+- name: brand definition framework：mission → coordination problem → Slack solution → values → persona → voice
+  chapter: ch-01
+  chapter_title: Defining Our Brand
+- name: problem-solution-result framework：coordination challenge → replacement for email → best work result
+  chapter: ch-01-01
+  chapter_title: Who We Are and Need for Slack
+- name: voice governance framework：values → ideal colleague persona → context-sensitive tone → firm language safety rules
+  chapter: ch-01-02
+  chapter_title: Values, Persona, Voice and Tone
+- name: visual system framework：core marks → color/type tokens → architecture lockups → expressive media
+  chapter: ch-02
+  chapter_title: Design Elements
+- name: mark-color framework：logo form → scale variant → background compatibility → palette proportion → accessible substitutes
+  chapter: ch-02-01
+  chapter_title: Logo and Color
+- name: typography environment framework：primary font → platform setting → substitute → localization
+  chapter: ch-02-02
+  chapter_title: Typography and Localization
+- name: brand legal framework：terms → trademark notice → logo rules → third-party UI restrictions → merchandise ban → inquiry...
+  chapter: ch-03
+  chapter_title: Governance
+- name: trademark use framework：notice → copyright → official assets → spacing → prohibited implication
+  chapter: ch-03-01
+  chapter_title: Trademarks and Logo Use
+- name: third-party risk framework：visual imitation → asset framing → API ambiguity → disclaimer visibility → merchandise
+    ban
+  chapter: ch-03-02
+  chapter_title: Third-Party Design Restrictions
+patterns:
+- name: 文化向內成產品，文化向外成品牌
+  chapter: ch-01
+  chapter_title: Defining Our Brand
+- name: 三段式需求描述可用於各類 product brand guidelines。
+  chapter: ch-01-01
+  chapter_title: Who We Are and Need for Slack
+- name: 理想同事
+  chapter: ch-01-02
+  chapter_title: Values, Persona, Voice and Tone
+- name: 將 UI abstraction 納入 brand guideline，是產品品牌與 marketing brand 整合模式。
+  chapter: ch-02
+  chapter_title: Design Elements
+- name: 為特定用途提供 accessible color variants，是成熟數位品牌模式。
+  chapter: ch-02-01
+  chapter_title: Logo and Color
+- name: 明確寫 G Suite / Keynote / PowerPoint 條件，是跨工具落地模式。
+  chapter: ch-02-02
+  chapter_title: Typography and Localization
+- name: 把 API integration 的 affiliation ambiguity 寫入 brand guideline，是平台品牌治理模式。
+  chapter: ch-03
+  chapter_title: Governance
+- name: 把 clear space 寫進 legal section，可讓法務與設計共用審核標準。
+  chapter: ch-03-01
+  chapter_title: Trademarks and Logo Use
+- name: 把 disclaimer 的字級、透明度、背景可見性量化，是 AI-checkable governance 模式。
+  chapter: ch-03-02
+  chapter_title: Third-Party Design Restrictions
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI 可檢查：Slack 應作 adjective 使用，後接服務描述；不得作動詞、複數或所有格；內容應避免 exclusionary、ableist、misgendering 或 slur-like language。
+  chapter: ch-01
+  chapter_title: Defining Our Brand
+- module: ''
+  criterion: AI 可檢查：外部描述應包含協作/對齊/資訊連接語境；不得把 Slack 簡化成泛用聊天工具；Slack 名稱使用需符合 adjective rule。
+  chapter: ch-01-01
+  chapter_title: Who We Are and Need for Slack
+- module: Voice and Tone
+  criterion: AI 可檢查：文案應直接對使用者說話；不可過度 informal；不得浪費時間或支配對話；可依 audience/context 調整 tone；敏感語需改寫。
+  chapter: ch-01-02
+  chapter_title: Values, Persona, Voice and Tone
+- module: ''
+  criterion: AI 可檢查：logo 必須使用提供檔；text color 只用 black/white/aubergine；accent colors 依比例使用；links/success states 使用 accessible
+    blue/green；UI abstraction 依訊息選 full UI 或 isolated panes。
+  chapter: ch-02
+  chapter_title: Design Elements
+- module: Visual Identity
+  criterion: 'AI 可檢查：horizontal logo 為主要版本；stacked logo 不用於小尺寸；不得重繪；文字只用 black/white/aubergine；blue link 用 #1264A3；success
+    green 用 #007A5A；accent colors 不應超比例使用。'
+  chapter: ch-02-01
+  chapter_title: Logo and Color
+- module: Typography System
+  criterion: AI 可檢查：headlines 用 Larsseit；optical kerning、tracking 0、sentence case；web 小標 letterspacing -1px、大標 -2px；不得全大寫或全小寫；若
+    G Slides 轉換情境依指定替代規則。
+  chapter: ch-02-02
+  chapter_title: Typography and Localization
+- module: Governance
+  criterion: AI 可檢查：國際使用不得用 ®，需使用指定 trademark sentence；marketing material 需含 copyright notice；若服務使用 Slack API 且可能混淆，需顯示 not
+    affiliated disclaimer，初始載入可見、15pt 以上、80% opacity black/white。
+  chapter: ch-03
+  chapter_title: Governance
+- module: Visual Identity
+  criterion: AI 可檢查：horizontal logo clear space >= octothorpe size；stacked logo clear space >= one lozenge length；不得修改 mark、混淆使用、暗示
+    sponsorship/endorsement。
+  chapter: ch-03-01
+  chapter_title: Trademarks and Logo Use
+- module: ''
+  criterion: AI 可檢查：第三方頁面不得鏡像或 frame Slack site/asset；若需 disclaimer，必須 initial load 可見、15pt 以上、black/white 80% opacity 以上；不得把
+    Slack Assets 放在 apparel/toy/product/merchandise。
+  chapter: ch-03-02
+  chapter_title: Third-Party Design Restrictions
+chapters:
+- id: ch-01
+  title: Defining Our Brand
+  modules:
+  - Brand Strategy
+  - Voice and Tone
+  - Content Safety
+- id: ch-01-01
+  title: Who We Are and Need for Slack
+  modules:
+  - Product Language
+  - Messaging
+- id: ch-01-02
+  title: Values, Persona, Voice and Tone
+  modules:
+  - Content Design
+  - Voice and Tone
+  - Content Safety
+- id: ch-02
+  title: Design Elements
+  modules:
+  - Product Language
+  - Visual Language
+  - Visual Identity
+- id: ch-02-01
+  title: Logo and Color
+  modules:
+  - Color System
+  - Accessibility
+  - Visual Identity
+- id: ch-02-02
+  title: Typography and Localization
+  modules:
+  - Localization
+  - Typography System
+  - Operations
+- id: ch-03
+  title: Governance
+  modules:
+  - Legal and Trademark
+  - Compliance
+  - Governance
+- id: ch-03-01
+  title: Trademarks and Logo Use
+  modules:
+  - Legal and Trademark
+  - Visual Identity
+- id: ch-03-02
+  title: Third-Party Design Restrictions
+  modules:
+  - Legal and Trademark
+  - Compliance
+  - Content Safety

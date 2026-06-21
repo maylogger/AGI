@@ -1,0 +1,39 @@
+# L3 決策卡 sidecar — Waka Kotahi NZ Transport Agency
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: NZ_Transport_Agency_brand_guidelines_2019
+decisions:
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 先建立「誰在說話」的判斷層，再以 umbrella → member → VPU/GP → lockup → special case 的層級把組織結構視覺化
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - 大型系統可用「可辨識但不獨立」的 secondary line 管理內部單位
+      - 任何多實體品牌系統都需要先建立「誰在說話」的判斷層，再談 logo 放置
+    applicable_when:
+      industries: [public_sector, education]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [multi_unit_consistency, multi_entity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 各單位自行創造分支品牌與專屬 tagline
+      - 只列 logo 圖檔卻不給「何時用 umbrella、何時用單一機構」的判斷規則
+    evidence:
+      - brand_id: NZ_Transport_Agency_brand_guidelines_2019
+        chapter: ch-01
+        excerpt: "公共機構品牌需要一致、可追溯、可審核，且在合作關係中清楚表達責任歸屬；可複用為政府與大型公共服務品牌的 modular brand manual：核心識別、共同品牌、應用模板與特殊關係分層管理。"
+      - brand_id: NZ_Transport_Agency_brand_guidelines_2019
+        chapter: ch-06
+        excerpt: "使用情境式決策框架：先判斷主導者／合作關係／媒介，再選擇核准的 logo、模板與版面。"
+    status: extracted

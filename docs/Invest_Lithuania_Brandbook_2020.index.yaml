@@ -1,0 +1,78 @@
+title: 'Invest Lithuania Brand Guidelines'
+source: 'sources/Invest_Lithuania_Brandbook_2020.pdf'
+date: '2020'
+language: 'en'
+summary: 'Invest Lithuania 品牌指南，將國家投資促進定位轉為品牌策略、識別元素、logo、色彩、字體、攝影、圖示、資訊圖表與多種應用模板。'
+chapters:
+  - id: 'ch-01'
+    title: 'Our Brand'
+    level: 1
+    order: 1
+    pages: '3-5'
+    summary: '說明品牌指南必要性、Lithuania promise、positioning statement 與 brand positioning。'
+  - id: 'ch-02'
+    title: 'Identity Elements'
+    level: 1
+    order: 2
+    pages: '6-8'
+    summary: '定義 logo、typography、colours、photography、iconography 五個核心元素與 tone of voice。'
+  - id: 'ch-03'
+    title: 'Logo'
+    level: 1
+    order: 3
+    pages: '9-19'
+    summary: '規範 logo 意義、版本、大尺寸版本、建議尺寸、排除區、構圖、相對尺寸、色彩、黑白與 donts。'
+  - id: 'ch-04'
+    title: 'Colours'
+    level: 1
+    order: 4
+    pages: '20-24'
+    summary: '定義受 Lithuanian landscape 啟發的色票、色彩值、使用指南與禁止事項。'
+  - id: 'ch-05'
+    title: 'Typography'
+    level: 1
+    order: 5
+    pages: '25-30'
+    summary: '規範 TT Hoves、Arial fallback、尺寸比例、12 欄 grid、構圖與 donts。'
+  - id: 'ch-06'
+    title: 'Photography'
+    level: 1
+    order: 6
+    pages: '31-41'
+    summary: '規範自然、清楚、可信的攝影風格、人像、產業、生活風景、建築與 duotone。'
+  - id: 'ch-07'
+    title: 'Icons'
+    level: 1
+    order: 7
+    pages: '42-53'
+    summary: '規範 icon style、photo/duotone icons、繪製方式、色彩數量、文字搭配、illustrations 與 abstract shapes。'
+  - id: 'ch-08'
+    title: 'Infographics and Maps'
+    level: 1
+    order: 8
+    pages: '54-59'
+    summary: '規範 chart、map 與 infographic 的品牌化呈現與禁止事項。'
+  - id: 'ch-09'
+    title: 'Stationery'
+    level: 1
+    order: 9
+    pages: '60-80'
+    summary: '展示 business card、document、Word、folder、presentation、factsheet、publication cover 與內頁模板。'
+  - id: 'ch-10'
+    title: 'Social Media'
+    level: 1
+    order: 10
+    pages: '81-99'
+    summary: '規範 square/horizontal posts、ratings/news examples、event images、speaker images、photo frames。'
+  - id: 'ch-11'
+    title: 'Animation'
+    level: 1
+    order: 11
+    pages: '100-101'
+    summary: '要求動畫應套用同一 identity guidelines，並展示 logo/name card motion style。'
+  - id: 'ch-12'
+    title: 'Contact'
+    level: 1
+    order: 12
+    pages: '102'
+    summary: '提供品牌問題聯絡信箱。'

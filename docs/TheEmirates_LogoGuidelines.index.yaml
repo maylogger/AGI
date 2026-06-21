@@ -1,0 +1,66 @@
+title: 'The Emirates Logo Usage Guidelines'
+source: 'sources/TheEmirates_LogoGuidelines.pdf'
+language: 'en'
+summary: 'The Emirates Brand Office 的標誌使用規範，將國家品牌的標誌、核心哲學、色彩、字體、數位、材質與聯名背書治理轉成可執行規則。'
+chapters:
+  - id: 'ch-01'
+    title: 'Brandmark Assets'
+    level: 1
+    order: 1
+    pages: '3-15'
+    summary: '定義主要與次要 brandmark、clear space、最小尺寸、位置、symbol、影像覆蓋、誤用與禁止應用。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Brandmark Construction and Usage'
+        level: 2
+        order: 1
+        pages: '4-9'
+        summary: '說明垂直與水平 lockup、7 線 symbol、位置例外與在影像或影片上的使用條件。'
+      - id: 'ch-01-02'
+        title: 'Misuses and Prohibited Applications'
+        level: 2
+        order: 2
+        pages: '10-14'
+        summary: '列出不可扭曲、改色、分離、加效果，以及不可放置於不尊重、危險、一次性或不受控情境的應用。'
+  - id: 'ch-02'
+    title: 'Our Core Philosophy'
+    level: 1
+    order: 2
+    pages: '16-25'
+    summary: '規範 Impossible is possible 作為 logo lockup、headline、body copy、merchandise 與 co-branded merchandise 的使用方式。'
+  - id: 'ch-03'
+    title: 'Colour'
+    level: 1
+    order: 3
+    pages: '27'
+    summary: '以阿聯酋國旗色建立品牌主色，並提醒 CMYK/RGB 需依 Pantone 測試校準。'
+  - id: 'ch-04'
+    title: 'Typography'
+    level: 1
+    order: 4
+    pages: '29-32'
+    summary: '定義拉丁與阿文字體階層、主要與次要字體，以及辦公環境的系統字體替代。'
+  - id: 'ch-05'
+    title: 'Digital'
+    level: 1
+    order: 5
+    pages: '34-40'
+    summary: '展示社群頭像、email signature、co-branding signature 與核心哲學是否加入時的數位使用規則。'
+  - id: 'ch-06'
+    title: 'Materials'
+    level: 1
+    order: 6
+    pages: '42-43'
+    summary: '規範紙、木、金屬、紡織與皮革材質上的標誌工藝與用色限制。'
+  - id: 'ch-07'
+    title: 'Co-branding and Endorsement'
+    level: 1
+    order: 7
+    pages: '45-48'
+    summary: '定義聯名與背書情境、合作審查問題、品牌出現順序與顯著性原則。'
+  - id: 'ch-08'
+    title: 'Contact Us'
+    level: 1
+    order: 8
+    pages: '50'
+    summary: '提供 The Emirates Brand Office 聯絡方式，作為例外、授權與審批的治理入口。'

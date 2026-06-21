@@ -1,0 +1,306 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: CalvinKlein_Logo&GraphicGuidelines_2017
+index_ref: docs/CalvinKlein_Logo&GraphicGuidelines_2017.index.yaml
+note_ref: docs/CalvinKlein_Logo&GraphicGuidelines_2017.note.md
+archetype: brand_experience_guide
+industry: luxury_premium
+modules:
+- Brand Strategy
+- Knowledge Architecture
+- Visual Identity
+- Legal and Trademark
+- Operations
+- Governance
+- Typography System
+- AI-Checkable Rules
+- Brand Architecture
+- Product Language
+- Design Tokens
+- Accessibility
+depth:
+  strategy: medium
+  visual: medium
+  governance: high
+  top_level_chapter_count: 3
+  section_count: 11
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: How To Use These Guidelines
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Brand Ethos and Historical Continuum
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Logo Architecture Chart
+  order: 3
+  level: 2
+- id: ch-02
+  title: Logo Usage Guidelines
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Master Brand and Corporate Logo
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Business Line Logos
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Category and Tier Logos
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Specialized Category Logos
+  order: 4
+  level: 2
+- id: ch-02-05
+  title: Reusable Logo Rules Pattern
+  order: 5
+  level: 2
+- id: ch-03
+  title: Klein Font Family Guidelines
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Font Assets and Files
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Font Usage Guidelines
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Glyph Chart
+  order: 3
+  level: 2
+frameworks:
+- name: 「brand ethos -> business line architecture -> logo usage chart -> asset governance」
+  chapter: ch-01
+  chapter_title: Introduction
+- name: '`scope -> asset source -> distribution request -> separate standards`'
+  chapter: ch-01-01
+  chapter_title: How To Use These Guidelines
+- name: '`heritage mark -> semantic change -> system font -> channel differentiation`'
+  chapter: ch-01-02
+  chapter_title: Brand Ethos and Historical Continuum
+- name: '`business line -> product tier -> channel/application -> approved mark`'
+  chapter: ch-01-03
+  chapter_title: Logo Architecture Chart
+- name: '`logo introduction -> usage chart -> clear space -> scale/positioning -> violations -> asset list`'
+  chapter: ch-02
+  chapter_title: Logo Usage Guidelines
+- name: '`corporate context -> master mark -> standard/small asset -> production format`'
+  chapter: ch-02-01
+  chapter_title: Master Brand and Corporate Logo
+- name: '`business identity -> usage applications -> production constraints`'
+  chapter: ch-02-02
+  chapter_title: Business Line Logos
+- name: '`category -> tier -> market/channel -> touchpoint -> logo asset`'
+  chapter: ch-02-03
+  chapter_title: Category and Tier Logos
+- name: '`category self-explanation -> master brand use`；`premium association -> 205 use`；`outlet consumer marketing -> outlet...'
+  chapter: ch-02-04
+  chapter_title: Specialized Category Logos
+- name: '`allowed use -> spatial integrity -> size integrity -> form integrity -> source file integrity`'
+  chapter: ch-02-05
+  chapter_title: Reusable Logo Rules Pattern
+- name: '`typeface concept -> asset inventory -> usage modes -> glyph coverage`'
+  chapter: ch-03
+  chapter_title: Klein Font Family Guidelines
+- name: '`style name -> specimen -> file format -> file name`'
+  chapter: ch-03-01
+  chapter_title: Font Assets and Files
+- name: '`content size -> reading mode -> weight/style -> tracking`'
+  chapter: ch-03-02
+  chapter_title: Font Usage Guidelines
+- name: '`font weight -> supported characters -> application readiness`'
+  chapter: ch-03-03
+  chapter_title: Glyph Chart
+patterns:
+- name: 先給策略敘事，再給架構圖，最後進入逐 logo 規格，是大型品牌更新常見的 adoption pattern。
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 把 guideline 當成 production routing document，直接告訴使用者去哪裡拿檔案、何時需另請求。
+  chapter: ch-01-01
+  chapter_title: How To Use These Guidelines
+- name: 用字母大小寫承載品牌親密度與企業性，是可複用的 typographic positioning pattern。
+  chapter: ch-01-02
+  chapter_title: Brand Ethos and Historical Continuum
+- name: 矩陣式 architecture chart 可作為 AI 或資料庫判斷 logo 選用的上游 schema。
+  chapter: ch-01-03
+  chapter_title: Logo Architecture Chart
+- name: 這是一個 logo governance module，可直接複用到任何多品牌、多產品線系統。
+  chapter: ch-02
+  chapter_title: Logo Usage Guidelines
+- name: primary mark module 可作為所有子品牌 logo 的 fallback 與 reference。
+  chapter: ch-02-01
+  chapter_title: Master Brand and Corporate Logo
+- name: 用相同規格頁型管理不同定位，降低品牌分歧。
+  chapter: ch-02-02
+  chapter_title: Business Line Logos
+- name: tiered identity matrix 可複用於 fashion、retail、hospitality 與多產品 SaaS。
+  chapter: ch-02-03
+  chapter_title: Category and Tier Logos
+- name: 產品是否能說明自身
+  chapter: ch-02-04
+  chapter_title: Specialized Category Logos
+- name: 可用矩陣 + 清距公式 + 禁用案例 + asset manifest
+  chapter: ch-02-05
+  chapter_title: Reusable Logo Rules Pattern
+- name: 專屬字體系統需同時管理設計理念、檔案格式、使用情境與字元支援。
+  chapter: ch-03
+  chapter_title: Klein Font Family Guidelines
+- name: font asset manifest 可作為設計系統 token source。
+  chapter: ch-03-01
+  chapter_title: Font Assets and Files
+- name: 以 reading context 管理 typography。
+  chapter: ch-03-02
+  chapter_title: Font Usage Guidelines
+- name: glyph coverage 是 typography QA 的一部分。
+  chapter: ch-03-03
+  chapter_title: Glyph Chart
+rules_ai_checkable:
+- module: ''
+  criterion: AI-checkable criteria：文件若引用 2017 rebranding，必須能指出 logo 所屬 business line；任何 logo 使用判斷都應能對應到 usage chart；若用途屬 trim/design
+    standards，不能只依此文件判定。
+  chapter: ch-01
+  chapter_title: Introduction
+- module: ''
+  criterion: AI-checkable criteria：logo/font 應引用官方 asset library；對外 creative partner/vendor distribution 需經 Global Marketing
+    Group；不得把本文件用作 trim/design standards 的唯一依據。
+  chapter: ch-01-01
+  chapter_title: How To Use These Guidelines
+- module: Visual Identity
+  criterion: AI-checkable criteria：任一應用需先標記 business line；若 business line 在 chart 中未允許某 logo，不能使用；同一 category 若有 premium/mainline，必須先判斷
+    tier。
+  chapter: ch-01-03
+  chapter_title: Logo Architecture Chart
+- module: Visual Identity
+  criterion: AI-checkable criteria：logo 周圍不得有物件進入 minimum/preferred clear space；logo 不得隨機放置，只能 centered 或 ranged；不得改字體、改粗細、拆分元件、用
+    Klein font 重建 logo；小於 14pt cap height 時使用 small version；避免低於 5pt，preferred minimum 6pt。
+  chapter: ch-02
+  chapter_title: Logo Usage Guidelines
+- module: Visual Identity
+  criterion: AI-checkable criteria：使用 master logo 時 cap height 小於 14pt 必須選 small version；不得 white-on-black 除非指定；不得把字距、粗細或格式改變；輸出應使用
+    EPS/PNG/JPEG 官方檔。
+  chapter: ch-02-01
+  chapter_title: Master Brand and Corporate Logo
+- module: Visual Identity
+  criterion: AI-checkable criteria：CK Calvin Klein horizontal logo 僅用於 extreme horizontal applications；205 stacked/horizontal
+    需依應用空間選擇；所有 business line logo 均不可重畫、拉伸、改色、拆分元件。
+  chapter: ch-02-02
+  chapter_title: Business Line Logos
+- module: Visual Identity
+  criterion: AI-checkable criteria：若 swimwear/performance premium 與 mainline 混合，signage 或 POS 預設 premium logo 並需向 Store Design/Planning
+    或 Global Marketing 確認；underwear premium 使用 205 logo，mass programs 使用 Master Underwear，off-price/outlet 使用 lower/uppercase
+    underwear logo。
+  chapter: ch-02-03
+  chapter_title: Category and Tier Logos
+- module: Visual Identity
+  criterion: AI-checkable criteria：Home 使用 Master Brand Logo；Premium Watches & Jewelry 與 Premium Fragrance 使用 205 Stacked
+    Logo；Fragrance 除 205 line 外使用 Master Brand Logo；Outlet logo 目前不應用於 store signage、trim 或 packaging。
+  chapter: ch-02-04
+  chapter_title: Specialized Category Logos
+- module: ''
+  criterion: AI-checkable criteria：Klein 45 Light 可用於 10pt 以上 body copy；Klein 55 Regular 是 body default；Klein 65/75 用於 emphasis；display
+    tracking 為 -20 或 condensed display -10；display 不使用 Klein 75 Bold；italic sparingly；condensed 用於空間受限場景。
+  chapter: ch-03
+  chapter_title: Klein Font Family Guidelines
+- module: ''
+  criterion: AI-checkable criteria：交付檔須為 OTF；Roman 至少含 45/55/65/75；Italic 至少含 46/56/66/76；Condensed 至少含 57/67。
+  chapter: ch-03-01
+  chapter_title: Font Assets and Files
+- module: ''
+  criterion: AI-checkable criteria：body above 10pt 可用 Klein 45 Light；body default 為 55 Regular；small body below 10pt default
+    55 Regular；display tracking -20；condensed display tracking -10；italic 僅 sparingly。
+  chapter: ch-03-02
+  chapter_title: Font Usage Guidelines
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - Brand Strategy
+  - Knowledge Architecture
+  - Visual Identity
+- id: ch-01-01
+  title: How To Use These Guidelines
+  modules:
+  - Legal and Trademark
+  - Operations
+  - Governance
+- id: ch-01-02
+  title: Brand Ethos and Historical Continuum
+  modules:
+  - Typography System
+  - Brand Strategy
+  - Visual Identity
+- id: ch-01-03
+  title: Logo Architecture Chart
+  modules:
+  - AI-Checkable Rules
+  - Knowledge Architecture
+- id: ch-02
+  title: Logo Usage Guidelines
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-02-01
+  title: Master Brand and Corporate Logo
+  modules:
+  - Legal and Trademark
+  - Visual Identity
+- id: ch-02-02
+  title: Business Line Logos
+  modules:
+  - Brand Architecture
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02-03
+  title: Category and Tier Logos
+  modules:
+  - Product Language
+  - Knowledge Architecture
+  - Visual Identity
+- id: ch-02-04
+  title: Specialized Category Logos
+  modules:
+  - Brand Architecture
+  - Governance
+- id: ch-02-05
+  title: Reusable Logo Rules Pattern
+  modules:
+  - AI-Checkable Rules
+  - Knowledge Architecture
+  - Governance
+- id: ch-03
+  title: Klein Font Family Guidelines
+  modules:
+  - Typography System
+  - Design Tokens
+- id: ch-03-01
+  title: Font Assets and Files
+  modules:
+  - Typography System
+  - Operations
+- id: ch-03-02
+  title: Font Usage Guidelines
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+- id: ch-03-03
+  title: Glyph Chart
+  modules:
+  - Typography System
+  - Accessibility

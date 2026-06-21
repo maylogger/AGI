@@ -1,0 +1,49 @@
+title: "MICHELIN Brand Usage for Distributors and Retailers"
+source: "sources/Michelin_DISTRIBUTOR_GUIDE_2019.pdf"
+date: "2019-09"
+language: "en"
+summary: "Michelin Lifestyle 針對經銷商與零售商使用 MICHELIN 品牌的簡明規範，限制 logo、背景、保護區、廣告、活動、數位通路與品牌原則，避免第三方把自身溝通誤認為 MICHELIN 官方品牌環境。"
+chapters:
+  - id: "ch-01"
+    title: "Purpose and Permission Scope"
+    level: 1
+    order: 1
+    pages: "1"
+    summary: "說明文件適用於銷售 MICHELIN branded products 的經銷商與零售商，並界定可使用 logo 但不可使用 MICHELIN brand style、Michelin Man 圖像或自製 POS。"
+  - id: "ch-02"
+    title: "Use of the Michelin Logo"
+    level: 1
+    order: 2
+    pages: "1-4"
+    summary: "規範 logo 版本、最小尺寸、不可修改、背景規則與 protection zone。"
+    children:
+      - id: "ch-02-01"
+        title: "Logo Versions and Size"
+        level: 2
+        order: 1
+        pages: "1"
+        summary: "優先使用 full colour horizontal logo，例外使用 stacked 或 monochrome；MICHELIN name 最小寬度為 print 30 mm、screen 85 px。"
+      - id: "ch-02-02"
+        title: "Background and Protection Zone"
+        level: 2
+        order: 2
+        pages: "2-3"
+        summary: "依 light、yellow、dark、mono 背景選擇版本，保護區以 logo 字母高度 M 定義。"
+      - id: "ch-02-03"
+        title: "Advertising, Posters and Brochures"
+        level: 2
+        order: 3
+        pages: "4"
+        summary: "經銷商廣告環境必須屬於經銷商/零售商品牌，MICHELIN logo 只能靠近 MICHELIN 產品。"
+  - id: "ch-03"
+    title: "Events and Digital"
+    level: 1
+    order: 3
+    pages: "5-6"
+    summary: "規範展會、活動、網站、app 與 URL 中使用 MICHELIN logo 的限制。"
+  - id: "ch-04"
+    title: "Key Principles and Validation"
+    level: 1
+    order: 4
+    pages: "7-10"
+    summary: "列出支援 MICHELIN 產品銷售、維持高品質品牌形象、遵守 visual identity rules 與須由 licensee / Michelin Lifestyle validation 的原則。"

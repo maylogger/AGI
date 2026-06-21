@@ -1,0 +1,261 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: CDB_BrandIdentityManual
+index_ref: docs/CDB_BrandIdentityManual.index.yaml
+note_ref: docs/CDB_BrandIdentityManual.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- Compliance
+- Brand Strategy
+- Governance
+- AI-Checkable Rules
+- Typography System
+- Visual Identity
+- Layout System
+- Color System
+- Operations
+- Photography System
+- Messaging
+- Legal and Trademark
+- Information Design
+- Accessibility
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 8
+  section_count: 3
+chapter_sequence:
+- id: ch-01
+  title: Introduction and About These Guidelines
+  order: 1
+  level: 1
+- id: ch-02
+  title: Basic Elements
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: CDB Logo and Minimum Clear Space
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Logo Versions, Colour and Size
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Unacceptable Logo Use and Typefaces
+  order: 3
+  level: 2
+- id: ch-03
+  title: Stationery
+  order: 3
+  level: 1
+- id: ch-04
+  title: Advertising
+  order: 4
+  level: 1
+- id: ch-05
+  title: Co-Branding
+  order: 5
+  level: 1
+- id: ch-06
+  title: Corporate Communications
+  order: 6
+  level: 1
+- id: ch-07
+  title: Special Applications
+  order: 7
+  level: 1
+- id: ch-08
+  title: Multimedia
+  order: 8
+  level: 1
+frameworks:
+- name: '`brand as shorthand -> consistency requirement -> authorized production -> clarification channel`'
+  chapter: ch-01
+  chapter_title: Introduction and About These Guidelines
+- name: '`logo anatomy -> protected space -> approved versions -> reproduction specs -> misuse controls -> type system`'
+  chapter: ch-02
+  chapter_title: Basic Elements
+- name: '`component lock-up -> relative measurement -> exclusion zone`'
+  chapter: ch-02-01
+  chapter_title: CDB Logo and Minimum Clear Space
+- name: '`background/reproduction need -> approved logo version -> color recipe -> minimum size`'
+  chapter: ch-02-02
+  chapter_title: Logo Versions, Colour and Size
+- name: '`misuse list -> visual example -> typeface by communication context`'
+  chapter: ch-02-03
+  chapter_title: Unacceptable Logo Use and Typefaces
+- name: '`document type -> stock -> size -> logo placement/size -> contact info placement -> type specs`'
+  chapter: ch-03
+  chapter_title: Stationery
+- name: '`audience segment -> emotional stance -> imagery strategy -> copy strategy -> layout`'
+  chapter: ch-04
+  chapter_title: Advertising
+- name: '`authorization -> permitted purpose -> presentation -> proportion -> placement -> approval`'
+  chapter: ch-05
+  chapter_title: Co-Branding
+- name: '`communication type -> page size -> logo placement -> text hierarchy -> contact placement`'
+  chapter: ch-06
+  chapter_title: Corporate Communications
+- name: '`application surface -> logo orientation/size -> colour -> alignment -> informational role`'
+  chapter: ch-07
+  chapter_title: Special Applications
+- name: '`digital context -> screen size -> logo size -> font hierarchy -> usage tips`'
+  chapter: ch-08
+  chapter_title: Multimedia
+patterns:
+- name: 高信任機構的 guideline 先建立 compliance stance，再給應用細節。
+  chapter: ch-01
+  chapter_title: Introduction and About These Guidelines
+- name: 先定義 element invariants，再定義媒體應用，是 identity manual 的穩定模式。
+  chapter: ch-02
+  chapter_title: Basic Elements
+- name: 以字母高度作為 clear-space unit，能跨尺寸縮放。
+  chapter: ch-02-01
+  chapter_title: CDB Logo and Minimum Clear Space
+- name: 把 logo version 與 reproduction context 連結是大型機構常見治理模式。
+  chapter: ch-02-02
+  chapter_title: Logo Versions, Colour and Size
+- name: external communications 使用更具品牌性的字體，internal office tools 使用系統字體。
+  chapter: ch-02-03
+  chapter_title: Unacceptable Logo Use and Typefaces
+- name: stationery template specification 可作為 print production checklist。
+  chapter: ch-03
+  chapter_title: Stationery
+- name: 公共發展機構可用不同 audience mode 管理同一品牌下的語氣差異。
+  chapter: ch-04
+  chapter_title: Advertising
+- name: partner logo 不得壓過 owner logo，且 owner logo 不應出現在 product endorsement context。
+  chapter: ch-05
+  chapter_title: Co-Branding
+- name: 把 logo 放置與資訊 hierarchy 模板化，可降低每次出版的設計決策成本。
+  chapter: ch-06
+  chapter_title: Corporate Communications
+- name: signage/banners/uniforms 分別代表 wayfinding、event visibility、personnel identity 三種特殊應用模式。
+  chapter: ch-07
+  chapter_title: Special Applications
+- name: 對 PowerPoint 不只設計模板，也提供 presentation hygiene rules。
+  chapter: ch-08
+  chapter_title: Multimedia
+rules_ai_checkable:
+- module: ''
+  criterion: AI-checkable criteria：任何輸出應可追溯到本手冊對應章節；若規格不明，應聯絡 CDB Bank Secretary's Unit；未授權方不得自行發起 branded communications。
+  chapter: ch-01
+  chapter_title: Introduction and About These Guidelines
+- module: ''
+  criterion: AI-checkable criteria：logo 只能以一種固定格式使用；logo elements 不得 reposition、recolour、distort、remove、change proportional
+    relationship、apply special effects；signature 必須使用 Arial Bold；print advertising logo diameter 最小 25mm。
+  chapter: ch-02
+  chapter_title: Basic Elements
+- module: Visual Identity
+  criterion: AI-checkable criteria：任何 graphic element、typography 或 pattern 不得進入以 E 高度定義的 clear space；mark 與 signature 的固定關係不得改變。
+  chapter: ch-02-01
+  chapter_title: CDB Logo and Minimum Clear Space
+- module: Visual Identity
+  criterion: AI-checkable criteria：不得使用未授權色彩；印刷廣告最小 logo diameter 為 25mm；若需 colour reproduction，應依 Pantone Inc. 標準配色檢查。
+  chapter: ch-02-02
+  chapter_title: Logo Versions, Colour and Size
+- module: Visual Identity
+  criterion: AI-checkable criteria：signature 必須 Arial Bold；collateral 使用 Futura Book/Bold；print advertising body 使用 Granjon
+    Roman/Bold、headers 使用 Futura；internal Word/PowerPoint 使用 Arial/Verdana/Times New Roman；不得 apply special effects 或讓其他 logo
+    dominate CDB logo。
+  chapter: ch-02-03
+  chapter_title: Unacceptable Logo Use and Typefaces
+- module: ''
+  criterion: AI-checkable criteria：letterhead logo always top left、30mm；business card logo 25mm 且左側，contact info 右側右對齊；uncoated
+    white stock 為 letterheads/cards/envelopes 的主要要求；contact/address info 使用 Futura BT Medium 與指定 pt/leading/tracking。
+  chapter: ch-03
+  chapter_title: Stationery
+- module: ''
+  criterion: AI-checkable criteria：corporate advertising imagery 應以 strong photographic nature themes 支援訊息，不以人臉呈現 poverty；mass
+    advertising 可使用 faces，但 copy 應講 achievement/success story；additional campaign material 必須遵守 graphic guidelines。
+  chapter: ch-04
+  chapter_title: Advertising
+- module: Brand Strategy
+  criterion: AI-checkable criteria：CDB logo remains property of CDB；使用需 pre-authorization 並預留 7 working days；CDB logo should
+    never be bigger than partner logo，理想 1:1 visual space；print/web 上不得出現在 product-oriented communication 或 next to product
+    logo；web 使用應 link to `http://www.caribank.org`。
+  chapter: ch-05
+  chapter_title: Co-Branding
+- module: ''
+  criterion: AI-checkable criteria：press release logo top left 30mm，date/title under logo 左對齊，contact bottom right；corporate
+    booklet cover black logo 位於 black title bar 左側 break；annual report full colour logo bottom left。
+  chapter: ch-06
+  chapter_title: Corporate Communications
+- module: ''
+  criterion: AI-checkable criteria：directional signs must follow logotypes、typography、corporate colours；banners 中 CDB logo
+    should occupy 1/3 of total banner area，vertical banner logo first at top，horizontal banner logo first on left；uniform
+    logo positioned on left chest area。
+  chapter: ch-07
+  chapter_title: Special Applications
+- module: ''
+  criterion: AI-checkable criteria：website minimum window size 800x600；website logo 34mm；main headings Arial Regular 12pt
+    black or corporate aqua blue；body Arial Regular 10pt black；email signature 應包含 business card 相同資訊；PowerPoint 每張 slide
+    文字最多 6 lines，landscape format，不混用 screen/print presentations。
+  chapter: ch-08
+  chapter_title: Multimedia
+chapters:
+- id: ch-01
+  title: Introduction and About These Guidelines
+  modules:
+  - Compliance
+  - Brand Strategy
+  - Governance
+- id: ch-02
+  title: Basic Elements
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Visual Identity
+- id: ch-02-01
+  title: CDB Logo and Minimum Clear Space
+  modules:
+  - Layout System
+  - Visual Identity
+- id: ch-02-02
+  title: Logo Versions, Colour and Size
+  modules:
+  - Color System
+  - Visual Identity
+- id: ch-02-03
+  title: Unacceptable Logo Use and Typefaces
+  modules:
+  - Typography System
+  - Governance
+- id: ch-03
+  title: Stationery
+  modules:
+  - Layout System
+  - Operations
+- id: ch-04
+  title: Advertising
+  modules:
+  - Photography System
+  - Layout System
+  - Messaging
+- id: ch-05
+  title: Co-Branding
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Governance
+- id: ch-06
+  title: Corporate Communications
+  modules:
+  - Layout System
+  - Information Design
+- id: ch-07
+  title: Special Applications
+  modules:
+  - AI-Checkable Rules
+  - Operations
+- id: ch-08
+  title: Multimedia
+  modules:
+  - Accessibility
+  - Information Design

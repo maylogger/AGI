@@ -1,0 +1,75 @@
+title: 'KABOOM! Brand Book'
+source: 'sources/KABOOM_Brand Book_2020.pdf'
+date: '2020'
+language: 'en'
+summary: 'KABOOM! 的品牌書，將 playspace equity 的使命轉化為語氣、標誌、色彩、字體、攝影、圖形元素、視覺公平與實體應用規範。'
+chapters:
+  - id: 'ch-01'
+    title: 'Verbal Identity'
+    level: 1
+    order: 1
+    pages: '3-10'
+    summary: '定義 KABOOM! 的品牌聲音、使命、標語、核心敘事與組織介紹。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Voice & Tone'
+        level: 2
+        order: 1
+        pages: '4-5'
+        summary: '以 Bold, Inspiring, Energetic, Dynamic, Experienced, Empathetic, Driven, Fresh 建立可辨識語氣，並列出避免方向。'
+      - id: 'ch-01-02'
+        title: 'Mission, Tagline, What We Do, Why We Do It, About Us'
+        level: 2
+        order: 2
+        pages: '6-10'
+        summary: '把 playspace equity 轉成對外使命、標語、服務敘述、倡議理由與組織介紹。'
+  - id: 'ch-02'
+    title: 'Visual Identity'
+    level: 1
+    order: 2
+    pages: '11-35'
+    summary: '規範 logo、mark、co-branding、色彩、字體、攝影、圖形元素與視覺公平。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Logo, Mark, and Co-Branding'
+        level: 2
+        order: 1
+        pages: '12-17'
+        summary: '定義標誌的完整使用、留白、最小尺寸、錯誤用法、mark 與合作品牌並列方式。'
+      - id: 'ch-02-02'
+        title: 'Color Palette and Color Use'
+        level: 2
+        order: 2
+        pages: '18-23'
+        summary: '定義 Violet、Tangerine、Lavender、Sunflower、Mint、Dragonfruit 與 Soft Black 灰階系統，以及比例、搭配與誤用。'
+      - id: 'ch-02-03'
+        title: 'Typography'
+        level: 2
+        order: 3
+        pages: '24-26'
+        summary: '以 Campton 作為品牌字體，設定 headline、subhead、body、pull quote 與 fallback system font 規則。'
+      - id: 'ch-02-04'
+        title: 'Photography'
+        level: 2
+        order: 4
+        pages: '27-30'
+        summary: '規範 lifestyle、studio、build-day、kids at play 的攝影品質、情緒與情境條件。'
+      - id: 'ch-02-05'
+        title: 'Graphic Elements and Equity in Visuals'
+        level: 2
+        order: 5
+        pages: '31-35'
+        summary: '把 logo mark 延伸為圖形系統，並用視覺公平規則治理膚色、性別、社群角色、同意與尊嚴。'
+  - id: 'ch-03'
+    title: 'Brand in Use'
+    level: 1
+    order: 3
+    pages: '36-40'
+    summary: '展示 business cards、Design Day sketch pad、Build-Day banner 與 playground sign 等應用情境。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Collateral Applications'
+        level: 2
+        order: 1
+        pages: '37-40'
+        summary: '以範例展示品牌元素如何落地在名片、活動工具、旗幟與場域標示。'

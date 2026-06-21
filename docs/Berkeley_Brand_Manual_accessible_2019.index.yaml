@@ -1,0 +1,147 @@
+title: "The Berkeley Brand Manual"
+source: "sources/Berkeley_Brand_Manual_accessible_2019.pdf"
+date: "June 2019"
+language: "en"
+summary: "UC Berkeley 的品牌手冊，整合品牌定位、內容語氣、視覺識別、品牌架構、合作夥伴系統與品牌保護治理。"
+chapters:
+  - id: "ch-01"
+    title: "Introduction"
+    level: 1
+    order: 1
+    pages: "4-9"
+    summary: "說明手冊對象、使用方式與統一 Berkeley 故事的目的。"
+    children:
+      - id: "ch-01-01"
+        title: "Audience and Usage"
+        level: 2
+        order: 1
+        pages: "6-9"
+        summary: "定義部門領導、溝通者、寫作者與設計師如何使用此手冊。"
+  - id: "ch-02"
+    title: "Telling Our Story"
+    level: 1
+    order: 2
+    pages: "10-21"
+    summary: "將定位、創意平台、內容強項、語氣與 creative brief 組成敘事系統。"
+    children:
+      - id: "ch-02-01"
+        title: "Positioning and Creative Platform"
+        level: 2
+        order: 1
+        pages: "11-17"
+        summary: "以 reimagines the world 與 Reach Further 建立共同敘事核心。"
+      - id: "ch-02-02"
+        title: "Crafting Content and Creative Brief"
+        level: 2
+        order: 2
+        pages: "18-21"
+        summary: "提供 key strengths、tone traits 與專案 brief 作為內容決策工具。"
+  - id: "ch-03"
+    title: "Our Logo, Seal & Spirit Mark"
+    level: 1
+    order: 3
+    pages: "22-35"
+    summary: "規範 Berkeley logo、seal、名稱使用、Cal 與 spirit mark 的角色分工。"
+    children:
+      - id: "ch-03-01"
+        title: "Logo Usage"
+        level: 2
+        order: 1
+        pages: "23-30"
+        summary: "定義 logo 色彩、最小尺寸、clear space 與禁止用法。"
+      - id: "ch-03-02"
+        title: "Seal, Name and Cal"
+        level: 2
+        order: 2
+        pages: "31-35"
+        summary: "區分正式 seal、校名、Berkeley 與 Cal 的使用情境。"
+  - id: "ch-04"
+    title: "Color"
+    level: 1
+    order: 4
+    pages: "36-45"
+    summary: "建立 heritage、alternate heritage 與 secondary palettes，並含可及性文字色彩建議。"
+    children:
+      - id: "ch-04-01"
+        title: "Palette Structure and Accessibility"
+        level: 2
+        order: 1
+        pages: "37-44"
+        summary: "以 Pantone、CMYK、HEX 與大小文字可用色定義品牌色系。"
+      - id: "ch-04-02"
+        title: "Color Spectrum"
+        level: 2
+        order: 2
+        pages: "45"
+        summary: "以 formal/casual 與 subtle/bold 光譜協助情境化選色。"
+  - id: "ch-05"
+    title: "Typography"
+    level: 1
+    order: 5
+    pages: "46-51"
+    summary: "規範 Freight 字族、替代字體、字體光譜與 leading/tracking 使用。"
+    children:
+      - id: "ch-05-01"
+        title: "Type Palette and Usage"
+        level: 2
+        order: 1
+        pages: "47-51"
+        summary: "說明 Freight 的語氣角色、替代字體與排版微規則。"
+  - id: "ch-06"
+    title: "Photography"
+    level: 1
+    order: 6
+    pages: "52-57"
+    summary: "建立 topical、cultural、historical 攝影分類，以及 gallery 取用與版權規則。"
+    children:
+      - id: "ch-06-01"
+        title: "Photo Style and Gallery Governance"
+        level: 2
+        order: 1
+        pages: "53-57"
+        summary: "定義自然光、人本題材、建築使用限制與圖片授權流程。"
+  - id: "ch-07"
+    title: "Graphic Elements"
+    level: 1
+    order: 7
+    pages: "58-64"
+    summary: "提供 structural elements、apertures、tessellations、prisms 四種圖形工具與技能等級。"
+    children:
+      - id: "ch-07-01"
+        title: "Element Library and Usage Constraints"
+        level: 2
+        order: 1
+        pages: "59-64"
+        summary: "以光的概念組織圖形語言，並限制單件作品最多使用一種主圖形元素。"
+  - id: "ch-08"
+    title: "Brand Architecture System"
+    level: 1
+    order: 8
+    pages: "67-82"
+    summary: "建立 master brand、primary sub-brand、secondary sub-brand 與 collaboration lockup 系統。"
+    children:
+      - id: "ch-08-01"
+        title: "Decision Flow and Lockups"
+        level: 2
+        order: 1
+        pages: "68-82"
+        summary: "以決策流程、正式/非正式 lockup、色彩、尺寸與 clear space 管理校內單位識別。"
+  - id: "ch-09"
+    title: "Brand Partnership System"
+    level: 1
+    order: 9
+    pages: "83-95"
+    summary: "定義 partner、sponsor、supporter 等關係類型、評估準則、logo lockup 與品牌保護。"
+    children:
+      - id: "ch-09-01"
+        title: "Partnership Evaluation and Lockups"
+        level: 2
+        order: 1
+        pages: "84-94"
+        summary: "把合作關係轉為價值、風險與視覺層級規範。"
+      - id: "ch-09-02"
+        title: "Brand Protection"
+        level: 2
+        order: 2
+        pages: "95"
+        summary: "列出商標使用、授權、授權商品與合作機會的治理單位。"

@@ -1,0 +1,94 @@
+# L3 決策卡 sidecar — Mojaloop（開源金融科技品牌規範）
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: mojaloop_Brand_Guidelines_2020
+decisions:
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 先建立「哪個 logo 代表哪個 legal/operational entity」的判斷層，再以 entity/project dual-mark 與 logo selection decision tree 視覺化組織結構
+      layer: governance
+    reason:
+      - 任何多實體品牌系統都需要先建立「誰在說話」的判斷層，再談 logo 放置
+      - 品牌資產應反映組織結構，而不是只反映視覺偏好
+      - 多身份品牌應在 guideline 中建立 logo selection decision tree
+    applicable_when:
+      industries: [public_sector, education]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [multi_unit_consistency, multi_entity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 用 Project logo 替代 Foundation legal identity
+      - 各單位自行創造分支品牌
+    evidence:
+      - brand_id: mojaloop_Brand_Guidelines_2020
+        chapter: ch-01-01
+        excerpt: "Foundation logo 指涉實體組織，Project logo 指涉開源專案；不得用 Project logo 替代 Foundation legal identity，品牌資產應反映組織結構。"
+      - brand_id: mojaloop_Brand_Guidelines_2020
+        chapter: ch-01
+        excerpt: "品牌若有多個治理主體，guideline 應先定義哪個 logo 代表哪個 legal/operational entity，再處理 type/color/photography。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌內部字母（m 的寬高）作為 clear space 單位，並依 print/screen 分別定義最小尺寸
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - clear space 若綁定標誌本身幾何，可跨尺寸自動化檢查
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - clear space 等於字母 m 的寬與高，最小尺寸 print 20mm、screen 50px
+    evidence:
+      - brand_id: mojaloop_Brand_Guidelines_2020
+        chapter: ch-01-02
+        excerpt: "clear space 等於字母 m 的寬與高；用 logo 內部字母作為 spacing token，並以 print/screen 分別定義尺寸。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗與 contrast ratio 建立 logo 版本決策（白版深底、黑版淺底、彩色版限極淺背景）
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - logo 應先滿足辨識與對比，再考慮美觀
+      - logo usage 可以借用 accessibility contrast concept 讓審核更客觀
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: mojaloop_Brand_Guidelines_2020
+        chapter: ch-01-03
+        excerpt: "所有 logo 背景對比至少 5:1；背景深於 30% black 時使用白色版，淺色背景使用黑色版，彩色版限不超過 10% black 的背景。"
+    status: extracted

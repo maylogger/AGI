@@ -1,0 +1,36 @@
+title: 'PayPal Corporate Master Brand Guidelines'
+source: 'sources/Paypal_Corporate_master_brand_guidelines_2013.pdf'
+date: 'August 2013'
+language: 'en'
+summary: '這份 corporate master guideline 以 one brand, one voice 為治理目標，連結品牌承諾、視覺識別、商戶資產與審核清單。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction'
+    level: 1
+    order: 1
+    pages: '1-4'
+    summary: '說明品牌目標、guideline library、品牌承諾、人格、聲音與 core elements cheat sheet。'
+  - id: 'ch-02'
+    title: 'Logo Assets'
+    level: 1
+    order: 2
+    pages: '6-15'
+    summary: '規範 logo、clear space、don’ts、twin bands、lockups、Double P 與使用場景。'
+  - id: 'ch-03'
+    title: 'Visual Assets'
+    level: 1
+    order: 3
+    pages: '17-22'
+    summary: '定義攝影、色彩、字體、動畫 mnemonic、插畫、infographic 與 icons/glyphs。'
+  - id: 'ch-04'
+    title: 'Branded Assets'
+    level: 1
+    order: 4
+    pages: '24-36'
+    summary: '規範 checkout/login buttons、acceptance marks、badges、POS、endorsed marks、business cards、letterhead、email signatures 與 give-aways。'
+  - id: 'ch-05'
+    title: 'Governance and Appendix'
+    level: 1
+    order: 5
+    pages: '37-40'
+    summary: '以品牌四問、checklist 與 glossary 收束使用者自我審核。'

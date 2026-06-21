@@ -1,0 +1,149 @@
+# L3 決策卡 sidecar — Amazon Echo and Alexa Brand Usage (External)
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Amazon_Echo_Alexa_Guidelines_External
+decisions:
+  - id: dp-trademark-permission-flow
+    title: 用授權閘門治理第三方商標使用，先處理混淆與背書風險
+    problem:
+      statement: 平台品牌被大量第三方使用商標與資產，若無授權流程，會造成商標混淆與誤導性背書風險。
+      signals: [trademark_protection, partner_governance, endorsement_risk, third_party_usage]
+    solution:
+      module: Legal and Trademark
+      move: 以「核准來源 + 允許情境 + 禁止改作 + permission gate」治理，高風險情境須送審並附最終版本、描述與 script
+      layer: governance
+    reason:
+      - 平台品牌 guideline 應優先處理 trademark confusion 與 endorsement risk，再處理美學一致
+      - 高敏感品牌 guideline 應在規格前放審核流程，避免 partner 先做完再修改
+      - permission section 將品牌治理流程化，降低設計師自行判斷法律風險
+    applicable_when:
+      industries: [tech_software]
+      brand_types: [platform_ecosystem]
+      conditions: [third_party_usage, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Legal and Trademark]
+      enables: [Governance]
+    anti_patterns:
+      - 只給視覺規格而無使用情境風險表與審核材料清單
+      - 放任第三方自行判斷法律與背書風險
+    evidence:
+      - brand_id: Amazon_Echo_Alexa_Guidelines_External
+        chapter: ch-01
+        excerpt: "Collateral type → Risk category → Submit to correct Amazon contact → Allow up to 10 business days；TV、radio、packaging、POS、promotion、hardware logo、kids use case、deviation 都需送審，外部行銷不是純創意問題而是 approval workflow。"
+      - brand_id: Amazon_Echo_Alexa_Guidelines_External
+        chapter: ch-02-01
+        excerpt: "產品命名是商標與使用者理解的一部分，不得用縮寫（不得說 Dot / Show，應說 Echo Dot / Echo Show），命名規則應列出常見縮寫錯誤。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+    evidence:
+      - brand_id: Amazon_Echo_Alexa_Guidelines_External
+        chapter: ch-02-02
+        excerpt: "Echo logo clear space 以字母 e 的 x-height 量測，最小高度不得低於 0.1875 inch / 14px。"
+      - brand_id: Amazon_Echo_Alexa_Guidelines_External
+        chapter: ch-03-03
+        excerpt: "Alexa logo clear space 分別以字母 a 或 l 的高度量測；horizontal Amazon Alexa logo 不小於 150px，stacked 不小於 125px。"
+    status: extracted
+
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 用人格詞集當每個產出的檢查軸，並以「是／不是」正負對照建立邊界
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - voice attribute matrix：desired quality 對應 prohibited drift
+      - AI 品牌人格應明確限制人性化程度，避免 false anthropomorphism
+    applicable_when:
+      industries: [tech_software, industrial_materials_science, nonprofit_social]
+      brand_types: [challenger, category_creator, platform_ecosystem]
+      conditions: []
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Content Design]
+    evidence:
+      - brand_id: Amazon_Echo_Alexa_Guidelines_External
+        chapter: ch-03-01
+        excerpt: "Alexa personality 為 approachable、efficient、trustworthy、natural，並以 is / is not 詞庫建立邊界（friendly 但不 fawning，natural 但不 fully human、不 robotic、不 biased），作為 approved copy 與 film portrayal 的審查軸。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - 認證標章 guideline 應把「誰有資格使用」放在視覺規格前
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: Amazon_Echo_Alexa_Guidelines_External
+        chapter: ch-03-04
+        excerpt: "co-branding 時兩 logo 視覺大小相同，水平距離為兩個 Echo O，垂直距離為一個半 O；badge 不小於 190px，且不得在同一素材使用多個 badge。"
+    status: extracted
+
+  - id: dp-responsible-framing-for-regulated-category
+    title: 用「禁止聯想清單＋責任框架」治理受規範或高敏感類別的合作夥伴文案
+    problem:
+      statement: 金融、健康、隱私敏感或高風險類別的品牌，常透過大量第三方（商家、夥伴）對外溝通；若只給正面賣點而不框限風險，文案容易變成誤導、刺激消費或侵犯信任。
+      signals: [regulatory_compliance, third_party_usage, content_safety, misleading_risk]
+    solution:
+      module: Content Design
+      move: 同頁提供「可說／不可說」與禁止聯想／禁止用詞清單，並要求賣點與限制條件並陳
+      layer: language
+    reason:
+      - 描述服務利益時必須同時保留責任與限制，避免誤導
+      - 用 forbidden term/association list 管理高敏感類別的品牌風險
+      - AI 產品廣告需同時檢查語句、聲音時序、使用者姿態與禁止概念
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, challenger]
+      conditions: [regulatory_compliance, third_party_usage, content_safety]
+      archetypes: [brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Brand Strategy, Messaging]
+      enables: [Content Design]
+    anti_patterns:
+      - 只給正向賣點不附限制條件
+      - 放任 partner 自由描述高敏感功能
+    evidence:
+      - brand_id: Amazon_Echo_Alexa_Guidelines_External
+        chapter: ch-03-06
+        excerpt: "以 do / don't 清單管理 Alexa 呈現：不得稱 always listening、platform、robot；utterance 須測試 3 次且 wake word 置於開頭，並設兒童內容限制，避免誤導與隱私想像。"
+    status: extracted

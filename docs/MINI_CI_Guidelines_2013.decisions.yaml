@@ -1,0 +1,66 @@
+# L3 決策卡 sidecar — MINI（挑戰者汽車品牌 CI）
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: MINI_CI_Guidelines_2013
+decisions:
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌內部部件（wings 高度或 MINI Next 中 M 字寬）作為比例留白單位
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - clear space 應與 logo 自身比例相連，而不是固定任意數值
+      - 使用 logo 自身元素定義安全區，可讓規則自然縮放
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - 以 wings height 或 MINI Next 中 M 字寬作為 clear space 基準
+    evidence:
+      - brand_id: MINI_CI_Guidelines_2013
+        chapter: ch-02-01
+        excerpt: "以 wings height 或 MINI Next 中 M 字寬作為 clear space 基準；clear space 應與 logo 自身比例相連，而不是固定任意數值。"
+    status: extracted
+
+  - id: dp-system-toolkit-over-template
+    title: 企業視覺系統給「可組合工具箱」而非僵硬模板
+    problem:
+      statement: 要求每個版面長得完全相同會扼殺多元內容；但完全自由又會失去一致性。
+      signals: [many_teams, many_agencies, diverse_content, system_consistency, mass_touchpoints]
+    solution:
+      module: Visual Language
+      move: 把 frame 定義為可重複的 brand device，用「目的動詞 + 幾何規則」（數量、接觸、不重疊、出血、顏色來源）取代固定模板
+      layer: visual_core
+    reason:
+      - 彈性必須被結構化；系統不靠固定模板，而靠固定決策順序
+      - 品牌裝置應同時有表現力與限制，才能高辨識又不混亂
+      - 視覺裝置 guideline 應把「目的動詞」與「幾何規則」一起定義
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, consumer_retail_hospitality]
+      brand_types: [mass_consumer, category_creator]
+      conditions: []
+      archetypes: [full_brand_system, corporate_toolkit, brand_experience_guide]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Layout System, Examples]
+    examples:
+      - frame 作為 container、focus、connector 與 campaign grid，可跨媒介複用
+    anti_patterns:
+      - 一次使用所有元素造成過載
+      - 只提供單一固定版型，使用者只會複製貼上
+    evidence:
+      - brand_id: MINI_CI_Guidelines_2013
+        chapter: ch-04
+        excerpt: "每頁最多 3 個 frame、frame 不能空、至少 bleed off 1 edge、相接 frame 必須不同色；frame 作為 container/focus/connector/campaign grid，是可跨媒介複用的 visual grammar。"
+    status: extracted

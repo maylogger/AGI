@@ -1,0 +1,162 @@
+# L3 決策卡 sidecar — Huawei Visual Identity Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Huawei_Visual_Identity_Guidelines
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌不是單一標誌，而是組織如何行動與如何溝通
+      - 企業 VI 可以用少量策略詞作為全文件的 semantic anchor
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: Huawei_Visual_Identity_Guidelines
+        chapter: ch-01
+        excerpt: "用極短篇幅建立 VI 系統的策略源頭，把使命濃縮為 fully connected, intelligent world，讓後續大量規格可回扣到品牌使命與屬性；企業 VI 可以用少量策略詞作為全文件的 semantic anchor。"
+    status: extracted
+
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 用人格詞集（Curious/Sharing/Free Thinking/Caring/Optimistic）當每個產出的檢查軸
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - 任何識別應用需能合理支持品牌屬性，否則應退回檢查
+    applicable_when:
+      industries: [industrial_materials_science, nonprofit_social, tech_software]
+      brand_types: [challenger, category_creator, mission_driven]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Visual Language, Content Design]
+    evidence:
+      - brand_id: Huawei_Visual_Identity_Guidelines
+        chapter: ch-01-02
+        excerpt: "列出 customer-centric、innovative、global、dedicated、open、trusted 六項品牌屬性，任何識別應用需能合理支持其中之一；若視覺語言削弱 trusted、global 或 customer-centric，應退回檢查。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+    evidence:
+      - brand_id: Huawei_Visual_Identity_Guidelines
+        chapter: ch-02-01
+        excerpt: "logo symbol 高度為 X 時 clear space 為 0.35X；以 X-based proportion 量測留白與尺寸，使識別可在不同媒介一致縮放。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗與照片複雜度建立對比決策樹，限定白／深色兩種標誌
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - Logo 顏色規範應基於對比與背景風險，而非只列色票
+    applicable_when:
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: Huawei_Visual_Identity_Guidelines
+        chapter: ch-02-01
+        excerpt: "背景複雜或對比不足時需改用 monotone black 或 reversed white，以背景條件而非自由配色決定標誌顏色。"
+    status: extracted
+
+  - id: dp-approval-gate-for-exceptions
+    title: 例外不是漏洞，用審核閘門把差異收進可治理的模組
+    problem:
+      statement: 規則無法窮舉所有情境，現實組織總會有例外；若放任各單位自行決定，例外會逐步擴張成破壞系統的破口。
+      signals: [exception_handling, multi_unit_consistency, governance, scaling_risk]
+    solution:
+      module: Governance
+      move: 例外章節須明確寫出「為何例外／何時可用／不可擴張到哪裡」，並交由品牌管理單位審核
+      layer: governance
+    reason:
+      - 例外章節應寫出「為何例外」「何時可用」「不可擴張到哪裡」
+      - 品牌一致性不是取消差異，而是把差異收進可治理的模組
+    applicable_when:
+      industries: [public_sector, finance, tech_software]
+      brand_types: [institutional_public_trust, platform_ecosystem, heritage_legacy]
+      conditions: [multi_unit_consistency, exception_handling]
+      archetypes: [multi_brand_architecture, corporate_toolkit]
+    dependencies:
+      requires: [Governance]
+      enables: []
+    anti_patterns:
+      - 例外只寫「可以這樣做」卻不寫適用邊界與審核者
+      - 各單位把一次性例外當成通用替代方案沿用
+    evidence:
+      - brand_id: Huawei_Visual_Identity_Guidelines
+        chapter: ch-02-01
+        excerpt: "co-branding 必須取得授權並送 Brand Management System 審核，不得單獨使用 symbol、加入部門名或裝飾化。"
+      - brand_id: Huawei_Visual_Identity_Guidelines
+        chapter: ch-08
+        excerpt: "建築與接待標識不得改造 corporate logo，特殊場地需諮詢 Brand Management System，把空間例外導回品牌治理單位審核。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: Huawei_Visual_Identity_Guidelines
+        chapter: ch-04
+        excerpt: "co-branding 廣告需遵守授權、標誌等高、分隔線與優先位置，以固定空間規則維持與夥伴標誌的主從關係。"
+    status: extracted

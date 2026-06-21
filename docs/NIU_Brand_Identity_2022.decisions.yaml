@@ -1,0 +1,96 @@
+# L3 決策卡 sidecar — Northern Illinois University (NIU)
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: NIU_Brand_Identity_2022
+decisions:
+  - id: dp-contact-before-appendix
+    title: 在技術資料前先給治理窗口，讓 guideline 成為可改善系統
+    problem:
+      statement: 規則無法涵蓋所有情境，缺乏權威決策入口時，例外用法無人裁決。
+      signals: [exceptions_expected, governance]
+    solution:
+      module: Governance
+      move: 在主內容與 appendix 之間放置聯絡窗口與核准／回饋入口
+      layer: governance
+    reason:
+      - 規則無法涵蓋所有情境，必須提供權威決策入口
+      - guideline 應包含 owner 與 feedback channel，而非靜態文件
+      - guideline 需要 owner 與 feedback channel
+    applicable_when:
+      industries: [finance]
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit, logo_asset_guidelines]
+    dependencies:
+      requires: [Governance]
+      enables: [Operations]
+    evidence:
+      - brand_id: NIU_Brand_Identity_2022
+        chapter: ch-01
+        excerpt: "把 Introduction and Contacts 放在最前面，建立校內所有溝通都必須進入品牌治理流程的前提；以文件導覽、review gate 與 owner/contact map 讓使用者知道找誰，並要求至少在 due date 前三天送 Clearinghouse Review。"
+      - brand_id: NIU_Brand_Identity_2022
+        chapter: ch-06
+        excerpt: "以 review gate、service owner、standards URL 與 compliance statement 把設計規範接到製作、審核與支援窗口。"
+    status: extracted
+
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌不是單一標誌，而是組織如何行動與如何溝通
+      - 品牌是決策系統，不是美術風格；每個視覺與文案選擇都應能回推到品牌支柱
+      - 先建立判斷標準，後續視覺與語氣才有可回溯的語義來源
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: NIU_Brand_Identity_2022
+        chapter: ch-02
+        excerpt: "先讓所有文案與視覺知道 NIU 要承諾什麼，而不是直接進入 logo 規格；以 value proposition → personality → narrative → strengths/benefits → tagline 建立訊息架構，作為視覺的語義來源。"
+    status: extracted
+
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 先建立「誰在說話」的判斷層，再以 umbrella → member → VPU/GP → lockup → special case 的層級把組織結構視覺化
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - 大型系統可用「可辨識但不獨立」的 secondary line 管理內部單位
+      - 任何多實體品牌系統都需要先建立「誰在說話」的判斷層，再談 logo 放置
+    applicable_when:
+      industries: [public_sector, education]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [multi_unit_consistency, multi_entity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 各單位自行創造分支品牌與專屬 tagline
+      - 只列 logo 圖檔卻不給「何時用 umbrella、何時用單一機構」的判斷規則
+    evidence:
+      - brand_id: NIU_Brand_Identity_2022
+        chapter: ch-04
+        excerpt: "大學品牌需同時允許單位多樣性與機構整體一致性；提供分散式組織管理 sub-brand、logo 與媒體素材的可重用模式。"
+    status: extracted

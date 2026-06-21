@@ -1,0 +1,529 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: NZ_Transport_Agency_brand_guidelines_2019
+index_ref: docs/NZ_Transport_Agency_brand_guidelines_2019.index.yaml
+note_ref: docs/NZ_Transport_Agency_brand_guidelines_2019.note.md
+archetype: brand_experience_guide
+industry: public_sector
+modules:
+- Brand Strategy
+- Governance
+- AI-Checkable Rules
+- Examples
+- Color System
+- Design Tokens
+- Typography System
+- Visual Language
+- Layout System
+- Operations
+depth:
+  strategy: low
+  visual: high
+  governance: medium
+  top_level_chapter_count: 13
+  section_count: 14
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-02
+  title: Our Logo
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Key Rules and Formats
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Application Evidence
+  order: 2
+  level: 2
+- id: ch-03
+  title: Use with All-of-Government Brand
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Key Rules and Formats
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Application Evidence
+  order: 2
+  level: 2
+- id: ch-04
+  title: Use with Safer Journeys Logo
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Key Rules and Formats
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Application Evidence
+  order: 2
+  level: 2
+- id: ch-05
+  title: Use with Other Brands
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Key Rules and Formats
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Application Evidence
+  order: 2
+  level: 2
+- id: ch-06
+  title: Applying Our Brand in Different Scenarios
+  order: 6
+  level: 1
+- id: ch-07
+  title: Brand Colours
+  order: 7
+  level: 1
+- id: ch-08
+  title: Typography
+  order: 8
+  level: 1
+- id: ch-09
+  title: Graphic Language and Imagery
+  order: 9
+  level: 1
+- id: ch-10
+  title: Application Examples and Design Resources
+  order: 10
+  level: 1
+- id: ch-10-01
+  title: Key Rules and Formats
+  order: 1
+  level: 2
+- id: ch-10-02
+  title: Application Evidence
+  order: 2
+  level: 2
+- id: ch-11
+  title: Alliance Identities and Design Resources
+  order: 11
+  level: 1
+- id: ch-11-01
+  title: Key Rules and Formats
+  order: 1
+  level: 2
+- id: ch-11-02
+  title: Application Evidence
+  order: 2
+  level: 2
+- id: ch-12
+  title: Public-Private Partnerships
+  order: 12
+  level: 1
+- id: ch-13
+  title: Co-Branding Events on Behalf of Government
+  order: 13
+  level: 1
+- id: ch-13-01
+  title: Key Rules and Formats
+  order: 1
+  level: 2
+- id: ch-13-02
+  title: Application Evidence
+  order: 2
+  level: 2
+frameworks:
+- name: 使用情境式決策框架：先判斷主導者/合作關係/媒介，再選擇核准的 logo、模板與版面
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 使用情境式決策框架：先判斷主導者/合作關係/媒介，再選擇核准的 logo、模板與版面
+  chapter: ch-02
+  chapter_title: Our Logo
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+- name: 使用情境式決策框架：先判斷主導者/合作關係/媒介，再選擇核准的 logo、模板與版面
+  chapter: ch-03
+  chapter_title: Use with All-of-Government Brand
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+- name: 使用情境式決策框架：先判斷主導者/合作關係/媒介，再選擇核准的 logo、模板與版面
+  chapter: ch-04
+  chapter_title: Use with Safer Journeys Logo
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+- name: 使用情境式決策框架：先判斷主導者/合作關係/媒介，再選擇核准的 logo、模板與版面
+  chapter: ch-05
+  chapter_title: Use with Other Brands
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+- name: 使用情境式決策框架：先判斷主導者/合作關係/媒介，再選擇核准的 logo、模板與版面
+  chapter: ch-06
+  chapter_title: Applying Our Brand in Different Scenarios
+- name: 使用情境式決策框架：先判斷主導者/合作關係/媒介，再選擇核准的 logo、模板與版面
+  chapter: ch-07
+  chapter_title: Brand Colours
+- name: 使用情境式決策框架：先判斷主導者/合作關係/媒介，再選擇核准的 logo、模板與版面
+  chapter: ch-08
+  chapter_title: Typography
+- name: 使用情境式決策框架：先判斷主導者/合作關係/媒介，再選擇核准的 logo、模板與版面
+  chapter: ch-09
+  chapter_title: Graphic Language and Imagery
+- name: 使用情境式決策框架：先判斷主導者/合作關係/媒介，再選擇核准的 logo、模板與版面
+  chapter: ch-10
+  chapter_title: Application Examples and Design Resources
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+- name: 使用情境式決策框架：先判斷主導者/合作關係/媒介，再選擇核准的 logo、模板與版面
+  chapter: ch-11
+  chapter_title: Alliance Identities and Design Resources
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+- name: 使用情境式決策框架：先判斷主導者/合作關係/媒介，再選擇核准的 logo、模板與版面
+  chapter: ch-12
+  chapter_title: Public-Private Partnerships
+- name: 使用情境式決策框架：先判斷主導者/合作關係/媒介，再選擇核准的 logo、模板與版面
+  chapter: ch-13
+  chapter_title: Co-Branding Events on Behalf of Government
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+patterns:
+- name: 可複用為政府與大型公共服務品牌的 modular brand manual：核心識別、共同品牌、應用模板、特殊關係分層管理。
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 可複用為政府與大型公共服務品牌的 modular brand manual：核心識別、共同品牌、應用模板、特殊關係分層管理。
+  chapter: ch-02
+  chapter_title: Our Logo
+- name: 子系統規範頁
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- name: 子系統規範頁
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+- name: 可複用為政府與大型公共服務品牌的 modular brand manual：核心識別、共同品牌、應用模板、特殊關係分層管理。
+  chapter: ch-03
+  chapter_title: Use with All-of-Government Brand
+- name: 子系統規範頁
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- name: 子系統規範頁
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+- name: 可複用為政府與大型公共服務品牌的 modular brand manual：核心識別、共同品牌、應用模板、特殊關係分層管理。
+  chapter: ch-04
+  chapter_title: Use with Safer Journeys Logo
+- name: 子系統規範頁
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- name: 子系統規範頁
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+- name: 可複用為政府與大型公共服務品牌的 modular brand manual：核心識別、共同品牌、應用模板、特殊關係分層管理。
+  chapter: ch-05
+  chapter_title: Use with Other Brands
+- name: 子系統規範頁
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- name: 子系統規範頁
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+- name: 可複用為政府與大型公共服務品牌的 modular brand manual：核心識別、共同品牌、應用模板、特殊關係分層管理。
+  chapter: ch-06
+  chapter_title: Applying Our Brand in Different Scenarios
+- name: 可複用為政府與大型公共服務品牌的 modular brand manual：核心識別、共同品牌、應用模板、特殊關係分層管理。
+  chapter: ch-07
+  chapter_title: Brand Colours
+- name: 可複用為政府與大型公共服務品牌的 modular brand manual：核心識別、共同品牌、應用模板、特殊關係分層管理。
+  chapter: ch-08
+  chapter_title: Typography
+- name: 可複用為政府與大型公共服務品牌的 modular brand manual：核心識別、共同品牌、應用模板、特殊關係分層管理。
+  chapter: ch-09
+  chapter_title: Graphic Language and Imagery
+- name: 可複用為政府與大型公共服務品牌的 modular brand manual：核心識別、共同品牌、應用模板、特殊關係分層管理。
+  chapter: ch-10
+  chapter_title: Application Examples and Design Resources
+- name: 子系統規範頁
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- name: 子系統規範頁
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+- name: 可複用為政府與大型公共服務品牌的 modular brand manual：核心識別、共同品牌、應用模板、特殊關係分層管理。
+  chapter: ch-11
+  chapter_title: Alliance Identities and Design Resources
+- name: 子系統規範頁
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- name: 子系統規範頁
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+- name: 可複用為政府與大型公共服務品牌的 modular brand manual：核心識別、共同品牌、應用模板、特殊關係分層管理。
+  chapter: ch-12
+  chapter_title: Public-Private Partnerships
+- name: 可複用為政府與大型公共服務品牌的 modular brand manual：核心識別、共同品牌、應用模板、特殊關係分層管理。
+  chapter: ch-13
+  chapter_title: Co-Branding Events on Behalf of Government
+- name: 子系統規範頁
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- name: 子系統規範頁
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+rules_ai_checkable:
+- module: ''
+  criterion: AI-checkable：使用對應章節核准的 logo 或 lock-up；遵守該章標示的 minimum size、clear space、colour specifications；不得使用 What not to
+    do 所列變形；若屬合作/事件/PPP 情境需先判斷品牌關係類型。
+  chapter: ch-01
+  chapter_title: Introduction
+- module: Visual Identity
+  criterion: AI-checkable：使用對應章節核准的 logo 或 lock-up；遵守該章標示的 minimum size、clear space、colour specifications；不得使用 What not to
+    do 所列變形；若屬合作/事件/PPP 情境需先判斷品牌關係類型。
+  chapter: ch-02
+  chapter_title: Our Logo
+- module: ''
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- module: ''
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+- module: Brand Strategy
+  criterion: AI-checkable：使用對應章節核准的 logo 或 lock-up；遵守該章標示的 minimum size、clear space、colour specifications；不得使用 What not to
+    do 所列變形；若屬合作/事件/PPP 情境需先判斷品牌關係類型。
+  chapter: ch-03
+  chapter_title: Use with All-of-Government Brand
+- module: AI-Checkable Rules
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- module: Examples
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+- module: Visual Identity
+  criterion: AI-checkable：使用對應章節核准的 logo 或 lock-up；遵守該章標示的 minimum size、clear space、colour specifications；不得使用 What not to
+    do 所列變形；若屬合作/事件/PPP 情境需先判斷品牌關係類型。
+  chapter: ch-04
+  chapter_title: Use with Safer Journeys Logo
+- module: Governance
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- module: Examples
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+- module: Brand Strategy
+  criterion: AI-checkable：使用對應章節核准的 logo 或 lock-up；遵守該章標示的 minimum size、clear space、colour specifications；不得使用 What not to
+    do 所列變形；若屬合作/事件/PPP 情境需先判斷品牌關係類型。
+  chapter: ch-05
+  chapter_title: Use with Other Brands
+- module: Governance
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- module: Examples
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+- module: Brand Strategy
+  criterion: AI-checkable：使用對應章節核准的 logo 或 lock-up；遵守該章標示的 minimum size、clear space、colour specifications；不得使用 What not to
+    do 所列變形；若屬合作/事件/PPP 情境需先判斷品牌關係類型。
+  chapter: ch-06
+  chapter_title: Applying Our Brand in Different Scenarios
+- module: Brand Strategy
+  criterion: AI-checkable：使用對應章節核准的 logo 或 lock-up；遵守該章標示的 minimum size、clear space、colour specifications；不得使用 What not to
+    do 所列變形；若屬合作/事件/PPP 情境需先判斷品牌關係類型。
+  chapter: ch-07
+  chapter_title: Brand Colours
+- module: Typography System
+  criterion: AI-checkable：使用對應章節核准的 logo 或 lock-up；遵守該章標示的 minimum size、clear space、colour specifications；不得使用 What not to
+    do 所列變形；若屬合作/事件/PPP 情境需先判斷品牌關係類型。
+  chapter: ch-08
+  chapter_title: Typography
+- module: Photography System
+  criterion: AI-checkable：使用對應章節核准的 logo 或 lock-up；遵守該章標示的 minimum size、clear space、colour specifications；不得使用 What not to
+    do 所列變形；若屬合作/事件/PPP 情境需先判斷品牌關係類型。
+  chapter: ch-09
+  chapter_title: Graphic Language and Imagery
+- module: ''
+  criterion: AI-checkable：使用對應章節核准的 logo 或 lock-up；遵守該章標示的 minimum size、clear space、colour specifications；不得使用 What not to
+    do 所列變形；若屬合作/事件/PPP 情境需先判斷品牌關係類型。
+  chapter: ch-10
+  chapter_title: Application Examples and Design Resources
+- module: Governance
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- module: Examples
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+- module: ''
+  criterion: AI-checkable：使用對應章節核准的 logo 或 lock-up；遵守該章標示的 minimum size、clear space、colour specifications；不得使用 What not to
+    do 所列變形；若屬合作/事件/PPP 情境需先判斷品牌關係類型。
+  chapter: ch-11
+  chapter_title: Alliance Identities and Design Resources
+- module: Layout System
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- module: Examples
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+- module: ''
+  criterion: AI-checkable：使用對應章節核准的 logo 或 lock-up；遵守該章標示的 minimum size、clear space、colour specifications；不得使用 What not to
+    do 所列變形；若屬合作/事件/PPP 情境需先判斷品牌關係類型。
+  chapter: ch-12
+  chapter_title: Public-Private Partnerships
+- module: Brand Strategy
+  criterion: AI-checkable：使用對應章節核准的 logo 或 lock-up；遵守該章標示的 minimum size、clear space、colour specifications；不得使用 What not to
+    do 所列變形；若屬合作/事件/PPP 情境需先判斷品牌關係類型。
+  chapter: ch-13
+  chapter_title: Co-Branding Events on Behalf of Government
+- module: Governance
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-13-01
+  chapter_title: Key Rules and Formats
+- module: Examples
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-13-02
+  chapter_title: Application Evidence
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - Brand Strategy
+  - Governance
+- id: ch-02
+  title: Our Logo
+  modules:
+  - AI-Checkable Rules
+- id: ch-13-01
+  title: Key Rules and Formats
+  modules:
+  - AI-Checkable Rules
+- id: ch-13-02
+  title: Application Evidence
+  modules:
+  - Examples
+- id: ch-03
+  title: Use with All-of-Government Brand
+  modules:
+  - Governance
+- id: ch-13-01
+  title: Key Rules and Formats
+  modules:
+  - Governance
+- id: ch-13-02
+  title: Application Evidence
+  modules:
+  - Examples
+- id: ch-13-02
+  title: Application Evidence
+  modules:
+  - Examples
+- id: ch-05
+  title: Use with Other Brands
+  modules:
+  - Governance
+- id: ch-13-01
+  title: Key Rules and Formats
+  modules:
+  - Governance
+- id: ch-13-02
+  title: Application Evidence
+  modules:
+  - Examples
+- id: ch-06
+  title: Applying Our Brand in Different Scenarios
+  modules:
+  - Governance
+- id: ch-07
+  title: Brand Colours
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-08
+  title: Typography
+  modules:
+  - Typography System
+- id: ch-09
+  title: Graphic Language and Imagery
+  modules:
+  - Visual Language
+- id: ch-10
+  title: Application Examples and Design Resources
+  modules:
+  - Layout System
+  - Examples
+  - Operations
+- id: ch-13-01
+  title: Key Rules and Formats
+  modules:
+  - Layout System
+  - Examples
+  - Operations
+- id: ch-13-02
+  title: Application Evidence
+  modules:
+  - Examples
+- id: ch-11
+  title: Alliance Identities and Design Resources
+  modules:
+  - Governance
+- id: ch-13-01
+  title: Key Rules and Formats
+  modules:
+  - Governance
+- id: ch-13-02
+  title: Application Evidence
+  modules:
+  - Examples
+- id: ch-12
+  title: Public-Private Partnerships
+  modules:
+  - Governance
+- id: ch-13
+  title: Co-Branding Events on Behalf of Government
+  modules:
+  - Governance
+- id: ch-13-01
+  title: Key Rules and Formats
+  modules:
+  - Governance
+- id: ch-13-02
+  title: Application Evidence
+  modules:
+  - Examples

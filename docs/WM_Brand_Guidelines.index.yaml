@@ -1,0 +1,60 @@
+title: "WarnerMedia Brand Guidelines"
+source: "sources/WM_Brand_Guidelines.pdf"
+language: "en"
+summary: "WarnerMedia 的品牌指南，聚焦 corporate lockup、logo 檔案命名、尺寸留白、背景控制、色彩、字體、文字寫法、divisional tagline 與檔案治理。"
+chapters:
+  - id: "ch-01"
+    title: "WarnerMedia Lockup Usage"
+    level: 1
+    order: 1
+    pages: "2"
+    summary: "定義 WarnerMedia lockup 的用途、固定關係、版本選擇與 preferred horizontal lockup。"
+  - id: "ch-02"
+    title: "Logo Variations and Technical Specifications"
+    level: 1
+    order: 2
+    pages: "3-4"
+    summary: "列出 positive/reverse logo 檔案、色彩值、最小尺寸與以 Warner cap height 定義 clear space。"
+  - id: "ch-03"
+    title: "Logo Misuse and Background Control"
+    level: 1
+    order: 3
+    pages: "5-6"
+    summary: "規範 logo 不可改色、改距、創建新 lockup 或改元素比例，並要求背景提供足夠對比。"
+  - id: "ch-04"
+    title: "Color Palette and Usage"
+    level: 1
+    order: 4
+    pages: "7"
+    summary: "以 black、white、grey 為主，blue 作 10% accent，並給出色彩比例與色值。"
+  - id: "ch-05"
+    title: "Brand Typography and Lettering"
+    level: 1
+    order: 5
+    pages: "8-9"
+    summary: "指定 AT&T Aleck Sans 作品牌字體，並要求 WarnerMedia 文字以無空格大小寫呈現。"
+  - id: "ch-06"
+    title: "Logo File Nomenclature"
+    level: 1
+    order: 6
+    pages: "10"
+    summary: "定義 logo file naming convention 與 EPS、JPG、PNG 的使用情境，並禁止重新命名 artwork。"
+  - id: "ch-07"
+    title: "A WarnerMedia Company Branded Divisional Tagline"
+    level: 1
+    order: 7
+    pages: "11-15"
+    summary: "規範 divisional tagline 的法律用途、檔案版本、最小尺寸、誤用、命名與文字替代限制。"
+    children:
+      - id: "ch-07-01"
+        title: "Tagline Technical Specifications"
+        level: 2
+        order: 1
+        pages: "11-13"
+        summary: "說明 tagline 對分部、產品與服務的關係表達，並規範下載 artwork 與 clear space/minimum size。"
+      - id: "ch-07-02"
+        title: "Tagline Misuse and File Nomenclature"
+        level: 2
+        order: 2
+        pages: "14-15"
+        summary: "要求 tagline 不可改色、改距、創建新 lockup、改比例，且不得重新命名檔案。"

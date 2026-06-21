@@ -1,0 +1,213 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Google_for_Work_Brand_Book
+index_ref: docs/Google_for_Work_Brand_Book.index.yaml
+note_ref: docs/Google_for_Work_Brand_Book.note.md
+archetype: corporate_toolkit
+industry: tech_software
+modules:
+- Brand Strategy
+- Voice and Tone
+- Messaging
+- Knowledge Architecture
+- Product Language
+- AI-Checkable Rules
+- Content Design
+- Legal and Trademark
+- Typography System
+- Color System
+- Visual Identity
+- Governance
+- Design Tokens
+- Layout System
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 2
+  section_count: 7
+chapter_sequence:
+- id: ch-01
+  title: Strategy
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Brand Vision Statement
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Shared Mindset and Positioning
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Brand Voice and Tone
+  order: 3
+  level: 2
+- id: ch-02
+  title: Brand Elements
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo System
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Color Palette
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Tagline and Vision Usage
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Typography
+  order: 4
+  level: 2
+frameworks:
+- name: 使用「願景 -> 受眾心態 -> 品牌架構 -> voice/tone」的品牌策略漏斗
+  chapter: ch-01
+  chapter_title: Strategy
+- name: 問題是舊工作摩擦；解法是 Google 工具；結果是更自然的工作生活整合
+  chapter: ch-01-01
+  chapter_title: Brand Vision Statement
+- name: Shared Mindset 是 segmentation framework，將 B2B audience 轉為心理需求群
+  chapter: ch-01-02
+  chapter_title: Shared Mindset and Positioning
+- name: 語氣由 simple、smart、surprising、fun、useful 五個品質共同約束
+  chapter: ch-01-03
+  chapter_title: Brand Voice and Tone
+- name: 資產治理框架：approved asset -> usage context -> constraints -> no-nos
+  chapter: ch-02
+  chapter_title: Brand Elements
+- name: variant selection framework：full color preferred；photo/light 用 54% black；medium/dark 用 reverse
+  chapter: ch-02-01
+  chapter_title: Logo System
+- name: 色彩 token framework：name -> hex -> RGB -> CMYK -> PMS
+  chapter: ch-02-02
+  chapter_title: Color Palette
+- name: tense decision framework：converted entity/activity -> has gone；ongoing broader shift -> is going
+  chapter: ch-02-03
+  chapter_title: Tagline and Vision Usage
+- name: type hierarchy framework：headline >= 2x body；leading = 1
+  chapter: ch-02-04
+  chapter_title: Typography
+patterns:
+- name: 可複用模式是先建立敵人：傳統 enterprise friction，再提出品牌如何解放使用者。
+  chapter: ch-01
+  chapter_title: Strategy
+- name: work is people
+  chapter: ch-01-01
+  chapter_title: Brand Vision Statement
+- name: 熟悉 consumer Google
+  chapter: ch-01-02
+  chapter_title: Shared Mindset and Positioning
+- name: 像其中一員說話
+  chapter: ch-01-03
+  chapter_title: Brand Voice and Tone
+- name: 對每一類資產同時給正用法與禁用法，降低錯誤解讀。
+  chapter: ch-02
+  chapter_title: Brand Elements
+- name: 以母品牌與產品子品牌 lockup 建立 product family coherence。
+  chapter: ch-02-01
+  chapter_title: Logo System
+- name: 主色加 accent 的小型品牌色系。
+  chapter: ch-02-02
+  chapter_title: Color Palette
+- name: 把客戶採用行為變成可重複 campaign formula。
+  chapter: ch-02-03
+  chapter_title: Tagline and Vision Usage
+- name: 以 primary/alternate font 管理跨平台落差。
+  chapter: ch-02-04
+  chapter_title: Typography
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：文案不得使用 IT nerd-speak、不得硬銷、不得以公司自誇為主；文案需能指出使用者 benefit 或工作方式改善。
+  chapter: ch-01
+  chapter_title: Strategy
+- module: Brand Strategy
+  criterion: AI 可檢查：願景文案需提到人、協作、速度或任意地點工作；不得只列產品名稱或功能。
+  chapter: ch-01-01
+  chapter_title: Brand Vision Statement
+- module: ''
+  criterion: AI 可檢查：受眾描述需包含 attitude 或 motivation；不得只用職稱、部門或公司規模。
+  chapter: ch-01-02
+  chapter_title: Shared Mindset and Positioning
+- module: Voice and Tone
+  criterion: AI 可檢查：避免 jargon、over-explain、ego claims；句子應短、明確，至少包含一個使用者價值。
+  chapter: ch-01-03
+  chapter_title: Brand Voice and Tone
+- module: Brand Strategy
+  criterion: AI 可檢查：logo 不得旋轉、拉伸、改比例、加效果、改字體、單獨使用 modifier；灰色 Google logo 高度不得小於 22px 或 0.175in。
+  chapter: ch-02
+  chapter_title: Brand Elements
+- module: Visual Identity
+  criterion: AI 可檢查：最近圖形元素與 logo 距離至少一個 x-height；不得動畫化 icon；Premier badge 僅限 contracted Premier Partners。
+  chapter: ch-02-01
+  chapter_title: Logo System
+- module: Color System
+  criterion: AI 可檢查：body copy 使用 Google for Work Gray；accent 使用 Google for Work Blue；不得從螢幕或列印品視覺匹配色彩。
+  chapter: ch-02-02
+  chapter_title: Color Palette
+- module: ''
+  criterion: AI 可檢查：若主詞已完成轉換，使用「has gone Google」；若描述正在發生的活動或趨勢，使用「is going Google」；creative assets 不得出現「Work the way you live」。
+  chapter: ch-02-03
+  chapter_title: Tagline and Vision Usage
+- module: Typography System
+  criterion: AI 可檢查：print 不得使用 Arial；Arial online only sparingly；headline 字級至少為 body 兩倍；行距為字級 1.2 倍。
+  chapter: ch-02-04
+  chapter_title: Typography
+chapters:
+- id: ch-01
+  title: Strategy
+  modules:
+  - Brand Strategy
+  - Voice and Tone
+  - Messaging
+  - Knowledge Architecture
+- id: ch-01-01
+  title: Brand Vision Statement
+  modules:
+  - Product Language
+  - Brand Strategy
+- id: ch-01-02
+  title: Shared Mindset and Positioning
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-01-03
+  title: Brand Voice and Tone
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+- id: ch-02
+  title: Brand Elements
+  modules:
+  - Legal and Trademark
+  - Typography System
+  - Color System
+  - Visual Identity
+- id: ch-02-01
+  title: Logo System
+  modules:
+  - Visual Identity
+  - Governance
+- id: ch-02-02
+  title: Color Palette
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-02-03
+  title: Tagline and Vision Usage
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Messaging
+- id: ch-02-04
+  title: Typography
+  modules:
+  - Layout System
+  - Typography System

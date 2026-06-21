@@ -1,0 +1,205 @@
+# L4 情境知識 — 產業 → 商業問題 / 強調模組 / 推薦決策卡
+# schema：research/schemas/context.schema.yaml
+#
+# 從 128 份語料歸納（evidence_brands 可回溯）。供 Design Strategy Agent 推理：
+# 客戶產業 → 典型商業問題 → 該強調哪些模組 → 匹配哪些決策卡。
+# 注意：產業只是「啟發式加權」，最終仍由 brand_type 與商業問題共同決定。
+
+kind: industry
+version: 1
+updated: "2026-06-21"
+
+entries:
+  - id: new_energy_mobility
+    label: 新能源與移動
+    aliases: [新能源, 電動車, EV, mobility, clean energy, 電動機車, 充電]
+    description: 新品類或科技密集的能源／移動品牌，市場教育成本高，需建立信任與未來敘事。
+    business_problems: [category_education, trust_in_new_tech, future_narrative, high_education_cost]
+    emphasize_modules: [Brand Strategy, Messaging, Photography System, Motion Identity, Visual Language]
+    de_emphasize_modules: []
+    recommended_patterns:
+      - dp-story-framework-category-education
+      - dp-system-toolkit-over-template
+    typical_archetypes: [full_brand_system, brand_experience_guide]
+    evidence_brands:
+      - LucidMotors
+      - Tesla_Guidelines_2010
+      - BCHydro_brand_guidelines_2019
+      - Volvo_2021_compressed
+    notes: 與汽車／航空等成熟移動品牌不同處在於「品類教育」與「未來感」權重更高。
+
+  - id: finance
+    label: 金融與支付
+    aliases: [金融, 銀行, fintech, 支付, payments, 投資, banking, 保險]
+    description: 受規範、以信任為核心的金融、銀行、支付與投資品牌。
+    business_problems: [trust, risk_communication, regulatory_compliance, consistency_across_partners]
+    emphasize_modules: [Governance, Compliance, Legal and Trademark, Brand Strategy, Color System]
+    de_emphasize_modules: [Motion Identity]
+    recommended_patterns:
+      - dp-restrained-palette-for-trust
+      - dp-one-brand-one-voice-governance
+      - dp-responsible-framing-for-regulated-category
+      - dp-palette-roles-and-usage-limits
+      - dp-compliance-copy-as-layout-system
+    typical_archetypes: [brand_experience_guide, multi_brand_architecture, corporate_toolkit]
+    evidence_brands:
+      - Santander_EN
+      - BNP_Brand_Pass_BD_2012
+      - PayU_ Brand_Guidelines_2021
+      - First_Bank_Brand_Guidelines_2021
+      - mojaloop_Brand_Guidelines_2020
+      - klarna_visual_identity_guidelines_2019
+      - Afterpay_Merchant_Guidelines_US_2020
+      - Stifel_brand_guidelines_2019
+      - MSCI_Brand_guidelines_2021
+      - DFPI_BrandGuidelines
+
+  - id: tech_software
+    label: 科技與軟體平台
+    aliases: [科技, 軟體, SaaS, 平台, tech, software, 雲端, 社群平台]
+    description: 數位優先的軟體、平台與生態系品牌，重視產品語言、合作夥伴與商標治理。
+    business_problems: [ecosystem_consistency, partner_governance, product_brand_boundary, trademark_protection]
+    emphasize_modules: [Visual Identity, Legal and Trademark, Governance, Product Language, Design Tokens]
+    de_emphasize_modules: []
+    recommended_patterns:
+      - dp-trademark-permission-flow
+      - dp-system-toolkit-over-template
+    typical_archetypes: [brand_experience_guide, product_design_system, multi_brand_architecture]
+    evidence_brands:
+      - Slack-Brand-Guidelines
+      - Discord_BrandGuideline_2021
+      - twitter_brand_guidelines_2020
+      - Facebook_Brand_Assets_Guide_2019
+      - ZOOM_2022
+      - TikTok_For_Business_Brand_Guidelines
+      - BC_BrandGuidelines_2020
+      - Microsoft_Xbox_brand_guidelines_2019
+
+  - id: luxury_premium
+    label: 奢侈與高端
+    aliases: [奢侈品, 精品, 高端, luxury, premium, 時尚]
+    description: 以工藝、傳承與稀缺性為價值的高端零售、時尚與房地產品牌。
+    business_problems: [craftsmanship, heritage, exclusivity, restraint]
+    emphasize_modules: [Visual Identity, Typography System, Photography System, Voice and Tone]
+    de_emphasize_modules: [Motion Identity]
+    recommended_patterns:
+      - dp-restraint-as-luxury-signal
+      - dp-editorial-typography-for-premium
+      - dp-name-usage-governance
+      - dp-palette-roles-and-usage-limits
+    typical_archetypes: [brand_experience_guide, full_brand_system]
+    evidence_brands:
+      - Harrods_Brand_Guidelines
+      - Coldwell_Banker_2020
+      - CalvinKlein_Logo&GraphicGuidelines_2017
+      - Michelin_DISTRIBUTOR_GUIDE_2019
+
+  - id: public_sector
+    label: 公共部門與城市品牌
+    aliases: [政府, 公共, 城市品牌, public sector, government, 市政, 國家品牌]
+    description: 政府、城市、國家推廣與公共機構品牌，需治理效力、可近用性與多單位一致。
+    business_problems: [public_trust, accessibility, multi_unit_consistency, bilingual_localization]
+    emphasize_modules: [Governance, Accessibility, Brand Architecture, Layout System]
+    de_emphasize_modules: []
+    recommended_patterns:
+      - dp-accessible-contrast-pairs
+      - dp-modular-manual-for-public-units
+      - dp-bilingual-identity-system
+    typical_archetypes: [brand_experience_guide, multi_brand_architecture]
+    evidence_brands:
+      - DFPI_BrandGuidelines
+      - Bern_Stadt_2021
+      - European_Committee_of_the_Regions_visual_identity_EN_2019
+      - MayorOfLondon_LOOK BOOK_2021
+      - NZ_Transport_Agency_brand_guidelines_2019
+      - Dubai_BRAND_GUIDELINES_2021
+      - I_amsterdam_Brand_Manual_EN_2019
+
+  - id: education
+    label: 教育與學術
+    aliases: [大學, 學校, 教育, university, education, 學術]
+    description: 大學與學術機構品牌，需在招生敘事與多附屬單位識別間取得平衡。
+    business_problems: [recruitment_narrative, sub_unit_identity, internal_governance]
+    emphasize_modules: [Brand Strategy, Brand Architecture, Governance, Photography System]
+    de_emphasize_modules: []
+    recommended_patterns:
+      - dp-modular-manual-for-public-units
+    typical_archetypes: [brand_experience_guide, full_brand_system]
+    evidence_brands:
+      - Berkeley_Brand_Manual_accessible_2019
+      - HKUST_BRAND_GUIDELINES_2022
+      - NIU_Brand_Identity_2022
+      - ulster_university_Brandbook
+      - Oxford_SU_Guidelines_v2a
+
+  - id: nonprofit_social
+    label: 非營利與社會使命
+    aliases: [非營利, NGO, 公益, 社會企業, nonprofit, mission-driven]
+    description: 以使命與社會影響驅動的組織，常用 origin story 與參與感建立認同。
+    business_problems: [mission_communication, participation, equity_inclusion, donor_trust]
+    emphasize_modules: [Brand Strategy, Messaging, Photography System, Accessibility]
+    de_emphasize_modules: []
+    recommended_patterns:
+      - dp-origin-story-before-rules
+      - dp-story-framework-category-education
+      - dp-inclusive-language-governance
+    typical_archetypes: [full_brand_system, brand_experience_guide]
+    evidence_brands:
+      - KABOOM_Brand Book_2020
+      - Consistent_communications_Brand_Guidelines_2018
+      - 2022_Special_Olympics_USA_Games_Brand_Guidelines_2020
+      - IBM_Be_Equal_2020
+      - Brickline_Greenway_Brand_Guidlines_2020
+
+  - id: media_entertainment
+    label: 媒體與娛樂
+    aliases: [媒體, 娛樂, 影視, media, entertainment, 串流, 出版]
+    description: 內容導向品牌，識別需服務內容、動態與多平台行為。
+    business_problems: [content_forward_identity, motion_behavior, multi_platform, partner_lockups]
+    emphasize_modules: [Motion Identity, Visual Language, Content Design, Layout System]
+    de_emphasize_modules: []
+    recommended_patterns:
+      - dp-content-forward-flexible-identity
+    typical_archetypes: [brand_experience_guide, product_design_system, campaign_touchpoint]
+    evidence_brands:
+      - National_Geographic_Style_Guide
+      - The_Economist_Group_2017
+      - Arte_ Social_Media_Style_Guide_2017
+      - F1_Master_Brand_Guidelines_2017
+      - PV_Branding_Guidelines_Logos_Lock_Ups._CB1539191655_
+      - Twitch_Guidelines_Speedrun_2021
+
+  - id: industrial_materials_science
+    label: 工業、材料與科學
+    aliases: [工業, 製造, 材料, 科學, B2B 製造, industrial, materials, bioscience]
+    description: 技術密集的工業、材料、科學與工程品牌，需把專業轉成可理解的人性利益。
+    business_problems: [technical_translation, b2b_credibility, system_consistency, trademark_protection]
+    emphasize_modules: [Brand Strategy, Voice and Tone, Visual Language, Legal and Trademark]
+    de_emphasize_modules: []
+    recommended_patterns:
+      - dp-from-to-voice-translation
+      - dp-system-toolkit-over-template
+    typical_archetypes: [full_brand_system, brand_experience_guide, corporate_toolkit]
+    evidence_brands:
+      - 3M_Visual_Identity_Guidelines_2015
+      - accoya_brand_guidelines_2015
+      - sartorius_Brand_Style_Guide_2020
+      - FluoroSeal_Brand_Guidelines_2021
+      - Laing O’Rourke_identity guidelines_2021
+      - Herman_Miller_Brand_Guidelines
+
+  - id: consumer_retail_hospitality
+    label: 消費、零售與餐旅
+    aliases: [零售, 餐飲, 旅館, 消費品, retail, hospitality, QSR, 觀光]
+    description: 面向大眾的消費、餐飲、零售與旅宿品牌，重視一致體驗與大量觸點治理。
+    business_problems: [touchpoint_consistency, mass_recognition, franchise_governance, cobranding]
+    emphasize_modules: [Visual Identity, Operations, Layout System, Photography System]
+    de_emphasize_modules: []
+    recommended_patterns:
+      - dp-cheatsheet-for-mass-touchpoints
+    typical_archetypes: [brand_experience_guide, corporate_toolkit, campaign_touchpoint]
+    evidence_brands:
+      - McDonalds_Feel_Good_Design_Cheatsheets_2019
+      - McDelivery_brandbook_2017
+      - accor_hotels_2015_compressed
+      - Heathrow_Brand_guidelines_2018

@@ -1,0 +1,61 @@
+# L3 決策卡 sidecar — FirstBank Corporate Identity Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: FirstBank_Corporate_Identity_Guidelines
+decisions:
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+    evidence:
+      - brand_id: FirstBank_Corporate_Identity_Guidelines
+        chapter: ch-01
+        excerpt: "clear zone 必須以 Dynamic Square 高度／矩形量測，並以 logo 內部幾何元素作為所有比例量測基準，是可跨尺寸複用的 identity pattern。"
+    status: extracted
+
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 先建立「誰在說話」的判斷層，再以 umbrella → member → VPU/GP → lockup → special case 的層級把組織結構視覺化
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - 大型系統可用「可辨識但不獨立」的 secondary line 管理內部單位
+      - 任何多實體品牌系統都需要先建立「誰在說話」的判斷層，再談 logo 放置
+    applicable_when:
+      industries: [public_sector, education, finance]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [multi_unit_consistency, multi_entity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 各單位自行創造分支品牌與專屬 tagline
+      - 只列 logo 圖檔卻不給「何時用 umbrella、何時用單一機構」的判斷規則
+    evidence:
+      - brand_id: FirstBank_Corporate_Identity_Guidelines
+        chapter: ch-03
+        excerpt: "Product and Service Brand Architecture 以 endorsed flexibility 管理既有與未來產品命名：未來名稱採 DESCRIPTOR followed by FIRST、FIRST 用 corporate identity font、產品 logo 採 70/30 藍金比例；品牌架構不只定義理想狀態，也要治理歷史例外與未來命名。"
+      - brand_id: FirstBank_Corporate_Identity_Guidelines
+        chapter: ch-02
+        excerpt: "SSA market 以例外表管理跨國市場的命名、語言、象徵物與社群 avatar，避免市場擴張破壞主品牌，而不是讓在地團隊自行詮釋。"
+    status: extracted

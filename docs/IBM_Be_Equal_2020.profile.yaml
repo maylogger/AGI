@@ -1,0 +1,299 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: IBM_Be_Equal_2020
+index_ref: docs/IBM_Be_Equal_2020.index.yaml
+note_ref: docs/IBM_Be_Equal_2020.note.md
+archetype: campaign_touchpoint
+industry: nonprofit_social
+modules:
+- Brand Strategy
+- Messaging
+- Operations
+- Governance
+- Content Safety
+- Visual Identity
+- Measurement
+- Layout System
+- Typography System
+- Color System
+- Legal and Trademark
+- AI-Checkable Rules
+- Design Tokens
+- Content Design
+- Voice and Tone
+- Photography System
+- Product Language
+- Motion Identity
+- Visual Language
+- Examples
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 5
+  section_count: 9
+chapter_sequence:
+- id: ch-01
+  title: Ambition
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Context and Brand Promise
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Pillars, Behaviors and Communities
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Allies, Partner Program and Social Strategy
+  order: 3
+  level: 2
+- id: ch-02
+  title: Expression
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo, Logotype and Community IDs
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Color and Patterns
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Typography, Translations and Voice
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Composition, Portraiture and Photo Overlays
+  order: 4
+  level: 2
+- id: ch-03
+  title: Digital
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Website, Online Presence and Podcast
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Motion and B.E. Communities
+  order: 2
+  level: 2
+- id: ch-04
+  title: Physical
+  order: 4
+  level: 1
+- id: ch-05
+  title: Advice and Resources
+  order: 5
+  level: 1
+frameworks:
+- name: '`expand / enable / ensure`，對應 acceptance、allyship、accountability，並以個人、社群、夥伴與公共平台形成擴散階層'
+  chapter: ch-01
+  chapter_title: Ambition
+- name: 歷史證據 + 語義拆解 + 品牌承諾三段式
+  chapter: ch-01-01
+  chapter_title: Context and Brand Promise
+- name: 支柱對行為、社群對識別、社群再對資產
+  chapter: ch-01-02
+  chapter_title: Pillars, Behaviors and Communities
+- name: ally lifecycle、partner scaling、calendar drumbeat
+  chapter: ch-01-03
+  chapter_title: Allies, Partner Program and Social Strategy
+- name: 母品牌語彙 + 社群變體 + 可及性色彩 + 2x Grid
+  chapter: ch-02
+  chapter_title: Expression
+- name: logo、logotype、community ID 三層識別
+  chapter: ch-02-01
+  chapter_title: Logo, Logotype and Community IDs
+- name: IBM 色票 -> Be Equal 色值 -> 組合規則 -> 社群 pattern
+  chapter: ch-02-02
+  chapter_title: Color and Patterns
+- name: statement、first-person quote、numbers 三種文字模組
+  chapter: ch-02-03
+  chapter_title: Typography, Translations and Voice
+- name: grid composition、portrait protocol、overlay palette
+  chapter: ch-02-04
+  chapter_title: Composition, Portraiture and Photo Overlays
+- name: global home、shareable assets、sonic identity、community subsystem
+  chapter: ch-03
+  chapter_title: Digital
+- name: home base + prepared assets + audio channel
+  chapter: ch-03-01
+  chapter_title: Website, Online Presence and Podcast
+- name: motion principle + community asset set
+  chapter: ch-03-02
+  chapter_title: Motion and B.E. Communities
+- name: event touchpoint、poster system、merchandise system
+  chapter: ch-04
+  chapter_title: Physical
+- name: role-based approval + resource hub + feedback channel
+  chapter: ch-05
+  chapter_title: Advice and Resources
+patterns:
+- name: 品牌承諾 -> 行為 -> 社群 -> 參與機制 -> 傳播節奏
+  chapter: ch-01
+  chapter_title: Ambition
+- name: 以企業歷史背書社會倡議，並用簡短承諾統一所有 touchpoint。
+  chapter: ch-01-01
+  chapter_title: Context and Brand Promise
+- name: 先定義社群模型，再給每個社群專屬視覺變體。
+  chapter: ch-01-02
+  chapter_title: Pillars, Behaviors and Communities
+- name: 以年度文化節點建立持續內容節奏。
+  chapter: ch-01-03
+  chapter_title: Allies, Partner Program and Social Strategy
+- name: 用既有設計語言生成子品牌，避免另起爐灶。
+  chapter: ch-02
+  chapter_title: Expression
+- name: 歷史符號重用成現代倡議標誌。
+  chapter: ch-02-01
+  chapter_title: Logo, Logotype and Community IDs
+- name: 用 grid-based pattern 將社群差異轉成系統化視覺資產。
+  chapter: ch-02-02
+  chapter_title: Color and Patterns
+- name: Be + active adjective/verb-like phrase
+  chapter: ch-02-03
+  chapter_title: Typography, Translations and Voice
+- name: 用共同肖像規格 + 個人可選 palette 兼顧民主化與個別性。
+  chapter: ch-02-04
+  chapter_title: Composition, Portraiture and Photo Overlays
+- name: 每個社群擁有一致母架構下的專屬頁面與素材。
+  chapter: ch-03
+  chapter_title: Digital
+- name: 以內容平台支撐品牌平台。
+  chapter: ch-03-01
+  chapter_title: Website, Online Presence and Podcast
+- name: 母品牌 motion token 搭配社群視覺變體。
+  chapter: ch-03-02
+  chapter_title: Motion and B.E. Communities
+- name: 活動環境 + 可列印素材 + wearable merchandise。
+  chapter: ch-04
+  chapter_title: Physical
+- name: 在 guideline 末尾提供 escalation map。
+  chapter: ch-05
+  chapter_title: Advice and Resources
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: 敘述 Be Equal 時應同時保留 `expand`、`enable`、`ensure`；不得把承諾縮減成單一公益訴求。
+  chapter: ch-01-01
+  chapter_title: Context and Brand Promise
+- module: Brand Strategy
+  criterion: 內容應包含 inclusive、allyship、accountability 等行為；社群資產不得以未列入的自創標語取代 approved system。
+  chapter: ch-01-02
+  chapter_title: Pillars, Behaviors and Communities
+- module: ''
+  criterion: Ally 申請需具備社群 gateway、badge、250 字 allyship 文字、同事背書、訂閱與社群推廣；年度傳播應對齊已定義 D&I 節點。
+  chapter: ch-01-03
+  chapter_title: Allies, Partner Program and Social Strategy
+- module: ''
+  criterion: logo/logotype 可獨立使用；一起出現時 logotype 在上方或左側；logo/logotype 只可用於 60 或 40 色值；不得使用同色系或同色值組合。
+  chapter: ch-02
+  chapter_title: Expression
+- module: Visual Identity
+  criterion: 不得建立正式 lockup；共同出現時相對尺寸需互相對應，且 logotype 應在 logo 上方或左側。
+  chapter: ch-02-01
+  chapter_title: Logo, Logotype and Community IDs
+- module: Color System
+  criterion: 不得兩色來自同色系；不得兩色同色值；logo/logotype 不得放在非 60/40 色值上；背景為色彩時 logo/logotype 僅能黑白高對比。
+  chapter: ch-02-02
+  chapter_title: Color and Patterns
+- module: Typography System
+  criterion: Plex Sans Bold 保留給 Be... statements、Communities 與 logotype；Be... statements 不得在沒有 Be Equal 的情境單獨出現；不得為單一社群創造未核准
+    headline、tagline 或 slogan。
+  chapter: ch-02-03
+  chapter_title: Typography, Translations and Voice
+- module: ''
+  criterion: 所有視覺元素與 typography 應依 IBM 2x Grid；portrait 是 portraits 不是 headshots；overlay 應使用已建立的社群覆層。
+  chapter: ch-02-04
+  chapter_title: Composition, Portraiture and Photo Overlays
+- module: Motion Identity
+  criterion: 動畫應以 upward action 為主；社群素材應維持各自 community pattern 與 palette。
+  chapter: ch-03-02
+  chapter_title: Motion and B.E. Communities
+chapters:
+- id: ch-01
+  title: Ambition
+  modules:
+  - Brand Strategy
+  - Messaging
+  - Operations
+  - Governance
+- id: ch-01-01
+  title: Context and Brand Promise
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-01-02
+  title: Pillars, Behaviors and Communities
+  modules:
+  - Content Safety
+  - Visual Identity
+  - Governance
+- id: ch-01-03
+  title: Allies, Partner Program and Social Strategy
+  modules:
+  - Measurement
+  - Operations
+  - Governance
+- id: ch-02
+  title: Expression
+  modules:
+  - Layout System
+  - Typography System
+  - Color System
+  - Visual Identity
+- id: ch-02-01
+  title: Logo, Logotype and Community IDs
+  modules:
+  - Legal and Trademark
+  - Visual Identity
+- id: ch-02-02
+  title: Color and Patterns
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Design Tokens
+- id: ch-02-03
+  title: Typography, Translations and Voice
+  modules:
+  - Typography System
+  - Content Design
+  - Voice and Tone
+- id: ch-02-04
+  title: Composition, Portraiture and Photo Overlays
+  modules:
+  - Photography System
+  - Layout System
+- id: ch-03
+  title: Digital
+  modules:
+  - Product Language
+  - Motion Identity
+  - Operations
+- id: ch-03-01
+  title: Website, Online Presence and Podcast
+  modules:
+  - Content Design
+  - Operations
+- id: ch-03-02
+  title: Motion and B.E. Communities
+  modules:
+  - Visual Language
+  - Motion Identity
+- id: ch-04
+  title: Physical
+  modules:
+  - Examples
+  - Operations
+  - Visual Identity
+- id: ch-05
+  title: Advice and Resources
+  modules:
+  - Operations
+  - Governance

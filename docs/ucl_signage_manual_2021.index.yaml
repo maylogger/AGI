@@ -1,0 +1,149 @@
+title: "UCL Signage Guide Manual 2021"
+source: "sources/ucl_signage_manual_2021.pdf"
+version: "2"
+date: "2021-03-11"
+language: "en"
+summary: "UCL Estates 的校園導視與標牌系統手冊，涵蓋品牌、流程、一般規則、標牌類型、模板、無障礙、永續、供應商與製造安裝規格。"
+chapters:
+  - id: "ch-00"
+    title: "Introduction"
+    level: 1
+    order: 0
+    pages: "4"
+    summary: "說明 UCL 導視需在新舊建築中維持一致外觀與內容，並規定住宅 estate 以外均需遵守。"
+  - id: "ch-01"
+    title: "Brand"
+    level: 1
+    order: 1
+    pages: "5-11"
+    summary: "定義 UCL signage 的 logo strip、色彩、icon family 與 Arial MT 字體規則。"
+    children:
+      - id: "ch-01-01"
+        title: "Logo"
+        level: 2
+        order: 1
+        pages: "7"
+        summary: "規定 UCL branding strip 色彩、library exception、white pictogram 與不可改變的元素尺寸。"
+      - id: "ch-01-02"
+        title: "Colours"
+        level: 2
+        order: 2
+        pages: "8"
+        summary: "定義 NEXTEL Suede Dove Blue、白字與 six-colour range，並以 LRV contrast 支撐可讀性。"
+      - id: "ch-01-03"
+        title: "Icons"
+        level: 2
+        order: 3
+        pages: "9-10"
+        summary: "列出 internal/external icon family，並要求新增 icon 需由 communications department 同意。"
+      - id: "ch-01-04"
+        title: "Typeface"
+        level: 2
+        order: 4
+        pages: "11"
+        summary: "規定 signage 使用 Arial MT Medium/Light、句首大寫和範本中的固定字級。"
+  - id: "ch-02"
+    title: "Process for Wayfinding Signage"
+    level: 1
+    order: 2
+    pages: "12-16"
+    summary: "依專案複雜度分為 Type A/B/C，並定義 standard 與 non-standard signage 的採購、設計、審核與製造流程。"
+  - id: "ch-03"
+    title: "General Rules"
+    level: 1
+    order: 3
+    pages: "17-24"
+    summary: "規範 naming、floor levels、arrows、alignment 與 third party logos，避免過度標示並維持路徑連續性。"
+    children:
+      - id: "ch-03-01"
+        title: "Naming"
+        level: 2
+        order: 1
+        pages: "18"
+        summary: "要求以目的地階層與 reverse address approach 編輯資訊，且 accessible routes 必須清楚顯示。"
+      - id: "ch-03-02"
+        title: "Floor Levels"
+        level: 2
+        order: 2
+        pages: "19"
+        summary: "規定 G、1、2 與 -1、-2 為預設樓層命名，變更需與 Estates CAD Manager 討論。"
+      - id: "ch-03-03"
+        title: "Arrows and Alignment"
+        level: 2
+        order: 3
+        pages: "20-22"
+        summary: "規定統一 arrow type、禁止 down/right-angled arrows，並依方向決定文字與箭頭排列。"
+      - id: "ch-03-04"
+        title: "Third Party Logos"
+        level: 2
+        order: 4
+        pages: "23-24"
+        summary: "處理第三方 logo 在 UCL 導視中的限制與例外。"
+  - id: "ch-04"
+    title: "Sign Types"
+    level: 1
+    order: 4
+    pages: "25-48"
+    summary: "定義 internal/external sign families、reception signs、vinyl graphics、lectern wrapping、digital signage、hoardings、donor plaques 與 manifestations。"
+  - id: "ch-05"
+    title: "Sign Templates"
+    level: 1
+    order: 5
+    pages: "49-113"
+    summary: "提供 internal sign family、special variations 與 external sign family 的尺寸、字體、色彩、用途與模板警示。"
+    children:
+      - id: "ch-05-01"
+        title: "Internal Sign Family"
+        level: 2
+        order: 1
+        pages: "50-83"
+        summary: "列出 A1、A3、C、D、E、J、K、M、O、P、Q 等內部標牌尺寸、字級與用途。"
+      - id: "ch-05-02"
+        title: "Special Variations"
+        level: 2
+        order: 2
+        pages: "84"
+        summary: "處理特殊變體與非標準需求。"
+      - id: "ch-05-03"
+        title: "External Sign Family"
+        level: 2
+        order: 3
+        pages: "85-101"
+        summary: "定義 external map signs、外部色彩與 monolith/wall-mounted/building signs 的尺寸用途。"
+  - id: "ch-06"
+    title: "Accessibility"
+    level: 1
+    order: 6
+    pages: "101-113"
+    summary: "摘錄 BS8300 Section 12，規範 x-height、visual contrast、tactile/Braille、raised lettering 與 induction loops。"
+  - id: "ch-07"
+    title: "Recycling & Sustainability"
+    level: 1
+    order: 7
+    pages: "114-116"
+    summary: "規範回收標誌、UCL 標準 waste stream signage、重用優先與 recycled content/material certification。"
+  - id: "ch-08"
+    title: "Approved Companies & Contacts"
+    level: 1
+    order: 8
+    pages: "117-118"
+    summary: "規定 MSS internal signage 只可由 UCL approved suppliers 製造安裝，並列出 CAM、Estates、Digital Signage、Accessibility 聯絡窗口。"
+  - id: "ch-09"
+    title: "Sign Specification"
+    level: 1
+    order: 9
+    pages: "119-126"
+    summary: "定義 MSS internal signs、材料與色彩、mapping manufacture、典型組件、安裝規則、placement heights 與 external signs 工程規格。"
+    children:
+      - id: "ch-09-01"
+        title: "Internal Signs"
+        level: 2
+        order: 1
+        pages: "120-124"
+        summary: "說明 MSS dovetailed aluminium extrusion 系統、顏色、mapping manufacture、survey、mounting、spacer、maintenance 與 placement heights。"
+      - id: "ch-09-02"
+        title: "External Signs"
+        level: 2
+        order: 2
+        pages: "125-126"
+        summary: "提供外部 illuminated map point、wall mounted signs、fixing details 與材料/照明規格。"

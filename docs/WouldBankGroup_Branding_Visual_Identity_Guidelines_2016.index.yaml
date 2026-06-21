@@ -1,0 +1,163 @@
+title: 'World Bank Group Branding and Visual Identity Guidelines'
+source: 'sources/WouldBankGroup_Branding_Visual_Identity_Guidelines_2016.pdf'
+version: 'February 2016'
+date: '2016-02'
+language: 'en'
+summary: '這份指南建立 World Bank Group 的 umbrella brand、成員機構 logo、合作品牌、使用範例與出版物標準，讓多機構、多產品與多夥伴情境能維持一致的品牌治理。'
+chapters:
+  - id: 'ch-01'
+    title: 'Defining the Brand'
+    level: 1
+    order: 1
+    pages: '7-8'
+    summary: '說明 WBG 作為五個機構的整合品牌，以及所有素材需從官方資產庫取得。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Understanding the World Bank Group'
+        level: 2
+        order: 1
+        pages: '7'
+        summary: '把 WBG 品牌定位為共同策略與成員機構能力的整合表徵。'
+      - id: 'ch-01-02'
+        title: 'Access All WBG Branding Assets Online'
+        level: 2
+        order: 2
+        pages: '8'
+        summary: '指定 WBGVisuals 為 logo 與模板的唯一標準來源。'
+  - id: 'ch-02'
+    title: 'Visual Identity'
+    level: 1
+    order: 2
+    pages: '9-22'
+    summary: '定義 WBG logo、globe、色彩、字體、最小尺寸、clear zone 與可用版本。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Logos Overview and Distinction'
+        level: 2
+        order: 1
+        pages: '10-11'
+        summary: '建立 WBG logo 與各成員機構 logo 的使用判斷：共同聲音用 WBG，單一機構活動用該機構。'
+      - id: 'ch-02-02'
+        title: 'WBG Logo and Globe'
+        level: 2
+        order: 2
+        pages: '12-16'
+        summary: '規範 globe 不可單獨拆出為主視覺、logo 元件不可更改，並列出版本與檔名。'
+      - id: 'ch-02-03'
+        title: 'Corporate Colors'
+        level: 2
+        order: 3
+        pages: '17-19'
+        summary: '提供 corporate blue、black、white、process cyan 與 secondary palette 的印刷與數位數值。'
+      - id: 'ch-02-04'
+        title: 'Fonts'
+        level: 2
+        order: 4
+        pages: '20-22'
+        summary: '指定 Andes 與 Arial 作為 logo 字體系統，支援多語與文件環境。'
+  - id: 'ch-03'
+    title: 'Partnered Brands and Logo Variations'
+    level: 1
+    order: 3
+    pages: '23-33'
+    summary: '建立 umbrella、成員機構、VPU、Global Practice、integrated entities、multi-entity lockup 與 special case 的品牌層級。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Logo Hierarchy'
+        level: 2
+        order: 1
+        pages: '24'
+        summary: '把組織品牌分為 umbrella、member institution、VPU、integrated entities 與 multiple-entity lockups。'
+      - id: 'ch-03-02'
+        title: 'Institution Seals and Member Brands'
+        level: 2
+        order: 2
+        pages: '25-27'
+        summary: '區分 seals 與 promotional logos，並規範成員機構與 VPU distinction 的可用方式。'
+      - id: 'ch-03-03'
+        title: 'Integrated Entities and Special Cases'
+        level: 2
+        order: 3
+        pages: '28-33'
+        summary: '規範 Global Practices、CCSAs、integrated VPUs、IFC visibility 與 IEG/Treasury 等例外。'
+  - id: 'ch-04'
+    title: 'Partnerships and Products Branding'
+    level: 1
+    order: 4
+    pages: '35-47'
+    summary: '把合作與產品品牌分成三類，並規範 unifier、合作頁面、簡報、報告、社群與活動素材使用。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Category System and Unifiers'
+        level: 2
+        order: 1
+        pages: '36-37'
+        summary: '用 Category 1/2/3 判斷合作是否可有自有 logo，以及 WBG unifier 應如何表明角色。'
+      - id: 'ch-04-02'
+        title: 'Category 1 Partnerships'
+        level: 2
+        order: 2
+        pages: '38-41'
+        summary: '規範 cobranding partnership 可使用獨立視覺，但需平衡合作 logo 與 WBG unifier。'
+      - id: 'ch-04-03'
+        title: 'Category 2 Partnerships'
+        level: 2
+        order: 3
+        pages: '42-44'
+        summary: '規範 WBG-managed programs 不建立自有 logo，主要依附 worldbank.org 與 WBG 格式。'
+      - id: 'ch-04-04'
+        title: 'Category 3 Products'
+        level: 2
+        order: 4
+        pages: '45-47'
+        summary: '規範外部導向產品可有自有表現，但必須以 WBG 或成員機構 unifier 維持歸屬。'
+  - id: 'ch-05'
+    title: 'Usage Examples'
+    level: 1
+    order: 5
+    pages: '48-66'
+    summary: '用簡報、backdrop、banner、名片、e-signature、fact sheet、網站、社群、旗幟與錯誤示例展示品牌落地方式。'
+    children:
+      - id: 'ch-05-01'
+        title: 'Templates and Business Communications'
+        level: 2
+        order: 1
+        pages: '48-58'
+        summary: '提供簡報、banner、名片、e-signature、fact sheet、PowerPoint 與 stationery 的使用樣板。'
+      - id: 'ch-05-02'
+        title: 'Digital, Social and Special Uses'
+        level: 2
+        order: 2
+        pages: '59-65'
+        summary: '規範網站 header/footer、社群 logo/globe 使用、special initiatives、flags 與 gifts。'
+      - id: 'ch-05-03'
+        title: 'Logo Usage Violations'
+        level: 2
+        order: 3
+        pages: '66'
+        summary: '列出不可改 logo、不可建立未授權 logo、不可拆解元件或沿用過期 logo。'
+  - id: 'ch-06'
+    title: 'Publications'
+    level: 1
+    order: 6
+    pages: '67-74'
+    summary: '規範書籍與出版品上的 logo 選擇、封面/封底/書脊/標題頁位置、色彩版本與尺寸。'
+    children:
+      - id: 'ch-06-01'
+        title: 'Logo Placement'
+        level: 2
+        order: 1
+        pages: '68-71'
+        summary: '定義封面、封底、書脊與標題頁的 logo 位置與合作 logo 處理。'
+      - id: 'ch-06-02'
+        title: 'Logo Color and Size'
+        level: 2
+        order: 2
+        pages: '72-73'
+        summary: '規範出版物中藍色、黑色與反白 logo 的使用情境，以及最小/最大尺寸。'
+      - id: 'ch-06-03'
+        title: 'Usage Samples'
+        level: 2
+        order: 3
+        pages: '74'
+        summary: '用 flagship report 與 reference book 展示 WBG-only branding 的出版治理。'

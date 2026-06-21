@@ -1,0 +1,83 @@
+title: 'European Committee of the Regions Visual identity guidelines'
+source: 'sources/European_Committee_of_the_Regions_visual_identity_EN_2019.pdf'
+version: 'June 2019'
+date: '2019-06'
+language: 'en'
+summary: '這份文件規範 European Committee of the Regions 的 logo、graphic line、印刷媒體、電子媒體與 commissions 子識別系統。'
+chapters:
+  - id: 'ch-01'
+    title: 'Visual elements'
+    level: 1
+    order: 1
+    pages: '8-25'
+    summary: '建立 CoR logo、語言版本、比例、色彩、clear space、misuse、typography、white diamond 與 grid system。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Logo'
+        level: 2
+        order: 1
+        pages: '8-18'
+        summary: '規範 logo 組成、24 種 EU 語言版本、比例、色彩、clear space、背景、最小尺寸、mute logo、misuse 與 co-branding。'
+      - id: 'ch-01-02'
+        title: 'Graphic Line'
+        level: 2
+        order: 2
+        pages: '19-25'
+        summary: '規範 Myriad Pro/Minion Pro、Office 替代字體、標題比例、white diamond shape、grid system 與 partner/event co-branding。'
+  - id: 'ch-02'
+    title: 'Printed media'
+    level: 1
+    order: 2
+    pages: '28-60'
+    summary: '將識別系統套用到 stationery、publications、posters、badges、roll-ups、infographics、factsheets 與 political group publications。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Stationery'
+        level: 2
+        order: 1
+        pages: '28-38'
+        summary: '規範 letterhead、business card、compliment card、invitation、envelopes、email signature、document folder、notepads、slides 與 promotional items。'
+      - id: 'ch-02-02'
+        title: 'CoR Publications'
+        level: 2
+        order: 2
+        pages: '40-60'
+        summary: '規範 brochure、leaflet、poster、signpost、badges、roll-ups、infographics、factsheets 與政治團體出版物的 grid 與例子。'
+  - id: 'ch-03'
+    title: 'Electronic media'
+    level: 1
+    order: 3
+    pages: '64-77'
+    summary: '定義網站桌機/平板/手機、社群平台、web banners、posts、infographics teaser、press release 與 daily press review。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Website'
+        level: 2
+        order: 1
+        pages: '64-66'
+        summary: '規範 desktop home、secondary pages、tablet 與 smartphone 的 column、gutter、container 與樣式標註。'
+      - id: 'ch-03-02'
+        title: 'Social media and press'
+        level: 2
+        order: 2
+        pages: '67-77'
+        summary: '規範社群 logo 背景、quote/image visuals、platform dimensions、press release 與 daily press review 樣式。'
+  - id: 'ch-04'
+    title: 'Commissions of the CoR'
+    level: 1
+    order: 4
+    pages: '80-106'
+    summary: '為六個 CoR commissions 建立各自顏色與 layout structure，並延伸至 stationery、publications、electronic media 與 conferences。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Visual identity of CoR commissions'
+        level: 2
+        order: 1
+        pages: '80-81'
+        summary: '用 commission 色彩與 diamond-based layout 讓子品牌有差異又保持 CoR 主識別連結。'
+      - id: 'ch-04-02'
+        title: 'Commission applications'
+        level: 2
+        order: 2
+        pages: '82-106'
+        summary: '將 commission identity 套用到 folders、roll-ups、slides、brochures、studies、opinion leaflets、social posts 與 conference materials。'

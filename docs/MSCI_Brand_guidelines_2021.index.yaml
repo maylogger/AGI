@@ -1,0 +1,80 @@
+title: "MSCI Brand Guidelines"
+source: "sources/MSCI_Brand_guidelines_2021.pdf"
+date: "2021"
+language: "en"
+summary: "MSCI 的企業品牌規範，從 logo 與色彩 token 延伸到 iconography、UX accessibility/SEO、影音與動畫製作流程。"
+chapters:
+  - id: "ch-01"
+    title: "The Logo"
+    level: 1
+    order: 1
+    pages: "3-7"
+    summary: "介紹 MSCI logo、Nexus 與主要色彩，並列出 one-color reversed/black 版本。"
+  - id: "ch-02"
+    title: "Logo Usage"
+    level: 1
+    order: 2
+    pages: "8-13"
+    summary: "定義 clear space、禁用改色/變形/效果、Nexus 使用限制、第三方 co-branding 與 partner logo。"
+    children:
+      - id: "ch-02-01"
+        title: "Clear Space and Misuse"
+        level: 2
+        order: 1
+        pages: "9-11"
+        summary: "logo 周圍需保留 mark inner square 清除空間，且不得替換顏色、扭曲、加效果或自行改版。"
+      - id: "ch-02-02"
+        title: "Third Party and Partner Logo"
+        level: 2
+        order: 2
+        pages: "12-13"
+        summary: "co-branding 需等重、保持 exclusion zones，並由 MSCI Marketing 核准。"
+  - id: "ch-03"
+    title: "Typography"
+    level: 1
+    order: 3
+    pages: "14-18"
+    summary: "指定 Roboto、Merriweather、Arial 與東亞/阿拉伯系統字體在 print、digital、email 與多語環境中的角色。"
+  - id: "ch-04"
+    title: "Color"
+    level: 1
+    order: 4
+    pages: "19-38"
+    summary: "提供 primary、secondary、optional tints、greyscale 色票與 tint ladders，並包含文字與 logo positioning 的對比建議。"
+  - id: "ch-05"
+    title: "Graphic Accents"
+    level: 1
+    order: 5
+    pages: "39-41"
+    summary: "以全球連結感 pattern 作為品牌材質與圖形紋理。"
+  - id: "ch-06"
+    title: "Iconography"
+    level: 1
+    order: 6
+    pages: "42-50"
+    summary: "規範 icon 含義固定、不得自行創作或取自網路，並定義 solid/outline、尺寸、版面、stroke 與 digital icon 簡化原則。"
+  - id: "ch-07"
+    title: "Best Practices for User Experience (UX)"
+    level: 1
+    order: 7
+    pages: "51-53"
+    summary: "提供 SEO、web writing、CTA、image performance、alt text、video caption/transcript 與 accessibility 建議。"
+  - id: "ch-08"
+    title: "Videography"
+    level: 1
+    order: 8
+    pages: "54-63"
+    summary: "規範 logo bug、supers、boilerplate、script/storyboard、拍攝、燈光、音樂、voiceover、caption 與 animation/motion graphics。"
+    children:
+      - id: "ch-08-01"
+        title: "Corporate Video Production"
+        level: 2
+        order: 1
+        pages: "59-61"
+        summary: "以 script/storyboard、長度、受眾、拍攝、音訊、燈光與品牌一致性治理企業影片。"
+      - id: "ch-08-02"
+        title: "Animation and Motion Graphics"
+        level: 2
+        order: 2
+        pages: "62-63"
+        summary: "依目標、受眾、上架位置、旅程階段與內容類型選擇動畫形式與長度。"

@@ -1,0 +1,84 @@
+# L3 決策卡 sidecar — I LOVE NEW YORK Brand Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: ILoveNY_brand_guidelines_2008
+decisions:
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+    evidence:
+      - brand_id: ILoveNY_brand_guidelines_2008
+        chapter: ch-02-04
+        excerpt: "clearspace 等於 heart icon 高度；logo 必須原樣使用，不得重建、裁切、非等比縮放或旋轉，留白以標誌自身元素（愛心）為量測單位。"
+    status: extracted
+
+  - id: dp-trademark-permission-flow
+    title: 用授權閘門治理第三方商標使用，先處理混淆與背書風險
+    problem:
+      statement: 平台品牌被大量第三方使用商標與資產，若無授權流程，會造成商標混淆與誤導性背書風險。
+      signals: [trademark_protection, partner_governance, endorsement_risk, third_party_usage]
+    solution:
+      module: Legal and Trademark
+      move: 以「核准來源 + 允許情境 + 禁止改作 + permission gate」治理，高風險情境須送審並附最終版本、描述與 script
+      layer: governance
+    reason:
+      - 平台品牌 guideline 應優先處理 trademark confusion 與 endorsement risk，再處理美學一致
+      - 越有名的公共品牌越需要權限治理
+      - 外部夥伴指南應以媒介分類規範，而非只提供一般原則
+    applicable_when:
+      industries: [tech_software, public_sector]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [third_party_usage, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Legal and Trademark]
+      enables: [Governance]
+    anti_patterns:
+      - 只給視覺規格而無使用情境風險表與審核材料清單
+      - 放任第三方自行判斷法律與背書風險
+    evidence:
+      - brand_id: ILoveNY_brand_guidelines_2008
+        chapter: ch-03-01
+        excerpt: "任何形式、任何地方使用 I LOVE NEW YORK logo 均需 I LOVE NEW YORK office 核准；不存在 blanket policy；seasonal logos 只能用於核准專案、只能用 black/red 並使用提供的 scalable art。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - co-branding layout 可用位置、尺寸與不可插入區域明確治理
+    applicable_when:
+      industries: [finance, tech_software, public_sector]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: ILoveNY_brand_guidelines_2008
+        chapter: ch-03-03
+        excerpt: "Travel Guide cover 只能使用 supplied logo with Another reason lock-up；I LOVE NEW YORK logo 放右上、county/region logo 或名稱放左側或左上，兩者之間不得出現圖形元素，以位置與不可插入區域治理共同品牌版面。"
+    status: extracted

@@ -1,0 +1,155 @@
+title: "Guideline No 5. Detailing the CI Basics for Official BMW Clubs"
+source: "sources/BMW_Clubs_2020.pdf"
+version: "2.0.10"
+date: "October 2020"
+language: "en"
+summary: "BMW 官方俱樂部 CI 指南，針對官方 BMW Clubs 的命名、signet、club logo、identifier、視覺世界、商品、數位媒體、印刷與會員識別制定全球一致規範。"
+chapters:
+  - id: "ch-01"
+    title: "What You Will Learn"
+    level: 1
+    order: 1
+    pages: "3-4"
+    summary: "說明官方 BMW Clubs 作為品牌 ambassadors 的責任、規範義務與六項重點。"
+    children:
+      - id: "ch-01-01"
+        title: "Purpose and At a Glance"
+        level: 2
+        order: 1
+        pages: "3-4"
+        summary: "建立 premium claim、official identifier、trademark protection 與 imagery quality 原則。"
+  - id: "ch-02"
+    title: "Basics"
+    level: 1
+    order: 2
+    pages: "5-9"
+    summary: "說明 2020 新 BMW symbol、全球一致外觀、俱樂部個別差異與商標保護。"
+    children:
+      - id: "ch-02-01"
+        title: "Consistent Appearance"
+        level: 2
+        order: 1
+        pages: "6-7"
+        summary: "以全球 logo 系統讓官方俱樂部可辨識，同時保留 signet 差異。"
+      - id: "ch-02-02"
+        title: "New BMW Symbol and Protection"
+        level: 2
+        order: 2
+        pages: "8-9"
+        summary: "規範新 symbol 過渡期限、官方檔案使用與 wordmark/symbol 禁止用法。"
+  - id: "ch-03"
+    title: "Guideline"
+    level: 1
+    order: 3
+    pages: "10-19"
+    summary: "詳細規範 BMW Club name、signet、club logo、pairing、尺寸、位置、複製技術與 identifier。"
+    children:
+      - id: "ch-03-01"
+        title: "Naming and Signet"
+        level: 2
+        order: 1
+        pages: "11-12"
+        summary: "將多語、多類型俱樂部名稱轉為一致命名規則，並限制 signet 內容。"
+      - id: "ch-03-02"
+        title: "BMW Club Logo Construction"
+        level: 2
+        order: 2
+        pages: "13-15"
+        summary: "以 BMW symbol diameter x 定義字級、行距、線寬、signet 比例與 pairing。"
+      - id: "ch-03-03"
+        title: "Application Size, Position and Identifier"
+        level: 2
+        order: 3
+        pages: "16-19"
+        summary: "定義各媒體尺寸、角落定位、1.5x clear space、複製技術與 Official BMW Club identifier。"
+  - id: "ch-04"
+    title: "Visual World"
+    level: 1
+    order: 4
+    pages: "20"
+    summary: "規範 imagery 必須真實、有力量、活力且高品質，禁止事故、故障、政治、種族或性別歧視內容。"
+    children:
+      - id: "ch-04-01"
+        title: "Imagery Quality and Content Boundaries"
+        level: 2
+        order: 1
+        pages: "20"
+        summary: "以 premium aspiration 與 negative association 排除標準治理視覺素材。"
+  - id: "ch-05"
+    title: "Merchandising Articles"
+    level: 1
+    order: 5
+    pages: "21"
+    summary: "規範商品與活動配件上的 logo finish、尺寸優先順序與 reproduction quality。"
+    children:
+      - id: "ch-05-01"
+        title: "Merchandise Reproduction"
+        level: 2
+        order: 1
+        pages: "21"
+        summary: "強調 logo 不應最大化，而應以正確尺寸與高品質技術呈現。"
+  - id: "ch-06"
+    title: "Digital Media"
+    level: 1
+    order: 6
+    pages: "22-24"
+    summary: "規範 domain names、UI color palette、logo protected space 與 social media profile/title images。"
+    children:
+      - id: "ch-06-01"
+        title: "Domains, UI and Social Media"
+        level: 2
+        order: 1
+        pages: "22-24"
+        summary: "要求 domain 含 bmw-club 類詞、UI 使用白灰藍系統，profile image 遵守 x-based safe area。"
+  - id: "ch-07"
+    title: "Print Media"
+    level: 1
+    order: 7
+    pages: "25"
+    summary: "提供 flyer、advertisement、poster 應用例與 design suggestions。"
+    children:
+      - id: "ch-07-01"
+        title: "Printed Material"
+        level: 2
+        order: 1
+        pages: "25"
+        summary: "將 logo 與 identifier 應用到高品質印刷材料。"
+  - id: "ch-08"
+    title: "Correspondence"
+    level: 1
+    order: 8
+    pages: "26-27"
+    summary: "規範 A4 letterhead 與 business card 的排版、字體、間距與模板。"
+    children:
+      - id: "ch-08-01"
+        title: "Stationery Templates"
+        level: 2
+        order: 1
+        pages: "26-27"
+        summary: "以 x-based spacing、Arial 字級與郵政限制管理信紙和名片。"
+  - id: "ch-09"
+    title: "Badges, Pins and Membership Card"
+    level: 1
+    order: 9
+    pages: "28-29"
+    summary: "規範小尺寸物件上的 protected space、fallback logo 與會員卡範例。"
+    children:
+      - id: "ch-09-01"
+        title: "Small Identity Objects"
+        level: 2
+        order: 1
+        pages: "28-29"
+        summary: "管理徽章、pin 與會員卡中的 logo 可讀性與官方身份證明。"
+  - id: "ch-10"
+    title: "Contact & Support"
+    level: 1
+    order: 10
+    pages: "30"
+    summary: "提供 BMW Club & Community Management 聯絡資訊與網站。"
+    children:
+      - id: "ch-10-01"
+        title: "Support Channels"
+        level: 2
+        order: 1
+        pages: "30"
+        summary: "列出 email、BMW Group Classic 地址與德英網站。"

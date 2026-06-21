@@ -1,0 +1,228 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: USAToday_Online_Brand_guidelines_2014
+index_ref: docs/USAToday_Online_Brand_guidelines_2014.index.yaml
+note_ref: docs/USAToday_Online_Brand_guidelines_2014.note.md
+archetype: full_brand_system
+industry: media_entertainment
+modules:
+- Brand Strategy
+- Content Design
+- Messaging
+- Visual Identity
+- Governance
+- Legal and Trademark
+- AI-Checkable Rules
+- Brand Architecture
+- Color System
+- Information Design
+- Typography System
+- Accessibility
+- Examples
+- Visual Language
+- Voice and Tone
+- Operations
+depth:
+  strategy: high
+  visual: high
+  governance: high
+  top_level_chapter_count: 9
+  section_count: 5
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Who and What
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Manifesto Story
+  order: 2
+  level: 2
+- id: ch-02
+  title: Brand Rules
+  order: 2
+  level: 1
+- id: ch-03
+  title: The Logo
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Guidelines and Master Logo
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Clearspace and Alternate Usage
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Reverse, Masthead, Partnership and Do Nots
+  order: 3
+  level: 2
+- id: ch-04
+  title: The Sub-brands
+  order: 4
+  level: 1
+- id: ch-05
+  title: Color
+  order: 5
+  level: 1
+- id: ch-06
+  title: Typography
+  order: 6
+  level: 1
+- id: ch-07
+  title: Master Behaviors
+  order: 7
+  level: 1
+- id: ch-08
+  title: Tone of Voice
+  order: 8
+  level: 1
+- id: ch-09
+  title: Appendix
+  order: 9
+  level: 1
+frameworks:
+- name: Everywhere + Useful + Easily understood + Unbiased + Inventive 是本文件的品牌行為框架
+  chapter: ch-01
+  chapter_title: Introduction
+- name: Masterbrand governance model
+  chapter: ch-02
+  chapter_title: Brand Rules
+- name: Context-driven logo selection：print/digital/large/small/icon/masthead/partner
+  chapter: ch-03
+  chapter_title: The Logo
+- name: Masterbrand + vertical color label
+  chapter: ch-04
+  chapter_title: The Sub-brands
+- name: One core color per content vertical
+  chapter: ch-05
+  chapter_title: Color
+- name: Heritage form + usability correction
+  chapter: ch-06
+  chapter_title: Typography
+- name: Logo as platform for visual storytelling
+  chapter: ch-07
+  chapter_title: Master Behaviors
+- name: Audience needs -> language clarity -> naming governance -> keyword calibration
+  chapter: ch-08
+  chapter_title: Tone of Voice
+- name: Review during development
+  chapter: ch-09
+  chapter_title: Appendix
+patterns:
+- name: 先宣告 mission，再以 manifesto 建立情緒與社會角色，是媒體品牌常用的 legitimacy pattern。
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 在細節規範前加入一頁總治理原則，可減少例外濫用。
+  chapter: ch-02
+  chapter_title: Brand Rules
+- name: 同一品牌標誌依媒體條件切換版本，但保留 clearspace 與禁用規則。
+  chapter: ch-03
+  chapter_title: The Logo
+- name: 媒體品牌可用色彩建立內容 taxonomy。
+  chapter: ch-04
+  chapter_title: The Sub-brands
+- name: 將 palette 直接綁定內容 taxonomy。
+  chapter: ch-05
+  chapter_title: Color
+- name: 品牌可用 bespoke typeface 解決跨媒介 readability。
+  chapter: ch-06
+  chapter_title: Typography
+- name: 以可變容器承載內容主題，是媒體與事件品牌可複用模式。
+  chapter: ch-07
+  chapter_title: Master Behaviors
+- name: 價值對照與 copy style rules
+  chapter: ch-08
+  chapter_title: Tone of Voice
+- name: 文件末尾放置治理聯絡點，讓例外與疑問有出口。
+  chapter: ch-09
+  chapter_title: Appendix
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：品牌敘述需支援 reader utility；不得呈現偏見或議程；內容應簡潔、可視覺化且可行動。
+  chapter: ch-01
+  chapter_title: Introduction
+- module: Brand Strategy
+  criterion: AI 可檢查：不得建立未遵循本文件的 USA TODAY logo 或 brand identity；任何子品牌標誌必須可追溯到 master system。
+  chapter: ch-02
+  chapter_title: Brand Rules
+- module: Visual Identity
+  criterion: AI 可檢查：logo clearspace 至少等於 USA TODAY 中 U 的 cap height；master logo width 不小於 2.53 inches；Gannett endorsement
+    不小於 0.8 inches 或 85 px；禁止 gradient、drop shadow、off-palette color、pattern background、overlap、retyping、improper scaling。
+  chapter: ch-03
+  chapter_title: The Logo
+- module: Brand Strategy
+  criterion: AI 可檢查：子品牌 logo 應含 trademark；小於 15mm high 時使用 small usage logos 且不含 TM；不得使用非系統色建立新 vertical。
+  chapter: ch-04
+  chapter_title: The Sub-brands
+- module: Color System
+  criterion: 'AI 可檢查：News #009BFF、Money #00A53C、Sports #EB1E00、Life #9600B4、Travel #00C3C3、Tech #FA5F00、Weather #FFCC00；不得以近似色取代
+    core values。'
+  chapter: ch-05
+  chapter_title: Color
+- module: ''
+  criterion: AI 可檢查：同一 edition 或 communication 不應過度重複同一 behavior；若不需要行為，保留簡潔 logo 可能更有力。
+  chapter: ch-07
+  chapter_title: Master Behaviors
+- module: Voice and Tone
+  criterion: AI 可檢查：USA TODAY 永遠全大寫；不得使用 USAT；usatoday.com 句首不大寫；不得跨行斷開 USA TODAY/USA WEEKEND；sections 順序為 News, Money, Sports
+    and Life；heading/subhead 預設 sentence case。
+  chapter: ch-08
+  chapter_title: Tone of Voice
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - Brand Strategy
+  - Content Design
+  - Messaging
+- id: ch-02
+  title: Brand Rules
+  modules:
+  - Visual Identity
+  - Governance
+- id: ch-03
+  title: The Logo
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-04
+  title: The Sub-brands
+  modules:
+  - Brand Architecture
+  - Color System
+  - Information Design
+- id: ch-05
+  title: Color
+  modules:
+  - Color System
+  - Information Design
+- id: ch-06
+  title: Typography
+  modules:
+  - Typography System
+  - Accessibility
+- id: ch-07
+  title: Master Behaviors
+  modules:
+  - Examples
+  - Visual Language
+- id: ch-08
+  title: Tone of Voice
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+- id: ch-09
+  title: Appendix
+  modules:
+  - Operations
+  - Governance

@@ -1,0 +1,91 @@
+# L3 決策卡 sidecar — Destination Canada: The Brand Story
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: destination_canada_brand_booklet
+decisions:
+  - id: dp-origin-story-before-rules
+    title: 先把使命變成共用語言系統，再進入視覺規範
+    problem:
+      statement: 公益／使命型品牌若一開始就談視覺規範，色彩、攝影與字體會失去策略根基，淪為各自詮釋的風格選擇。
+      signals: [mission_communication, no_strategic_foundation, participation, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先用 voice attributes → mission → tagline → short/long description 把使命轉成可被全員共用的語言系統，再讓視覺承接其意義
+      layer: strategy
+    reason:
+      - 先把使命變成可被員工、設計師與文案共同使用的語言系統，避免後續視覺規範失去策略根基
+      - 語言章節是後續 visual identity 的意義來源，讓色彩與影像不只是風格而承載使命
+      - 品牌先建立共同信念，再授權執行；目的地需要從地理資訊轉成心理經驗
+    applicable_when:
+      industries: [nonprofit_social, consumer_retail_hospitality]
+      brand_types: [mission_driven, institutional_public_trust]
+      conditions: [new_identity, mission_communication]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Voice and Tone, Messaging]
+    anti_patterns:
+      - 先寫 logo／色彩規格，把使命只放在封面口號
+    evidence:
+      - brand_id: destination_canada_brand_booklet
+        chapter: ch-01
+        excerpt: "先讓內部讀者進入「加拿大不是地圖上的地點，而是邀請與連結」的情緒場，避免後續規範被讀成單純識別手冊；用 manifesto 先定義目的地的精神角色。"
+      - brand_id: destination_canada_brand_booklet
+        chapter: ch-02
+        excerpt: "以 story → belief（Travel should change you）→ promise → signature（Canada. For Glowing Hearts.）的三段式框架，先建立共同信念再授權執行。"
+    status: extracted
+
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 用人格詞集（Curious/Sharing/Free Thinking/Caring/Optimistic）當每個產出的檢查軸
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - 將 values 寫成動詞短句，可讓審稿者檢查行為是否出現
+      - 品牌行為要能指導組織成員，而不只是外部廣告調性
+    applicable_when:
+      industries: [industrial_materials_science, nonprofit_social, consumer_retail_hospitality]
+      brand_types: [challenger, category_creator, mission_driven, institutional_public_trust]
+      conditions: []
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Visual Language, Content Design]
+    evidence:
+      - brand_id: destination_canada_brand_booklet
+        chapter: ch-04-01
+        excerpt: "六個 brand behaviours（Spark change、Invite love、Unleash pride、Stay open、Be helpful、Speak from the heart）形成行為檢核清單；溝通應具備至少一項行為證據，不得冷漠、排外或過度制式。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗與照片複雜度建立對比決策樹，限定白／深色兩種標誌
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - 核心識別需少而穩定；例外使用必須被明確圈定
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: destination_canada_brand_booklet
+        chapter: ch-03-01
+        excerpt: "logo 預設使用紅色，紅色或深色背景使用白色反白；最小尺寸 10mm / 28px，avatar 僅作社群頭像，例外使用被明確圈定。"
+    status: extracted

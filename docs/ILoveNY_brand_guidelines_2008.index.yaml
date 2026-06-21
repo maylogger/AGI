@@ -1,0 +1,74 @@
+title: 'I LOVE NEW YORK Brand Guidelines'
+source: 'sources/ILoveNY_brand_guidelines_2008.pdf'
+date: '2008-11'
+language: 'en'
+summary: 'I LOVE NEW YORK 2008 品牌指南，整合品牌故事、州域觀光定位、campaign system、logo/legal 規範與 TPA 共用規則。'
+chapters:
+  - id: 'ch-01'
+    title: 'Opening Context'
+    level: 1
+    order: 1
+    pages: '2-4'
+    summary: '說明品牌歷史、品牌核心情感與一致性的重要性。'
+  - id: 'ch-02'
+    title: 'Part 1: Our Story'
+    level: 1
+    order: 2
+    pages: '5-34'
+    summary: '建立 2008 relaunch 的品牌策略、目標旅客、語氣、bridgeline、字體、廣告、攝影、歌曲、logo 與 legal。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Mission, Brand Pyramid, Values and Target'
+        level: 2
+        order: 1
+        pages: '6-10'
+        summary: '定義 statewide mission、品牌層級、價值與四個優先旅客 segment。'
+      - id: 'ch-02-02'
+        title: 'Manifesto, Campaign Concept, Voice and Bridgeline'
+        level: 2
+        order: 2
+        pages: '11-14'
+        summary: '定義 campaign narrative、New York tone of voice 與 Another reason bridgeline。'
+      - id: 'ch-02-03'
+        title: 'Typefaces, Advertising, Photography and Song'
+        level: 2
+        order: 3
+        pages: '15-26'
+        summary: '規範 Archer、Gotham、American Typewriter、print/retail ads、photography 與 song。'
+      - id: 'ch-02-04'
+        title: 'Logo System and Legal Requirements'
+        level: 2
+        order: 4
+        pages: '27-34'
+        summary: '規範 stacked/horizontal logo、treatment/seasonal logos、clearspace、color、usage don’ts 與 legal line。'
+  - id: 'ch-03'
+    title: 'Part 2: Our Vision for TPAs'
+    level: 1
+    order: 3
+    pages: '35-49'
+    summary: '為旅遊推廣代理與區域夥伴定義品牌對齊、logo permission、bridgeline、廣告、travel guide、collateral、web、AV、signage 與 brand creative。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Alignment, Permissions and Seasonal Logos'
+        level: 2
+        order: 1
+        pages: '35-38'
+        summary: '說明品牌對齊重要性、logo 使用核准與 seasonal logo 規則。'
+      - id: 'ch-03-02'
+        title: 'Bridgeline and Advertising'
+        level: 2
+        order: 2
+        pages: '39-40'
+        summary: '將 Another reason 應用到 TPA 溝通與廣告最小尺寸。'
+      - id: 'ch-03-03'
+        title: 'Travel Guides, Collateral and Websites'
+        level: 2
+        order: 3
+        pages: '41-46'
+        summary: '規範 travel guide cover、tourism collateral、county/region websites 與 samples。'
+      - id: 'ch-03-04'
+        title: 'Radio, TV, Signage and Brand Creative'
+        level: 2
+        order: 4
+        pages: '47-49'
+        summary: '規範音訊、電視、顯示標示與 travel guide brand ads。'

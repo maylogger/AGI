@@ -1,0 +1,114 @@
+title: "BlackBerry Cylance Branding Guidelines"
+source: "sources/BlackBerry_Cylance_Brand_Guidelines_2019.pdf"
+version: "2019 Rev. 3.0"
+date: "2019-04-26"
+language: "en"
+summary: "BlackBerry Cylance 的大型品牌指南，整合品牌語氣、buyer personas、視覺品牌、共同品牌、訊息風格規則與品牌檢查清單。"
+chapters:
+  - id: "ch-01"
+    title: "Brand Voice"
+    level: 1
+    order: 1
+    pages: "4-10"
+    summary: "定義 Science of Safe、position、brand pillars、value 與訊息框架。"
+    children:
+      - id: "ch-01-01"
+        title: "Brand Mantra and Position"
+        level: 2
+        order: 1
+        pages: "6-7"
+        summary: "以 prevention-first、predictive security 與 endpoint protection 建立市場敘事。"
+      - id: "ch-01-02"
+        title: "Pillars, Value and Message Frame"
+        level: 2
+        order: 2
+        pages: "8-10"
+        summary: "將 Predictive AI、Ease of Use、Peace of Mind 轉成內容與價值敘述。"
+  - id: "ch-02"
+    title: "Brand Personas"
+    level: 1
+    order: 2
+    pages: "11-20"
+    summary: "定義 Frank 與 Preston 兩類 enterprise security buyer，以及 9-18 個月 buyer journey。"
+    children:
+      - id: "ch-02-01"
+        title: "Persona Overview and Deep Dives"
+        level: 2
+        order: 1
+        pages: "12-18"
+        summary: "以職稱、壓力、目標、語氣、渠道與 messaging considerations 指導內容。"
+      - id: "ch-02-02"
+        title: "Buyer Journey"
+        level: 2
+        order: 2
+        pages: "19-20"
+        summary: "把 Explore/Evaluate/Trial/Implement/Advocate 映射到 buyer role、速度與 marketing value。"
+  - id: "ch-03"
+    title: "Visual Brand"
+    level: 1
+    order: 3
+    pages: "21-70"
+    summary: "涵蓋色彩、字體、logo、brand hierarchy、photography、Smart Antivirus、iconography 與 co-branding。"
+    children:
+      - id: "ch-03-01"
+        title: "Color and Typography"
+        level: 2
+        order: 1
+        pages: "22-28"
+        summary: "定義 Cylance Green、secondary colors、grays、gradients 與 Forza 字體。"
+      - id: "ch-03-02"
+        title: "Logo and Brand Hierarchy"
+        level: 2
+        order: 2
+        pages: "29-49"
+        summary: "規範 logo 色彩組合、stacked logo、spacing/sizing、product shields 與 tiered sub-brand logos。"
+      - id: "ch-03-03"
+        title: "Photography, Smart Antivirus and Iconography"
+        level: 2
+        order: 3
+        pages: "50-64"
+        summary: "定義真人敘事攝影、consumer brand 差異化與 material-grid icon 系統。"
+      - id: "ch-03-04"
+        title: "Co-branding"
+        level: 2
+        order: 4
+        pages: "65-70"
+        summary: "規範 partner logo ratio、spacing、approval 與 Powered by BlackBerry Cylance 使用。"
+  - id: "ch-04"
+    title: "Brand Messaging Guidelines"
+    level: 1
+    order: 4
+    pages: "71-93"
+    summary: "建立品牌文案基礎、一般 style rules、specific word styles 與標準公司/產品描述。"
+    children:
+      - id: "ch-04-01"
+        title: "General Style Topics"
+        level: 2
+        order: 1
+        pages: "72-74"
+        summary: "規範 malware/threat/attack、AI/ML、AV、citation、fear、Oxford comma 與格式規則。"
+      - id: "ch-04-02"
+        title: "Specific Word Styles"
+        level: 2
+        order: 2
+        pages: "75-88"
+        summary: "以詞條形式規範產品名、大小寫、標點、日期時間、商標與 cybersecurity 詞彙。"
+      - id: "ch-04-03"
+        title: "Approved Descriptions"
+        level: 2
+        order: 3
+        pages: "89-93"
+        summary: "提供公司、CylancePROTECT、CylanceOPTICS、Smart Antivirus、Consulting 的標準長度描述。"
+  - id: "ch-05"
+    title: "Brand Checklist"
+    level: 1
+    order: 5
+    pages: "94-97"
+    summary: "以 scalability、versatility、audience focus、brand DNA 與 checklist 驗證品牌輸出。"
+    children:
+      - id: "ch-05-01"
+        title: "Requirements and Checklist"
+        level: 2
+        order: 1
+        pages: "95-97"
+        summary: "提供訊息、商標、AI/ML、cyber words、logo、icon、photo、gradient 等快速檢查。"

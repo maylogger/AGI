@@ -1,0 +1,449 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: ZOOM_2022
+index_ref: docs/ZOOM_2022.index.yaml
+note_ref: docs/ZOOM_2022.note.md
+archetype: multi_brand_architecture
+industry: null
+modules:
+- Legal and Trademark
+- Operations
+- Governance
+- Partnership Branding
+- AI-Checkable Rules
+- Messaging
+- Brand Architecture
+- Content Design
+- Product Language
+- Photography System
+- Visual Identity
+- Compliance
+- Layout System
+- Examples
+- Knowledge Architecture
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 10
+  section_count: 18
+chapter_sequence:
+- id: ch-01
+  title: Welcome
+  order: 1
+  level: 1
+- id: ch-02
+  title: Guiding Principles
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Growing Together and Agility
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Clarity
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Partner-Led Announcements
+  order: 3
+  level: 2
+- id: ch-03
+  title: Core Messaging
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Zoom as a Video Communications Platform
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Naming and Categorization
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Partner Company, Product and App Names
+  order: 3
+  level: 2
+- id: ch-04
+  title: Zoom Branding Standards
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Zoom Wordmark and App Icon
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Photography and Videos
+  order: 2
+  level: 2
+- id: ch-05
+  title: Logo Usage
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Zoom Logo
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Product Logos
+  order: 2
+  level: 2
+- id: ch-05-03
+  title: Powered by Zoom
+  order: 3
+  level: 2
+- id: ch-05-04
+  title: Marketplace and Events Logos
+  order: 4
+  level: 2
+- id: ch-06
+  title: Partner Program Designations
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Program Designations and Badges
+  order: 1
+  level: 2
+- id: ch-06-02
+  title: Partner Lock-ups and Usage Matrix
+  order: 2
+  level: 2
+- id: ch-06-03
+  title: Do’s & Don’ts and Joint Lock-up
+  order: 3
+  level: 2
+- id: ch-07
+  title: Digital Marketing and Media Buying
+  order: 7
+  level: 1
+- id: ch-07-01
+  title: Partner Websites and Landing Pages
+  order: 1
+  level: 2
+- id: ch-07-02
+  title: SEO, Display Advertising and Domain Names
+  order: 2
+  level: 2
+- id: ch-07-03
+  title: Social Media and Email Marketing
+  order: 3
+  level: 2
+- id: ch-08
+  title: Partner-Led Co-Marketing Examples
+  order: 8
+  level: 1
+- id: ch-09
+  title: Additional Resources
+  order: 9
+  level: 1
+- id: ch-10
+  title: Legal
+  order: 10
+  level: 1
+frameworks:
+- name: Compliance onboarding framework：audience → scope → consequences → distribution to roles → contact channels
+  chapter: ch-01
+  chapter_title: Welcome
+- name: Relationship clarity framework：relationship owner → primary brand → logo order → visual system → CTA destination →
+    re...
+  chapter: ch-02
+  chapter_title: Guiding Principles
+- name: Co-marketing ownership matrix：partner-led vs Zoom-led
+  chapter: ch-02-02
+  chapter_title: Clarity
+- name: Announcement review framework：draft submission → 14 business days review → approved wording → partner-owned announcement
+  chapter: ch-02-03
+  chapter_title: Partner-Led Announcements
+- name: Message library framework：platform statement → product definitions → naming rules → app compatibility naming
+  chapter: ch-03
+  chapter_title: Core Messaging
+- name: Trademark grammar framework：capitalization → adjective usage → product taxonomy → first mention form
+  chapter: ch-03-02
+  chapter_title: Naming and Categorization
+- name: Compatibility naming framework：own distinctive name first → "for Zoom" as compatibility statement → avoid brand fusion
+  chapter: ch-03-03
+  chapter_title: Partner Company, Product and App Names
+- name: Brand asset permission framework：asset type → allowed reference → modification restrictions → approval/download source
+  chapter: ch-04
+  chapter_title: Zoom Branding Standards
+- name: Product representation integrity framework：approved source → no manipulation → currency check → review if needed
+  chapter: ch-04-02
+  chapter_title: Photography and Videos
+- name: Logo usage matrix framework：asset → allowed locations → prohibited locations → approval contact → size/space tokens
+  chapter: ch-05
+  chapter_title: Logo Usage
+- name: Primary logo protection framework：color lock → no modification → spacing/size → media permissions
+  chapter: ch-05-01
+  chapter_title: Zoom Logo
+- name: Platform endorsement framework：powered-by wording → approved use → size/space → review → media matrix
+  chapter: ch-05-03
+  chapter_title: Powered by Zoom
+- name: Designation mark framework：program eligibility → approved asset → secondary placement → size/space → renewal/expiration
+  chapter: ch-06
+  chapter_title: Partner Program Designations
+- name: Joint identity framework：partner primary + Zoom secondary + divider + balanced size + approval matrix
+  chapter: ch-06-03
+  chapter_title: Do’s & Don’ts and Joint Lock-up
+- name: Digital confusion prevention framework：source clarity → domain separation → keyword permission → creative approval
+    → ...
+  chapter: ch-07
+  chapter_title: Digital Marketing and Media Buying
+- name: Social identity framework：account identity must be partner-owned; campaign asset may reference Zoom under rules
+  chapter: ch-07-03
+  chapter_title: Social Media and Email Marketing
+- name: Example library framework：channel → template → logo relationship → approval note → copy pattern
+  chapter: ch-08
+  chapter_title: Partner-Led Co-Marketing Examples
+- name: Resource directory framework：resource type → URL → contact email
+  chapter: ch-09
+  chapter_title: Additional Resources
+- name: Trademark compliance framework：mark ownership → permitted license → guideline compliance → attribution → legal contac...
+  chapter: ch-10
+  chapter_title: Legal
+patterns:
+- name: 在開頭明確列出違規後果，可提高 partner 對規範的重視。
+  chapter: ch-01
+  chapter_title: Welcome
+- name: partner-led / Zoom-led 對照表、press release do/don’t、approved wording examples。
+  chapter: ch-02
+  chapter_title: Guiding Principles
+- name: primary brand first、secondary logo lesser weight、owner-owned landing page。
+  chapter: ch-02-02
+  chapter_title: Clarity
+- name: '"[Company] Teams Up with Zoom to..."、first mention as "Zoom Video Communications, Inc."。'
+  chapter: ch-02-03
+  chapter_title: Partner-Led Announcements
+- name: short positioning variants、product descriptor snippets、trademark adjective rules。
+  chapter: ch-03
+  chapter_title: Core Messaging
+- name: plain-text mention、same font/color/style/weight/size as surrounding text when used in sentence。
+  chapter: ch-03-02
+  chapter_title: Naming and Categorization
+- name: '"Acme for Zoom" 可接受；"AcmeZoom"、"zoom-reseller.com" 不可接受。'
+  chapter: ch-03-03
+  chapter_title: Partner Company, Product and App Names
+- name: approved photography only、no UI alteration、no old videos。
+  chapter: ch-04-02
+  chapter_title: Photography and Videos
+- name: full color logo、monochrome logo、review before use。
+  chapter: ch-05-01
+  chapter_title: Zoom Logo
+- name: Powered by lock-up、stream overlay rules、print maximum size。
+  chapter: ch-05-03
+  chapter_title: Powered by Zoom
+- name: partner site own look and feel、Zoom in URL path allowed、Zoom in domain name prohibited。
+  chapter: ch-07
+  chapter_title: Digital Marketing and Media Buying
+- name: own company handle/tag only、email subject identifies partner sender。
+  chapter: ch-07-03
+  chapter_title: Social Media and Email Marketing
+- name: partner-led social banner、flyer、solution brief、booth graphic、promotional item approval note。
+  chapter: ch-08
+  chapter_title: Partner-Led Co-Marketing Examples
+- name: brand guide contact、partner marketing contact、app marketing contact、press contact。
+  chapter: ch-09
+  chapter_title: Additional Resources
+- name: attribution statement、legal center link、download manifest。
+  chapter: ch-10
+  chapter_title: Legal
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：任何 partner-created Zoom-related asset 若屬 marketing/communications 範圍，應套用本指南；若不符合規定，需 rectification，嚴重時可能撤銷
+    Zoom trademark 使用權；問題應導向 brand@zoom.us 或 partnermarketing@zoom.us。
+  chapter: ch-01
+  chapter_title: Welcome
+- module: ''
+  criterion: AI 可檢查：partner-led communications 應使用 partner visual system；Zoom logo 不得成為 focal point；partner logo always appears
+    first；CTA 不得導向 Zoom landing page，除非 Zoom-led；materials 應經 Zoom Partner Manager/相關團隊 review。
+  chapter: ch-02-02
+  chapter_title: Clarity
+- module: ''
+  criterion: AI 可檢查：不得使用 only/best/most/largest/exclusive/first 等 superlatives；不得使用 "[Company] and Zoom announce" 或 "[Company]
+    partners with Zoom"；release title 應以 partner company 開頭；首提 Zoom 應為 "Zoom Video Communications, Inc."；review 需預留 up to
+    14 business days。
+  chapter: ch-02-03
+  chapter_title: Partner-Led Announcements
+- module: ''
+  criterion: AI 可檢查：Zoom 應大寫為 "Zoom"，不得寫成 ZOOM、zoom、zoom.us；不得把 Zoom 複數化或當名詞/動詞；應稱 "Zoom meeting" 而非 "a Zoom"；不得在公司名、logo、app
+    name、domain、icon、tagline、social handles 或 keywords 中使用 Zoom marks，除非為核准 compatibility statement。
+  chapter: ch-03
+  chapter_title: Core Messaging
+- module: ''
+  criterion: AI 可檢查：句中提及 Zoom 時不得以 logo 取代文字；Zoom name 在句中需與周圍文字同字體、顏色、樣式、粗細、大小；不得使用競品或負面語言搭配 Zoom logo；首提公司可用 Zoom Video
+    Communications。
+  chapter: ch-03-02
+  chapter_title: Naming and Categorization
+- module: ''
+  criterion: AI 可檢查：domain name 不得包含 Zoom trademark；app name 不得以 Zoom 作為自身品牌核心；若 app name 不夠 distinctive，應用 "app for Zoom"
+    而非直接 "[Generic] for Zoom"；不得使用 Zoom mark 的 misspelling、phonetic/foreign equivalent、rhyming、stylization 或 abbreviation。
+  chapter: ch-03-03
+  chapter_title: Partner Company, Product and App Names
+- module: Brand Strategy
+  criterion: AI 可檢查：Zoom App Icon 不得置於 email/page 頂部或自己 logo 上方；不得作為文字中圖示；不得與 Zoom wordmark 同時使用；不得作為 website favicon；不得放在
+    colored background unless high contrast；photography 不得修改 UI、硬體、logo、人像或主要物件；影片不得 edit/alter/bookend，且不得使用 12-18 個月以上或產品訊息過期影片。
+  chapter: ch-04
+  chapter_title: Zoom Branding Standards
+- module: ''
+  criterion: AI 可檢查：不得從 Zoom website/social/blog 擷取照片除非 approved；不得改 Zoom UI controls、人員、window size、crop selected portions
+    或加 overlay；影片若超過 18 個月或包含過期規格/訊息應避免使用。
+  chapter: ch-04-02
+  chapter_title: Photography and Videos
+- module: Visual Identity
+  criterion: AI 可檢查：Zoom logo 只能用 Zoom blue 或 white；不得使用舊版、修改、旋轉、動畫化、加裝飾；clear space 至少等於 logo height；Zoom Logo 最小不得小於 18
+    px 高或 80 px 寬；使用前需提交 preview 給 partnermarketing@zoom.us review/approval。
+  chapter: ch-05
+  chapter_title: Logo Usage
+- module: Visual Identity
+  criterion: AI 可檢查：Zoom logo 不得出現在 out-of-home advertising、online ads、social media profile images、promotional/merchandise
+    items；social promoted marketing assets 可用但需符合 guideline；preferred option 是先使用 partner badge/lock-up 而非 wordmark。
+  chapter: ch-05-01
+  chapter_title: Zoom Logo
+- module: ''
+  criterion: AI 可檢查：Powered by Zoom clear space 至少等於 lock-up height；minimum height 32 px；print 需 written approval、使用 CMYK
+    lock-ups、最大寬 3 inch；social profile image 不可用，但 promoted marketing asset/ad 可用；promotional items 可用於展示 event/solution/application
+    built and/or runs on Zoom。
+  chapter: ch-05-03
+  chapter_title: Powered by Zoom
+- module: ''
+  criterion: AI 可檢查：partner badge/lock-up 只能放在也有 partner logo 的材料上；partner logo 永遠 primary；badge/lock-up 不得佔任何 surface 超過
+    10%；不得同時使用 Partner Badge 與 Partner Lock-up；每件 collateral 不得使用超過一個 Zoom logo/badge/lock-up，multi-side material 每面不超過一個。
+  chapter: ch-06
+  chapter_title: Partner Program Designations
+- module: ''
+  criterion: 'AI 可檢查：joint lock-up 不得使用 plus、x、equal signs 或其他關係符號；必須使用 vertical/horizontal divider；Zoom logo 在 partner-led
+    material 應位於右側且不得小於 18 px 高；divider web color 可為 #BABACC 或 #2D8CFF，minimum width 1 px；Zoom brand elements 不得讓 partner
+    看似 Zoom extension。'
+  chapter: ch-06-03
+  chapter_title: Do’s & Don’ts and Joint Lock-up
+- module: ''
+  criterion: AI 可檢查：partner 不得 replicate Zoom landing page 或 mimic Zoom website；不得在 homepage top 使用 Zoom logo；domain name、website
+    title、favicon 不得包含 Zoom trademarks；可用 www.AcmePartner.com/zoom 這類 path；不得 bidding on Zoom keywords without consent；display
+    creative 含 Zoom assets 需 brand team approval。
+  chapter: ch-07
+  chapter_title: Digital Marketing and Media Buying
+- module: ''
+  criterion: AI 可檢查：social handles、tags、profile images 不得包含 Zoom brand、abbreviations、icons、logos 或 confusingly similar forms；email
+    subject 應使用 partner name，使收件者清楚來源。
+  chapter: ch-07-03
+  chapter_title: Social Media and Email Marketing
+- module: ''
+  criterion: AI 可檢查：booth graphics co-branding 需 prior approval 並提交 electronic proof/sample；promotional items co-branding
+    需 prior approval，且應限於 apparel and/or workplace items；Partner Lock-up examples 只能使用 approved phrases，如 "Zoom Service Provider"
+    或 "Zoom Distributor"，不得宣稱 preferred/exclusive partner。
+  chapter: ch-08
+  chapter_title: Partner-Led Co-Marketing Examples
+- module: ''
+  criterion: AI 可檢查：任何 featuring Zoom Mark 的 marketing/product communication 應包含 proper trademark attribution；可使用例句 "Zoom
+    and the Zoom logo are trademarks of Zoom Video Communications, Inc."; 使用 Zoom Marks 需符合本指南、Zoom Brand Guidelines、Trademark
+    Use Guidelines 與 partner agreement license terms。
+  chapter: ch-10
+  chapter_title: Legal
+chapters:
+- id: ch-01
+  title: Welcome
+  modules:
+  - Legal and Trademark
+  - Operations
+  - Governance
+- id: ch-02
+  title: Guiding Principles
+  modules:
+  - Partnership Branding
+  - AI-Checkable Rules
+  - Messaging
+  - Governance
+- id: ch-02-02
+  title: Clarity
+  modules:
+  - Brand Architecture
+  - Partnership Branding
+- id: ch-02-03
+  title: Partner-Led Announcements
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Messaging
+- id: ch-03
+  title: Core Messaging
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Content Design
+  - Messaging
+- id: ch-03-02
+  title: Naming and Categorization
+  modules:
+  - Legal and Trademark
+  - Content Design
+- id: ch-03-03
+  title: Partner Company, Product and App Names
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Product Language
+- id: ch-04
+  title: Zoom Branding Standards
+  modules:
+  - Photography System
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-04-02
+  title: Photography and Videos
+  modules:
+  - Photography System
+  - Compliance
+- id: ch-05
+  title: Logo Usage
+  modules:
+  - AI-Checkable Rules
+  - Governance
+- id: ch-05-01
+  title: Zoom Logo
+  modules:
+  - Legal and Trademark
+- id: ch-05-03
+  title: Powered by Zoom
+  modules:
+  - Partnership Branding
+- id: ch-06
+  title: Partner Program Designations
+  modules:
+  - Partnership Branding
+  - AI-Checkable Rules
+- id: ch-06-03
+  title: Do’s & Don’ts and Joint Lock-up
+  modules:
+  - Brand Architecture
+  - AI-Checkable Rules
+  - Layout System
+- id: ch-07
+  title: Digital Marketing and Media Buying
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Governance
+- id: ch-07-03
+  title: Social Media and Email Marketing
+  modules:
+  - Content Design
+  - Governance
+- id: ch-08
+  title: Partner-Led Co-Marketing Examples
+  modules:
+  - Examples
+  - Operations
+- id: ch-09
+  title: Additional Resources
+  modules:
+  - Operations
+  - Knowledge Architecture
+- id: ch-10
+  title: Legal
+  modules:
+  - Legal and Trademark
+  - Compliance
+  - Governance

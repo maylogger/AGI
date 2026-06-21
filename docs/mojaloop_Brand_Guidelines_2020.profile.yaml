@@ -1,0 +1,168 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: mojaloop_Brand_Guidelines_2020
+index_ref: docs/mojaloop_Brand_Guidelines_2020.index.yaml
+note_ref: docs/mojaloop_Brand_Guidelines_2020.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- Brand Architecture
+- AI-Checkable Rules
+- Layout System
+- Accessibility
+- Typography System
+- Design Tokens
+- Data Visualization
+- Color System
+- Photography System
+depth:
+  strategy: low
+  visual: high
+  governance: low
+  top_level_chapter_count: 4
+  section_count: 3
+chapter_sequence:
+- id: ch-01
+  title: Logo
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Foundation and Project Logos
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Clear Space and Minimum Size
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Proper and Improper Use
+  order: 3
+  level: 2
+- id: ch-02
+  title: Type
+  order: 2
+  level: 1
+- id: ch-03
+  title: Color
+  order: 3
+  level: 1
+- id: ch-04
+  title: Photography
+  order: 4
+  level: 1
+frameworks:
+- name: '`entity identity -> asset version -> spatial safety -> background contrast -> misuse prevention`'
+  chapter: ch-01
+  chapter_title: Logo
+- name: '`reference target -> logo selection`'
+  chapter: ch-01-01
+  chapter_title: Foundation and Project Logos
+- name: '`internal letter metric + medium-specific minimum size`'
+  chapter: ch-01-02
+  chapter_title: Clear Space and Minimum Size
+- name: '`background darkness + contrast ratio -> logo variant`'
+  chapter: ch-01-03
+  chapter_title: Proper and Improper Use
+- name: '`display personality + body legibility + size-based typographic settings`'
+  chapter: ch-02
+  chapter_title: Type
+- name: '`core color -> neutral offset -> secondary highlight -> tints/shades for complexity`'
+  chapter: ch-03
+  chapter_title: Color
+- name: '`authentic subject -> empowering angle -> hopeful lighting -> clear composition -> contextual abstraction`'
+  chapter: ch-04
+  chapter_title: Photography
+patterns:
+- name: 雙身份 logo 分流模式，適合 foundation/project、company/product、parent/community 這類品牌架構。
+  chapter: ch-01
+  chapter_title: Logo
+- name: entity/project dual-mark system。
+  chapter: ch-01-01
+  chapter_title: Foundation and Project Logos
+- name: 以 logo 元素定義 scalable clear space。
+  chapter: ch-01-02
+  chapter_title: Clear Space and Minimum Size
+- name: 以 contrast ratio 將品牌規範轉為 accessibility-like 判準。
+  chapter: ch-01-03
+  chapter_title: Proper and Improper Use
+- name: 用免費字體建立全球可部署 identity system。
+  chapter: ch-02
+  chapter_title: Type
+- name: 比例輪是 color governance 的可視化決策工具。
+  chapter: ch-03
+  chapter_title: Color
+- name: impact brand photography pattern，透過真實人物與情境建立信任。
+  chapter: ch-04
+  chapter_title: Photography
+rules_ai_checkable:
+- module: Visual Identity
+  criterion: AI 可檢查：Foundation logo 僅指涉 entity；Project logo 僅指涉 project；logo 不得拉伸、壓縮、加陰影/漸層/立體效果、改色、換字體或置於 busy texture/pattern。
+  chapter: ch-01
+  chapter_title: Logo
+- module: Visual Identity
+  criterion: AI 可檢查：提到 Mojaloop Foundation 使用 Foundation logo；提到 Mojaloop project/open-source software 使用 Project logo；不得用
+    Project logo 替代 Foundation legal identity。
+  chapter: ch-01-01
+  chapter_title: Foundation and Project Logos
+- module: ''
+  criterion: AI 可檢查：logo 四周不可有元素進入 `m` 寬高範圍；螢幕顯示寬度不得小於 50 px；印刷寬度不得小於 20 mm。
+  chapter: ch-01-02
+  chapter_title: Clear Space and Minimum Size
+- module: ''
+  criterion: AI 可檢查：所有 logo 背景對比至少 5:1；背景不超過 10% black 時可用彩色版；背景深於 30% black 時使用白色版；淺色背景使用黑色版；不得放在 busy texture/pattern。
+  chapter: ch-01-03
+  chapter_title: Proper and Improper Use
+- module: Typography System
+  criterion: AI 可檢查：display 使用 Varela Round；body 使用 Open Sans；小於 10 pt 使用 Open Sans Regular/Italic/Bold；10 pt 以上使用 Light/Semibold
+    variants；metric kerning；tracking 依章節設定維持 0 或 -10。
+  chapter: ch-02
+  chapter_title: Type
+- module: Color System
+  criterion: AI 可檢查：任何 Mojaloop branded material 應先引入 blue；black/gray 主要用於 typography；secondary colors 用於 charts/illustrations/presentations
+    的 highlight/variation；不得從 digital files 或 screenshots 取樣色彩；應使用白/負空間。
+  chapter: ch-03
+  chapter_title: Color
+- module: ''
+  criterion: AI 可檢查：不得使用 stock/staged photos；不得使用黑白攝影；影像需有清楚 focal point；主體需代表 Mojaloop audience/users；人物應看起來 empowered and
+    hopeful；避免 cluttered large anonymous groups。
+  chapter: ch-04
+  chapter_title: Photography
+chapters:
+- id: ch-01
+  title: Logo
+  modules:
+  - Brand Architecture
+  - AI-Checkable Rules
+- id: ch-01-01
+  title: Foundation and Project Logos
+  modules:
+  - Brand Architecture
+- id: ch-01-02
+  title: Clear Space and Minimum Size
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+- id: ch-01-03
+  title: Proper and Improper Use
+  modules:
+  - AI-Checkable Rules
+  - Accessibility
+- id: ch-02
+  title: Type
+  modules:
+  - Typography System
+  - Design Tokens
+- id: ch-03
+  title: Color
+  modules:
+  - Data Visualization
+  - Color System
+  - Design Tokens
+- id: ch-04
+  title: Photography
+  modules:
+  - Photography System
+  - AI-Checkable Rules

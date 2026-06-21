@@ -1,0 +1,126 @@
+# L3 決策卡 sidecar — Mercedes-Benz（經銷商品牌溝通標準）
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Mercedes_Benz_BrandStandards_2015
+decisions:
+  - id: dp-one-brand-one-voice-governance
+    title: 以「one brand, one voice」治理目標收束跨產品跨夥伴的一致性
+    problem:
+      statement: 跨地區、跨產品、跨商戶的大型品牌，若缺乏統一治理目標，每個團隊各自詮釋會讓品牌在不同媒介中碎裂。
+      signals: [consistency_across_partners, ecosystem_consistency, multi_market, brand_fragmentation_risk]
+    solution:
+      module: Governance
+      move: 把品牌一致性連到營運資格（Tier 3 Bonus），建立 dealer communication → 規則 → 諮詢監測 → 獎金資格 → brand equity protection 的治理鏈
+      layer: governance
+    reason:
+      - 高端品牌不是只靠視覺維持，而是靠所有通路避免把產品商品化、折價化與誤導化
+      - 品牌手冊可把「品牌一致性」連到營運資格與資金規則，提升執行者遵循動機
+      - 嚴重違規章節結尾配置 enforcement overview，可提升規則權重
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [consistency_across_partners, multi_market]
+      archetypes: [corporate_toolkit, brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Governance]
+    anti_patterns:
+      - 只給視覺風格而無交付前審核點，讓使用者憑審美直覺操作
+    evidence:
+      - brand_id: Mercedes_Benz_BrandStandards_2015
+        chapter: ch-01
+        excerpt: "governance chain：dealer communication → MBBCS rules → MBCCS consult/monitoring → bonus eligibility → brand equity protection；品牌手冊把品牌一致性連到營運資格與資金規則。"
+      - brand_id: Mercedes_Benz_BrandStandards_2015
+        chapter: ch-02-05
+        excerpt: "Category I 違規應被記錄、分類並與獎金資格連動；品牌治理必須包含可預期後果，才會被分散組織認真執行。"
+    status: extracted
+
+  - id: dp-approval-gate-for-exceptions
+    title: 例外不是漏洞，用審核閘門把差異收進可治理的模組
+    problem:
+      statement: 規則無法窮舉所有情境，現實組織總會有例外；若放任各單位自行決定，例外會逐步擴張成破壞系統的破口。
+      signals: [exception_handling, multi_unit_consistency, governance, scaling_risk]
+    solution:
+      module: Governance
+      move: 以 MBCCS consult/pre-approval/有效期間/監測流程處理未明列情境，讓標準具備可擴充性
+      layer: governance
+    reason:
+      - 規範必須搭配治理通道，否則例外與新媒介會快速破壞一致性
+      - 任何高風險品牌 guideline 都應定義「誰能核准」「核准多久有效」「哪些問題不在服務範圍」
+    applicable_when:
+      industries: [public_sector, finance]
+      brand_types: [institutional_public_trust, platform_ecosystem, heritage_legacy]
+      conditions: [multi_unit_consistency, exception_handling]
+      archetypes: [multi_brand_architecture, corporate_toolkit]
+    dependencies:
+      requires: [Governance]
+      enables: []
+    anti_patterns:
+      - 例外只寫「可以這樣做」卻不寫適用邊界與審核者
+      - 各單位把一次性例外當成通用替代方案沿用
+    evidence:
+      - brand_id: Mercedes_Benz_BrandStandards_2015
+        chapter: ch-01-02
+        excerpt: "consultation lifecycle：question → pre-approval → validity window → monitoring → eligibility decision；consult approval 有效期 60 天，website review 七日 turnaround。"
+    status: extracted
+
+  - id: dp-restraint-as-luxury-signal
+    title: 用克制與內隱表達奢華，而非高頻奢華詞堆疊
+    problem:
+      statement: 高端品牌若靠大量「奢華」字眼與華麗裝飾堆疊來證明自己高級，反而顯得用力、廉價，稀釋了真正的高端感。
+      signals: [premium_perception, restraint, brand_overclaiming_risk]
+    solution:
+      module: Voice and Tone
+      move: 用禁用詞清單與「可接受替代語」治理文案，禁止折價化／清倉／壓力語言，讓高端內隱於語氣
+      layer: language
+    reason:
+      - 奢華品牌的 discount framing 本身就是品牌破壞，即使價格資訊合法，也可能因語氣與呈現方式造成商品化
+      - 高端語氣可以談 opportunity、offer、experience，但不可把價值框成折扣或庫存壓力
+      - 用「禁用語 + 可接受替代語」治理文案，比只說 tone 要 premium 更可執行
+    applicable_when:
+      industries: [luxury_premium]
+      brand_types: [premium_luxury, heritage_legacy]
+      conditions: [premium_perception, mature_brand]
+      archetypes: [brand_experience_guide, full_brand_system]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Content Design]
+    anti_patterns:
+      - 使用 discount、clearance、liquidation、blowout、overstocked 等 distress language
+      - 把產品價值框成折扣或庫存壓力
+    evidence:
+      - brand_id: Mercedes_Benz_BrandStandards_2015
+        chapter: ch-02-01
+        excerpt: "不得使用 discount、clearance、liquidation、blowout、overstocked、save $X off MSRP 等 distress language；高端語氣可以談 opportunity、offer、experience，但不可把價值框成折扣。"
+    status: extracted
+
+  - id: dp-asset-protection-for-legacy
+    title: 把歷史品牌的核心識別當成不可妥協的資產來保護
+    problem:
+      statement: 歷史悠久的品牌，其 logo、色彩與材質是長期累積的資產；任何外部合作或內部輸出都可能在不經意間稀釋它。
+      signals: [heritage, asset_protection, consistency_over_time, brand_dilution_risk]
+    solution:
+      module: Visual Identity
+      move: 將 Star、word mark、claim 定為不可任意變形重組的資產，並以品牌分離規則防止與其他品牌、pre-owned 訊息相互污染
+      layer: visual_core
+    reason:
+      - 高辨識符號需要保護完整性與上下文，不只保護圖形本身
+      - 不得讓合作夥伴視覺高於 Mercedes-Benz 品牌層級
+      - 豪華品牌的地方行銷不可看起來像地方小店，必須吸收中央品牌的比例、留白與字體
+    applicable_when:
+      industries: [luxury_premium]
+      brand_types: [heritage_legacy, premium_luxury]
+      conditions: [heritage, asset_protection]
+      archetypes: [brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 把 Star、word mark 或 claim 與非核准品牌鎖定
+      - 讓合作夥伴或經銷商以任意字體與版面稀釋品牌
+    evidence:
+      - brand_id: Mercedes_Benz_BrandStandards_2015
+        chapter: ch-03-01
+        excerpt: "不得把 Star、word mark 或 claim 與非核准品牌鎖定；pre-owned 與新車訊息需清楚區分；不得讓合作夥伴視覺高於 Mercedes-Benz 品牌層級。"
+    status: extracted

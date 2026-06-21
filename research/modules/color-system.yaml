@@ -1,0 +1,68 @@
+# L2 固定知識 — Color System
+# schema：research/schemas/module_knowledge.schema.yaml
+
+module: Color System
+slug: color-system
+foundational: true
+layer: visual_core
+purpose: 用色彩建立品牌辨識、情緒與資訊角色，並把色彩自由度約束成可生產、可驗證的系統。
+problem_when_absent: 配色變成主觀偏好，跨媒介色差失控，無法 token 化，難以做無障礙對比驗證。
+corpus_frequency:
+  doc_count: 102
+  pct: 79.7
+
+driven_by:
+  - input: brand_positioning
+    affects: palette_temperature_and_saturation
+    mapping:
+      - when: [energetic, youthful, challenger]
+        tend_to: [高彩度, 對比強, 可用多彩色組, 色彩當情緒驅動]
+        evidence:
+          - {brand_id: 3M_Visual_Identity_Guidelines_2015, chapter: ch-02-03}
+          - {brand_id: LucidMotors}
+      - when: [trustworthy, institutional, finance]
+        tend_to: [低彩度為主, 深藍/中性主色, 點綴色克制, 強調穩定與權威]
+        evidence:
+          - {brand_id: DFPI_BrandGuidelines, chapter: ch-04}
+          - {brand_id: Santander_EN}
+      - when: [premium, luxury, heritage]
+        tend_to: [單色或極簡雙色, 黑白金等中性, 以留白與材質感取代鮮色]
+        evidence:
+          - {brand_id: Harrods_Brand_Guidelines}
+          - {brand_id: Coldwell_Banker_2020}
+  - input: palette_complexity_need
+    affects: color_governance_model
+    mapping:
+      - when: [many_subbrands, rich_visual_system]
+        tend_to: [用「色組 / color set」而非單色清單, 一個應用一組色, 提供 source files]
+        evidence:
+          - {brand_id: 3M_Visual_Identity_Guidelines_2015, chapter: ch-02-03}
+  - input: accessibility_needs
+    affects: contrast_rules
+    mapping:
+      - when: [accessibility, public_sector]
+        tend_to: [規範對比比例, 標示可用文字色組合, 提供無障礙色票]
+        evidence:
+          - {brand_id: MayorOfLondon_LOOK BOOK_2021}
+
+spec_dimensions:
+  - 主色 / 次色 / 中性色角色
+  - 色值格式（HEX / RGB / CMYK / PMS）
+  - 色彩比例與使用情境
+  - 背景與文字對比規則
+  - 漸層 / 色組規則（若有）
+  - 無障礙對比門檻
+  - 禁用配色
+
+related_decision_patterns:
+  - dp-color-set-over-single-pickers
+  - dp-restrained-palette-for-trust
+
+dependencies:
+  requires: [Visual Identity]
+  recommends: [Typography System, Design Tokens, Accessibility]
+
+reference_brands:
+  - 3M_Visual_Identity_Guidelines_2015
+  - DFPI_BrandGuidelines
+  - Santander_EN

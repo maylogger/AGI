@@ -1,0 +1,268 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: F1_Master_Brand_Guidelines_2017
+index_ref: docs/F1_Master_Brand_Guidelines_2017.index.yaml
+note_ref: docs/F1_Master_Brand_Guidelines_2017.note.md
+archetype: brand_experience_guide
+industry: media_entertainment
+modules:
+- Brand Strategy
+- Voice and Tone
+- Brand Architecture
+- Visual Identity
+- Governance
+- AI-Checkable Rules
+- Typography System
+- Content Design
+- Color System
+- Accessibility
+- Design Tokens
+- Layout System
+- Operations
+- Photography System
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 7
+  section_count: 6
+chapter_sequence:
+- id: ch-01
+  title: Our Story
+  order: 1
+  level: 1
+- id: ch-02
+  title: Visual Identity
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: F1 logo suite
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Colour and typography overview
+  order: 2
+  level: 2
+- id: ch-03
+  title: F1 Logo and Logo Lock-ups
+  order: 3
+  level: 1
+- id: ch-04
+  title: Colour and Typography
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Colour
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Formula 1 typeface and type use
+  order: 2
+  level: 2
+- id: ch-05
+  title: System
+  order: 5
+  level: 1
+- id: ch-06
+  title: Visual Principles and Applications
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Putting it all together and fixed applications
+  order: 1
+  level: 2
+- id: ch-06-02
+  title: Partner lock-ups
+  order: 2
+  level: 2
+- id: ch-07
+  title: Appendix
+  order: 7
+  level: 1
+frameworks:
+- name: 採「brand strategy -> personality -> design behaviours -> voice」框架
+  chapter: ch-01
+  chapter_title: Our Story
+- name: 採「master symbol + contextual lock-ups + narrow colour palette + bespoke typeface」框架
+  chapter: ch-02
+  chapter_title: Visual Identity
+- name: 採「recognition context determines mark complexity」框架
+  chapter: ch-02-01
+  chapter_title: F1 logo suite
+- name: 採「size-driven optical variant + lock-up construction + misuse prevention」框架
+  chapter: ch-03
+  chapter_title: F1 Logo and Logo Lock-ups
+- name: 採「limited palette + expressive display type + measured body type + accessibility constraints」框架
+  chapter: ch-04
+  chapter_title: Colour and Typography
+- name: 採「hero colour restraint + neutral support」框架
+  chapter: ch-04-01
+  chapter_title: Colour
+- name: 採「impact vs inform type roles」與「tightness as brand behaviour」框架
+  chapter: ch-04-02
+  chapter_title: Formula 1 typeface and type use
+- name: 採「grid discipline + graphic acceleration devices」框架
+  chapter: ch-05
+  chapter_title: System
+- name: 採「principle -> layout recipe -> fixed application -> partner governance」框架
+  chapter: ch-06
+  chapter_title: Visual Principles and Applications
+- name: 採「masterbrand-led flexible container」框架
+  chapter: ch-06-02
+  chapter_title: Partner lock-ups
+- name: 採「masterbrand naming + exceptional sub-brand + sensory production layer」框架
+  chapter: ch-07
+  chapter_title: Appendix
+patterns:
+- name: 先建立可衝突的二元張力，例如 control/chaos、precision/unpredictability，再讓視覺系統承載張力。
+  chapter: ch-01
+  chapter_title: Our Story
+- name: 多 logo variant 不是品牌分裂，而是依尺寸與情境優化 legibility/impact。
+  chapter: ch-02
+  chapter_title: Visual Identity
+- name: 以情境決定 logo complexity 是品牌架構常見模式。
+  chapter: ch-02-01
+  chapter_title: F1 logo suite
+- name: 同一 logo 依 display/standard/micro 建立 optical masters，是高辨識品牌的進階治理模式。
+  chapter: ch-03
+  chapter_title: F1 Logo and Logo Lock-ups
+- name: 用字體角色分工來模擬品牌性格：display type 負責 attack，body type 負責 engineering clarity。
+  chapter: ch-04
+  chapter_title: Colour and Typography
+- name: 品牌主色不一定大量使用，反而可透過少量高對比建立權威。
+  chapter: ch-04-01
+  chapter_title: Colour
+- name: 一次溝通只使用一種 display headline font，避免視覺引擎互相競爭。
+  chapter: ch-04-02
+  chapter_title: Formula 1 typeface and type use
+- name: 用 thick/thin contrast 與 rounded containers 表現賽車的速度線、控制與技術界面。
+  chapter: ch-05
+  chapter_title: System
+- name: 先給構成邏輯，再給固定物件，可避免範例被誤當唯一模板。
+  chapter: ch-06
+  chapter_title: Visual Principles and Applications
+- name: 用可伸縮 holding device 解決不同 logo aspect ratio 的聯名問題。
+  chapter: ch-06-02
+  chapter_title: Partner lock-ups
+- name: 附錄不只是雜項，而是處理特殊例外與生產細節的 governance layer。
+  chapter: ch-07
+  chapter_title: Appendix
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：F1 文案應避免 safe/familiar/generic words；headline 應偏短、強烈、具速度/危險/情緒詞；設計表現需同時含 human/fan emotion 與 technical/racing
+    cues。
+  chapter: ch-01
+  chapter_title: Our Story
+- module: ''
+  criterion: AI 可檢查：F1 symbol 是 own channels default；F1 Formula 1 logo 用於需要 descriptor 的 OOH/third-party communications；F1
+    Championship logo 用於 official sporting/accreditation；primary colour 不得任意擴充。
+  chapter: ch-02
+  chapter_title: Visual Identity
+- module: Visual Identity
+  criterion: AI 可檢查：own channels 優先使用 F1 symbol；第三方 owned communication 若需文字說明用 F1 Formula 1 logo；FIA Formula 1 World Championship
+    Grand Prix 等官方情境用 Championship logo。
+  chapter: ch-02-01
+  chapter_title: F1 logo suite
+- module: Visual Identity
+  criterion: AI 可檢查：Standard logo clear space = logo 高度 50%；Display logo clear space = logo 高度 10%；Display logo 不得低於 4p0/48pt/px
+    或在周圍有其他 brand elements；Micro logo 用於高度低於 4p0/48pt；vertical logo 只能逆時針 90° 使其向上，不可順時針向下；不得 45° 旋轉、變形、改色或放在 busy/similar
+    colour background。
+  chapter: ch-03
+  chapter_title: F1 Logo and Logo Lock-ups
+- module: Typography System
+  criterion: AI 可檢查：不得使用 Warm Red text；Warm Red 不可 tint；black 可用 90/70/50/30% tints；normal text below 14pt Bold 不得使用 red-on-white
+    或 white-on-red；body copy 平均 40-90 characters/6-14 words；長文使用 Titillium；large all-caps 僅用於短 headline。
+  chapter: ch-04
+  chapter_title: Colour and Typography
+- module: ''
+  criterion: 'AI 可檢查：Warm Red HEX #FF1E00；Carbon Black HEX #15151E；Off-White HEX #F7F4F1；High-Vis White #FFFFFF；不得使用 Warm
+    Red tint；Carbon Black tints 只可 90/70/50/30%。'
+  chapter: ch-04-01
+  chapter_title: Colour
+- module: Typography System
+  criterion: AI 可檢查：不可在同一 communication 同時使用 F1 Wide 與 F1 Black 作 display headline；all caps 僅用於短 headline，不可用於長文；F1 Black
+    leading 約比 point size 小 20%；F1 Wide 大多 solid leading；type alignment 長文以 left aligned 為主，display 可 center/right 但不可混用 alignment。
+  chapter: ch-04-02
+  chapter_title: Formula 1 typeface and type use
+- module: ''
+  criterion: AI 可檢查：layout 需對齊 base/layout grid；rounded corner ratio 不得任意改變；container devices 不得被拉伸或改造成非指定形狀；graphic patterns
+    需遵守 colour、type alignment、scaling 與 use/misuse 指引。
+  chapter: ch-05
+  chapter_title: System
+- module: ''
+  criterion: AI 可檢查：seasonal identity 仍標示 under development 不可編造；fixed applications 應使用供應 artwork；social avatar 可使用 micro/appropriate
+    logo；partner lock-up 中 F1 logo 應保持 leader role。
+  chapter: ch-06
+  chapter_title: Visual Principles and Applications
+- module: ''
+  criterion: AI 可檢查：horizontal bucket height 固定為 F1 logo height；vertical bucket width 固定為 F1 logo width；clear space = partner
+    logo area 最大高度的 1/5；partner logo 最大高度 = bucket device 高度 2 倍；不得讓 partner logo 明顯壓過 F1；title partners 才可使用 partner coloured
+    background。
+  chapter: ch-06-02
+  chapter_title: Partner lock-ups
+- module: ''
+  criterion: AI 可檢查：新產品服務名稱應以 Formula 1 開頭並使用清楚 descriptor；除 Paddock Club 外不應任意建立新 logo；Paddock Gold 應少量使用；fans photography
+    應呈現臉、情緒、dedication、camaraderie；race photos 應 close/raw、避免 posed scenes。
+  chapter: ch-07
+  chapter_title: Appendix
+chapters:
+- id: ch-01
+  title: Our Story
+  modules:
+  - Brand Strategy
+  - Voice and Tone
+- id: ch-02
+  title: Visual Identity
+  modules:
+  - Brand Architecture
+  - Visual Identity
+- id: ch-02-01
+  title: F1 logo suite
+  modules:
+  - Brand Architecture
+  - Governance
+- id: ch-03
+  title: F1 Logo and Logo Lock-ups
+  modules:
+  - AI-Checkable Rules
+  - Governance
+- id: ch-04
+  title: Colour and Typography
+  modules:
+  - Typography System
+  - Content Design
+  - Color System
+  - Accessibility
+- id: ch-04-01
+  title: Colour
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-04-02
+  title: Formula 1 typeface and type use
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Voice and Tone
+- id: ch-05
+  title: System
+  modules:
+  - Layout System
+  - Design Tokens
+- id: ch-06
+  title: Visual Principles and Applications
+  modules:
+  - Operations
+- id: ch-06-02
+  title: Partner lock-ups
+  modules:
+  - Brand Architecture
+  - Layout System
+- id: ch-07
+  title: Appendix
+  modules:
+  - Brand Architecture
+  - Photography System

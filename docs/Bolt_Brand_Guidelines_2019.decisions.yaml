@@ -1,0 +1,57 @@
+# L3 決策卡 sidecar — Bolt Brand Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Bolt_Brand_Guidelines_2019
+decisions:
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 用 Instant/Consistent/Trusted 與人格光譜建立可評分語氣模型，並以「＋／－」列出應追求與應避免的寫法
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - 品牌訊息 guideline 可用少量關鍵詞與排除規則建立 LLM 可評分的語氣模型
+    applicable_when:
+      industries: [tech_software, industrial_materials_science, nonprofit_social]
+      brand_types: [challenger, category_creator]
+      conditions: [needs_evaluation_criteria]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Content Design]
+    evidence:
+      - brand_id: Bolt_Brand_Guidelines_2019
+        chapter: ch-01-01
+        excerpt: "以 Instant、Consistent、Trusted 與人格光譜（friend/classic/rebel/authority、premium/mass）定位語氣，並用『＋／－』規則：文案應 precise、direct、premium、professional，不得 overtly fun、self-important、fluffy。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以正／反白兩種標誌版本對應明暗背景，inverse 作環境適配
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - 早期成長品牌需要簡潔可擴張的標誌資產，避免太多變體造成辨識分散
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: Bolt_Brand_Guidelines_2019
+        chapter: ch-02
+        excerpt: "以 primary logo 與 inverse logo 確保標誌在明暗背景上維持可讀，inverse 是環境適配；不得在低對比背景使用或自行改比例。"
+    status: extracted

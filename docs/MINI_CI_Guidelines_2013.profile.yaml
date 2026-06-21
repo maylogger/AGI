@@ -1,0 +1,229 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: MINI_CI_Guidelines_2013
+index_ref: docs/MINI_CI_Guidelines_2013.index.yaml
+note_ref: docs/MINI_CI_Guidelines_2013.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- AI-Checkable Rules
+- Typography System
+- Content Design
+- Legal and Trademark
+- Layout System
+- Messaging
+- Voice and Tone
+- Visual Language
+- Photography System
+- Color System
+- Operations
+- Governance
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 8
+  section_count: 2
+chapter_sequence:
+- id: ch-01
+  title: Typography and Position
+  order: 1
+  level: 1
+- id: ch-02
+  title: Logo and Wordmark
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Clear Space and Logo Versions
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Wordmark and Placement
+  order: 2
+  level: 2
+- id: ch-03
+  title: MINI Style Guide and Brand Quick Hits
+  order: 3
+  level: 1
+- id: ch-04
+  title: Frames
+  order: 4
+  level: 1
+- id: ch-05
+  title: Colors and Images
+  order: 5
+  level: 1
+- id: ch-06
+  title: Email Communications and Business Cards
+  order: 6
+  level: 1
+- id: ch-07
+  title: Resources
+  order: 7
+  level: 1
+- id: ch-08
+  title: MINI Nomenclature
+  order: 8
+  level: 1
+frameworks:
+- name: '`type role -> alignment -> color permission -> bullet/icon behavior`'
+  chapter: ch-01
+  chapter_title: Typography and Position
+- name: '`logo version by media + clear space + placement + misuse prevention`'
+  chapter: ch-02
+  chapter_title: Logo and Wordmark
+- name: '`application context -> logo version -> proportional spacing unit`'
+  chapter: ch-02-01
+  chapter_title: Clear Space and Logo Versions
+- name: '`name syntax + placement alignment + prohibited combinations`'
+  chapter: ch-02-02
+  chapter_title: Wordmark and Placement
+- name: '`voice vocabulary + product fact bank + legal syntax + CTA/bullet conventions`'
+  chapter: ch-03
+  chapter_title: MINI Style Guide and Brand Quick Hits
+- name: '`background -> number of frames -> format reference -> contact -> encapsulation -> color -> width`'
+  chapter: ch-04
+  chapter_title: Frames
+- name: '`asset color source -> frame color -> image mode -> design color usage`'
+  chapter: ch-05
+  chapter_title: Colors and Images
+- name: '`communication template + field order + typography fallback + legal/vehicle personalization`'
+  chapter: ch-06
+  chapter_title: Email Communications and Business Cards
+- name: '`approved portal -> asset type -> access condition`'
+  chapter: ch-07
+  chapter_title: Resources
+- name: '`approved term -> disallowed variant -> contextual note`'
+  chapter: ch-08
+  chapter_title: MINI Nomenclature
+patterns:
+- name: 用少量強規則取代完整排版系統，適合高度 campaign-driven 的品牌。
+  chapter: ch-01
+  chapter_title: Typography and Position
+- name: 版本選擇
+  chapter: ch-02
+  chapter_title: Logo and Wordmark
+- name: 不得如何使用
+  chapter: ch-02
+  chapter_title: Logo and Wordmark
+- name: 用標誌內部部件作為 spacing token。
+  chapter: ch-02-01
+  chapter_title: Clear Space and Logo Versions
+- name: 用 positive/negative pairs 治理命名與排版。
+  chapter: ch-02-02
+  chapter_title: Wordmark and Placement
+- name: 把 brand story、product truth 與 copy lint 規則放在同一節，方便 campaign 快速校準。
+  chapter: ch-03
+  chapter_title: MINI Style Guide and Brand Quick Hits
+- name: frame 作為 container、focus、connector 和 campaign grid，是可跨媒介複用的 visual grammar。
+  chapter: ch-04
+  chapter_title: Frames
+- name: 從攝影中的主色抽樣做 frame color，是 campaign cohesion pattern。
+  chapter: ch-05
+  chapter_title: Colors and Images
+- name: 商務模板同時提供 corporate 與 dealer 版本，是 distributed brand operations pattern。
+  chapter: ch-06
+  chapter_title: Email Communications and Business Cards
+- name: 在 guideline 末端放資源目錄，讓使用者從理解規則轉入取得素材。
+  chapter: ch-07
+  chapter_title: Resources
+- name: nomenclature 作為可轉換成 lint dictionary 或 terminology database 的 guideline 模組。
+  chapter: ch-08
+  chapter_title: MINI Nomenclature
+rules_ai_checkable:
+- module: Typography System
+  criterion: AI 可檢查：文字不得置中；text block 僅 flush left/ragged 或 flush right/ragged；body copy 只能黑白；MINI publications 不使用 italics；bullet
+    使用 carat/chevron，不使用標準圓點。
+  chapter: ch-01
+  chapter_title: Typography and Position
+- module: Visual Identity
+  criterion: AI 可檢查：`MINI` 必須全大寫；MINI 不得 italic；每則 ad 僅一個 logo；logo 不得置於 body copy 或替代 wordmark；不得與 claim/URL 合併；不得有其他 logotype/symbol
+    與 MINI wordmark 混合。
+  chapter: ch-02
+  chapter_title: Logo and Wordmark
+- module: Visual Identity
+  criterion: AI 可檢查：logo 周圍應至少保留指定比例空間；非 OOH/特定印刷不得任意使用 2-D logo；單色版本只用於單色應用。
+  chapter: ch-02-01
+  chapter_title: Clear Space and Logo Versions
+- module: ''
+  criterion: AI 可檢查：除 classic Mini 外，一律使用 `MINI`；不得寫作 `Mini`、`mini` 或混合大小寫；不得使用 `MINI-Service` 類 hyphenation；logo 應非置中、可與
+    headline 上緣對齊。
+  chapter: ch-02-02
+  chapter_title: Wordmark and Placement
+- module: Brand Strategy
+  criterion: AI 可檢查：複數仍為 MINI，不用 MINIs/MINI's；使用 `MPG` 而非 `mpg`；使用 `hwy` 而非 `HWY`；車型順序如 `MINI Cooper S Countryman ALL4`；URL
+    需 all caps 且 MINI bold；tagline 使用 `Let's Motor.®` 或 `LET'S MOTOR.®`。
+  chapter: ch-03
+  chapter_title: MINI Style Guide and Brand Quick Hits
+- module: ''
+  criterion: AI 可檢查：每頁不超過 3 個 frame；frame 不能空；frame 至少 bleed off 1 edge；相接 frame 必須不同色；2-3 個 frame 至少一側相接、不得重疊、不得留縫；每頁最多 2
+    種 frame color。
+  chapter: ch-04
+  chapter_title: Frames
+- module: ''
+  criterion: AI 可檢查：email body 使用 10 或 11 pt Arial black；signature info 10 pt Arial black、line spacing 11 pt；email 地址使用 all
+    caps；signature graphic 不得改尺寸；名片按指定尺寸與核准訂購流程處理。
+  chapter: ch-06
+  chapter_title: Email Communications and Business Cards
+- module: ''
+  criterion: AI 可檢查：新素材應來自核准資源入口；不得使用未核准網路下載 logo 或影像；需登入資源不得把敏感存取資訊散佈到公開文件。
+  chapter: ch-07
+  chapter_title: Resources
+chapters:
+- id: ch-01
+  title: Typography and Position
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Content Design
+- id: ch-02
+  title: Logo and Wordmark
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+- id: ch-02-01
+  title: Clear Space and Logo Versions
+  modules:
+  - Layout System
+- id: ch-02-02
+  title: Wordmark and Placement
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Messaging
+- id: ch-03
+  title: MINI Style Guide and Brand Quick Hits
+  modules:
+  - Legal and Trademark
+  - Content Design
+  - Voice and Tone
+- id: ch-04
+  title: Frames
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Language
+- id: ch-05
+  title: Colors and Images
+  modules:
+  - Photography System
+  - Visual Language
+  - Color System
+- id: ch-06
+  title: Email Communications and Business Cards
+  modules:
+  - AI-Checkable Rules
+  - Operations
+- id: ch-07
+  title: Resources
+  modules:
+  - Operations
+  - Governance
+- id: ch-08
+  title: MINI Nomenclature
+  modules:
+  - AI-Checkable Rules
+  - Content Design

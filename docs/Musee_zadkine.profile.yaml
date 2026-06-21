@@ -1,0 +1,239 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Musee_zadkine
+index_ref: docs/Musee_zadkine.index.yaml
+note_ref: docs/Musee_zadkine.note.md
+archetype: brand_experience_guide
+industry: public_sector
+modules:
+- Typography System
+- Color System
+- Visual Identity
+- Governance
+- AI-Checkable Rules
+- Layout System
+- Photography System
+- Operations
+- Motion Identity
+depth:
+  strategy: low
+  visual: high
+  governance: medium
+  top_level_chapter_count: 6
+  section_count: 6
+chapter_sequence:
+- id: ch-01
+  title: Les éléments de base
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Le logotype
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Taille, marge et cartouche
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Cohabitation and Interdits
+  order: 3
+  level: 2
+- id: ch-01-04
+  title: Iconography, Color and Typography
+  order: 4
+  level: 2
+- id: ch-02
+  title: La papeterie
+  order: 2
+  level: 1
+- id: ch-03
+  title: La signalétique
+  order: 3
+  level: 1
+- id: ch-04
+  title: L’édition
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Communication institutionnelle
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Communication évènementielle
+  order: 2
+  level: 2
+- id: ch-05
+  title: L’édition électronique
+  order: 5
+  level: 1
+- id: ch-06
+  title: Produits dérivés
+  order: 6
+  level: 1
+frameworks:
+- name: '`institutional constraint -> base identity tokens -> application templates`'
+  chapter: ch-01
+  chapter_title: Les éléments de base
+- name: '`material color name -> reproduction values -> usage condition`'
+  chapter: ch-01-01
+  chapter_title: Le logotype
+- name: '`minimum size + proportional margin + background container fallback`'
+  chapter: ch-01-02
+  chapter_title: Taille, marge et cartouche
+- name: '`horizontal alignment + baseline + 2M spacing + misuse blacklist`'
+  chapter: ch-01-03
+  chapter_title: Cohabitation and Interdits
+- name: '`collection material -> image direction -> color palette -> typography hierarchy`'
+  chapter: ch-01-04
+  chapter_title: Iconography, Color and Typography
+- name: '`identity token -> fixed institutional fields -> template by object type`'
+  chapter: ch-02
+  chapter_title: La papeterie
+- name: '`visitor touchpoint -> object template -> identity placement`'
+  chapter: ch-03
+  chapter_title: La signalétique
+- name: '`communication type -> format size -> template composition -> institutional constraints`'
+  chapter: ch-04
+  chapter_title: L’édition
+- name: '`institutional identity + public information + format scale`'
+  chapter: ch-04-01
+  chapter_title: Communication institutionnelle
+- name: '`event content -> campaign asset family -> institutional signature`'
+  chapter: ch-04-02
+  chapter_title: Communication évènementielle
+- name: '`digital object type -> fixed pixel dimensions -> information hierarchy -> motion/static choice`'
+  chapter: ch-05
+  chapter_title: L’édition électronique
+- name: '`object type -> imprint area -> identity placement -> readability`'
+  chapter: ch-06
+  chapter_title: Produits dérivés
+patterns:
+- name: 以基礎元素章節集中管理所有 design tokens，再輸出到多種媒介。
+  chapter: ch-01
+  chapter_title: Les éléments de base
+- name: museum/material-based logo color system。
+  chapter: ch-01-01
+  chapter_title: Le logotype
+- name: cartouche 作為 disturbed background fallback。
+  chapter: ch-01-02
+  chapter_title: Taille, marge et cartouche
+- name: cohabitation grid for public/cultural brands。
+  chapter: ch-01-03
+  chapter_title: Cohabitation and Interdits
+- name: collection-derived design tokens。
+  chapter: ch-01-04
+  chapter_title: Iconography, Color and Typography
+- name: stationery template system。
+  chapter: ch-02
+  chapter_title: La papeterie
+- name: museum signage application set。
+  chapter: ch-03
+  chapter_title: La signalétique
+- name: publication template matrix。
+  chapter: ch-04
+  chapter_title: L’édition
+- name: evergreen museum communication templates。
+  chapter: ch-04-01
+  chapter_title: Communication institutionnelle
+- name: exhibition campaign kit。
+  chapter: ch-04-02
+  chapter_title: Communication évènementielle
+- name: digital banner adaptation pattern。
+  chapter: ch-05
+  chapter_title: L’édition électronique
+- name: museum merchandise application set。
+  chapter: ch-06
+  chapter_title: Produits dérivés
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：logo 寬度不得小於 30 mm；logo 四周 margin 為 logo 寬度的 1/20；擾動背景使用白版或 cartouche；cartouche 顏色需來自 Musée Zadkine palette；禁用十項不可發生。
+  chapter: ch-01
+  chapter_title: Les éléments de base
+- module: Visual Identity
+  criterion: AI 可檢查：黑版僅用於黑白或極端 reproduction 條件；白版用於彩色、深色、深色攝影或複雜背景；不得任意改 logo 色。
+  chapter: ch-01-01
+  chapter_title: Le logotype
+- module: ''
+  criterion: AI 可檢查：logo 寬度 < 30 mm 為違規；margin 必須 ≥ logo width/20；cartouche padding 同 margin；cartouche color 必須屬於官方 palette。
+  chapter: ch-01-02
+  chapter_title: Taille, marge et cartouche
+- module: ''
+  criterion: AI 可檢查：多 logo 必須水平排列；基線對齊；左右間距 ≥ 2 倍 M 高；不得改比例、改色、拆分 logo、變形、使用 outline、使用漸層、放置在降低可讀性的背景、加陰影、分開兩個字。
+  chapter: ch-01-03
+  chapter_title: Cohabitation and Interdits
+- module: Color System
+  criterion: AI 可檢查：攝影應優先呈現材質/觸感或作品局部；色彩需取自 Granit、Ébène、Noyer、Orme、Marbre、Pierre；印刷使用 Helvetica Neue；bureau/internet 僅在 Helvetica
+    Neue 不可用時使用 Arial。
+  chapter: ch-01-04
+  chapter_title: Iconography, Color and Typography
+- module: ''
+  criterion: AI 可檢查：名片建議使用 Conquéror Vergé 350g 或同級創作紙；名片正面色彩需從官方 palette 選擇；電子簽名需包含姓名、職稱、email、電話、地址與網站；印章尺寸為 59 x 23 mm。
+  chapter: ch-02
+  chapter_title: La papeterie
+- module: ''
+  criterion: AI 可檢查：badge 可有姓名或無姓名兩種版本；展覽 calicot 需包含展期/展名/網址等必要資訊；空間應用不得違反基礎 logo 尺寸與 margin。
+  chapter: ch-03
+  chapter_title: La signalétique
+- module: ''
+  criterion: AI 可檢查：指定格式應使用對應模板尺寸；參觀摺頁與 dépliant d’appel 需依巴黎市政府 charte 並使用 VistaSans；co-editions logo 水平排列、基線對齊、左右距離至少 2M。
+  chapter: ch-04
+  chapter_title: L’édition
+- module: ''
+  criterion: AI 可檢查：商品上的 logo/網址需符合最小尺寸與 margin；小物件不得使用導致可讀性不足的複雜版面；不得任意改色或拆分 logo。
+  chapter: ch-06
+  chapter_title: Produits dérivés
+chapters:
+- id: ch-01
+  title: Les éléments de base
+  modules:
+  - Typography System
+  - Color System
+  - Visual Identity
+  - Governance
+- id: ch-01-01
+  title: Le logotype
+  modules:
+  - Color System
+- id: ch-01-02
+  title: Taille, marge et cartouche
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+- id: ch-01-03
+  title: Cohabitation and Interdits
+  modules:
+  - AI-Checkable Rules
+  - Governance
+- id: ch-01-04
+  title: Iconography, Color and Typography
+  modules:
+  - Photography System
+  - Typography System
+  - Color System
+- id: ch-02
+  title: La papeterie
+  modules:
+  - Operations
+- id: ch-03
+  title: La signalétique
+  modules:
+  - Operations
+- id: ch-04
+  title: L’édition
+  modules:
+  - Governance
+- id: ch-04-01
+  title: Communication institutionnelle
+  modules:
+  - Governance
+- id: ch-05
+  title: L’édition électronique
+  modules:
+  - Motion Identity
+- id: ch-06
+  title: Produits dérivés
+  modules:
+  - Operations

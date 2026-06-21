@@ -1,0 +1,156 @@
+# L3 決策卡 sidecar — Clayton Homes Brand Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: Clayton_Homes_BrandGuideline_2021
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌不是單一標誌，而是組織如何行動與如何溝通
+      - 品牌是決策系統，不是美術風格；每個視覺與文案選擇都應能回推到品牌支柱
+      - 先建立判斷標準，後續視覺與語氣才有可回溯的語義來源
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: Clayton_Homes_BrandGuideline_2021
+        chapter: ch-01
+        excerpt: "先建立 Clayton 為何存在、服務誰、如何改變認知，避免後續視覺規範變成沒有策略根據的裝飾清單；從 purpose、promise 到 personas 形成策略到內容的決策框架。"
+    status: extracted
+
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 用人格詞集（Curious/Sharing/Free Thinking/Caring/Optimistic）當每個產出的檢查軸
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - 技術品牌不應冷硬；科學可以是好奇、慷慨且樂觀的
+      - 三支柱可作為所有產出的評估矩陣：是否清楚、是否前瞻、是否有感染力
+      - 品牌支柱應足以成為評審準則，而不是只作內部口號
+      - voice attribute matrix：desired quality 對應 prohibited drift
+      - 可複用為 brand voice QA rubric，用正向特質與負向偏差共同審核
+    applicable_when:
+      industries: [industrial_materials_science, nonprofit_social]
+      brand_types: [challenger, category_creator, mission_driven]
+      conditions: []
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Visual Language, Content Design]
+    evidence:
+      - brand_id: Clayton_Homes_BrandGuideline_2021
+        chapter: ch-01-02
+        excerpt: "以 on-brand phrases 與 off-brand phrases 建立內容邊界，並用 Smart/Modern/Affordable 與 simple、authentic、optimistic、fun 等關鍵詞作語氣檢查軸；禁用 mobile homes、trailers、cheap housing 等貶損用語。"
+    status: extracted
+
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 先建立「誰在說話」的判斷層，再以 umbrella → member → VPU/GP → lockup → special case 的層級把組織結構視覺化
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - 大型系統可用「可辨識但不獨立」的 secondary line 管理內部單位
+      - 任何多實體品牌系統都需要先建立「誰在說話」的判斷層，再談 logo 放置
+    applicable_when:
+      industries: [public_sector, education]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [multi_unit_consistency, multi_entity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 各單位自行創造分支品牌與專屬 tagline
+      - 只列 logo 圖檔卻不給「何時用 umbrella、何時用單一機構」的判斷規則
+    evidence:
+      - brand_id: Clayton_Homes_BrandGuideline_2021
+        chapter: ch-01-03
+        excerpt: "Clayton family of brands 都應支撐 quality home 與 rewarding 體驗；多品牌可以保留差異，但必須共享顧客體驗與信任主張，architecture 章節是 identity governance 的索引層。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - 留白是識別權重與可讀性的保護機制，需隨標誌縮放
+      - 相對單位可建立 scalable spacing token，不被固定像素綁死
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - minimum clear space = 1x o，optimal = 2x o
+    evidence:
+      - brand_id: Clayton_Homes_BrandGuideline_2021
+        chapter: ch-02-01
+        excerpt: "以 logo 中的「o」作為 clear space 單位，用品牌自身形體定義留白，可提升記憶與執行一致性。"
+    status: extracted
+
+  - id: dp-palette-roles-and-usage-limits
+    title: 用色彩角色與用途限制治理調色盤，而非只給色票清單
+    problem:
+      statement: 只提供一串色票時，設計者會把任何顏色當成可自由使用，導致主色被稀釋、輔助色被誤用為大面積背景，跨應用失去一致性。
+      signals: [color_governance, palette_misuse, brand_color_equity, multi_application]
+    solution:
+      module: Color System
+      move: 為每個顏色指定角色（主色／背景／文字／功能／輔助），並明訂「可作背景／不可作背景」與少量使用門檻
+      layer: visual_core
+    reason:
+      - 主色承擔品牌記憶，輔助／功能色承擔資訊與插圖，角色混用會稀釋品牌資產
+      - color token 需附用途限制（可作背景、不可作背景），才能被審稿與自動檢查
+      - 把識別色與功能色分離並對後者加治理門檻，可避免資料視覺化隨意擴色
+    applicable_when:
+      industries: [finance, consumer_retail_hospitality, luxury_premium, nonprofit_social]
+      brand_types: [mass_consumer, institutional_public_trust, premium_luxury]
+      conditions: [color_governance, multi_application]
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit]
+    dependencies:
+      requires: [Color System]
+      enables: [Design Tokens, Accessibility]
+    anti_patterns:
+      - 只給一串色票，未說明每色角色與可否作背景
+      - 讓輔助／功能色被當成大面積品牌背景
+    evidence:
+      - brand_id: Clayton_Homes_BrandGuideline_2021
+        chapter: ch-02-03
+        excerpt: "品牌直接溝通需優先使用 primary combinations，secondary colors 只能作 punctuation 或輔助，中性色提供精緻感；主色建立品牌資產，輔助色提供樂趣與區隔。"
+    status: extracted

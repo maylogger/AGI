@@ -1,0 +1,182 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: BNP_Brand_Pass_BD_2012
+index_ref: docs/BNP_Brand_Pass_BD_2012.index.yaml
+note_ref: docs/BNP_Brand_Pass_BD_2012.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- Brand Strategy
+- Voice and Tone
+- Messaging
+- Governance
+- AI-Checkable Rules
+- Content Design
+- Photography System
+- Typography System
+- Motion Identity
+- Color System
+- Visual Identity
+- Layout System
+- Operations
+- Legal and Trademark
+- Knowledge Architecture
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 4
+  section_count: 11
+chapter_sequence:
+- id: ch-01
+  title: Nos principes de communication
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Édito et histoire
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Notre personnalité
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Notre dynamique de marque
+  order: 3
+  level: 2
+- id: ch-02
+  title: Les outils identitaires
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Emblème, signature et blocs marque
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Typographies, iconographie et couleurs
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Style éditorial et identité sonore
+  order: 3
+  level: 2
+- id: ch-03
+  title: Application aux supports
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Print, digital, bureautique et papeterie
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Payment, banners, mobile et social
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Video, radio, signage, events et tennis
+  order: 3
+  level: 2
+- id: ch-04
+  title: Pour aller plus loin
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Questions clés et difficultés
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Responsabilité et marques du Groupe
+  order: 2
+  level: 2
+frameworks:
+- name: history → personality → brand dynamic：先建立來源，再定義性格，最後說明品牌如何在變動世界中持續行動
+  chapter: ch-01
+  chapter_title: Nos principes de communication
+- name: 四特質矩陣提供快速診斷：人性、責任、創新與熱情必須共同出現，且不能被單一行銷姿態取代
+  chapter: ch-01-02
+  chapter_title: Notre personnalité
+- name: 工具箱框架把 identity asset 分成符號、組合、語言、感官與內容層，支援從靜態到動態媒介的部署
+  chapter: ch-02
+  chapter_title: Les outils identitaires
+- name: 媒介應用框架依 touchpoint 分組：商務文件、交易媒介、數位互動、聲音影像、空間與贊助
+  chapter: ch-03
+  chapter_title: Application aux supports
+- name: 治理框架包含 self-check questions、escalation path、brand responsibility 與 group brand architecture
+  chapter: ch-04
+  chapter_title: Pour aller plus loin
+patterns:
+- name: 可複用模式是以人格特質建立正反判斷，例如『Humain 是什麼／不是什麼』，讓抽象價值變成創意篩選器。
+  chapter: ch-01
+  chapter_title: Nos principes de communication
+- name: 品牌人格可用二元對照、語氣紅線與情境說明形成可訓練的 content rule set。
+  chapter: ch-01-02
+  chapter_title: Notre personnalité
+- name: 可複用模式包括 lockup hierarchy、signature pairing、approved typography、color palette 與 iconographic style。
+  chapter: ch-02
+  chapter_title: Les outils identitaires
+- name: 可複用模式是『先定核心元素，再給媒介範例』，用模板化支援大規模部署。
+  chapter: ch-03
+  chapter_title: Application aux supports
+- name: 可複用模式是將常見錯誤與品牌架構放在文件末段，支援代理商與地方團隊自我修正。
+  chapter: ch-04
+  chapter_title: Pour aller plus loin
+rules_ai_checkable:
+- module: ''
+  criterion: AI-checkable：每個對外訊息應至少對應一個人格支點；不得只談產品而無客戶利益；語氣不得疏離、悲情化或過度技術化。
+  chapter: ch-01
+  chapter_title: Nos principes de communication
+- module: ''
+  criterion: AI-checkable：文案不得只描述產品功能；應指出受眾利益或改變；避免冷漠官樣、過度戲劇化、空泛樂觀與不負責任的承諾。
+  chapter: ch-01-02
+  chapter_title: Notre personnalité
+- module: ''
+  criterion: AI-checkable：標誌不得重繪、變色、變形或被非核准元素取代；指定字體與品牌色須出現在核心溝通；聲音或文案使用需呼應品牌簽名。
+  chapter: ch-02
+  chapter_title: Les outils identitaires
+- module: ''
+  criterion: AI-checkable：每個應用物需包含核准品牌識別；不得使用未授權字體、色彩或影像風格；社群與行動版面需保持標誌可讀與訊息層級清楚。
+  chapter: ch-03
+  chapter_title: Application aux supports
+- module: ''
+  criterion: AI-checkable：輸出前應通過問題清單；若涉及子品牌或集團品牌關係，必須使用核准架構與命名；責任相關訊息不得與品牌價值矛盾。
+  chapter: ch-04
+  chapter_title: Pour aller plus loin
+chapters:
+- id: ch-01
+  title: Nos principes de communication
+  modules:
+  - Brand Strategy
+  - Voice and Tone
+  - Messaging
+  - Governance
+- id: ch-01-02
+  title: Notre personnalité
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+- id: ch-02
+  title: Les outils identitaires
+  modules:
+  - Photography System
+  - AI-Checkable Rules
+  - Typography System
+  - Motion Identity
+  - Color System
+  - Visual Identity
+- id: ch-03
+  title: Application aux supports
+  modules:
+  - Layout System
+  - Operations
+  - Governance
+- id: ch-04
+  title: Pour aller plus loin
+  modules:
+  - Legal and Trademark
+  - Operations
+  - Knowledge Architecture
+  - Governance

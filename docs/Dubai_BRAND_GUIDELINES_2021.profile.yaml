@@ -1,0 +1,248 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Dubai_BRAND_GUIDELINES_2021
+index_ref: docs/Dubai_BRAND_GUIDELINES_2021.index.yaml
+note_ref: docs/Dubai_BRAND_GUIDELINES_2021.note.md
+archetype: full_brand_system
+industry: public_sector
+modules:
+- Brand Strategy
+- Messaging
+- Brand Architecture
+- Localization
+- Visual Identity
+- Typography System
+- Operations
+- Color System
+- Design Tokens
+- AI-Checkable Rules
+- Layout System
+- Photography System
+- Iconography System
+- Content Design
+- Voice and Tone
+- Legal and Trademark
+- Governance
+- Compliance
+depth:
+  strategy: high
+  visual: high
+  governance: high
+  top_level_chapter_count: 10
+  section_count: 1
+chapter_sequence:
+- id: ch-01
+  title: Brand Foundation
+  order: 1
+  level: 1
+- id: ch-02
+  title: Brandmarks
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Brand Anatomy
+  order: 1
+  level: 2
+- id: ch-03
+  title: Typography
+  order: 3
+  level: 1
+- id: ch-04
+  title: Colour Palettes
+  order: 4
+  level: 1
+- id: ch-05
+  title: Brand Usage
+  order: 5
+  level: 1
+- id: ch-06
+  title: Applications
+  order: 6
+  level: 1
+- id: ch-07
+  title: Iconography and Visual Content
+  order: 7
+  level: 1
+- id: ch-08
+  title: Tone of Voice
+  order: 8
+  level: 1
+- id: ch-09
+  title: Events, Merchandise and Partnerships
+  order: 9
+  level: 1
+- id: ch-10
+  title: Terms of Use
+  order: 10
+  level: 1
+frameworks:
+- name: vision → mission pillars → proposition → promise 的城市品牌策略框架
+  chapter: ch-01
+  chapter_title: Brand Foundation
+- name: umbrella architecture + use-case-based brandmark selection
+  chapter: ch-02
+  chapter_title: Brandmarks
+- name: linguistic fusion as identity anatomy
+  chapter: ch-02-01
+  chapter_title: Brand Anatomy
+- name: language script × medium × formality 的字體矩陣
+  chapter: ch-03
+  chapter_title: Typography
+- name: shared neutrals + sub-brand accent palettes
+  chapter: ch-04
+  chapter_title: Colour Palettes
+- name: spacing unit → alignment anchor → minimum size → forbidden changes
+  chapter: ch-05
+  chapter_title: Brand Usage
+- name: format ratio → logo position → logo scale → template / approval route
+  chapter: ch-06
+  chapter_title: Applications
+- name: icon category library + three-key visual content model
+  chapter: ch-07
+  chapter_title: Iconography and Visual Content
+- name: tone slider / semantic differential model
+  chapter: ch-08
+  chapter_title: Tone of Voice
+- name: partner eligibility → permitted use → collateral placement → risk review
+  chapter: ch-09
+  chapter_title: Events, Merchandise and Partnerships
+- name: permission → requirements → restrictions → inspection / cease and desist
+  chapter: ch-10
+  chapter_title: Terms of Use
+patterns:
+- name: 可複用為 place brand foundation：用 personality traits 連接文化、服務與體驗。
+  chapter: ch-01
+  chapter_title: Brand Foundation
+- name: 雙語字形融合可作為多文化城市品牌的核心符號生成方式。
+  chapter: ch-02
+  chapter_title: Brandmarks
+- name: 可複用為跨文化品牌的 bilingual mark rationale。
+  chapter: ch-02-01
+  chapter_title: Brand Anatomy
+- name: 可複用為 multilingual brand typography table。
+  chapter: ch-03
+  chapter_title: Typography
+- name: 可複用於城市 / 集團品牌的 palette inheritance model。
+  chapter: ch-04
+  chapter_title: Colour Palettes
+- name: 適合雙語或書法標誌的 baseline alignment rule。
+  chapter: ch-05
+  chapter_title: Brand Usage
+- name: 品牌曲線轉成 container，是從 logo anatomy 派生 graphic device 的常見模式。
+  chapter: ch-06
+  chapter_title: Applications
+- name: people / places / detail 是目的地影像 briefing 的通用三角。
+  chapter: ch-07
+  chapter_title: Iconography and Visual Content
+- name: 可複用為語氣定位雷達：每軸選定品牌應處位置與禁區。
+  chapter: ch-08
+  chapter_title: Tone of Voice
+- name: 將合作使用分為 endorsement criteria 與 collateral rules，適合高價值城市品牌。
+  chapter: ch-09
+  chapter_title: Events, Merchandise and Partnerships
+- name: 可複用為 trademark guideline legal appendix。
+  chapter: ch-10
+  chapter_title: Terms of Use
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: 不得拆除任何一層字母；不得改變字距、比例或透明度；不得讓單一語言層支配另一層。
+  chapter: ch-02-01
+  chapter_title: Brand Anatomy
+- module: Typography System
+  criterion: Calibri 僅用於 emails、official letters、presentations；Brush Script 僅用於 social media；print / digital 字體需按指定語言使用。
+  chapter: ch-03
+  chapter_title: Typography
+- module: ''
+  criterion: 使用色彩需符合該子品牌 palette；不得將 Dubai Calendar 的紅黃橘系任意套用於 Business Events；色票需使用列出的 Hex / Pantone / CMYK / RGB。
+  chapter: ch-04
+  chapter_title: Colour Palettes
+- module: Brand Strategy
+  criterion: 排除區不得小於 1 daal；logo 對齊應以 baseline 而非底部 dots；最小寬度 20mm；不得改字距、缺漏元素、改透明度、模糊、變形、加效果、italicise 或未經批准用色。
+  chapter: ch-05
+  chapter_title: Brand Usage
+- module: ''
+  criterion: 直式頁 brandmark 等於頁寬 1/4，橫式頁等於 1/6；透明 box 最低 70%；圖上使用白 logo；box 不得低於 70% opacity 或貼邊。
+  chapter: ch-06
+  chapter_title: Applications
+- module: Iconography System
+  criterion: 自製 icon 需有以曲線結尾的 gap；攝影與影片 briefing 至少標示 people、places、detail 其中一項，完整故事可由同一拍攝的多張照片組合。
+  chapter: ch-07
+  chapter_title: Iconography and Visual Content
+- module: Voice and Tone
+  criterion: 文案應 cheerful、approachable、knowledgeable；不得過度高聲、排他、過熟、傲慢或冷漠。
+  chapter: ch-08
+  chapter_title: Tone of Voice
+- module: ''
+  criterion: partner 必須是 Dubai flag bearer 或有合作 / MOU；endorsement 不得對 Brand Dubai equity 造成重大負面風險；partner 通訊只能用 brandmark，不得使用其他
+    visual language。
+  chapter: ch-09
+  chapter_title: Events, Merchandise and Partnerships
+- module: ''
+  criterion: Marks 不得商業使用、不得商品化、不得廣告使用、不得貶損、不得政治敏感、不得暗示 endorsement、不得裁切修改；使用需加 attribution statement。
+  chapter: ch-10
+  chapter_title: Terms of Use
+chapters:
+- id: ch-01
+  title: Brand Foundation
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-02
+  title: Brandmarks
+  modules:
+  - Brand Architecture
+  - Localization
+  - Visual Identity
+- id: ch-02-01
+  title: Brand Anatomy
+  modules:
+  - Localization
+  - Visual Identity
+- id: ch-03
+  title: Typography
+  modules:
+  - Localization
+  - Typography System
+  - Operations
+- id: ch-04
+  title: Colour Palettes
+  modules:
+  - Brand Architecture
+  - Color System
+  - Design Tokens
+- id: ch-05
+  title: Brand Usage
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-06
+  title: Applications
+  modules:
+  - Layout System
+  - Operations
+- id: ch-07
+  title: Iconography and Visual Content
+  modules:
+  - Photography System
+  - Iconography System
+  - Content Design
+- id: ch-08
+  title: Tone of Voice
+  modules:
+  - Content Design
+  - Voice and Tone
+- id: ch-09
+  title: Events, Merchandise and Partnerships
+  modules:
+  - Legal and Trademark
+  - Operations
+  - Governance
+- id: ch-10
+  title: Terms of Use
+  modules:
+  - Legal and Trademark
+  - Compliance
+  - Governance

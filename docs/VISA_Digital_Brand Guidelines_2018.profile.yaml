@@ -1,0 +1,170 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: VISA_Digital_Brand Guidelines_2018
+index_ref: docs/VISA_Digital_Brand Guidelines_2018.index.yaml
+note_ref: docs/VISA_Digital_Brand Guidelines_2018.note.md
+archetype: corporate_toolkit
+industry: finance
+modules:
+- Product Language
+- Voice and Tone
+- Interaction Design
+- UI Components
+- Content Design
+- AI-Checkable Rules
+- Design Tokens
+- Visual Identity
+- Accessibility
+- Motion Identity
+- Compliance
+- Content Safety
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 2
+  section_count: 5
+chapter_sequence:
+- id: ch-01
+  title: Getting Started
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: UX Principles
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Digital Tone of Voice
+  order: 2
+  level: 2
+- id: ch-02
+  title: Visa Digital Brand Elements
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Visa Brand Mark
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Visa Sensory Branding
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Visa Credentials and Card Art
+  order: 3
+  level: 2
+frameworks:
+- name: Human-centric payment UX framework：speed + humanity + memorability + anticipation
+  chapter: ch-01
+  chapter_title: Getting Started
+- name: North-star principle set
+  chapter: ch-01-01
+  chapter_title: UX Principles
+- name: Human voice in transactional UX
+  chapter: ch-01-02
+  chapter_title: Digital Tone of Voice
+- name: Brand assurance across recognition, confirmation, credential clarity
+  chapter: ch-02
+  chapter_title: Visa Digital Brand Elements
+- name: Contrast-first logo application
+  chapter: ch-02-01
+  chapter_title: Visa Brand Mark
+- name: Multisensory confirmation framework
+  chapter: ch-02-02
+  chapter_title: Visa Sensory Branding
+- name: Credential display hierarchy：full card art -> card art with last four -> text/mark fallback
+  chapter: ch-02-03
+  chapter_title: Visa Credentials and Card Art
+patterns:
+- name: 用少量動詞式原則作為 SDK 與 UI 規格的上層判準。
+  chapter: ch-01
+  chapter_title: Getting Started
+- name: 將品牌價值轉為 UX heuristic。
+  chapter: ch-01-01
+  chapter_title: UX Principles
+- name: 以極短語句建立文案邊界。
+  chapter: ch-01-02
+  chapter_title: Digital Tone of Voice
+- name: 在關鍵交易節點放入適當品牌訊號，而非全程高強度露出。
+  chapter: ch-02
+  chapter_title: Visa Digital Brand Elements
+- name: 當背景對比不足時，用卡片比例 rounded rectangle 作 staging。
+  chapter: ch-02-01
+  chapter_title: Visa Brand Mark
+- name: 在完成交易等 moment 加入 branded micro-interaction。
+  chapter: ch-02-02
+  chapter_title: Visa Sensory Branding
+- name: 用 last four 與 issuer/Visa branding 形成帳戶辨識模式。
+  chapter: ch-02-03
+  chapter_title: Visa Credentials and Card Art
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：流程不得過度複雜；文案需簡潔清楚；介面應使用 Visa 識別創造記憶點；關鍵步驟需預先處理使用者可能疑慮。
+  chapter: ch-01
+  chapter_title: Getting Started
+- module: Brand Strategy
+  criterion: AI 可檢查：若規則以 `*` 標示應視為 mandatory；任何 Visa credential display 必須能讓使用者辨識帳戶與 Visa 關係。
+  chapter: ch-02
+  chapter_title: Visa Digital Brand Elements
+- module: Brand Strategy
+  criterion: 'AI 可檢查：Visa Brand Mark 只能用 blue #15195A 或 white #FFFFFF；clear space 儘量為 V 高度 1X；文字寫法為 `Visa`，不得全大寫 `VISA`；品牌標誌不可與周圍內容比例失衡；monochrome
+    screen 用深色背景加白色 mark。'
+  chapter: ch-02-01
+  chapter_title: Visa Brand Mark
+- module: Brand Strategy
+  criterion: AI 可檢查：Visa sensory elements 應出現在 Visa product/capability 的品牌事件中；Brand Mark 最大寬度不得超過螢幕寬 40%；動畫應水平垂直置中；無法顯示動畫時使用
+    static graphic、sound 或 haptic；custom dark color rule set 用於 monochrome/dark background。
+  chapter: ch-02-02
+  chapter_title: Visa Sensory Branding
+- module: ''
+  criterion: AI 可檢查：付款確認、交易紀錄、enrolled card listing 需顯示 Visa credentials；Token Service 錢包 in-store payment 必須有 card art；使用者需能看到
+    token/digital account number last 4 與解釋；不得使用 `token` 描述 token number；digital card art 不得包含 cardholder name、PAN、BIN、expiry、EMV
+    chip contacts、hologram 靜態圖；card art 比例應符合 ISO ID-1 1536x969；Contactless Symbol 不得出現在 card art。
+  chapter: ch-02-03
+  chapter_title: Visa Credentials and Card Art
+chapters:
+- id: ch-01
+  title: Getting Started
+  modules:
+  - Product Language
+  - Voice and Tone
+  - Interaction Design
+- id: ch-01-01
+  title: UX Principles
+  modules:
+  - UI Components
+  - Interaction Design
+- id: ch-01-02
+  title: Digital Tone of Voice
+  modules:
+  - Content Design
+  - Voice and Tone
+- id: ch-02
+  title: Visa Digital Brand Elements
+  modules:
+  - AI-Checkable Rules
+  - Design Tokens
+  - Interaction Design
+  - Visual Identity
+- id: ch-02-01
+  title: Visa Brand Mark
+  modules:
+  - AI-Checkable Rules
+  - Accessibility
+  - Visual Identity
+- id: ch-02-02
+  title: Visa Sensory Branding
+  modules:
+  - Product Language
+  - Motion Identity
+  - Interaction Design
+- id: ch-02-03
+  title: Visa Credentials and Card Art
+  modules:
+  - AI-Checkable Rules
+  - Compliance
+  - UI Components
+  - Content Safety

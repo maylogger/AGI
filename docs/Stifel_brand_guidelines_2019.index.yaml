@@ -1,0 +1,67 @@
+title: 'Stifel Brand Guidelines'
+source: 'sources/Stifel_brand_guidelines_2019.pdf'
+date: 'January 2019'
+language: 'en'
+summary: '這份 Stifel 品牌手冊以規定與一致性為核心，規範 logo、色彩階層、字體、影像、文具、品牌語法、範例與支援資源。'
+chapters:
+  - id: 'ch-01'
+    title: 'Our Logo'
+    level: 1
+    order: 1
+    pages: '3-11'
+    summary: '定義 Stifel logo 的發音、色彩、背景、最小尺寸、清除空間、tagline、禁用方式、division/department names 與 group names。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Logo Colors, Backgrounds and Spacing'
+        level: 2
+        order: 1
+        pages: '4-7'
+        summary: '規範藍、白、黑 logo、可用背景、clear space 與最小尺寸。'
+      - id: 'ch-01-02'
+        title: 'Unacceptable Usage and Name Extensions'
+        level: 2
+        order: 2
+        pages: '8-11'
+        summary: '禁止效果、水印、拉伸、描邊、改字體、加符號、改色、繁忙背景，並管理 division、department 與 group name 的組合方式。'
+  - id: 'ch-02'
+    title: 'Color Palette'
+    level: 1
+    order: 2
+    pages: '12-18'
+    summary: '建立 Level I-IV 色彩系統，含核心品牌色、補充色、資訊圖表色與資產類別指定色。'
+  - id: 'ch-03'
+    title: 'Our Typography'
+    level: 1
+    order: 3
+    pages: '19-22'
+    summary: '定義 Meta Office 印刷字體、Arial 數位替代、字級、對齊、披露文字與可讀性規則。'
+  - id: 'ch-04'
+    title: 'Visual Guidelines'
+    level: 1
+    order: 4
+    pages: '23-31'
+    summary: '規範影像應反映客戶目標、專業性、自然感、解析度與規定使用權，並列出避免的金融陳腔濫調影像。'
+  - id: 'ch-05'
+    title: 'Stationery Guidelines'
+    level: 1
+    order: 5
+    pages: '32-34'
+    summary: '定義 business cards 與 e-mail signatures 的嚴格範本、功能變體與核准限制。'
+  - id: 'ch-06'
+    title: 'Brand Grammar'
+    level: 1
+    order: 6
+    pages: '35-37'
+    summary: '定義正式公司名稱、可接受簡稱、不可接受名稱、標點、financial advisor 用語、數字與參考來源。'
+  - id: 'ch-07'
+    title: 'Brand Examples'
+    level: 1
+    order: 7
+    pages: '38-41'
+    summary: '展示 brochures、advertisements 與 websites 如何整合影像、色彩、字體與訊息。'
+  - id: 'ch-08'
+    title: 'More Information'
+    level: 1
+    order: 8
+    pages: '42-44'
+    summary: '提供 branding、social media、Marketing resources 與 AdTrax 的支援資訊。'

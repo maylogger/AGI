@@ -1,0 +1,284 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Harrods_Brand_Guidelines
+index_ref: docs/Harrods_Brand_Guidelines.index.yaml
+note_ref: docs/Harrods_Brand_Guidelines.note.md
+archetype: brand_experience_guide
+industry: luxury_premium
+modules:
+- Color System
+- Visual Identity
+- Layout System
+- Design Tokens
+- Typography System
+- Operations
+- Governance
+- AI-Checkable Rules
+- Content Design
+- Voice and Tone
+- Localization
+- Legal and Trademark
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 5
+  section_count: 8
+chapter_sequence:
+- id: ch-01
+  title: Core Branding
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Logo Options and Rules
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Colour Palette
+  order: 2
+  level: 2
+- id: ch-02
+  title: Typography
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Primary and Migration Fonts
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: PC and Digital Fonts
+  order: 2
+  level: 2
+- id: ch-03
+  title: Harrods Style Guide
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Tone of Voice
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: House Style A-Z
+  order: 2
+  level: 2
+- id: ch-04
+  title: Co-branding
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Essentials and Brand Band
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Applications and Approval
+  order: 2
+  level: 2
+- id: ch-05
+  title: Contacts and Communication
+  order: 5
+  level: 1
+frameworks:
+- name: identity asset framework：logo version -> geometry -> size -> clearance -> color reproduction
+  chapter: ch-01
+  chapter_title: Core Branding
+- name: optical correction framework
+  chapter: ch-01-01
+  chapter_title: Logo Options and Rules
+- name: production color token framework
+  chapter: ch-01-02
+  chapter_title: Colour Palette
+- name: typeface role matrix：brand print -> in-house PC -> digital/service
+  chapter: ch-02
+  chapter_title: Typography
+- name: font migration governance
+  chapter: ch-02-01
+  chapter_title: Primary and Migration Fonts
+- name: fallback typography framework
+  chapter: ch-02-02
+  chapter_title: PC and Digital Fonts
+- name: tone persona + lexical governance + house style dictionary
+  chapter: ch-03
+  chapter_title: Harrods Style Guide
+- name: brand persona contrast framework
+  chapter: ch-03-01
+  chapter_title: Tone of Voice
+- name: editorial rules dictionary
+  chapter: ch-03-02
+  chapter_title: House Style A-Z
+- name: co-branding approval pipeline：creative -> copy/style/legal -> brand guardians -> print/send
+  chapter: ch-04
+  chapter_title: Co-branding
+- name: background-based band color selection
+  chapter: ch-04-01
+  chapter_title: Essentials and Brand Band
+- name: channel-specific approval matrix
+  chapter: ch-04-02
+  chapter_title: Applications and Approval
+- name: asset access and submission workflow
+  chapter: ch-05
+  chapter_title: Contacts and Communication
+patterns:
+- name: 奢侈品牌常把 logo 與金屬/foil 色視為同等重要的識別資產。
+  chapter: ch-01
+  chapter_title: Core Branding
+- name: 把品牌字標的內在比例變成可重複量測單位。
+  chapter: ch-01-01
+  chapter_title: Logo Options and Rules
+- name: 核心色 + metallic/foil + sale exception。
+  chapter: ch-01-02
+  chapter_title: Colour Palette
+- name: 傳統品牌同時保留 heritage serif 與 functional digital font。
+  chapter: ch-02
+  chapter_title: Typography
+- name: 新舊字體短期共存，所有新件採用新標準。
+  chapter: ch-02-01
+  chapter_title: Primary and Migration Fonts
+- name: brand type 與 functional type 分層。
+  chapter: ch-02-02
+  chapter_title: PC and Digital Fonts
+- name: X but not Y
+  chapter: ch-03
+  chapter_title: Harrods Style Guide
+- name: 慎用 exquisite、covetable、iconic、unique、luxury 等高風險詞。
+  chapter: ch-03-01
+  chapter_title: Tone of Voice
+- name: 用具體正誤例降低抽象風格判斷。
+  chapter: ch-03-02
+  chapter_title: House Style A-Z
+- name: 品牌 band 作為外部素材中的 Harrods ownership container。
+  chapter: ch-04
+  chapter_title: Co-branding
+- name: 用固定 band 控制異質合作版面。
+  chapter: ch-04-01
+  chapter_title: Essentials and Brand Band
+- name: 每個應用先定義目的，再列最小規定要求。
+  chapter: ch-04-02
+  chapter_title: Applications and Approval
+- name: approval contact 作為 guideline 的最後 fallback。
+  chapter: ch-05
+  chapter_title: Contacts and Communication
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI 可檢查：logo clearance 至少使用 H 高度作單位；色彩不得從螢幕或列印稿視覺匹配；必須使用 Pantone/CMYK 參照。
+  chapter: ch-01
+  chapter_title: Core Branding
+- module: Visual Identity
+  criterion: AI 可檢查：Harrods logo 需依 optical centre 置中；clearance zone 至少等於 H 高；不得低於指定 print minimum。
+  chapter: ch-01-01
+  chapter_title: Logo Options and Rules
+- module: ''
+  criterion: AI 可檢查：Harrods Green、black、gold/silver foil、sale red 不得任意替換；需查指定色值或 Pantone。
+  chapter: ch-01-02
+  chapter_title: Colour Palette
+- module: Typography System
+  criterion: AI 可檢查：Big Caslon 不得小於 20pt；web/telephone in logo 需以 JPEG artwork 出現，不得手打；PC 溝通使用 Arial/Times New Roman。
+  chapter: ch-02
+  chapter_title: Typography
+- module: ''
+  criterion: AI 可檢查：新作品應用 Caslon Egyptian；Big Caslon FB 只用於 headlines/subheadlines 或指定用途；Caslon Pro Swash 需 brand guardian
+    approval。
+  chapter: ch-02-01
+  chapter_title: Primary and Migration Fonts
+- module: ''
+  criterion: 'AI 可檢查：email main copy/header 使用 #333333；links 使用 #000000；T&Cs 使用 #999999；pre-header 使用 #666666。'
+  chapter: ch-02-02
+  chapter_title: PC and Digital Fonts
+- module: ''
+  criterion: AI 可檢查：避免 cheap、low-cost、bargain、hard-sell、business-speak、overused cliches；avoid commanding unless words like
+    Discover/Enjoy are welcoming。
+  chapter: ch-03
+  chapter_title: Harrods Style Guide
+- module: Voice and Tone
+  criterion: AI 可檢查：不得過度使用 luxury/luxurious 作描述詞；unique 僅限真正 distinctive/incomparable；開頭應避免「Harrods is now stocking」類平庸句。
+  chapter: ch-03-01
+  chapter_title: Tone of Voice
+- module: ''
+  criterion: AI 可檢查：Harrods.com 寫作 `harrods.com` 且無 `www`；Harrods 為單數；數字 1-9 拼字、10+ 用數字；£750 不寫 £750.00；percentage in text
+    寫 `per cent`；web URL 無句號。
+  chapter: ch-03-02
+  chapter_title: House Style A-Z
+- module: Brand Strategy
+  criterion: AI 可檢查：co-branded collateral 不得出現第三方 web addresses；terms 必須按 Style Guide 且經 Legal；素材需送 Brand Guardians approval。
+  chapter: ch-04
+  chapter_title: Co-branding
+- module: Brand Strategy
+  criterion: AI 可檢查：predominantly white/light collateral 使用 black band；dark/black background 使用 white band；Rewards card band
+    只用於 Rewards card holders direct communication。
+  chapter: ch-04-01
+  chapter_title: Essentials and Brand Band
+- module: ''
+  criterion: AI 可檢查：brand email content width = 640px；copy 不得疊在圖片上；除 harrods.com 外不得含外部連結；approval 至少提前五天。
+  chapter: ch-04-02
+  chapter_title: Applications and Approval
+chapters:
+- id: ch-01
+  title: Core Branding
+  modules:
+  - Color System
+  - Visual Identity
+- id: ch-01-01
+  title: Logo Options and Rules
+  modules:
+  - Layout System
+  - Visual Identity
+- id: ch-01-02
+  title: Colour Palette
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-02
+  title: Typography
+  modules:
+  - Typography System
+  - Operations
+- id: ch-02-01
+  title: Primary and Migration Fonts
+  modules:
+  - Typography System
+  - Governance
+- id: ch-02-02
+  title: PC and Digital Fonts
+  modules:
+  - Typography System
+  - Design Tokens
+- id: ch-03
+  title: Harrods Style Guide
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+- id: ch-03-01
+  title: Tone of Voice
+  modules:
+  - Content Design
+  - Voice and Tone
+- id: ch-03-02
+  title: House Style A-Z
+  modules:
+  - AI-Checkable Rules
+  - Localization
+  - Content Design
+- id: ch-04
+  title: Co-branding
+  modules:
+  - Legal and Trademark
+  - Operations
+  - Governance
+- id: ch-04-01
+  title: Essentials and Brand Band
+  modules:
+  - Layout System
+  - Governance
+- id: ch-04-02
+  title: Applications and Approval
+  modules:
+  - Operations
+  - Governance
+- id: ch-05
+  title: Contacts and Communication
+  modules:
+  - Operations
+  - Governance

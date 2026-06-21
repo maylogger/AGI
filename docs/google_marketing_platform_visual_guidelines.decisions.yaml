@@ -1,0 +1,60 @@
+# L3 決策卡 sidecar — Google Marketing Platform Visual Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: google_marketing_platform_visual_guidelines
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌不是單一標誌，而是組織如何行動與如何溝通
+      - 視覺指南開頭應解釋「為什麼一致性重要」，而非直接列規格
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: google_marketing_platform_visual_guidelines
+        chapter: ch-01-01
+        excerpt: "Why a Visual Guide 先說明品牌一致性對所有溝通材料的重要性，把日常的 chart、email、簡報納入品牌治理，再進入品牌承諾與資產規格；視覺指南開頭應解釋為什麼一致性重要，而非直接列規格。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - 大型品牌組合需要場景矩陣，不只需要 logo no-nos
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: google_marketing_platform_visual_guidelines
+        chapter: ch-02
+        excerpt: "以 preferred variant、背景條件、divider、spacing 與 usage matrix 管理多場景使用；partner logo 需用 neutral divider 分隔，並用場景矩陣把抽象品牌層級落成可用/不可用決策。"
+    status: extracted

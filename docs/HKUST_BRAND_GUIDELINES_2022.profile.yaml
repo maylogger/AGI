@@ -1,0 +1,106 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: HKUST_BRAND_GUIDELINES_2022
+index_ref: docs/HKUST_BRAND_GUIDELINES_2022.index.yaml
+note_ref: docs/HKUST_BRAND_GUIDELINES_2022.note.md
+archetype: brand_experience_guide
+industry: education
+modules: []
+depth:
+  strategy: low
+  visual: low
+  governance: low
+  top_level_chapter_count: 6
+  section_count: 15
+chapter_sequence:
+- id: ch-01
+  title: Brand Overview
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Principle
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Core Values and Positioning
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Students and Brand Equity
+  order: 3
+  level: 2
+- id: ch-02
+  title: The Voice
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: How Do We Communicate
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Brand Expression and Editorial Tips
+  order: 2
+  level: 2
+- id: ch-03
+  title: University Logo
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: HKUST and HKUST(GZ) Logo Systems
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Typeface and Color Palette
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Logomark, Sundial and Prohibited Use
+  order: 3
+  level: 2
+- id: ch-04
+  title: University Affiliated Units and Partnership Logos
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Affiliated Unit Logos
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Partnership Logos
+  order: 2
+  level: 2
+- id: ch-05
+  title: Visual Elements
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Photography Style and Technical Guidelines
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Image Usage and Not Recommended Style
+  order: 2
+  level: 2
+- id: ch-06
+  title: Communications
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Printed Materials and Souvenirs
+  order: 1
+  level: 2
+- id: ch-06-02
+  title: Digital Materials
+  order: 2
+  level: 2
+- id: ch-06-03
+  title: University Video
+  order: 3
+  level: 2
+frameworks: []
+patterns: []
+rules_ai_checkable: []
+chapters: []

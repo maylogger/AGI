@@ -1,0 +1,143 @@
+# L3 決策卡 sidecar — Visa Digital Brand Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: VISA_Digital_Brand Guidelines_2018
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 支付品牌若直接寫 logo 規格，數位識別會變成裝飾，而不是建立交易信任的體驗工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先用 UX principles 與 digital tone of voice 定義支付體驗準則，再把 Brand Mark、sensory、credentials 嵌入交易節點
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 如果 UX 不快、不清楚，品牌標誌本身無法建立信任
+      - 數位品牌 guideline 可先定義 experience principles，再把品牌元素嵌入交易節點
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, finance]
+      brand_types: [category_creator, heritage_legacy, challenger, platform_ecosystem]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide, product_design_system]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: VISA_Digital_Brand Guidelines_2018
+        chapter: ch-01
+        excerpt: "把數位品牌從 logo 使用擴展到完整支付體驗；UX 不快、不清楚時品牌標誌無法建立信任，先定義 experience principles 再把品牌元素嵌入交易節點。"
+    status: extracted
+
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象品牌價值無法指導產出，合作夥伴的 UX 與介面缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 用 Fast / Authentic / Iconic / Smart 四個動詞式原則當 SDK 與 UI 規格的上層判準
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - 用少量動詞式原則作為 SDK 與 UI 規格的上層判準
+      - 金融 UX 可把安全感拆成速度、清楚、品牌提示與預測性
+    applicable_when:
+      industries: [industrial_materials_science, nonprofit_social, finance, tech_software]
+      brand_types: [challenger, category_creator, mission_driven, platform_ecosystem]
+      conditions: []
+      archetypes: [full_brand_system, brand_experience_guide, product_design_system]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Visual Language, Content Design]
+    evidence:
+      - brand_id: VISA_Digital_Brand Guidelines_2018
+        chapter: ch-01-01
+        excerpt: "Fast（不過度複雜）、Authentic（人性化）、Iconic（可被記得）、Smart（提前兩步）作為 north-star principle set，把品牌價值轉為 UX heuristic。"
+    status: extracted
+
+  - id: dp-persona-driven-voice
+    title: 從產品行為與用戶語言抽取語氣，而非另造企業腔
+    problem:
+      statement: 數位支付文案若用機器式或法律式口吻，會顯得疏離、增加認知負擔，無法建立信任。
+      signals: [personality_expression, community, relatability, differentiation]
+    solution:
+      module: Voice and Tone
+      move: 以「我們不是 bots」作文案人格基準，把使用者當真實的家人朋友，文案像人對人說話
+      layer: language
+    reason:
+      - 品牌系統必須從產品行為抽取，而不是在產品外另造裝飾語言
+      - 使用者是家人朋友等真實人，而不是交易記錄或系統對象
+      - 金融科技文案需要兼顧信任與低認知負擔
+    applicable_when:
+      industries: [tech_software, media_entertainment, finance]
+      brand_types: [challenger, platform_ecosystem]
+      conditions: [community_driven, product_led]
+      archetypes: [brand_experience_guide, product_design_system]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Messaging, Content Design]
+    anti_patterns:
+      - 文案聽起來像一般科技平台公告
+      - 避免機器式或法律式冗長
+    evidence:
+      - brand_id: VISA_Digital_Brand Guidelines_2018
+        chapter: ch-01-02
+        excerpt: "把『我們不是 bots』作為文案人格基準；使用者是家人朋友等真實人，而不是交易記錄或系統對象，文案應短且像人說話。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以 Visa Brand Mark 中 V 高度 1X 作為 clear space 量尺
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    evidence:
+      - brand_id: VISA_Digital_Brand Guidelines_2018
+        chapter: ch-02-01
+        excerpt: "clear space 儘量為 V 高度 1X；品牌標誌不可與周圍內容比例失衡。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性；數位背景多變更需確保可讀性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 限定 blue #15195A 或 white，monochrome/深色背景用白色 mark，背景對比不足時用 rounded rectangle staging
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - 數位 logo 規範應提供 contrast fallback，而非只禁止錯誤背景
+    applicable_when:
+      industries: [finance]
+      brand_types: [platform_ecosystem]
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines, product_design_system]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: VISA_Digital_Brand Guidelines_2018
+        chapter: ch-02-01
+        excerpt: "Visa Brand Mark 只能用 blue #15195A 或 white #FFFFFF；monochrome screen 用深色背景加白色 mark，背景對比不足時用卡片比例 rounded rectangle staging。"
+    status: extracted

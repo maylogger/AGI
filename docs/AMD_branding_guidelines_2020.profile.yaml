@@ -1,0 +1,308 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: AMD_branding_guidelines_2020
+index_ref: docs/AMD_branding_guidelines_2020.index.yaml
+note_ref: docs/AMD_branding_guidelines_2020.note.md
+archetype: corporate_toolkit
+industry: tech_software
+modules:
+- Brand Strategy
+- Visual Language
+- Messaging
+- Operations
+- Visual Identity
+- Governance
+- Knowledge Architecture
+- Design Tokens
+- Internationalization
+- Brand Touchpoint Governance
+- Compliance
+- Content Safety
+- Motion Identity
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 1
+  section_count: 9
+chapter_sequence:
+- id: ch-01
+  title: AMD Branding Guidelines
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Overview of Toolkit
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Tone of Voice
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Logo
+  order: 3
+  level: 2
+- id: ch-01-04
+  title: Color
+  order: 4
+  level: 2
+- id: ch-01-05
+  title: Typography
+  order: 5
+  level: 2
+- id: ch-01-06
+  title: Interim Email Signatures
+  order: 6
+  level: 2
+- id: ch-01-07
+  title: Video Game Marketing
+  order: 7
+  level: 2
+- id: ch-01-08
+  title: Tagging Video Content
+  order: 8
+  level: 2
+- id: ch-01-09
+  title: Contacts and Resources
+  order: 9
+  level: 2
+frameworks:
+- name: Brand Toolkit：Tone、Logo、Color、Typography、Applications、Governance
+  chapter: ch-01
+  chapter_title: AMD Branding Guidelines
+- name: Toolkit Map：品牌由語氣、標誌、色彩、標語、字體共同構成；任一產出都應從這些元素組合而來
+  chapter: ch-01-01
+  chapter_title: Overview of Toolkit
+- name: 「立場 -> 理由 -> 對未來的意義」的溝通框架
+  chapter: ch-01-02
+  chapter_title: Tone of Voice
+- name: 三層框架：Asset State（新版/舊版）、Usage Context（external/internal）、Spatial Control（clear space/size/placement）
+  chapter: ch-01-03
+  chapter_title: Logo
+- name: Corporate vs Product Palette Priority：企業色用於無產品色盤時；產品創意中產品色優先；多產品情境可混合企業與產品色
+  chapter: ch-01-04
+  chapter_title: Color
+- name: Primary Typeface、Secondary Typeface、Regional Substitution、Usage Best Practices
+  chapter: ch-01-05
+  chapter_title: Typography
+- name: Controlled Variants：固定欄位 + 核准色彩變體 + 中央下載與設定流程
+  chapter: ch-01-06
+  chapter_title: Interim Email Signatures
+- name: External Compliance + Internal Brand Standards：外部評級制度提供基準，內部禁止內容清單提高安全邊界
+  chapter: ch-01-07
+  chapter_title: Video Game Marketing
+- name: End Slate Standard：所有影片在時間軸末端回到同一品牌狀態
+  chapter: ch-01-08
+  chapter_title: Tagging Video Content
+- name: Governance Loop：使用規則 -> 遇到例外 -> 聯絡品牌團隊 -> 核准或更新
+  chapter: ch-01-09
+  chapter_title: Contacts and Resources
+patterns:
+- name: 核心資產先行
+  chapter: ch-01
+  chapter_title: AMD Branding Guidelines
+- name: 正確/錯誤並列
+  chapter: ch-01
+  chapter_title: AMD Branding Guidelines
+- name: 應用情境規範
+  chapter: ch-01
+  chapter_title: AMD Branding Guidelines
+- name: 最小尺寸與留白量化
+  chapter: ch-01
+  chapter_title: AMD Branding Guidelines
+- name: 聯絡窗口治理
+  chapter: ch-01
+  chapter_title: AMD Branding Guidelines
+- name: Brand Kit Inventory
+  chapter: ch-01-01
+  chapter_title: Overview of Toolkit
+- name: 語氣人格化
+  chapter: ch-01-02
+  chapter_title: Tone of Voice
+- name: 禁止傲慢
+  chapter: ch-01-02
+  chapter_title: Tone of Voice
+- name: 從技術能力轉譯為使用者利益
+  chapter: ch-01-02
+  chapter_title: Tone of Voice
+- name: 品牌語氣與企業願景連動
+  chapter: ch-01-02
+  chapter_title: Tone of Voice
+- name: Logo 版本矩陣
+  chapter: ch-01-03
+  chapter_title: Logo
+- name: clear space 以標誌內部元素量測
+  chapter: ch-01-03
+  chapter_title: Logo
+- name: minimum size
+  chapter: ch-01-03
+  chapter_title: Logo
+- name: preferred size
+  chapter: ch-01-03
+  chapter_title: Logo
+- name: do/don't examples
+  chapter: ch-01-03
+  chapter_title: Logo
+- name: lockup governance
+  chapter: ch-01-03
+  chapter_title: Logo
+- name: 主色盤/中性色盤拆分
+  chapter: ch-01-04
+  chapter_title: Color
+- name: 多色值表
+  chapter: ch-01-04
+  chapter_title: Color
+- name: 使用情境說明
+  chapter: ch-01-04
+  chapter_title: Color
+- name: 例外時聯絡品牌團隊
+  chapter: ch-01-04
+  chapter_title: Color
+- name: 字體角色分層
+  chapter: ch-01-05
+  chapter_title: Typography
+- name: 語系替代表
+  chapter: ch-01-05
+  chapter_title: Typography
+- name: 字元集展示
+  chapter: ch-01-05
+  chapter_title: Typography
+- name: OpenType 功能說明
+  chapter: ch-01-05
+  chapter_title: Typography
+- name: 字體不可用時的升級路徑
+  chapter: ch-01-05
+  chapter_title: Typography
+- name: 模板化簽名
+  chapter: ch-01-06
+  chapter_title: Interim Email Signatures
+- name: 有限變體
+  chapter: ch-01-06
+  chapter_title: Interim Email Signatures
+- name: 個人偏好在品牌色內選擇
+  chapter: ch-01-06
+  chapter_title: Interim Email Signatures
+- name: 提供下載與 step-by-step instructions
+  chapter: ch-01-06
+  chapter_title: Interim Email Signatures
+- name: 責任內容清單
+  chapter: ch-01-07
+  chapter_title: Video Game Marketing
+- name: dos/don'ts
+  chapter: ch-01-07
+  chapter_title: Video Game Marketing
+- name: 外部規範引用
+  chapter: ch-01-07
+  chapter_title: Video Game Marketing
+- name: 依通路與年齡調整素材
+  chapter: ch-01-07
+  chapter_title: Video Game Marketing
+- name: 固定結尾卡
+  chapter: ch-01-08
+  chapter_title: Tagging Video Content
+- name: Logo 安全區
+  chapter: ch-01-08
+  chapter_title: Tagging Video Content
+- name: 尺寸比例
+  chapter: ch-01-08
+  chapter_title: Tagging Video Content
+- name: 背景對比
+  chapter: ch-01-08
+  chapter_title: Tagging Video Content
+- name: 動畫可變但最終狀態固定
+  chapter: ch-01-08
+  chapter_title: Tagging Video Content
+- name: contact point
+  chapter: ch-01-09
+  chapter_title: Contacts and Resources
+- name: approval route
+  chapter: ch-01-09
+  chapter_title: Contacts and Resources
+- name: disclaimer
+  chapter: ch-01-09
+  chapter_title: Contacts and Resources
+- name: revision rights
+  chapter: ch-01-09
+  chapter_title: Contacts and Resources
+- name: source of truth
+  chapter: ch-01-09
+  chapter_title: Contacts and Resources
+rules_ai_checkable:
+- module: ''
+  criterion: 可檢查規則是文件必須列出核心資產項目，且每個項目應能對應到後續章節或資產庫。
+  chapter: ch-01-01
+  chapter_title: Overview of Toolkit
+- module: Voice and Tone
+  criterion: 可驗證規則包含避免 arrogant tone、文案需說明 benefit、不可只列產品功能、語氣應直接清楚。AI 可檢查文案是否包含客戶利益與未來意義。
+  chapter: ch-01-02
+  chapter_title: Tone of Voice
+- module: Visual Identity
+  criterion: 可量化規則包含最小寬度 0.675 inch、建議寬高 20%、最低 10%、標誌應置於右上角、不得使用綠色箭頭、不得改色、不得置於 busy photography。
+  chapter: ch-01-03
+  chapter_title: Logo
+- module: ''
+  criterion: 可量化規則包含 Logo centered、Logo 約 20% screen height、白色 Logo on black background、不得修改 Logo。
+  chapter: ch-01-08
+  chapter_title: Tagging Video Content
+chapters:
+- id: ch-01
+  title: AMD Branding Guidelines
+  modules:
+  - Brand Strategy
+  - Visual Language
+  - Messaging
+  - Operations
+  - Visual Identity
+  - Governance
+- id: ch-01-01
+  title: Overview of Toolkit
+  modules:
+  - Operations
+  - Knowledge Architecture
+- id: ch-01-02
+  title: Tone of Voice
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-01-03
+  title: Logo
+  modules:
+  - Visual Identity
+  - Governance
+- id: ch-01-04
+  title: Color
+  modules:
+  - Visual Language
+  - Design Tokens
+- id: ch-01-05
+  title: Typography
+  modules:
+  - Visual Language
+  - Internationalization
+  - Operations
+- id: ch-01-06
+  title: Interim Email Signatures
+  modules:
+  - Operations
+  - Brand Touchpoint Governance
+  - Governance
+- id: ch-01-07
+  title: Video Game Marketing
+  modules:
+  - Compliance
+  - Content Safety
+  - Governance
+- id: ch-01-08
+  title: Tagging Video Content
+  modules:
+  - Motion Identity
+  - Operations
+  - Visual Identity
+- id: ch-01-09
+  title: Contacts and Resources
+  modules:
+  - Operations
+  - Governance

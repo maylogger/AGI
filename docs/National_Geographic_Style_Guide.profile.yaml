@@ -1,0 +1,405 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: National_Geographic_Style_Guide
+index_ref: docs/National_Geographic_Style_Guide.index.yaml
+note_ref: docs/National_Geographic_Style_Guide.note.md
+archetype: product_design_system
+industry: media_entertainment
+modules:
+- Brand Strategy
+- Messaging
+- Visual Identity
+- Voice and Tone
+- Layout System
+- Visual Language
+- Motion Identity
+- Information Design
+- Photography System
+- Design Tokens
+- AI-Checkable Rules
+- Content Design
+- Governance
+- UI Components
+- Operations
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 6
+  section_count: 14
+chapter_sequence:
+- id: ch-01
+  title: Our Brand
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Our Mission
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Further
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Content-Forward Brand
+  order: 3
+  level: 2
+- id: ch-02
+  title: Brand Behavior
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Index Metrics
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Mapping
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Z-Depth
+  order: 3
+  level: 2
+- id: ch-03
+  title: Brand Ingredients
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Logo, Color, Image, Typeface
+  order: 1
+  level: 2
+- id: ch-04
+  title: Guidelines and Brand Volume
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Image Priority
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Message Priority
+  order: 2
+  level: 2
+- id: ch-04-03
+  title: Brand Priority
+  order: 3
+  level: 2
+- id: ch-05
+  title: On-Air Systems
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Promo Toolkit
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Navigation
+  order: 2
+  level: 2
+- id: ch-05-03
+  title: Idents
+  order: 3
+  level: 2
+- id: ch-06
+  title: Print and Social/Digital
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Stationery and Digital Templates
+  order: 1
+  level: 2
+frameworks:
+- name: 以使命/目標/行為/工具的四層框架運作：先定義為何存在，再定義如何表現
+  chapter: ch-01
+  chapter_title: Our Brand
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-01-01
+  chapter_title: Our Mission
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-01-02
+  chapter_title: Further
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-01-03
+  chapter_title: Content-Forward Brand
+- name: 形成 science translation framework：品牌信念 -> 科學/探索類比 -> motion/graphic device
+  chapter: ch-02
+  chapter_title: Brand Behavior
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-02-01
+  chapter_title: Index Metrics
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-02-02
+  chapter_title: Mapping
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-02-03
+  chapter_title: Z-Depth
+- name: 採用 ingredient framework：logo/color/image/type 皆可被不同媒體模板調用
+  chapter: ch-03
+  chapter_title: Brand Ingredients
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-03-01
+  chapter_title: Logo, Color, Image, Typeface
+- name: 三元素平衡框架：Imagery、Message、Brand Volume 互相牽制
+  chapter: ch-04
+  chapter_title: Guidelines and Brand Volume
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-04-01
+  chapter_title: Image Priority
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-04-02
+  chapter_title: Message Priority
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-04-03
+  chapter_title: Brand Priority
+- name: 採用 broadcast component framework：每個元件有用途、時間、內容容量與品牌音量
+  chapter: ch-05
+  chapter_title: On-Air Systems
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-05-01
+  chapter_title: Promo Toolkit
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-05-02
+  chapter_title: Navigation
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-05-03
+  chapter_title: Idents
+- name: 採用 touchpoint template framework：每個平台有不同尺寸，但共享識別層級
+  chapter: ch-06
+  chapter_title: Print and Social/Digital
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-06-01
+  chapter_title: Stationery and Digital Templates
+patterns:
+- name: 使命驅動的視覺系統
+  chapter: ch-01
+  chapter_title: Our Brand
+- name: 子系統規範頁
+  chapter: ch-01-01
+  chapter_title: Our Mission
+- name: 子系統規範頁
+  chapter: ch-01-02
+  chapter_title: Further
+- name: 子系統規範頁
+  chapter: ch-01-03
+  chapter_title: Content-Forward Brand
+- name: 行為先於素材
+  chapter: ch-02
+  chapter_title: Brand Behavior
+- name: 子系統規範頁
+  chapter: ch-02-01
+  chapter_title: Index Metrics
+- name: 子系統規範頁
+  chapter: ch-02-02
+  chapter_title: Mapping
+- name: 子系統規範頁
+  chapter: ch-02-03
+  chapter_title: Z-Depth
+- name: 品牌素材庫
+  chapter: ch-03
+  chapter_title: Brand Ingredients
+- name: 子系統規範頁
+  chapter: ch-03-01
+  chapter_title: Logo, Color, Image, Typeface
+- name: 品牌音量控制
+  chapter: ch-04
+  chapter_title: Guidelines and Brand Volume
+- name: 子系統規範頁
+  chapter: ch-04-01
+  chapter_title: Image Priority
+- name: 子系統規範頁
+  chapter: ch-04-02
+  chapter_title: Message Priority
+- name: 子系統規範頁
+  chapter: ch-04-03
+  chapter_title: Brand Priority
+- name: 動態媒體元件庫
+  chapter: ch-05
+  chapter_title: On-Air Systems
+- name: 子系統規範頁
+  chapter: ch-05-01
+  chapter_title: Promo Toolkit
+- name: 子系統規範頁
+  chapter: ch-05-02
+  chapter_title: Navigation
+- name: 子系統規範頁
+  chapter: ch-05-03
+  chapter_title: Idents
+- name: 跨媒體延伸套件
+  chapter: ch-06
+  chapter_title: Print and Social/Digital
+- name: 子系統規範頁
+  chapter: ch-06-01
+  chapter_title: Stationery and Digital Templates
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI-checkable：任何品牌應用需保留內容主導地位；Further 不得被改寫成與探索、進展無關的口號；影像不得被高音量品牌元素壓過。
+  chapter: ch-01
+  chapter_title: Our Brand
+- module: ''
+  criterion: AI-checkable：敘事需指向 science/adventure/exploration；不可把娛樂語氣與真實世界根基切離。
+  chapter: ch-01-01
+  chapter_title: Our Mission
+- module: ''
+  criterion: AI-checkable：Further 使用需暗示前進、探索、深化或突破；不得只作裝飾性標語。
+  chapter: ch-01-02
+  chapter_title: Further
+- module: Brand Strategy
+  criterion: AI-checkable：品牌元素需可依內容需求調整音量；影像優先情境不得使用過量遮罩或圖形。
+  chapter: ch-01-03
+  chapter_title: Content-Forward Brand
+- module: Brand Strategy
+  criterion: AI-checkable：Index 應沿 X 軸前進並承載資料或標題；Mapping 應以揭露/擴張方式呈現更大圖像；Z-depth 應產生向前或深入的空間感。
+  chapter: ch-02
+  chapter_title: Brand Behavior
+- module: ''
+  criterion: AI-checkable：Metric index 使用量化資訊；Title index 使用訊息或情緒性文字；不得讓 index 成為無意義裝飾。
+  chapter: ch-02-01
+  chapter_title: Index Metrics
+- module: ''
+  criterion: AI-checkable：鏡頭/圖形需產生前進方向；X 軸資料移動可與 Z 軸推進同步；轉場不得顯得隨機漂移。
+  chapter: ch-02-03
+  chapter_title: Z-Depth
+- module: Visual Identity
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-03-01
+  chapter_title: Logo, Color, Image, Typeface
+- module: Brand Strategy
+  criterion: AI-checkable：先判斷 image/message/brand 的優先權；不得同時提高三者造成視覺擁擠；每個輸出需能說明所選音量等級。
+  chapter: ch-04
+  chapter_title: Guidelines and Brand Volume
+- module: ''
+  criterion: AI-checkable：品牌元素面積需低於訊息與影像主體；不得遮蔽關鍵影像。
+  chapter: ch-04-01
+  chapter_title: Image Priority
+- module: ''
+  criterion: AI-checkable：每個 on-air 元件需對應核准用途；長標題需使用指定 accommodate long copy 模式；navigation/ident 不得混用 promo 結構。
+  chapter: ch-05
+  chapter_title: On-Air Systems
+- module: ''
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-05-01
+  chapter_title: Promo Toolkit
+- module: ''
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-05-02
+  chapter_title: Navigation
+- module: ''
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-05-03
+  chapter_title: Idents
+- module: ''
+  criterion: AI-checkable：商務文件需使用指定 stationery 版型；社群標頭與貼文需維持核准品牌音量；簡報/網站不得使用未定義的 logo 或 header 變體。
+  chapter: ch-06
+  chapter_title: Print and Social/Digital
+- module: ''
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-06-01
+  chapter_title: Stationery and Digital Templates
+chapters:
+- id: ch-01
+  title: Our Brand
+  modules:
+  - Brand Strategy
+  - Messaging
+  - Visual Identity
+- id: ch-01-01
+  title: Our Mission
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-01-02
+  title: Further
+  modules:
+  - Voice and Tone
+  - Messaging
+- id: ch-01-03
+  title: Content-Forward Brand
+  modules:
+  - Layout System
+  - Visual Language
+- id: ch-02
+  title: Brand Behavior
+  modules:
+  - Visual Language
+  - Motion Identity
+  - Information Design
+- id: ch-02-01
+  title: Index Metrics
+  modules:
+  - Motion Identity
+  - Information Design
+- id: ch-02-02
+  title: Mapping
+  modules:
+  - Layout System
+  - Motion Identity
+- id: ch-02-03
+  title: Z-Depth
+  modules:
+  - Motion Identity
+- id: ch-03
+  title: Brand Ingredients
+  modules:
+  - Photography System
+  - Design Tokens
+  - Visual Identity
+- id: ch-03-01
+  title: Logo, Color, Image, Typeface
+  modules:
+  - Design Tokens
+  - Visual Identity
+- id: ch-04
+  title: Guidelines and Brand Volume
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Language
+- id: ch-04-01
+  title: Image Priority
+  modules:
+  - Photography System
+  - Layout System
+- id: ch-04-02
+  title: Message Priority
+  modules:
+  - Layout System
+  - Content Design
+- id: ch-04-03
+  title: Brand Priority
+  modules:
+  - Visual Identity
+  - Governance
+- id: ch-05
+  title: On-Air Systems
+  modules:
+  - Motion Identity
+  - UI Components
+  - Operations
+- id: ch-05-01
+  title: Promo Toolkit
+  modules:
+  - Motion Identity
+  - UI Components
+- id: ch-05-02
+  title: Navigation
+  modules:
+  - Motion Identity
+  - Information Design
+- id: ch-05-03
+  title: Idents
+  modules:
+  - Brand Strategy
+  - Motion Identity
+- id: ch-06
+  title: Print and Social/Digital
+  modules:
+  - Layout System
+  - Operations
+- id: ch-06-01
+  title: Stationery and Digital Templates
+  modules:
+  - Layout System
+  - Operations

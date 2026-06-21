@@ -1,0 +1,88 @@
+title: 'Formula 1 Brand Guidelines'
+source: 'sources/F1_Master_Brand_Guidelines_2017.pdf'
+version: 'Version 1'
+date: '2017-12'
+language: 'en'
+summary: '這份文件以 A New Era 為核心，定義 Formula 1 的品牌故事、視覺識別、logo 系統、色彩、字體、grid、graphic devices、應用、partner lock-ups 與 appendix。'
+chapters:
+  - id: 'ch-01'
+    title: 'Our Story'
+    level: 1
+    order: 1
+    pages: '6-15'
+    summary: '定義 F1 作為 media and entertainment brand 的 mission、fan-first strategy、personality、design behaviours 與 voice。'
+  - id: 'ch-02'
+    title: 'Visual Identity'
+    level: 1
+    order: 2
+    pages: '16-23'
+    summary: '建立 F1 identity 的核心組件：mission statement、logo suite、primary colours、typography 與 personality。'
+    children:
+      - id: 'ch-02-01'
+        title: 'F1 logo suite'
+        level: 2
+        order: 1
+        pages: '18-19'
+        summary: '區分 F1 symbol、F1 Formula 1 logo 與 F1 Championship logo 的使用情境。'
+      - id: 'ch-02-02'
+        title: 'Colour and typography overview'
+        level: 2
+        order: 2
+        pages: '20-23'
+        summary: '定義 Warm Red、Carbon Black、Off-White、High-Vis White 與 Formula 1 bespoke typefaces。'
+  - id: 'ch-03'
+    title: 'F1 Logo and Logo Lock-ups'
+    level: 1
+    order: 3
+    pages: '24-58'
+    summary: '規範 standard、display、micro logo、logo colour、Formula 1 lock-up 與 Championship lock-up 的尺寸、clear space、orientation、colour 與 misuse。'
+  - id: 'ch-04'
+    title: 'Colour and Typography'
+    level: 1
+    order: 4
+    pages: '59-120'
+    summary: '定義 primary colours、比例使用、F1 typeface、字體組合、caps、sentence case、tracking、leading、alignment、baseline、line length、typography colour、special characters 與 Titillium。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Colour'
+        level: 2
+        order: 1
+        pages: '59-62'
+        summary: '以有限色彩建立強烈品牌聯想，並規範 red、black、off-white、high-vis white 的色值與比例。'
+      - id: 'ch-04-02'
+        title: 'Formula 1 typeface and type use'
+        level: 2
+        order: 2
+        pages: '63-120'
+        summary: '規範 F1 Wide、Black、Bold、Regular、Titillium、字距、行距、大小寫、line length 與顏色誤用。'
+  - id: 'ch-05'
+    title: 'System'
+    level: 1
+    order: 5
+    pages: '121-152'
+    summary: '定義 grid、thick/thin lines、container devices 與 graphic patterns，將速度與工程感轉成版面系統。'
+  - id: 'ch-06'
+    title: 'Visual Principles and Applications'
+    level: 1
+    order: 6
+    pages: '153-183'
+    summary: '規範 tight not loose、layout construction、fixed applications、seasonal identity、partner lock-ups 與 contact。'
+    children:
+      - id: 'ch-06-01'
+        title: 'Putting it all together and fixed applications'
+        level: 2
+        order: 1
+        pages: '157-171'
+        summary: '展示 layout examples、digital assets、uniform、apparel、trackside、transport、passes、stationery、signage 與 social avatar。'
+      - id: 'ch-06-02'
+        title: 'Partner lock-ups'
+        level: 2
+        order: 2
+        pages: '174-182'
+        summary: '以 F1 logo、bucket device、partner logo、designation text 與 clear space 建立可調式合作夥伴 lock-up。'
+  - id: 'ch-07'
+    title: 'Appendix'
+    level: 1
+    order: 7
+    pages: '184-205'
+    summary: '補充 brand architecture、Paddock Club、photography、stocks and finishes 與 circuit icons。'

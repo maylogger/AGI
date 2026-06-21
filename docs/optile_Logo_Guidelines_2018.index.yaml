@@ -1,0 +1,42 @@
+title: 'optile Logo Guidelines'
+source: 'sources/optile_Logo_Guidelines_2018.pdf'
+date: 'March 2018'
+language: 'en'
+summary: '這份文件以 logo 為核心，規範 optile 標誌、色彩版本、安全留白與錯誤使用，確保支付平台品牌在數位與印刷情境中保持一致。'
+chapters:
+  - id: 'ch-01'
+    title: 'Visual Identity and Intent'
+    level: 1
+    order: 1
+    pages: '1-3'
+    summary: '說明 optile 視覺識別代表品牌願景、承諾與一致性的角色。'
+  - id: 'ch-02'
+    title: 'The Logo'
+    level: 1
+    order: 2
+    pages: '4-6'
+    summary: '定義主要綠色 logo 與白色例外版本的使用條件。'
+  - id: 'ch-03'
+    title: 'Variations'
+    level: 1
+    order: 3
+    pages: '7-10'
+    summary: '規範綠色與白色 logo、數位與印刷色值，以及背景相容性。'
+  - id: 'ch-04'
+    title: 'Exclusion Zone'
+    level: 1
+    order: 4
+    pages: '11-13'
+    summary: '以 Möbius 上方元素作為最小留白單位，保護 logo 可見度。'
+  - id: 'ch-05'
+    title: 'Logo Misuse'
+    level: 1
+    order: 5
+    pages: '14-17'
+    summary: '列出不得改變位置、方向、字體、顏色、漸層、背景與構成的錯誤案例。'
+  - id: 'ch-06'
+    title: 'Contact'
+    level: 1
+    order: 6
+    pages: '18'
+    summary: '提供品牌使用問題的聯絡管道。'

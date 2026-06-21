@@ -1,0 +1,531 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: 2022_Special_Olympics_USA_Games_Brand_Guidelines_2020
+index_ref: docs/2022_Special_Olympics_USA_Games_Brand_Guidelines_2020.index.yaml
+note_ref: docs/2022_Special_Olympics_USA_Games_Brand_Guidelines_2020.note.md
+archetype: brand_experience_guide
+industry: nonprofit_social
+modules:
+- Brand Strategy
+- Messaging
+- Knowledge Architecture
+- Governance
+- Design Process
+- Visual Identity
+- AI-Checkable Rules
+- Operations
+- Layout System
+- Design Tokens
+- Product Language
+- Content Design
+- Visual Language
+- Color System
+- Typography System
+- Content Safety
+- Accessibility
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 5
+  section_count: 18
+chapter_sequence:
+- id: ch-01
+  title: History & Mission
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Our History
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Our Mission
+  order: 2
+  level: 2
+- id: ch-02
+  title: Our Story
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Our Story
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Our Logo
+  order: 2
+  level: 2
+- id: ch-03
+  title: Logo Usage
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Approval Process
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Proper Logo Usage
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Primary Logos
+  order: 3
+  level: 2
+- id: ch-03-04
+  title: Alternate Logo Colorways
+  order: 4
+  level: 2
+- id: ch-03-05
+  title: Logo Spacing
+  order: 5
+  level: 2
+- id: ch-03-06
+  title: Partner Logos
+  order: 6
+  level: 2
+- id: ch-03-07
+  title: Logo Scale
+  order: 7
+  level: 2
+- id: ch-03-08
+  title: Separated Elements
+  order: 8
+  level: 2
+- id: ch-03-09
+  title: Logo Misuse
+  order: 9
+  level: 2
+- id: ch-03-10
+  title: Social Media
+  order: 10
+  level: 2
+- id: ch-04
+  title: Color Palette
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Colors
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Gradients
+  order: 2
+  level: 2
+- id: ch-05
+  title: Typography & Language
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Typography
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Disability Language Guidelines
+  order: 2
+  level: 2
+frameworks:
+- name: 此章形成 History -> International Mission -> Event Mission 的三層框架，將運動起源、長期使命與本屆賽會目標串接起來
+  chapter: ch-01
+  chapter_title: History & Mission
+- name: Problem -> Action -> Movement 的歷史框架：看見不公平、建立日營、擴展成全球運動
+  chapter: ch-01-01
+  chapter_title: Our History
+- name: Mission Alignment 框架：International Mission 定義永久價值，Event Mission 定義本屆賽會如何具體化
+  chapter: ch-01-02
+  chapter_title: Our Mission
+- name: Athlete Creation -> Professional Synthesis -> United Symbol，將個人創作整合為公共賽會識別
+  chapter: ch-02-01
+  chapter_title: Our Story
+- name: Collaborative Identity Process：participant input、creative synthesis、symbolic consolidation
+  chapter: ch-02-01
+  chapter_title: Our Story
+- name: Asset Hierarchy 框架：hero logo 為主，athlete logos 為來源證據與特殊用途素材
+  chapter: ch-02-02
+  chapter_title: Our Logo
+- name: 此章形成 Approval -> Asset Selection -> Spatial Control -> Partner System -> Misuse Prevention -> Social Governance 的流程框架
+  chapter: ch-03
+  chapter_title: Logo Usage
+- name: Approval Gate 框架：提交素材或概念、GOC 審查、5 到 10 個工作天書面回覆、核准後發布
+  chapter: ch-03-01
+  chapter_title: Approval Process
+- name: Logo Variant Matrix：digital/print 優先 full color，restricted printing 使用 spot 或 single color，低對比深色背景使用 white
+  chapter: ch-03-02
+  chapter_title: Proper Logo Usage
+- name: Container Fit 框架：vertical/square 使用 vertical primary，horizontal headers/signage 使用 horizontal secondary
+  chapter: ch-03-03
+  chapter_title: Primary Logos
+- name: Production Constraint Framework：silk screening、embroidery、one-color printing 對應 spot 或 single color logo
+  chapter: ch-03-04
+  chapter_title: Alternate Logo Colorways
+- name: Clear Space Unit：X = central Special Olympics symbol height；四側至少保留 X
+  chapter: ch-03-05
+  chapter_title: Logo Spacing
+- name: Co-brand Lockup Framework：event logo + divider + partner logo + optional sponsorship designation
+  chapter: ch-03-06
+  chapter_title: Partner Logos
+- name: Legibility Threshold Framework：標準印刷最低 1 inch / 72 px，特殊製程依可讀性調整
+  chapter: ch-03-07
+  chapter_title: Logo Scale
+- name: Element Separation Framework：established context -> United O；legibility critical context -> wordmark
+  chapter: ch-03-08
+  chapter_title: Separated Elements
+- name: Misuse Taxonomy：geometry distortion、containerization、color alteration、typographic edit、effect addition、element removal
+  chapter: ch-03-09
+  chapter_title: Logo Misuse
+- name: Social Governance Framework：official handles + prior approval + icon usage + campaign hashtag
+  chapter: ch-03-10
+  chapter_title: Social Media
+- name: Color Token Framework：primary colors + complementary colors + gradients + logo contrast rule
+  chapter: ch-04
+  chapter_title: Color Palette
+- name: Cross-Media Token Framework：screen HEX、print Pantone、process CMYK
+  chapter: ch-04-01
+  chapter_title: Colors
+- name: Gradient Background Rule：gradient enhances brand color；white logo preserves contrast
+  chapter: ch-04-02
+  chapter_title: Gradients
+- name: Dual Communication Framework：typographic consistency + inclusive language governance
+  chapter: ch-05
+  chapter_title: Typography & Language
+- name: Typeface Hierarchy Framework：Gotham Bold/Ultra for identity emphasis，Helvetica fallback for constrained environments
+  chapter: ch-05-01
+  chapter_title: Typography
+- name: Respectful Language Framework：definition literacy + person-first terms + equal naming style + avoid stigmatizing or
+    s...
+  chapter: ch-05-02
+  chapter_title: Disability Language Guidelines
+patterns:
+- name: 可複用模式是 mission-led event branding：先說明運動起源，再定義本次活動如何承接該使命。
+  chapter: ch-01
+  chapter_title: History & Mission
+- name: 可複用模式是 founder-action story，用一個可理解的起點承載大型公益組織的使命。
+  chapter: ch-01-01
+  chapter_title: Our History
+- name: 可複用模式是母品牌使命與事件使命並列，適合大型活動、非營利組織與 chapter-based brand。
+  chapter: ch-01-02
+  chapter_title: Our Mission
+- name: co-created identity
+  chapter: ch-02-01
+  chapter_title: Our Story
+- name: origin story before usage rules
+  chapter: ch-02-01
+  chapter_title: Our Story
+- name: logo as participation evidence
+  chapter: ch-02-01
+  chapter_title: Our Story
+- name: 可複用模式是把設計 workshop 記錄變成 guideline 的品牌故事材料。
+  chapter: ch-02-01
+  chapter_title: Our Story
+- name: hero mark
+  chapter: ch-02-02
+  chapter_title: Our Logo
+- name: source marks
+  chapter: ch-02-02
+  chapter_title: Our Logo
+- name: special-use clearance
+  chapter: ch-02-02
+  chapter_title: Our Logo
+- name: approval gate
+  chapter: ch-03
+  chapter_title: Logo Usage
+- name: logo variant matrix
+  chapter: ch-03
+  chapter_title: Logo Usage
+- name: clear-space unit
+  chapter: ch-03
+  chapter_title: Logo Usage
+- name: partner lockup rule
+  chapter: ch-03
+  chapter_title: Logo Usage
+- name: minimum size
+  chapter: ch-03
+  chapter_title: Logo Usage
+- name: do-not examples
+  chapter: ch-03
+  chapter_title: Logo Usage
+- name: hashtag governance
+  chapter: ch-03
+  chapter_title: Logo Usage
+- name: 需核准
+  chapter: ch-03-01
+  chapter_title: Approval Process
+- name: 可複用模式是以媒介、印刷能力、背景對比三個條件決定標誌版本。
+  chapter: ch-03-02
+  chapter_title: Proper Logo Usage
+- name: 可複用模式是 primary/secondary logo tied to aspect ratio。
+  chapter: ch-03-03
+  chapter_title: Primary Logos
+- name: restricted production variants
+  chapter: ch-03-04
+  chapter_title: Alternate Logo Colorways
+- name: single-color hierarchy
+  chapter: ch-03-04
+  chapter_title: Alternate Logo Colorways
+- name: 色值表支援
+  chapter: ch-03-04
+  chapter_title: Alternate Logo Colorways
+- name: 可複用模式是 internal-measure clear space。
+  chapter: ch-03-05
+  chapter_title: Logo Spacing
+- name: vertical divider lockup
+  chapter: ch-03-06
+  chapter_title: Partner Logos
+- name: partner designation below lockup
+  chapter: ch-03-06
+  chapter_title: Partner Logos
+- name: approved neutral/blue designation colors
+  chapter: ch-03-06
+  chapter_title: Partner Logos
+- name: 可複用模式是 minimum size plus production caveat。
+  chapter: ch-03-07
+  chapter_title: Logo Scale
+- name: 可複用模式是 symbol shorthand 與 wordmark legibility split。
+  chapter: ch-03-08
+  chapter_title: Separated Elements
+- name: 可複用模式是 do-not page with visual examples。
+  chapter: ch-03-09
+  chapter_title: Logo Misuse
+- name: event-specific social handles
+  chapter: ch-03-10
+  chapter_title: Social Media
+- name: approval-linked social campaigns
+  chapter: ch-03-10
+  chapter_title: Social Media
+- name: mission-driven hashtag
+  chapter: ch-03-10
+  chapter_title: Social Media
+- name: 地景命名色票
+  chapter: ch-04
+  chapter_title: Color Palette
+- name: 多媒介色值
+  chapter: ch-04
+  chapter_title: Color Palette
+- name: 漸層延展
+  chapter: ch-04
+  chapter_title: Color Palette
+- name: 漸層背景上的標誌版本限制
+  chapter: ch-04
+  chapter_title: Color Palette
+- name: 可複用模式是地名或自然元素命名色票加多格式色值。
+  chapter: ch-04-01
+  chapter_title: Colors
+- name: 可複用模式是 gradient extension plus logo contrast constraint。
+  chapter: ch-04-02
+  chapter_title: Gradients
+- name: primary typeface
+  chapter: ch-05
+  chapter_title: Typography & Language
+- name: fallback typeface
+  chapter: ch-05
+  chapter_title: Typography & Language
+- name: headline casing
+  chapter: ch-05
+  chapter_title: Typography & Language
+- name: person-first terminology
+  chapter: ch-05
+  chapter_title: Typography & Language
+- name: avoidance list
+  chapter: ch-05
+  chapter_title: Typography & Language
+- name: primary brand font
+  chapter: ch-05-01
+  chapter_title: Typography
+- name: system fallback
+  chapter: ch-05-01
+  chapter_title: Typography
+- name: headline all-caps
+  chapter: ch-05-01
+  chapter_title: Typography
+- name: body sentence case
+  chapter: ch-05-01
+  chapter_title: Typography
+- name: person-first language
+  chapter: ch-05-02
+  chapter_title: Disability Language Guidelines
+- name: community-preferred terms
+  chapter: ch-05-02
+  chapter_title: Disability Language Guidelines
+- name: do/don't terminology
+  chapter: ch-05-02
+  chapter_title: Disability Language Guidelines
+- name: anti-sensationalism rule
+  chapter: ch-05-02
+  chapter_title: Disability Language Guidelines
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查品牌內容是否提及 inclusion、acceptance、athletes' abilities、community partnership，並避免把活動只描述成一般體育賽事。
+  chapter: ch-01
+  chapter_title: History & Mission
+- module: ''
+  criterion: AI 可檢查行銷素材是否把 athletes 描述為有 abilities and talents 的主體，是否提到 inclusion、acceptance 或 collaborative partnerships。
+  chapter: ch-01-02
+  chapter_title: Our Mission
+- module: Visual Identity
+  criterion: AI 可檢查是否優先使用 United O + wordmark，是否將 athlete logos 標示為 special use only 且需 cleared with 2022 USA Games。
+  chapter: ch-02-02
+  chapter_title: Our Logo
+- module: Visual Identity
+  criterion: '可檢查規則包含所有含 marks 的素材須事前核准、vertical logo 優先、clear space 至少 X、標誌不可小於 1 inch / 72 px、不得拉伸或改色、社群活動須核准、使用 #ShineAsOne。'
+  chapter: ch-03
+  chapter_title: Logo Usage
+- module: ''
+  criterion: AI 可檢查素材若含 2022 USA Games marks，是否標記為需要 GOC prior written approval；合作夥伴不得未經核准發布。
+  chapter: ch-03-01
+  chapter_title: Approval Process
+- module: Visual Identity
+  criterion: AI 可檢查 logo bounding box 四側是否至少保留 1X 無遮擋空間。
+  chapter: ch-03-05
+  chapter_title: Logo Spacing
+- module: Visual Identity
+  criterion: AI 可檢查兩側是否有 1X spacing、是否有黑色垂直分隔線、partner designation 是否置中且 ALL CAPS、文字是否使用灰色或藍色。
+  chapter: ch-03-06
+  chapter_title: Partner Logos
+- module: Visual Identity
+  criterion: AI 可檢查 vertical logo height >= 1 inch/72 px，horizontal logo width >= 1 inch/72 px；分離元素不得小於 1 inch logo 中的個別元素尺寸。
+  chapter: ch-03-07
+  chapter_title: Logo Scale
+- module: ''
+  criterion: 'AI 可檢查是否使用正確 handles、是否避免混淆 state chapters 或 Special Olympics International、是否對 games-related social campaigns
+    標記需 Chief Marketing Officer approval、是否使用 #ShineAsOne。'
+  chapter: ch-03-10
+  chapter_title: Social Media
+- module: Color System
+  criterion: '可檢查色值包含 Ocean Blue #335CA9、Lagoon Blue #1A8FC9、Florida Orange #F89836、Sunset Red #EE2564、Palm Green #6CC061。'
+  chapter: ch-04-01
+  chapter_title: Colors
+chapters:
+- id: ch-01
+  title: History & Mission
+  modules:
+  - Brand Strategy
+  - Messaging
+  - Knowledge Architecture
+- id: ch-01-01
+  title: Our History
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-01-02
+  title: Our Mission
+  modules:
+  - Brand Strategy
+  - Messaging
+  - Governance
+- id: ch-02-01
+  title: Our Story
+  modules:
+  - Brand Strategy
+  - Design Process
+  - Visual Identity
+- id: ch-02-01
+  title: Our Story
+  modules:
+  - Brand Strategy
+  - Messaging
+  - Design Process
+- id: ch-02-02
+  title: Our Logo
+  modules:
+  - Visual Identity
+  - Governance
+- id: ch-03
+  title: Logo Usage
+  modules:
+  - AI-Checkable Rules
+  - Operations
+  - Visual Identity
+  - Governance
+- id: ch-03-01
+  title: Approval Process
+  modules:
+  - Operations
+  - Governance
+- id: ch-03-02
+  title: Proper Logo Usage
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-03-03
+  title: Primary Logos
+  modules:
+  - Layout System
+  - Visual Identity
+- id: ch-03-04
+  title: Alternate Logo Colorways
+  modules:
+  - Design Tokens
+  - Operations
+  - Visual Identity
+- id: ch-03-05
+  title: Logo Spacing
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Identity
+- id: ch-03-06
+  title: Partner Logos
+  modules:
+  - Layout System
+  - Visual Identity
+  - Governance
+- id: ch-03-07
+  title: Logo Scale
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-03-08
+  title: Separated Elements
+  modules:
+  - Product Language
+  - Visual Identity
+- id: ch-03-09
+  title: Logo Misuse
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-03-10
+  title: Social Media
+  modules:
+  - Content Design
+  - Messaging
+  - Governance
+- id: ch-04
+  title: Color Palette
+  modules:
+  - Visual Language
+  - Color System
+  - Design Tokens
+- id: ch-04-01
+  title: Colors
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-04-02
+  title: Gradients
+  modules:
+  - AI-Checkable Rules
+  - Visual Language
+  - Color System
+- id: ch-05
+  title: Typography & Language
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Content Design
+  - Content Safety
+  - Accessibility
+- id: ch-05-01
+  title: Typography
+  modules:
+  - Layout System
+  - Typography System
+- id: ch-05-02
+  title: Disability Language Guidelines
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Content Safety
+  - Accessibility

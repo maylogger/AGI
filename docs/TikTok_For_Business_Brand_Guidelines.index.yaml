@@ -1,0 +1,79 @@
+title: 'TikTok For Business Brand Guidelines'
+source: 'sources/TikTok_For_Business_Brand_Guidelines.pdf'
+language: 'en'
+summary: 'TikTok For Business 品牌規範，將平台創意、商業受眾與 TikTok 原生行為轉成 messaging、logo、typography、color、toolkit、imagery 與 advertising rules。'
+chapters:
+  - id: 'ch-01'
+    title: 'Platform Overview'
+    level: 1
+    order: 1
+    pages: '2'
+    summary: '以 inspire creativity and bring joy 定義 TikTok 平台任務，建立後續商業品牌語言的來源。'
+  - id: 'ch-02'
+    title: 'Messaging'
+    level: 1
+    order: 2
+    pages: '4-8, 66-68'
+    summary: '定義 personality、tone of voice、品牌名稱寫法、平台主張與全球 portfolio messaging。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Personality and Tone of Voice'
+        level: 2
+        order: 1
+        pages: '5-7'
+        summary: '以 bold、provocative、creative energy、confident yet humble、playful 與 casual 定義對行銷人說話的語氣。'
+      - id: 'ch-02-02'
+        title: 'Brand Treatment in Copy'
+        level: 2
+        order: 2
+        pages: '8'
+        summary: '規範 TikTok For Business 全名大小寫與縮寫僅限內部使用。'
+  - id: 'ch-03'
+    title: 'Design System'
+    level: 1
+    order: 3
+    pages: '9-46, 70'
+    summary: '建立由 logo、typography、color、design toolkit 與 illustration 組成的視覺系統。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Logo'
+        level: 2
+        order: 1
+        pages: '12-25'
+        summary: '規範 logo lockups、social icon、色彩版本、尺寸、clearspace、partnership、placement、rotation、animation 與禁用。'
+      - id: 'ch-03-02'
+        title: 'Typography'
+        level: 2
+        order: 2
+        pages: '26-33'
+        summary: '規範 Sofia Pro / Sofia Pro Soft、替代字體、文字階層、headline emphasis、localization 與排版禁用。'
+      - id: 'ch-03-03'
+        title: 'Color'
+        level: 2
+        order: 3
+        pages: '34-37'
+        summary: '定義 Splash、Razzmatazz、Black、White 與 print/digital 色值、可近用性與色彩使用限制。'
+      - id: 'ch-03-04'
+        title: 'Design Toolkit'
+        level: 2
+        order: 4
+        pages: '38-46'
+        summary: '定義由 logo 圓形衍生的 bubbles、rounded rectangles、patterns、emphasis marks 與應用規則。'
+  - id: 'ch-04'
+    title: 'Imagery'
+    level: 1
+    order: 4
+    pages: '47-54'
+    summary: '規範攝影、多元呈現、影像裁切、動態影片、聲音、特效與禁用，要求內容真實、活潑且平台原生。'
+  - id: 'ch-05'
+    title: 'Advertising Campaign Guidelines'
+    level: 1
+    order: 5
+    pages: '55-60'
+    summary: '將 Don’t Make Ads. Make TikToks. campaign 轉成 video、still、graphics、banners 與 legal usage 的格式規則。'
+  - id: 'ch-06'
+    title: 'Brand Story'
+    level: 1
+    order: 6
+    pages: '62-69'
+    summary: '補充品牌基礎、使命、受眾、平台主張與全球 portfolio 的策略敘事。'

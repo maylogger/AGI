@@ -1,0 +1,54 @@
+title: 'PayU Brand Guidelines'
+source: 'sources/PayU_ Brand_Guidelines_2021.pdf'
+date: 'January 2021'
+language: 'en'
+summary: '這份 guideline 將 PayU 的 dynamic、simple、bold 與 warm、human personality 轉成 logo、色彩、字體、圖形裝置、圖像元素與攝影規則。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction'
+    level: 1
+    order: 1
+    pages: '1-4'
+    summary: '說明視覺識別元素與現代化、數位優先、dynamic/simple/bold 的品牌方向。'
+  - id: 'ch-02'
+    title: 'Logo'
+    level: 1
+    order: 2
+    pages: '5-16'
+    summary: '規範 lime green 主 logo、白色反白、影像對比、clear space、U symbol、單色版本、誤用與 partner lockups。'
+  - id: 'ch-03'
+    title: 'Colour Palette'
+    level: 1
+    order: 3
+    pages: '17-20'
+    summary: '將綠色作為 leading colours，並以藍色、neutral 與 tertiary palette 支援圖表和插畫。'
+  - id: 'ch-04'
+    title: 'Typography'
+    level: 1
+    order: 4
+    pages: '21-24'
+    summary: '指定 Ample Soft、Open Sans、Arial 與資訊層級。'
+  - id: 'ch-05'
+    title: 'Graphical Holding Devices'
+    level: 1
+    order: 5
+    pages: '25-28'
+    summary: '從 logo block 與 U symbol 生成承載影像、色塊與文字的圖形容器。'
+  - id: 'ch-06'
+    title: 'Graphic Elements'
+    level: 1
+    order: 6
+    pages: '29-34'
+    summary: '規範 icons、illustrations、patterns、keylines、dots 與 texture。'
+  - id: 'ch-07'
+    title: 'Photography'
+    level: 1
+    order: 7
+    pages: '35-43'
+    summary: '定義 high growth markets、prosperity、tech 三種敘事攝影與禁用項目。'
+  - id: 'ch-08'
+    title: 'Contact'
+    level: 1
+    order: 8
+    pages: '44'
+    summary: '提供品牌問題聯絡資訊。'

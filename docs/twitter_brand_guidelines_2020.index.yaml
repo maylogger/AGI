@@ -1,0 +1,67 @@
+title: "Twitter Brand Guidelines"
+source: "sources/twitter_brand_guidelines_2020.pdf"
+date: "2020-10"
+language: "en"
+summary: "Twitter 2020 品牌規範，定義 logo、social icons、logo pairing lockups、Tweet treatments、Twitter marks 與商標法律要求。"
+chapters:
+  - id: "ch-01"
+    title: "Using the Twitter Brand"
+    level: 1
+    order: 1
+    pages: "1-2"
+    summary: "說明指南用途與範圍，並提供 trademark 聯絡信箱處理未涵蓋情境。"
+  - id: "ch-02"
+    title: "Our Logo"
+    level: 1
+    order: 2
+    pages: "3-7"
+    summary: "規範 Twitter bird logo 的基本使用、spacing、顏色與 social icons。"
+    children:
+      - id: "ch-02-01"
+        title: "The Basics"
+        level: 2
+        order: 1
+        pages: "4"
+        summary: "要求 logo 只用 Twitter blue 或 white，特殊黑色需核准，並禁止修改、旋轉、動畫與舊版 logo。"
+      - id: "ch-02-02"
+        title: "Spacing"
+        level: 2
+        order: 2
+        pages: "5"
+        summary: "定義 logo clear space 至少為 logo width 的 150%，最小寬度 16px。"
+      - id: "ch-02-03"
+        title: "Color"
+        level: 2
+        order: 3
+        pages: "6"
+        summary: "規定 logo 永遠為 blue 或 white，圖片上使用 white 且淺色圖片可加 10-20% black tint。"
+      - id: "ch-02-04"
+        title: "Social Icons"
+        level: 2
+        order: 4
+        pages: "7"
+        summary: "提供 social icon 容器規則、等尺寸排列與 32px 最小寬度。"
+  - id: "ch-03"
+    title: "Logo Pairing Lockups"
+    level: 1
+    order: 3
+    pages: "8-10"
+    summary: "規定 @handle/#hashtag 與 Twitter logo 的 pairing lockup、清楚間距與 misuse 禁忌。"
+  - id: "ch-04"
+    title: "Tweet Treatments"
+    level: 1
+    order: 4
+    pages: "11-12"
+    summary: "規範行銷中使用 Tweets 時需真實存在、不改訊息、使用 Helvetica Neue 與正確 credit，並提醒第三方內容權利風險。"
+  - id: "ch-05"
+    title: "Twitter Marks"
+    level: 1
+    order: 5
+    pages: "13-14"
+    summary: "定義 Twitter marks 範圍，並規範命名、產品、出版物、商品與內容發布的使用限制。"
+  - id: "ch-06"
+    title: "Legal: Twitter Trademark Guidelines"
+    level: 1
+    order: 6
+    pages: "15-16"
+    summary: "列出使用 Twitter trademarks 的法律條款、終止權、禁止變更、需合理間距、不得暗示背書與 trademark statement。"

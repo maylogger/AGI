@@ -1,0 +1,318 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Afterpay_Merchant_Guidelines_US_2020
+index_ref: docs/Afterpay_Merchant_Guidelines_US_2020.index.yaml
+note_ref: docs/Afterpay_Merchant_Guidelines_US_2020.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- AI-Checkable Rules
+- Brand Strategy
+- Messaging
+- Governance
+- Content Design
+- Content Safety
+- Layout System
+- Visual Identity
+- UI Components
+- Typography System
+- Color System
+- Compliance
+- Operations
+- Legal and Trademark
+- Interaction Design
+- Examples
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 3
+  section_count: 12
+chapter_sequence:
+- id: ch-01
+  title: Brand Foundation
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Vision, Mission, Brand and Values
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Purpose and Customer
+  order: 2
+  level: 2
+- id: ch-02
+  title: Brand Elements
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo, Badge and Loop Icon
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Brand Collaboration
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Color and Typography
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Afterpay Don’ts
+  order: 4
+  level: 2
+- id: ch-03
+  title: Best Practices
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: How to Talk About Afterpay
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Marketing Messaging
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Afterpay on Your Website
+  order: 3
+  level: 2
+- id: ch-03-04
+  title: Explaining How Afterpay Works
+  order: 4
+  level: 2
+- id: ch-03-05
+  title: Merchant Website Touchpoints
+  order: 5
+  level: 2
+- id: ch-03-06
+  title: Social and Email Examples
+  order: 6
+  level: 2
+frameworks:
+- name: 以「broken credit industry → Afterpay sees differently → everyone wins」形成反定位框架
+  chapter: ch-01
+  chapter_title: Brand Foundation
+- name: 價值可作為審稿 checklist：是否真實、是否承擔責任、是否指向長期顧客利益
+  chapter: ch-01-01
+  chapter_title: Vision, Mission, Brand and Values
+- name: 可形成 persona-to-message matrix：價值觀、痛點、期望、禁止刺激點
+  chapter: ch-01-02
+  chapter_title: Purpose and Customer
+- name: 資產選擇框架是背景明暗、品牌合作複雜度、版面可讀性與媒介尺寸
+  chapter: ch-02
+  chapter_title: Brand Elements
+- name: 背景明度 → 選擇 logo 色版；媒介大小 → 套用最小尺寸；與價格文字共存 → 留白例外
+  chapter: ch-02-01
+  chapter_title: Logo, Badge and Loop Icon
+- name: partner logo 複雜度決定使用 Afterpay Logo 或 Badge；全部 logo 色彩模式需一致
+  chapter: ch-02-02
+  chapter_title: Brand Collaboration
+- name: digital 使用指定 RGB/HEX；print 需聯繫 Afterpay 取得 Pantone swatch
+  chapter: ch-02-03
+  chapter_title: Color and Typography
+- name: 錯誤用法可分為 geometry、color、background、composition、effects、asset deletion 六類
+  chapter: ch-02-04
+  chapter_title: Afterpay Don’ts
+- name: Awareness → Education → Price breakdown → Checkout → Support 的 journey framework
+  chapter: ch-03
+  chapter_title: Best Practices
+- name: 正向屬性、禁止聯想、命名規範三層文案治理
+  chapter: ch-03-01
+  chapter_title: How to Talk About Afterpay
+- name: Headline message → Education copy → Transaction microcopy → Social tag
+  chapter: ch-03-02
+  chapter_title: Marketing Messaging
+- name: 元件設計從背景、文案長度、logo contrast、disclaimer availability 四項判斷
+  chapter: ch-03-03
+  chapter_title: Afterpay on Your Website
+- name: FAQ 覆蓋 what、how、where、schedule、failure、support、returns、limits
+  chapter: ch-03-04
+  chapter_title: Explaining How Afterpay Works
+- name: Journey stage 決定 disclosure depth：PLP/PDP 顯示金額，cart/checkout 顯示限制與流程
+  chapter: ch-03-05
+  chapter_title: Merchant Website Touchpoints
+- name: 社群內容可分為 introduce、upsell、educate 三種目的
+  chapter: ch-03-06
+  chapter_title: Social and Email Examples
+patterns:
+- name: 先定義世界觀再定義資產規則，適合任何需要嚴格避免誤導的金融、健康或信任型品牌 guideline。
+  chapter: ch-01
+  chapter_title: Brand Foundation
+- name: 用 moral contrast 建立金融品牌差異化，是常見於 regulated-category branding 的模式。
+  chapter: ch-01-01
+  chapter_title: Vision, Mission, Brand and Values
+- name: 在 partner guideline 中加入顧客心理 portrait，可提升執行端判斷語氣的能力。
+  chapter: ch-01-02
+  chapter_title: Purpose and Customer
+- name: logo system + clearspace + minimum size + do/don’t 是可複用的 identity governance pattern。
+  chapter: ch-02
+  chapter_title: Brand Elements
+- name: badge 作為小空間替代方案，可複用於支付、認證與合作標章系統。
+  chapter: ch-02-01
+  chapter_title: Logo, Badge and Loop Icon
+- name: 以中介符號表示品牌關係，可減少 lock-up 在不同合作案中的任意性。
+  chapter: ch-02-02
+  chapter_title: Brand Collaboration
+- name: 品牌主色與字體需同時描述數值與語氣功能，才能被不同設計者一致執行。
+  chapter: ch-02-03
+  chapter_title: Color and Typography
+- name: negative examples 是讓非設計背景商家快速理解邊界的有效治理模式。
+  chapter: ch-02-04
+  chapter_title: Afterpay Don’ts
+- name: 將金融服務說明拆成 banner、FAQ、PDP microcopy、checkout copy 與 social education，是可複用 onboarding pattern。
+  chapter: ch-03
+  chapter_title: Best Practices
+- name: 用 forbidden association list 管理金融服務品牌風險。
+  chapter: ch-03-01
+  chapter_title: How to Talk About Afterpay
+- name: 可變數模板適合需要在大量商品頁動態生成訊息的付款品牌。
+  chapter: ch-03-02
+  chapter_title: Marketing Messaging
+- name: 付款品牌進入商家 UI 時，應提供 lightweight promotional components 而非完整品牌 takeover。
+  chapter: ch-03-03
+  chapter_title: Afterpay on Your Website
+- name: 嵌入式 education modal 可作為複雜服務導入 checkout 前的標準模式。
+  chapter: ch-03-04
+  chapter_title: Explaining How Afterpay Works
+- name: 價格旁服務訊息與付款頁 detail disclosure 是 BNPL 類產品常見 UI pattern。
+  chapter: ch-03-05
+  chapter_title: Merchant Website Touchpoints
+- name: channel-specific examples 能降低 partner 在不同媒體自行發明素材的機率。
+  chapter: ch-03-06
+  chapter_title: Social and Email Examples
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: 可檢查品牌文案是否同時包含無息、分期、準時付款條件與責任語境；不得把 Afterpay 描述成 credit card、loan shortcut 或鼓勵 overspending。
+  chapter: ch-01
+  chapter_title: Brand Foundation
+- module: Brand Strategy
+  criterion: 文案不得暗示顧客需要輸才能讓平台贏；不得用不透明費用或壓力感促銷語氣包裝服務。
+  chapter: ch-01-01
+  chapter_title: Vision, Mission, Brand and Values
+- module: Visual Identity
+  criterion: logo、badge、sticker、app icon 不得小於 PDF 指定 px/mm；Bondi Mint lock-up 只可在黑底使用。
+  chapter: ch-02-01
+  chapter_title: Logo, Badge and Loop Icon
+- module: ''
+  criterion: 涉及條款的 promotion copy 應盡量接近 disclaimer；price breakdown 必須呈現 4 payments、金額與 Info。
+  chapter: ch-03
+  chapter_title: Best Practices
+- module: ''
+  criterion: 品牌名稱只能寫 `Afterpay`；不得寫 `AfterPay`、`AFTERPAY` 或 `afterpay`；不得關聯 gambling、criminal activity、paylending、overspending、unmanageable
+    debt 等。
+  chapter: ch-03-01
+  chapter_title: How to Talk About Afterpay
+- module: ''
+  criterion: 若使用 `Always interest-free`，需在相關素材或 landing page 保留資格與 late fee disclaimer；price breakdown 應包含 4 payments 與金額。
+  chapter: ch-03-02
+  chapter_title: Marketing Messaging
+- module: ''
+  criterion: FAQ 不應承諾所有商品均可使用；需提及 eligibility、minimum purchase、late fees may apply、terms link。
+  chapter: ch-03-04
+  chapter_title: Explaining How Afterpay Works
+- module: ''
+  criterion: PDP 顯示 `or 4 payments of $X with [badge] Info`；checkout 需指出 redirect to Afterpay 並說明付款排程。
+  chapter: ch-03-05
+  chapter_title: Merchant Website Touchpoints
+- module: ''
+  criterion: 社群與 email 仍需使用正確 badge、允許文案與必要條款提示；不得改寫成高壓促銷或誤導折扣。
+  chapter: ch-03-06
+  chapter_title: Social and Email Examples
+chapters:
+- id: ch-01
+  title: Brand Foundation
+  modules:
+  - AI-Checkable Rules
+  - Brand Strategy
+  - Messaging
+  - Governance
+- id: ch-01-01
+  title: Vision, Mission, Brand and Values
+  modules:
+  - Brand Strategy
+  - Content Design
+  - Governance
+- id: ch-01-02
+  title: Purpose and Customer
+  modules:
+  - Brand Strategy
+  - Messaging
+  - Content Safety
+- id: ch-02
+  title: Brand Elements
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Identity
+  - Governance
+- id: ch-02-01
+  title: Logo, Badge and Loop Icon
+  modules:
+  - AI-Checkable Rules
+  - UI Components
+  - Visual Identity
+- id: ch-02-02
+  title: Brand Collaboration
+  modules:
+  - Layout System
+  - Governance
+- id: ch-02-03
+  title: Color and Typography
+  modules:
+  - Typography System
+  - Color System
+  - Visual Identity
+- id: ch-02-04
+  title: Afterpay Don’ts
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-03
+  title: Best Practices
+  modules:
+  - Compliance
+  - UI Components
+  - Content Design
+  - Operations
+- id: ch-03-01
+  title: How to Talk About Afterpay
+  modules:
+  - Legal and Trademark
+  - Messaging
+  - Content Safety
+- id: ch-03-02
+  title: Marketing Messaging
+  modules:
+  - Compliance
+  - UI Components
+  - Content Design
+- id: ch-03-03
+  title: Afterpay on Your Website
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Compliance
+  - UI Components
+- id: ch-03-04
+  title: Explaining How Afterpay Works
+  modules:
+  - Compliance
+  - Content Design
+  - Operations
+- id: ch-03-05
+  title: Merchant Website Touchpoints
+  modules:
+  - UI Components
+  - Content Design
+  - Interaction Design
+- id: ch-03-06
+  title: Social and Email Examples
+  modules:
+  - Examples
+  - Messaging
+  - Operations

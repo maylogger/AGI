@@ -1,0 +1,255 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Microsoft_Xbox_brand_guidelines_2019
+index_ref: docs/Microsoft_Xbox_brand_guidelines_2019.index.yaml
+note_ref: docs/Microsoft_Xbox_brand_guidelines_2019.note.md
+archetype: full_brand_system
+industry: tech_software
+modules:
+- Brand Strategy
+- Voice and Tone
+- Messaging
+- AI-Checkable Rules
+- Content Design
+- Brand Architecture
+- Layout System
+- Governance
+- Product Language
+- Design Tokens
+- Visual Identity
+- Legal and Trademark
+- Photography System
+- Typography System
+- Color System
+- Operations
+- Content Safety
+depth:
+  strategy: high
+  visual: high
+  governance: high
+  top_level_chapter_count: 7
+  section_count: 4
+chapter_sequence:
+- id: ch-01
+  title: Identity
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Creative and Messaging Principles
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Xbox Signature Layouts and Lead with Xbox
+  order: 2
+  level: 2
+- id: ch-02
+  title: Elements
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo System
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Color, Type and Hardware
+  order: 2
+  level: 2
+- id: ch-03
+  title: Xbox Layout
+  order: 3
+  level: 1
+- id: ch-04
+  title: Xbox and Windows
+  order: 4
+  level: 1
+- id: ch-05
+  title: Xbox Accessories
+  order: 5
+  level: 1
+- id: ch-06
+  title: Partnerships
+  order: 6
+  level: 1
+- id: ch-07
+  title: Appendix
+  order: 7
+  level: 1
+frameworks:
+- name: experience-forward brand system：creative principles → messaging behavior → signature layout → channel applications
+  chapter: ch-01
+  chapter_title: Identity
+- name: message quality check：premium tone → simplicity → audience language → active experience → distinctiveness
+  chapter: ch-01-01
+  chapter_title: Creative and Messaging Principles
+- name: context-to-brand leadership：gaming context → Xbox logo lead → brand team review
+  chapter: ch-01-02
+  chapter_title: Xbox Signature Layouts and Lead with Xbox
+- name: visual token stack：logo → clear space/size → green → type → hardware photography → misuse prevention
+  chapter: ch-02
+  chapter_title: Elements
+- name: logo selection and QA：approved file → preferred version → size threshold → clear space → context compatibility
+  chapter: ch-02-01
+  chapter_title: Logo System
+- name: asset mood system：brand colour → typographic voice → product imagery → quality check
+  chapter: ch-02-02
+  chapter_title: Color, Type and Hardware
+- name: layout system：canvas → margin → logo zone → type zone → green bar → image/experience focus
+  chapter: ch-03
+  chapter_title: Xbox Layout
+- name: multi-brand decision tree：primary experience → platform relationship → logo choice → colour ownership → ad format
+  chapter: ch-04
+  chapter_title: Xbox and Windows
+- name: product-line identity：parent brand → accessory category → product photography → nomenclature → layout placement
+  chapter: ch-05
+  chapter_title: Xbox Accessories
+- name: partnership lockup system：relationship type → hierarchy → name/logo usage → proportion → approval
+  chapter: ch-06
+  chapter_title: Partnerships
+- name: maintenance layer：new changes → special products → responsibility content → asset access → reference
+  chapter: ch-07
+  chapter_title: Appendix
+patterns:
+- name: experience
+  chapter: ch-01
+  chapter_title: Identity
+- name: 每個語氣原則搭配 avoid criteria，是可 AI 化的文案治理模式。
+  chapter: ch-01-01
+  chapter_title: Creative and Messaging Principles
+- name: 為 sponsorship/event 單獨提供 lead brand rule，可避免多品牌環境混亂。
+  chapter: ch-01-02
+  chapter_title: Xbox Signature Layouts and Lead with Xbox
+- name: 把硬體納入 elements，表示產品本體也是品牌識別元素。
+  chapter: ch-02
+  chapter_title: Elements
+- name: 保留 sphere 與 wordmark 關係，避免 icon 與完整品牌名被任意拆解。
+  chapter: ch-02-01
+  chapter_title: Logo System
+- name: 硬體攝影被視為 identity primitive，而非單純商品圖。
+  chapter: ch-02-02
+  chapter_title: Color, Type and Hardware
+- name: 以單一強識別裝置 green bar 統一多種廣告版面。
+  chapter: ch-03
+  chapter_title: Xbox Layout
+- name: 為 cross-platform advertising 建立 branding bar，是遊戲產業常見的資訊架構模式。
+  chapter: ch-04
+  chapter_title: Xbox and Windows
+- name: 為高價配件如 Elite 建立 placement 規則，可支持 premium perception。
+  chapter: ch-05
+  chapter_title: Xbox Accessories
+- name: 共同品牌章節應獨立處理產品 lockup，而不是只放 partner logo spacing。
+  chapter: ch-06
+  chapter_title: Partnerships
+- name: 將 responsible gaming 放入品牌 guideline，表示品牌語氣與社會責任同屬溝通治理。
+  chapter: ch-07
+  chapter_title: Appendix
+rules_ai_checkable:
+- module: ''
+  criterion: 不得用暗示 cheap 的詞；避免不必要字詞；使用 active voice；避免 generic、soulless、neutral；不要直接說 bold、inviting、fun、premium，而要讓語氣表現出來。
+  chapter: ch-01-01
+  chapter_title: Creative and Messaging Principles
+- module: Layout System
+  criterion: 活動與贊助中的 Xbox 使用需聯絡 xboxbrand@microsoft.com；gaming context 中應使用 Xbox logo lead；不可讓合作或場地方壓過 Xbox gaming relationship。
+  chapter: ch-01-02
+  chapter_title: Xbox Signature Layouts and Lead with Xbox
+- module: ''
+  criterion: 完整 logo 應出現在 creative 中；使用 preferred logo 除非有 production limitations；遵守 clear space、minimum size 與指定色彩字體；不得錯誤裁切、改色、變形或用不符合風格的硬體圖。
+  chapter: ch-02
+  chapter_title: Elements
+- module: Visual Identity
+  criterion: creative 應出現完整 logo；使用 Brand Central logo files；除非製作限制或情境必要，使用 preferred horizontal logo；不得低於最小尺寸或侵入 clear space。
+  chapter: ch-02-01
+  chapter_title: Logo System
+- module: Color System
+  criterion: 字體應使用 Segoe Pro 指定字重；色彩應使用更新後 palette；硬體影像需保持 premium、清楚、不可失真；style it right 頁的錯誤應避免。
+  chapter: ch-02-02
+  chapter_title: Color, Type and Hardware
+- module: Layout System
+  criterion: 元素放置應遵循指定區域；margins 不得任意縮小；type 應依階層排版；green bar 不應被改色、過度裝飾或破壞內容可讀性。
+  chapter: ch-03
+  chapter_title: Xbox Layout
+- module: ''
+  criterion: 先判斷 primary brand；依規則選擇 Xbox 或 Windows logo；Windows color 不得被 Xbox green 取代到混淆；game advertising 應使用規範的 multiplatform
+    branding bars。
+  chapter: ch-04
+  chapter_title: Xbox and Windows
+- module: ''
+  criterion: controller hardware 應使用 primary product photography；accessory logo 需遵守 clear space；nomenclature 應符合核准名稱；元素 placement
+    不得壓過產品。
+  chapter: ch-05
+  chapter_title: Xbox Accessories
+- module: ''
+  criterion: partner lockup 比例需符規定範；Xbox name/logo 不得被放在暗示錯誤主從的位置；product lockup 需使用核准比例與名稱。
+  chapter: ch-06
+  chapter_title: Partnerships
+- module: ''
+  criterion: responsible gaming 溝通應符合指定原則；video/photoshoots 應遵循品牌體驗與品質標準；“Jump in.” tagline 與 Microsoft logo guidance 不得任意改寫或混用；資產應從核准來源取得。
+  chapter: ch-07
+  chapter_title: Appendix
+chapters:
+- id: ch-01
+  title: Identity
+  modules:
+  - Brand Strategy
+  - Voice and Tone
+  - Messaging
+- id: ch-01-01
+  title: Creative and Messaging Principles
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+- id: ch-01-02
+  title: Xbox Signature Layouts and Lead with Xbox
+  modules:
+  - Brand Architecture
+  - Layout System
+  - Governance
+- id: ch-02
+  title: Elements
+  modules:
+  - Product Language
+  - Design Tokens
+  - Visual Identity
+- id: ch-02-01
+  title: Logo System
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02-02
+  title: Color, Type and Hardware
+  modules:
+  - Photography System
+  - Typography System
+  - Color System
+- id: ch-03
+  title: Xbox Layout
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Design Tokens
+- id: ch-04
+  title: Xbox and Windows
+  modules:
+  - Brand Architecture
+  - Layout System
+- id: ch-05
+  title: Xbox Accessories
+  modules:
+  - Photography System
+  - Layout System
+  - Product Language
+- id: ch-06
+  title: Partnerships
+  modules:
+  - Legal and Trademark
+  - Governance
+- id: ch-07
+  title: Appendix
+  modules:
+  - Operations
+  - Content Safety
+  - Governance

@@ -1,0 +1,80 @@
+title: 'FluoroSeal Brand Manual'
+source: 'sources/FluoroSeal_Brand_Guidelines_2021.pdf'
+version: 'MKT 0022 - V11/2021'
+language: 'en'
+summary: 'The official FluoroSeal brandbook defining brand strategy, logo usage, colors, typography, icon style, imagery levels, color filters, and stationery applications.'
+chapters:
+  - id: 'ch-01'
+    title: 'Brand'
+    level: 1
+    order: 1
+    pages: '3-9'
+    summary: 'Introduces the brand promise, mission, vision, values, brand identity, brand essence, tone of voice, and company story.'
+    children:
+      - id: 'ch-01-01'
+        title: 'Mission, Vision and Values'
+        level: 2
+        order: 1
+        pages: '4'
+        summary: 'Defines value proposition, mission, vision, and values including integrity, responsibility, legacy, quality, customer commitment, and innovation.'
+      - id: 'ch-01-02'
+        title: 'Brand Identity and Brand Essence'
+        level: 2
+        order: 2
+        pages: '5'
+        summary: 'Defines brand associations and the essence “Building Value Together.”'
+      - id: 'ch-01-03'
+        title: 'Tone of Voice'
+        level: 2
+        order: 3
+        pages: '6-7'
+        summary: 'Defines the voice as personal, knowledgeable, respectful, professional, and open.'
+      - id: 'ch-01-04'
+        title: 'FluoroSeal Company Story'
+        level: 2
+        order: 4
+        pages: '8-9'
+        summary: 'Presents company milestones from founding through global expansion and ongoing R&D investment.'
+  - id: 'ch-02'
+    title: 'Visual Elements'
+    level: 1
+    order: 2
+    pages: '10-25'
+    summary: 'Defines logo, color versions, logo variations, misuse, placement, clear space, primary and secondary colors, color usage, typography, system font, print/web typography, and icon style.'
+    children:
+      - id: 'ch-02-01'
+        title: 'Logo System'
+        level: 2
+        order: 1
+        pages: '11-15'
+        summary: 'Defines logo meaning, master/negative/mono versions, inline and icon variations, misuse prohibitions, placement, clear space, and minimum width.'
+      - id: 'ch-02-02'
+        title: 'Color System'
+        level: 2
+        order: 2
+        pages: '16-18'
+        summary: 'Defines corporate blue, marine blue, sky blue, secondary purple/plum/slate colors, and usage principles.'
+      - id: 'ch-02-03'
+        title: 'Typography and Icon Style'
+        level: 2
+        order: 3
+        pages: '19-25'
+        summary: 'Defines Lato, Open Sans, Arial fallback, print/web roles, and single-color glyph icon rules.'
+  - id: 'ch-03'
+    title: 'Imagery'
+    level: 1
+    order: 3
+    pages: '26-32'
+    summary: 'Defines imagery concept, product showcase, reference imagery, people imagery, and blue/purple/plum/sky-blue color filter treatments.'
+  - id: 'ch-04'
+    title: 'Applications'
+    level: 1
+    order: 4
+    pages: '33-40'
+    summary: 'Defines stationery showcase, business cards, letterheads, email signatures, and envelopes with dimensions, paper, margin, and production parameters.'
+  - id: 'ch-05'
+    title: 'Contact'
+    level: 1
+    order: 5
+    pages: '41-42'
+    summary: 'Provides FluoroSeal Group Marketing and Communications contact information.'

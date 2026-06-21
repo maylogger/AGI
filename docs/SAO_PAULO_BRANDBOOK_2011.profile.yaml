@@ -1,0 +1,306 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: SAO_PAULO_BRANDBOOK_2011
+index_ref: docs/SAO_PAULO_BRANDBOOK_2011.index.yaml
+note_ref: docs/SAO_PAULO_BRANDBOOK_2011.note.md
+archetype: brand_experience_guide
+industry: public_sector
+modules:
+- Brand Strategy
+- Governance
+- Photography System
+- Messaging
+- Knowledge Architecture
+- Visual Language
+- Design Tokens
+- Visual Identity
+- AI-Checkable Rules
+- Motion Identity
+- Illustration System
+- Layout System
+- Typography System
+- Color System
+- Brand Architecture
+- Compliance
+- Examples
+- Operations
+- Legal and Trademark
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 8
+  section_count: 6
+chapter_sequence:
+- id: ch-01
+  title: Presentation
+  order: 1
+  level: 1
+- id: ch-02
+  title: Brand Pillars
+  order: 2
+  level: 1
+- id: ch-03
+  title: Brand Essence and Strategic View
+  order: 3
+  level: 1
+- id: ch-04
+  title: Visual Elements
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Logo Versions and Care
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Patterns and Secondary Graphics
+  order: 2
+  level: 2
+- id: ch-04-03
+  title: Photographic Style
+  order: 3
+  level: 2
+- id: ch-04-04
+  title: Typography and Colors
+  order: 4
+  level: 2
+- id: ch-05
+  title: Application Rules
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Convergence Scenarios
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Association Rules
+  order: 2
+  level: 2
+- id: ch-06
+  title: Examples of Application
+  order: 6
+  level: 1
+- id: ch-07
+  title: Electronic Originals
+  order: 7
+  level: 1
+- id: ch-08
+  title: Credits and Legal Notices
+  order: 8
+  level: 1
+frameworks:
+- name: shared destination brand -> trustworthiness -> consistent application -> better communication performance
+  chapter: ch-01
+  chapter_title: Presentation
+- name: emotional surprise -> diversity ethics -> present pleasure -> community reconnection
+  chapter: ch-02
+  chapter_title: Brand Pillars
+- name: brand values -> subjective content/message + objective visual identity -> brand appreciation -> desire for experiences
+  chapter: ch-03
+  chapter_title: Brand Essence and Strategic View
+- name: six-element visual system + controlled variation + example-based validation
+  chapter: ch-04
+  chapter_title: Visual Elements
+- name: use case -> preferred/description/restricted/tagline/motion -> background/space/size -> prohibited operations
+  chapter: ch-04-01
+  chapter_title: Logo Versions and Care
+- name: official originals -> pattern usage -> monochrome variants -> perspective rule
+  chapter: ch-04-02
+  chapter_title: Patterns and Secondary Graphics
+- name: subject matter -> unusual perspective -> chromatic adaptation -> brand effect
+  chapter: ch-04-03
+  chapter_title: Photographic Style
+- name: type family -> weights -> exception font -> color names -> Pantone/CMYK/RGB/HEX
+  chapter: ch-04-04
+  chapter_title: Typography and Colors
+- name: actor type + geography + whose interest -> brand hierarchy
+  chapter: ch-05
+  chapter_title: Application Rules
+- name: user group -> geography -> interest -> brand weight
+  chapter: ch-05-01
+  chapter_title: Convergence Scenarios
+- name: association type -> order -> separator -> max height
+  chapter: ch-05-02
+  chapter_title: Association Rules
+- name: platform example -> element combination -> concept verification
+  chapter: ch-06
+  chapter_title: Examples of Application
+- name: asset family -> variation -> appearance -> color mode -> file format
+  chapter: ch-07
+  chapter_title: Electronic Originals
+- name: asset use -> copyright ownership -> prior authorization -> official contact
+  chapter: ch-08
+  chapter_title: Credits and Legal Notices
+patterns:
+- name: 共同推廣工具
+  chapter: ch-01
+  chapter_title: Presentation
+- name: 社會洞察 + 品牌回應
+  chapter: ch-02
+  chapter_title: Brand Pillars
+- name: 把品牌表達分成主觀與客觀語言，是可重用的品牌系統框架。
+  chapter: ch-03
+  chapter_title: Brand Essence and Strategic View
+- name: 可變 Logo、pattern、secondary graphics 與攝影風格共同構成 destination brand 的 flexible identity。
+  chapter: ch-04
+  chapter_title: Visual Elements
+- name: 可變城市 Logo 需使用官方 variation set，而不是開放設計者自行變形。
+  chapter: ch-04-01
+  chapter_title: Logo Versions and Care
+- name: 可用圖樣與透視圖形作為 flexible identity 的二級語彙。
+  chapter: ch-04-02
+  chapter_title: Patterns and Secondary Graphics
+- name: 城市品牌可用後製技法將素材庫統一成品牌語言。
+  chapter: ch-04-03
+  chapter_title: Photographic Style
+- name: 以城市地標命名色彩，將 token 與文化記憶綁定。
+  chapter: ch-04-04
+  chapter_title: Typography and Colors
+- name: 城市品牌需要比一般企業更多的 co-branding governance。
+  chapter: ch-05
+  chapter_title: Application Rules
+- name: destination brand 的共同使用可以用情境矩陣治理。
+  chapter: ch-05-01
+  chapter_title: Convergence Scenarios
+- name: 用 module P 或 logo height 管理其他品牌最大高度。
+  chapter: ch-05-02
+  chapter_title: Association Rules
+- name: 大型 guideline 應以應用範例降低抽象規則的理解成本。
+  chapter: ch-06
+  chapter_title: Examples of Application
+- name: 可變品牌系統尤其需要嚴格檔名規則，否則變體會失控。
+  chapter: ch-07
+  chapter_title: Electronic Originals
+- name: 影像豐富的 guideline 必須在尾端處理第三方影像權利。
+  chapter: ch-08
+  chapter_title: Credits and Legal Notices
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI 可檢查準則：品牌內容應至少對應 unexpected、diversity、present experience 或 community connection 其中一項；不得只呈現通用觀光明信片感而缺少 surprising
+    perspective。
+  chapter: ch-02
+  chapter_title: Brand Pillars
+- module: ''
+  criterion: AI 可檢查準則：應用可使用一個或多個六大視覺元素，但元素需來自本書與 electronic originals；Logo 可變位置只能使用預定 symbol positions；不得任意改變透視、顏色、字體比例或清楚度。
+  chapter: ch-04
+  chapter_title: Visual Elements
+- module: Visual Identity
+  criterion: AI 可檢查準則：description versions 只在需表達 cidade de/city of/ciudad de 時使用；restricted versions 僅例外且需 brand management
+    approval；tagline 字體必須 Museo Sans 900；tagline 與 São Paulo words 對齊，距離至少為 P 高度一半；non-interference area 至少等於 letter P 高度；最小一般印刷尺寸為
+    10mm；不得 distortion、改形式/透視、加外框、浮水印、改 symbol position、改色、低對比背景、旋轉、陰影/特效、改 typography proportions。
+  chapter: ch-04-01
+  chapter_title: Logo Versions and Care
+- module: ''
+  criterion: AI 可檢查準則：patterns 必須使用 electronic originals；secondary graphics 可改變，但所有 forms 必須 converge to a single point 且
+    perspectives remain unaffected。
+  chapter: ch-04-02
+  chapter_title: Patterns and Secondary Graphics
+- module: Color System
+  criterion: 'AI 可檢查準則：主要字體為 Museo Sans；presentation、email、digital materials 可例外用 Arial；MASP Red Hex #ea1b36、Liberdade Yellow
+    #ffc808、Ibirapuera Green #a6ce39、Paulista Blue #0088cf、Tietê Blue #003e6c。'
+  chapter: ch-04-04
+  chapter_title: Typography and Colors
+- module: ''
+  criterion: AI 可檢查準則：使用 São Paulo brand 前需寄信至 marcasp@spturis.com 取得 authorization；São Paulo Turismo 在國內外使用時 São Paulo brand
+    在 foreground，其他品牌 background equal weights；第三方需事先授權。
+  chapter: ch-05
+  chapter_title: Application Rules
+- module: ''
+  criterion: AI 可檢查準則：政府品牌 signature 左至右為 São Paulo、City、State、Federal Government，且 São Paulo 與 governmental brands 間必須有 line；與其他品牌並列時右至左為
+    São Paulo Brand、Other Brands，其他品牌最大高度 3P；與 event brand 並列時右至左為 Event Brand、São Paulo Brand，event brand 最大高度等於 São Paulo
+    brand height。
+  chapter: ch-05-02
+  chapter_title: Association Rules
+- module: ''
+  criterion: AI 可檢查準則：使用或散布 São Paulo brand 前需先取得 São Paulo Turismo authorization；檔名應包含 SP brand identifier、symbol variation
+    A-D、appearance POS/NEG/RED/VER/AMA、color CMYK/RGB/1 COLOR 與格式 .ai/.tiff/.jpg/.png；animated/insertion video 應使用指定 mov/mp4/swf
+    originals。
+  chapter: ch-07
+  chapter_title: Electronic Originals
+- module: ''
+  criterion: AI 可檢查準則：guidebook images 僅供 illustration purposes；不得未經 Strategic Actions and Communication Department 事先明確授權而部分或全部重製；品牌問題應聯絡
+    marcasp@spturis.com。
+  chapter: ch-08
+  chapter_title: Credits and Legal Notices
+chapters:
+- id: ch-01
+  title: Presentation
+  modules:
+  - Brand Strategy
+  - Governance
+- id: ch-02
+  title: Brand Pillars
+  modules:
+  - Photography System
+  - Brand Strategy
+  - Messaging
+- id: ch-03
+  title: Brand Essence and Strategic View
+  modules:
+  - Brand Strategy
+  - Messaging
+  - Knowledge Architecture
+- id: ch-04
+  title: Visual Elements
+  modules:
+  - Visual Language
+  - Design Tokens
+  - Visual Identity
+- id: ch-04-01
+  title: Logo Versions and Care
+  modules:
+  - AI-Checkable Rules
+  - Motion Identity
+- id: ch-04-02
+  title: Patterns and Secondary Graphics
+  modules:
+  - Illustration System
+  - Layout System
+  - Visual Language
+- id: ch-04-03
+  title: Photographic Style
+  modules:
+  - Photography System
+  - Visual Language
+- id: ch-04-04
+  title: Typography and Colors
+  modules:
+  - Typography System
+  - Color System
+  - Design Tokens
+- id: ch-05
+  title: Application Rules
+  modules:
+  - Brand Architecture
+  - Compliance
+  - Governance
+- id: ch-05-01
+  title: Convergence Scenarios
+  modules:
+  - Brand Architecture
+  - Governance
+- id: ch-05-02
+  title: Association Rules
+  modules:
+  - Brand Architecture
+  - AI-Checkable Rules
+  - Layout System
+- id: ch-06
+  title: Examples of Application
+  modules:
+  - Examples
+  - Visual Language
+- id: ch-07
+  title: Electronic Originals
+  modules:
+  - Design Tokens
+  - Operations
+  - Knowledge Architecture
+- id: ch-08
+  title: Credits and Legal Notices
+  modules:
+  - Legal and Trademark
+  - Operations

@@ -1,0 +1,73 @@
+title: 'Sterling Brand Guideline'
+source: 'sources/Sterling_Brand_Guidelines.pdf'
+language: 'en'
+summary: '這份 Sterling 品牌手冊建立 2019 Rising Sun 新識別的基本元素，涵蓋 logo、色彩、字體、攝影、品牌圖形、共同品牌與多種應用版型。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction and New Identity'
+    level: 1
+    order: 1
+    pages: '1-5'
+    summary: '說明 guideline 作為製作與設計參照，並闡述 Rising Sun 識別如何代表銀行從傳統到敏捷、具衝擊力的定位。'
+  - id: 'ch-02'
+    title: 'Visual Identity'
+    level: 1
+    order: 2
+    pages: '6-14'
+    summary: '定義 Sterling logo 的型態、單色版本、色彩版本、清除空間、最小尺寸、錯誤用法與 co-branding 比例。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Logo Forms and Colour Versions'
+        level: 2
+        order: 1
+        pages: '6-9'
+        summary: '標誌有 horizontal 與 stacked 兩種基本形式，並提供 primary、reverse 與 monochrome 使用邏輯。'
+      - id: 'ch-02-02'
+        title: 'Clear Space, Minimum Size and Incorrect Use'
+        level: 2
+        order: 2
+        pages: '10-12'
+        summary: '使用 x-height、y-height 定義安全區與 wordmark 比例，並禁止拉伸、反轉、旋轉、漸層、陰影與錯誤背景。'
+      - id: 'ch-02-03'
+        title: 'Co-Branding'
+        level: 2
+        order: 3
+        pages: '13-14'
+        summary: '定義 vertical 與 horizontal co-branding zone，控制 partner logo 與 Sterling logo 的比例。'
+  - id: 'ch-03'
+    title: 'Colour and Typography'
+    level: 1
+    order: 3
+    pages: '15-19'
+    summary: '建立 primary、secondary 色盤，以及 logo、advertising、email 等不同溝通情境的字體系統。'
+  - id: 'ch-04'
+    title: 'Photography and Brand Elements'
+    level: 1
+    order: 4
+    pages: '20-27'
+    summary: '規範攝影情緒、場景、紅色視覺方向、檔案格式與 Sterling Metros 品牌圖形。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Photography Directions'
+        level: 2
+        order: 1
+        pages: '21-25'
+        summary: '分別定義 studio、outdoor、retail、SME、private 攝影的情緒、人物與背景要求。'
+      - id: 'ch-04-02'
+        title: 'File Formats and Sterling Metros'
+        level: 2
+        order: 2
+        pages: '26-27'
+        summary: '說明 vector/raster 檔案用途，並將 Sterling Metros 作為延展品牌深度、紋理與風格的圖形系統。'
+  - id: 'ch-05'
+    title: 'Applications'
+    level: 1
+    order: 5
+    pages: '28-37'
+    summary: '展示簡報、email signature、名片、卡片、服飾、印刷廣告、社群貼文與活動布條等應用。'
+  - id: 'ch-06'
+    title: 'Support'
+    level: 1
+    order: 6
+    pages: '38-39'
+    summary: '提供品牌與 guideline 問題的聯絡信箱。'

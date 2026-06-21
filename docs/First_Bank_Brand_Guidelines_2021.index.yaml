@@ -1,0 +1,67 @@
+title: 'First Bank Brand Guidelines'
+source: 'sources/First_Bank_Brand_Guidelines_2021.pdf'
+version: 'Updated 2021'
+language: 'en'
+summary: 'A concise First Bank brand identity guide covering logo specifications, color palettes, brand patterns, imagery, illustration/iconography, typography, and marketing contact governance.'
+chapters:
+  - id: 'ch-01'
+    title: 'Brand Statement'
+    level: 1
+    order: 1
+    pages: '1-2'
+    summary: 'Frames brand identity as the tangible expression of what First Bank stands for and defines the guideline purpose as strength and consistency.'
+  - id: 'ch-02'
+    title: 'Logo Specifications'
+    level: 1
+    order: 2
+    pages: '3-9'
+    summary: 'Defines primary logo variants, clear space, minimum size, misuse rules, approved lines-of-business logo lockups, and examples in use.'
+    children:
+      - id: 'ch-02-01'
+        title: 'Primary Logo, Clear Space, Minimum Size, and Misuse'
+        level: 2
+        order: 1
+        pages: '4-6'
+        summary: 'Specifies acceptable logo color bars, F-based clear space, 55 px / 0.76 in minimum width, and prohibited logo alterations.'
+      - id: 'ch-02-02'
+        title: 'Lines of Business Logos'
+        level: 2
+        order: 2
+        pages: '8-9'
+        summary: 'Shows approved lockups for Mortgage Services, Wealth Management, and Private Banking.'
+  - id: 'ch-03'
+    title: 'Color Palette'
+    level: 1
+    order: 3
+    pages: '10-14'
+    summary: 'Defines core red and gray palette, line-of-business palettes, web hex values, tint systems, and color usage examples.'
+  - id: 'ch-04'
+    title: 'Brand Patterns'
+    level: 1
+    order: 4
+    pages: '15-17'
+    summary: 'Introduces diamond-based brand shapes inspired by the rectangular logo and shows pattern applications.'
+  - id: 'ch-05'
+    title: 'Imagery'
+    level: 1
+    order: 5
+    pages: '18-21'
+    summary: 'Defines photography do’s and don’ts, approved photography examples, and digital banking imagery principles.'
+  - id: 'ch-06'
+    title: 'Illustration and Iconography'
+    level: 1
+    order: 6
+    pages: '22-24'
+    summary: 'Defines preferred illustration style and permits other styles when aligned with brand colors and context.'
+  - id: 'ch-07'
+    title: 'Typography'
+    level: 1
+    order: 7
+    pages: '25-28'
+    summary: 'Defines print and web typefaces and role-based typography usage for headlines, body copy, subheads, calls to action, and buttons.'
+  - id: 'ch-08'
+    title: 'Contact'
+    level: 1
+    order: 8
+    pages: '29'
+    summary: 'Directs questions about the brand guide and requirements to the Marketing team.'

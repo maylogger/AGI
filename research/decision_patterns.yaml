@@ -1,0 +1,4521 @@
+# AGI 決策圖譜（L3）— 由 scripts/compile_knowledge_graph.py 自動產生
+# 請勿手動編輯；新增決策卡請改 docs/<brand_id>.decisions.yaml 後重跑。
+# schema：research/schemas/decision_pattern.schema.yaml
+
+version: 1
+generated: '2026-06-21'
+source: docs/*.decisions.yaml
+stats:
+  verified_patterns: 34
+  unverified_patterns: 0
+  sidecar_files: 125
+  raw_cards: 455
+patterns:
+- id: dp-accessible-contrast-pairs
+  title: 把可近用性前置成核准對比配色，而非設計者自行判斷
+  problem:
+    statement: 公共資訊面向全體市民與輔助科技，若放任設計者自由配色，容易產生不符合無障礙標準、身心障礙者無法閱讀的組合。
+    signals:
+    - accessibility
+    - public_trust
+    - inclusive_audience
+    - regulatory_compliance
+  solution:
+    module: Accessibility
+    move: 把色彩與可及性合併，提供大／小文字的核准對比配色矩陣（allowed pairings）
+    layer: visual_core
+  reason:
+  - 用 approved contrast pairs 降低設計者自行判斷錯誤
+  - 色彩章可同時提供品牌情緒、數值 token 與可及性文字使用矩陣
+  - 公共機構不應把可近用性視為加分項，而是最低標準
+  - 在公共空間 guideline 中，color chapter 應明確包含 contrast，因它直接影響可近性與法規風險
+  - accessibility 是品牌可信度的一部分，不是事後檢查
+  - 用 poor/good/excellent contrast 對照降低設計者自行判斷錯誤
+  - 機構不應把可近用性視為加分項，而是最低標準
+  - 鮮明色彩不能犧牲對比與可用性
+  - 可用性優先於裝飾性，色彩限制優先於創意擴張
+  - 把色票寫成封閉集合，方便自動檢查
+  - 可近用性可以被寫成 design token 與 contrast pair governance
+  - 成熟色彩 guideline 應包含 tint ladder 與 contrast suitability，而不只是 palette
+  - 品牌信任感來自使用者能找到、讀懂、快速載入並無障礙使用內容
+  - 色彩不只表現品牌，也要服務 accessibility 與數位狀態
+  - 可近用性應被寫成數值標準與觸發條件，而非附加建議
+  applicable_when:
+    industries:
+    - education
+    - public_sector
+    - nonprofit_social
+    - finance
+    - tech_software
+    brand_types:
+    - institutional_public_trust
+    - mission_driven
+    conditions:
+    - accessibility
+    - inclusive_audience
+    archetypes:
+    - brand_experience_guide
+    - multi_brand_architecture
+    - campaign_touchpoint
+    - product_design_system
+  dependencies:
+    requires:
+    - Color System
+    enables:
+    - Governance
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 把 vibrants 用於 body text 或 small headlines
+  - 使用未核准色或不符指定 contrast ratios 的色彩組合
+  - 把無障礙規範放在附錄，當成可選加分項
+  - highlight 只靠顏色而無冗餘標示
+  - 使用未列出的 accessible colour combinations
+  - 使用未列出的對比色組
+  evidence:
+  - brand_id: Berkeley_Brand_Manual_accessible_2019
+    chapter: ch-04
+    excerpt: 文字色需符合 large/small text allowed pairings；heritage colors 不得使用 screens/tints，vibrants 不得用於
+      body text 或 small headlines。
+  - brand_id: Brickline_Greenway_Brand_Guidlines_2020
+    chapter: ch-04-01
+    excerpt: color system 包含 color palette、contrast ratios 與 usage：色彩組合需符合指定 contrast ratios，不得使用未核准色，並以對比比率治理色彩。
+  - brand_id: Consistent_communications_Brand_Guidelines_2018
+    chapter: ch-03
+    excerpt: main text 不得小於 9pt、圖片疊字需最大對比、highlight 不得只靠顏色，並以 poor/good/excellent contrast 對照與紙張 glare、binding
+      crease 等實體條件規範可讀性。
+  - brand_id: eftpos_Brand_Guidelines_2021
+    chapter: ch-02-02
+    excerpt: 以 vivid Australian palette 搭配 AA web accessibility for large text / graphic devices 作設計理由；金融品牌色彩要鮮明但不能犧牲對比與可用性。
+  - brand_id: EYR_Visual_Identity_Guidelines
+    chapter: ch-01-02
+    excerpt: 視覺素材不得出現指定 palette 與白色以外的顏色、字體須屬 Noto Sans family、圖片或 overlay 文字厚度不得低於 Bold，把色票寫成封閉集合並以 boldness
+      控制可讀性。
+  - brand_id: MayorOfLondon_LOOK BOOK_2021
+    chapter: ch-03-01
+    excerpt: 用 approved contrast pairs 降低設計者自行判斷錯誤；PDF 應 single page export、tag every item、include alt
+      copy，線上材料至少 WCAG 2.1 AA。
+  - brand_id: MayorOfLondon_LOOK BOOK_2021
+    chapter: ch-03
+    excerpt: 把 accessibility 放在視覺工具區，而不是附錄，表示它是設計前提；不得使用未列出的 accessible colour combinations。
+  - brand_id: MSCI_Brand_guidelines_2021
+    chapter: ch-04
+    excerpt: 非大字文字需符合暗底/亮底建議色組，logo 背景應依表格選擇 full-color 或 white version；色票系統兼具 design token 與 accessibility
+      matrix。
+  - brand_id: MSCI_Brand_guidelines_2021
+    chapter: ch-07
+    excerpt: decorative image alt 為空、所有 video 有 captions 與 transcript；品牌信任感來自使用者能找到、讀懂、快速載入並無障礙使用內容。
+  - brand_id: SAS_brand_creative_guide_2021
+    chapter: ch-04
+    excerpt: 文字/背景需通過指定 contrast，提供 ADA compliance 與對應 UI/web palette；可近用性應直接寫入品牌色規則而非事後判斷。
+  - brand_id: ucl_signage_manual_2021
+    chapter: ch-01-02
+    excerpt: 背景/文字 LRV difference 目標至少 70；定義 accessible colour token 與 six-colour range 以支撐可讀性。
+  - brand_id: ucl_signage_manual_2021
+    chapter: ch-06
+    excerpt: 摘錄 BS8300：letter/symbol-to-signboard 與 signboard-to-background LRV difference 70、依 viewing
+      distance 訂 x-height、tactile lettering 幾何；accessibility 應寫成數值標準而非附加建議。
+  evidence_brand_count: 9
+  confidence: 0.95
+  status: verified
+- id: dp-approval-gate-for-exceptions
+  title: 例外不是漏洞，用審核閘門把差異收進可治理的模組
+  problem:
+    statement: 規則無法窮舉所有情境，現實組織總會有例外；若放任各單位自行決定，例外會逐步擴張成破壞系統的破口。
+    signals:
+    - exception_handling
+    - multi_unit_consistency
+    - governance
+    - scaling_risk
+  solution:
+    module: Governance
+    move: 例外章節須明確寫出「為何例外／何時可用／不可擴張到哪裡」，並交由品牌管理單位審核
+    layer: governance
+  reason:
+  - 例外應回到品牌團隊，而不是由使用者自行決定
+  - guideline 不是靜態真理，而是可被維護的治理文件
+  - 例外應回到品牌團隊，而不是由地方社群自行解釋
+  - 嚴格 guideline 必須搭配明確支援通道，否則地方社群會自行解釋
+  - 例外章節應寫出「為何例外」「何時可用」「不可擴張到哪裡」
+  - 品牌一致性不是取消差異，而是把差異收進可治理的模組
+  - 品牌治理文件應同時包含設計規格與組織審批路徑，否則規範無法被執行
+  - 任何大型活動 guideline 都應包含外部夥伴品牌露出的審核規則
+  - 變體存在是為了解決限制，不是為了任意風格化
+  - 品牌規範需要審核節點，否則指南只會停留在參考文件
+  - 成熟企業 guideline 應把例外權限寫入規則，而不是假設所有使用者都能判斷
+  - font/asset guideline 應包含授權與供應商限制，而不只是視覺偏好
+  - 變體是例外，不是新的自由選項
+  - 變體章節應明確標示「何時不能用標準版」而非只展示可用資產
+  - 規範必須搭配治理通道，否則例外與新媒介會快速破壞一致性
+  - 任何高風險品牌 guideline 都應定義「誰能核准」「核准多久有效」「哪些問題不在服務範圍」
+  - guideline 開頭應同時建立品牌理由、使用範圍與 approval authority，否則後續規格缺乏治理力
+  - 品牌不只由設計師執行，所有寫作者、供應商與代理商都需要一致準則
+  - guideline 應包含 escalation path 與 content rules，不只提供設計規格
+  - 越簡化的品牌符號越需要更高審批門檻；把簡化資產視為 exception 而非 alternative 可降低品牌漂移
+  - 活動或 campaign 可有 word mark，但不得脫離主品牌
+  - 例外章節應寫出「何時可用」「不可擴張到哪裡」並交由審核
+  - 全球品牌訊息需要明確的 authority、timebox 與 localization exception
+  - Design knowledge base 應保存 guideline 的法律階層與生命週期
+  - 生活風格品牌需要彈性，但彈性必須被核准與最低身份規則約束
+  applicable_when:
+    industries:
+    - public_sector
+    - finance
+    - luxury_premium
+    - consumer_retail_hospitality
+    - education
+    - tech_software
+    - industrial_materials_science
+    - media_entertainment
+    brand_types:
+    - institutional_public_trust
+    - platform_ecosystem
+    - heritage_legacy
+    conditions:
+    - multi_unit_consistency
+    - exception_handling
+    archetypes:
+    - multi_brand_architecture
+    - corporate_toolkit
+  dependencies:
+    requires:
+    - Governance
+    enables: []
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 例外只寫「可以這樣做」卻不寫適用邊界與審核者
+  - 各單位把一次性例外當成通用替代方案沿用
+  - 地方社群把一次性例外當成通用替代方案沿用
+  evidence:
+  - brand_id: AMD_branding_guidelines_2020
+    chapter: ch-01-09
+    excerpt: Governance Loop：使用規則 → 遇到例外 → 聯絡品牌團隊 → 核准或更新；例外應回到品牌團隊，而不是由使用者自行解釋。
+  - brand_id: BMW_Clubs_2020
+    chapter: ch-10-01
+    excerpt: BMW Club & Community Management（BCCM）作為單一治理入口，未覆蓋的 pairing、symbol 使用、domain 例外與 reproduction
+      技術問題需回到 BCCM 審核；paired logos 需 BCCM 個案許可。
+  - brand_id: Heathrow_Brand_guidelines_2018
+    chapter: ch-02
+    excerpt: 不得自行建立或修改 lock-up；新 lock-up 僅 Brand team 可授權；多服務品牌需明確誰有資格建立 lock-up。
+  - brand_id: HKUST_BRAND_GUIDELINES_2022
+    chapter: ch-04
+    excerpt: 新標誌必須完成 confirmation → feasibility review → brand compliance review → approval → legal record
+      → official listing 的治理流程，並由 senior management、MTPC、PAO、Vice-President 與 Legal Office 參與審核。
+  - brand_id: Huawei_Visual_Identity_Guidelines
+    chapter: ch-02-01
+    excerpt: co-branding 必須取得授權並送 Brand Management System 審核，不得單獨使用 symbol、加入部門名或裝飾化。
+  - brand_id: Huawei_Visual_Identity_Guidelines
+    chapter: ch-08
+    excerpt: 建築與接待標識不得改造 corporate logo，特殊場地需諮詢 Brand Management System，把空間例外導回品牌治理單位審核。
+  - brand_id: IBM_ThinkSummit_2020
+    chapter: ch-08
+    excerpt: 贊助露出、內容 activation 與新增細節應通過 review and approval process，使用者依 contacts 尋求核准；贊助與內容是最容易偏離的部分，因此放在
+      toolkit 末尾建立 escalation and approval module。
+  - brand_id: ICBA_corporate_Brand_guidelines_2020
+    chapter: ch-03-01
+    excerpt: 一般 ICBA 品牌素材應使用 primary logo，secondary logo 僅在空間受限或內部 staff-facing 文件使用；變體存在是為了解決限制，不是為了任意風格化。
+  - brand_id: ICBA_corporate_Brand_guidelines_2020
+    chapter: ch-01
+    excerpt: 所有對外 mass production/dissemination 素材需在最早 proof stage 交由行銷支援人員審核，審核至少預留兩個工作天，把品牌一致性轉成可治理的審核節點。
+  - brand_id: Laing O’Rourke_identity guidelines_2021
+    chapter: ch-03
+    excerpt: 涉及例外或 motif 使用時應聯絡 Corporate Affairs；未授權員工不得自行使用 motif 或 Ginger，成熟企業 guideline 應把例外權限寫入規則。
+  - brand_id: Laing O’Rourke_identity guidelines_2021
+    chapter: ch-03-02
+    excerpt: Ginger 不得由員工未經許可使用，需配合 Corporate Affairs/設計師授權；font guideline 應包含授權與供應商限制。
+  - brand_id: McDelivery_brandbook_2017
+    chapter: ch-03
+    excerpt: logo variants 僅在 standard logo 不可能使用時使用；每種變體需 McDonald’s marketing lead in your market approval，變體是例外而非新的自由選項。
+  - brand_id: Mercedes_Benz_BrandStandards_2015
+    chapter: ch-01-02
+    excerpt: consultation lifecycle：question → pre-approval → validity window → monitoring → eligibility
+      decision；consult approval 有效期 60 天，website review 七日 turnaround。
+  - brand_id: MG_investments_identity guidelines_2014
+    chapter: ch-01
+    excerpt: 新 artwork、design element、template、supplier 或 agency 必須經 Global Marketing Director / Design
+      & Print team 核准；所有尺寸以 mm 為準、不得從螢幕或列印稿量測。
+  - brand_id: MG_investments_identity guidelines_2014
+    chapter: ch-09
+    excerpt: 回到開頭的 approval governance 並補足語言層面一致性；新代理商需核准、新設計或模板需審批。
+  - brand_id: RenasantBank_brandstandards_2020
+    chapter: ch-06
+    excerpt: 官方素材需向 Marketing 取得、工作檔不共享，例外需提交 Director of Marketing & Public Relations；把例外與資產修訂權收回品牌管理單位。
+  - brand_id: RenasantBank_brandstandards_2020
+    chapter: ch-02-03
+    excerpt: department logos 只能由 Renasant Marketing request and approval 建立，且仍受本文件與個別附加規範約束；部門需求須進入審批流程而非各部門自創。
+  - brand_id: sartorius_Brand_Style_Guide_2020
+    chapter: ch-02
+    excerpt: signet 是例外資產，需要 Corporate Branding & Design 核准、不取代標準 logo；exception framework：space constraint
+      → approval → approved version → measurable use。
+  - brand_id: SAS_brand_creative_guide_2021
+    chapter: ch-10
+    excerpt: event/campaign word mark 不得單獨出現，SAS logo 需近距離但不可整合進 word mark；需依 reach/audience/frequency
+      判斷是否需要獨立 mark（exception review）。
+  - brand_id: sony_make_believe_2009
+    chapter: ch-02
+    excerpt: hardware/application software 不得任意使用 composite logo；以 mandatory/recommended/not permitted
+      矩陣界定使用邊界。
+  - brand_id: sony_make_believe_2009
+    chapter: ch-06
+    excerpt: make.believe 原則上英文使用，僅列明國家/語言可用翻譯；修訂/廢止需 Sony CEO approval，適用期間 2009-09 至 2014-08。
+  - brand_id: Tesla_Guidelines_2010
+    chapter: ch-07
+    excerpt: 區分公司/產品代表性物件與 fashion items；fashion items 可拆解 logo 但不得嚴重扭曲，物件某處必須出現 Tesla identity，投產前需 Corporate
+      Marketing 與 Chief Designer 核准。
+  - brand_id: ucl_signage_manual_2021
+    chapter: ch-02
+    excerpt: Complexity-based Procurement Framework：A direct order、B simple project、C consultant-led；non-standard
+      signage 概念需 CAM、Estates、Accessibility stakeholder approval，Type C 必須有 wayfinding/route analysis。
+  - brand_id: WouldBankGroup_Branding_Visual_Identity_Guidelines_2016
+    chapter: ch-03-03
+    excerpt: 例外章節應寫出『為何例外』『何時可用』『不可擴張到哪裡』；special cases 需 Brand Management approval。
+  - brand_id: WouldBankGroup_Branding_Visual_Identity_Guidelines_2016
+    chapter: ch-04-01
+    excerpt: 新 Category 1/3 logo 應先洽 Brand Management；unifier 文字不可任意改成暗示錯誤權責的 wording。
+  evidence_brand_count: 18
+  confidence: 0.95
+  status: verified
+- id: dp-asset-protection-for-legacy
+  title: 把歷史品牌的核心識別當成不可妥協的資產來保護
+  problem:
+    statement: 歷史悠久的品牌，其 logo、色彩與材質是長期累積的資產；任何外部合作或內部輸出都可能在不經意間稀釋它。
+    signals:
+    - heritage
+    - asset_protection
+    - consistency_over_time
+    - brand_dilution_risk
+  solution:
+    module: Visual Identity
+    move: 把 symbol/wordmark 定為不可妥協資產，明訂 official file、allowed context、prohibited modification 與過渡期限
+    layer: visual_core
+  reason:
+  - premium brand 的一致性是一種品質承諾；商標資產不得變成功能圖示或裝飾素材
+  - 保護核心識別，讓所有合作與輸出不削弱品牌資產
+  - 保護歷史奢華零售品牌的核心識別，讓所有合作與內部輸出不削弱品牌資產
+  - 奢侈品牌的顏色是資產，不是裝飾選項
+  - 高端品牌規範應明確處理光學校正與印刷材質
+  - 保護高信任機構的核心識別，讓所有合作與內部輸出不削弱品牌資產
+  - master artwork 是唯一正確來源，logo 的比例、顏色與元件關係固定
+  - 機構規範應明確處理色彩重製與最小尺寸
+  - 高辨識符號需要保護完整性與上下文，不只保護圖形本身
+  - 不得讓合作夥伴視覺高於 Mercedes-Benz 品牌層級
+  - 豪華品牌的地方行銷不可看起來像地方小店，必須吸收中央品牌的比例、留白與字體
+  - 長壽品牌需要少量不可動搖元素來支撐大量產品變化
+  - Logo prominence 必須高於產品子品牌與版面裝飾
+  - 品牌 foundation 可抽象為 invariant elements
+  - 國家級品牌的標誌規範不只維持美觀，也是在維護象徵尊嚴、政治語境與公共信任
+  - 辨識度來自一致性；例外只能由使用情境觸發，不能由主觀喜好觸發
+  applicable_when:
+    industries:
+    - luxury_premium
+    - finance
+    - media_entertainment
+    - public_sector
+    brand_types:
+    - heritage_legacy
+    - premium_luxury
+    - institutional_public_trust
+    conditions:
+    - heritage
+    - asset_protection
+    archetypes:
+    - brand_experience_guide
+    - corporate_toolkit
+    - logo_asset_guidelines
+  dependencies:
+    requires:
+    - Visual Identity
+    enables:
+    - Governance
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 把 BMW symbol 當裝飾或功能元素
+  - 在正文以 symbol 替代 BMW 名稱
+  - 以螢幕或列印稿視覺匹配色彩，造成跨媒介色差
+  - 允許合作方任意替換金屬色／foil 與核心色
+  - 允許重畫或重組 logo 元件
+  - 把 Star、word mark 或 claim 與非核准品牌鎖定
+  - 讓合作夥伴或經銷商以任意字體與版面稀釋品牌
+  - 讓其他元素凌駕 Sony master brand
+  - 允許自由改變 lockup、間距、字標、symbol 形狀、旋轉與比例
+  evidence:
+  - brand_id: BMW_Clubs_2020
+    chapter: ch-02-02
+    excerpt: Brand Asset Protection Framework：BMW symbol 只能在 club logo 內使用，不得改 form/color、不得當裝飾/功能元素，並設
+      2022-01-01 過渡期限。
+  - brand_id: CalvinKlein_Logo&GraphicGuidelines_2017
+    chapter: ch-01-02
+    excerpt: 2017 識別定位為從 1975、1992-2016 演化而非斷裂式換標，歷史熟悉感是全球品牌 scale 的資產。
+  - brand_id: CalvinKlein_Logo&GraphicGuidelines_2017
+    chapter: ch-02-05
+    excerpt: 所有 logo 不得改字體、改粗細、拆分元件、用 Klein font 重建 logo；應使用官方 EPS/PNG/JPEG master file，不可重畫。
+  - brand_id: CDB_BrandIdentityManual
+    chapter: ch-02
+    excerpt: logo elements 不得 reposition、recolour、distort、remove、改變比例關係或加特效；master artwork 是唯一正確來源，須依
+      Pantone Inc. 標準配色檢查。
+  - brand_id: Coldwell_Banker_2020
+    chapter: ch-02-01
+    excerpt: 保護 Global Luxury 與母品牌 rebrand 的連續性；logo 必須使用核准黑白版本，不得用其他配色或字體、拉伸、傾斜。
+  - brand_id: Harrods_Brand_Guidelines
+    chapter: ch-01
+    excerpt: 保護 Harrods 作為歷史奢華零售品牌的核心識別，讓所有合作與內部輸出不削弱品牌資產。
+  - brand_id: Harrods_Brand_Guidelines
+    chapter: ch-01-02
+    excerpt: 奢華品牌的顏色是資產，不是裝飾選項；色彩不得從螢幕或列印稿視覺匹配，必須使用 Pantone/CMYK 參照。
+  - brand_id: Mercedes_Benz_BrandStandards_2015
+    chapter: ch-03-01
+    excerpt: 不得把 Star、word mark 或 claim 與非核准品牌鎖定；pre-owned 與新車訊息需清楚區分；不得讓合作夥伴視覺高於 Mercedes-Benz 品牌層級。
+  - brand_id: Nintendo_Corporate_Identity_Graphics_Standards_Manual_2008
+    chapter: ch-01
+    excerpt: 以商標保護與全球一致性為核心，先建立這不是美術喜好文件，而是全球商標治理工具；全球品牌需要可證明的一致使用，否則商標權與信任都會被削弱。
+  - brand_id: Nintendo_Corporate_Identity_Graphics_Standards_Manual_2008
+    chapter: ch-02
+    excerpt: 必須使用最新 corporate logo，不得使用舊版或自行重製；以版本控制與正式命名規則保護品牌資產。
+  - brand_id: Nintendo_Corporate_Identity_Graphics_Standards_Manual_2008
+    chapter: ch-05
+    excerpt: 降低桌面軟體任意操作造成的商標稀釋；不得拉伸、壓縮、旋轉或重繪 logo，或套用未授權陰影、外框、漸層與顏色。
+  - brand_id: SONY
+    chapter: ch-01
+    excerpt: 用四個固定元素（Sony logo、open frame、Sony black、tagline）建立最低一致性；長壽品牌需要少量不可動搖元素來支撐大量產品變化，不可讓其他元素凌駕
+      master brand。
+  - brand_id: TheEmirates_LogoGuidelines
+    chapter: ch-01
+    excerpt: 不可改變 lockup、間距、字標、symbol 形狀、旋轉與比例；asset hierarchy：primary → secondary → symbol-only exception，標誌規範在維護象徵尊嚴與公共信任。
+  evidence_brand_count: 9
+  confidence: 0.95
+  status: verified
+- id: dp-bilingual-identity-system
+  title: 用語言平權的雙語標誌與分語字體治理多語品牌
+  problem:
+    statement: 跨語言、跨文化的品牌若只把標誌與字體做翻譯版本，會讓某一語言層被視為附屬裝飾，並在多語環境出現字形、排序與可讀性不一致。
+    signals:
+    - multilingual
+    - bilingual
+    - localization
+    - cross_cultural_audience
+  solution:
+    module: Typography System
+    move: 把語言平權內建到標誌結構（雙語字形融合），並為每種文字系統指定字體、用途與排序規則
+    layer: visual_core
+  reason:
+  - 多語品牌最好把語言平權內建在 logo 結構，而非只做翻譯版本
+  - typography token 應包含 language 維度，為每種文字系統做 role mapping
+  - 明定語言排序與例外法律情境，可降低使用者自行重排雙語標誌的風險
+  - 標誌解剖頁可降低使用者自行重排雙語標誌的風險
+  - 多語 logo 系統應把語言排序、例外法律情境、聯名視覺重量明文化
+  applicable_when:
+    industries:
+    - public_sector
+    - finance
+    - education
+    brand_types:
+    - institutional_public_trust
+    conditions:
+    - multilingual
+    - localization
+    archetypes:
+    - brand_experience_guide
+    - multi_brand_architecture
+  dependencies:
+    requires:
+    - Visual Identity
+    - Typography System
+    enables:
+    - Localization
+    - Accessibility
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 只提供翻譯版本，讓單一語言層支配另一層
+  - 字體規範未標註語言維度，輔助字體污染主識別
+  evidence:
+  - brand_id: Central_Bank_of_Bahrain_Brand Identity Guidelines
+    chapter: ch-05
+    excerpt: 建立英阿雙語文字系統：Zona Pro 用於 English headings、Maven Pro 用於 English body、Cairo 用於 Arabic headings/body；多語品牌需要每種文字系統的
+      typography role mapping。
+  - brand_id: Dubai_BRAND_GUIDELINES_2021
+    chapter: ch-02-01
+    excerpt: brandmark 由 English layer 與 Arabic layer 兩層字母融合構成，反映 Dubai 文化交會；不得拆除任一語言層或讓單一語言層支配另一層。
+  - brand_id: Dubai_BRAND_GUIDELINES_2021
+    chapter: ch-03
+    excerpt: 以 DIN、Droid Kufic、Dubai Font、PingFang SC、Calibri、Brush Script 對應 Arabic/English/Mandarin
+      與不同情境，建立 language script × medium × formality 的字體矩陣。
+  - brand_id: European_Committee_of_the_Regions_visual_identity_EN_2019
+    chapter: ch-01-01
+    excerpt: logo 有 24 種 EU 語言版本、需依 ISO 639-1 原文標題排序，雙語版文字上下排列且依正式標題字母順序；Brussels 外牆法規例外不可用於其他情境。
+  evidence_brand_count: 3
+  confidence: 0.85
+  status: verified
+- id: dp-bold-contrast-for-challenger
+  title: 用單一高彩度主色建立 equity，並以可用／禁用配色維持張力
+  problem:
+    statement: 挑戰者品牌需要在飽和市場中快速被認出並表達鮮明個性，溫和保守的配色會被淹沒。
+    signals:
+    - differentiation
+    - breakthrough_attention
+    - personality_expression
+  solution:
+    module: Color System
+    move: 以單一高彩度品牌主色建立辨識 equity，並明確列出「可用組合／禁用組合」與比例上限維持張力與一致
+    layer: visual_core
+  reason:
+  - 以 signature 主色作品牌 equity，secondary palette 只能輔助而非取代
+  - 色彩比例上限是比「use sparingly」更可執行的治理方式
+  - 高飽和 accent colors 用於 charts、buttons、產品差異，不應濫用
+  - 以 Blurple 作品牌 equity，產品狀態色負責語義，user-content 色負責多彩活力
+  - 色彩規範可明確列出「可用組合」與「禁用組合」，便於審稿與可讀性檢查
+  - 品牌主色不一定大量使用，反而可透過少量高對比建立權威
+  - 色彩比例規範可把「少用主色」轉成實際審核標準
+  - 品牌色比節慶色更重要；不應為 tactical themes 犧牲辨識
+  - 色彩 guideline 可包含「拒絕節慶色」規則，保護 brand distinctiveness
+  - 高辨識色彩讓品牌在多媒介中快速被認出
+  - 以單一強識別裝置統一多種廣告版面，比逐張設計更一致
+  - green bar 不應被改色、過度裝飾或破壞內容可讀性
+  - 高能量色彩需要透過限制數量與背景對比維持焦點
+  - 色彩規範同時處理「可用」與「過量使用」問題
+  - 可近用性應直接寫入品牌色規則，而不是交給設計者事後判斷
+  - 核心色彩建立辨識，次要色彩提供速度感、玩心與活動彈性
+  - 少量核准搭配比大量理論色彩更能維持品牌一致性
+  - secondary color 不得取代 Twitch Purple 的核心識別角色
+  applicable_when:
+    industries:
+    - tech_software
+    - media_entertainment
+    brand_types:
+    - challenger
+    - category_creator
+    conditions:
+    - saturated_market
+    - personality_expression
+    archetypes:
+    - brand_experience_guide
+    - full_brand_system
+  dependencies:
+    requires:
+    - Brand Strategy
+    enables:
+    - Color System
+    - Accessibility
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 開放任意配色稀釋主色 equity
+  - 在同一動態溝通中混用多套配色方案
+  - 為節慶主題使用非品牌 tactical colours
+  - 讓簽名裝置被改色或過度裝飾
+  - 用 Splash 強調白底文字造成可近用性不足
+  - 自行新增未命名 accent 或讓 secondary color 取代核心識別
+  evidence:
+  - brand_id: airasia_brand_guidelines_2017
+    chapter: ch-04
+    excerpt: 用有限色彩建立高度辨識，並控制次要色不稀釋 signature red；signature color 是品牌資產，secondary palette 只能輔助而非取代。
+  - brand_id: airasia_brand_guidelines_2017
+    chapter: ch-04-02
+    excerpt: 搭配主色時 secondary colours 不應超過版面 50%，特殊產品或航線發布才可例外成為主調；可把 color dominance ratio 納入 AI 檢查判斷主色是否被削弱。
+  - brand_id: BlackBerry_Cylance_Brand_Guidelines_2019
+    chapter: ch-03-01
+    excerpt: 'Cylance Green #2EEF37 為品牌主色與設計 foundation，secondary palette 應 sparingly 使用，gradients 只能用
+      45°、60° 或 -60° 角度。'
+  - brand_id: Discord_BrandGuideline_2021
+    chapter: ch-03
+    excerpt: 以 Blurple 作品牌 equity；色彩規範可明確列出『可用組合』與『禁用組合』，便於 AI 審稿與 accessibility 檢查。
+  - brand_id: F1_Master_Brand_Guidelines_2017
+    chapter: ch-04-01
+    excerpt: 'Warm Red #FF1E00 作 hero colour，僅作 highlight 或 impact background，不得使用 Warm Red tint，Carbon
+      Black tints 只可 90/70/50/30%；紅色要保留力量，透過少量高對比建立權威。'
+  - brand_id: klarna_visual_identity_guidelines_2019
+    chapter: ch-04
+    excerpt: 把 Klarna Pink 建立為品牌記憶；不得為 Valentine's/Halloween 等使用非品牌 tactical colours；secondary colours
+      不得彼此混合或與 Klarna Pink 混合，除非是有黑色 outline 的資訊圖。
+  - brand_id: Microsoft_Xbox_brand_guidelines_2019
+    chapter: ch-02-02
+    excerpt: 以高辨識綠色（Xbox Green）作為品牌信號，連結產品慾望與系統一致。
+  - brand_id: Microsoft_Xbox_brand_guidelines_2019
+    chapter: ch-03
+    excerpt: 以單一強識別裝置 green bar 統一多種廣告版面；green bar 不應被改色、過度裝飾或破壞內容可讀性。
+  - brand_id: TikTok_For_Business_Brand_Guidelines
+    chapter: ch-03-03
+    excerpt: 背景每個 composition 限一個 brand color；highlight text 不得超過一個 emphasis color；不得用 Splash 強調白底文字、不得使用
+      gradients 或新顏色。
+  - brand_id: Twitch_Guidelines_Speedrun_2021
+    chapter: ch-04-03
+    excerpt: core communications 的 logo color pairing 必須屬於核准清單（Approved Pairing Matrix）；不得任意將 logo 套用
+      secondary accent，需避免 secondary color 取代 Twitch Purple 的核心角色。
+  evidence_brand_count: 8
+  confidence: 0.95
+  status: verified
+- id: dp-cheatsheet-for-mass-touchpoints
+  title: 用單頁 cheatsheet 降低大量觸點與非設計者的執行門檻
+  problem:
+    statement: 大眾品牌觸點極多、執行者多非專業設計師，完整手冊難以被快速查用，導致一致性下降。
+    signals:
+    - mass_touchpoints
+    - non_designer_executors
+    - franchise_governance
+    - ease_of_execution
+  solution:
+    module: Operations
+    move: 把每個系統（標誌、色彩、字體、攝影、圖案）壓縮成高密度單頁 cheatsheet，含可做／不可做與核准窗口
+    layer: governance
+  reason:
+  - 把設計系統轉成 checklist 可降低採用成本
+  - 高頻觸點需要快速可查、低決策負擔的格式
+  applicable_when:
+    industries:
+    - consumer_retail_hospitality
+    brand_types:
+    - mass_consumer
+    conditions:
+    - mass_touchpoints
+    - ease_of_execution
+    archetypes:
+    - corporate_toolkit
+    - brand_experience_guide
+  dependencies:
+    requires:
+    - Visual Identity
+    enables:
+    - Examples
+    - Governance
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 只提供厚重手冊卻無速查摘要
+  evidence:
+  - brand_id: McDonalds_Feel_Good_Design_Cheatsheets_2019
+    chapter: ch-01
+    excerpt: 以高密度方式總結 Feel-Good Design 系統，每個系統一張 cheatsheet（Golden Arches、色彩、字體、攝影、圖案、餐廳設計）。
+  - brand_id: McDonalds_Feel_Good_Design_Cheatsheets_2019
+    chapter: ch-04
+    excerpt: Brand Color Cheatsheet：定義 Golden Brand with Red accents 的比例、色彩值、功能色與材料色限制。
+  evidence_brand_count: 1
+  confidence: 0.5
+  status: verified
+- id: dp-clearspace-from-logo-geometry
+  title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+  problem:
+    statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+    signals:
+    - scaling_inconsistency
+    - multi_media
+  solution:
+    module: Visual Identity
+    move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+    layer: visual_core
+  reason:
+  - 版面一致性來自比例關係，不只是絕對尺寸
+  - 留白以標誌自身元素為單位，可隨縮放維持比例
+  - 政府品牌可用「歷史符號 + 現代量測系統」同時維持合法性與執行效率
+  - 以一個核心變數 x 管理整套 logo 尺寸，是可納入 design token / rule engine 的高價值模式
+  - 留白是識別權重與可讀性的保護機制，需隨標誌縮放
+  - 相對單位可建立 scalable spacing token，不被固定像素綁死
+  - 以相對單位而非固定尺寸定義 clear space，能適用於不同 logo 尺寸
+  - logo 的空間關係與元件本身同等重要
+  - 對數值抽取不可靠的文件，保留比例規則比猜測數字更安全
+  - 用 logo 內部元素作為量尺，可讓 clear space、diamond、grid 都有同一基準
+  - logo guideline 應區分 artwork variant 的 optical purpose，避免只寫單一最小尺寸
+  - 空間本身是品牌資產，logo 尺寸應搭配版面空間而非跟版面成正比放大
+  - 相對單位可建立 scalable spacing token，使 print/digital 共用規則
+  - 用品牌字母局部作為測量單位，是常見且可複用的 clear-space pattern
+  - 可變的是應用媒介，不可變的是 logo 形狀、比例、顏色與辨識位置
+  - 定位彈性應搭配明確的不可變條件，才能讓品牌不僵化也不失控
+  - clear space 可以選擇最容易被視覺辨認的內部元素作為尺度
+  - icon 規格需要可縮放的比例系統，而不只是固定像素
+  - 用 X-based spacing 讓 icon 在不同尺寸下仍能被一致再製
+  - clear space 應與 logo 自身比例相連，而不是固定任意數值
+  - 使用 logo 自身元素定義安全區，可讓規則自然縮放
+  - clear space 若綁定標誌本身幾何，可跨尺寸自動化檢查
+  - 可讀性可透過比例公式治理，而不是靠設計者目測
+  - 用 logo 作為尺寸 token，可讓版面、claim 與 signet 共用同一套量測邏輯
+  - 清除空間應與品牌資產內在比例相連，而非固定任意距離
+  - 可縮放的 clearspace 規則比固定像素更適用於多尺寸場景
+  - 用內部元素作比例尺，可讀性、階層與比例一致比局部創意更重要
+  - 使用品牌內建比例作為 spacing token，可避免跨尺寸重新定義
+  - 比例型 clearspace 易於跨尺寸自動計算
+  - 最小尺寸、clear space 與檔案版本是 logo 系統的三個基本治理點
+  - clear space 應隨 logo 等比縮放，而非固定絕對值
+  - clear space token 最好取自品牌符號，使規則具可視化記憶點
+  applicable_when:
+    industries:
+    - public_sector
+    brand_types:
+    - institutional_public_trust
+    conditions:
+    - multi_media
+    archetypes:
+    - brand_experience_guide
+    - full_brand_system
+    - logo_asset_guidelines
+  dependencies:
+    requires:
+    - Visual Identity
+    enables: []
+    conflicts_with: []
+  examples:
+  - minimum clear space = 1x o，optimal = 2x o
+  - logomark clear space 至少為 mark size 的 50%；logotype clear space 至少為 capital H 高
+  - 以 logo K-height 作為 margin 單位，banner margin 通常 30px
+  - clear space 為 logo lettering 中 K 高度的 3 倍，minimum size 20mm/75px
+  - 以字母 I 的寬度作為 X，protected area 內不得有任何圖形元素
+  - clear space 不得小於 Melbourne Airport mark 中 M 高度，水平 logo 不得小於 35mm
+  - clear space 至少為最大白點直徑的 3 倍
+  - 以 logo 字母 M 的高度作為保護區單位
+  - 標籤與 icon 的間距遵循 X、1/2X、1/8X 比例，icon width 不得小於 16 px
+  - 以 wings height 或 MINI Next 中 M 字寬作為 clear space 基準
+  - clear space 等於字母 m 的寬與高，最小尺寸 print 20mm、screen 50px
+  - clear space 為 mark inner square 尺寸
+  - logo 最小寬度 30 mm，四周 margin 為 logo 寬度的 1/20
+  - clearspace >= 1.5 x logo width，rendered width >= 16px
+  anti_patterns: []
+  evidence:
+  - brand_id: 2022_Special_Olympics_USA_Games_Brand_Guidelines_2020
+    chapter: ch-03-05
+    excerpt: 以中央 Special Olympics symbol 的 X-height 作為量測單位，使尺寸改變時留白規則仍成立；clear space 應用相對單位定義，才能跨尺寸、跨媒介使用。
+  - brand_id: 3M_Visual_Identity_Guidelines_2015
+    chapter: ch-02-02
+    excerpt: clearspace based on logo height；標準格式 logo height equals margin。
+  - brand_id: accor_hotels_2015_compressed
+    chapter: ch-02-04
+    excerpt: 以 Hotels 的 H 作為保護區單位，使用 logo 內部字母作為相對量測基準，使規則可隨尺寸縮放。
+  - brand_id: airasia_brand_guidelines_2017
+    chapter: ch-02-03
+    excerpt: logo 周圍至少保留半徑 1/2 的 clear space，用資產自身幾何產生 spacing token；clear space 應用相對單位比固定 px 更適合多媒介品牌。
+  - brand_id: Amazon_Brand_Usage_Guidelines
+    chapter: ch-03-01
+    excerpt: logo 的 internal letterform 可成為 spacing token：clear space 以 bold letter `o` 計算，logo 最小 1 inch
+      或 72px。
+  - brand_id: Amazon_Echo_Alexa_Guidelines_External
+    chapter: ch-02-02
+    excerpt: Echo logo clear space 以字母 e 的 x-height 量測，最小高度不得低於 0.1875 inch / 14px。
+  - brand_id: Amazon_Echo_Alexa_Guidelines_External
+    chapter: ch-03-03
+    excerpt: Alexa logo clear space 分別以字母 a 或 l 的高度量測；horizontal Amazon Alexa logo 不小於 150px，stacked 不小於
+      125px。
+  - brand_id: AMD_branding_guidelines_2020
+    chapter: ch-01-03
+    excerpt: clear space 以標誌內部元素量測（1x 留白），並指定最小寬度 0.675 inch、建議寬高 20%；標誌系統需要空間治理與尺寸治理。
+  - brand_id: American_Express_Guidelines_2018
+    chapter: ch-01-01
+    excerpt: logotype clearspace 至少 3X、Blue Box 與元素距離至少 1/3X、與 bank logo 距離至少 1.5X，以標誌相對單位（X）定義留白矩陣。
+  - brand_id: Apple_ID_Guidelines_Channel_2016
+    chapter: ch-02-01
+    excerpt: 通路簽名最小尺寸為 Apple logo 高度 8 mm print / 35 px onscreen，clearspace 至少 Apple logo 高度的一半，以標誌自身高度為相對單位。
+  - brand_id: arte_2008_compressed
+    chapter: ch-05-01
+    excerpt: cartouche 位置以 ARTE logo 自身為測量單位：水平間距用 1x ARTE logo 長度，垂直間距用 2x ARTE logo 高度。
+  - brand_id: BC_BrandGuidelines_2020
+    chapter: ch-02-02
+    excerpt: clearspace 至少為各 mark 自身高度的 Y/2；B mark 只在 wordmark 低於 80px / 1in 或避免重複時使用，留白以標誌幾何為單位。
+  - brand_id: BCHydro_brand_guidelines_2019
+    chapter: ch-03-02
+    excerpt: 以 logo symbol 作為 clear space guide（留白至少等於 symbol），並要求數位優先 SVG、96px 時元素仍清楚。
+  - brand_id: Berkeley_Brand_Manual_accessible_2019
+    chapter: ch-08
+    excerpt: unit lockup clear space 等於 Berkeley B 高度，wordmark width 至少 1 inch / 175px，以標誌自身幾何定義留白與尺寸。
+  - brand_id: Bern_Stadt_2021
+    chapter: ch-01
+    excerpt: 以市徽尺寸作為比例單位：Wappen 寬 7mm 時 Stadtmarke 全長 25mm，市徽周圍至少保留一個 Wappen 寬度，讓不同媒介版面可一致推導。
+  - brand_id: BMW_Clubs_2020
+    chapter: ch-03-02
+    excerpt: 以 BMW symbol diameter x 推導 font size、line pitch、line thickness、spacing 與 clear space（至少 1.5
+      symbol diameters）；signet 為 5x × 2x。
+  - brand_id: BMW_Clubs_2020
+    chapter: ch-06-01
+    excerpt: 把實體 logo 規則延伸到圓形與矩形 avatar：profile logo 與邊界至少 1/2x 或 1x，定義數位 safe area。
+  - brand_id: CalvinKlein_Logo&GraphicGuidelines_2017
+    chapter: ch-02-05
+    excerpt: clear space 以 cap height C 的倍數表示，讓清距規則隨 logo 尺寸縮放而非用固定像素。
+  - brand_id: CCFB_BrandGuidelines_v3b
+    chapter: ch-02-04
+    excerpt: 以 logo type capital x-height 定義 1.5X 最小留白，用相對測量 token 適用於不同 logo 尺寸，並標示 pink measuring lines
+      不得輸出。
+  - brand_id: CDB_BrandIdentityManual
+    chapter: ch-02-01
+    excerpt: clear space 等於 logo type 中 E 的高度；任何 graphic element、typography 或 pattern 不得進入以 E 高度定義的排除區，clear-space
+      token 綁定 logo 內部可見元素。
+  - brand_id: Clayton_Homes_BrandGuideline_2021
+    chapter: ch-02-01
+    excerpt: 以 logo 中的「o」作為 clear space 單位，用品牌自身形體定義留白，可提升記憶與執行一致性。
+  - brand_id: Coldwell_Banker_2020
+    chapter: ch-02
+    excerpt: safety distance 至少等於 logomark 高度的 1/2，以標誌自身幾何而非固定尺寸定義安全距離。
+  - brand_id: Consistent_communications_Brand_Guidelines_2018
+    chapter: ch-02-01
+    excerpt: safe area 為 Commonwealth capital letters 高度的 2 倍，以字母高度 X 定義留白；vertical logo 最小高度 25mm、horizontal
+      最小寬度 55mm。
+  - brand_id: DALENYS_Brand guidelines_2021
+    chapter: ch-03-02
+    excerpt: 以 logotype D 高度作為 clearspace 的 x 單位，logo 四周需至少保留該 x 空間，小於建議尺寸時須做 print/screen tests。
+  - brand_id: DELL_BRANDBOOK_2010
+    chapter: ch-02-02
+    excerpt: clear space 以 Dell 字樣中 D 的高度為單位定義，可用品牌字母高自動量測並跨尺寸維持一致。
+  - brand_id: DFPI_BrandGuidelines
+    chapter: ch-02-01
+    excerpt: 以 logo icon 中的 X 作為四周 clear margin。
+  - brand_id: Dubai_BRAND_GUIDELINES_2021
+    chapter: ch-05
+    excerpt: exclusion zone 以 Arabic letter daal 的上半部為單位、排除區不得小於 1 daal，用標誌自身文化字形作 spacing unit 同時維持比例與語義。
+  - brand_id: eftpos_Brand_Guidelines_2021
+    chapter: ch-02-01
+    excerpt: clear space 等於 eftpos wordmark 的 x-height，並依 vertical / horizontal / small use 切換 composition；小尺寸需專門優化版本而非縮小同一圖檔。
+  - brand_id: European_Committee_of_the_Regions_visual_identity_EN_2019
+    chapter: ch-01
+    excerpt: clear space 等於 4X、X 為 EU flag 高度的 1/8，diamond 與 grid 也都以 EU flag 尺寸衍生，讓所有比例有同一基準。
+  - brand_id: F1_Master_Brand_Guidelines_2017
+    chapter: ch-03
+    excerpt: Standard logo clear space = logo 高度 50%、Display logo clear space = logo 高度 10%；以標誌高度作為留白量測基準，並依
+      display/standard/micro 建立 optical masters。
+  - brand_id: First_Bank_Brand_Guidelines_2021
+    chapter: ch-02-01
+    excerpt: clear space 至少等於 logo 中 F 的寬高，logo 最小寬度不得低於 55 px 或 0.76 in；以字母單位量測 clear space 是可移植模式，可讓
+      logo 隨尺寸等比例保護。
+  - brand_id: FirstBank_Corporate_Identity_Guidelines
+    chapter: ch-01
+    excerpt: clear zone 必須以 Dynamic Square 高度／矩形量測，並以 logo 內部幾何元素作為所有比例量測基準，是可跨尺寸複用的 identity pattern。
+  - brand_id: LucidMotors
+    chapter: ch-02-03
+    excerpt: 以字母 o 的外徑作為量測單位，使留白規則可隨標誌縮放；clear space 應使用標誌自身幾何，不應用固定像素。
+  - brand_id: Heathrow_Brand_guidelines_2018
+    chapter: ch-01-02
+    excerpt: 用 H-height 作為比例單位，讓 logo 尺寸、排除區、signature spacing 與 edge distance 可量測；排除區由 H 高度決定，大型服務品牌可用固定比例
+      token 管理所有識別間距。
+  - brand_id: Herman_Miller_Brand_Guidelines
+    chapter: ch-05-01
+    excerpt: logomark clear space 至少為 mark size 的 50%；logotype clear space 至少為 capital H 高；空間本身是品牌資產，logo
+      尺寸應搭配版面空間，而非跟版面成正比放大。
+  - brand_id: HKUST_BRAND_GUIDELINES_2022
+    chapter: ch-03-01
+    excerpt: 標誌 clear space 應符合 X-based rule，雙語主標誌印刷主版最小高度 10mm、線上 45px，logomark 印刷最小 8mm、線上 40px，使留白與尺寸可跨媒介一致。
+  - brand_id: Huawei_Visual_Identity_Guidelines
+    chapter: ch-02-01
+    excerpt: logo symbol 高度為 X 時 clear space 為 0.35X；以 X-based proportion 量測留白與尺寸，使識別可在不同媒介一致縮放。
+  - brand_id: I_amsterdam_Brand_Manual_EN_2019
+    chapter: ch-07
+    excerpt: pure motto 左右最小 margin 為字母 I 的高度，右側以 m 為基準量測；wordmark 的 clear space 可從內部字母尺度取得，比任意 px 更具伸縮性。
+  - brand_id: ILoveNY_brand_guidelines_2008
+    chapter: ch-02-04
+    excerpt: clearspace 等於 heart icon 高度；logo 必須原樣使用，不得重建、裁切、非等比縮放或旋轉，留白以標誌自身元素（愛心）為量測單位。
+  - brand_id: Invest_Lithuania_Brandbook_2020
+    chapter: ch-03
+    excerpt: exclusion zone 等於 letter L 高度；logo system 並包含 optical correction、language variant 與 micro-size
+      monogram，以標誌自身字母幾何定義留白。
+  - brand_id: klarna_visual_identity_guidelines_2019
+    chapter: ch-06
+    excerpt: 以 K-height 作為 margin 單位，用 logo 字母高度轉換為空間 token，使 print/digital 共用規則。
+  - brand_id: Laing O’Rourke_identity guidelines_2021
+    chapter: ch-03-01
+    excerpt: clear space 為 logo lettering 中 K 高度的 3 倍；minimum size 20mm/75px，不得改比例、旋轉、壓縮或貼齊黑盒邊界。
+  - brand_id: LIFE_Style_Guide
+    chapter: ch-02-01
+    excerpt: 以字母 I 的寬度作為保護區單位，讓設計師可在不同尺寸中重算；protected area 內不得有任何圖形元素。
+  - brand_id: MA_Style-Guide_
+    chapter: ch-02-01
+    excerpt: 用字母 M 的高度定義 clear space；clear space 不得小於 Melbourne Airport mark 中 M 高度，水平 logo 不得小於 35mm、堆疊版不得小於
+      20mm。
+  - brand_id: McDelivery_brandbook_2017
+    chapter: ch-02-01
+    excerpt: clear space 以最大白點直徑 3x 計算；clear space 可以選擇最容易被視覺辨認的內部元素作為尺度。
+  - brand_id: Michelin_DISTRIBUTOR_GUIDE_2019
+    chapter: ch-02-02
+    excerpt: 保護區以 logo 字母高度 M 定義；用 logo 字母高度作為 clear-space unit，便於跨尺寸縮放。
+  - brand_id: Microsoft_Bing_Logo_icon_2020
+    chapter: ch-04
+    excerpt: 以 X、1/2X、1/8X 的比例標註 icon 與 Microsoft Bing 標籤之間的空間與尺度；icon width 不得小於 0.16 in / 4.23 mm /
+      16 px。
+  - brand_id: MINI_CI_Guidelines_2013
+    chapter: ch-02-01
+    excerpt: 以 wings height 或 MINI Next 中 M 字寬作為 clear space 基準；clear space 應與 logo 自身比例相連，而不是固定任意數值。
+  - brand_id: mojaloop_Brand_Guidelines_2020
+    chapter: ch-01-02
+    excerpt: clear space 等於字母 m 的寬與高；用 logo 內部字母作為 spacing token，並以 print/screen 分別定義尺寸。
+  - brand_id: MSCI_Brand_guidelines_2021
+    chapter: ch-02-01
+    excerpt: logo 周圍需保留 inner square 尺寸 clear space；用 mark inner square 作 clear space，不得縮放內部元素或自行創建版本。
+  - brand_id: Musee_zadkine
+    chapter: ch-01-02
+    excerpt: logo 最小寬度 30 mm、四周 margin 為 logo 寬度的 1/20，以 5 cm logo 對應 0.25 cm margin 的例子讓規則可算；可讀性可透過比例公式治理，而不是靠設計者目測。
+  - brand_id: Musee_zadkine
+    chapter: ch-01-03
+    excerpt: 多 logo 並置時左右間距至少為 logotype 初始 M 高度的 2 倍，用 x spacing 與基線對齊降低主觀排版判斷。
+  - brand_id: Nintendo_Corporate_Identity_Graphics_Standards_Manual_2008
+    chapter: ch-03
+    excerpt: 以 n 字高度／寬度與 logo 自身比例（左右各為 logo 寬度 10%、上下各為高度 35%）把保護區留白轉成可測量規則。
+  - brand_id: optile_Logo_Guidelines_2018
+    chapter: ch-04
+    excerpt: 以 Möbius 元件高度建立最小安全距離（exclusion zone）作為留白單位，保護 logo 可見度與視覺優先權；用標誌自身幾何而非固定像素定義 spacing。
+  - brand_id: PUCP_Manual
+    chapter: ch-04
+    excerpt: 以 isotipo 比例推導 grilla、logo 尺寸與 layout，使版面系統建立在標誌自身幾何之上。
+  - brand_id: PUCP_Manual
+    chapter: ch-02
+    excerpt: 以 imagotipo 的 construction grid 與 restricted area 定義留白與最小尺寸。
+  - brand_id: Quaint_Oak_Bank_Brand_Guidelines_2013
+    chapter: ch-02
+    excerpt: 以字母 U 寬度與 wordmark baseline 作為比例單位；Logo 規範應用品牌自身形體建立比例單位，讓規則不依賴外部尺寸。
+  - brand_id: Quaint_Oak_Bank_Brand_Guidelines_2013
+    chapter: ch-02-01
+    excerpt: clearspace 至少等於 Quaint Oak wordmark 中字母 U 的寬度。
+  - brand_id: RenasantBank_brandstandards_2020
+    chapter: ch-02-02
+    excerpt: 以 RENASANT lettering 字高作為 clear space 單位，並要求鎖定比例；用標誌自身幾何視覺化留白，使規則可隨縮放維持。
+  - brand_id: SAO_PAULO_BRANDBOOK_2011
+    chapter: ch-04-01
+    excerpt: non-interference area 至少等於 letter P 高度；tagline 與 São Paulo words 對齊、距離至少為 P 高度一半；最小一般印刷尺寸
+      10mm。
+  - brand_id: sartorius_Brand_Style_Guide_2020
+    chapter: ch-01-01
+    excerpt: clear space >= S height；logo width >= 15 mm 或 120 px；用 logo 作為尺寸 token，讓版面、claim 與 signet
+      共用同一套量測邏輯。
+  - brand_id: SONY
+    chapter: ch-01-01
+    excerpt: logo 周圍 isolation zone 無其他元素；logo 與 frame spacing 遵循 h-based formula，print 中 logo 置於 open
+      frame top right。
+  - brand_id: starling_bank_brand_guidelines
+    chapter: ch-02-02
+    excerpt: 水平 logo 周圍保留 S mark 一半的空間（logo-derived spacing system），以標誌自身元素作為量尺，讓規則可隨尺寸縮放。
+  - brand_id: Sterling_Brand_Guidelines
+    chapter: ch-02-02
+    excerpt: 使用 x-height、y-height 與球體尺寸描述安全區、字標長度與 icon-wordmark 距離；安全區內不得有圖像、文字或元素侵入。
+  - brand_id: Tesla_Guidelines_2010
+    chapter: ch-02-01
+    excerpt: wordmark 四周 clearspace 至少等於 wordmark 高度；不得 inline 作為 headline/copy 的一部分。
+  - brand_id: Tokyo_2020_NOC_Olympic_emblem_2018
+    chapter: ch-02-02
+    excerpt: clear space 應至少 0.7X；print 最小 12mm、digital 最小 35px。
+  - brand_id: Tripadvisor_partners_2020
+    chapter: ch-02-02
+    excerpt: clearspace 至少等於 owl eye pupil 寬度；用 logo 自身部件建立比例尺度（Intrinsic Measurement Framework），可隨 logo
+      比例縮放。
+  - brand_id: twitter_brand_guidelines_2020
+    chapter: ch-02-02
+    excerpt: logo 四周空白至少為 logo width 的 150%，最小寬度 16px；比例型 clearspace 易於跨尺寸自動計算。
+  - brand_id: ulster_university_Brandbook
+    chapter: ch-03-01
+    excerpt: clear space 至少等於 U 符號厚段寬，例外最多降到一半；print minimum 25mm，digital minimum 95px。
+  - brand_id: USAToday_Online_Brand_guidelines_2014
+    chapter: ch-03-02
+    excerpt: logo clearspace 至少等於 USA TODAY 中 U 的 cap height。
+  - brand_id: VISA_Digital_Brand Guidelines_2018
+    chapter: ch-02-01
+    excerpt: clear space 儘量為 V 高度 1X；品牌標誌不可與周圍內容比例失衡。
+  - brand_id: Volvo_2021_compressed
+    chapter: ch-02
+    excerpt: Volvo Spread Word Mark 最小 20mm/42px、clear zone 3X；Volvo Penta Spread Word Mark 最小 45mm/94px、clear
+      zone 4X，以 X-based spacing 控制留白。
+  - brand_id: WM_Brand_Guidelines
+    chapter: ch-02
+    excerpt: clear space 至少等於 Warner cap height；1-line lockup print height > 0.075 inch、onscreen > 9px。
+  - brand_id: YNCU_Graphics_Standards_2019
+    chapter: ch-02-03
+    excerpt: 以 house half-circle mouth 的寬度作為 clear space 測量基準；Geometric clear-space framework：extract
+      unit from logo → apply around all sides → prohibit intrusion。
+  - brand_id: YNCU_Graphics_Standards_2019
+    chapter: ch-03-03
+    excerpt: Community First logo 周圍不得有 artwork、type 或 panel edges 侵入 clear space，clearance distance 應與
+      logo 尺寸同步縮放。
+  - brand_id: ZAG_brand_guidelines
+    chapter: ch-03
+    excerpt: clear space 以 logo 抽出的 triangle dimension 決定；positive logo 最小高 5 mm、negative logo 最小高 6 mm。
+  - brand_id: ZOOM_2022
+    chapter: ch-05-01
+    excerpt: Zoom logo clear space 至少等於 logo height，並訂最小尺寸（不得小於 18 px 高或 80 px 寬）。
+  evidence_brand_count: 71
+  confidence: 0.95
+  status: verified
+- id: dp-cobranding-grid-governance
+  title: 用 grid 與固定模距治理聯名 lockup
+  problem:
+    statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+    signals:
+    - cobranding
+    - partner_governance
+    - multi_brand
+  solution:
+    module: Brand Architecture
+    move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+    layer: strategy
+  reason:
+  - 聯名需先界定空間與主從，才能維持品牌資產權重
+  - 認證標章 guideline 應把「誰有資格使用」放在視覺規格前
+  - 合作品牌指南應把「關係模型」先定義清楚，再給視覺配置
+  - 視覺關係必須反映法律與價值對齊程度
+  - 共同品牌指南需同時寫 visual ratio、legal responsibility、approval flow
+  - logo 系統應把 partner lock-up 的尺寸條件納入規則，而不只是提供圖片
+  - variation 規則需含 priority、context 與 file-name mapping
+  - co-branding 是 legal/governance 問題，不只是排版問題
+  - partner logo 不得壓過 owner logo
+  - 公共資金與合作關係需要透明、可追蹤、彼此承認
+  - partner visibility 與 grant visibility 因權力關係不同需分開治理
+  - 支付網路品牌的權益常在 co-branding 中流失，需要 parity 規則
+  - 多種出版物可共享一個 graphic line，只需為情境建立條件分支
+  - 白框 partner logo 是常見聯名治理模式，避免合作標誌破壞主識別
+  - co-branding guideline 應提供 flexible container 與 optical balancing rules，而非只給靜態範例
+  - logo guideline 應把「可用資產」與「使用情境」合併成可審核矩陣
+  - 大型品牌組合需要場景矩陣，不只需要 logo no-nos
+  - 合作關係必須被視覺化為清楚的從屬或等距關係
+  - logo 配置不是裝飾，而是關係聲明；位置、大小與 proximity 都會改變受眾對合作權重的理解
+  - co-branding layout 可用位置、尺寸與不可插入區域明確治理
+  - co-branding 需要等量清楚，而不是品牌混合
+  - co-branding guideline 可用單一內部尺度同時管理距離、clear space 與 keyline
+  - 合作視覺必須反映真實關係，不可因設計平衡造成授權或背書誤解
+  - 共同品牌章節應獨立處理產品 lockup，而不是只放 partner logo spacing
+  - 聯名不應犧牲任一方識別，也不應暗示錯誤層級
+  - co-branding guideline 應定義關係語義（equal relationship），再對應到視覺規則
+  - 多標誌關係需要幾何秩序，否則公共機構版面容易失控
+  - co-branding rule 應給出方向、順序、分隔與最大高度四類資料
+  - 合作不等於平分版面；主品牌需要清楚且一致的視覺階層
+  - 聯名是平等合作，背書是降低顯著性；兩者不能用同一套 logo 排序規則
+  - wordmark 可提升 Olympic identity，但不可被商業品牌借位
+  - 合作露出需要平衡雙方辨識，而不是把 logo 任意拼貼
+  - Co-brand 模板可用 typographic metrics 取代任意像素距離，提高跨尺寸穩定性
+  - joint lock-up 不是融合品牌，而是兩個來源用分隔符保持邊界
+  applicable_when:
+    industries:
+    - finance
+    - tech_software
+    - public_sector
+    - education
+    - nonprofit_social
+    - media_entertainment
+    - consumer_retail_hospitality
+    brand_types:
+    - platform_ecosystem
+    - institutional_public_trust
+    - mission_driven
+    conditions:
+    - cobranding
+    - partner_governance
+    archetypes:
+    - multi_brand_architecture
+    - brand_experience_guide
+    - campaign_touchpoint
+  dependencies:
+    requires:
+    - Brand Architecture
+    - Visual Identity
+    enables:
+    - Governance
+    - Legal and Trademark
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - joint lock-up 使用 plus、x、equal 等關係符號而非分隔線
+  evidence:
+  - brand_id: 2022_Special_Olympics_USA_Games_Brand_Guidelines_2020
+    chapter: ch-03-06
+    excerpt: co-branding guideline 需明確定義主從關係、距離、分隔、色彩與贊助等級文字：event logo + 黑色垂直分隔線 + partner logo，兩側保留
+      1X spacing。
+  - brand_id: accoya_brand_guidelines_2015
+    chapter: ch-03-05
+    excerpt: 聯名需要彈性，但品牌層級不可失衡：partner brand 在自己的 allocated space，不得干擾 Accoya Green Tab，且 joint branded
+      logo 不得大於 Accoya。
+  - brand_id: Afterpay_Merchant_Guidelines_US_2020
+    chapter: ch-02-02
+    excerpt: co-branding guideline 應明確定義排序、間距單位、色彩一致性與視覺重量：Afterpay logo 出現在 partner logo 前，X 高度等於 Afterpay
+      Logo 高度，所有 logo 全 RGB 或全黑白。
+  - brand_id: Amazon_Echo_Alexa_Guidelines_External
+    chapter: ch-03-04
+    excerpt: co-branding 時兩 logo 視覺大小相同，水平距離為兩個 Echo O，垂直距離為一個半 O；badge 不小於 190px，且不得在同一素材使用多個 badge。
+  - brand_id: American_Express_Guidelines_2018
+    chapter: ch-03-02
+    excerpt: Competitive adjacency framework：與 competitor products/logos 並列時 American Express 標誌需在 preferred
+      或 equal position，overlap 時完整卡需在上層，以位置與遮擋層級維持品牌權重。
+  - brand_id: Apple_ID_Guidelines_Channel_2016
+    chapter: ch-02-01
+    excerpt: Endorsement hierarchy framework：reseller identity first、Apple signature smaller/secondary，通路簽名必須小於店家／公司身分，每頁偏好只用一個
+      Apple signature。
+  - brand_id: AXA_Design_principles_2017
+    chapter: ch-11
+    excerpt: Partnership Leadership Matrix：AXA-led / Equal / Partner-led，先判定合作主導權，logo 比例與位置需反映關係，不得自創
+      lock-up。
+  - brand_id: BC_BrandGuidelines_2020
+    chapter: ch-02-03
+    excerpt: 'Branded Partner Lockups 以固定 divider stroke #AFB4BE 1.5px 分隔 BigCommerce 與夥伴標誌，定義合作 lockup
+      的空間關係。'
+  - brand_id: BCHydro_brand_guidelines_2019
+    chapter: ch-03-03
+    excerpt: partner lockup 以固定比例維持主從：partner logo 65%、BC Hydro 100%；lock-up 不可用於 T-shirts 等 promotional
+      materials。
+  - brand_id: Berkeley_Brand_Manual_accessible_2019
+    chapter: ch-09
+    excerpt: multiple sponsor logos 超過五個時考慮 tiered structure；supporters 不得與 Berkeley logo 視覺並列，只以 copy/dialogue
+      recognition，避免誤導為正式品牌聯盟。
+  - brand_id: BlackBerry_Cylance_Brand_Guidelines_2019
+    chapter: ch-03-04
+    excerpt: partner logo 建議 1:1 等大、左／上方 dominant position、維持 0.5 in / 72 px spacing；digital properties
+      使用 powered-by logo 前需 approval。
+  - brand_id: CCFB_BrandGuidelines_v3b
+    chapter: ch-02-02
+    excerpt: preferred logo 應含 Feeding America lock-up，Feeding America logo 在 color/grayscale 時水平至少 7/16
+      inch、solid black 至少 3/8 inch、web 至少 55px，partner lock-up 尺寸條件納入規則。
+  - brand_id: CDB_BrandIdentityManual
+    chapter: ch-05
+    excerpt: CDB logo 使用需 pre-authorization 並預留 7 working days、never bigger than partner logo、理想 1:1 visual
+      space，且不得出現在 product-oriented communication 旁，避免被誤認為背書。
+  - brand_id: Consistent_communications_Brand_Guidelines_2018
+    chapter: ch-06-01
+    excerpt: partner logos side by side、Foundation logo on left、logos equal size，並要求 print proofs 在分發/印刷前
+      approval、web 需 link to commonwealthfoundation.com。
+  - brand_id: DELL_BRANDBOOK_2010
+    chapter: ch-02-04
+    excerpt: partner lockup 必須以 vertical rule 與 1.5x spacing 分隔、separator 不得傾斜；department lockup 距 logo
+      1x cap height，維持 Dell 視覺優先級。
+  - brand_id: eftpos_Brand_Guidelines_2021
+    chapter: ch-02-04
+    excerpt: eftpos logo 寬度至少等於其他 network logos、divider 與各 logo 間距為 2X、divider 延伸超過 logo edge 的高度為 X，以
+      logo parity + clear space + divider keyline 維持權益。
+  - brand_id: European_Committee_of_the_Regions_visual_identity_EN_2019
+    chapter: ch-01-01
+    excerpt: 聯名 logo 間距至少等於 EU flag 寬；co-branded publication 需依三種聯名方式配置、signpost host/co-organised 版型不得混用。
+  - brand_id: EYR_Visual_Identity_Guidelines
+    chapter: ch-04-01
+    excerpt: partner logo 必須置於與 EU emblem 等高的白框內且鄰近 EU emblem，避免合作標誌破壞主識別。
+  - brand_id: F1_Master_Brand_Guidelines_2017
+    chapter: ch-06-02
+    excerpt: horizontal bucket height 固定為 F1 logo height、clear space = partner logo 最大高度的 1/5、partner
+      logo 最大高度為 bucket device 高度 2 倍且不得明顯壓過 F1；用可伸縮 holding device 解決不同 partner logo 比例的聯名問題。
+  - brand_id: google_ads_visual_guidelines
+    chapter: ch-01-02
+    excerpt: 兩個 logo 並列時需用 neutral gray vertical divider 與適當 spacing，不得讓 logo pair 彼此競爭；並用 usage matrix
+      把可用資產與使用情境合併成可審核矩陣。
+  - brand_id: google_marketing_platform_visual_guidelines
+    chapter: ch-02
+    excerpt: 以 preferred variant、背景條件、divider、spacing 與 usage matrix 管理多場景使用；partner logo 需用 neutral divider
+      分隔，並用場景矩陣把抽象品牌層級落成可用/不可用決策。
+  - brand_id: HKUST_BRAND_GUIDELINES_2022
+    chapter: ch-04-02
+    excerpt: 合作方標誌不得超過大學標誌高度，大學標誌通常置左並需等高或依示例共用 X-based spacing，新標誌須經治理流程核准。
+  - brand_id: HP_CoBranding_Guidelines_2020
+    chapter: ch-03
+    excerpt: 用 X-based measurement 管理分隔線、留白與最小尺寸：spatial configuration 不得堆疊、重疊或散落；lockup 最小留白建議 0.5x、最小尺寸不得低於
+      0.25 inch 或 20px、divider line 為黑色 1pt。
+  - brand_id: Huawei_Visual_Identity_Guidelines
+    chapter: ch-04
+    excerpt: co-branding 廣告需遵守授權、標誌等高、分隔線與優先位置，以固定空間規則維持與夥伴標誌的主從關係。
+  - brand_id: ILoveNY_brand_guidelines_2008
+    chapter: ch-03-03
+    excerpt: Travel Guide cover 只能使用 supplied logo with Another reason lock-up；I LOVE NEW YORK logo 放右上、county/region
+      logo 或名稱放左側或左上，兩者之間不得出現圖形元素，以位置與不可插入區域治理共同品牌版面。
+  - brand_id: McDelivery_brandbook_2017
+    chapter: ch-04
+    excerpt: McDelivery logo 置於 partner logo 前，partner logo optical prominence 相等；keyline 與 clear space
+      共用最大白點直徑 5x，形成一致幾何系統。
+  - brand_id: Microsoft_Xbox_brand_guidelines_2019
+    chapter: ch-06
+    excerpt: partner lockup 比例需符規定範；Xbox name/logo 不得被放在暗示錯誤主從的位置；product lockup 需使用核准比例與名稱。
+  - brand_id: MSCI_Brand_guidelines_2021
+    chapter: ch-02-02
+    excerpt: MSCI 與 partner logo 需視覺等重、以 vertical rule 分隔，兩者間距不得小於指定 exclusion zone，所有第三方 co-branding
+      須 MSCI Marketing 核准。
+  - brand_id: Musee_zadkine
+    chapter: ch-01-03
+    excerpt: 多 logo 必須水平排列、以字母基線對齊，左右距離至少為 logotype 初始 M 高度的 2 倍；co-editions logo 亦遵循同一 cohabitation spacing。
+  - brand_id: Santander_EN
+    chapter: ch-02-03
+    excerpt: 以 grid、四個 modules 距離與 1pt line 定義 Santander 與 partner brand lockup。
+  - brand_id: SAO_PAULO_BRANDBOOK_2011
+    chapter: ch-05-02
+    excerpt: association type → order → separator → max height；政府品牌 signature 間必須有 line，其他品牌最大高度 3P，event
+      brand 最大高度等於 São Paulo brand height（以 module P / logo height 管理）。
+  - brand_id: Sterling_Brand_Guidelines
+    chapter: ch-02-03
+    excerpt: partner logo 必須置於指定 co-branding zone，其高度不得超出 Sterling wordmark 高度（partner-logo containment
+      model）。
+  - brand_id: TheEmirates_LogoGuidelines
+    chapter: ch-07
+    excerpt: association decision framework：value alignment → message implication → scenario type → logo
+      prominence；Emirates Brand 應在 co-brand 序列最後，endorsement 時必須低於或晚於被背書品牌。
+  - brand_id: Tokyo_2020_NOC_Olympic_emblem_2018
+    chapter: ch-03
+    excerpt: 非競賽服可用 wordmark 但不得直接與 manufacturer logo 關聯；與 NOC emblem 一起使用時 wordmark 必須在 NOC emblem 下方且有清楚
+      separation，需送 IOC approval。
+  - brand_id: Tripadvisor_partners_2020
+    chapter: ch-02-03
+    excerpt: Tripadvisor logo 與合作方元素距離至少一個 pupil width，必須使用核准的水平與垂直 partnership lockup 模板，不得改變 Tripadvisor
+      logo 內部比例。
+  - brand_id: Twitch_Guidelines_Speedrun_2021
+    chapter: ch-03
+    excerpt: Lockup Alignment Framework：文字高度依 cap height/x-height 對齊、center line 對齊；partner logo 不得侵入
+      Twitch logo clearspace。
+  - brand_id: ZOOM_2022
+    chapter: ch-06-03
+    excerpt: joint lock-up 不是融合品牌，而是兩個來源用 divider 保持邊界；partner logo 永遠 primary、Zoom secondary，必須使用 vertical/horizontal
+      divider 並維持平衡尺寸。
+  evidence_brand_count: 37
+  confidence: 0.95
+  status: verified
+- id: dp-color-set-over-single-pickers
+  title: 用「色組」而非單色清單管理豐富色彩的自由度
+  problem:
+    statement: 多彩品牌若只給單色清單，配色會失控，跨媒介色差難以驗證。
+    signals:
+    - rich_palette
+    - color_governance
+    - multi_media
+  solution:
+    module: Color System
+    move: 定義相鄰三色 color sets，每個應用只用一組，並提供 source files 與 token appendix
+    layer: visual_core
+  reason:
+  - 多彩系統需要約束；色彩組合應可預先測試並提供 source files
+  - 把「策略章」與「色值 appendix」分離，利於生產與機器讀取
+  - 多彩系統需要約束；色彩組合應可預先定義並標註用途
+  - Design tokens 可不只記 hex，也記可否搭配 logo、主要／延伸用途與印刷限制
+  - 交織性可被轉譯為「多色但受限」的色彩演算法
+  - 多彩系統需要約束；色彩組合應可預先測試
+  - 把品牌色與產品 UI 色分層，是 SaaS 品牌常見成熟模式
+  applicable_when:
+    industries:
+    - industrial_materials_science
+    - media_entertainment
+    - nonprofit_social
+    - tech_software
+    brand_types: []
+    conditions:
+    - rich_palette
+    archetypes:
+    - full_brand_system
+    - brand_experience_guide
+  dependencies:
+    requires:
+    - Color System
+    enables:
+    - Design Tokens
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 讓設計者從單色任意組合
+  - 用軟體自動轉換色彩而非使用核准色值
+  - 任意新增非品牌色
+  evidence:
+  - brand_id: 3M_Visual_Identity_Guidelines_2015
+    chapter: ch-02-03
+    excerpt: Adjacent Color Set Framework：18 sets、one set per application、approved RGB/CMYK gradients；不得用軟體自動轉換色彩。
+  - brand_id: 3M_Visual_Identity_Guidelines_2015
+    chapter: ch-05
+    excerpt: Color Appendix 作為 token database，逐組列出色值與漸層、媒介可用性，並要求不要修改或重建檔案。
+  - brand_id: arte_2008_compressed
+    chapter: ch-05-01
+    excerpt: Gradient token framework：以 Tequila Sunrise、Purple、Azure、Emerald 等命名漸層（name、start/end CMYK、logo
+      association permission）建立系統，Fuchsia 與 Orange Juice 通常不與 ARTE logo 結合。
+  - brand_id: IBM_Be_Equal_2020
+    chapter: ch-02-02
+    excerpt: 豐富可以被規範，多彩不等於無限制：不得兩色來自同色系、不得兩色同色值、logo/logotype 僅能放在 60 或 40 色值上，把 intersectionality 轉譯成多色但受限的色彩演算法。
+  - brand_id: SAS_brand_creative_guide_2021
+    chapter: ch-04
+    excerpt: 色彩組合需屬 warm/cool/neutral 系統，並以 proportion 規範比例；把 campaign mood、accessibility 與 product UI
+      三層分離。
+  evidence_brand_count: 4
+  confidence: 0.95
+  status: verified
+- id: dp-compliance-copy-as-layout-system
+  title: 把法規必填資訊設計成固定版面元件，而非事後附註
+  problem:
+    statement: 受規範產業（金融、保險）的廣告與素材必須帶上法律、監管與揭露資訊，若交由製作者事後手動補上，容易遺漏或破壞版面，造成合規風險與視覺混亂。
+    signals:
+    - regulatory_compliance
+    - required_disclosure
+    - layout_consistency
+    - mass_touchpoints
+  solution:
+    module: Compliance
+    move: 把 necessary／compliance copy 設計成固定容器（如 signature bar）與依 division／產品分類的 required-fields 清單，讓法規資訊成為版面系統的一部分
+    layer: governance
+  reason:
+  - 規定資訊若被設計成系統元件，就能降低遺漏與版面混亂
+  - 法規文字可依 division 類型轉成 required fields，確保每種素材帶齊對應聲明
+  - 規定資訊不應是最後加上的註腳，而是品牌版面的一部分
+  applicable_when:
+    industries:
+    - finance
+    brand_types:
+    - institutional_public_trust
+    - heritage_legacy
+    conditions:
+    - regulatory_compliance
+    - required_disclosure
+    archetypes:
+    - brand_experience_guide
+    - corporate_toolkit
+    - full_brand_system
+  dependencies:
+    requires:
+    - Compliance
+    - Layout System
+    enables:
+    - Governance
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 把法規聲明當成版面完成後再補的小字註腳
+  - 各素材自行決定要不要放揭露資訊，導致遺漏
+  evidence:
+  - brand_id: Quaint_Oak_Bank_Brand_Guidelines_2013
+    chapter: ch-04-02
+    excerpt: 避免金融廣告漏掉法律、監管與聯絡資訊；規定資訊不應是最後加上的註腳，而是品牌版面的一部分，並可轉成 division-specific required fields。
+  - brand_id: Quaint_Oak_Bank_Brand_Guidelines_2013
+    chapter: ch-04
+    excerpt: 用 signature bar 容納 Logo 與必要資訊，避免規定文字破壞版面；規定資訊若被設計成系統元件，就能降低遺漏與版面混亂。
+  evidence_brand_count: 1
+  confidence: 0.5
+  status: verified
+- id: dp-contact-before-appendix
+  title: 在技術資料前先給治理窗口，讓 guideline 成為可改善系統
+  problem:
+    statement: 規則無法涵蓋所有情境，缺乏權威決策入口時，例外用法無人裁決。
+    signals:
+    - exceptions_expected
+    - governance
+  solution:
+    module: Governance
+    move: 在主內容與 appendix 之間放置聯絡窗口與核准／回饋入口
+    layer: governance
+  reason:
+  - 規則無法涵蓋所有情境，必須提供權威決策入口
+  - guideline 應包含 owner 與 feedback channel，而非靜態文件
+  - 完整 guideline 不只告訴人怎麼做，也要告訴人遇到不確定時找誰、問什麼、如何判斷
+  - 用 governance preamble 把設計規則連到組織風險
+  - guideline 需要 owner 與 feedback channel
+  - 遇到未定義或抽取不完整的規範時，不應自行推論，應升級至 communication contact
+  - guideline 若有審批流程，應明確列出 contact、response time 與 production impact
+  - 成熟 guideline 應提供 owner/contact，否則規範無法被執行與更新
+  - guideline 需要 owner 與 feedback channel，而非靜態文件
+  - 可執行 guideline 必須提供例外處理路徑
+  - Design knowledge base 應記錄規則，也要記錄誰有權解釋規則
+  - 精簡 guideline 需要明確 escalation path
+  - 每份 guideline 都應設計例外處理機制
+  - 再完整的 guideline 也需要明確 owner，否則例外會變成非正式口頭判斷
+  - 大型活動 IP 規範必須可更新，因 sponsor、權利與營運條件會變動
+  - Knowledge Base 應紀錄版本與日期，避免舊規則被錯用
+  - 簡短指南也需要 escalation path；品牌開放使用必須同時保留審核通道
+  - Guideline 若涉及實體製造，必須把 approved companies 與責任窗口納入
+  - 品牌治理要在開發中介入，而不是產出完成後才阻擋
+  - guideline 應提供人類治理節點，而不只規則
+  applicable_when:
+    industries:
+    - finance
+    - tech_software
+    - industrial_materials_science
+    - public_sector
+    - nonprofit_social
+    - media_entertainment
+    - education
+    brand_types:
+    - challenger
+    - institutional_public_trust
+    conditions:
+    - exceptions_expected
+    - governance
+    archetypes:
+    - brand_experience_guide
+    - full_brand_system
+    - corporate_toolkit
+    - logo_asset_guidelines
+  dependencies:
+    requires:
+    - Governance
+    enables:
+    - Operations
+    conflicts_with: []
+  examples: []
+  anti_patterns: []
+  evidence:
+  - brand_id: 3M_Visual_Identity_Guidelines_2015
+    chapter: ch-04
+    excerpt: 把聯絡資訊放在主內容與 appendix 之間，讓使用者在進入技術資料前知道治理窗口；Approval and Feedback Loop。
+  - brand_id: bitcoin_Brand_Guidelines
+    chapter: ch-07
+    excerpt: 結尾提供 press 與 art direction/branding 聯絡窗口作為 escalation path；素材若遇到未定義背景、版本或商標問題，應標記為需聯絡品牌窗口。
+  - brand_id: BNP_Brand_Pass_BD_2012
+    chapter: ch-04-01
+    excerpt: 以 self-check questions、困難排查與 escalation path 收束規範：輸出前應通過問題清單，遇到例外情境仍能回到品牌治理邏輯。
+  - brand_id: CDB_BrandIdentityManual
+    chapter: ch-01
+    excerpt: 以 governance preamble 把品牌規則連到組織風險；任何輸出應可追溯到本手冊對應章節，規格不明時應聯絡 CDB Bank Secretary's Unit，未授權方不得自行發起
+      branded communications。
+  - brand_id: Central_Bank_of_Bahrain_Brand Identity Guidelines
+    chapter: ch-06
+    excerpt: 越精簡的 guideline 越需要清楚的 escalation channel；若使用情境未被本指南涵蓋，應向 External Communications Unit 確認。
+  - brand_id: DALENYS_Brand guidelines_2021
+    chapter: ch-04
+    excerpt: 以 communication@dalenys.com 作為文件與特殊使用情境的詢問窗口，承認例外情境並提供 escalation path。
+  - brand_id: FluoroSeal_Brand_Guidelines_2021
+    chapter: ch-05
+    excerpt: Contact 章收束所有需要品牌團隊判斷的情境，特別是 icon logo approval 與 brand questions：任何未被明確允許的 logo/icon/brand
+      use 應導向 marketing@fluorosealgroup.com，以清楚 owner 降低自由詮釋。
+  - brand_id: I_amsterdam_Brand_Manual_EN_2019
+    chapter: ch-10
+    excerpt: 使用 label 或 pure motto 需與 amsterdam&partners 諮詢並取得 approval，廣告製作前需寄設計至 brand@iamsterdam.com，排程應預留通常
+      3 個工作日回覆與可能修改時間。
+  - brand_id: IBM_Be_Equal_2020
+    chapter: ch-05
+    excerpt: Advice and Resources 強調 guidance is not limited to this document，並列出 brand team、#ibm-brand
+      與資源網址；新資產或特殊需求應聯絡指定品牌團隊取得協助。
+  - brand_id: MA_Style-Guide_
+    chapter: ch-01
+    excerpt: 所有 Melbourne Airport branded items 應參照此書；若有未涵蓋或 bespoke item，需聯繫 Marketing team；成熟 guideline
+      應提供 owner/contact，否則規範無法被執行與更新。
+  - brand_id: NIU_Brand_Identity_2022
+    chapter: ch-01
+    excerpt: 把 Introduction and Contacts 放在最前面，建立校內所有溝通都必須進入品牌治理流程的前提；以文件導覽、review gate 與 owner/contact
+      map 讓使用者知道找誰，並要求至少在 due date 前三天送 Clearinghouse Review。
+  - brand_id: NIU_Brand_Identity_2022
+    chapter: ch-06
+    excerpt: 以 review gate、service owner、standards URL 與 compliance statement 把設計規範接到製作、審核與支援窗口。
+  - brand_id: PV_Branding_Guidelines_Logos_Lock_Ups._CB1539191655_
+    chapter: ch-04
+    excerpt: 用 FAQ 與 design toolkit 補足規範無法涵蓋的命名、法律與市場問題，作為治理層與受控素材入口；複雜品牌需要 FAQ 作為 governance API。
+  - brand_id: Quaint_Oak_Bank_Brand_Guidelines_2013
+    chapter: ch-06
+    excerpt: 提供治理出口，讓不確定的使用情境有品牌團隊可確認；guideline 應保留例外與最新版查詢路徑作為 governance safeguard。
+  - brand_id: Santander_EN
+    chapter: ch-04
+    excerpt: 提醒若對 guideline 有疑問，應聯絡 Banco Santander brand team。
+  - brand_id: sartorius_Brand_Style_Guide_2020
+    chapter: ch-09
+    excerpt: 在文件結尾提供 Brand Platform 與 branding contact，限制 internal / vendor 使用邊界；若使用未列資產或例外，需標記為需 Corporate
+      Branding & Design review。
+  - brand_id: starling_bank_brand_guidelines
+    chapter: ch-05
+    excerpt: 精簡 guideline 需要明確 escalation path；當使用情境超出本文件或背景分類不明確時，應標記為需品牌審核並聯絡品牌窗口。
+  - brand_id: TheEmirates_LogoGuidelines
+    chapter: ch-08
+    excerpt: 遇到未列出的 prohibited application、活動使用、merchandise 放置或 co-branding 例外時，應聯繫 Brand Office（rulebook
+      + approval owner）。
+  - brand_id: Tokyo_2020_NOC_Olympic_emblem_2018
+    chapter: ch-06
+    excerpt: 若 guideline 有修訂，使用者應以最新版本為準；任何疑問應聯繫 NOC Services Relations（living guideline + contact owner）。
+  - brand_id: twitter_brand_guidelines_2020
+    chapter: ch-01
+    excerpt: 簡短指南也需要 escalation path；未涵蓋情境需聯絡 trademarks@twitter.com，不得自行推定許可。
+  - brand_id: ucl_signage_manual_2021
+    chapter: ch-08
+    excerpt: MSS 是 UCL internal signage 唯一系統，只能使用 UCL approved suppliers；列出 CAM、Estates、Digital Signage、Accessibility
+      聯絡窗口（Supplier Gate + Responsibility Contacts）。
+  - brand_id: USAToday_Online_Brand_guidelines_2014
+    chapter: ch-09
+    excerpt: 提供 brand@usatoday.com 並建議早期尋求 feedback；需要 logo 使用、外部 vendor 或 branding issue 時應尋求 brand team
+      review。
+  evidence_brand_count: 21
+  confidence: 0.95
+  status: verified
+- id: dp-content-forward-flexible-identity
+  title: 讓識別當承載內容的框架，並以可調品牌音量平衡影像與品牌
+  problem:
+    statement: 內容導向品牌（媒體、出版、頻道）若讓識別搶走影像注意力，會削弱真正的內容資產；但完全沒有品牌又失去辨識。
+    signals:
+    - content_forward_identity
+    - multi_platform
+    - motion_behavior
+    - brand_recognition_vs_content
+  solution:
+    module: Visual Language
+    move: 確立 content-forward 原則（識別是承載影像的框架），並用 Image／Message／Brand 三元素的可調「品牌音量」決定每個輸出的識別顯著度
+    layer: strategy
+  reason:
+  - 品牌應支援內容，而不是遮蔽內容
+  - 一個強識別裝置可以讓分散式團隊替換圖片而不破壞整體系統
+  - 用固定 frame 包住可替換圖片，讓地方素材仍保有 campaign look
+  - 授權商品應服務故事，而非只複製紅框 logo
+  - 包裝應像一本被縮小的 LIFE magazine：影像主導、品牌清楚、資訊克制
+  - 文字不可 overpower photographs
+  - 品牌應支援探索，而不是遮蔽內容；真實影像與知識進展比裝飾性識別更重要
+  - 好的品牌系統不是單一規則，而是可調節的平衡機制
+  - 品牌音量可轉成 AI 對版面密度與識別顯著度的檢查
+  applicable_when:
+    industries:
+    - media_entertainment
+    - public_sector
+    brand_types:
+    - category_creator
+    - challenger
+    - institutional_public_trust
+    conditions:
+    - content_forward_identity
+    - multi_platform
+    archetypes:
+    - brand_experience_guide
+    - campaign_touchpoint
+    - product_design_system
+  dependencies:
+    requires:
+    - Brand Strategy
+    enables:
+    - Layout System
+    - Motion Identity
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 影像優先情境仍使用過量遮罩或圖形
+  - 影像優先情境仍讓文字或裝飾壓過照片
+  - 把品牌只當紅色標籤而失去影像敘事
+  - 同時提高 image/message/brand 三者造成視覺擁擠
+  evidence:
+  - brand_id: EYR_Visual_Identity_Guidelines
+    chapter: ch-02-01
+    excerpt: 用綠色 train-door frame 區分 image subject zone 與 text/logo content zone，文字與 logo 不應侵入主體；固定 frame
+      包住可替換圖片讓分散式團隊替換影像而不破壞識別。
+  - brand_id: LIFE_Style_Guide
+    chapter: ch-01
+    excerpt: 品牌價值來自真實性、文化記憶、影像敘事與編輯眼光；授權商品應服務故事，而非只複製紅框 logo。
+  - brand_id: LIFE_Style_Guide
+    chapter: ch-04
+    excerpt: 包裝應像一本被縮小的 LIFE magazine：影像主導、品牌清楚、資訊克制；文字不可 overpower photographs。
+  - brand_id: National_Geographic_Style_Guide
+    chapter: ch-01-03
+    excerpt: 確立識別是承載影像的框架，而非搶走影像注意力；品牌元素需可依內容需求調整音量。
+  - brand_id: National_Geographic_Style_Guide
+    chapter: ch-04
+    excerpt: 三元素平衡框架：Imagery、Message、Brand Volume 互相牽制；不得同時提高三者造成視覺擁擠，每個輸出需能說明所選音量等級。
+  - brand_id: PV_Branding_Guidelines_Logos_Lock_Ups._CB1539191655_
+    chapter: ch-03
+    excerpt: 品牌露出必須可見但不破壞觀看體驗，避免 bug 與內容競爭或被平台 UI 遮擋；以版型與平台雙條件管理品牌顯著度。
+  evidence_brand_count: 4
+  confidence: 0.95
+  status: verified
+- id: dp-custom-typeface-as-identity-asset
+  title: 用專屬字體當識別資產，擺脫系統預設字並統一語氣
+  problem:
+    statement: 仰賴系統預設字體的品牌缺乏獨特性與一致語氣，跨媒介又常因字體缺失而失控；但又需要在無法安裝字型的環境保有 fallback。
+    signals:
+    - identity_distinctiveness
+    - system_consistency
+    - brand_recognition
+    - multi_media
+  solution:
+    module: Typography System
+    move: 建立專屬企業字體（3M Circular）作為核心識別資產，並指定 web/system fallback 與字重、leading、kerning、字色規則
+    layer: visual_core
+  reason:
+  - 專屬字體系統讓品牌不再依賴 default fonts，並讓文字有精準、現代、可讀的共同語氣
+  - 字體系統要以 utility 為核心；可讀性與一致性優先於裝飾
+  - 搭配 system fallback，可在無法安裝字型的環境維持一致
+  - 專屬字體系統讓品牌不再依賴 default fonts，並讓文字有共同語氣
+  - 字體指南不能只列品牌字體，也要處理語系覆蓋、商務工具限制與 fallback
+  - 搭配 system fallback，可在無法安裝字型的商務工具環境維持一致
+  - 品牌一致性常在名稱、URL、電話與標點中破裂，需 editorial micro-rules
+  - 字體規則可被轉為排版 lint，包括 font role、case、line length、leading 與 colour
+  - 專屬字體系統讓品牌不再依賴 default fonts
+  - 自製 display 字體需要明確限制字數與情境，否則可讀性會受損
+  - typography 是 brand recognition 的 foundational pillar
+  - 字體規範可轉成 design-token schema，包含 role、font、size range、leading、max lines
+  - 專屬字體系統讓品牌不再依賴 default fonts，並讓文字有一致語氣
+  - 字體規範應同時處理視覺、語言、授權與工具限制
+  - 字體選擇應服務品牌性格與實際可用性
+  - 字體 guideline 應記錄 semantic rationale 與 operational fallback
+  - 跨語系 typography guideline 應包含語系配對與替代字體
+  - 品牌字體不是全場使用同一強符號，而是依內容層級分配角色
+  - 字體系統可用「日常可讀字體 + 品牌衝擊字體」分工，並以 fallback/equivalent 支援多語市場
+  applicable_when:
+    industries:
+    - industrial_materials_science
+    - tech_software
+    - public_sector
+    - media_entertainment
+    - new_energy_mobility
+    brand_types:
+    - category_creator
+    - heritage_legacy
+    - challenger
+    - institutional_public_trust
+    conditions:
+    - identity_distinctiveness
+    - multi_media
+    archetypes:
+    - full_brand_system
+    - brand_experience_guide
+  dependencies:
+    requires:
+    - Typography System
+    enables:
+    - Design Tokens
+    - Content Design
+    conflicts_with: []
+  examples:
+  - headline leading 約 1:1.1、body leading 約 1:1.25，文字只用黑或白
+  anti_patterns:
+  - 直接沿用系統字當品牌字體，缺乏 fallback 規範
+  - 把 display 字體用於長文，犧牲可讀性
+  - 把品牌衝擊字體用於 body copy 或長標題
+  evidence:
+  - brand_id: 3M_Visual_Identity_Guidelines_2015
+    chapter: ch-02-04
+    excerpt: 此節建立 3M 專屬字體系統，讓品牌不再依賴 default fonts；可複用模式包含 custom corporate typeface、system fallback、black-or-white
+      text rule。
+  - brand_id: AMD_branding_guidelines_2020
+    chapter: ch-01-05
+    excerpt: 以 Klavika 為核心字體、Arial 為次要字體，並提供各語系替代字體（如繁體中文 Noto Sans）；企業字體系統必須在品牌性與實務可取得性之間折衷。
+  - brand_id: BCHydro_brand_guidelines_2019
+    chapter: ch-04
+    excerpt: GT Haptik 為主字體，Arial 僅於 Outlook/Word 等相容限制時使用；並以 editorial micro-rules 規範 BC Hydro 不可斷行、power
+      smart 一般小寫、URL 不用 www。
+  - brand_id: CalvinKlein_Logo&GraphicGuidelines_2017
+    chapter: ch-03
+    excerpt: 建立專屬 Klein sans serif 字體，把字重轉成 usage roles；字體是品牌聲音與 channel coherence 的核心，不只是排版選項。
+  - brand_id: DELL_BRANDBOOK_2010
+    chapter: ch-04
+    excerpt: 以 Museo for Dell、Museo Sans for Dell 為品牌字體，並指定 Trebuchet fallback 與 localized typefaces，於
+      web/email/Office/localized 環境維持一致。
+  - brand_id: eftpos_Brand_Guidelines_2021
+    chapter: ch-02-02
+    excerpt: Sharp Grotesk Semibold 23 為 headline、Manrope 為 longform，Arial 為 Office fallback，承載 bold innovator
+      語氣並兼顧無法安裝字型的環境。
+  - brand_id: F1_Master_Brand_Guidelines_2017
+    chapter: ch-04-02
+    excerpt: 建立 F1 bespoke typeface family（Wide/Black 作 impact、Bold/Regular 作 inform、Titillium 作 long-read）；一次溝通只用一種
+      display headline font，字體本身就是品牌聲音。
+  - brand_id: kinokuniya_brand_guidelines
+    chapter: ch-02-02
+    excerpt: Kino typeface 應只用於短字、標籤或店內提示；正文應使用 Roboto；display/body 分工讓品牌字體負責記憶，Roboto 負責閱讀。
+  - brand_id: klarna_visual_identity_guidelines_2019
+    chapter: ch-03
+    excerpt: Klarna Headline 承擔身份，Klarna Text 承擔數位可讀性；typography 是 brand recognition 的 foundational pillar，字體規範可轉成
+      role/size/leading 的 design-token schema。
+  - brand_id: sartorius_Brand_Style_Guide_2020
+    chapter: ch-05-01
+    excerpt: licensed brand font → fallback → usage roles：TT Norms Pro 為品牌字體，Noto Sans 與 Arial 為 fallback，並定義字重角色與字色。
+  - brand_id: SAS_brand_creative_guide_2021
+    chapter: ch-05
+    excerpt: 品牌輸出優先 Avenir Next W1G，software/web/Office 可用 Inter fallback；字體 guideline 應記錄 semantic rationale
+      與 operational fallback。
+  - brand_id: TheEmirates_LogoGuidelines
+    chapter: ch-04
+    excerpt: font stack governance：primary brand font → secondary storytelling font → office system fallback；無法使用主要字體時
+      Latin 改 Century Gothic、Arabic 改 Tahoma。
+  - brand_id: Volvo_2021_compressed
+    chapter: ch-03
+    excerpt: Volvo Novum 負責大多數文字、Volvo Broad 用於短且強的 statement；Volvo Broad 不得用於 body copy，並提供語言替代字體支援多語市場。
+  evidence_brand_count: 13
+  confidence: 0.95
+  status: verified
+- id: dp-editorial-typography-for-premium
+  title: 用具傳承感的編輯級襯線字體承載高端與精緻
+  problem:
+    statement: 高端品牌需要字體本身就傳達傳承、工藝與精緻，而不只是中性的資訊載體；錯用通用字體會讓品牌失去高級語感。
+    signals:
+    - premium_perception
+    - heritage
+    - craftsmanship
+    - editorial_feel
+  solution:
+    module: Typography System
+    move: 以 heritage serif（Caslon 系列）建立層級與語氣，並為每個字重指定明確用途與最小字級
+    layer: visual_core
+  reason:
+  - 用字體建立 Harrods 的傳統、精緻與現代實用性
+  - 字體不是任選風格，而是通道、媒介與品牌層級的管理工具
+  - 字體使用應讓層級與語氣自然呈現
+  - 新聞品牌的視覺權威很大程度來自文字節奏與數字處理
+  - 字體 guideline 應明確描述數字樣式與 leading，而不只列字型名稱
+  - serif 負責閱讀/傳承、sans 負責導覽/操作的雙軸系統
+  applicable_when:
+    industries:
+    - luxury_premium
+    - media_entertainment
+    brand_types:
+    - premium_luxury
+    - heritage_legacy
+    conditions:
+    - premium_perception
+    - editorial_feel
+    archetypes:
+    - brand_experience_guide
+    - full_brand_system
+  dependencies:
+    requires:
+    - Typography System
+    enables:
+    - Content Design
+    conflicts_with: []
+  examples:
+  - Big Caslon 只用於 headline/subheadline 且不得小於 20pt，body 與 emphasis 各有指定字重
+  - body copy 11pt 以下用 Milo Serif Text、headline 18pt 以上用 Milo Serif Medium、leading 為 font size 120%
+  anti_patterns: []
+  evidence:
+  - brand_id: Coldwell_Banker_2020
+    chapter: ch-03-02
+    excerpt: 以 Adobe Garamond Pro 襯線字承載優雅；字體不是單一規格，而是 mood selector，讓品牌在優雅、力量、清晰與親近間調節聲音。
+  - brand_id: Harrods_Brand_Guidelines
+    chapter: ch-02
+    excerpt: 用字體建立 Harrods 的傳統、精緻與現代實用性；字體不是任選風格，而是通道、媒介與品牌層級的管理工具。
+  - brand_id: Harrods_Brand_Guidelines
+    chapter: ch-02-01
+    excerpt: 字體使用應讓層級與語氣自然呈現；Big Caslon FB 只用於 headlines/subheadlines 或指定用途。
+  - brand_id: The_Economist_Group_2017
+    chapter: ch-02
+    excerpt: editorial typography framework：serif for reading/heritage、sans for navigation/action；Milo
+      Serif 用於 body copy 與 headline，Econ Sans 用於 subheadings/navigation/metadata。
+  evidence_brand_count: 3
+  confidence: 0.85
+  status: verified
+- id: dp-from-to-voice-translation
+  title: 技術品牌語氣指南要給「轉譯規則」，不只是列形容詞
+  problem:
+    statement: 科學與技術公司容易陷入術語化，受眾停在「所以呢？」而非「原來如此」。
+    signals:
+    - technical_jargon_risk
+    - expert_audience
+    - b2b
+  solution:
+    module: Voice and Tone
+    move: 用 from/to 對照把語氣轉型具體化（術語→可親近、數據→人性利益）
+    layer: language
+  reason:
+  - 科學溝通應讓人理解「所以呢」，而不是只展示知識量
+  - 提供轉譯規則比列 tone adjectives 更可執行
+  - 語氣指南應定義正向特質、負向邊界與轉譯方式，而不只是列形容詞
+  - 語氣可用「時間視角」建模，而非只列形容詞，並把功能轉成生活結果
+  - 公用事業品牌應避免聽起來像冷冰冰機構，把專業知識轉成鄰近可信語氣
+  - tone guideline 若能列出可禁止短語與可改寫技巧，就能被 AI 初步審核
+  - 安全品牌應以信心、預防、清晰與業務價值說服，而不是只放大威脅
+  - 品牌文案應清楚、有用、有人味，且能把變化描述成可理解的客戶利益
+  - 權威不必等於複雜，清楚也是尊重受眾
+  - 用 avoid/replace pair 直接轉成 rewrite rule
+  - 品牌 voice 可用可觀察語言行為描述，而不只用人格形容詞描述
+  - 語氣指南應同時提供判準、禁用風格與實際改寫
+  applicable_when:
+    industries:
+    - industrial_materials_science
+    - tech_software
+    - finance
+    - public_sector
+    - nonprofit_social
+    - education
+    brand_types:
+    - institutional_public_trust
+    - category_creator
+    - challenger
+    - heritage_legacy
+    - mission_driven
+    conditions:
+    - expert_audience
+    - technical_translation
+    - b2b
+    archetypes:
+    - full_brand_system
+    - brand_experience_guide
+    - corporate_toolkit
+  dependencies:
+    requires:
+    - Messaging
+    enables:
+    - Content Design
+    conflicts_with: []
+  examples:
+  - from technical jargon → to personal and accessible
+  - from facts and figures → to human stories with benefits
+  anti_patterns:
+  - 只列 tone adjectives 卻沒有轉譯方法
+  - 只列品牌成就而不連到顧客生活
+  - 使用 jargon、acronym 或 'we are committed to' 等空話
+  - 把 AI/ML 同句重複堆疊
+  - 文案堆疊金融術語
+  - 語氣自誇、冷漠或含糊
+  evidence:
+  - brand_id: 3M_Visual_Identity_Guidelines_2015
+    chapter: ch-01-03
+    excerpt: Voice Transformation Framework：smart→accessible、facts→benefits、so what→ah-ha；用 from/to 對照把語氣轉型具體化。
+  - brand_id: AMD_branding_guidelines_2020
+    chapter: ch-01-02
+    excerpt: 語氣應 forthright、clear、confident，從技術能力轉譯為使用者利益，不可只列產品功能；自信來自證據與清楚度，而非誇張修辭。
+  - brand_id: AXA_Design_principles_2017
+    chapter: ch-06
+    excerpt: 語氣可用 Bigger Picture / Now / Progression 的時間視角建模，而非只列形容詞；文案應以顧客為受益者，把功能轉成生活結果，不可只列 AXA achievements。
+  - brand_id: BCHydro_brand_guidelines_2019
+    chapter: ch-02
+    excerpt: Smart / Authentic / Relatable 搭配 humanize checklist：文案需先說 benefits/effects/risks，避免 jargon
+      與縮寫，禁用 'we are committed to'，使用直接 action-oriented CTA。
+  - brand_id: BlackBerry_Cylance_Brand_Guidelines_2019
+    chapter: ch-01
+    excerpt: Messaging Stack：mission → mantra → position → pillars → value → allowed claims，把品牌聲音拆成『公司做什麼』與『使用者因此能做什麼』，避免恐懼行銷與術語堆疊。
+  - brand_id: BNPP_Brand_creative_bd_2012
+    chapter: ch-04-01
+    excerpt: 把品牌人格轉成 editorial tone：文案應避免金融術語堆疊，每段主要訊息應包含受眾利益，語氣不得自誇、冷漠或含糊。
+  - brand_id: Consistent_communications_Brand_Guidelines_2018
+    chapter: ch-05-02
+    excerpt: 語氣須 approachable、inclusive、succinct、simple、authoritative without over-authoritative，並以 avoid/replace
+      pair（如 because 取代 due to the fact that）把語氣轉成 rewrite rule。
+  - brand_id: HKUST_BRAND_GUIDELINES_2022
+    chapter: ch-02-01
+    excerpt: 把 passionate、confident、friendly、inspiring、intelligent 五種 voice qualities 對應五種寫作策略，並以 before/after
+      範例把抽象語氣轉成句法與敘事順序；語氣不是形容詞清單，而是可觀察的語言行為。
+  - brand_id: ulster_university_Brandbook
+    chapter: ch-02-03
+    excerpt: 用 do/don't、tips 與改寫範例，把語氣從抽象形容詞變成可審核操作；範例頁展示同一新聞內容如何從冗長正式轉為更直接、情感與可讀。
+  evidence_brand_count: 9
+  confidence: 0.95
+  status: verified
+- id: dp-inclusive-language-governance
+  title: 把尊重性／包容性語言寫成可審核的用語規則，而非僅靠善意
+  problem:
+    statement: 涉及身分、障礙或弱勢群體的品牌，若只靠寫作者善意，容易在描述時使用污名化、悲情化或幼化的語言，違背品牌的包容使命。
+    signals:
+    - inclusive_audience
+    - content_safety
+    - mission_communication
+    - vulnerable_groups
+  solution:
+    module: Content Design
+    move: 提供 person-first 合適術語與「應避免用語」清單，並把語言倫理寫成可被內容審查工具檢查的規則
+    layer: language
+  reason:
+  - 人優先於診斷；描述應尊重個體、避免悲情化與物化
+  - 任何涉及身分、障礙或弱勢群體的 guideline 都應提供語言倫理規則，且最好可被工具檢查
+  - 包容使命需要落到日常書寫規則，否則視覺合格卻在文字上傷害群體
+  applicable_when:
+    industries:
+    - nonprofit_social
+    - public_sector
+    brand_types:
+    - mission_driven
+    - institutional_public_trust
+    conditions:
+    - inclusive_audience
+    - mission_communication
+    archetypes:
+    - full_brand_system
+    - brand_experience_guide
+  dependencies:
+    requires:
+    - Brand Strategy
+    enables:
+    - Content Design
+    - Accessibility
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 只說「請尊重」卻不提供合適／避免用語清單
+  - 使用 suffering from、victim of、confined to 等污名化措辭
+  evidence:
+  - brand_id: 2022_Special_Olympics_USA_Games_Brand_Guidelines_2020
+    chapter: ch-05-02
+    excerpt: 防止品牌在描述 intellectual disabilities 時使用污名、幼化或過度英雄化的語言；使用 person-first terms，並列 appropriate
+      terminology 與 terminology to avoid，且最好可被內容審查工具檢查。
+  evidence_brand_count: 1
+  confidence: 0.5
+  status: verified
+- id: dp-logo-vs-lockup-distinction
+  title: 區分 public-facing lockup 與 corporate logo 的使用場景
+  problem:
+    statement: 單一標誌資產被套用到所有情境，混淆對外溝通與企業署名，且難以同時治理法律與一致性。
+    signals:
+    - multiple_logo_contexts
+    - trademark
+    - legal_governance
+  solution:
+    module: Visual Identity
+    move: 明確區分 lockup 與 logo 的使用情境，並用 asset state + usage context + spatial/color/legal control 統一治理
+    layer: visual_core
+  reason:
+  - 標誌資產不可重建、不可任意改比例
+  - trademark 與 tagline 須由法律與品牌一致性共同治理
+  - 品牌 lock-up 不只是 logo 排列，也可承載常用營運資訊，且需治理例外
+  - 多符號機構應用正式性層級與使用情境分工，避免 athletics equity 侵入 academic context
+  - 識別工具章應同時處理核心標誌與延伸語言，避免只保護 logo 而忽略實際接觸點
+  - logo 選擇規則應由 audience context 與 legal/official context 驅動
+  - 商標 guideline 應把 asset use case 明確分層，避免單一 logo 被迫承擔所有任務
+  - 越具象徵性、越接近品牌核心的符號，越需要嚴格控制
+  - 品牌識別不必同權限；可依風險分層管理
+  applicable_when:
+    industries:
+    - industrial_materials_science
+    - finance
+    - tech_software
+    - media_entertainment
+    - education
+    brand_types:
+    - heritage_legacy
+    - platform_ecosystem
+    - institutional_public_trust
+    conditions:
+    - trademark
+    - multiple_logo_contexts
+    archetypes:
+    - brand_experience_guide
+    - corporate_toolkit
+    - multi_brand_architecture
+  dependencies:
+    requires:
+    - Visual Identity
+    enables:
+    - Legal and Trademark
+    - Governance
+    conflicts_with: []
+  examples: []
+  anti_patterns: []
+  evidence:
+  - brand_id: 3M_Visual_Identity_Guidelines_2015
+    chapter: ch-02-02
+    excerpt: 區分 public-facing lockup 與 corporate logo；Logo Governance Framework：asset state、usage context、spatial
+      control、color control、legal control。
+  - brand_id: Barbican_Centre_brand_guidelines_2017
+    chapter: ch-03
+    excerpt: lock-up 是 logo 與 essential information 的固定關係，tracking/leading 不可調整，並以 Fixed Relationship
+      + Format Placement + Special Case Exception 治理合作方共存。
+  - brand_id: Berkeley_Brand_Manual_accessible_2019
+    chapter: ch-03
+    excerpt: Institutional Mark Hierarchy：wordmark、seal、academic name、athletics name、spirit mark 各有正式性與情境分工；Cal
+      Script 不得用於 academic purposes，first reference 用 UC Berkeley。
+  - brand_id: BNP_Brand_Pass_BD_2012
+    chapter: ch-02-01
+    excerpt: 把 emblem、signature、brand block 拆成可組合工具，定義何時使用單一標誌、何時使用品牌區塊或完整 lockup；標誌不得重繪、變色、變形或被非核准元素取代。
+  - brand_id: F1_Master_Brand_Guidelines_2017
+    chapter: ch-02-01
+    excerpt: F1 symbol 為 own channels default；需文字說明的 OOH/third-party communications 用 F1 Formula 1 logo；官方
+      sporting/accreditation 用 F1 Championship logo；越靠近第三方或官方賽事越需要 descriptor。
+  - brand_id: klarna_visual_identity_guidelines_2019
+    chapter: ch-02
+    excerpt: trademark hierarchy：wordmark → lockup/tagline → symbol → partner → badge → avatar；不得用 Klarna
+      Headline 自行打出 logotype，lockup 只能使用 Smoooth payments tagline，partner lockup 中 Klarna 應視覺等重。
+  - brand_id: PV_Branding_Guidelines_Logos_Lock_Ups._CB1539191655_
+    chapter: ch-02
+    excerpt: 以 Primary Service Logo 與 Global Marketing Logo 兩種 pattern 區分服務內辨識與全球 off-platform 信任歸因；子品牌
+      guideline 應明確定義何時需要母品牌背書，而不是只列 Logo 檔。
+  - brand_id: PV_Branding_Guidelines_Logos_Lock_Ups._CB1539191655_
+    chapter: ch-02-02
+    excerpt: 在 Prime 認知不足的市場，於 Prime Video mark 上附加 amazon 歸因建立信任；市場認知與媒介所有權決定 Logo attribution。
+  - brand_id: Tesla_Guidelines_2010
+    chapter: ch-02
+    excerpt: permission-tiered identity system：wordmark 可廣泛使用，Tesla Flag 與 Tesla T 不得提供第三方且需 Corporate
+      Marketing 與 Chief Designer 核准。
+  evidence_brand_count: 8
+  confidence: 0.95
+  status: verified
+- id: dp-media-split-typography
+  title: 依媒介分流字體系統（print / digital / body）
+  problem:
+    statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+    signals:
+    - print_and_digital
+    - readability
+    - licensing
+  solution:
+    module: Typography System
+    move: 區分 print font、digital font 與 secondary/body font，並各自規範字級與行距
+    layer: visual_core
+  reason:
+  - 不同媒介的可讀性與授權條件不同
+  - 字體規範應搭配用途說明，而非只列字體名稱
+  - 文書 guideline 應依「可由一般員工操作」設計，而非只依設計部門工具
+  - typeface policy 應依 production environment 分級
+  - 品牌字體需要有可取得的替代方案，否則規範無法在組織內落地
+  - Office 場景需提供可替代字體以維持一致
+  - typography guideline 應把 font choice 轉成 content role mapping
+  - 企業字體系統不是單一品牌字體，而是依媒介、內容量與語言建立 fallback architecture
+  - Typography guideline 應把「語系」納入字體治理，尤其是全球 B2B 品牌
+  - 字體治理可依「品牌資產、廣告溝通、日常 email」拆分
+  - 金融 guideline 應把排版規則與法規披露連接
+  - typography guideline 應明確定義媒介 fallback，而非只指定美術字體
+  applicable_when:
+    industries:
+    - finance
+    - public_sector
+    - education
+    - nonprofit_social
+    brand_types:
+    - institutional_public_trust
+    - mission_driven
+    conditions:
+    - print_and_digital
+    archetypes:
+    - brand_experience_guide
+    - corporate_toolkit
+  dependencies:
+    requires:
+    - Typography System
+    enables: []
+    conflicts_with: []
+  examples:
+  - body copy 使用 Segoe UI Regular 10pt / 14pt leading
+  - digital/print artwork 使用 Roboto，大段專業設計文字用 Merriweather，email 用 Arial
+  - logo typeface 用 FF Cocon、advertising typeface 用 Museo Sans、email 用 Century Gothic
+  - print 用 Meta Office、digital 用 Arial、disclosure 8pt、digital type 不低於 10pt
+  - Helvetica 主字體、Gotham 標題、Arial 電子應用替代
+  anti_patterns: []
+  evidence:
+  - brand_id: accoya_brand_guidelines_2015
+    chapter: ch-05-01
+    excerpt: Print Typeface 規範 Neo Sans Light 用於大寫 headline、Neo Sans Regular 用於 sentence case 內文，字體權重應對應資訊層級。
+  - brand_id: accoya_brand_guidelines_2015
+    chapter: ch-05-02
+    excerpt: Web Typeface 處理網頁與 email live text 的技術限制，允許 Arial 作為 Neo Sans 不可用時的 fallback，品牌字體需兼顧可用性與技術限制。
+  - brand_id: Bern_Stadt_2021
+    chapter: ch-01-02
+    excerpt: Print 使用 Univers；電子模板與 PowerPoint 使用 Arial；商務信件使用 Arial 10，降低使用者與輔助工具負擔。
+  - brand_id: CDB_BrandIdentityManual
+    chapter: ch-02-03
+    excerpt: external communications 用 Futura/Granjon 等品牌字體、internal Office 用 Arial/Verdana/Times New
+      Roman；signature 必須 Arial Bold，print advertising body 用 Granjon Roman/Bold、header 用 Futura，依用途分層。
+  - brand_id: Consistent_communications_Brand_Guidelines_2018
+    chapter: ch-02-03
+    excerpt: PMN Caecilia 用於 professional design 材料、Trebuchet MS 用於內部文件與 fallback，把 licensing/availability
+      納入字體決策。
+  - brand_id: DFPI_BrandGuidelines
+    chapter: ch-03
+    excerpt: 媒介分流字體系統：print font、digital font、secondary/body font；body copy 使用 Segoe UI Regular 10pt/14pt
+      leading。
+  - brand_id: European_Committee_of_the_Regions_visual_identity_EN_2019
+    chapter: ch-01-02
+    excerpt: Myriad Pro 提供跨歐語支援、Minion Pro 為內頁帶來節奏，Office 場景可用 Arial/Times 替代；headline/subtitle 對比遵守 2:1。
+  - brand_id: First_Bank_Brand_Guidelines_2021
+    chapter: ch-07
+    excerpt: Print 使用 Avenir Black/Light、Web 使用 Montserrat Extra Bold/Bold/Semibold/Regular，並依 headline、subhead、body、CTA、button
+      角色分工；字體選擇依媒介與內容角色決定。
+  - brand_id: MSCI_Brand_guidelines_2021
+    chapter: ch-03
+    excerpt: Roboto 用於 digital/print artwork；Merriweather 用於專業設計且大量文字；Arial 用於 email；另指定日韓中阿系統字體做 language
+      fallback。
+  - brand_id: RenasantBank_brandstandards_2020
+    chapter: ch-03
+    excerpt: 字體不是任選美感，而是依 medium、placement、hierarchy 分工：Trajan Pro Bold 只用於 Logo、Univers LT Std 為主要印刷字體、Glypha
+      只用於 Mortgage Lending、Archivo Narrow 與 Muli 只用於 Web。
+  - brand_id: Sterling_Brand_Guidelines
+    chapter: ch-03
+    excerpt: media-specific typography framework：logo typeface 是 FF Cocon、advertising typeface 是 Museo
+      Sans、email 字體是 Century Gothic。
+  - brand_id: Stifel_brand_guidelines_2019
+    chapter: ch-03
+    excerpt: print communication 使用 Meta Office、digital formatting 使用 Arial；disclosure 通常 8pt，任何 type
+      不得低於 8pt、digital type 不低於 10pt。
+  - brand_id: Tesla_Guidelines_2010
+    chapter: ch-03
+    excerpt: Helvetica 為 primary/copy font、Gotham 為 headline font、Arial 為 electronic font；電子應用使用 Arial
+      取代 Helvetica。
+  evidence_brand_count: 12
+  confidence: 0.95
+  status: verified
+- id: dp-message-hierarchy-by-persona
+  title: 把訊息依來源分層，避免所有文案都變成同一種品牌腔
+  problem:
+    statement: 同一品牌在不同情境若用同一種訊息密度與口吻，文案會全變成單一「品牌腔」，無法服務不同受眾層。
+    signals:
+    - multi_audience
+    - content_forward_identity
+    - community
+  solution:
+    module: Messaging
+    move: 用 buyer persona（executive value vs. practitioner utility）把同一產品價值翻譯成不同利益與語氣
+    layer: language
+  reason:
+  - 將語氣與訊息來源分離，可避免所有文案都變成同一種「品牌腔」
+  - 同一產品價值需依 buyer role 翻譯成不同利益
+  - 三層 messaging 分別對應情感層、社群層、功能層，可作為社群平台的 copy matrix
+  applicable_when:
+    industries:
+    - tech_software
+    - media_entertainment
+    brand_types:
+    - challenger
+    - platform_ecosystem
+    conditions:
+    - multi_audience
+    - community_driven
+    archetypes:
+    - brand_experience_guide
+    - full_brand_system
+    - product_design_system
+  dependencies:
+    requires:
+    - Brand Strategy
+    - Voice and Tone
+    enables:
+    - Content Design
+    conflicts_with: []
+  examples: []
+  anti_patterns: []
+  evidence:
+  - brand_id: BlackBerry_Cylance_Brand_Guidelines_2019
+    chapter: ch-02
+    excerpt: 以 Frank（預算/策略 owner）與 Preston（實作 owner）兩個 persona 分流訊息：Frank 內容量化成效並避免 breach scare，Preston
+      內容短、務實、避免 jargon。
+  - brand_id: Discord_BrandGuideline_2021
+    chapter: ch-01-01
+    excerpt: 三層 messaging：universal Discord feeling、community-specific lingo、functional product value；將語氣與訊息來源分離，可避免所有文案都變成同一種『品牌腔』。
+  evidence_brand_count: 2
+  confidence: 0.7
+  status: verified
+- id: dp-modular-manual-for-public-units
+  title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+  problem:
+    statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+    signals:
+    - multi_unit_consistency
+    - multi_entity
+    - sub_unit_identity
+    - brand_architecture_complexity
+  solution:
+    module: Brand Architecture
+    move: 先建立「誰在說話」的判斷層，再以 umbrella → member → 子單位 → lockup → special case 的層級把組織結構視覺化
+    layer: governance
+  reason:
+  - 局部單位可以被識別，但不能競爭或替代母品牌
+  - Brand architecture 應為子品牌定義「固定母品牌元件」與「可自由設計元件」
+  - 品牌整併指南需要解釋歷史原因，否則團隊會延續舊子品牌慣性
+  - 大型機構應把 brand architecture 規則做成分類決策樹，而不是只列範例
+  - 大型公共組織可用 endorsed brand 模式讓服務有個性但不分裂
+  - 品牌社群可有地方個性，但不能犧牲母品牌價值與官方可辨識性
+  - 公共品牌常需在倡議、施工、社群與營運中轉換身份，因此必須規範背書與應用層級
+  - 大型系統可用「可辨識但不獨立」的 secondary line 管理內部單位
+  - 任何多實體品牌系統都需要先建立「誰在說話」的判斷層，再談 logo 放置
+  - 子品牌應有差異，但差異必須透過主系統控制，而不是另起爐灶
+  - 子品牌系統可用「共享母構件 + 專屬色彩 + 固定應用模板」達成治理
+  - 企業品牌可用有限例外管理 portfolio complexity
+  - 以 approved lockup library 管理子業務，而不是建立自由子品牌系統
+  - 附屬單位可以被識別，但不能凌駕或稀釋母品牌
+  - 多社群品牌需要共同母系統與差異化子系統同時存在
+  - unity, not uniformity；多元需要透過可治理的變體表達
+  - 多層活動品牌應用 lockup taxonomy 管理主從關係
+  - 大型會議的子活動可以用同一 lockup grammar 建立可辨識家族
+  - 不同品牌層級應有不同的母品牌可見度與獨立性
+  - guideline 應定義母品牌、內部品牌、子品牌各自的識別繼承規則
+  - 子業務不得自行發明與核心品牌無關的識別
+  - 多業務品牌應把「共享哪些元素」「差異化哪些元素」寫成可檢查矩陣
+  - 組織架構可以透過受控延展表達，而不是讓每個 division 自行設計
+  - 多部門品牌應建立命名槽位、位置與比例規則，以避免品牌碎片化
+  - 品牌資產應反映組織結構，而不是只反映視覺偏好
+  - 多身份品牌應在 guideline 中建立 logo selection decision tree
+  - 文化機構 guideline 應把「總管理機構規則」寫在開頭，避免地方品牌與母體規範衝突
+  - 母機構 charte 與子品牌 palette 可透過「字體遵母、色彩取子」方式共存
+  - 品牌架構應讓差異可被看見，但不能削弱 master brand
+  - 分支或顧問團隊需要可見性，但不得高於主品牌
+  - 企業品牌延伸應設計「允許的可變欄位」而非開放式客製
+  - 品牌家族需要一致的識別語法，但不同產品可保留名稱與媒介差異
+  - 多品牌系統應把 logo 家族依用途分類，而不是把所有資產平鋪
+  - 多品牌大學可用 lockup governance 控制學院與研究單位擴散
+  - 品牌資產擴張必須回補 masterbrand，而不是抽離或稀釋它
+  - 子品牌應服務導航與內容辨識，而非建立與 masterbrand 競爭的新品牌
+  - division endorsement 必須可見、可辨識，不能只當法律附註
+  - endorsement tagline 是 brand architecture 與 legal governance 的交會點
+  applicable_when:
+    industries:
+    - public_sector
+    - education
+    - media_entertainment
+    - luxury_premium
+    - finance
+    - consumer_retail_hospitality
+    - nonprofit_social
+    - tech_software
+    brand_types:
+    - institutional_public_trust
+    - platform_ecosystem
+    - heritage_legacy
+    - mission_driven
+    conditions:
+    - multi_unit_consistency
+    - sub_unit_identity
+    - multi_entity
+    archetypes:
+    - multi_brand_architecture
+    - brand_experience_guide
+  dependencies:
+    requires:
+    - Brand Strategy
+    - Visual Identity
+    enables:
+    - Governance
+    - Legal and Trademark
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 各單位自行創造分支品牌與專屬識別
+  - 讓子計畫形成第二個獨立品牌
+  - 部門自創獨立主品牌
+  - 差異化元素覆蓋 title/text、submark 或 sponsor zones
+  - 地方社群自創與母品牌脫節的識別
+  - 各單位自行創造分支品牌與專屬 tagline
+  - 只列 logo 圖檔卻不給「何時用 umbrella、何時用單一機構」的判斷規則
+  - 各單位自行創造分支品牌與專屬標誌語言
+  - 用 Project logo 替代 Foundation legal identity
+  - 各單位自行創造分支品牌
+  - 只列 logo 圖檔卻不給「何時用母體規範、何時用單一機構」的判斷規則
+  - group name 比主品牌 logo 更顯著
+  - 把所有 logo 資產平鋪而不依用途分類
+  - 只列 logo 圖檔卻不給判斷規則
+  - 各 property 自行發展識別造成 masterbrand fracture
+  - 把 endorsement tagline relegated to mouse type 或埋入 legal copy
+  evidence:
+  - brand_id: arte_2008_compressed
+    chapter: ch-04
+    excerpt: Sublogo architecture：masterbrand + descriptor、programme title with/without ARTE；母品牌歸屬必須清晰，但節目品牌需有空間表現多樣性，為子品牌定義固定母品牌元件與可自由設計元件。
+  - brand_id: BCHydro_brand_guidelines_2019
+    chapter: ch-01
+    excerpt: 重新整合 Power Smart 與 BC Hydro，power smart 應作為公司行為／目的而非獨立計畫，品牌素材必須連回 BC Hydro，不得形成第二個獨立 Power
+      Smart 品牌。
+  - brand_id: Berkeley_Brand_Manual_accessible_2019
+    chapter: ch-08
+    excerpt: Institutional Brand Architecture：master brand → primary/secondary sub-brand → collaborations，用
+      decision flow chart 分類單位；所有 unit lockups 需 Office of Communications & Public Affairs approval。
+  - brand_id: Bern_Stadt_2021
+    chapter: ch-05
+    excerpt: Umsetzungen Dachmarke：Dienststelle 在城市 umbrella brand 下用部門色、圖像、字體玩法建立辨識，但 sender 保持市府；產品與服務改變，sender
+      不變。
+  - brand_id: BMW_Clubs_2020
+    chapter: ch-02-01
+    excerpt: 以全球 logo 系統讓 official BMW Clubs 可被辨識為 sender，同時保留 club signet 差異；母品牌固定 + club signet 可差異，解決全球社群的一致與個性衝突。
+  - brand_id: Brickline_Greenway_Brand_Guidlines_2020
+    chapter: ch-06
+    excerpt: governance-to-application framework：endorsement hierarchy → lockup rules → templates → spatial
+      translation；GRG lockup 需核准比例，應用物需保留 Brickline Greenway 主體識別。
+  - brand_id: CalvinKlein_Logo&GraphicGuidelines_2017
+    chapter: ch-01-03
+    excerpt: 用 logo architecture chart 把 Master Brand、業務線與品類對應到 logo 層級；任一應用需先標記 business line，logo architecture
+      是品牌治理的 decision table。
+  - brand_id: CalvinKlein_Logo&GraphicGuidelines_2017
+    chapter: ch-02-03
+    excerpt: 同一品類中不同 tier（premium/mainline/off-price）不能共用模糊標誌；tier 是 logo 選擇的屬性，應成為資料欄位。
+  - brand_id: Clayton_Homes_BrandGuideline_2021
+    chapter: ch-01-03
+    excerpt: Clayton family of brands 都應支撐 quality home 與 rewarding 體驗；多品牌可以保留差異，但必須共享顧客體驗與信任主張，architecture
+      章節是 identity governance 的索引層。
+  - brand_id: Dubai_BRAND_GUIDELINES_2021
+    chapter: ch-02
+    excerpt: 在 umbrella architecture 下管理 Department of Tourism、Dubai Calendar、City of Dubai、Dubai Business
+      Events、Government 等 brandmark；brandmark taxonomy 需同時描述誰可用與用在哪種情境。
+  - brand_id: European_Committee_of_the_Regions_visual_identity_EN_2019
+    chapter: ch-04-01
+    excerpt: 為六個 commission（CIVEX、ENVE、COTER、NAT、ECON、SEDEC）指定專屬 HEX 與 diamond-based layout，用 masterbrand
+      anchor + commission colour + scaled diamond 維持差異又保留 CoR 主識別連結。
+  - brand_id: First_Bank_Brand_Guidelines_2021
+    chapter: ch-02-02
+    excerpt: Mortgage Services、Wealth Management、Private Banking 以 endorsed identity、controlled differentiation、master
+      brand priority 使用核准 lockup；非核准業務不得自行建立 lockup，以有限例外管理 portfolio complexity。
+  - brand_id: FirstBank_Corporate_Identity_Guidelines
+    chapter: ch-03
+    excerpt: Product and Service Brand Architecture 以 endorsed flexibility 管理既有與未來產品命名：未來名稱採 DESCRIPTOR
+      followed by FIRST、FIRST 用 corporate identity font、產品 logo 採 70/30 藍金比例；品牌架構不只定義理想狀態，也要治理歷史例外與未來命名。
+  - brand_id: FirstBank_Corporate_Identity_Guidelines
+    chapter: ch-02
+    excerpt: SSA market 以例外表管理跨國市場的命名、語言、象徵物與社群 avatar，避免市場擴張破壞主品牌，而不是讓在地團隊自行詮釋。
+  - brand_id: Heathrow_Brand_guidelines_2018
+    chapter: ch-02
+    excerpt: Service Lock-ups 讓多服務、多部門、多 tier 的機場組織在同一品牌架構下被辨識：服務可被區分，但不能脫離 Heathrow 母品牌；品牌內部可建立視覺子模式，而非建立子品牌。
+  - brand_id: HKUST_BRAND_GUIDELINES_2022
+    chapter: ch-04-01
+    excerpt: 附屬單位標誌需納入大學身份並遵守字體、間距與審核流程；附屬單位可以被識別，但不能凌駕或稀釋母品牌，用母品牌左側、附屬識別右側、共享 X-based spacing 管理多品牌關係。
+  - brand_id: IBM_Be_Equal_2020
+    chapter: ch-02-01
+    excerpt: Be Equal logo、logotype 與 Community IDs 三層識別共用 IBM Eye-Bee-M 母系統，社群可有專屬變體但需明確界定組合規則；用既有設計語言生成子品牌，避免另起爐灶。
+  - brand_id: IBM_Be_Equal_2020
+    chapter: ch-01-02
+    excerpt: 先定義 Women、LGBT+、DiversABLE、Veterans 等社群模型，再給每個社群專屬視覺變體；社群資產不得以未列入的自創標語取代 approved system。
+  - brand_id: IBM_ThinkSummit_2020
+    chapter: ch-02-02
+    excerpt: 建立 Think、Think Summit、Think Leadership 與 PartnerWorld 的層級關係，用 lockup family 管理全球活動 portfolio；命名層級必須能被視覺層級準確反映，子活動以同一
+      lockup grammar 建立可辨識家族。
+  - brand_id: IBM_ThinkSummit_2020
+    chapter: ch-02
+    excerpt: 把母品牌 IBM、Think 字標、活動名稱與 PartnerWorld 等關係拆成可核准的 lockup；品牌一致性來自可控組合，而不是禁止所有變體。
+  - brand_id: Klepierre_Charte_graphique_2013
+    chapter: ch-07
+    excerpt: marques internes 使用 symbol gradient 且不附 Klépierre typography；marques filles 使用完整 logo（symbol
+      + typo + colours）；不同品牌層級應有不同的母品牌可見度與獨立性。
+  - brand_id: MG_investments_identity guidelines_2014
+    chapter: ch-01-02
+    excerpt: masterbrand-led architecture：shared core → business-specific adaptations → approval control；子業務不得自行發明與核心品牌無關的識別。
+  - brand_id: MG_investments_identity guidelines_2014
+    chapter: ch-07
+    excerpt: 子品牌不應另起爐灶，而應透過受控變體反映受眾與產品差異；Institutional materials 使用核准 stationery 與 monotone photography，joint
+      materials 不得破壞 M&G 層級。
+  - brand_id: middlecap_design_manual_2019
+    chapter: ch-05
+    excerpt: division logo 由基本標誌加上下方 division name 組成，不建立獨立子品牌語言；不得改變主標誌比例，多部門品牌應建立命名槽位、位置與比例規則以避免品牌碎片化。
+  - brand_id: mojaloop_Brand_Guidelines_2020
+    chapter: ch-01-01
+    excerpt: Foundation logo 指涉實體組織，Project logo 指涉開源專案；不得用 Project logo 替代 Foundation legal identity，品牌資產應反映組織結構。
+  - brand_id: mojaloop_Brand_Guidelines_2020
+    chapter: ch-01
+    excerpt: 品牌若有多個治理主體，guideline 應先定義哪個 logo 代表哪個 legal/operational entity，再處理 type/color/photography。
+  - brand_id: Musee_zadkine
+    chapter: ch-01
+    excerpt: 建立 Musée Zadkine 的基礎識別語言，同時明確指出所有延展需服從巴黎市政府的總體規則；文化機構 guideline 應把總管理機構規則寫在開頭，避免地方品牌與母體規範衝突。
+  - brand_id: Musee_zadkine
+    chapter: ch-04-01
+    excerpt: 參觀摺頁與宣傳摺頁需依巴黎市政府 charte 並使用 VistaSans；母機構 charte 與子品牌 palette 可透過字體遵母、色彩取子方式共存。
+  - brand_id: NIU_Brand_Identity_2022
+    chapter: ch-04
+    excerpt: 大學品牌需同時允許單位多樣性與機構整體一致性；提供分散式組織管理 sub-brand、logo 與媒體素材的可重用模式。
+  - brand_id: NZ_Transport_Agency_brand_guidelines_2019
+    chapter: ch-01
+    excerpt: 公共機構品牌需要一致、可追溯、可審核，且在合作關係中清楚表達責任歸屬；可複用為政府與大型公共服務品牌的 modular brand manual：核心識別、共同品牌、應用模板與特殊關係分層管理。
+  - brand_id: NZ_Transport_Agency_brand_guidelines_2019
+    chapter: ch-06
+    excerpt: 使用情境式決策框架：先判斷主導者／合作關係／媒介，再選擇核准的 logo、模板與版面。
+  - brand_id: Oxford_SU_Guidelines_v2a
+    chapter: ch-01-04
+    excerpt: 把核心 logo 擴展到組織、子品牌、夥伴與 pattern 的治理，讓子品牌可被識別，但須在不破壞品牌延展完整性的前提下使用。
+  - brand_id: PUCP_Manual
+    chapter: ch-05
+    excerpt: 用 Nivel 1-4、色彩指派、字體權重與 cerramientos 管理大型教育機構的多單位品牌架構。
+  - brand_id: Quaint_Oak_Bank_Brand_Guidelines_2013
+    chapter: ch-03
+    excerpt: 管理多業務線品牌關係，讓各 division 能獨立運作但不脫離母品牌信任；分支可具差異，但信任背書必須一致，並以可測量 endorsement 規則避免子品牌失聯。
+  - brand_id: Slack-Brand-Guidelines
+    chapter: ch-02-03
+    excerpt: 品牌架構應讓差異可被看見，但不能削弱 master brand；以 master brand → offering/partner/department/team lockups
+      控制多種品牌關係。
+  - brand_id: Stifel_brand_guidelines_2019
+    chapter: ch-01-02
+    excerpt: sub-brand containment：department name、group name、individual name 都從屬於 corporate logo；group
+      name 不得比 Stifel logo 更 prominent，未列明名稱需特別許可。
+  - brand_id: The_Economist_Group_2017
+    chapter: ch-03-02
+    excerpt: portfolio identity system：sub-brand logos grouped by editorial、media business、intelligence
+      unit、apps/social icons；group logo clear space 與 core logo 一致。
+  - brand_id: ulster_university_Brandbook
+    chapter: ch-03-01
+    excerpt: 標誌處理 corporate、creative、portrait、faculty、sub-brand、co-branding 等場景；不得使用未核准 sub-brand lockup，多品牌大學用
+      lockup governance 控制學院與研究單位擴散。
+  - brand_id: USAToday_Online_Brand_guidelines_2014
+    chapter: ch-02
+    excerpt: 所有帶 USA TODAY 名稱的品牌識別都必須遵循 identity system；masterbrand equity flows from and contributes
+      to the Masterbrand。
+  - brand_id: USAToday_Online_Brand_guidelines_2014
+    chapter: ch-04
+    excerpt: 子品牌以顏色與 label 加到 USA TODAY logotype，不自成獨立識別，應服務導航與內容辨識而非與 masterbrand 競爭。
+  - brand_id: WM_Brand_Guidelines
+    chapter: ch-07
+    excerpt: A WarnerMedia Company 是特製 artwork，用來表達 WarnerMedia 與 divisions/companies 的關係；endorsement
+      必須可見、可辨識，不得 relegated to mouse type 或埋入法律資訊。
+  - brand_id: WouldBankGroup_Branding_Visual_Identity_Guidelines_2016
+    chapter: ch-03
+    excerpt: 局部單位可以被識別，但不能競爭或替代母品牌；大型系統可用『可辨識但不獨立』的 secondary line 管理內部單位。
+  - brand_id: WouldBankGroup_Branding_Visual_Identity_Guidelines_2016
+    chapter: ch-01
+    excerpt: 任何多實體品牌系統都需要先建立『誰在說話』的判斷層，再談 logo 放置。
+  evidence_brand_count: 33
+  confidence: 0.95
+  status: verified
+- id: dp-monochrome-logo-by-contrast
+  title: 用背景對比決定單色標誌，而非開放自由配色
+  problem:
+    statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+    signals:
+    - logo_misuse_risk
+    - photo_backgrounds
+  solution:
+    module: Visual Identity
+    move: 以背景明暗與照片複雜度建立對比決策樹，限定白／深色兩種標誌
+    layer: visual_core
+  reason:
+  - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+  - Logo 顏色規範應基於對比與背景風險，而非只列色票
+  - 標誌指南應分離「資產版本」與「使用情境」，由背景與媒介決定版本
+  - 背景規則應以「允許背景集合」而非「無限自由」描述，複雜背景預設視為高風險
+  - 早期成長品牌需要簡潔可擴張的標誌資產，避免太多變體造成辨識分散
+  - 核心識別需少而穩定；例外使用必須被明確圈定
+  - logo 規範可將背景分成 light、dark、corporate colour、confused image，對每類給明確版本
+  - 小型商標 guideline 的核心是減少選項與例外，而不是建立完整設計系統
+  - 變體應是受控 fallback，而不是創意自由
+  - logo 應先滿足辨識與對比，再考慮美觀
+  - logo usage 可以借用 accessibility contrast concept 讓審核更客觀
+  - 可讀性優先於單一色彩執著；背景越複雜越需要更高對比
+  - 品牌彈性應以 approved variants 實現，而不是讓使用者創造新 logo
+  - logo 色彩規範應明確連到輸出方式與背景品質
+  - 背景複雜度是 logo version selection 的關鍵，不應只靠設計者目測
+  - 對比與可讀性是 logo 變體選用的主要依據
+  - 數位 logo 規範應提供 contrast fallback，而非只禁止錯誤背景
+  - 再簡潔的 logo 也會因錯誤背景而不可讀；legibility 是第一判準
+  - 版本選擇應由背景條件決定，而非使用者偏好
+  - 用背景 luminance/黑度建立 logo 版本規則，比單純列「深色/淺色」更可檢查
+  - 背景表面分類可作為任何 logo guideline 的通用檢查框架
+  applicable_when:
+    industries:
+    - finance
+    brand_types:
+    - platform_ecosystem
+    conditions: []
+    archetypes:
+    - brand_experience_guide
+    - full_brand_system
+    - logo_asset_guidelines
+    - product_design_system
+  dependencies:
+    requires:
+    - Visual Identity
+    enables:
+    - Accessibility
+    conflicts_with: []
+  examples: []
+  anti_patterns: []
+  evidence:
+  - brand_id: 2022_Special_Olympics_USA_Games_Brand_Guidelines_2020
+    chapter: ch-03-02
+    excerpt: 標誌版本應由媒介條件與對比需求決定，不由個人喜好決定；深色或低對比背景使用 white logo。
+  - brand_id: 2022_Special_Olympics_USA_Games_Brand_Guidelines_2020
+    chapter: ch-04-02
+    excerpt: 漸層背景上只使用 white single color logo，以維持對比與清晰度。
+  - brand_id: accor_hotels_2015_compressed
+    chapter: ch-02-05
+    excerpt: logo 背景規則應包含照片複雜度判斷：彩色 logo 用於白色/淺底，深藍底用白色文字且 goose 維持 honey，照片背景須非常明或非常暗且避免 busy background。
+  - brand_id: Afterpay_Merchant_Guidelines_US_2020
+    chapter: ch-02-01
+    excerpt: 用背景明度選擇 logo 色版：依背景條件選擇黑、白或 Bondi Mint lock-up，Bondi Mint lock-up 只可在黑底使用，對比與呼吸空間優先於填滿版面。
+  - brand_id: Amazon_Brand_Usage_Guidelines
+    chapter: ch-03-01
+    excerpt: 背景明暗決定選擇 color/reversed/one-color 版本；不得把 logo 放在 patterned background，one-color smile 不得灰色。
+  - brand_id: arte_2008_compressed
+    chapter: ch-03
+    excerpt: orange-like background → white logo；黑白印刷以 50% black 或 white，不用純黑；logo 顏色依背景對比決定而非自由配色。
+  - brand_id: AXA_Design_principles_2017
+    chapter: ch-02-02
+    excerpt: Asset Version Matrix：solid 用於企業與高可視性，open blue/white 用於溝通與影像背景；logo 在所有背景上必須保持 legible。
+  - brand_id: Barbican_Centre_brand_guidelines_2017
+    chapter: ch-02-03
+    excerpt: logo full-circle 必須與背景形成對比，Barbican word 與半圓需形成黑／白或設計色對比；背景對比與可讀性決定 logo 顏色。
+  - brand_id: bitcoin_Brand_Guidelines
+    chapter: ch-03
+    excerpt: 背景決策框架：背景亮度／複雜度 → asset version → contrast check → forbidden effects；白底用標準、深灰/黑底用深色版、複雜背景視為高風險，並禁止
+      stretch、shadow、gradient、transparency。
+  - brand_id: Bolt_Brand_Guidelines_2019
+    chapter: ch-02
+    excerpt: 以 primary logo 與 inverse logo 確保標誌在明暗背景上維持可讀，inverse 是環境適配；不得在低對比背景使用或自行改比例。
+  - brand_id: CDB_BrandIdentityManual
+    chapter: ch-02-02
+    excerpt: 依 background/reproduction need 選用 full colour、flat colour、B&W、reverse colour、reverse B&W
+      版本；不得使用未授權色彩，印刷廣告最小 logo diameter 25mm。
+  - brand_id: Central_Bank_of_Bahrain_Brand Identity Guidelines
+    chapter: ch-01
+    excerpt: 以 background brightness / reproduction mode 決定 logo 版本：light 用 primary，dark 用 white reverse，黑白/灰階用
+      black-only。
+  - brand_id: DELL_BRANDBOOK_2010
+    chapter: ch-02-03
+    excerpt: Dell Blue logo 只能用於白底，white logo 用於 solid color/imagery，light/dark gray logo 不得置於彩色背景；變體依背景對比選用而非自由配色。
+  - brand_id: destination_canada_brand_booklet
+    chapter: ch-03-01
+    excerpt: logo 預設使用紅色，紅色或深色背景使用白色反白；最小尺寸 10mm / 28px，avatar 僅作社群頭像，例外使用被明確圈定。
+  - brand_id: Dubai_BRAND_GUIDELINES_2021
+    chapter: ch-02
+    excerpt: Department of Tourism 白版用於深色背景、藍版用於白／淺色背景；original colours 僅用於全白或全黑且無圖片背景，依背景對比選用而非自由配色。
+  - brand_id: LucidMotors
+    chapter: ch-02-04
+    excerpt: 用背景明暗與照片複雜度決定標誌顏色；dark/color/photo→White，light→Charcoal，背景太忙時不可放 wordmark。
+  - brand_id: Google_for_Work_Brand_Book
+    chapter: ch-02-01
+    excerpt: logo variant selection 以背景決定：full color preferred，photo/light 背景用 54% black，medium/dark 背景用
+      reverse，以對比而非自由配色選擇標誌版本。
+  - brand_id: Huawei_Visual_Identity_Guidelines
+    chapter: ch-02-01
+    excerpt: 背景複雜或對比不足時需改用 monotone black 或 reversed white，以背景條件而非自由配色決定標誌顏色。
+  - brand_id: Klepierre_Charte_graphique_2013
+    chapter: ch-01
+    excerpt: 彩色 logo 不得放深色背景；白色 logo 需在 corporate colours 存在時使用；用不同背景情境區分 positif、négatif、cartouche 與
+      monochrome exception。
+  - brand_id: MA_Style-Guide_
+    chapter: ch-02-01
+    excerpt: 不得改色、拉伸、扭曲、加濾鏡或置於低解析與低對比背景；深底可反白，淺底用 charcoal/black。
+  - brand_id: McDelivery_brandbook_2017
+    chapter: ch-02-02
+    excerpt: wordmark 在淺底用黑、深底用白；低對比背景使用 single color logo，全球一致性優先但已核准區域色彩可在清楚限制下存在。
+  - brand_id: Michelin_DISTRIBUTOR_GUIDE_2019
+    chapter: ch-02-02
+    excerpt: 依 light、yellow、dark、mono 背景選擇版本；wordmark 在深色背景為白、support line 在黃色背景改藍，背景需為均質色區，可讀性優先於裝飾整合。
+  - brand_id: Microsoft_Bing_Logo_icon_2020
+    chapter: ch-03
+    excerpt: light/white background 使用 positive version；dark background 或照片暗部使用 knock-out version；不得選用導致低對比或不可讀的版本。
+  - brand_id: middlecap_design_manual_2019
+    chapter: ch-02-03
+    excerpt: 深色背景使用白色版；單色需求使用核准深灰/白版本；favicon 不使用完整字標，變體應是受控 fallback。
+  - brand_id: mojaloop_Brand_Guidelines_2020
+    chapter: ch-01-03
+    excerpt: 所有 logo 背景對比至少 5:1；背景深於 30% black 時使用白色版，淺色背景使用黑色版，彩色版限不超過 10% black 的背景。
+  - brand_id: Musee_zadkine
+    chapter: ch-01-01
+    excerpt: 黑版僅用於黑白或極端 reproduction 條件；白版用於彩色、深色、深色攝影或複雜背景；不得任意改 logo 色。
+  - brand_id: Nintendo_Corporate_Identity_Graphics_Standards_Manual_2008
+    chapter: ch-04
+    excerpt: 建立 logo 顏色決策樹：白底優先用標準灰，灰色可見度不足時用白，白色不足時才用黑，並不得新增其他 logo 顏色。
+  - brand_id: starling_bank_brand_guidelines
+    chapter: ch-02-03
+    excerpt: 白底與淺色背景使用 primary colourway，深色背景使用 light colourway，高彩度亮色背景使用 white colourway；不得在低對比背景使用 primary
+      logo。
+  - brand_id: Sterling_Brand_Guidelines
+    chapter: ch-02-01
+    excerpt: 照片或色彩背景上使用 reverse logo 並確保可讀；有限色彩或低品質複製時 monochrome 僅限 black、white、light gray，不得錯放在紅底上。
+  - brand_id: Stifel_brand_guidelines_2019
+    chapter: ch-01-01
+    excerpt: 數位與彩色印刷優先使用 Stifel Blue 或 white，黑版只用於黑白印刷或單色 imprints，影像背景不得干擾 logo（output-aware logo color
+      selection）。
+  - brand_id: TheEmirates_LogoGuidelines
+    chapter: ch-01-01
+    excerpt: 影像或影片上只能用單色白／黑 logo 並確保最高對比；full-colour logo 不得覆蓋影像或影片。
+  - brand_id: Tokyo_2020_NOC_Olympic_emblem_2018
+    chapter: ch-02-02
+    excerpt: background decision tree：white background → full colour；photographic/coloured/complex background
+      → boxed/white/black variant per contrast；不得在色底上直接使用 full-colour emblem。
+  - brand_id: Tripadvisor_Logo_Guidelines_2020
+    chapter: ch-04
+    excerpt: logo 理想上以黑色用於淺色品牌色或清楚背景；若背景複雜或深色，不得直接使用主要黑色版本，應改用相容的 secondary/dark-background 版本。
+  - brand_id: Tripadvisor_Logo_Guidelines_2020
+    chapter: ch-03-03
+    excerpt: Background Compatibility Matrix：light background 與 dark background 對應不同資產；對比與可讀性是 logo 變體選用的主要依據。
+  - brand_id: twitter_brand_guidelines_2020
+    chapter: ch-02-03
+    excerpt: Twitter logo 永遠為 blue 或 white；image background 上必須使用 white，淺色圖片加 10-20% black tint 以維持 white
+      logo 可讀。
+  - brand_id: VISA_Digital_Brand Guidelines_2018
+    chapter: ch-02-01
+    excerpt: 'Visa Brand Mark 只能用 blue #15195A 或 white #FFFFFF；monochrome screen 用深色背景加白色 mark，背景對比不足時用卡片比例
+      rounded rectangle staging。'
+  - brand_id: WM_Brand_Guidelines
+    chapter: ch-03
+    excerpt: 白/淺背景用 positive version、深背景用 reverse version；不得放在讓 identity 難以閱讀的顏色、圖案或照片上。
+  - brand_id: YNCU_Graphics_Standards_2019
+    chapter: ch-04-01
+    excerpt: 10% black 或更淺背景使用 full colour；30% black 背景使用 100% black；50% black 或更深背景使用 reverse；textured
+      background 需人工確認 legibility。
+  - brand_id: YNCU_Graphics_Standards_2019
+    chapter: ch-02-01
+    excerpt: Version decision matrix：full color、black/white、reversed、on green、on grey；全彩可行時優先使用 primary
+      colour version，背景條件決定版本。
+  - brand_id: ZAG_brand_guidelines
+    chapter: ch-03-01
+    excerpt: positive on light、negative on blue/dark、black-white for monochrome reproduction；過於異質而導致不可讀的背景不得放置
+      logo/logotype。
+  evidence_brand_count: 37
+  confidence: 0.95
+  status: verified
+- id: dp-name-usage-governance
+  title: 用名稱使用規則治理品牌正式稱謂與縮寫，避免權威被稀釋
+  problem:
+    statement: 品牌的正式名稱、縮寫與商標符號若放任各單位、媒體或文件自由書寫，會出現多種非正式簡稱與錯誤寫法，稀釋機構權威與商標權利。
+    signals:
+    - name_governance
+    - trademark
+    - abbreviation_misuse
+    - authority_dilution
+  solution:
+    module: Legal and Trademark
+    move: 明訂首次提及用全名、後續用核准縮寫，並列出禁用變體與商標符號規則
+    layer: governance
+  reason:
+  - 機構或商標型品牌的名稱本身是信任與法律資產，不能被隨意簡化
+  - 用「首次提及／後續縮寫／禁用變體」三段式規則可直接轉成 copy lint
+  - 名稱治理是品牌系統的一部分，與 logo 一樣維持識別一致
+  applicable_when:
+    industries:
+    - finance
+    - public_sector
+    - luxury_premium
+    brand_types:
+    - institutional_public_trust
+    - heritage_legacy
+    - premium_luxury
+    conditions:
+    - trademark
+    - name_governance
+    archetypes:
+    - corporate_toolkit
+    - brand_experience_guide
+    - logo_asset_guidelines
+  dependencies:
+    requires:
+    - Governance
+    enables:
+    - Content Design
+    - Legal and Trademark
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 只給 logo 規範卻不規範文字中的名稱與縮寫寫法
+  - 放任媒體與內部文件自創簡稱
+  evidence:
+  - brand_id: Central_Bank_of_Bahrain_Brand Identity Guidelines
+    chapter: ch-03
+    excerpt: 首次引用使用 Central Bank of Bahrain，後續使用 CBB；禁用 Bahrain’s Central Bank、Central Bank、CB of Bahrain、CB，金融監管機構的名稱是信任資產。
+  - brand_id: Coldwell_Banker_2020
+    chapter: ch-06
+    excerpt: Coldwell Banker Global Luxury® 首次出現需加 ®；不得縮寫為 CB Global Luxury、CBGL 或複數化；COLDWELLBANKERLUXURY.COM
+      standalone 需 uppercase/no spaces。
+  evidence_brand_count: 2
+  confidence: 0.7
+  status: verified
+- id: dp-one-brand-one-voice-governance
+  title: 以「one brand, one voice」治理目標收束跨產品跨夥伴的一致性
+  problem:
+    statement: 跨地區、跨產品、跨商戶的大型品牌，若缺乏統一治理目標，每個團隊各自詮釋會讓品牌在不同媒介中碎裂。
+    signals:
+    - consistency_across_partners
+    - ecosystem_consistency
+    - brand_fragmentation_risk
+    - multi_market
+  solution:
+    module: Governance
+    move: 把規範拆成 term dictionary、trademark rules、approved boilerplates，並以交付前 checklist 自我審核
+    layer: governance
+  reason:
+  - 將品牌規範拆成可被非品牌專家使用、可檢查的知識結構管理一致性
+  - 品牌治理的最後一步不應依賴記憶，而應依賴檢查清單
+  - 將品牌規範拆成可被非品牌團隊使用、可檢查的知識結構管理一致性
+  - 多利害關係人的設計系統需要 messaging toolkit，而不是只交付 logo files
+  - 高端品牌不是只靠視覺維持，而是靠所有通路避免把產品商品化、折價化與誤導化
+  - 品牌手冊可把「品牌一致性」連到營運資格與資金規則，提升執行者遵循動機
+  - 嚴重違規章節結尾配置 enforcement overview，可提升規則權重
+  - 清晰優先、一致優先、可辨識優先；創意被允許，但必須在不破壞全球品牌一致性的前提下發生
+  - 將品牌規範拆成六類資料，讓不同團隊用同一種知識結構管理一致性
+  - 以品牌四問與 checklist 形成設計交付前的自我審核機制
+  - 集團品牌訊息可整合組織內部差異，而不是新增一個口號
+  - 策略訊息需要分層 deployment，不是所有資產都同等套用
+  - 把 brand message rollout 寫成應用矩陣，是大型組織可複用模式
+  - 創意被允許，但必須在不破壞全球品牌一致性的前提下發生
+  - 強品牌從不妥協 core，但在 customer context 中探索執行
+  - 多市場品牌 guideline 可明確區分 centrally governed identity 與 locally decided activation
+  applicable_when:
+    industries:
+    - tech_software
+    - finance
+    - public_sector
+    - nonprofit_social
+    - media_entertainment
+    - new_energy_mobility
+    brand_types:
+    - platform_ecosystem
+    - institutional_public_trust
+    - heritage_legacy
+    conditions:
+    - consistency_across_partners
+    - multi_market
+    archetypes:
+    - corporate_toolkit
+    - brand_experience_guide
+    - multi_brand_architecture
+  dependencies:
+    requires:
+    - Brand Strategy
+    enables:
+    - Governance
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 只給視覺風格而無交付前審核點
+  - 只交付 logo files 而無 messaging toolkit
+  - 只給視覺風格而無交付前審核點，讓使用者憑審美直覺操作
+  evidence:
+  - brand_id: BlackBerry_Cylance_Brand_Guidelines_2019
+    chapter: ch-05
+    excerpt: 以 Preflight Checklist Framework 收斂規則：交付前檢查 trademark、company/product name distinction、cybersecurity
+      詞形、Oxford comma、AI/ML 重複、updated assets。
+  - brand_id: Brickline_Greenway_Brand_Guidlines_2020
+    chapter: ch-02
+    excerpt: Messaging Toolkit 以 brand story、principles、audience、tone/vocabulary、sample messages 與 do/don'ts
+      降低多方協作中的語氣漂移，讓不同夥伴、社群與機構用一致語言說明 Greenway。
+  - brand_id: Mercedes_Benz_BrandStandards_2015
+    chapter: ch-01
+    excerpt: governance chain：dealer communication → MBBCS rules → MBCCS consult/monitoring → bonus eligibility
+      → brand equity protection；品牌手冊把品牌一致性連到營運資格與資金規則。
+  - brand_id: Mercedes_Benz_BrandStandards_2015
+    chapter: ch-02-05
+    excerpt: Category I 違規應被記錄、分類並與獎金資格連動；品牌治理必須包含可預期後果，才會被分散組織認真執行。
+  - brand_id: Paypal_Corporate_master_brand_guidelines_2013
+    chapter: ch-01
+    excerpt: 以 one brand, one voice 為治理目標，連結品牌承諾、視覺識別、商戶資產與審核清單。
+  - brand_id: Paypal_Corporate_master_brand_guidelines_2013
+    chapter: ch-05
+    excerpt: 以品牌四問、brand checklist 與術語表形成設計交付前的自我審核機制。
+  - brand_id: sony_make_believe_2009
+    chapter: ch-01
+    excerpt: 在跨電子、娛樂、設計與工程的 Sony 集團內建立單一品牌訊息，整合組織內部差異而非新增口號。
+  - brand_id: sony_make_believe_2009
+    chapter: ch-02
+    excerpt: usage matrix framework：business area → communication type → mandatory/recommended/not permitted；策略訊息需要分層
+      deployment。
+  - brand_id: Volvo_2021_compressed
+    chapter: ch-01-01
+    excerpt: Core ≈20% / Explore ≈80% brand management model：non-negotiable core 與 local activation explore
+      區分品牌治理與情境執行。
+  evidence_brand_count: 6
+  confidence: 0.95
+  status: verified
+- id: dp-origin-story-before-rules
+  title: 先把使命變成共用語言系統，再進入視覺規範
+  problem:
+    statement: 公益／使命型品牌若一開始就談視覺規範，色彩、攝影與字體會失去策略根基，淪為各自詮釋的風格選擇。
+    signals:
+    - mission_communication
+    - no_strategic_foundation
+    - participation
+    - new_identity
+  solution:
+    module: Brand Strategy
+    move: 先用 voice attributes → mission → tagline → short/long description 把使命轉成可被全員共用的語言系統，再讓視覺承接其意義
+    layer: strategy
+  reason:
+  - 先把使命從公益願景變成可被員工、設計師與文案共同使用的語言系統，避免後續視覺規範失去策略根基
+  - 語言章節是後續 visual identity 的意義來源，讓色彩與影像不只是風格而承載使命
+  - 先把使命變成可被員工、設計師與文案共同使用的語言系統，避免後續視覺規範失去策略根基
+  - 小型品牌可用 one-page brand map 作為所有視覺規範的語義 anchor
+  - 品牌不只在 logo，而是在信封、工作坊準備、電話回應等行為中被感知
+  - 視覺識別應從組織運作模型中生成，而非只做裝飾
+  - 品牌先建立共同信念，再授權執行；目的地需要從地理資訊轉成心理經驗
+  - 倡議型品牌可先規範信念、行為與參與資格，再規範視覺，以降低空泛價值陳述
+  applicable_when:
+    industries:
+    - nonprofit_social
+    - consumer_retail_hospitality
+    brand_types:
+    - mission_driven
+    - institutional_public_trust
+    conditions:
+    - new_identity
+    - mission_communication
+    archetypes:
+    - full_brand_system
+    - brand_experience_guide
+  dependencies:
+    requires: []
+    enables:
+    - Visual Identity
+    - Voice and Tone
+    - Messaging
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 先寫 logo／色彩規格，把使命只放在封面口號
+  evidence:
+  - brand_id: 2022_Special_Olympics_USA_Games_Brand_Guidelines_2020
+    chapter: ch-01
+    excerpt: 此章先建立 Special Olympics 的道德與歷史正當性；若沒有它，後續標誌、色彩與語言規則會缺少『為誰而做、為何而做』的判準。社會使命型品牌指南必須先定義價值來源，否則視覺規則容易與使命脫節。
+  - brand_id: CCFB_BrandGuidelines_v3b
+    chapter: ch-01
+    excerpt: 在進入 logo 技術前先以 definition → difference → relevance → competencies → reputation → personality
+      定義組織如何被理解，讓 orange、wheel、coin slot 等圖形有組織意義。
+  - brand_id: Consistent_communications_Brand_Guidelines_2018
+    chapter: ch-01
+    excerpt: 先把 brand 定義成組織人格與被感知方式（brand personality → visual identity tools → governance by communications
+      team），再以 weave metaphor 從 civic dialogue 與 collaboration 生成視覺語言。
+  - brand_id: destination_canada_brand_booklet
+    chapter: ch-01
+    excerpt: 先讓內部讀者進入「加拿大不是地圖上的地點，而是邀請與連結」的情緒場，避免後續規範被讀成單純識別手冊；用 manifesto 先定義目的地的精神角色。
+  - brand_id: destination_canada_brand_booklet
+    chapter: ch-02
+    excerpt: 以 story → belief（Travel should change you）→ promise → signature（Canada. For Glowing Hearts.）的三段式框架，先建立共同信念再授權執行。
+  - brand_id: IBM_Be_Equal_2020
+    chapter: ch-01
+    excerpt: 先建立 Be Equal 不是活動口號，而是 IBM 多元共融策略的平台化介面；若缺少此章，後續視覺規範會失去道德與組織行動的依據；倡議型品牌可先規範信念、行為與參與資格，再規範視覺。
+  - brand_id: IBM_Be_Equal_2020
+    chapter: ch-01-01
+    excerpt: 用字典式拆解 be 與 equal，把名稱本身變成 expand/enable/ensure 的行動承諾；品牌命名應能承載行動動詞，而不只描述價值。
+  - brand_id: KABOOM_Brand Book_2020
+    chapter: ch-01
+    excerpt: 先把『playspace equity』從公益願景變成可被員工、設計師與文案共同使用的語言系統，避免後續視覺規範失去策略根基。
+  - brand_id: KABOOM_Brand Book_2020
+    chapter: ch-01-02
+    excerpt: 使命型品牌可建立多長度 messaging set，讓敘事在募款、合作、活動與介紹情境中保持一致。
+  evidence_brand_count: 6
+  confidence: 0.95
+  status: verified
+- id: dp-palette-roles-and-usage-limits
+  title: 用色彩角色與用途限制治理調色盤，而非只給色票清單
+  problem:
+    statement: 只提供一串色票時，設計者會把任何顏色當成可自由使用，導致主色被稀釋、輔助色被誤用為大面積背景，跨應用失去一致性。
+    signals:
+    - color_governance
+    - palette_misuse
+    - brand_color_equity
+    - multi_application
+  solution:
+    module: Color System
+    move: 為每個顏色指定角色（主色／背景／文字／功能／輔助），並明訂「可作背景／不可作背景」與少量使用門檻
+    layer: visual_core
+  reason:
+  - 主色承擔品牌記憶，輔助／功能色承擔資訊與插圖，角色混用會稀釋品牌資產
+  - color token 需附用途限制（可作背景、不可作背景），才能被審稿與自動檢查
+  - 把識別色與功能色分離並對後者加治理門檻，可避免資料視覺化隨意擴色
+  - 主色承擔品牌記憶，輔助色承擔資訊與插圖功能
+  - 多品牌色彩治理應明確定義 shared tokens 與 local tokens
+  - color token 需附用途限制，才能被審稿與自動檢查
+  applicable_when:
+    industries:
+    - finance
+    - consumer_retail_hospitality
+    - luxury_premium
+    - nonprofit_social
+    brand_types:
+    - mass_consumer
+    - institutional_public_trust
+    - premium_luxury
+    conditions:
+    - color_governance
+    - multi_application
+    archetypes:
+    - brand_experience_guide
+    - full_brand_system
+    - corporate_toolkit
+  dependencies:
+    requires:
+    - Color System
+    enables:
+    - Design Tokens
+    - Accessibility
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 只給一串色票，未說明每色角色與可否作背景
+  - 讓輔助／功能色被當成大面積品牌背景
+  evidence:
+  - brand_id: Clayton_Homes_BrandGuideline_2021
+    chapter: ch-02-03
+    excerpt: 品牌直接溝通需優先使用 primary combinations，secondary colors 只能作 punctuation 或輔助，中性色提供精緻感；主色建立品牌資產，輔助色提供樂趣與區隔。
+  - brand_id: Coldwell_Banker_2020
+    chapter: ch-03-01
+    excerpt: 以 primary surfaces 搭配 specialty functional accents；UI surface 應為 black 或 white，specialty
+      colors 只能 sparingly 使用，讓攝影與材質承擔情緒。
+  - brand_id: DALENYS_Brand guidelines_2021
+    chapter: ch-03-04
+    excerpt: yellow 為 lead brand colour、white/silver 作背景、text navy 僅作文字，secondary colors 只用於 charting/illustrations/infographics
+      且不得作 flood backgrounds。
+  - brand_id: Dubai_BRAND_GUIDELINES_2021
+    chapter: ch-04
+    excerpt: 共用 Dubai Beige、Cool Grey 等中性色，再為各子品牌給差異 accent；不得將 Dubai Calendar 紅黃橘系套用於 Business Events，色彩需符合該子品牌
+      palette。
+  - brand_id: eftpos_Brand_Guidelines_2021
+    chapter: ch-02-02
+    excerpt: 色彩分成 identity colour（Waratah、Jacaranda、Eucalypt Flower、Midnight Purple）與 functional colour；functional
+      colours 僅在 primary palette 不足時少量使用，外部溝通需 approval。
+  evidence_brand_count: 5
+  confidence: 0.95
+  status: verified
+- id: dp-persona-driven-voice
+  title: 從產品行為與用戶語言抽取語氣，而非另造企業腔
+  problem:
+    statement: 平台／社群品牌若用一般企業口吻發聲，會顯得疏離、像公告，無法與用戶建立歸屬感。
+    signals:
+    - personality_expression
+    - community
+    - relatability
+    - differentiation
+  solution:
+    module: Voice and Tone
+    move: 從產品行為與用戶實際語言抽取語氣（playful/original/relatable/reliable），讓文案像朋友對話
+    layer: language
+  reason:
+  - 品牌系統必須從產品行為抽取，而不是在產品外另造裝飾語言
+  - 語氣要能反映用戶，而不只是品牌自說自話
+  - 品牌人格應從公司文化向外翻譯，而不是廣告語任意創作
+  - 人性化不等於過度隨便，尊重使用者時間是 voice 的核心
+  - B2B 品牌仍應繼承產品平台的文化，不應只轉向理性績效語言
+  - playfulness 是策略工具，不是任意搞笑
+  - voice guideline 最有用的形式是原則加情境刻度，而不是固定句型
+  - 幽默應 good-natured，幫助而不居高臨下
+  - 使用者是家人朋友等真實人，而不是交易記錄或系統對象
+  - 金融科技文案需要兼顧信任與低認知負擔
+  applicable_when:
+    industries:
+    - tech_software
+    - media_entertainment
+    - finance
+    brand_types:
+    - challenger
+    - platform_ecosystem
+    conditions:
+    - community_driven
+    - product_led
+    archetypes:
+    - brand_experience_guide
+    - product_design_system
+  dependencies:
+    requires:
+    - Brand Strategy
+    enables:
+    - Messaging
+    - Content Design
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 文案聽起來像一般科技平台公告
+  - user quote 被改寫成企業口吻
+  - 避免機器式或法律式冗長
+  evidence:
+  - brand_id: Discord_BrandGuideline_2021
+    chapter: ch-01
+    excerpt: 品牌系統必須從產品行為抽取，而不是在產品外另造裝飾語言。
+  - brand_id: Discord_BrandGuideline_2021
+    chapter: ch-01-01
+    excerpt: 語氣要能反映用戶，而不只是品牌自說自話；user quote 不應被寫成企業口吻。
+  - brand_id: Slack-Brand-Guidelines
+    chapter: ch-01-02
+    excerpt: 把品牌人格寫成『理想同事』是 B2B SaaS 可複用模式；人性化不等於過度隨便，尊重使用者時間是 voice 的核心。
+  - brand_id: TikTok_For_Business_Brand_Guidelines
+    chapter: ch-02-01
+    excerpt: smart and direct、hint of playfulness、write the way people talk；對商業受眾說話不等於變嚴肅，playfulness
+      是策略工具而非任意搞笑。
+  - brand_id: Twitch_Guidelines_Speedrun_2021
+    chapter: ch-07
+    excerpt: voice principles：Mischievous、Purposeful、Iterative、Revolutionary，回到 community energy；不只看起來像
+      Twitch，也說話像 Twitch，幽默但友善、幫助而不居高臨下。
+  - brand_id: VISA_Digital_Brand Guidelines_2018
+    chapter: ch-01-02
+    excerpt: 把『我們不是 bots』作為文案人格基準；使用者是家人朋友等真實人，而不是交易記錄或系統對象，文案應短且像人說話。
+  evidence_brand_count: 5
+  confidence: 0.95
+  status: verified
+- id: dp-personality-words-as-evaluation-criteria
+  title: 把人格詞做成創意評估準則
+  problem:
+    statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+    signals:
+    - abstract_values
+    - needs_evaluation_criteria
+    - inconsistent_outputs
+  solution:
+    module: Brand Strategy
+    move: 用人格詞集（Curious/Sharing/Free Thinking/Caring/Optimistic）當每個產出的檢查軸
+    layer: strategy
+  reason:
+  - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+  - 技術品牌不應冷硬；科學可以是好奇、慷慨且樂觀的
+  - 可複用為 brand voice QA rubric，用正向特質與負向偏差共同審核
+  - voice attribute matrix：desired quality 對應 prohibited drift
+  - AI 品牌人格應明確限制人性化程度，避免 false anthropomorphism
+  - 內容 guideline 可將抽象品牌語氣轉成 checkbox 與 brief 欄位，支援生成前檢查
+  - 好的人格系統需要能排除錯誤風格，而不是只列出理想形容詞
+  - 品牌訊息 guideline 可用少量關鍵詞與排除規則建立 LLM 可評分的語氣模型
+  - 服務品牌的 guideline 可把價值清單設計成 creative reality-check
+  - 非營利品牌需要同時表達 compassion 與 operational credibility
+  - 三支柱可作為所有產出的評估矩陣：是否清楚、是否前瞻、是否有感染力
+  - 品牌支柱應足以成為評審準則，而不是只作內部口號
+  - mission/value 可被轉譯為 accessibility、tone 和 partnership governance 的檢查規則
+  - 將 values 寫成動詞短句，可讓審稿者檢查行為是否出現
+  - 品牌行為要能指導組織成員，而不只是外部廣告調性
+  - 品牌價值可寫成內部工作方式，而不只是對外形容詞
+  - 正反語氣矩陣可作為 AI 文案 reviewer 的 rule set
+  - guideline 可把「好不好」轉成創意評估清單
+  - 每個範例標註使用了哪些 guideposts，讓評估可被學習
+  - 任何識別應用需能合理支持品牌屬性，否則應退回檢查
+  - 品牌價值若要可執行，需附上語義括號與證據來源
+  - 文化型品牌可用 purpose 作為內容篩選器，避免把文化只當裝飾
+  - guiding principles 可作為跨章節 lint rules
+  - 設計若使資訊更複雜、不可讀或缺少整體關係，即違反原則
+  - 每個語氣原則搭配 avoid criteria，是可 AI 化的文案治理模式
+  - 不要直接說 bold、inviting、fun、premium，而要讓語氣表現出來
+  - 品牌 guideline 應把人格特質寫成後續 voice 與 visual 的判準
+  - 人格章節可成為後續文案、攝影與版面的感性校準器
+  - 品牌 principle 可作為內容、產品與視覺決策的共同評分維度
+  - 用少量動詞式原則作為 SDK 與 UI 規格的上層判準
+  - 金融 UX 可把安全感拆成速度、清楚、品牌提示與預測性
+  applicable_when:
+    industries:
+    - industrial_materials_science
+    - nonprofit_social
+    - tech_software
+    - education
+    - finance
+    - consumer_retail_hospitality
+    - media_entertainment
+    - public_sector
+    brand_types:
+    - challenger
+    - category_creator
+    - mission_driven
+    - platform_ecosystem
+    - institutional_public_trust
+    - heritage_legacy
+    conditions:
+    - needs_evaluation_criteria
+    archetypes:
+    - full_brand_system
+    - brand_experience_guide
+    - product_design_system
+  dependencies:
+    requires:
+    - Brand Strategy
+    enables:
+    - Voice and Tone
+    - Visual Language
+    - Content Design
+    conflicts_with: []
+  examples: []
+  anti_patterns: []
+  evidence:
+  - brand_id: 3M_Visual_Identity_Guidelines_2015
+    chapter: ch-01-02
+    excerpt: Personality Filter：每個溝通產出需通過五個人格軸的檢查；人格詞應成為產出評估標準。
+  - brand_id: Afterpay_Merchant_Guidelines_US_2020
+    chapter: ch-01-01
+    excerpt: 把品牌價值（Keep it Real、Be Brave、Do the Right Thing、Shape the Future）轉為 partner 審核條件：是否真實、是否承擔責任、是否指向長期顧客利益，可降低跨渠道訊息漂移。
+  - brand_id: Amazon_Echo_Alexa_Guidelines_External
+    chapter: ch-03-01
+    excerpt: Alexa personality 為 approachable、efficient、trustworthy、natural，並以 is / is not 詞庫建立邊界（friendly
+      但不 fawning，natural 但不 fully human、不 robotic、不 biased），作為 approved copy 與 film portrayal 的審查軸。
+  - brand_id: Berkeley_Brand_Manual_accessible_2019
+    chapter: ch-02-02
+    excerpt: 每個 communication 至少應連結一個 key strength；voice 應符合 curious、intense、optimistic、influential、socially
+      conscious、independent、real、open；brief 需含 audience、key message、proof points、CTA。
+  - brand_id: BNP_Brand_Pass_BD_2012
+    chapter: ch-01-02
+    excerpt: Humain、Responsable、Innovant、Enthousiaste 各以『是／不是』語句轉譯，形成可訓練的 content rule set，文案不得只描述產品功能、應指出受眾利益或改變。
+  - brand_id: Bolt_Brand_Guidelines_2019
+    chapter: ch-01-01
+    excerpt: 以 Instant、Consistent、Trusted 與人格光譜（friend/classic/rebel/authority、premium/mass）定位語氣，並用『＋／－』規則：文案應
+      precise、direct、premium、professional，不得 overtly fun、self-important、fluffy。
+  - brand_id: British_airways_brand_guidelines_2007
+    chapter: ch-01-01
+    excerpt: 把 Safe and secure、Responsible、British、Professional、Warm、Thoughtful 設計成 creative reality-check：素材應至少明確支持一項
+      BA value，且不得與任何 value 矛盾。
+  - brand_id: British_airways_brand_guidelines_2007
+    chapter: ch-05
+    excerpt: Appendix A 把 service values 轉成 writing principles，再用例句訓練一致語氣，可轉成 content QA checklist 或 LLM
+      prompt guardrail。
+  - brand_id: CCFB_BrandGuidelines_v3b
+    chapter: ch-01
+    excerpt: 品牌材料應能至少對應到 caring/compassionate、trustworthy、resourceful、professional、strategic 中一項，且不得只呈現需求悲情而缺少可靠分配能力。
+  - brand_id: Clayton_Homes_BrandGuideline_2021
+    chapter: ch-01-02
+    excerpt: 以 on-brand phrases 與 off-brand phrases 建立內容邊界，並用 Smart/Modern/Affordable 與 simple、authentic、optimistic、fun
+      等關鍵詞作語氣檢查軸；禁用 mobile homes、trailers、cheap housing 等貶損用語。
+  - brand_id: Consistent_communications_Brand_Guidelines_2018
+    chapter: ch-01-02
+    excerpt: 以 Diversity、Collaboration、Integrity、Ingenuity 四個價值作評估軸，品牌文案需尊重這四項、不得排除非專業受眾或弱化透明度。
+  - brand_id: destination_canada_brand_booklet
+    chapter: ch-04-01
+    excerpt: 六個 brand behaviours（Spark change、Invite love、Unleash pride、Stay open、Be helpful、Speak from
+      the heart）形成行為檢核清單；溝通應具備至少一項行為證據，不得冷漠、排外或過度制式。
+  - brand_id: eftpos_Brand_Guidelines_2021
+    chapter: ch-01
+    excerpt: 以「Humble Australian Innovator」連結 down to earth、practical、bold、problem solver、family oriented；溝通應支持
+      do good for Australia、test and learn、bold leadership，並避免過度矽谷式抽象創新語言。
+  - brand_id: F1_Master_Brand_Guidelines_2017
+    chapter: ch-01
+    excerpt: F1 必須 intense、commanding、charismatic、audacious；文案應避免 safe/familiar/generic words，設計表現需同時含
+      human/fan emotion 與 technical/racing cues，把人格詞轉成可檢查的創意準則。
+  - brand_id: LucidMotors
+    chapter: ch-01-02
+    excerpt: 三支柱框架作為所有產出的評估矩陣：是否清楚、是否前瞻、是否有感染力；支柱應足以成為評審準則，而不是只作為內部口號。
+  - brand_id: Google_for_Work_Brand_Book
+    chapter: ch-01-03
+    excerpt: 用 Our voice is / Our voice isn't 矩陣定義 voice 是 expert、fun、intelligent、casual、charismatic，不是
+      egotistical、cheesy、pretentious、IT nerd-speak；正反語氣矩陣可作為文案審核的 rule set。
+  - brand_id: Herman_Miller_Brand_Guidelines
+    chapter: ch-08
+    excerpt: Making Brand Decisions 用 simplify、tell a story、be human、inspire、think big、be spirited 六個
+      guideposts 作為創意審查準則；素材需至少能對應一個 guidepost，並以近期作品驗證，把『好不好』轉成可學習的評估清單。
+  - brand_id: Huawei_Visual_Identity_Guidelines
+    chapter: ch-01-02
+    excerpt: 列出 customer-centric、innovative、global、dedicated、open、trusted 六項品牌屬性，任何識別應用需能合理支持其中之一；若視覺語言削弱
+      trusted、global 或 customer-centric，應退回檢查。
+  - brand_id: I_amsterdam_Brand_Manual_EN_2019
+    chapter: ch-03
+    excerpt: 使用 I amsterdam 的內容應至少能對應 creativity、innovation、entrepreneurship 之一；若素材無法連結城市價值，應避免使用 label，讓核心價值成為內容評估準則。
+  - brand_id: KABOOM_Brand Book_2020
+    chapter: ch-01-01
+    excerpt: 透過正向形容詞、長段語氣說明與『But Never』列表建立語氣邊界；可複用為 brand voice QA rubric。
+  - brand_id: kinokuniya_brand_guidelines
+    chapter: ch-01-01
+    excerpt: 以簡短人格詞建立 creative brief，讓後續每個視覺元素都可回扣到 open-minded、curious、adventurous；素材至少應連結閱讀、學習、交流或探索其中一種目的。
+  - brand_id: Laing O’Rourke_identity guidelines_2021
+    chapter: ch-01-02
+    excerpt: 以 Absolute alignment、Complete thinking、Sophisticated simplicity 三原則取代冗長價值列表；設計若使資訊更複雜、不可讀或缺少整體關係，即違反
+      sophisticated simplicity 或 complete thinking。
+  - brand_id: Microsoft_Xbox_brand_guidelines_2019
+    chapter: ch-01-01
+    excerpt: creative 包含 premium、simple、iconic、experience forward、differentiated，messaging 搭配 avoid list；語氣原則可轉成
+      AI copy review rubric，檢查是否簡潔、主動、體驗導向、具有 Xbox 感。
+  - brand_id: SAS_brand_creative_guide_2021
+    chapter: ch-01
+    excerpt: 品牌內容應能對應 smart、caring、bold、trustworthy 至少一項；品牌 guideline 應把人格特質寫成後續 voice 與 visual 的判準。
+  - brand_id: ulster_university_Brandbook
+    chapter: ch-02-04
+    excerpt: ambitious、creative、collaborative、entrepreneurial 四人格作為創意評估矩陣；輸出應至少對應一項人格，不得傳達保守、孤立、被動或只服務內部流程的訊息。
+  - brand_id: USAToday_Online_Brand_guidelines_2014
+    chapter: ch-01-01
+    excerpt: everywhere、useful、easily understood、unbiased、inventive 五項體驗原則作為品牌行為框架，可作為內容、產品與視覺決策的共同評分維度。
+  - brand_id: VISA_Digital_Brand Guidelines_2018
+    chapter: ch-01-01
+    excerpt: Fast（不過度複雜）、Authentic（人性化）、Iconic（可被記得）、Smart（提前兩步）作為 north-star principle set，把品牌價值轉為 UX
+      heuristic。
+  evidence_brand_count: 26
+  confidence: 0.95
+  status: verified
+- id: dp-platform-before-visual-rules
+  title: 先定義企業策略與語氣，再建立視覺識別工具箱
+  problem:
+    statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+    signals:
+    - no_strategic_foundation
+    - enterprise
+    - style_over_system
+    - new_identity
+    - strategy_refresh
+  solution:
+    module: Brand Strategy
+    move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+    layer: strategy
+  reason:
+  - 視覺規則需有可回推的語義來源
+  - 品牌不是單一標誌，而是組織如何行動與如何溝通
+  - 品牌是決策系統，不是美術風格；每個視覺與文案選擇都應能回推到品牌支柱
+  - 先建立判斷標準，後續視覺與語氣才有可回溯的語義來源
+  - 先把一句品牌主張轉成跨媒體的行為語法，後續版面、動態與字體才有可回溯依據
+  - 先寫品牌價值的視覺翻譯，再導入具體資產規則，避免規範只剩任意的角度、色彩與形式
+  - 大型品牌更新應先建立「策略語意 → 系統零件」的橋接層，讓設計規則可追溯到品牌目的
+  - B2B SaaS 品牌可用少數動詞建立跨產品、受眾與內容的分類基礎
+  - 平台品牌要把複雜產品能力轉成可記憶的成長語言
+  - 高等教育品牌應以情感與動機連結事實，而不是只堆排名、研究與成就
+  - 品牌 guideline 應先建立策略與人格層，否則視覺規範難以在新媒介中自行延展
+  - 公共品牌 guideline 應先定義 civic role，再定義視覺系統，否則容易變成施工專案識別
+  - 大型服務品牌 guideline 應把品牌價值、服務標準與視覺更新放在同一邏輯中，避免 identity refresh 脫離營運
+  - B2B/fintech guideline 可以用一句主張把功能服務升級為體驗平台
+  - 品牌故事章可作為後續視覺規則的語義 lint，不只是品牌宣言
+  - visual direction 應從產品任務出發，而不只是套用母品牌元素
+  - B2B 品牌可透過 consumer-like human voice 抵消企業軟體冷感
+  - 視覺指南開頭應解釋「為什麼一致性重要」，而非直接列規格
+  - 大型機構可用「核心價值 + 品牌人格 + 資產成熟度」管理跨單位溝通
+  - 企業 VI 可以用少量策略詞作為全文件的 semantic anchor
+  - 投資促進品牌需要把國家精神轉為客戶成果語言
+  - 品牌是決策系統，不是美術風格；每個視覺與文案選擇都應能回推到品牌策略
+  - B2B 工程品牌可先把 operational strategy 轉為 visual principle，再規範設計資產
+  - 複雜產業品牌可把核心作業方式轉成視覺品質語言
+  - 影像型品牌 guideline 可先建立 archive narrative，再設計可授權的視覺模組
+  - 用品牌歷史作為 guideline 開場，可降低後續規範看似任意的風險
+  - 視覺一致性必須服務品牌定位，而不是只維持美術統一
+  - 品牌定位可作為 AI 審稿的 top-level semantic check
+  - 產品娛樂品牌可把「experience」而非硬體規格作為品牌溝通核心
+  - experience-forward brand system：creative principles → messaging behavior → signature layout → channel
+    applications
+  - 當品牌進入成熟期，guideline 應明確宣告哪些舊符號被降權、哪些新語氣升級為系統方向
+  - 沒有此章，logo 使用只剩機械規格
+  - 品牌訊息應能整合組織內部差異，而不是新增一個口號
+  - 品牌一致性是中長期 equity 的來源；創新品牌也需要紀律化的識別治理
+  - 品牌手冊導言應把設計規範與組織使命連結，提升規則遵從動機
+  - 設計系統的可信度來自清楚的 editorial worldview；品牌不是風格集合，而是判斷世界的方式
+  - 知識型媒體品牌常先建立思想傳統，再進入視覺規則
+  - 品牌規範可將 platform truth 作為所有後續模組的驗收條件
+  - 有效的 identity guideline 可先定義「品牌如何看世界」，再定義「品牌看起來如何」
+  - 品牌相信互動與共同參與比預製內容更有價值
+  - 品牌手冊可先用少量敘事建立決策標準，再把標準交給後續模組實作
+  - 品牌 principle 可作為內容、產品與視覺決策的共同評分維度
+  - 先宣告 mission，再以 manifesto 建立情緒與社會角色
+  - 如果 UX 不快、不清楚，品牌標誌本身無法建立信任
+  - 數位品牌 guideline 可先定義 experience principles，再把品牌元素嵌入交易節點
+  applicable_when:
+    industries:
+    - industrial_materials_science
+    - tech_software
+    - media_entertainment
+    - finance
+    - education
+    - public_sector
+    - nonprofit_social
+    - consumer_retail_hospitality
+    - new_energy_mobility
+    brand_types:
+    - category_creator
+    - heritage_legacy
+    - challenger
+    - mission_driven
+    - institutional_public_trust
+    - platform_ecosystem
+    conditions:
+    - new_identity
+    - strategy_refresh
+    - content_forward_identity
+    archetypes:
+    - full_brand_system
+    - brand_experience_guide
+    - product_design_system
+  dependencies:
+    requires: []
+    enables:
+    - Visual Identity
+    - Color System
+    - Typography System
+    - Voice and Tone
+    - Motion Identity
+    - Layout System
+    - Messaging
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - guideline 從空白直接列章節、先寫 Logo 規格
+  - 直接寫社群尺寸與模板，讓子頻道各自發展成不同品牌
+  - guideline 直接列角度、色彩與形式規則而無價值來源
+  - 把品牌更新當成換裝，讓新符號變成形式更新而非可被治理的品牌目的
+  - 只描述功能而不說明商家利益
+  - 把 Reach Further 當 tagline，而不展示如何 challenge convention
+  - 後續規則像樣式清單，無法說服各市場遵守
+  - 只談建設本身而忽略人、地方與共同參與
+  - 把 identity refresh 當成視覺更新而脫離服務與營運
+  evidence:
+  - brand_id: 3M_Visual_Identity_Guidelines_2015
+    chapter: ch-01
+    excerpt: 此章先把 3M 從 logo 重新定義為願景、策略、價值、語氣與視覺語言的整體系統；若沒有它，Trifecta 視覺系統會變成單純新風格。
+  - brand_id: Afterpay_Merchant_Guidelines_US_2020
+    chapter: ch-01
+    excerpt: Brand Foundation 是後續 brand elements 與 best practices 的語義來源，所有訊息、顏色與商家導入規範都要回到公平、透明、無息、win-win；先定義世界觀再定義資產規則。
+  - brand_id: Arte_ Social_Media_Style_Guide_2017
+    chapter: ch-01
+    excerpt: Concept-to-system framework：brand idea → motion direction → layout gravity → typography behavior
+      → channel templates；把 broadcast identity 核心敘事先轉成系統，避免社群頭圖、影片與子頻道各自發展成不同品牌。
+  - brand_id: arte_2008_compressed
+    chapter: ch-01
+    excerpt: Value-to-grammar framework：humanist values（Ouverture、Respect、Chaleur、Curiosité）→ formal constants
+      → flexible applications；先把人文價值轉為可操作的視覺語法，避免後續規範只剩任意角度、色彩與形式。
+  - brand_id: AXA_Design_principles_2017
+    chapter: ch-01
+    excerpt: Purpose → Customer Experience → Creative Platform → Kit of Parts，先重寫品牌戰略前提；若沒有它，Switch、開放標誌與顧客故事會變成形式更新，而不是可被治理的品牌目的。
+  - brand_id: BC_BrandGuidelines_2020
+    chapter: ch-01
+    excerpt: Build → Innovate → Grow 是 strategy layer，後續 logo、geometry、imagery、video 與 partner ecosystem
+      都應回應 go B.I.G.；對外訊息應能對應三層之一，否則只是功能描述。
+  - brand_id: Berkeley_Brand_Manual_accessible_2019
+    chapter: ch-02
+    excerpt: Telling Our Story 是所有視覺規則的語義前置，讓設計元素不只漂亮而是服務 Reach Further；positioning → creative platform
+      → strengths/tone → brief 形成內容決策鏈。
+  - brand_id: BNP_Brand_Pass_BD_2012
+    chapter: ch-01
+    excerpt: history → personality → brand dynamic 是所有識別工具與媒體應用的前置語義層，讓 emblem、signature、色彩、影像與文案都能回到同一套
+      personality 判斷。
+  - brand_id: Brickline_Greenway_Brand_Guidlines_2020
+    chapter: ch-01
+    excerpt: platform framework：Big Idea → Commitment → Tone → Attributes → Principles，把 Greenway 從基礎設施專案提升為城市共同體品牌；對外訊息應可連回
+      opening up the city 或 bringing us together。
+  - brand_id: British_airways_brand_guidelines_2007
+    chapter: ch-01
+    excerpt: Summary 先講 2007 refresh 的商業理由，以 proposition、values、heritage 與三種 identity presentation 建立從內部服務標準到外部視覺表現的邏輯鏈，讓
+      Speedmarque、palette、攝影都回到 premium experience。
+  - brand_id: CalvinKlein_Logo&GraphicGuidelines_2017
+    chapter: ch-01
+    excerpt: 先給策略敘事，再給架構圖，最後進入逐 logo 規格；大型品牌可先建立 identity rationale 與 architecture map，讓後續所有視覺規範都有決策來源。
+  - brand_id: Clayton_Homes_BrandGuideline_2021
+    chapter: ch-01
+    excerpt: 先建立 Clayton 為何存在、服務誰、如何改變認知，避免後續視覺規範變成沒有策略根據的裝飾清單；從 purpose、promise 到 personas 形成策略到內容的決策框架。
+  - brand_id: Coldwell_Banker_2020
+    chapter: ch-01
+    excerpt: 先把 luxury 連到母品牌的服務倫理，避免高端識別只剩黑金視覺符號；brand values -> expression standards -> application governance，先建立判斷標準再進入視覺、語氣或應用規格。
+  - brand_id: DALENYS_Brand guidelines_2021
+    chapter: ch-01
+    excerpt: 用 CEO foreword 把「Payment is just the start」定為策略原點（payment → connection → journey → connected
+      offers），讓後續 logo、色彩與 graphic device 都回到體驗平台主張，而非只談交易處理。
+  - brand_id: DELL_BRANDBOOK_2010
+    chapter: ch-01
+    excerpt: 用創辦人訊息建立品牌識別是競爭優勢與全員責任；品牌不是表面標誌，而是每個行動與溝通回扣目的後累積的資產，purpose/customer needs -> brand value
+      -> visual identity responsibility。
+  - brand_id: Dubai_BRAND_GUIDELINES_2021
+    chapter: ch-01
+    excerpt: 先建立判斷標準再進入視覺、語氣或應用規格；以 vision → mission pillars → proposition → promise 的城市品牌策略框架，讓所有識別應用服務於一致城市形象。
+  - brand_id: eftpos_Brand_Guidelines_2021
+    chapter: ch-01
+    excerpt: 先把 eftpos 定位為 Australia’s original fintech，以 business / what we do / purpose → personality
+      → values → manifesto 讓後續支付、卡片與商戶情境都有品牌人格支撐。
+  - brand_id: F1_Master_Brand_Guidelines_2017
+    chapter: ch-01
+    excerpt: Our Story 先重寫 F1 品牌定位（media and entertainment brand with the soul of a racecar driver），讓後面的
+      aggressive typography、limited palette、tight layout 與 dramatic voice 有策略理由；品牌故事章可作為後續視覺規則的語義 lint。
+  - brand_id: FluoroSeal_Brand_Guidelines_2021
+    chapter: ch-01
+    excerpt: 先建立 FluoroSeal 的策略語言與組織共識，讓後續視覺規範不只是設計元素，而是品牌承諾的表現；最上層原則是先建立判斷標準，再進入視覺、語氣或應用規格。
+  - brand_id: LucidMotors
+    chapter: ch-01
+    excerpt: Brand 章先定義為什麼存在、相信什麼、如何說故事；若沒有它，Logo、色彩、影像與語氣只會是風格選擇，而不是品牌系統。
+  - brand_id: google_ads_visual_guidelines
+    chapter: ch-01-01
+    excerpt: 先從 Google Ads makes it simple 的品牌承諾與 trustworthy、approachable、welcoming、smart、empowering、professional
+      等情緒屬性出發，再進入 logo/color/typography；visual direction 應從產品任務出發，而不只是套用母品牌元素。
+  - brand_id: Google_for_Work_Brand_Book
+    chapter: ch-01
+    excerpt: 先把「工作正在轉變」定義成品牌機會，用願景 → 受眾心態 → 品牌架構 → voice/tone 的策略漏斗，讓 Google for Work 的視覺規則可追溯到 end-user
+      empowerment。
+  - brand_id: google_marketing_platform_visual_guidelines
+    chapter: ch-01-01
+    excerpt: Why a Visual Guide 先說明品牌一致性對所有溝通材料的重要性，把日常的 chart、email、簡報納入品牌治理，再進入品牌承諾與資產規格；視覺指南開頭應解釋為什麼一致性重要，而非直接列規格。
+  - brand_id: HKUST_BRAND_GUIDELINES_2022
+    chapter: ch-01
+    excerpt: 先建立「為何要一致」的共同信念，用 mission → proposition → attributes → personalities → equity 階層作為後續 voice、logo、photography
+      的策略根源；溝通內容必須可回扣到核心價值。
+  - brand_id: Huawei_Visual_Identity_Guidelines
+    chapter: ch-01
+    excerpt: 用極短篇幅建立 VI 系統的策略源頭，把使命濃縮為 fully connected, intelligent world，讓後續大量規格可回扣到品牌使命與屬性；企業 VI 可以用少量策略詞作為全文件的
+      semantic anchor。
+  - brand_id: Invest_Lithuania_Brandbook_2020
+    chapter: ch-01
+    excerpt: 先建立品牌承諾與投資者導向定位（promise → positioning → personality pillars：goal driven、investor oriented、determined
+      to innovate），讓視覺系統服務商業招商，而不是只是國家形象美化。
+  - brand_id: kinokuniya_brand_guidelines
+    chapter: ch-01
+    excerpt: 建立視覺再品牌前的策略基準，避免 Kinokuniya 只被理解為書店標誌更新；再品牌 guideline 可先用兩頁策略限制視覺自由度，避免 identity assets 變成獨立風格拼貼。
+  - brand_id: Laing O’Rourke_identity guidelines_2021
+    chapter: ch-01
+    excerpt: 先定義公司是誰、使命與行為原則，讓視覺系統不是單純 corporate polish，而是工程與創新的外顯；B2B 工程品牌可先把 operational strategy 轉為
+      visual principle，再規範設計資產。
+  - brand_id: Laing O’Rourke_identity guidelines_2021
+    chapter: ch-02
+    excerpt: 用企業方法論轉譯 visual tone，而不是從任意美學開始；視覺系統要反映 ease、speed、precision 與 multidisciplinary expertise。
+  - brand_id: LIFE_Style_Guide
+    chapter: ch-01
+    excerpt: Archive Equity → Brand Story → Product Licensing：先證明資產，再提供轉譯規則；影像型品牌 guideline 可先建立 archive
+      narrative，再設計可授權的視覺模組。
+  - brand_id: MG_investments_identity guidelines_2014
+    chapter: ch-01
+    excerpt: 先說明為何強品牌需要被管理，並把 M&G 的投資定位轉成視覺與語氣系統的來源；brand model：positioning → attributes → visual style
+      → tone of voice → applications。
+  - brand_id: MG_investments_identity guidelines_2014
+    chapter: ch-01-01
+    excerpt: 以 heavyweight investment with an independent spirit 作為品牌核心；所有素材應能回扣此定位，視覺一致性必須服務品牌定位而非只維持美術統一。
+  - brand_id: Microsoft_Xbox_brand_guidelines_2019
+    chapter: ch-01
+    excerpt: 建立 Xbox 溝通的精神與判斷標準，讓後續 logo、色彩、版面與合作規則都服務遊戲體驗，而不是只服務企業識別；後續 Elements 與 Layout 都是這些原則的視覺化。
+  - brand_id: middlecap_design_manual_2019
+    chapter: ch-01
+    excerpt: 先交代品牌正在從較單一強烈的青色識別演進為更成熟的視覺語氣；若沒有此章，後續深色、材質感與弱化 cyan 的規則會像任意美術選擇。
+  - brand_id: NIU_Brand_Identity_2022
+    chapter: ch-02
+    excerpt: 先讓所有文案與視覺知道 NIU 要承諾什麼，而不是直接進入 logo 規格；以 value proposition → personality → narrative → strengths/benefits
+      → tagline 建立訊息架構，作為視覺的語義來源。
+  - brand_id: PV_Branding_Guidelines_Logos_Lock_Ups._CB1539191655_
+    chapter: ch-01
+    excerpt: 先處理『Prime Video 到底是什麼』的認知問題，先定義服務公式與品牌層級，再規範標誌與文案；平台品牌應把服務關係前置成資訊架構，不應只靠 Logo 區分。
+  - brand_id: Quaint_Oak_Bank_Brand_Guidelines_2013
+    chapter: ch-01
+    excerpt: 先以組織信念（mission、essence、promise、values、story）定義品牌，再進入視覺規範；金融品牌 guideline 應先定義信任來源，否則視覺系統會缺少判斷標準。
+  - brand_id: RenasantBank_brandstandards_2020
+    chapter: ch-01
+    excerpt: 開頭先說明品牌風險而非只列規格：Renasant Bank 品牌代表 security、reliability 與理解客戶及社群需求，任何不一致都會削弱市場穿透與信任；以使命與信任
+      → 品牌完整性 → 嚴格標準 → 市場穿透建立判斷標準後，才進入視覺、語氣與應用規格。
+  - brand_id: Slack-Brand-Guidelines
+    chapter: ch-01
+    excerpt: 先建立 Slack 為何存在，使後續設計元素不只是好看，而是服務工作協調；brand definition framework：mission → coordination problem
+      → Slack solution → values → persona → voice。
+  - brand_id: Slack-Brand-Guidelines
+    chapter: ch-02
+    excerpt: 把品牌定義轉成 logo、color、type、architecture 的操作系統；設計元素既是表達工具，也是法律可辨識資產，需有可回推的語義來源。
+  - brand_id: sony_make_believe_2009
+    chapter: ch-01
+    excerpt: make.believe 是後續 composite logo 與 motion logo 的語義前提；沒有此章，logo 使用只剩機械規格；brand message framework：imagination
+      → belief → making real → electronics + entertainment unity。
+  - brand_id: Tesla_Guidelines_2010
+    chapter: ch-01
+    excerpt: mission-to-identity framework：company story、technology purpose、global consistency、application
+      rules；以創辦使命先行，再導入視覺工具箱。
+  - brand_id: The_Economist_Group_2017
+    chapter: ch-01
+    excerpt: 用長篇歷史敘事與編輯立場建立品牌權威，而非直接從 logo 開始；所有視覺決策都應表現 rigour、independence、curiosity。
+  - brand_id: TikTok_For_Business_Brand_Guidelines
+    chapter: ch-01
+    excerpt: 把 TikTok 平台使命作為商業品牌的上游來源，避免 TikTok For Business 變成一般廣告科技品牌；platform mission → business mission
+      → creative behavior → brand execution。
+  - brand_id: Twitch_Guidelines_Speedrun_2021
+    chapter: ch-01
+    excerpt: Narrative Before Identity，把品牌行為原則放在視覺規格之前；Community-first Brand Frame：place to stream → collective
+      participation → making Twitch together。
+  - brand_id: ulster_university_Brandbook
+    chapter: ch-01
+    excerpt: 先建立『品牌是感知』與 We Believe in Brave 的共同語言，讓後續視覺規範不是孤立美術規則；採用 Brand Positioning + Visual Communications
+      雙軸，前者定義聲音，後者把聲音視覺化。
+  - brand_id: USAToday_Online_Brand_guidelines_2014
+    chapter: ch-01
+    excerpt: 先把新聞品牌的核心從『媒體產品』改寫成『理解與實用性』，讓後續視覺規則有新聞哲學支撐。
+  - brand_id: VISA_Digital_Brand Guidelines_2018
+    chapter: ch-01
+    excerpt: 把數位品牌從 logo 使用擴展到完整支付體驗；UX 不快、不清楚時品牌標誌無法建立信任，先定義 experience principles 再把品牌元素嵌入交易節點。
+  evidence_brand_count: 45
+  confidence: 0.95
+  status: verified
+- id: dp-responsible-framing-for-regulated-category
+  title: 用「禁止聯想清單＋責任框架」治理受規範類別的合作夥伴文案
+  problem:
+    statement: 金融、健康等受規範或高風險類別的品牌，常透過大量第三方（商家、夥伴）對外溝通；若只給正面賣點而不框限風險，文案容易變成誤導、刺激消費或違反法規。
+    signals:
+    - regulatory_compliance
+    - third_party_usage
+    - content_safety
+    - misleading_risk
+  solution:
+    module: Content Design
+    move: 同頁提供「可說／不可說」與禁止聯想清單，並要求賣點與條款（disclaimer）並陳、保留資格與限制資訊
+    layer: language
+  reason:
+  - 描述服務利益時必須同時保留責任與限制，避免誤導
+  - 用 forbidden association list 管理受規範類別的品牌風險
+  - 高風險服務的 guideline 應先建立價值與顧客心理模型，再開放 partner 使用轉換型文案
+  - 用 forbidden term/association list 管理高敏感類別的品牌風險
+  - AI 產品廣告需同時檢查語句、聲音時序、使用者姿態與禁止概念
+  - 描述能力時必須保留精確與可佐證性，避免誤導
+  - cybersecurity 詞彙很容易擴大或混用，fear 不應作為購買誘因
+  applicable_when:
+    industries:
+    - finance
+    - tech_software
+    brand_types:
+    - platform_ecosystem
+    - challenger
+    conditions:
+    - regulatory_compliance
+    - third_party_usage
+    - content_safety
+    archetypes:
+    - brand_experience_guide
+    - corporate_toolkit
+  dependencies:
+    requires:
+    - Brand Strategy
+    - Messaging
+    enables:
+    - Compliance
+    - Content Design
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 只給正向賣點不附條款（disclaimer）
+  - 用高壓促銷或誤導折扣語氣包裝受規範服務
+  - 只給正向賣點不附限制條件
+  - 放任 partner 自由描述高敏感功能
+  - 用 superlatives 卻無第三方 citation
+  - 用恐懼放大作為購買誘因
+  evidence:
+  - brand_id: Afterpay_Merchant_Guidelines_US_2020
+    chapter: ch-03-01
+    excerpt: 同頁提供『How to talk』與『How not to talk』形成明確語義邊界，用 forbidden association list 管理金融服務品牌風險；不得關聯
+      gambling、paylending、overspending、unmanageable debt。
+  - brand_id: Afterpay_Merchant_Guidelines_US_2020
+    chapter: ch-01
+    excerpt: 高風險服務的 guideline 應先建立價值與顧客心理模型，再開放 partner 使用轉換型文案；不得把 Afterpay 描述成 credit card、loan shortcut
+      或鼓勵 overspending。
+  - brand_id: Amazon_Echo_Alexa_Guidelines_External
+    chapter: ch-03-06
+    excerpt: 以 do / don't 清單管理 Alexa 呈現：不得稱 always listening、platform、robot；utterance 須測試 3 次且 wake word
+      置於開頭，並設兒童內容限制，避免誤導與隱私想像。
+  - brand_id: BlackBerry_Cylance_Brand_Guidelines_2019
+    chapter: ch-04-01
+    excerpt: Semantic Precision Framework：superlatives 需第三方 citation，不確定 tactic 時用 threat，fear 不作為購買誘因，並規範
+      malware/threat/attack、AI/ML 的使用情境。
+  evidence_brand_count: 3
+  confidence: 0.85
+  status: verified
+- id: dp-restrained-palette-for-trust
+  title: 用克制的配色與權威主色傳達信任
+  problem:
+    statement: 受規範、以信任為核心的機構，若用高彩度或隨意配色會削弱權威與可信度。
+    signals:
+    - trust
+    - regulatory_compliance
+    - public_trust
+    - consistency_across_partners
+  solution:
+    module: Color System
+    move: 以核准色值為主、依用途分流（品牌色／安全色／tints／媒介），避免色彩過多削弱品牌
+    layer: visual_core
+  reason:
+  - 信任型品牌的色彩應強調穩定與權威而非情緒刺激
+  - 公用服務品牌色彩需同時處理品牌情緒與安全語意，不能只當裝飾 palette
+  - 若品牌會上牆、上車、上網站，色彩 token 必須跨材料定義
+  - 加密品牌需要同時降低投機感與保留價值感；穩定性比刺激性更重要
+  - 用少量核心色維持品牌辨識，不擴張過多 secondary palette
+  - 色彩系統應先保護品牌記憶，再提供可控彈性；輔助色不能稀釋核心色
+  - 新增色彩需被視為不符合規定，避免機構溝通失序
+  - 限定主色與比例可在多市場維持一致辨識
+  - 色彩可表達服務分類，但主品牌色必須穩定
+  - 主色建立信任，輔色提供節奏；色彩角色比色彩數量更重要
+  - 高彩度色應被治理，否則會壓過成熟化品牌語氣
+  - 金融資訊需要一組受控但足夠分類的色彩語言
+  - 品牌色彩不必多；少量 accent 可增加活力但不能搶走主識別
+  - 色彩比例比單純列色票更能形成可治理輸出
+  applicable_when:
+    industries:
+    - public_sector
+    - finance
+    - tech_software
+    - media_entertainment
+    brand_types:
+    - institutional_public_trust
+    - heritage_legacy
+    - challenger
+    conditions:
+    - trust
+    - regulatory_compliance
+    - consistency_across_partners
+    archetypes:
+    - brand_experience_guide
+    - multi_brand_architecture
+    - full_brand_system
+    - corporate_toolkit
+  dependencies:
+    requires:
+    - Color System
+    enables:
+    - Accessibility
+    - Design Tokens
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 自行新增色彩或使用未列出的色值
+  - 把安全色當裝飾色使用
+  - 使用未列出的色值（如黃色不屬 Bern heraldic colors）
+  - 用過於刺激的配色暗示投機
+  - 不同創作物各自延展色盤
+  - 用輔助色單獨取代品牌色
+  - 讓高彩度輔色（橘）成為大面積背景，壓過成熟語氣
+  - accent color 無比例上限被濫用
+  evidence:
+  - brand_id: BCHydro_brand_guidelines_2019
+    chapter: ch-05
+    excerpt: 色彩依用途拆分為品牌色、安全色、tints、print/digital 與內容情境；安全色只用於安全語意，並避免因色彩過多削弱品牌。
+  - brand_id: Bern_Stadt_2021
+    chapter: ch-01-02
+    excerpt: 以紅、黑、灰、白法定 heraldic 色為基礎，並以 CMYK/RGB/Web/Pantone/RAL/NCS/Scotchcal/Vink-Acril 跨材質定義；黃色不屬
+      Bern heraldic colors。
+  - brand_id: bitcoin_Brand_Guidelines
+    chapter: ch-01-01
+    excerpt: 以非斜體、較穩定字重、金色黃與鋼灰色把穩定、透明、產業感轉成視覺決策；灰色不得深到產生威脅或沉重感，穩定性比刺激性更重要。
+  - brand_id: bitcoin_Brand_Guidelines
+    chapter: ch-04
+    excerpt: '只定義品牌黃 #FAB915 與品牌灰 #8B8B8B（含 RGB/CMYK），用少量核心色維持辨識，不擴張過多 secondary palette。'
+  - brand_id: BNPP_Brand_creative_bd_2012
+    chapter: ch-02-01
+    excerpt: 以 brand color → primary → additional → general palette 的色彩角色治理：核心品牌綠須在主要接觸點可見，輔助色不得單獨取代品牌色，並維持核准色票與合理對比。
+  - brand_id: DFPI_BrandGuidelines
+    chapter: ch-04
+    excerpt: '僅使用列出的 Hex/RGB；主色包含 #002D72；新增色彩需被視為不符合規定。'
+  - brand_id: ICBA_corporate_Brand_guidelines_2020
+    chapter: ch-04
+    excerpt: Primary palette 應用於所有 ICBA branding，secondary colors 只能作為 ICBA blue 旁的 accent，不得用 secondary
+      color 取代 ICBA blue 的主導地位；以主色 + service pillar accent 維持機構信任。
+  - brand_id: middlecap_design_manual_2019
+    chapter: ch-03
+    excerpt: '把品牌從強 cyan 語氣轉為深色主導、輔色點綴；主色應優先使用 #29313e、#616466，藍可用於較大色塊、橘限於文字或圖形重點。'
+  - brand_id: middlecap_design_manual_2019
+    chapter: ch-03-01
+    excerpt: 以兩個深灰承擔企業嚴肅度，主色可承擔情緒定位與版面秩序；不得以任意近似灰替換指定深灰。
+  - brand_id: RenasantBank_brandstandards_2020
+    chapter: ch-04
+    excerpt: 'Logo 外色彩應多使用藍色調以保持安全與可靠印象，主色含 RNST Dark Blue #15467B；additional colors 未經 Marketing permission
+      不得使用，色彩規範把『可見到』與『可使用』分開。'
+  - brand_id: Santander_EN
+    chapter: ch-03
+    excerpt: 定義 White、Red、Sky、Black 主要色與建議使用比例，並提供 PMS、HEX、RGB、CMYK、RAL。
+  - brand_id: Stifel_brand_guidelines_2019
+    chapter: ch-02
+    excerpt: 'tiered palette：Level I 核心品牌色（Stifel Blue 必為 Pantone 540 / HEX #003057），Level II 有限補充色，Level
+      III 限資訊圖表，Level IV 綁定資產類別。'
+  - brand_id: WM_Brand_Guidelines
+    chapter: ch-04
+    excerpt: 以 black、white、grey 為主色、blue 作約 10% accent，並用 30/30/30/10 比例與百分比 guidance 防止 accent color
+      濫用。
+  evidence_brand_count: 11
+  confidence: 0.95
+  status: verified
+- id: dp-restraint-as-luxury-signal
+  title: 用克制與內隱表達奢華，而非高頻奢華詞堆疊
+  problem:
+    statement: 高端品牌若靠大量「奢華」字眼與華麗裝飾堆疊來證明自己高級，反而顯得用力、廉價，稀釋了真正的高端感。
+    signals:
+    - premium_perception
+    - restraint
+    - exclusivity
+    - brand_overclaiming_risk
+  solution:
+    module: Voice and Tone
+    move: 以「X but not Y」二元語氣定義邊界，並用禁用／慎用詞清單讓奢華內隱於精準與克制
+    layer: language
+  reason:
+  - 奢華應內隱，不靠高頻 luxury 詞堆疊
+  - 精緻但不炫耀，自信但不傲慢，英式但外向，奢華但不硬賣
+  - 高端品牌文案需檢查詞義準確與詞頻疲乏
+  - 奢華品牌的 discount framing 本身就是品牌破壞，即使價格資訊合法，也可能因語氣與呈現方式造成商品化
+  - 高端語氣可以談 opportunity、offer、experience，但不可把價值框成折扣或庫存壓力
+  - 用「禁用語 + 可接受替代語」治理文案，比只說 tone 要 premium 更可執行
+  applicable_when:
+    industries:
+    - luxury_premium
+    brand_types:
+    - premium_luxury
+    - heritage_legacy
+    conditions:
+    - premium_perception
+    - mature_brand
+    archetypes:
+    - brand_experience_guide
+    - full_brand_system
+  dependencies:
+    requires:
+    - Brand Strategy
+    enables:
+    - Content Design
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 過度使用 luxury/luxurious 作描述詞
+  - 用 exquisite、covetable、iconic、unique 等高風險詞堆疊撐場面
+  - 使用 discount、clearance、liquidation、blowout、overstocked 等 distress language
+  - 把產品價值框成折扣或庫存壓力
+  evidence:
+  - brand_id: Coldwell_Banker_2020
+    chapter: ch-02-03
+    excerpt: 避免 luxury 文案過度炫耀，建立從容、清楚、禮貌的高端語氣；copy 應清楚、禮貌、資訊充分，不得過度誇張、粗俗、硬銷或不必要地複雜。
+  - brand_id: Coldwell_Banker_2020
+    chapter: ch-01
+    excerpt: 不得只使用財富或排他性語彙定義 luxury；高端感應建立在服務證據與文化價值上。
+  - brand_id: Harrods_Brand_Guidelines
+    chapter: ch-03-01
+    excerpt: 奢華應內隱，不靠高頻 luxury 詞堆疊；不得過度使用 luxury/luxurious 作描述詞。
+  - brand_id: Harrods_Brand_Guidelines
+    chapter: ch-03
+    excerpt: 精緻但不炫耀，自信但不傲慢，英式但外向，奢華但不硬賣。
+  - brand_id: Mercedes_Benz_BrandStandards_2015
+    chapter: ch-02-01
+    excerpt: 不得使用 discount、clearance、liquidation、blowout、overstocked、save $X off MSRP 等 distress language；高端語氣可以談
+      opportunity、offer、experience，但不可把價值框成折扣。
+  evidence_brand_count: 3
+  confidence: 0.85
+  status: verified
+- id: dp-story-framework-category-education
+  title: 用漸進式 Story Framework 解決新品類的市場教育成本
+  problem:
+    statement: 產品屬於新品類（智慧電動機車／可交換電能），用戶沒有既有心智模型，一次塞滿資訊會造成認知過載。
+    signals:
+    - new_category
+    - high_education_cost
+    - complex_tech
+    - long_consideration_cycle
+  solution:
+    module: Messaging
+    move: 以 Attract → Engage → Connect 三層漸進揭露，依注意力狀態控制訊息深度
+    layer: language
+  reason:
+  - 資訊依注意力狀態逐步揭露，避免一次塞滿細節
+  - 不同接觸點該說多少、說多深要有共同標準，否則廣告與產品頁混用同一訊息密度
+  - 先用情緒與大概念吸引，再講利益，最後給決策細節
+  - 越接近轉換越需要 clarity，越遠離轉換越能使用情緒與怪奇感
+  applicable_when:
+    industries:
+    - new_energy_mobility
+    - tech_software
+    brand_types:
+    - category_creator
+    - challenger
+    conditions:
+    - audience_unfamiliar
+    - long_consideration_cycle
+    archetypes:
+    - full_brand_system
+  dependencies:
+    requires:
+    - Brand Strategy
+    enables:
+    - Voice and Tone
+    - Content Design
+    conflicts_with: []
+  examples:
+  - Attract 用 2-4 字短句、Engage 用 2-3 短句說利益、Connect 提供產品特徵細節
+  anti_patterns:
+  - 在所有觸點用同一訊息密度
+  - 直接以 spec-sheet 溝通，假設用戶已理解品類
+  evidence:
+  - brand_id: LucidMotors
+    chapter: ch-01-03
+    excerpt: Story Framework 解決同一品牌在不同接觸點該說多少、說多深的問題；Attract/Engage/Connect 從情緒與大概念，到利益說服，再到具體功能與決策資訊。
+  - brand_id: klarna_visual_identity_guidelines_2019
+    chapter: ch-01
+    excerpt: Social coherence model：Disrupt=brand awareness、Attract=product awareness、Engage=product understanding、Join=product
+      sign-up；讓不同渠道依溝通目的調整品牌強度，而非平均使用所有資產。
+  - brand_id: klarna_visual_identity_guidelines_2019
+    chapter: ch-01-02
+    excerpt: 越接近轉換越需要 clarity，越遠離轉換越能使用情緒與怪奇感；Join 階段不得使用 emotional stills，Engage 以 feature illustrations
+      為主。
+  evidence_brand_count: 2
+  confidence: 0.7
+  status: verified
+- id: dp-system-toolkit-over-template
+  title: 企業視覺系統給「可組合工具箱」而非僵硬模板
+  problem:
+    statement: 要求每個版面長得完全相同會扼殺多元內容；但完全自由又會失去一致性。
+    signals:
+    - many_teams
+    - many_agencies
+    - diverse_content
+    - system_consistency
+    - mass_touchpoints
+  solution:
+    module: Visual Language
+    move: 把識別定義為可獨立或組合使用的 core elements（tools, not a rigid system），用固定決策順序取代固定模板
+    layer: visual_core
+  reason:
+  - 彈性必須被結構化；系統不靠固定模板，而靠固定決策順序
+  - 元素可獨立使用也可組合，支援多元內容又維持辨識
+  - 用受控的技法集允許創意變化又維持辨識
+  - 彈性必須被結構化；多規則系統要簡化成少數可延展原則
+  - 彈性必須被結構化；系統不靠固定模板，而靠共同核心元素
+  - 多品類文化品牌可用同一設計基礎支援多節目，而非為每節目建立子品牌
+  - 品牌可辨識度來自元素之間的持續關係
+  - 彈性必須被結構化；用可擴展的幾何 building blocks 兼顧 variety 與 cohesion
+  - 彈性必須被結構化；圖形元素應提供家族相似性但限制同時使用量
+  - 圖形庫應包含 skill rating 與禁止組合規則，支援品質治理
+  - 彈性必須被結構化；產品差異應發生在受控模組內，不能破壞 master brand
+  - 當產品多且變動快，guideline 需要提供 construction formula 而非逐一客製
+  - 彈性必須被結構化；全球航空品牌需要 robust and flexible graphic platform
+  - toolkit 章應定義元素之間的關係，因一致性通常毀在比例、位置與搭配，而非資產本身
+  - 圖形元素必須源自 logo，並保持角度與圓角語彙一致
+  - 品牌圖形語言可從 logo 幾何特徵萃取，再以「來源、可用色、透明度、禁用」治理
+  - 品牌裝置應同時有表現力與限制，才能高辨識又不混亂
+  - 視覺裝置 guideline 應把「目的動詞」與「幾何規則」一起定義
+  - 彈性必須被結構化；城市品牌的可變性必須來自預先定義的元件，而不是任意自由設計
+  - 彈性識別系統需要「可變範圍」與「不可變限制」同時明確
+  - 彈性必須被結構化；品牌版面應靠少量比例規則創造可辨識性，而非硬鎖每個元素位置
+  - 口號可被抽象為可量測的 lockup / tile system，而不是文案附屬品
+  - 彈性必須被結構化；把 reference guide 當作彈性邊界，而非單一模板，是成熟版面系統模式
+  - 更多空間不代表需要更多內容；Sony black 本身就是有力內容
+  - 廣告 guideline 可抽象為 parametric layout system
+  - 設計系統最好從核心 logo primitives 派生，而不是另加裝飾素材
+  - 彈性必須被結構化；品牌指南需要定義哪些是不可變核心、哪些是可變表現空間
+  - Guideline 可以用「核心嚴格、應用彈性」避免過度規範
+  - 輔助圖形應有生成規則，而不是一次性插圖集合
+  applicable_when:
+    industries:
+    - industrial_materials_science
+    - tech_software
+    - consumer_retail_hospitality
+    - finance
+    - media_entertainment
+    - education
+    - public_sector
+    brand_types:
+    - mass_consumer
+    - category_creator
+    - institutional_public_trust
+    - platform_ecosystem
+    - heritage_legacy
+    conditions:
+    - diverse_content
+    - system_consistency
+    - mass_touchpoints
+    archetypes:
+    - full_brand_system
+    - corporate_toolkit
+    - brand_experience_guide
+  dependencies:
+    requires:
+    - Visual Identity
+    enables:
+    - Layout System
+    - Examples
+    conflicts_with: []
+  examples:
+  - 高階溝通配方：先套 grid → 用主字體 → 選一個視覺策略 → 用一組色彩
+  - 同一 K symbol 可在 photo mask、overlay、illustration motif 中重複
+  - frame 作為 container、focus、connector 與 campaign grid，可跨媒介複用
+  anti_patterns:
+  - 一次使用所有元素造成過載
+  - 只提供單一固定版型，使用者只會複製貼上
+  - 把品牌只當成單一標誌而非可組合的識別零件
+  - 把單一 logo 使用視為完整 identity
+  - 為每個藝術形式另建與核心無關的獨立視覺
+  - 讓 pattern 與前景 copy 競爭，傷害可讀性
+  - 單件設計同時使用過多 graphic element 造成過度裝飾
+  - 對每個產品逐一客製，產生孤島
+  - 讓任一元素單獨造成不一致
+  - 新增圖形若無法回溯到 logo 圓形或平台行為，視為不符合規定
+  evidence:
+  - brand_id: 3M_Visual_Identity_Guidelines_2015
+    chapter: ch-02-01
+    excerpt: 視覺識別描述為 tools, not a rigid system；先教使用者有哪些工具，再教如何使用。
+  - brand_id: 3M_Visual_Identity_Guidelines_2015
+    chapter: ch-03-01
+    excerpt: Four-Step Assembly：apply grid、use Circular、選 shape 或 mesh、選一組 color set；少數選項比無限自由更能提升一致性。
+  - brand_id: AMD_branding_guidelines_2020
+    chapter: ch-01-01
+    excerpt: Brand Toolkit：品牌是一個系統，不是單一標誌；創意應在共用零件中發生，先列元素再給操作規則。任何品牌指南都需要一個工具包索引。
+  - brand_id: AXA_Design_principles_2017
+    chapter: ch-01-03
+    excerpt: Kit of Parts：品牌不只是 logo，而是一組可被組合的識別元件（Logo、Switch、色彩、字體、語氣、攝影、插畫、版面）；多規則系統要簡化成少數可延展原則。
+  - brand_id: Barbican_Centre_brand_guidelines_2017
+    chapter: ch-01
+    excerpt: identity is not just a logo：品牌一致性來自 logo、lock-up、grid、typeface、typography 多個核心元素的共同作用，Core
+      Elements → Art Forms → Design Examples。
+  - brand_id: Barbican_Centre_brand_guidelines_2017
+    chapter: ch-04
+    excerpt: 以 shared measurement units 與 six-column grid 建立跨格式結構；文化品牌的彈性不是無規則，而是建立可跨內容承載的 grid infrastructure。
+  - brand_id: Barbican_Centre_brand_guidelines_2017
+    chapter: ch-07
+    excerpt: diversity within system：Theatre、Art、Film、Music 等藝術形式可不同，但底層識別不可斷裂，分支差異主要來自內容、圖像與版面節奏，而非另起品牌。
+  - brand_id: BC_BrandGuidelines_2020
+    chapter: ch-05
+    excerpt: 把 logo 的 90° triangle 擴展為 Shape Palette → Pattern Variants → Legibility Controls，以理性通用幾何形作為可大規模擴展的
+      building blocks。
+  - brand_id: Berkeley_Brand_Manual_accessible_2019
+    chapter: ch-07
+    excerpt: Graphic Element Library 以光的隱喻組織 structural elements、apertures、tessellations、prisms，並以 Easiest
+      到 Experts Only 分級；除 structural 外單件設計不得使用超過一種 graphic element。
+  - brand_id: BlackBerry_Cylance_Brand_Guidelines_2019
+    chapter: ch-03-02
+    excerpt: Brand Hierarchy Framework：tier → shield/icon → name style → trademark rule，用 shared shield
+      作 grounding，product icon 可變但品牌根系一致。
+  - brand_id: British_airways_brand_guidelines_2007
+    chapter: ch-02
+    excerpt: kit-of-parts framework：symbol、wordmark、color、type、image、layout relationship；identity 是一組元素與關係而非單一
+      logo，每個元件都需按正確關係共同使用。
+  - brand_id: Klepierre_Charte_graphique_2013
+    chapter: ch-04
+    excerpt: 把 logo symbol 轉化為可延展的視覺語言；以 logo 局部形狀建立非窮盡圖形清單，允許變化但限定來源、可用色與透明度。
+  - brand_id: Klepierre_Charte_graphique_2013
+    chapter: ch-04-01
+    excerpt: K fenêtre 可裝載一或多張照片，K calque 可用白色 80% 或漸層覆蓋；若 K symbol 內照片與外部照片不同或造成不可讀，應判定不合格。
+  - brand_id: McDonalds_Feel_Good_Design_Cheatsheets_2019
+    chapter: ch-03
+    excerpt: Archery Cheatsheet：把 Golden Arches 轉為 creative/dynamic 技法，包含 cropping、motion、staging、angled、repetition。
+  - brand_id: MINI_CI_Guidelines_2013
+    chapter: ch-04
+    excerpt: 每頁最多 3 個 frame、frame 不能空、至少 bleed off 1 edge、相接 frame 必須不同色；frame 作為 container/focus/connector/campaign
+      grid，是可跨媒介複用的 visual grammar。
+  - brand_id: SAO_PAULO_BRANDBOOK_2011
+    chapter: ch-04
+    excerpt: six-element visual system + controlled variation；應用可使用一個或多個六大視覺元素，但元素需來自本書與 electronic originals，不得任意改變透視、顏色、字體比例或清楚度。
+  - brand_id: sartorius_Brand_Style_Guide_2020
+    chapter: ch-03
+    excerpt: grid-to-asset framework：format division → logo size → claim tile → content area；以 1/4、1/3、1/2、full
+      format 建立 flexible grid，品牌版面靠少量比例規則創造可辨識性。
+  - brand_id: SONY
+    chapter: ch-03
+    excerpt: ad execution framework：format → frame formula（h = 0.022 x format height）→ content zone →
+      copy/legal；把 reference guide 當作彈性邊界而非單一模板。
+  - brand_id: TikTok_For_Business_Brand_Guidelines
+    chapter: ch-03-04
+    excerpt: 工具箱不是自由裝飾庫，每個元素都有來源、用途、尺寸與可近用條件；品牌圖形元件可像 UI component 一樣定義 props（fill/stroke、color、roundness、size、placement）。
+  - brand_id: TikTok_For_Business_Brand_Guidelines
+    chapter: ch-03
+    excerpt: 設計系統最好從核心 logo primitives 派生，而不是另加裝飾素材；logo-derived visual language：circle → bubble / pattern
+      / emphasis / rounded phone shape。
+  - brand_id: ZAG_brand_guidelines
+    chapter: ch-01
+    excerpt: Core/flexible framework：core identity elements must be systematic；communication executions
+      may vary within logic；用『核心嚴格、應用彈性』避免過度規範。
+  evidence_brand_count: 16
+  confidence: 0.95
+  status: verified
+- id: dp-trademark-permission-flow
+  title: 用授權閘門治理第三方商標使用，先處理混淆與背書風險
+  problem:
+    statement: 平台品牌被大量第三方使用商標與資產，若無授權流程，會造成商標混淆與誤導性背書風險。
+    signals:
+    - trademark_protection
+    - partner_governance
+    - endorsement_risk
+    - third_party_usage
+  solution:
+    module: Legal and Trademark
+    move: 以「核准來源 + 允許情境 + 禁止改作 + permission gate」治理，高風險情境須送審並附最終版本、描述與 script
+    layer: governance
+  reason:
+  - 平台品牌 guideline 應優先處理 trademark confusion 與 endorsement risk，再處理美學一致
+  - 越接近大眾媒體、商業廣告、包裝與劇情敘事，審查需求越高
+  - permission section 將品牌治理流程化，降低設計師自行判斷法律風險
+  - 高敏感品牌 guideline 應在規格前放審核流程，避免 partner 先做完再修改
+  - 審核應前置於製作，越高風險的媒體越需要多階段送審
+  - 把品牌規範從靜態文件轉成審核流程，材料超過一年需重新驗證
+  - permission section 將品牌治理流程化，降低設計師自行判斷品牌風險
+  - 授權標章應以「關係正確性」為審核目標，而非只看 logo 是否出現
+  - 媒體越接近 sponsorship、移動曝光或可販售商品，越需要嚴格限制標章
+  - 品牌控制不只靠禁止，還要提供可信資產供應鏈（official asset source）
+  - 品牌保護不是阻止使用，而是把使用導向正確審核與授權流程
+  - guideline 末端應將治理責任拆成具體單位與表單，而非只說「請遵守」
+  - 授權鏈越長，越需要明確寫出誰提交、誰批准、誰能終止
+  - co-branding guideline 必須包含價值不相容條款，因為品牌聯名本身會轉移聲譽風險
+  - 越有名的公共品牌越需要權限治理
+  - 外部夥伴指南應以媒介分類規範，而非只提供一般原則
+  - 品牌資產使用不是設計問題的第一步，而是關係與授權問題
+  - 任何第三方 logo guideline 都應先問「是否有合法關係」而不是「該放哪個版本」
+  - 公共城市品牌應明確處理「誰可使用」與「為何仍需嚴格」的張力
+  - 公共品牌開放不等於素材著作權開放
+  - 第三方 guideline 應把 visual imitation、API affiliation 與 merchandise 分開審核
+  - 治理不是限制創意，而是防止使用者混淆與錯誤背書
+  - 奧運品牌治理優先處理權利與關聯風險，再處理視覺一致性
+  - 對高價值 IP，guideline 應先設 permission scope，而非直接展示 logo artwork
+  - Examples 不只是美術示範，而是權利邊界的場景化解釋
+  - 品牌開放給第三方時，開頭就應定義「可用」不等於「可直接發布」
+  - 合作擴散需要在 attribution、brand consistency 與 content integrity 之間取得平衡
+  - 平台品牌 guideline 應把「可提及」與「可命名／可商品化」分開
+  - 商標使用不是設計建議，而是有限、可撤銷、必須嚴格遵守的授權
+  - 商標保護不只是法律，而是讓客戶更容易辨識可靠的 offer
+  - 商標章節應同時處理命名、第三方使用、商品、標牌與侵權流程
+  - partner brand guidelines 應明確連結品牌規則、商標權與可執行後果
+  applicable_when:
+    industries:
+    - tech_software
+    - finance
+    - education
+    - public_sector
+    - media_entertainment
+    - consumer_retail_hospitality
+    - new_energy_mobility
+    brand_types:
+    - platform_ecosystem
+    - institutional_public_trust
+    conditions:
+    - third_party_usage
+    - partner_governance
+    - trademark_protection
+    archetypes:
+    - multi_brand_architecture
+    - brand_experience_guide
+  dependencies:
+    requires:
+    - Legal and Trademark
+    enables:
+    - Governance
+    conflicts_with: []
+  examples: []
+  anti_patterns:
+  - 只給視覺規格而無使用情境風險表與審核材料清單
+  - 放任第三方自行判斷法律與背書風險
+  - 只說「請遵守」卻不提供審核單位與表單
+  evidence:
+  - brand_id: accoya_brand_guidelines_2015
+    chapter: ch-01-01
+    excerpt: 技術材料品牌的 guideline 應先定義法律保護與宣稱邊界；先列保護範圍與檢查權，並保留 Accsys Technologies 檢查材料與採取行動的權利。
+  - brand_id: accoya_brand_guidelines_2015
+    chapter: ch-06-04
+    excerpt: Made With ingredient mark 僅能在 Accsys Technologies 書面核准後使用，將授權與資產請求集中到 Marketing Team，避免第三方自行使用造成品牌與法律誤解。
+  - brand_id: Amazon_Brand_Usage_Guidelines
+    chapter: ch-01
+    excerpt: 平台品牌的 partner guideline 應先定義審核權限，再給予執行細節；所有創意材料須事前提交 Amazon 核准，未獲 written approval 不應使用 Amazon
+      branding elements。
+  - brand_id: Amazon_Brand_Usage_Guidelines
+    chapter: ch-02-04
+    excerpt: 品牌詞庫應包含 prohibited、requires approval、allowed-with-context 三種狀態；平台品牌 guideline 應管理『近似語』而不只管理精確商標。
+  - brand_id: Amazon_Echo_Alexa_Guidelines_External
+    chapter: ch-01
+    excerpt: Collateral type → Risk category → Submit to correct Amazon contact → Allow up to 10 business
+      days；TV、radio、packaging、POS、promotion、hardware logo、kids use case、deviation 都需送審，外部行銷不是純創意問題而是 approval
+      workflow。
+  - brand_id: Amazon_Echo_Alexa_Guidelines_External
+    chapter: ch-02-01
+    excerpt: 產品命名是商標與使用者理解的一部分，不得用縮寫（不得說 Dot / Show，應說 Echo Dot / Echo Show），命名規則應列出常見縮寫錯誤。
+  - brand_id: American_Express_Guidelines_2018
+    chapter: ch-04-01
+    excerpt: Touchpoint approval matrix：media type → required review stage；ATL 非 TV 需在 brief、concept/creative、final
+      execution 三階段送審，所有 marketing materials 必須送 American Express representative。
+  - brand_id: American_Express_Guidelines_2018
+    chapter: ch-04-02
+    excerpt: 最終版製作前須送審、市面素材超過一年需重審；即使未明文違規但可能傷害品牌，仍可要求修正。
+  - brand_id: Apple_ID_Guidelines_Channel_2016
+    chapter: ch-02
+    excerpt: Apple channel signature 代表合約關係，Apple logo 不可單獨出現在通路溝通中；Apple 身分永遠是 secondary endorsement，不可取代經銷商身分。
+  - brand_id: Apple_ID_Guidelines_Channel_2016
+    chapter: ch-02-02
+    excerpt: Touchpoint permission matrix：allowed、text-only、prohibited、approval required、size/placement
+      limited，依媒體調整同一資產的權限，而不是在單一 logo rule 中硬塞例外。
+  - brand_id: Berkeley_Brand_Manual_accessible_2019
+    chapter: ch-09-02
+    excerpt: Brand Protection 把 film/TV、advertising、press release、merchandise、partnership 導向不同單位；商標使用需提交
+      Trademark Use Request，誤用需 Misuse Report，商品需 licensed vendors。
+  - brand_id: Dubai_BRAND_GUIDELINES_2021
+    chapter: ch-10
+    excerpt: Marks 不得商業使用、商品化、廣告使用、貶損或暗示 endorsement，使用需加 attribution，並保留 DTCM inspection / cease and
+      desist 權利；合作 endorsement 需先滿足 flag bearer / MOU 等資格。
+  - brand_id: Dubai_BRAND_GUIDELINES_2021
+    chapter: ch-09
+    excerpt: partner endorsement 需通過 eligibility → permitted use → collateral placement → risk review；endorsement
+      不得對 Brand Dubai equity 造成重大負面風險。
+  - brand_id: eftpos_Brand_Guidelines_2021
+    chapter: ch-04-01
+    excerpt: 所有 card designs 與 brandmark 使用必須先取得 eftpos approval、經 Service Now Member Portal 提交 finished
+      scale colour sample；contactless mark 為 EMVCo sublicence，使用須含 attribution 並遵守 EMVCo guidelines。
+  - brand_id: Facebook_Brand_Assets_Guide_2019
+    chapter: ch-01
+    excerpt: 平台品牌 guideline 應優先處理 trademark confusion 與 endorsement risk，再處理美學一致；採『approved source + allowed
+      contexts + prohibited modifications + permission gate』框架。
+  - brand_id: Facebook_Brand_Assets_Guide_2019
+    chapter: ch-01-02
+    excerpt: 把高風險使用情境導入審核流程，避免未授權曝光造成法律或品牌誤解；request 必須附最終版本、描述、script 與非英語 translation。
+  - brand_id: facebook_brandassetsguide_2016
+    chapter: ch-02-02
+    excerpt: 明確禁止在 clothing/hats/mugs 等 merchandise 使用 Facebook trademarks/logos/IP；TV/film 使用需透過 facebookbrand.com/requests
+      申請，且 request 需包含最終呈現與腳本或 synopsis，把商品化與媒體劇情使用視為不同風險類別。
+  - brand_id: facebook_brandassetsguide_2016
+    chapter: ch-02-01
+    excerpt: 只能使用 Brand Resource Center 官方資產；不得使用模仿 Facebook 的商標/域名/logo、不得將 Facebook 與第三方名稱或 generic
+      terms 結合成新標誌。
+  - brand_id: HP_CoBranding_Guidelines_2020
+    chapter: ch-07
+    excerpt: Terms and Resources 用強制 disclaimer、禁止項目與拒絕權把法律風險轉成內容生產規則：暴力、武器、歧視或性不當活動可被拒絕共同品牌或資助；HP 修飾語需大寫、product-descriptive
+      communications 需加 warranty disclaimer。
+  - brand_id: HP_CoBranding_Guidelines_2020
+    chapter: ch-05
+    excerpt: Partner-led 情境若 partner guideline 不允許 lockup，需洽 Brand Central；品牌 guideline 應承認外部規範的優先性並設置升級詢問機制。
+  - brand_id: ILoveNY_brand_guidelines_2008
+    chapter: ch-03-01
+    excerpt: 任何形式、任何地方使用 I LOVE NEW YORK logo 均需 I LOVE NEW YORK office 核准；不存在 blanket policy；seasonal
+      logos 只能用於核准專案、只能用 black/red 並使用提供的 scalable art。
+  - brand_id: Michelin_DISTRIBUTOR_GUIDE_2019
+    chapter: ch-01
+    excerpt: 先界定第三方經銷商能做什麼、不能做什麼，防止 MICHELIN 品牌被誤用成經銷商品牌背書或官方通路；只開放 logo、封鎖 brand style 與 mascot，並由 licensee
+      與 Michelin Lifestyle 驗證。
+  - brand_id: Michelin_DISTRIBUTOR_GUIDE_2019
+    chapter: ch-03
+    excerpt: 數位通路中 MICHELIN content 必須 secondary、只允許 dedicated 產品頁、不得在主要 domain 或 URL 使用 Michelin，越接近完整體驗的媒介越需要避免品牌主體被誤認。
+  - brand_id: Microsoft_Bing_Logo_icon_2020
+    chapter: ch-01
+    excerpt: 若使用 logo、名稱或暗示 Microsoft Bing 贊助、背書、相容性，即需確認 license；authorization flow：existing agreement
+      → general Microsoft guidelines → business owner license → brand team contact。
+  - brand_id: Microsoft_Bing_Logo_icon_2020
+    chapter: ch-02
+    excerpt: 若使用 Results from Microsoft Bing 或類似語句，需與實際資料來源/相容關係一致，不可用元素暗示超出事實的合作關係。
+  - brand_id: SAO_PAULO_BRANDBOOK_2011
+    chapter: ch-05
+    excerpt: 使用 São Paulo brand 前需寄信至 marcasp@spturis.com 取得 authorization；第三方需事先授權，並依情境調整 foreground/background
+      權重。
+  - brand_id: SAO_PAULO_BRANDBOOK_2011
+    chapter: ch-08
+    excerpt: guidebook images 僅供 illustration purposes；不得未經 Strategic Actions and Communication Department
+      事先明確授權而重製。
+  - brand_id: Slack-Brand-Guidelines
+    chapter: ch-03-02
+    excerpt: 把 API integration 的 affiliation ambiguity 寫入 brand guideline；third-party risk framework：visual
+      imitation → asset framing → API ambiguity → disclaimer visibility → merchandise ban。
+  - brand_id: Slack-Brand-Guidelines
+    chapter: ch-03
+    excerpt: 治理不是限制創意，而是防止使用者混淆與錯誤背書；以 trademark notice、trade dress 與 API affiliation disclaimer 管理風險。
+  - brand_id: Tokyo_2020_NOC_Olympic_emblem_2018
+    chapter: ch-01
+    excerpt: rights-first guideline：user role → purpose → allowed assets → association limits → approval/access
+      path；NOC 使用限非商業目的，不得用於 licensed/replica merchandise。
+  - brand_id: Tokyo_2020_NOC_Olympic_emblem_2018
+    chapter: ch-05
+    excerpt: printed materials 不得用於 commercial or promotional purposes；website 上 emblem 必須與 commercial
+      contents 明確分離，僅 Worldwide Olympic Partners 可作商業例外。
+  - brand_id: Tripadvisor_partners_2020
+    chapter: ch-01
+    excerpt: 建立合作夥伴使用 Tripadvisor 品牌與內容的授權邊界；任何含 branding/content 的行銷材料必須先送 Tripadvisor 審核，缺少 approval
+      metadata 不可發布。
+  - brand_id: Tripadvisor_partners_2020
+    chapter: ch-04
+    excerpt: logos 與 ratings bubbles 由 Tripadvisor URL 提供、不得本地存放，活動需 tracking 並完成最終內容核准；第三方品牌使用應可更新、可撤換、可追蹤。
+  - brand_id: twitter_brand_guidelines_2020
+    chapter: ch-05
+    excerpt: 不得把 Twitter marks 納入公司、產品、服務、網站、application 名稱；除 hashtag/handle lockup 或 social icons 外不得製作販售帶
+      Twitter name/logo 的商品。
+  - brand_id: twitter_brand_guidelines_2020
+    chapter: ch-06
+    excerpt: 商標使用是有限、可撤銷、必須嚴格遵守的授權；含 marks 的 materials 必須顯示 trademark statement，不得暗示 sponsorship/endorsement。
+  - brand_id: Volvo_2021_compressed
+    chapter: ch-01-02
+    excerpt: 9 條 golden rules：不得自造 Volvo logotype；供應商不得未經書面同意在行銷中提及 Volvo；merchandise 與 signage 必須用官方/核准來源。
+  - brand_id: ZOOM_2022
+    chapter: ch-01
+    excerpt: 合作品牌治理需要把行銷便利與法律/商標風險放在同一份操作文件中；若不符合規定需 rectification，嚴重時可撤銷 Zoom trademark 使用權。
+  - brand_id: ZOOM_2022
+    chapter: ch-10
+    excerpt: Zoom Marks 需 license 或 express written permission；任何 featuring Zoom Mark 的溝通應包含 proper trademark
+      attribution，並符合 guideline 與 partner agreement license terms。
+  evidence_brand_count: 21
+  confidence: 0.95
+  status: verified
+indices:
+  by_industry:
+    consumer_retail_hospitality:
+    - dp-approval-gate-for-exceptions
+    - dp-cheatsheet-for-mass-touchpoints
+    - dp-cobranding-grid-governance
+    - dp-modular-manual-for-public-units
+    - dp-origin-story-before-rules
+    - dp-palette-roles-and-usage-limits
+    - dp-personality-words-as-evaluation-criteria
+    - dp-platform-before-visual-rules
+    - dp-system-toolkit-over-template
+    - dp-trademark-permission-flow
+    education:
+    - dp-accessible-contrast-pairs
+    - dp-approval-gate-for-exceptions
+    - dp-bilingual-identity-system
+    - dp-cobranding-grid-governance
+    - dp-contact-before-appendix
+    - dp-from-to-voice-translation
+    - dp-logo-vs-lockup-distinction
+    - dp-media-split-typography
+    - dp-modular-manual-for-public-units
+    - dp-personality-words-as-evaluation-criteria
+    - dp-platform-before-visual-rules
+    - dp-system-toolkit-over-template
+    - dp-trademark-permission-flow
+    finance:
+    - dp-accessible-contrast-pairs
+    - dp-approval-gate-for-exceptions
+    - dp-asset-protection-for-legacy
+    - dp-bilingual-identity-system
+    - dp-cobranding-grid-governance
+    - dp-compliance-copy-as-layout-system
+    - dp-contact-before-appendix
+    - dp-from-to-voice-translation
+    - dp-logo-vs-lockup-distinction
+    - dp-media-split-typography
+    - dp-modular-manual-for-public-units
+    - dp-monochrome-logo-by-contrast
+    - dp-name-usage-governance
+    - dp-one-brand-one-voice-governance
+    - dp-palette-roles-and-usage-limits
+    - dp-persona-driven-voice
+    - dp-personality-words-as-evaluation-criteria
+    - dp-platform-before-visual-rules
+    - dp-responsible-framing-for-regulated-category
+    - dp-restrained-palette-for-trust
+    - dp-system-toolkit-over-template
+    - dp-trademark-permission-flow
+    industrial_materials_science:
+    - dp-approval-gate-for-exceptions
+    - dp-color-set-over-single-pickers
+    - dp-contact-before-appendix
+    - dp-custom-typeface-as-identity-asset
+    - dp-from-to-voice-translation
+    - dp-logo-vs-lockup-distinction
+    - dp-personality-words-as-evaluation-criteria
+    - dp-platform-before-visual-rules
+    - dp-system-toolkit-over-template
+    luxury_premium:
+    - dp-approval-gate-for-exceptions
+    - dp-asset-protection-for-legacy
+    - dp-editorial-typography-for-premium
+    - dp-modular-manual-for-public-units
+    - dp-name-usage-governance
+    - dp-palette-roles-and-usage-limits
+    - dp-restraint-as-luxury-signal
+    media_entertainment:
+    - dp-approval-gate-for-exceptions
+    - dp-asset-protection-for-legacy
+    - dp-bold-contrast-for-challenger
+    - dp-cobranding-grid-governance
+    - dp-color-set-over-single-pickers
+    - dp-contact-before-appendix
+    - dp-content-forward-flexible-identity
+    - dp-custom-typeface-as-identity-asset
+    - dp-editorial-typography-for-premium
+    - dp-logo-vs-lockup-distinction
+    - dp-message-hierarchy-by-persona
+    - dp-modular-manual-for-public-units
+    - dp-one-brand-one-voice-governance
+    - dp-persona-driven-voice
+    - dp-personality-words-as-evaluation-criteria
+    - dp-platform-before-visual-rules
+    - dp-restrained-palette-for-trust
+    - dp-system-toolkit-over-template
+    - dp-trademark-permission-flow
+    new_energy_mobility:
+    - dp-custom-typeface-as-identity-asset
+    - dp-one-brand-one-voice-governance
+    - dp-platform-before-visual-rules
+    - dp-story-framework-category-education
+    - dp-trademark-permission-flow
+    nonprofit_social:
+    - dp-accessible-contrast-pairs
+    - dp-cobranding-grid-governance
+    - dp-color-set-over-single-pickers
+    - dp-contact-before-appendix
+    - dp-from-to-voice-translation
+    - dp-inclusive-language-governance
+    - dp-media-split-typography
+    - dp-modular-manual-for-public-units
+    - dp-one-brand-one-voice-governance
+    - dp-origin-story-before-rules
+    - dp-palette-roles-and-usage-limits
+    - dp-personality-words-as-evaluation-criteria
+    - dp-platform-before-visual-rules
+    public_sector:
+    - dp-accessible-contrast-pairs
+    - dp-approval-gate-for-exceptions
+    - dp-asset-protection-for-legacy
+    - dp-bilingual-identity-system
+    - dp-clearspace-from-logo-geometry
+    - dp-cobranding-grid-governance
+    - dp-contact-before-appendix
+    - dp-content-forward-flexible-identity
+    - dp-custom-typeface-as-identity-asset
+    - dp-from-to-voice-translation
+    - dp-inclusive-language-governance
+    - dp-media-split-typography
+    - dp-modular-manual-for-public-units
+    - dp-name-usage-governance
+    - dp-one-brand-one-voice-governance
+    - dp-personality-words-as-evaluation-criteria
+    - dp-platform-before-visual-rules
+    - dp-restrained-palette-for-trust
+    - dp-system-toolkit-over-template
+    - dp-trademark-permission-flow
+    tech_software:
+    - dp-accessible-contrast-pairs
+    - dp-approval-gate-for-exceptions
+    - dp-bold-contrast-for-challenger
+    - dp-cobranding-grid-governance
+    - dp-color-set-over-single-pickers
+    - dp-contact-before-appendix
+    - dp-custom-typeface-as-identity-asset
+    - dp-from-to-voice-translation
+    - dp-logo-vs-lockup-distinction
+    - dp-message-hierarchy-by-persona
+    - dp-modular-manual-for-public-units
+    - dp-one-brand-one-voice-governance
+    - dp-persona-driven-voice
+    - dp-personality-words-as-evaluation-criteria
+    - dp-platform-before-visual-rules
+    - dp-responsible-framing-for-regulated-category
+    - dp-restrained-palette-for-trust
+    - dp-story-framework-category-education
+    - dp-system-toolkit-over-template
+    - dp-trademark-permission-flow
+  by_brand_type:
+    category_creator:
+    - dp-bold-contrast-for-challenger
+    - dp-content-forward-flexible-identity
+    - dp-custom-typeface-as-identity-asset
+    - dp-from-to-voice-translation
+    - dp-personality-words-as-evaluation-criteria
+    - dp-platform-before-visual-rules
+    - dp-story-framework-category-education
+    - dp-system-toolkit-over-template
+    challenger:
+    - dp-bold-contrast-for-challenger
+    - dp-contact-before-appendix
+    - dp-content-forward-flexible-identity
+    - dp-custom-typeface-as-identity-asset
+    - dp-from-to-voice-translation
+    - dp-message-hierarchy-by-persona
+    - dp-persona-driven-voice
+    - dp-personality-words-as-evaluation-criteria
+    - dp-platform-before-visual-rules
+    - dp-responsible-framing-for-regulated-category
+    - dp-restrained-palette-for-trust
+    - dp-story-framework-category-education
+    heritage_legacy:
+    - dp-approval-gate-for-exceptions
+    - dp-asset-protection-for-legacy
+    - dp-compliance-copy-as-layout-system
+    - dp-custom-typeface-as-identity-asset
+    - dp-editorial-typography-for-premium
+    - dp-from-to-voice-translation
+    - dp-logo-vs-lockup-distinction
+    - dp-modular-manual-for-public-units
+    - dp-name-usage-governance
+    - dp-one-brand-one-voice-governance
+    - dp-personality-words-as-evaluation-criteria
+    - dp-platform-before-visual-rules
+    - dp-restrained-palette-for-trust
+    - dp-restraint-as-luxury-signal
+    - dp-system-toolkit-over-template
+    institutional_public_trust:
+    - dp-accessible-contrast-pairs
+    - dp-approval-gate-for-exceptions
+    - dp-asset-protection-for-legacy
+    - dp-bilingual-identity-system
+    - dp-clearspace-from-logo-geometry
+    - dp-cobranding-grid-governance
+    - dp-compliance-copy-as-layout-system
+    - dp-contact-before-appendix
+    - dp-content-forward-flexible-identity
+    - dp-custom-typeface-as-identity-asset
+    - dp-from-to-voice-translation
+    - dp-inclusive-language-governance
+    - dp-logo-vs-lockup-distinction
+    - dp-media-split-typography
+    - dp-modular-manual-for-public-units
+    - dp-name-usage-governance
+    - dp-one-brand-one-voice-governance
+    - dp-origin-story-before-rules
+    - dp-palette-roles-and-usage-limits
+    - dp-personality-words-as-evaluation-criteria
+    - dp-platform-before-visual-rules
+    - dp-restrained-palette-for-trust
+    - dp-system-toolkit-over-template
+    - dp-trademark-permission-flow
+    mass_consumer:
+    - dp-cheatsheet-for-mass-touchpoints
+    - dp-palette-roles-and-usage-limits
+    - dp-system-toolkit-over-template
+    mission_driven:
+    - dp-accessible-contrast-pairs
+    - dp-cobranding-grid-governance
+    - dp-from-to-voice-translation
+    - dp-inclusive-language-governance
+    - dp-media-split-typography
+    - dp-modular-manual-for-public-units
+    - dp-origin-story-before-rules
+    - dp-personality-words-as-evaluation-criteria
+    - dp-platform-before-visual-rules
+    platform_ecosystem:
+    - dp-approval-gate-for-exceptions
+    - dp-cobranding-grid-governance
+    - dp-logo-vs-lockup-distinction
+    - dp-message-hierarchy-by-persona
+    - dp-modular-manual-for-public-units
+    - dp-monochrome-logo-by-contrast
+    - dp-one-brand-one-voice-governance
+    - dp-persona-driven-voice
+    - dp-personality-words-as-evaluation-criteria
+    - dp-platform-before-visual-rules
+    - dp-responsible-framing-for-regulated-category
+    - dp-system-toolkit-over-template
+    - dp-trademark-permission-flow
+    premium_luxury:
+    - dp-asset-protection-for-legacy
+    - dp-editorial-typography-for-premium
+    - dp-name-usage-governance
+    - dp-palette-roles-and-usage-limits
+    - dp-restraint-as-luxury-signal
+  by_module:
+    Accessibility:
+    - dp-accessible-contrast-pairs
+    Brand Architecture:
+    - dp-cobranding-grid-governance
+    - dp-modular-manual-for-public-units
+    Brand Strategy:
+    - dp-origin-story-before-rules
+    - dp-personality-words-as-evaluation-criteria
+    - dp-platform-before-visual-rules
+    Color System:
+    - dp-bold-contrast-for-challenger
+    - dp-color-set-over-single-pickers
+    - dp-palette-roles-and-usage-limits
+    - dp-restrained-palette-for-trust
+    Compliance:
+    - dp-compliance-copy-as-layout-system
+    Content Design:
+    - dp-inclusive-language-governance
+    - dp-responsible-framing-for-regulated-category
+    Governance:
+    - dp-approval-gate-for-exceptions
+    - dp-contact-before-appendix
+    - dp-one-brand-one-voice-governance
+    Legal and Trademark:
+    - dp-name-usage-governance
+    - dp-trademark-permission-flow
+    Messaging:
+    - dp-message-hierarchy-by-persona
+    - dp-story-framework-category-education
+    Operations:
+    - dp-cheatsheet-for-mass-touchpoints
+    Typography System:
+    - dp-bilingual-identity-system
+    - dp-custom-typeface-as-identity-asset
+    - dp-editorial-typography-for-premium
+    - dp-media-split-typography
+    Visual Identity:
+    - dp-asset-protection-for-legacy
+    - dp-clearspace-from-logo-geometry
+    - dp-logo-vs-lockup-distinction
+    - dp-monochrome-logo-by-contrast
+    Visual Language:
+    - dp-content-forward-flexible-identity
+    - dp-system-toolkit-over-template
+    Voice and Tone:
+    - dp-from-to-voice-translation
+    - dp-persona-driven-voice
+    - dp-restraint-as-luxury-signal
+  by_signal:
+    abbreviation_misuse:
+    - dp-name-usage-governance
+    abstract_values:
+    - dp-personality-words-as-evaluation-criteria
+    accessibility:
+    - dp-accessible-contrast-pairs
+    asset_protection:
+    - dp-asset-protection-for-legacy
+    authority_dilution:
+    - dp-name-usage-governance
+    b2b:
+    - dp-from-to-voice-translation
+    bilingual:
+    - dp-bilingual-identity-system
+    brand_architecture_complexity:
+    - dp-modular-manual-for-public-units
+    brand_color_equity:
+    - dp-palette-roles-and-usage-limits
+    brand_dilution_risk:
+    - dp-asset-protection-for-legacy
+    brand_fragmentation_risk:
+    - dp-one-brand-one-voice-governance
+    brand_overclaiming_risk:
+    - dp-restraint-as-luxury-signal
+    brand_recognition:
+    - dp-custom-typeface-as-identity-asset
+    brand_recognition_vs_content:
+    - dp-content-forward-flexible-identity
+    breakthrough_attention:
+    - dp-bold-contrast-for-challenger
+    cobranding:
+    - dp-cobranding-grid-governance
+    color_governance:
+    - dp-color-set-over-single-pickers
+    - dp-palette-roles-and-usage-limits
+    community:
+    - dp-message-hierarchy-by-persona
+    - dp-persona-driven-voice
+    complex_tech:
+    - dp-story-framework-category-education
+    consistency_across_partners:
+    - dp-one-brand-one-voice-governance
+    - dp-restrained-palette-for-trust
+    consistency_over_time:
+    - dp-asset-protection-for-legacy
+    content_forward_identity:
+    - dp-content-forward-flexible-identity
+    - dp-message-hierarchy-by-persona
+    content_safety:
+    - dp-inclusive-language-governance
+    - dp-responsible-framing-for-regulated-category
+    craftsmanship:
+    - dp-editorial-typography-for-premium
+    cross_cultural_audience:
+    - dp-bilingual-identity-system
+    differentiation:
+    - dp-bold-contrast-for-challenger
+    - dp-persona-driven-voice
+    diverse_content:
+    - dp-system-toolkit-over-template
+    ease_of_execution:
+    - dp-cheatsheet-for-mass-touchpoints
+    ecosystem_consistency:
+    - dp-one-brand-one-voice-governance
+    editorial_feel:
+    - dp-editorial-typography-for-premium
+    endorsement_risk:
+    - dp-trademark-permission-flow
+    enterprise:
+    - dp-platform-before-visual-rules
+    exception_handling:
+    - dp-approval-gate-for-exceptions
+    exceptions_expected:
+    - dp-contact-before-appendix
+    exclusivity:
+    - dp-restraint-as-luxury-signal
+    expert_audience:
+    - dp-from-to-voice-translation
+    franchise_governance:
+    - dp-cheatsheet-for-mass-touchpoints
+    governance:
+    - dp-approval-gate-for-exceptions
+    - dp-contact-before-appendix
+    heritage:
+    - dp-asset-protection-for-legacy
+    - dp-editorial-typography-for-premium
+    high_education_cost:
+    - dp-story-framework-category-education
+    identity_distinctiveness:
+    - dp-custom-typeface-as-identity-asset
+    inclusive_audience:
+    - dp-accessible-contrast-pairs
+    - dp-inclusive-language-governance
+    inconsistent_outputs:
+    - dp-personality-words-as-evaluation-criteria
+    layout_consistency:
+    - dp-compliance-copy-as-layout-system
+    legal_governance:
+    - dp-logo-vs-lockup-distinction
+    licensing:
+    - dp-media-split-typography
+    localization:
+    - dp-bilingual-identity-system
+    logo_misuse_risk:
+    - dp-monochrome-logo-by-contrast
+    long_consideration_cycle:
+    - dp-story-framework-category-education
+    many_agencies:
+    - dp-system-toolkit-over-template
+    many_teams:
+    - dp-system-toolkit-over-template
+    mass_touchpoints:
+    - dp-cheatsheet-for-mass-touchpoints
+    - dp-compliance-copy-as-layout-system
+    - dp-system-toolkit-over-template
+    misleading_risk:
+    - dp-responsible-framing-for-regulated-category
+    mission_communication:
+    - dp-inclusive-language-governance
+    - dp-origin-story-before-rules
+    motion_behavior:
+    - dp-content-forward-flexible-identity
+    multi_application:
+    - dp-palette-roles-and-usage-limits
+    multi_audience:
+    - dp-message-hierarchy-by-persona
+    multi_brand:
+    - dp-cobranding-grid-governance
+    multi_entity:
+    - dp-modular-manual-for-public-units
+    multi_market:
+    - dp-one-brand-one-voice-governance
+    multi_media:
+    - dp-clearspace-from-logo-geometry
+    - dp-color-set-over-single-pickers
+    - dp-custom-typeface-as-identity-asset
+    multi_platform:
+    - dp-content-forward-flexible-identity
+    multi_unit_consistency:
+    - dp-approval-gate-for-exceptions
+    - dp-modular-manual-for-public-units
+    multilingual:
+    - dp-bilingual-identity-system
+    multiple_logo_contexts:
+    - dp-logo-vs-lockup-distinction
+    name_governance:
+    - dp-name-usage-governance
+    needs_evaluation_criteria:
+    - dp-personality-words-as-evaluation-criteria
+    new_category:
+    - dp-story-framework-category-education
+    new_identity:
+    - dp-origin-story-before-rules
+    - dp-platform-before-visual-rules
+    no_strategic_foundation:
+    - dp-origin-story-before-rules
+    - dp-platform-before-visual-rules
+    non_designer_executors:
+    - dp-cheatsheet-for-mass-touchpoints
+    palette_misuse:
+    - dp-palette-roles-and-usage-limits
+    participation:
+    - dp-origin-story-before-rules
+    partner_governance:
+    - dp-cobranding-grid-governance
+    - dp-trademark-permission-flow
+    personality_expression:
+    - dp-bold-contrast-for-challenger
+    - dp-persona-driven-voice
+    photo_backgrounds:
+    - dp-monochrome-logo-by-contrast
+    premium_perception:
+    - dp-editorial-typography-for-premium
+    - dp-restraint-as-luxury-signal
+    print_and_digital:
+    - dp-media-split-typography
+    public_trust:
+    - dp-accessible-contrast-pairs
+    - dp-restrained-palette-for-trust
+    readability:
+    - dp-media-split-typography
+    regulatory_compliance:
+    - dp-accessible-contrast-pairs
+    - dp-compliance-copy-as-layout-system
+    - dp-responsible-framing-for-regulated-category
+    - dp-restrained-palette-for-trust
+    relatability:
+    - dp-persona-driven-voice
+    required_disclosure:
+    - dp-compliance-copy-as-layout-system
+    restraint:
+    - dp-restraint-as-luxury-signal
+    rich_palette:
+    - dp-color-set-over-single-pickers
+    scaling_inconsistency:
+    - dp-clearspace-from-logo-geometry
+    scaling_risk:
+    - dp-approval-gate-for-exceptions
+    strategy_refresh:
+    - dp-platform-before-visual-rules
+    style_over_system:
+    - dp-platform-before-visual-rules
+    sub_unit_identity:
+    - dp-modular-manual-for-public-units
+    system_consistency:
+    - dp-custom-typeface-as-identity-asset
+    - dp-system-toolkit-over-template
+    technical_jargon_risk:
+    - dp-from-to-voice-translation
+    third_party_usage:
+    - dp-responsible-framing-for-regulated-category
+    - dp-trademark-permission-flow
+    trademark:
+    - dp-logo-vs-lockup-distinction
+    - dp-name-usage-governance
+    trademark_protection:
+    - dp-trademark-permission-flow
+    trust:
+    - dp-restrained-palette-for-trust
+    vulnerable_groups:
+    - dp-inclusive-language-governance

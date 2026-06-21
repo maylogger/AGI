@@ -1,0 +1,191 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: CCFB_BrandGuidelines_v3b
+index_ref: docs/CCFB_BrandGuidelines_v3b.index.yaml
+note_ref: docs/CCFB_BrandGuidelines_v3b.note.md
+archetype: brand_experience_guide
+industry: nonprofit_social
+modules:
+- Brand Strategy
+- Messaging
+- AI-Checkable Rules
+- Operations
+- Visual Identity
+- Color System
+- Design Tokens
+- Layout System
+- Typography System
+- Governance
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 4
+  section_count: 4
+chapter_sequence:
+- id: ch-01
+  title: Brand Map
+  order: 1
+  level: 1
+- id: ch-02
+  title: Logo System
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Elements of the Logo
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Color Palettes and Logo Variations
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: File Formats and Color Formats
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Required Whitespace and Format Variations
+  order: 4
+  level: 2
+- id: ch-03
+  title: Typography and Incorrect Usage
+  order: 3
+  level: 1
+- id: ch-04
+  title: Stationery Package
+  order: 4
+  level: 1
+frameworks:
+- name: '`definition -> difference -> relevance -> competencies -> reputation -> personality`'
+  chapter: ch-01
+  chapter_title: Brand Map
+- name: '`symbol -> palette -> variation -> file format -> whitespace -> format variation`'
+  chapter: ch-02
+  chapter_title: Logo System
+- name: '`graphic element -> operational meaning -> brand relevance`'
+  chapter: ch-02-01
+  chapter_title: Elements of the Logo
+- name: '`brand palette -> partner palette -> logo variation -> file name`'
+  chapter: ch-02-02
+  chapter_title: Color Palettes and Logo Variations
+- name: '`medium -> file type -> scalability/resolution -> color mode`'
+  chapter: ch-02-03
+  chapter_title: File Formats and Color Formats
+- name: '`logo type x-height -> 1'
+  chapter: ch-02-04
+  chapter_title: Required Whitespace and Format Variations
+- name: '`wordmark type origin -> accompanying fonts -> fallback fonts -> misuse prohibitions`'
+  chapter: ch-03
+  chapter_title: Typography and Incorrect Usage
+- name: '`stationery item -> packaged source file -> placeholder data -> non-printing specs -> production verification`'
+  chapter: ch-04
+  chapter_title: Stationery Package
+patterns:
+- name: 品牌地圖把策略詞彙切成可供 logo、copy、色彩與應用設計引用的 metadata。
+  chapter: ch-01
+  chapter_title: Brand Map
+- name: multi-symbol logo explanation 可用於組織需要教育使用者理解新標誌時。
+  chapter: ch-02-01
+  chapter_title: Elements of the Logo
+- name: 把 preferred variation 明確標示，避免所有版本被視為同等優先。
+  chapter: ch-02-02
+  chapter_title: Color Palettes and Logo Variations
+- name: file format decision table 是品牌資產治理的基本模組。
+  chapter: ch-02-03
+  chapter_title: File Formats and Color Formats
+- name: 以相對單位而非固定尺寸定義 clear space，能適用於不同 logo 尺寸。
+  chapter: ch-02-04
+  chapter_title: Required Whitespace and Format Variations
+- name: 小型品牌常用 commercially available fonts 搭配 customized wordmark，此時必須說清不可混用。
+  chapter: ch-03
+  chapter_title: Typography and Incorrect Usage
+- name: 以 InDesign package 管理字體與 linked images，是 print production governance pattern。
+  chapter: ch-04
+  chapter_title: Stationery Package
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI-checkable criteria：品牌材料應能至少對應到 caring/compassionate、trustworthy、resourceful、professional、strategic 中一項；不得只呈現需求悲情而缺少可靠分配能力。
+  chapter: ch-01
+  chapter_title: Brand Map
+- module: Visual Identity
+  criterion: AI-checkable criteria：preferred logo 應含 Feeding America lock-up；Feeding America logo 在 color/grayscale 時水平至少
+    7/16 inch，solid black 至少 3/8 inch，web/on-screen 至少 55 px；logo 周圍至少保留 1.5 倍 x-height 空間。
+  chapter: ch-02
+  chapter_title: Logo System
+- module: Visual Identity
+  criterion: AI-checkable criteria：不得改變 orange wheel 與 text 的關係；logo bug 單獨使用需 limited basis；任何替代圖形若無法保留 food、Central California、distribution、five
+    counties、bank 概念，不應視為同等 logo。
+  chapter: ch-02-01
+  chapter_title: Elements of the Logo
+- module: Visual Identity
+  criterion: AI-checkable criteria：full-color preferred logo 使用 `CCFBlogo_wFAlock_cmy`；2-color versions 使用 Feeding America
+    PMS colors；horizontal variation 僅在必須符合水平空間時使用。
+  chapter: ch-02-02
+  chapter_title: Color Palettes and Logo Variations
+- module: Color System
+  criterion: AI-checkable criteria：commercial printing 優先使用 AI/EPS/JPG；JPEG 只能縮小不可放大；screen 使用 PNG/SVG；spot color 適用於 screen
+    printing 或 embroidery；dark background 可使用 white/reversed logo。
+  chapter: ch-02-03
+  chapter_title: File Formats and Color Formats
+- module: ''
+  criterion: AI-checkable criteria：所有 logo variations 含 Feeding America lock-up 與 bug-only 版本周圍必須有 1.5X 空間；pink measuring
+    lines 不得出現在最終輸出；reverse logo 只能放在足夠暗且主要為 solid area 的背景。
+  chapter: ch-02-04
+  chapter_title: Required Whitespace and Format Variations
+- module: Typography System
+  criterion: AI-checkable criteria：不得 reposition logo elements；不得 skew/distort；不得改變 orange wheel 與 text 關係；不得放在 busy/distracting
+    background；不得改 logo element colors；不得在 minimum whitespace 內放文字；Gotham 不可用時可用 Arial。
+  chapter: ch-03
+  chapter_title: Typography and Incorrect Usage
+- module: ''
+  criterion: AI-checkable criteria：production 前需替換並驗證 names、titles、phone numbers、addresses、url；non-printing layer 不得輸出到成品；letterhead
+    sample letter 使用 10pt/15pt Georgia Regular。
+  chapter: ch-04
+  chapter_title: Stationery Package
+chapters:
+- id: ch-01
+  title: Brand Map
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-02
+  title: Logo System
+  modules:
+  - AI-Checkable Rules
+  - Operations
+  - Visual Identity
+- id: ch-02-01
+  title: Elements of the Logo
+  modules:
+  - Brand Strategy
+  - Visual Identity
+- id: ch-02-02
+  title: Color Palettes and Logo Variations
+  modules:
+  - Color System
+  - Visual Identity
+- id: ch-02-03
+  title: File Formats and Color Formats
+  modules:
+  - Design Tokens
+  - Operations
+- id: ch-02-04
+  title: Required Whitespace and Format Variations
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+- id: ch-03
+  title: Typography and Incorrect Usage
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Visual Identity
+- id: ch-04
+  title: Stationery Package
+  modules:
+  - Layout System
+  - Operations
+  - Governance

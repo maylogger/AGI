@@ -1,0 +1,194 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Facebook_Brand_Assets_Guide_2019
+index_ref: docs/Facebook_Brand_Assets_Guide_2019.index.yaml
+note_ref: docs/Facebook_Brand_Assets_Guide_2019.note.md
+archetype: brand_experience_guide
+industry: tech_software
+modules:
+- Legal and Trademark
+- Content Design
+- Governance
+- AI-Checkable Rules
+- Voice and Tone
+- Operations
+- UI Components
+- Interaction Design
+- Product Language
+- Content Safety
+- Knowledge Architecture
+depth:
+  strategy: medium
+  visual: medium
+  governance: high
+  top_level_chapter_count: 4
+  section_count: 4
+chapter_sequence:
+- id: ch-01
+  title: Welcome and General Guidelines
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: General usage and talking about Facebook
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Requesting Permission
+  order: 2
+  level: 2
+- id: ch-02
+  title: Facebook Brand Assets
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: f Logo, Thumb Icon, and Badge
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Reactions
+  order: 2
+  level: 2
+- id: ch-03
+  title: User Interface Templates
+  order: 3
+  level: 1
+- id: ch-04
+  title: FAQs
+  order: 4
+  level: 1
+frameworks:
+- name: 採「approved source + allowed contexts + prohibited modifications + permission gate」框架
+  chapter: ch-01
+  chapter_title: Welcome and General Guidelines
+- name: 採「text mention compliance」框架
+  chapter: ch-01-01
+  chapter_title: General usage and talking about Facebook
+- name: 採「use context risk classification + submission checklist」框架
+  chapter: ch-01-02
+  chapter_title: Requesting Permission
+- name: 採「asset purpose + allowed CTA + integrity constraints + prominence control」框架
+  chapter: ch-02
+  chapter_title: Facebook Brand Assets
+- name: 採「presence promotion asset」框架
+  chapter: ch-02-01
+  chapter_title: f Logo, Thumb Icon, and Badge
+- name: 採「product behaviour fidelity」框架
+  chapter: ch-02-02
+  chapter_title: Reactions
+- name: 採「device-framed product representation」框架
+  chapter: ch-03
+  chapter_title: User Interface Templates
+- name: 採「policy rationale + common scenario answer」框架
+  chapter: ch-04
+  chapter_title: FAQs
+patterns:
+- name: 把 brand guideline 寫成第三方 compliance manual，而不是單純視覺風格書。
+  chapter: ch-01
+  chapter_title: Welcome and General Guidelines
+- name: 品牌提及規則可以從視覺 guideline 延伸到 copy guideline。
+  chapter: ch-01-01
+  chapter_title: General usage and talking about Facebook
+- name: permission section 將品牌治理流程化，降低設計師自行判斷法律風險。
+  chapter: ch-01-02
+  chapter_title: Requesting Permission
+- name: 每個 logo 類 asset 都用相同治理欄位，讓審核規則可模組化。
+  chapter: ch-02
+  chapter_title: Facebook Brand Assets
+- name: 每個 asset 都必須和明確 action 或 context 綁定，防止漂浮裝飾化。
+  chapter: ch-02-01
+  chapter_title: f Logo, Thumb Icon, and Badge
+- name: 功能語境
+  chapter: ch-02-02
+  chapter_title: Reactions
+- name: 而非只含外觀
+  chapter: ch-02-02
+  chapter_title: Reactions
+- name: 可自訂內容，但不可改 UI 形態；這是 template-based localization 的治理模式。
+  chapter: ch-03
+  chapter_title: User Interface Templates
+- name: FAQ 是降低審核摩擦的知識庫入口。
+  chapter: ch-04
+  chapter_title: FAQs
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：只能使用 Brand Resource Center 資產；Facebook wordmark 不可用於代表 presence；不得讓 Facebook 成為最突出特徵；不得改色、變形、旋轉、加效果或重畫資產；Facebook
+    一詞不可複數化、動詞化或縮寫。
+  chapter: ch-01
+  chapter_title: Welcome and General Guidelines
+- module: ''
+  criterion: AI 可檢查：除網址外需寫作 Facebook；字體大小與 surrounding text 一致；不得寫成 facebook、Facebooks、facebooked、FB；不得用 logo/icon 取代單字。
+  chapter: ch-01-01
+  chapter_title: General usage and talking about Facebook
+- module: ''
+  criterion: AI 可檢查：TV/online marketing、books/plays/TV/film scripts、print packaging、news/commentary 需 permission；request 必須附最終版本、描述、script
+    與非英語 translation。
+  chapter: ch-01-02
+  chapter_title: Requesting Permission
+- module: Brand Strategy
+  criterion: AI 可檢查：f logo 可用於 Facebook presence、Facebook content 或 product integration；thumb icon 必須搭配清楚 CTA 且不可與其他 Facebook
+    symbols 並列；badge online 必須直接連到 Facebook presence；Reactions 不可單獨拆開或改造。
+  chapter: ch-02
+  chapter_title: Facebook Brand Assets
+- module: ''
+  criterion: AI 可檢查：不得修改 Reactions 顏色、比例、形狀；不得單獨突出一個 Reaction 作為 icon；不得動畫化或做成實體物件；floating Reactions 僅能出現在 Facebook Live
+    或 Facebook products；若在 UI 內呈現需遵守 UI guidelines。
+  chapter: ch-02-02
+  chapter_title: Reactions
+- module: ''
+  criterion: AI 可檢查：Facebook UI 不得浮在頁面上；不得超過 100% file size；mobile UI 不得裁切 top/sides；iOS 用 San Francisco、Android 用 Roboto、Web
+    用 Helvetica；不得使用未授權 PII、第三方 logo、copyrighted content。
+  chapter: ch-03
+  chapter_title: User Interface Templates
+- module: ''
+  criterion: AI 可檢查：Facebook assets 不可用於 merchandise；只能用 Brand Resource Center 官方資產；Facebook 不可作動詞；book/film/play 使用 logo
+    或 image 需書面 permission。
+  chapter: ch-04
+  chapter_title: FAQs
+chapters:
+- id: ch-01
+  title: Welcome and General Guidelines
+  modules:
+  - Legal and Trademark
+  - Content Design
+  - Governance
+- id: ch-01-01
+  title: General usage and talking about Facebook
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Voice and Tone
+- id: ch-01-02
+  title: Requesting Permission
+  modules:
+  - Legal and Trademark
+  - Operations
+  - Governance
+- id: ch-02
+  title: Facebook Brand Assets
+  modules:
+  - Legal and Trademark
+  - UI Components
+- id: ch-02-01
+  title: f Logo, Thumb Icon, and Badge
+  modules:
+  - AI-Checkable Rules
+  - Interaction Design
+- id: ch-02-02
+  title: Reactions
+  modules:
+  - Product Language
+  - UI Components
+  - Content Safety
+- id: ch-03
+  title: User Interface Templates
+  modules:
+  - Legal and Trademark
+- id: ch-04
+  title: FAQs
+  modules:
+  - Legal and Trademark
+  - Knowledge Architecture
+  - Governance

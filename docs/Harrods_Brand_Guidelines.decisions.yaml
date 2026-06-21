@@ -1,0 +1,104 @@
+# L3 決策卡 sidecar — Harrods
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: Harrods_Brand_Guidelines
+decisions:
+  - id: dp-restraint-as-luxury-signal
+    title: 用克制與內隱表達奢華，而非高頻奢華詞堆疊
+    problem:
+      statement: 高端品牌若靠大量「奢華」字眼與華麗裝飾堆疊來證明自己高級，反而顯得用力、廉價，稀釋了真正的高端感。
+      signals: [premium_perception, restraint, exclusivity, brand_overclaiming_risk]
+    solution:
+      module: Voice and Tone
+      move: 以「X but not Y」二元語氣定義邊界，並用禁用／慎用詞清單讓奢華內隱於精準與克制
+      layer: language
+    reason:
+      - 奢華應內隱，不靠高頻 luxury 詞堆疊
+      - 精緻但不炫耀，自信但不傲慢，英式但外向，奢華但不硬賣
+      - 高端品牌文案需檢查詞義準確與詞頻疲乏
+    applicable_when:
+      industries: [luxury_premium]
+      brand_types: [premium_luxury, heritage_legacy]
+      conditions: [premium_perception, mature_brand]
+      archetypes: [brand_experience_guide, full_brand_system]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Content Design]
+    anti_patterns:
+      - 過度使用 luxury/luxurious 作描述詞
+      - 用 exquisite、covetable、iconic、unique 等高風險詞堆疊撐場面
+    evidence:
+      - brand_id: Harrods_Brand_Guidelines
+        chapter: ch-03-01
+        excerpt: "奢華應內隱，不靠高頻 luxury 詞堆疊；不得過度使用 luxury/luxurious 作描述詞。"
+      - brand_id: Harrods_Brand_Guidelines
+        chapter: ch-03
+        excerpt: "精緻但不炫耀，自信但不傲慢，英式但外向，奢華但不硬賣。"
+    status: extracted
+
+  - id: dp-editorial-typography-for-premium
+    title: 用具傳承感的編輯級襯線字體承載高端與精緻
+    problem:
+      statement: 高端品牌需要字體本身就傳達傳承、工藝與精緻，而不只是中性的資訊載體；錯用通用字體會讓品牌失去高級語感。
+      signals: [premium_perception, heritage, craftsmanship, editorial_feel]
+    solution:
+      module: Typography System
+      move: 以 heritage serif（Caslon 系列）建立層級與語氣，並為每個字重指定明確用途與最小字級
+      layer: visual_core
+    reason:
+      - 用字體建立 Harrods 的傳統、精緻與現代實用性
+      - 字體不是任選風格，而是通道、媒介與品牌層級的管理工具
+      - 字體使用應讓層級與語氣自然呈現
+    applicable_when:
+      industries: [luxury_premium, media_entertainment]
+      brand_types: [premium_luxury, heritage_legacy]
+      conditions: [premium_perception, editorial_feel]
+      archetypes: [brand_experience_guide, full_brand_system]
+    dependencies:
+      requires: [Typography System]
+      enables: [Content Design]
+    examples:
+      - Big Caslon 只用於 headline/subheadline 且不得小於 20pt，body 與 emphasis 各有指定字重
+    evidence:
+      - brand_id: Harrods_Brand_Guidelines
+        chapter: ch-02
+        excerpt: "用字體建立 Harrods 的傳統、精緻與現代實用性；字體不是任選風格，而是通道、媒介與品牌層級的管理工具。"
+      - brand_id: Harrods_Brand_Guidelines
+        chapter: ch-02-01
+        excerpt: "字體使用應讓層級與語氣自然呈現；Big Caslon FB 只用於 headlines/subheadlines 或指定用途。"
+    status: extracted
+
+  - id: dp-asset-protection-for-legacy
+    title: 把歷史品牌的核心識別當成不可妥協的資產來保護
+    problem:
+      statement: 歷史悠久的品牌，其 logo、色彩與材質是長期累積的資產；任何外部合作或內部輸出都可能在不經意間稀釋它。
+      signals: [heritage, asset_protection, consistency_over_time, brand_dilution_risk]
+    solution:
+      module: Visual Identity
+      move: 把 logo 版本、光學幾何、最小尺寸、清除區與色彩重製定為不可妥協的資產規則，並要求以 Pantone/CMYK 準確匹配
+      layer: visual_core
+    reason:
+      - 保護歷史奢華零售品牌的核心識別，讓所有合作與內部輸出不削弱品牌資產
+      - 奢侈品牌的顏色是資產，不是裝飾選項
+      - 高端品牌規範應明確處理光學校正與印刷材質
+    applicable_when:
+      industries: [luxury_premium]
+      brand_types: [heritage_legacy, premium_luxury]
+      conditions: [heritage, asset_protection]
+      archetypes: [brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 以螢幕或列印稿視覺匹配色彩，造成跨媒介色差
+      - 允許合作方任意替換金屬色／foil 與核心色
+    evidence:
+      - brand_id: Harrods_Brand_Guidelines
+        chapter: ch-01
+        excerpt: "保護 Harrods 作為歷史奢華零售品牌的核心識別，讓所有合作與內部輸出不削弱品牌資產。"
+      - brand_id: Harrods_Brand_Guidelines
+        chapter: ch-01-02
+        excerpt: "奢華品牌的顏色是資產，不是裝飾選項；色彩不得從螢幕或列印稿視覺匹配，必須使用 Pantone/CMYK 參照。"
+    status: extracted

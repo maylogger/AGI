@@ -1,0 +1,247 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: ILoveNY_brand_guidelines_2008
+index_ref: docs/ILoveNY_brand_guidelines_2008.index.yaml
+note_ref: docs/ILoveNY_brand_guidelines_2008.note.md
+archetype: brand_experience_guide
+industry: public_sector
+modules:
+- Brand Strategy
+- Messaging
+- Legal and Trademark
+- Voice and Tone
+- Visual Identity
+- Measurement
+- AI-Checkable Rules
+- Content Design
+- Photography System
+- Typography System
+- Operations
+- Governance
+- Layout System
+- Motion Identity
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 3
+  section_count: 8
+chapter_sequence:
+- id: ch-01
+  title: Opening Context
+  order: 1
+  level: 1
+- id: ch-02
+  title: 'Part 1: Our Story'
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Mission, Brand Pyramid, Values and Target
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Manifesto, Campaign Concept, Voice and Bridgeline
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Typefaces, Advertising, Photography and Song
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Logo System and Legal Requirements
+  order: 4
+  level: 2
+- id: ch-03
+  title: 'Part 2: Our Vision for TPAs'
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Alignment, Permissions and Seasonal Logos
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Bridgeline and Advertising
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Travel Guides, Collateral and Websites
+  order: 3
+  level: 2
+- id: ch-03-04
+  title: Radio, TV, Signage and Brand Creative
+  order: 4
+  level: 2
+frameworks:
+- name: history -> emotional truth -> consistency imperative
+  chapter: ch-01
+  chapter_title: Opening Context
+- name: brand pyramid + target segmentation + campaign concept + bridgeline + asset rules
+  chapter: ch-02
+  chapter_title: 'Part 1: Our Story'
+- name: brand pyramid + segmentation matrix
+  chapter: ch-02-01
+  chapter_title: Mission, Brand Pyramid, Values and Target
+- name: unique NY fact/site -> concise reason -> Another reason -> I LOVE NEW YORK logo
+  chapter: ch-02-02
+  chapter_title: Manifesto, Campaign Concept, Voice and Bridgeline
+- name: type palette + ad composition + photography criteria + sonic asset
+  chapter: ch-02-03
+  chapter_title: Typefaces, Advertising, Photography and Song
+- name: original logo + horizontal variant + treatment logos + seasonal logos + legal lines
+  chapter: ch-02-04
+  chapter_title: Logo System and Legal Requirements
+- name: permission governance + medium-specific requirements + shared creative assets
+  chapter: ch-03
+  chapter_title: 'Part 2: Our Vision for TPAs'
+- name: request -> brand office approval -> approved use
+  chapter: ch-03-01
+  chapter_title: Alignment, Permissions and Seasonal Logos
+- name: partner/place name or unique reason -> Another reason -> logo
+  chapter: ch-03-02
+  chapter_title: Bridgeline and Advertising
+- name: cover co-branding + collateral lockup + website hyperlink
+  chapter: ch-03-03
+  chapter_title: Travel Guides, Collateral and Websites
+- name: audio script ending + video end card + signage/logo lockup + shared ad creative
+  chapter: ch-03-04
+  chapter_title: Radio, TV, Signage and Brand Creative
+patterns:
+- name: 為何改
+  chapter: ch-01
+  chapter_title: Opening Context
+- name: 為何不能亂改
+  chapter: ch-01
+  chapter_title: Opening Context
+- name: 用固定 bridgeline 連接變動內容與 iconic logo。
+  chapter: ch-02
+  chapter_title: 'Part 1: Our Story'
+- name: 將經典 logo、song、curatorial approach 視為 differentiating assets。
+  chapter: ch-02-01
+  chapter_title: Mission, Brand Pyramid, Values and Target
+- name: bridgeline 作為 thought-to-logo connector。
+  chapter: ch-02-02
+  chapter_title: Manifesto, Campaign Concept, Voice and Bridgeline
+- name: 旅遊廣告反常規，不以一般美照為核心，而以概念插畫與文案製造差異。
+  chapter: ch-02-03
+  chapter_title: Typefaces, Advertising, Photography and Song
+- name: 以 trademark symbol 差異區分 registered core logo 與 thematic/seasonal logos。
+  chapter: ch-02-04
+  chapter_title: Logo System and Legal Requirements
+- name: 從 statewide brand 到 county/region co-branding 的規則化。
+  chapter: ch-03
+  chapter_title: 'Part 2: Our Vision for TPAs'
+- name: 公共 destination brand 的 permission-first model。
+  chapter: ch-03-01
+  chapter_title: Alignment, Permissions and Seasonal Logos
+- name: 允許 county/region 透過自己名稱或故事接到州品牌。
+  chapter: ch-03-02
+  chapter_title: Bridgeline and Advertising
+- name: 在地方素材右上角放置州品牌，地方 logo/name 在左側或左上。
+  chapter: ch-03-03
+  chapter_title: Travel Guides, Collateral and Websites
+- name: 在所有音訊與影片結尾固定出現 bridgeline + logo。
+  chapter: ch-03-04
+  chapter_title: Radio, TV, Signage and Brand Creative
+rules_ai_checkable:
+- module: ''
+  criterion: 品牌語氣應 smart、clever、warm 且帶 edge；bridgeline 不是 tagline/headline，不能單獨使用；logo 不能修改；legal line 必須出現在含 logo 的行銷素材。
+  chapter: ch-02
+  chapter_title: 'Part 1: Our Story'
+- module: Voice and Tone
+  criterion: '`Another reason,` 必須 A 大寫、r 小寫，後方有逗號；它不得單獨出現；前置理由應簡短、聰明、美、有 New York-ness，且不能平庸或可套用到其他地方。'
+  chapter: ch-02-02
+  chapter_title: Manifesto, Campaign Concept, Voice and Bridgeline
+- module: Typography System
+  criterion: print ad 的 top copy 需左右對齊；第一句大於其餘 copy；bridgeline 必須出現；heart symbol 可取代 love；legal 必須包含；攝影至少 300 dpi、不可明顯過時、需是
+    New York State、需可造訪。
+  chapter: ch-02-03
+  chapter_title: Typefaces, Advertising, Photography and Song
+- module: Visual Identity
+  criterion: logo 必須原樣使用，不得修改；stacked/horizontal logo 使用 ®；thematic/seasonal logos 使用 ™；clearspace 等於 heart icon 高度；不得重建、刪除、裁切、重組、非等比縮放、旋轉、放在忙亂照片上、改色、加效果或白框。
+  chapter: ch-02-04
+  chapter_title: Logo System and Legal Requirements
+- module: ''
+  criterion: 任何形式、任何地方使用 I LOVE NEW YORK logo 均需 I LOVE NEW YORK office 核准；不存在 blanket policy；TPA 應使用提供的 logo/lockup，不得自行重建。
+  chapter: ch-03
+  chapter_title: 'Part 2: Our Vision for TPAs'
+- module: Visual Identity
+  criterion: seasonal logos 可用於 approved seasonal advertising/projects；不可用於 Travel Guide covers；只能使用提供的 scalable art；只能用 black/red，不能黑白或其他色彩。
+  chapter: ch-03-01
+  chapter_title: Alignment, Permissions and Seasonal Logos
+- module: ''
+  criterion: 全頁、1/2、1/4 廣告 logo 不得小於 1 英吋寬；標準 web banner logo 不得小於 60px；若前置理由可輕易描述其他地方，應判定不合格。
+  chapter: ch-03-02
+  chapter_title: Bridgeline and Advertising
+- module: ''
+  criterion: Travel Guide cover 只能使用 supplied logo with Another reason lock-up；I LOVE NEW YORK logo 放右上；county/region logo
+    或名稱放左側或左上；兩者之間不得出現圖形元素；website homepage 必須有連到 iloveny.com 的 logo hyperlink，preferred placement 為右上。
+  chapter: ch-03-03
+  chapter_title: Travel Guides, Collateral and Websites
+- module: Brand Strategy
+  criterion: radio spot 旁白需在結尾 call-to-action 前讀出 `Another reason` 再讀 `I LOVE NEW YORK`；TV spot 結尾需出現 supplied logo file with
+    Another reason lock-up；TV logo 至少 230 x 100px 且不得超出 safe area；video logo 至少 480 x 295px。
+  chapter: ch-03-04
+  chapter_title: Radio, TV, Signage and Brand Creative
+chapters:
+- id: ch-01
+  title: Opening Context
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-02
+  title: 'Part 1: Our Story'
+  modules:
+  - Legal and Trademark
+  - Brand Strategy
+  - Voice and Tone
+  - Visual Identity
+- id: ch-02-01
+  title: Mission, Brand Pyramid, Values and Target
+  modules:
+  - Measurement
+  - Brand Strategy
+  - Messaging
+- id: ch-02-02
+  title: Manifesto, Campaign Concept, Voice and Bridgeline
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+- id: ch-02-03
+  title: Typefaces, Advertising, Photography and Song
+  modules:
+  - Photography System
+  - Typography System
+- id: ch-02-04
+  title: Logo System and Legal Requirements
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-03
+  title: 'Part 2: Our Vision for TPAs'
+  modules:
+  - Operations
+  - Governance
+- id: ch-03-01
+  title: Alignment, Permissions and Seasonal Logos
+  modules:
+  - Visual Identity
+  - Governance
+- id: ch-03-02
+  title: Bridgeline and Advertising
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+- id: ch-03-03
+  title: Travel Guides, Collateral and Websites
+  modules:
+  - Layout System
+- id: ch-03-04
+  title: Radio, TV, Signage and Brand Creative
+  modules:
+  - Motion Identity
+  - Operations

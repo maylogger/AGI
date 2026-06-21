@@ -1,0 +1,170 @@
+# L3 決策卡 sidecar — BC Hydro Brand Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: BCHydro_brand_guidelines_2019
+decisions:
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 先建立「誰在說話」的判斷層，把子計畫／子品牌收回母品牌，明確界定可辨識但不獨立的範圍
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - 品牌整併指南需要解釋歷史原因，否則團隊會延續舊子品牌慣性
+    applicable_when:
+      industries: [public_sector, education]
+      brand_types: [institutional_public_trust]
+      conditions: [multi_unit_consistency, sub_unit_identity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 讓子計畫形成第二個獨立品牌
+    evidence:
+      - brand_id: BCHydro_brand_guidelines_2019
+        chapter: ch-01
+        excerpt: "重新整合 Power Smart 與 BC Hydro，power smart 應作為公司行為／目的而非獨立計畫，品牌素材必須連回 BC Hydro，不得形成第二個獨立 Power Smart 品牌。"
+    status: extracted
+
+  - id: dp-from-to-voice-translation
+    title: 技術品牌語氣指南要給「轉譯規則」，不只是列形容詞
+    problem:
+      statement: 科學與技術公司容易陷入術語化，受眾停在「所以呢？」而非「原來如此」。
+      signals: [technical_jargon_risk, expert_audience, b2b]
+    solution:
+      module: Voice and Tone
+      move: 用人格特質搭配可改寫的 humanize checklist 與禁用短語，把專業轉成可親近語氣
+      layer: language
+    reason:
+      - 公用事業品牌應避免聽起來像冷冰冰機構，把專業知識轉成鄰近可信語氣
+      - tone guideline 若能列出可禁止短語與可改寫技巧，就能被 AI 初步審核
+    applicable_when:
+      industries: [public_sector, finance, industrial_materials_science]
+      brand_types: [institutional_public_trust]
+      conditions: [expert_audience, technical_translation]
+      archetypes: [full_brand_system, brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Messaging]
+      enables: [Content Design]
+    anti_patterns:
+      - 只列 tone adjectives 卻沒有轉譯方法
+      - 使用 jargon、acronym 或 'we are committed to' 等空話
+    evidence:
+      - brand_id: BCHydro_brand_guidelines_2019
+        chapter: ch-02
+        excerpt: "Smart / Authentic / Relatable 搭配 humanize checklist：文案需先說 benefits/effects/risks，避免 jargon 與縮寫，禁用 'we are committed to'，使用直接 action-oriented CTA。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+    evidence:
+      - brand_id: BCHydro_brand_guidelines_2019
+        chapter: ch-03-02
+        excerpt: "以 logo symbol 作為 clear space guide（留白至少等於 symbol），並要求數位優先 SVG、96px 時元素仍清楚。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以固定比例與位置定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+    applicable_when:
+      industries: [finance, tech_software, public_sector]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: BCHydro_brand_guidelines_2019
+        chapter: ch-03-03
+        excerpt: "partner lockup 以固定比例維持主從：partner logo 65%、BC Hydro 100%；lock-up 不可用於 T-shirts 等 promotional materials。"
+    status: extracted
+
+  - id: dp-custom-typeface-as-identity-asset
+    title: 用專屬字體當識別資產，擺脫系統預設字並統一語氣
+    problem:
+      statement: 仰賴系統預設字體的品牌缺乏獨特性與一致語氣，跨媒介又常因字體缺失而失控；但又需要在無法安裝字型的環境保有 fallback。
+      signals: [identity_distinctiveness, system_consistency, brand_recognition, multi_media]
+    solution:
+      module: Typography System
+      move: 建立品牌核心字體作為識別資產，並指定 system fallback 與字級、leading、最小字級與 editorial micro-rules
+      layer: visual_core
+    reason:
+      - 專屬字體系統讓品牌不再依賴 default fonts，並讓文字有共同語氣
+      - 搭配 system fallback，可在無法安裝字型的商務工具環境維持一致
+      - 品牌一致性常在名稱、URL、電話與標點中破裂，需 editorial micro-rules
+    applicable_when:
+      industries: [public_sector, industrial_materials_science, tech_software]
+      brand_types: [institutional_public_trust, category_creator]
+      conditions: [identity_distinctiveness, multi_media]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: [Content Design]
+    anti_patterns:
+      - 直接沿用系統字當品牌字體，缺乏 fallback 規範
+    evidence:
+      - brand_id: BCHydro_brand_guidelines_2019
+        chapter: ch-04
+        excerpt: "GT Haptik 為主字體，Arial 僅於 Outlook/Word 等相容限制時使用；並以 editorial micro-rules 規範 BC Hydro 不可斷行、power smart 一般小寫、URL 不用 www。"
+    status: extracted
+
+  - id: dp-restrained-palette-for-trust
+    title: 用克制的配色與權威主色傳達信任
+    problem:
+      statement: 受規範、以信任為核心的機構，若用高彩度或隨意配色會削弱權威與可信度。
+      signals: [trust, regulatory_compliance, public_trust]
+    solution:
+      module: Color System
+      move: 以核准色值為主、依用途分流（品牌色／安全色／tints／媒介），避免色彩過多削弱品牌
+      layer: visual_core
+    reason:
+      - 信任型品牌的色彩應強調穩定與權威而非情緒刺激
+      - 公用服務品牌色彩需同時處理品牌情緒與安全語意，不能只當裝飾 palette
+    applicable_when:
+      industries: [public_sector, finance]
+      brand_types: [institutional_public_trust, heritage_legacy]
+      conditions: [trust, regulatory_compliance]
+      archetypes: [brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Color System]
+      enables: [Accessibility, Design Tokens]
+    anti_patterns:
+      - 自行新增色彩或使用未列出的色值
+      - 把安全色當裝飾色使用
+    evidence:
+      - brand_id: BCHydro_brand_guidelines_2019
+        chapter: ch-05
+        excerpt: "色彩依用途拆分為品牌色、安全色、tints、print/digital 與內容情境；安全色只用於安全語意，並避免因色彩過多削弱品牌。"
+    status: extracted

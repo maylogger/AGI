@@ -1,0 +1,137 @@
+# L3 決策卡 sidecar — LucidMotors
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: LucidMotors
+decisions:
+  - id: dp-story-framework-category-education
+    title: 用漸進式 Story Framework 解決新品類的市場教育成本
+    problem:
+      statement: 產品屬於新品類（智慧電動機車／可交換電能），用戶沒有既有心智模型，一次塞滿資訊會造成認知過載。
+      signals: [new_category, high_education_cost, complex_tech, long_consideration_cycle]
+    solution:
+      module: Messaging
+      move: 以 Attract → Engage → Connect 三層漸進揭露，依注意力狀態控制訊息深度
+      layer: language
+    reason:
+      - 資訊依注意力狀態逐步揭露，避免一次塞滿細節
+      - 不同接觸點該說多少、說多深要有共同標準，否則廣告與產品頁混用同一訊息密度
+      - 先用情緒與大概念吸引，再講利益，最後給決策細節
+    applicable_when:
+      industries: [new_energy_mobility, tech_software]
+      brand_types: [category_creator, challenger]
+      conditions: [audience_unfamiliar, long_consideration_cycle]
+      archetypes: [full_brand_system]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Content Design]
+    examples:
+      - Attract 用 2-4 字短句、Engage 用 2-3 短句說利益、Connect 提供產品特徵細節
+    anti_patterns:
+      - 在所有觸點用同一訊息密度
+      - 直接以 spec-sheet 溝通，假設用戶已理解品類
+    evidence:
+      - brand_id: LucidMotors
+        chapter: ch-01-03
+        excerpt: "Story Framework 解決同一品牌在不同接觸點該說多少、說多深的問題；Attract/Engage/Connect 從情緒與大概念，到利益說服，再到具體功能與決策資訊。"
+    status: seed
+
+  - id: dp-platform-before-visual-rules
+    title: 先定義「品牌為何如此」，再規範「設計如何如此」
+    problem:
+      statement: 視覺規範若缺乏策略根基，Logo、色彩、影像與語氣只會變成風格選擇，無法解釋為什麼長這樣。
+      signals: [no_strategic_foundation, new_identity, style_over_system]
+    solution:
+      module: Brand Strategy
+      move: 在所有視覺章之前先建立 Platform → Pillars → Story Framework
+      layer: strategy
+    reason:
+      - 品牌是決策系統，不是美術風格；每個視覺與文案選擇都應能回推到品牌支柱
+      - 先建立判斷標準，後續視覺與語氣才有可回溯的語義來源
+    applicable_when:
+      brand_types: [category_creator, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: LucidMotors
+        chapter: ch-01
+        excerpt: "Brand 章先定義為什麼存在、相信什麼、如何說故事；若沒有它，Logo、色彩、影像與語氣只會是風格選擇，而不是品牌系統。"
+    status: seed
+
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 品牌人格詞要能當產出的評審準則，而非品牌牆口號
+    problem:
+      statement: 抽象品牌價值無法指導設計與文案，設計者不知道該偏哪個方向。
+      signals: [abstract_values, inconsistent_outputs, needs_evaluation_criteria]
+    solution:
+      module: Brand Strategy
+      move: 用少數人格形容詞（如 Clean/Progressive/Energized）建立可檢查的評估矩陣
+      layer: strategy
+    reason:
+      - 三支柱可作為所有產出的評估矩陣：是否清楚、是否前瞻、是否有感染力
+      - 品牌支柱應足以成為評審準則，而不是只作內部口號
+    applicable_when:
+      brand_types: [challenger, category_creator]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Visual Language]
+    evidence:
+      - brand_id: LucidMotors
+        chapter: ch-01-02
+        excerpt: "三支柱框架作為所有產出的評估矩陣：是否清楚、是否前瞻、是否有感染力；支柱應足以成為評審準則，而不是只作為內部口號。"
+    status: seed
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌內部幾何（如字母 o 外徑、icon 寬度）作為相對留白單位
+      layer: visual_core
+    reason:
+      - 留白是識別權重與可讀性的保護機制，需隨標誌縮放
+      - 相對單位可建立 scalable spacing token，不被固定像素綁死
+    applicable_when:
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, logo_asset_guidelines, full_brand_system]
+    dependencies:
+      requires: [Visual Identity]
+    examples:
+      - minimum clear space = 1x o，optimal = 2x o
+    evidence:
+      - brand_id: LucidMotors
+        chapter: ch-02-03
+        excerpt: "以字母 o 的外徑作為量測單位，使留白規則可隨標誌縮放；clear space 應使用標誌自身幾何，不應用固定像素。"
+    status: seed
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗與照片複雜度建立對比決策樹，限定白／深色兩種標誌
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - Logo 顏色規範應基於對比與背景風險，而非只列色票
+    applicable_when:
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: LucidMotors
+        chapter: ch-02-04
+        excerpt: "用背景明暗與照片複雜度決定標誌顏色；dark/color/photo→White，light→Charcoal，背景太忙時不可放 wordmark。"
+    status: seed

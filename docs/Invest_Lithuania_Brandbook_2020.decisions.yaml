@@ -1,0 +1,57 @@
+# L3 決策卡 sidecar — Invest Lithuania Brand Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Invest_Lithuania_Brandbook_2020
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌不是單一標誌，而是組織如何行動與如何溝通
+      - 投資促進品牌需要把國家精神轉為客戶成果語言
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, public_sector]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven, institutional_public_trust]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: Invest_Lithuania_Brandbook_2020
+        chapter: ch-01
+        excerpt: "先建立品牌承諾與投資者導向定位（promise → positioning → personality pillars：goal driven、investor oriented、determined to innovate），讓視覺系統服務商業招商，而不是只是國家形象美化。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+    evidence:
+      - brand_id: Invest_Lithuania_Brandbook_2020
+        chapter: ch-03
+        excerpt: "exclusion zone 等於 letter L 高度；logo system 並包含 optical correction、language variant 與 micro-size monogram，以標誌自身字母幾何定義留白。"
+    status: extracted

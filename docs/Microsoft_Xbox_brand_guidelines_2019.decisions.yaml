@@ -1,0 +1,121 @@
+# L3 決策卡 sidecar — Xbox（遊戲體驗品牌規範）
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Microsoft_Xbox_brand_guidelines_2019
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system]
+    solution:
+      module: Brand Strategy
+      move: 先建立 creative principles 與 messaging principles，再讓 logo、色彩、版面、合作規則服務遊戲體驗
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 產品娛樂品牌可把「experience」而非硬體規格作為品牌溝通核心
+      - experience-forward brand system：creative principles → messaging behavior → signature layout → channel applications
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: Microsoft_Xbox_brand_guidelines_2019
+        chapter: ch-01
+        excerpt: "建立 Xbox 溝通的精神與判斷標準，讓後續 logo、色彩、版面與合作規則都服務遊戲體驗，而不是只服務企業識別；後續 Elements 與 Layout 都是這些原則的視覺化。"
+    status: extracted
+
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 把 premium、simple、iconic、experience forward、differentiated 配上 avoid list，做成可審稿的 copy review rubric
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - 每個語氣原則搭配 avoid criteria，是可 AI 化的文案治理模式
+      - 不要直接說 bold、inviting、fun、premium，而要讓語氣表現出來
+    applicable_when:
+      industries: [industrial_materials_science, nonprofit_social]
+      brand_types: [challenger, category_creator, mission_driven]
+      conditions: []
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Visual Language, Content Design]
+    evidence:
+      - brand_id: Microsoft_Xbox_brand_guidelines_2019
+        chapter: ch-01-01
+        excerpt: "creative 包含 premium、simple、iconic、experience forward、differentiated，messaging 搭配 avoid list；語氣原則可轉成 AI copy review rubric，檢查是否簡潔、主動、體驗導向、具有 Xbox 感。"
+    status: extracted
+
+  - id: dp-bold-contrast-for-challenger
+    title: 用單一高彩度主色建立 equity，並以可用／禁用配色維持張力
+    problem:
+      statement: 挑戰者品牌需要在飽和市場中快速被認出並表達鮮明個性，溫和保守的配色會被淹沒。
+      signals: [differentiation, breakthrough_attention, personality_expression]
+    solution:
+      module: Color System
+      move: 以高辨識 Xbox Green 作為品牌信號，並用單一強識別裝置 green bar 統一多種廣告版面
+      layer: visual_core
+    reason:
+      - 高辨識色彩讓品牌在多媒介中快速被認出
+      - 以單一強識別裝置統一多種廣告版面，比逐張設計更一致
+      - green bar 不應被改色、過度裝飾或破壞內容可讀性
+    applicable_when:
+      industries: [tech_software]
+      brand_types: [challenger]
+      conditions: [saturated_market, personality_expression]
+      archetypes: [brand_experience_guide, full_brand_system]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Color System, Accessibility]
+    anti_patterns:
+      - 開放任意配色稀釋主色 equity
+      - 讓簽名裝置被改色或過度裝飾
+    evidence:
+      - brand_id: Microsoft_Xbox_brand_guidelines_2019
+        chapter: ch-02-02
+        excerpt: "以高辨識綠色（Xbox Green）作為品牌信號，連結產品慾望與系統一致。"
+      - brand_id: Microsoft_Xbox_brand_guidelines_2019
+        chapter: ch-03
+        excerpt: "以單一強識別裝置 green bar 統一多種廣告版面；green bar 不應被改色、過度裝飾或破壞內容可讀性。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 hierarchy、name/logo usage、product lockup 與固定 proportion 規範合作關係的視覺呈現
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - 合作視覺必須反映真實關係，不可因設計平衡造成授權或背書誤解
+      - 共同品牌章節應獨立處理產品 lockup，而不是只放 partner logo spacing
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: Microsoft_Xbox_brand_guidelines_2019
+        chapter: ch-06
+        excerpt: "partner lockup 比例需符規定範；Xbox name/logo 不得被放在暗示錯誤主從的位置；product lockup 需使用核准比例與名稱。"
+    status: extracted

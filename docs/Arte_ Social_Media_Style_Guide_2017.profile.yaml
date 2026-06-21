@@ -1,0 +1,283 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Arte_ Social_Media_Style_Guide_2017
+index_ref: docs/Arte_ Social_Media_Style_Guide_2017.index.yaml
+note_ref: docs/Arte_ Social_Media_Style_Guide_2017.note.md
+archetype: brand_experience_guide
+industry: media_entertainment
+modules:
+- Brand Strategy
+- Visual Language
+- Motion Identity
+- AI-Checkable Rules
+- Photography System
+- Typography System
+- Color System
+- Visual Identity
+- Design Tokens
+- Content Design
+- Layout System
+- Examples
+- Brand Architecture
+depth:
+  strategy: medium
+  visual: high
+  governance: low
+  top_level_chapter_count: 5
+  section_count: 9
+chapter_sequence:
+- id: ch-01
+  title: Introduction and Brand Idea
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Europe’s Culture Magnet
+  order: 1
+  level: 2
+- id: ch-02
+  title: Basic Elements
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo, Avatar and Digital Colour
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Movement, Imagery and Typography
+  order: 2
+  level: 2
+- id: ch-03
+  title: Design Principles
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Positioning and Safe Areas
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Typography Styles
+  order: 2
+  level: 2
+- id: ch-04
+  title: Social Media Channels
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Platform Safe Area Templates
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Channel Variants
+  order: 2
+  level: 2
+- id: ch-05
+  title: Social Jingles, Promos and Bugs
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Jingles and Motion Outros
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Promos, CTA and Third-Party Bugs
+  order: 2
+  level: 2
+frameworks:
+- name: Concept-to-system framework：brand idea -> motion direction -> layout gravity -> typography behavior -> channel templates
+  chapter: ch-01
+  chapter_title: Introduction and Brand Idea
+- name: Magnet metaphor framework：anchor, attracted elements, tension, snap-in, variation
+  chapter: ch-01-01
+  chapter_title: Europe’s Culture Magnet
+- name: Social visual kit framework：identity mark, avatar format, colour tokens, motion vector, imagery library, typefaces
+  chapter: ch-02
+  chapter_title: Basic Elements
+- name: Avatar resilience framework：shape variants, center alignment, crop tolerance, brand colour lock
+  chapter: ch-02-01
+  chapter_title: Logo, Avatar and Digital Colour
+- name: Content support framework：default identity imagery when no programme-specific image exists; choose stronger A-list
+    fi...
+  chapter: ch-02-02
+  chapter_title: Movement, Imagery and Typography
+- name: Responsive header framework：safe area, avatar obstruction, crop behavior, type size range, movement direction
+  chapter: ch-03
+  chapter_title: Design Principles
+- name: Platform crop framework：desktop view, mobile view, avatar obstruction, TV format for YouTube
+  chapter: ch-03-01
+  chapter_title: Positioning and Safe Areas
+- name: Type mode framework：straight for template efficiency, magnetic for brand expression
+  chapter: ch-03-02
+  chapter_title: Typography Styles
+- name: Template matrix framework：platform x device x sub-brand x content type
+  chapter: ch-04
+  chapter_title: Social Media Channels
+- name: Safe/unsafe zone framework
+  chapter: ch-04-01
+  chapter_title: Platform Safe Area Templates
+- name: Sub-brand template extension framework
+  chapter: ch-04-02
+  chapter_title: Channel Variants
+- name: Motion social asset framework：intro, outro, promo body, CTA, third-party watermark
+  chapter: ch-05
+  chapter_title: Social Jingles, Promos and Bugs
+- name: Logo-to-URL motion grammar
+  chapter: ch-05-01
+  chapter_title: Jingles and Motion Outros
+- name: Distributed content identity framework：promo style, CTA, square format, bug
+  chapter: ch-05-02
+  chapter_title: Promos, CTA and Third-Party Bugs
+patterns:
+- name: 可複用模式是把一句品牌主張轉成跨媒體的行為語法，而不是只轉成標語。
+  chapter: ch-01
+  chapter_title: Introduction and Brand Idea
+- name: 可複用於任何品牌概念有物理隱喻的系統，如 pull、flow、orbit、pulse。
+  chapter: ch-01-01
+  chapter_title: Europe’s Culture Magnet
+- name: 可複用為 digital-first brand kit，明確區分 broadcast colours 與 social flat colours。
+  chapter: ch-02
+  chapter_title: Basic Elements
+- name: 可複用為 social avatar matrix 和 category colour token map。
+  chapter: ch-02-01
+  chapter_title: Logo, Avatar and Digital Colour
+- name: 影像庫可設 impact tier；字體可設 expressive mode 與 neutral mode。
+  chapter: ch-02-02
+  chapter_title: Movement, Imagery and Typography
+- name: 可複用為社群頭圖設計系統：每平台給尺寸、可見區、行動裁切、文字最大/最小值。
+  chapter: ch-03
+  chapter_title: Design Principles
+- name: 可複用為 responsive brand asset previewer。
+  chapter: ch-03-01
+  chapter_title: Positioning and Safe Areas
+- name: 可複用為 typography behavior rules，將字距、大小寫與行數作為 token。
+  chapter: ch-03-02
+  chapter_title: Typography Styles
+- name: 可複用為社群品牌模板庫，維護 default brand、sub-brand、programme channel 的變體。
+  chapter: ch-04
+  chapter_title: Social Media Channels
+- name: 任何 responsive visual asset 都應保存 safe area guide。
+  chapter: ch-04-01
+  chapter_title: Platform Safe Area Templates
+- name: 可複用為 brand family social templates。
+  chapter: ch-04-02
+  chapter_title: Channel Variants
+- name: 可複用於短影音品牌系統，將 intro/outro/CTA/bug 視為可治理元件。
+  chapter: ch-05
+  chapter_title: Social Jingles, Promos and Bugs
+- name: 可複用為 motion end-card 系統。
+  chapter: ch-05-01
+  chapter_title: Jingles and Motion Outros
+- name: 可複用為 social video pack system。
+  chapter: ch-05-02
+  chapter_title: Promos, CTA and Third-Party Bugs
+rules_ai_checkable:
+- module: Visual Identity
+  criterion: logo 永遠白色且在 ARTE orange 上；不得重繪或修改 logo artwork；各 genre 顏色需使用指定 RGB/Hex 或對應深淺組合。
+  chapter: ch-02-01
+  chapter_title: Logo, Avatar and Digital Colour
+- module: ''
+  criterion: header image 垂直置中，內容看起來被吸向左側 avatar；文字一律左對齊；Facebook header type 60-110 pt、subheader 35 pt；Twitter header type
+    105-170 pt、subheader 60 pt；YouTube header type 115-214 pt、subheader 54 pt；YouTube full image 2560x1440 px、desktop visible
+    area 1540x427 px、上傳 72 dpi 且最大 4 MB。
+  chapter: ch-03
+  chapter_title: Design Principles
+- module: ''
+  criterion: header 主要文字需在 safe area；YouTube 應以 2560x1440 px 建圖但主要資訊限於 1540x427 px desktop safe area；避免把文字放在 mobile 會裁掉或 avatar
+    遮擋的位置。
+  chapter: ch-03-01
+  chapter_title: Positioning and Safe Areas
+- module: ''
+  criterion: avatar matrix 需在圓形/方形裁切中保持上下空間；ARTE、Creative、Magazine、Tracks headers 都應使用 programme/feature content 與 typography
+    表現 right-to-left magnetic motion。
+  chapter: ch-04
+  chapter_title: Social Media Channels
+- module: ''
+  criterion: Arte URL jingle logo 垂直、URL 水平置於右側；outro 從 logo 開始，元素由右向左逐字吸附；Creative/Concert logo 垂直置中於各自品牌色；promo intro/outro
+    用該 genre 深色背景，footage highlight 用淺色；like/comment/share animation 需沿用同色與風格；third-party bug 位於左上角且為白色。
+  chapter: ch-05
+  chapter_title: Social Jingles, Promos and Bugs
+chapters:
+- id: ch-01
+  title: Introduction and Brand Idea
+  modules:
+  - Brand Strategy
+  - Visual Language
+  - Motion Identity
+- id: ch-01-01
+  title: Europe’s Culture Magnet
+  modules:
+  - AI-Checkable Rules
+  - Brand Strategy
+  - Motion Identity
+- id: ch-02
+  title: Basic Elements
+  modules:
+  - Photography System
+  - Typography System
+  - Motion Identity
+  - Color System
+  - Visual Identity
+- id: ch-02-01
+  title: Logo, Avatar and Digital Colour
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Design Tokens
+  - Visual Identity
+- id: ch-02-02
+  title: Movement, Imagery and Typography
+  modules:
+  - Photography System
+  - Typography System
+  - Motion Identity
+  - Content Design
+- id: ch-03
+  title: Design Principles
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Typography System
+- id: ch-03-01
+  title: Positioning and Safe Areas
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+- id: ch-03-02
+  title: Typography Styles
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Motion Identity
+- id: ch-04
+  title: Social Media Channels
+  modules:
+  - Layout System
+  - Examples
+- id: ch-04-01
+  title: Platform Safe Area Templates
+  modules:
+  - AI-Checkable Rules
+- id: ch-04-02
+  title: Channel Variants
+  modules:
+  - Brand Architecture
+  - Examples
+- id: ch-05
+  title: Social Jingles, Promos and Bugs
+  modules:
+  - AI-Checkable Rules
+  - Motion Identity
+  - Content Design
+- id: ch-05-01
+  title: Jingles and Motion Outros
+  modules:
+  - Motion Identity
+  - Design Tokens
+- id: ch-05-02
+  title: Promos, CTA and Third-Party Bugs
+  modules:
+  - AI-Checkable Rules
+  - Motion Identity
+  - Content Design

@@ -1,0 +1,102 @@
+title: "Bitcoin.com Brand Style Guide"
+source: "sources/bitcoin_Brand_Guidelines.pdf"
+language: "en"
+summary: "Bitcoin.com 的精簡品牌樣式指南，聚焦 logo/coin asset、色彩、攝影與字體的基本使用與禁止規則。"
+chapters:
+  - id: "ch-01"
+    title: "Brand Overview"
+    level: 1
+    order: 1
+    pages: "2"
+    summary: "說明經典 Bitcoin logo 如何透過非斜體、較薄字重、金色黃與鋼灰色轉譯穩定、透明與產業感。"
+    children:
+      - id: "ch-01-01"
+        title: "Logo Meaning Updates"
+        level: 2
+        order: 1
+        pages: "2"
+        summary: "把字體、橘色、灰色調整連接到品牌性格訊號。"
+  - id: "ch-02"
+    title: "Logo Versions"
+    level: 1
+    order: 2
+    pages: "3-4"
+    summary: "展示 standard logo 與 coin 兩種核心識別資產。"
+    children:
+      - id: "ch-02-01"
+        title: "Standard Logo and Coin"
+        level: 2
+        order: 1
+        pages: "3-4"
+        summary: "建立 wordmark 與 icon 的雙資產架構。"
+  - id: "ch-03"
+    title: "Brand Asset Usage"
+    level: 1
+    order: 3
+    pages: "5-8"
+    summary: "規範 logo 與 coin 在白底、深灰/黑底、品牌黃或其他色背景上的使用，以及禁止扭曲、改色、效果與複雜背景。"
+    children:
+      - id: "ch-03-01"
+        title: "Standard Logo Usage"
+        level: 2
+        order: 1
+        pages: "5,7"
+        summary: "以三種 logo 版本對應不同背景，並列出 logo do nots。"
+      - id: "ch-03-02"
+        title: "Coin Usage"
+        level: 2
+        order: 2
+        pages: "6,8"
+        summary: "以 filled/stroked 與 yellow/gray/white 版本建立 icon 背景適配規則。"
+  - id: "ch-04"
+    title: "Colors"
+    level: 1
+    order: 4
+    pages: "9"
+    summary: "定義品牌黃與品牌灰的 HEX、RGB、CMYK 值。"
+    children:
+      - id: "ch-04-01"
+        title: "Core Color Values"
+        level: 2
+        order: 1
+        pages: "9"
+        summary: "提供 #FAB915 與 #8B8B8B 作為主要色彩 tokens。"
+  - id: "ch-05"
+    title: "Photography"
+    level: 1
+    order: 5
+    pages: "10"
+    summary: "以範例背景支援可接受的品牌影像環境。"
+    children:
+      - id: "ch-05-01"
+        title: "Approved Photo Backgrounds"
+        level: 2
+        order: 1
+        pages: "10"
+        summary: "提供 logo/coin 可放置的 photo background 範圍。"
+  - id: "ch-06"
+    title: "Typography"
+    level: 1
+    order: 6
+    pages: "11"
+    summary: "指定 Museo Sans Rounded 700、500、300 作為品牌字體層級。"
+    children:
+      - id: "ch-06-01"
+        title: "Museo Sans Rounded"
+        level: 2
+        order: 1
+        pages: "11"
+        summary: "以三個字重展示字母、數字與符號。"
+  - id: "ch-07"
+    title: "Conclusion"
+    level: 1
+    order: 7
+    pages: "12"
+    summary: "提供 Bitcoin.com 與設計聯絡資訊。"
+    children:
+      - id: "ch-07-01"
+        title: "Contacts"
+        level: 2
+        order: 1
+        pages: "12"
+        summary: "列出 press 與 art direction/branding 聯絡窗口。"

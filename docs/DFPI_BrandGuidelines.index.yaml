@@ -1,0 +1,73 @@
+title: 'DFPI Brand Guidelines'
+source: 'sources/DFPI_BrandGuidelines.pdf'
+language: 'en'
+summary: 'California DFPI 的品牌規範，涵蓋品牌介紹、logo、字體、色彩、攝影、圖像、格線、應用範例與檔案格式詞彙。'
+chapters:
+  - id: 'ch-01'
+    title: 'Brand Introduction'
+    level: 1
+    order: 1
+    pages: '1-4'
+    summary: '說明 DFPI 保護消費者、監管金融活動、促進公平與創新的使命與願景。'
+  - id: 'ch-02'
+    title: 'Brand Logo Design'
+    level: 1
+    order: 2
+    pages: '5-9'
+    summary: '定義主 logo、monoline logo、clear space、logo misuse 與色彩變體。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Logo Clear Space'
+        level: 2
+        order: 1
+        pages: '7'
+        summary: '以 logo icon 中的 X 作為四周 clear margin。'
+      - id: 'ch-02-02'
+        title: 'Logo Misuse'
+        level: 2
+        order: 2
+        pages: '8'
+        summary: '禁止效果、同色背景、漸層、旋轉、變形與置入形狀。'
+  - id: 'ch-03'
+    title: 'Brand Typography'
+    level: 1
+    order: 3
+    pages: '10-13'
+    summary: '規範 print 的 Arial、digital 的 Gotham 與 Segoe UI，以及 headline、heading、subheadline、body copy 的字級與行距。'
+  - id: 'ch-04'
+    title: 'Brand Color System'
+    level: 1
+    order: 4
+    pages: '14-15'
+    summary: '列出核心與次要色彩的 Hex 與 RGB 值，用於數位與行銷材料。'
+  - id: 'ch-05'
+    title: 'Brand Visuals'
+    level: 1
+    order: 5
+    pages: '16-23'
+    summary: '定義核准攝影與圖像類型，並要求呈現多元、公平與包容承諾。'
+    children:
+      - id: 'ch-05-01'
+        title: 'Photography Categories'
+        level: 2
+        order: 1
+        pages: '17-22'
+        summary: '包含 executive、industry、consumer services / financial protection、legal 等攝影範圍。'
+      - id: 'ch-05-02'
+        title: 'Brand Imagery'
+        level: 2
+        order: 2
+        pages: '23'
+        summary: '涵蓋 data visualization、social icons 與 web icons。'
+  - id: 'ch-06'
+    title: 'Brand Grid System'
+    level: 1
+    order: 6
+    pages: '24-27'
+    summary: '以 article grid、business card、letterhead 等範例示範版面系統與官方應用。'
+  - id: 'ch-07'
+    title: 'Brand Summary and Glossary'
+    level: 1
+    order: 7
+    pages: '28-31'
+    summary: '重申品牌資產一致性，並提供 JPEG、AI、PNG、TIFF、PDF、EPS 等格式詞彙。'

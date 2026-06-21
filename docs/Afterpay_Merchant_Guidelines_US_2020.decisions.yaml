@@ -1,0 +1,144 @@
+# L3 決策卡 sidecar — Afterpay Merchant Guidelines US
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Afterpay_Merchant_Guidelines_US_2020
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌是決策系統，不是美術風格；每個視覺與文案選擇都應能回推到品牌支柱
+      - 先建立判斷標準，後續視覺與語氣才有可回溯的語義來源
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: Afterpay_Merchant_Guidelines_US_2020
+        chapter: ch-01
+        excerpt: "Brand Foundation 是後續 brand elements 與 best practices 的語義來源，所有訊息、顏色與商家導入規範都要回到公平、透明、無息、win-win；先定義世界觀再定義資產規則。"
+    status: extracted
+
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 用品牌價值集當每個產出的檢查軸
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - 可複用為 brand voice QA rubric，用正向特質與負向偏差共同審核
+    applicable_when:
+      industries: [industrial_materials_science, nonprofit_social]
+      brand_types: [challenger, category_creator, mission_driven]
+      conditions: []
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Visual Language, Content Design]
+    evidence:
+      - brand_id: Afterpay_Merchant_Guidelines_US_2020
+        chapter: ch-01-01
+        excerpt: "把品牌價值（Keep it Real、Be Brave、Do the Right Thing、Shape the Future）轉為 partner 審核條件：是否真實、是否承擔責任、是否指向長期顧客利益，可降低跨渠道訊息漂移。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: Afterpay_Merchant_Guidelines_US_2020
+        chapter: ch-02-02
+        excerpt: "co-branding guideline 應明確定義排序、間距單位、色彩一致性與視覺重量：Afterpay logo 出現在 partner logo 前，X 高度等於 Afterpay Logo 高度，所有 logo 全 RGB 或全黑白。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗與照片複雜度建立對比決策樹，限定白／深色兩種標誌
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - Logo 顏色規範應基於對比與背景風險，而非只列色票
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: Afterpay_Merchant_Guidelines_US_2020
+        chapter: ch-02-01
+        excerpt: "用背景明度選擇 logo 色版：依背景條件選擇黑、白或 Bondi Mint lock-up，Bondi Mint lock-up 只可在黑底使用，對比與呼吸空間優先於填滿版面。"
+    status: extracted
+
+  - id: dp-responsible-framing-for-regulated-category
+    title: 用「禁止聯想清單＋責任框架」治理受規範類別的合作夥伴文案
+    problem:
+      statement: 金融、健康等受規範或高風險類別的品牌，常透過大量第三方（商家、夥伴）對外溝通；若只給正面賣點而不框限風險，文案容易變成誤導、刺激消費或違反法規。
+      signals: [regulatory_compliance, third_party_usage, content_safety, misleading_risk]
+    solution:
+      module: Content Design
+      move: 同頁提供「可說／不可說」與禁止聯想清單，並要求賣點與條款（disclaimer）並陳、保留資格與限制資訊
+      layer: language
+    reason:
+      - 描述服務利益時必須同時保留責任與限制，避免誤導
+      - 用 forbidden association list 管理受規範類別的品牌風險
+      - 高風險服務的 guideline 應先建立價值與顧客心理模型，再開放 partner 使用轉換型文案
+    applicable_when:
+      industries: [finance]
+      brand_types: [platform_ecosystem, challenger]
+      conditions: [regulatory_compliance, third_party_usage]
+      archetypes: [brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Brand Strategy, Messaging]
+      enables: [Compliance, Content Design]
+    anti_patterns:
+      - 只給正向賣點不附條款（disclaimer）
+      - 用高壓促銷或誤導折扣語氣包裝受規範服務
+    evidence:
+      - brand_id: Afterpay_Merchant_Guidelines_US_2020
+        chapter: ch-03-01
+        excerpt: "同頁提供『How to talk』與『How not to talk』形成明確語義邊界，用 forbidden association list 管理金融服務品牌風險；不得關聯 gambling、paylending、overspending、unmanageable debt。"
+      - brand_id: Afterpay_Merchant_Guidelines_US_2020
+        chapter: ch-01
+        excerpt: "高風險服務的 guideline 應先建立價值與顧客心理模型，再開放 partner 使用轉換型文案；不得把 Afterpay 描述成 credit card、loan shortcut 或鼓勵 overspending。"
+    status: extracted

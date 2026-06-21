@@ -1,0 +1,131 @@
+title: 'National Geographic Brand Guide'
+source: 'sources/National_Geographic_Style_Guide.pdf'
+language: 'en'
+summary: '這份文件將 National Geographic 的探索使命轉化為 content-forward、brand volume 與 motion behavior 系統，並延伸至 on-air、print 與 social/digital 應用。'
+chapters:
+  - id: 'ch-01'
+    title: 'Our Brand'
+    level: 1
+    order: 1
+    pages: '1-9'
+    summary: '建立 National Geographic 的使命、Further 概念與 content-forward 品牌定位。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Our Mission'
+        level: 2
+        order: 1
+        pages: '4-5'
+        summary: '說明科學、探索與地理知識擴散如何成為品牌正當性來源。'
+      - id: 'ch-01-02'
+        title: 'Further'
+        level: 2
+        order: 2
+        pages: '6-8'
+        summary: '把 Further 定義為品牌目標、內部行為與可翻譯口號。'
+      - id: 'ch-01-03'
+        title: 'Content-Forward Brand'
+        level: 2
+        order: 3
+        pages: '9'
+        summary: '確立識別是承載影像的框架，而非搶走影像注意力。'
+  - id: 'ch-02'
+    title: 'Brand Behavior'
+    level: 1
+    order: 2
+    pages: '10-41'
+    summary: '把科學、探索與冒險翻譯成 Index、Mapping、Frame Forward 與 Z-depth 動態行為。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Index Metrics'
+        level: 2
+        order: 1
+        pages: '11-14'
+        summary: '以標準化量測與資料點建立品牌的科學介面感。'
+      - id: 'ch-02-02'
+        title: 'Mapping'
+        level: 2
+        order: 2
+        pages: '15-17'
+        summary: '用影像邊界擴張與網格揭露表現探索未知。'
+      - id: 'ch-02-03'
+        title: 'Z-Depth'
+        level: 2
+        order: 3
+        pages: '18-20'
+        summary: '透過向前推進的空間運動建立冒險與深入感。'
+  - id: 'ch-03'
+    title: 'Brand Ingredients'
+    level: 1
+    order: 3
+    pages: '42-45'
+    summary: '整理 logo、color、image、living portraits、typeface 等基本素材。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Logo, Color, Image, Typeface'
+        level: 2
+        order: 1
+        pages: '42-45'
+        summary: '把可重複調用的視覺材料集中成品牌原料。'
+  - id: 'ch-04'
+    title: 'Guidelines and Brand Volume'
+    level: 1
+    order: 4
+    pages: '47-61'
+    summary: '以 Image、Message、Brand 三元素平衡建立不同品牌音量工具包。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Image Priority'
+        level: 2
+        order: 1
+        pages: '47-48'
+        summary: '低品牌音量，讓影像與內容畫面主導。'
+      - id: 'ch-04-02'
+        title: 'Message Priority'
+        level: 2
+        order: 2
+        pages: '49-56'
+        summary: '中等品牌音量，讓標題、資訊與節目訊息主導。'
+      - id: 'ch-04-03'
+        title: 'Brand Priority'
+        level: 2
+        order: 3
+        pages: '57-61'
+        summary: '高品牌音量，用於需要強化頻道識別的 close、tagline 或社群導流。'
+  - id: 'ch-05'
+    title: 'On-Air Systems'
+    level: 1
+    order: 5
+    pages: '47-97'
+    summary: '將品牌行為與音量工具包套用到 promo、navigation 與 idents。'
+    children:
+      - id: 'ch-05-01'
+        title: 'Promo Toolkit'
+        level: 2
+        order: 1
+        pages: '47-80'
+        summary: '定義節目 promo 所需的開場、標題、close、endpage 與轉場。'
+      - id: 'ch-05-02'
+        title: 'Navigation'
+        level: 2
+        order: 2
+        pages: '82-86'
+        summary: '定義 bumpers、lineup、countdown、pop-up、bugs、snipes 等導視元件。'
+      - id: 'ch-05-03'
+        title: 'Idents'
+        level: 2
+        order: 3
+        pages: '88-97'
+        summary: '定義品牌動畫與 opticals，作為頻道層級識別瞬間。'
+  - id: 'ch-06'
+    title: 'Print and Social/Digital'
+    level: 1
+    order: 6
+    pages: '95-110'
+    summary: '將品牌系統延伸到 stationery、key art、社群標頭、貼文、banner、簡報與網站。'
+    children:
+      - id: 'ch-06-01'
+        title: 'Stationery and Digital Templates'
+        level: 2
+        order: 1
+        pages: '95-110'
+        summary: '把品牌元素套用到商務文件與社群/網站模板。'

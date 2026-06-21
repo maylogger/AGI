@@ -1,0 +1,116 @@
+# L3 決策卡 sidecar — McDelivery（外送 logo 與聯名使用規範）
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: McDelivery_brandbook_2017
+decisions:
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌內部元素（最大白點直徑）作為 clear space 與聯名間距的共同測量單位
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - clear space 可以選擇最容易被視覺辨認的內部元素作為尺度
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - clear space 至少為最大白點直徑的 3 倍
+    evidence:
+      - brand_id: McDelivery_brandbook_2017
+        chapter: ch-02-01
+        excerpt: "clear space 以最大白點直徑 3x 計算；clear space 可以選擇最容易被視覺辨認的內部元素作為尺度。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗與對比決定 wordmark 顏色，低對比時退回 single color logo
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - Logo 顏色規範應基於對比與背景風險，而非只列色票
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: McDelivery_brandbook_2017
+        chapter: ch-02-02
+        excerpt: "wordmark 在淺底用黑、深底用白；低對比背景使用 single color logo，全球一致性優先但已核准區域色彩可在清楚限制下存在。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以固定順序、optical 等重、keyline 分隔與單一內部尺度（最大白點直徑）定義主品牌與 partner lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - co-branding 需要等量清楚，而不是品牌混合
+      - co-branding guideline 可用單一內部尺度同時管理距離、clear space 與 keyline
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: McDelivery_brandbook_2017
+        chapter: ch-04
+        excerpt: "McDelivery logo 置於 partner logo 前，partner logo optical prominence 相等；keyline 與 clear space 共用最大白點直徑 5x，形成一致幾何系統。"
+    status: extracted
+
+  - id: dp-approval-gate-for-exceptions
+    title: 例外不是漏洞，用審核閘門把差異收進可治理的模組
+    problem:
+      statement: 規則無法窮舉所有情境，現實組織總會有例外；若放任各單位自行決定，例外會逐步擴張成破壞系統的破口。
+      signals: [exception_handling, multi_unit_consistency, governance, scaling_risk]
+    solution:
+      module: Governance
+      move: 變體僅在標準 logo 無法使用時觸發，且每種變體須經市場 marketing lead 核准
+      layer: governance
+    reason:
+      - 變體是例外，不是新的自由選項
+      - 變體章節應明確標示「何時不能用標準版」而非只展示可用資產
+    applicable_when:
+      industries: [public_sector, finance]
+      brand_types: [institutional_public_trust, platform_ecosystem, heritage_legacy]
+      conditions: [multi_unit_consistency, exception_handling]
+      archetypes: [multi_brand_architecture, corporate_toolkit]
+    dependencies:
+      requires: [Governance]
+      enables: []
+    anti_patterns:
+      - 例外只寫「可以這樣做」卻不寫適用邊界與審核者
+      - 各單位把一次性例外當成通用替代方案沿用
+    evidence:
+      - brand_id: McDelivery_brandbook_2017
+        chapter: ch-03
+        excerpt: "logo variants 僅在 standard logo 不可能使用時使用；每種變體需 McDonald’s marketing lead in your market approval，變體是例外而非新的自由選項。"
+    status: extracted

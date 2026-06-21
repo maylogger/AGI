@@ -1,0 +1,86 @@
+title: "M&G Brand Identity Guidelines"
+source: "sources/MG_investments_identity guidelines_2014.pdf"
+date: "2014-06"
+language: "en"
+summary: "M&G Investments 品牌識別規範以投資定位、品牌架構、logo、核心元素、圖像風格、文具、應用版面、Institutional Fixed Income、M&G Real Estate 與 tone of voice 建立跨業務的一致視覺與語言系統。"
+chapters:
+  - id: "ch-01"
+    title: "Introduction"
+    level: 1
+    order: 1
+    pages: "1.1-1.5"
+    summary: "說明 guideline 使用方式、品牌概念、品牌概覽與 M&G Group 的品牌結構。"
+    children:
+      - id: "ch-01-01"
+        title: "Bringing the Brand to Life"
+        level: 2
+        order: 1
+        pages: "1.2"
+        summary: "以 heavyweight investment with an independent spirit 作為定位核心，連結品牌屬性與溝通行為。"
+      - id: "ch-01-02"
+        title: "Brand Overview and Structure"
+        level: 2
+        order: 2
+        pages: "1.3-1.5"
+        summary: "說明 M&G Investments、Institutional Fixed Income 與 Real Estate 的品牌架構與關係。"
+  - id: "ch-02"
+    title: "Logos"
+    level: 1
+    order: 2
+    pages: "2.1-2.7"
+    summary: "定義 M&G logo、variants、exclusion area、usage、Prudential endorsement 與 asset strip。"
+  - id: "ch-03"
+    title: "Core Elements"
+    level: 1
+    order: 3
+    pages: "3.1-3.12"
+    summary: "規範 ampersand、typefaces、色彩、brush stroke、tables、graphs、charts、iView logo、recycling logo 與 additional icons。"
+    children:
+      - id: "ch-03-01"
+        title: "Typography and Colour"
+        level: 2
+        order: 1
+        pages: "3.3-3.6"
+        summary: "定義主要字體、範例、核心色盤與輔助色盤。"
+      - id: "ch-03-02"
+        title: "Graphic Devices and Data"
+        level: 2
+        order: 2
+        pages: "3.7-3.12"
+        summary: "規範 brush stroke、表格圖表、iView、recycling logo 與 icons。"
+  - id: "ch-04"
+    title: "Illustration and Photography"
+    level: 1
+    order: 4
+    pages: "4.1-4.4"
+    summary: "定義插畫樣式、插畫使用方式與攝影風格。"
+  - id: "ch-05"
+    title: "Stationery"
+    level: 1
+    order: 5
+    pages: "5.1-5.7"
+    summary: "規範 A4 letterhead、continuation、compliment slip 與 business card 的版式與尺寸。"
+  - id: "ch-06"
+    title: "Key Applications"
+    level: 1
+    order: 6
+    pages: "6.1-6.14"
+    summary: "提供 brochure、literature、sales aid、magazine、folder、advertising 與 literature gallery 的 grid 和應用範例。"
+  - id: "ch-07"
+    title: "Institutional - Fixed Income"
+    level: 1
+    order: 7
+    pages: "7.1-7.11"
+    summary: "為 Institutional Fixed Income 提供 stationery、illustration、monotone photography、cover grid、spread、advertising、flyer、event banner 與 joint materials。"
+  - id: "ch-08"
+    title: "M&G Real Estate"
+    level: 1
+    order: 8
+    pages: "8.1-8.21"
+    summary: "定義 Real Estate logo、endorsement strapline、stationery、illustration、full colour photography、cover/report/brochure layout、site boards 與 gallery。"
+  - id: "ch-09"
+    title: "Contacts and Appendix"
+    level: 1
+    order: 9
+    pages: "9.1-appendix"
+    summary: "提供聯絡窗口、approval governance、tone of voice 與 writing style 指引。"

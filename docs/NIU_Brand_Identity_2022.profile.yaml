@@ -1,0 +1,331 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: NIU_Brand_Identity_2022
+index_ref: docs/NIU_Brand_Identity_2022.index.yaml
+note_ref: docs/NIU_Brand_Identity_2022.note.md
+archetype: brand_experience_guide
+industry: education
+modules:
+- Operations
+- Governance
+- Brand Strategy
+- Messaging
+- Voice and Tone
+- AI-Checkable Rules
+- Content Design
+- Examples
+- Photography System
+- Typography System
+- Color System
+- Visual Identity
+- Visual Language
+- Layout System
+- Accessibility
+- Compliance
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 6
+  section_count: 10
+chapter_sequence:
+- id: ch-01
+  title: Introduction and Contacts
+  order: 1
+  level: 1
+- id: ch-02
+  title: Brand Basics
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Value Proposition
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Brand Personality and Narrative
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Tagline
+  order: 3
+  level: 2
+- id: ch-03
+  title: Brand Voice
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: How We Sound
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Voice in Practice
+  order: 2
+  level: 2
+- id: ch-04
+  title: Visual Elements
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: University Logo
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Brand Colors and Typography
+  order: 2
+  level: 2
+- id: ch-04-03
+  title: Graphic Elements and Photography
+  order: 3
+  level: 2
+- id: ch-05
+  title: Marketing Examples
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Print and Business Papers
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Digital, Motion, Social and Websites
+  order: 2
+  level: 2
+- id: ch-06
+  title: Resources
+  order: 6
+  level: 1
+frameworks:
+- name: Governance intake framework：文件導覽 + review gate + owner/contact map
+  chapter: ch-01
+  chapter_title: Introduction and Contacts
+- name: Messaging hierarchy framework：value proposition -> personality -> narrative -> strengths/benefits -> tagline
+  chapter: ch-02
+  chapter_title: Brand Basics
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-02-01
+  chapter_title: Value Proposition
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-02-02
+  chapter_title: Brand Personality and Narrative
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-02-03
+  chapter_title: Tagline
+- name: Voice framework：message content + brand personality + audience/medium tone
+  chapter: ch-03
+  chapter_title: Brand Voice
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-03-01
+  chapter_title: How We Sound
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-03-02
+  chapter_title: Voice in Practice
+- name: Visual system framework：marks -> color -> typography -> graphic devices -> photography
+  chapter: ch-04
+  chapter_title: Visual Elements
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-04-01
+  chapter_title: University Logo
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-04-02
+  chapter_title: Brand Colors and Typography
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-04-03
+  chapter_title: Graphic Elements and Photography
+- name: Template framework：每種媒體都有用途、內容區、品牌區與審核要求
+  chapter: ch-05
+  chapter_title: Marketing Examples
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-05-01
+  chapter_title: Print and Business Papers
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-05-02
+  chapter_title: Digital, Motion, Social and Websites
+- name: Resource framework：review gate + service owner + standards URL + compliance statement
+  chapter: ch-06
+  chapter_title: Resources
+patterns:
+- name: 入口治理章
+  chapter: ch-01
+  chapter_title: Introduction and Contacts
+- name: 可複用為高等教育品牌的敘事基礎模組。
+  chapter: ch-02
+  chapter_title: Brand Basics
+- name: 子系統規範頁
+  chapter: ch-02-01
+  chapter_title: Value Proposition
+- name: 子系統規範頁
+  chapter: ch-02-02
+  chapter_title: Brand Personality and Narrative
+- name: 子系統規範頁
+  chapter: ch-02-03
+  chapter_title: Tagline
+- name: 可複用為 voice-and-tone guideline 的基本模型。
+  chapter: ch-03
+  chapter_title: Brand Voice
+- name: 子系統規範頁
+  chapter: ch-03-01
+  chapter_title: How We Sound
+- name: 子系統規範頁
+  chapter: ch-03-02
+  chapter_title: Voice in Practice
+- name: 可複用為 institution-scale identity system。
+  chapter: ch-04
+  chapter_title: Visual Elements
+- name: 子系統規範頁
+  chapter: ch-04-01
+  chapter_title: University Logo
+- name: 子系統規範頁
+  chapter: ch-04-02
+  chapter_title: Brand Colors and Typography
+- name: 子系統規範頁
+  chapter: ch-04-03
+  chapter_title: Graphic Elements and Photography
+- name: 可複用為大型組織的 marketing collateral library。
+  chapter: ch-05
+  chapter_title: Marketing Examples
+- name: 子系統規範頁
+  chapter: ch-05-01
+  chapter_title: Print and Business Papers
+- name: 子系統規範頁
+  chapter: ch-05-02
+  chapter_title: Digital, Motion, Social and Websites
+- name: 可複用為 guideline 的 operations appendix。
+  chapter: ch-06
+  chapter_title: Resources
+rules_ai_checkable:
+- module: ''
+  criterion: AI-checkable：print/digital communications 至少在 due date 前三天送 Clearinghouse Review；問題需依 logo、web、social、editorial
+    等類型送對應窗口。
+  chapter: ch-01
+  chapter_title: Introduction and Contacts
+- module: Brand Strategy
+  criterion: AI-checkable：tagline 必須寫作 Your Future. Our Focus. 且保留句點；不得為 university/college/department 自創替代 tagline；內容應可連回至少一項
+    key strength 或 benefit。
+  chapter: ch-02
+  chapter_title: Brand Basics
+- module: ''
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-02-01
+  chapter_title: Value Proposition
+- module: Brand Strategy
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-02-02
+  chapter_title: Brand Personality and Narrative
+- module: ''
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-02-03
+  chapter_title: Tagline
+- module: ''
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-03-01
+  chapter_title: How We Sound
+- module: Voice and Tone
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-03-02
+  chapter_title: Voice in Practice
+- module: ''
+  criterion: AI-checkable：不得 recreate 或 typeset NIU logos；digital communications 不使用 1-color logos；單色 logo 僅限黑或白；Gotham 為主字體，受限媒介可用
+    Arial；攝影需符合 brand personality 並做一致色彩校正。
+  chapter: ch-04
+  chapter_title: Visual Elements
+- module: Visual Identity
+  criterion: AI-checkable：只使用官方 logo 檔；logo/tagline lockup 不得自行重排；clear space 與 minimum size 必須符合頁面規格；improper usage 範例中的變形皆不可接受。
+  chapter: ch-04-01
+  chapter_title: University Logo
+- module: ''
+  criterion: AI-checkable：攝影需符合 personalized/inviting/charged；不得使用低品質或不符合品牌情緒的影像；裁切不得破壞主體與訊息。
+  chapter: ch-04-03
+  chapter_title: Graphic Elements and Photography
+- module: ''
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-05-01
+  chapter_title: Print and Business Papers
+- module: Motion Identity
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-05-02
+  chapter_title: Digital, Motion, Social and Websites
+chapters:
+- id: ch-01
+  title: Introduction and Contacts
+  modules:
+  - Operations
+  - Governance
+- id: ch-02
+  title: Brand Basics
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-02-01
+  title: Value Proposition
+  modules:
+  - Brand Strategy
+- id: ch-02-02
+  title: Brand Personality and Narrative
+  modules:
+  - Voice and Tone
+  - Messaging
+- id: ch-02-03
+  title: Tagline
+  modules:
+  - AI-Checkable Rules
+  - Messaging
+- id: ch-03
+  title: Brand Voice
+  modules:
+  - Content Design
+  - Voice and Tone
+- id: ch-03-01
+  title: How We Sound
+  modules:
+  - Content Design
+  - Voice and Tone
+- id: ch-03-02
+  title: Voice in Practice
+  modules:
+  - Examples
+  - Voice and Tone
+- id: ch-04
+  title: Visual Elements
+  modules:
+  - Photography System
+  - Typography System
+  - Color System
+  - Visual Identity
+- id: ch-04-01
+  title: University Logo
+  modules:
+  - AI-Checkable Rules
+- id: ch-04-02
+  title: Brand Colors and Typography
+  modules:
+  - Typography System
+  - Color System
+- id: ch-04-03
+  title: Graphic Elements and Photography
+  modules:
+  - Photography System
+  - Visual Language
+- id: ch-05
+  title: Marketing Examples
+  modules:
+  - Layout System
+  - Operations
+  - Accessibility
+- id: ch-05-01
+  title: Print and Business Papers
+  modules:
+  - Layout System
+  - Operations
+- id: ch-05-02
+  title: Digital, Motion, Social and Websites
+  modules:
+  - Operations
+  - Accessibility
+- id: ch-06
+  title: Resources
+  modules:
+  - Compliance
+  - Operations
+  - Governance

@@ -1,0 +1,248 @@
+# L3 決策卡 sidecar — The Berkeley Brand Manual
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Berkeley_Brand_Manual_accessible_2019
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立定位與創意平台（positioning → creative platform → strengths/tone → brief），再進入視覺規則
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 高等教育品牌應以情感與動機連結事實，而不是只堆排名、研究與成就
+    applicable_when:
+      industries: [education, public_sector, tech_software]
+      brand_types: [institutional_public_trust, category_creator]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Voice and Tone, Messaging]
+    anti_patterns:
+      - 把 Reach Further 當 tagline，而不展示如何 challenge convention
+    evidence:
+      - brand_id: Berkeley_Brand_Manual_accessible_2019
+        chapter: ch-02
+        excerpt: "Telling Our Story 是所有視覺規則的語義前置，讓設計元素不只漂亮而是服務 Reach Further；positioning → creative platform → strengths/tone → brief 形成內容決策鏈。"
+    status: extracted
+
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 把語氣特質與 key strengths 轉成 creative brief 欄位與 checkbox，作為每個產出的檢查軸
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - 內容 guideline 可將抽象品牌語氣轉成 checkbox 與 brief 欄位，支援生成前檢查
+    applicable_when:
+      industries: [education, industrial_materials_science, nonprofit_social]
+      brand_types: [institutional_public_trust, challenger, mission_driven]
+      conditions: [needs_evaluation_criteria]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Content Design]
+    evidence:
+      - brand_id: Berkeley_Brand_Manual_accessible_2019
+        chapter: ch-02-02
+        excerpt: "每個 communication 至少應連結一個 key strength；voice 應符合 curious、intense、optimistic、influential、socially conscious、independent、real、open；brief 需含 audience、key message、proof points、CTA。"
+    status: extracted
+
+  - id: dp-logo-vs-lockup-distinction
+    title: 區分 public-facing lockup 與 corporate logo 的使用場景
+    problem:
+      statement: 單一標誌資產被套用到所有情境，混淆對外溝通與企業署名，且難以同時治理法律與一致性。
+      signals: [multiple_logo_contexts, trademark, legal_governance]
+    solution:
+      module: Visual Identity
+      move: 用「正式性層級 + 使用情境 + 禁止混用」治理多符號機構的識別
+      layer: visual_core
+    reason:
+      - 標誌資產不可重建、不可任意改比例
+      - 多符號機構應用正式性層級與使用情境分工，避免 athletics equity 侵入 academic context
+    applicable_when:
+      industries: [education, industrial_materials_science, finance]
+      brand_types: [institutional_public_trust, heritage_legacy]
+      conditions: [multiple_logo_contexts, trademark]
+      archetypes: [brand_experience_guide, corporate_toolkit, multi_brand_architecture]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Legal and Trademark, Governance]
+    evidence:
+      - brand_id: Berkeley_Brand_Manual_accessible_2019
+        chapter: ch-03
+        excerpt: "Institutional Mark Hierarchy：wordmark、seal、academic name、athletics name、spirit mark 各有正式性與情境分工；Cal Script 不得用於 academic purposes，first reference 用 UC Berkeley。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+    evidence:
+      - brand_id: Berkeley_Brand_Manual_accessible_2019
+        chapter: ch-08
+        excerpt: "unit lockup clear space 等於 Berkeley B 高度，wordmark width 至少 1 inch / 175px，以標誌自身幾何定義留白與尺寸。"
+    status: extracted
+
+  - id: dp-accessible-contrast-pairs
+    title: 把可近用性前置成核准對比配色，而非設計者自行判斷
+    problem:
+      statement: 公共資訊面向全體市民與輔助科技，若放任設計者自由配色，容易產生不符合無障礙標準、身心障礙者無法閱讀的組合。
+      signals: [accessibility, public_trust, inclusive_audience]
+    solution:
+      module: Accessibility
+      move: 把色彩與可及性合併，提供大／小文字的核准對比配色矩陣（allowed pairings）
+      layer: visual_core
+    reason:
+      - 用 approved contrast pairs 降低設計者自行判斷錯誤
+      - 色彩章可同時提供品牌情緒、數值 token 與可及性文字使用矩陣
+    applicable_when:
+      industries: [education, public_sector]
+      brand_types: [institutional_public_trust]
+      conditions: [accessibility, inclusive_audience]
+      archetypes: [brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Color System]
+      enables: [Governance]
+    anti_patterns:
+      - 把 vibrants 用於 body text 或 small headlines
+    evidence:
+      - brand_id: Berkeley_Brand_Manual_accessible_2019
+        chapter: ch-04
+        excerpt: "文字色需符合 large/small text allowed pairings；heritage colors 不得使用 screens/tints，vibrants 不得用於 body text 或 small headlines。"
+    status: extracted
+
+  - id: dp-system-toolkit-over-template
+    title: 企業視覺系統給「可組合工具箱」而非僵硬模板
+    problem:
+      statement: 要求每個版面長得完全相同會扼殺多元內容；但完全自由又會失去一致性。
+      signals: [many_teams, diverse_content, system_consistency]
+    solution:
+      module: Visual Language
+      move: 提供帶 skill level 與使用限制的圖形元素庫，控制同時使用量而非提供固定模板
+      layer: visual_core
+    reason:
+      - 彈性必須被結構化；圖形元素應提供家族相似性但限制同時使用量
+      - 圖形庫應包含 skill rating 與禁止組合規則，支援品質治理
+    applicable_when:
+      industries: [education, industrial_materials_science, tech_software]
+      brand_types: [institutional_public_trust, category_creator]
+      conditions: [diverse_content, system_consistency]
+      archetypes: [full_brand_system, corporate_toolkit, brand_experience_guide]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Layout System, Examples]
+    anti_patterns:
+      - 單件設計同時使用過多 graphic element 造成過度裝飾
+    evidence:
+      - brand_id: Berkeley_Brand_Manual_accessible_2019
+        chapter: ch-07
+        excerpt: "Graphic Element Library 以光的隱喻組織 structural elements、apertures、tessellations、prisms，並以 Easiest 到 Experts Only 分級；除 structural 外單件設計不得使用超過一種 graphic element。"
+    status: extracted
+
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 用分類決策樹（entity role → relationship → lockup type → medium exception）讓非專家自行分類單位再送審
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - 大型機構應把 brand architecture 規則做成分類決策樹，而不是只列範例
+    applicable_when:
+      industries: [education, public_sector]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [multi_unit_consistency, multi_entity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 各單位自行創造分支品牌與專屬識別
+    evidence:
+      - brand_id: Berkeley_Brand_Manual_accessible_2019
+        chapter: ch-08
+        excerpt: "Institutional Brand Architecture：master brand → primary/secondary sub-brand → collaborations，用 decision flow chart 分類單位；所有 unit lockups 需 Office of Communications & Public Affairs approval。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以關係類型決定視覺權限與層級（tiered sponsors、supporter copy-only），維持主從
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - 視覺關係必須反映法律與價值對齊程度
+    applicable_when:
+      industries: [education, finance, tech_software]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [cobranding, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: Berkeley_Brand_Manual_accessible_2019
+        chapter: ch-09
+        excerpt: "multiple sponsor logos 超過五個時考慮 tiered structure；supporters 不得與 Berkeley logo 視覺並列，只以 copy/dialogue recognition，避免誤導為正式品牌聯盟。"
+    status: extracted
+
+  - id: dp-trademark-permission-flow
+    title: 用授權閘門治理第三方商標使用，先處理混淆與背書風險
+    problem:
+      statement: 平台品牌被大量第三方使用商標與資產，若無授權流程，會造成商標混淆與誤導性背書風險。
+      signals: [trademark_protection, partner_governance, endorsement_risk, third_party_usage]
+    solution:
+      module: Legal and Trademark
+      move: 把治理責任拆成具體單位與表單（Trademark Use Request、misuse report、licensed vendors），依使用類型導向不同窗口
+      layer: governance
+    reason:
+      - 品牌保護不是阻止使用，而是把使用導向正確審核與授權流程
+      - guideline 末端應將治理責任拆成具體單位與表單，而非只說「請遵守」
+    applicable_when:
+      industries: [education, tech_software]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [trademark_protection, third_party_usage]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Legal and Trademark]
+      enables: [Governance]
+    anti_patterns:
+      - 只說「請遵守」卻不提供審核單位與表單
+    evidence:
+      - brand_id: Berkeley_Brand_Manual_accessible_2019
+        chapter: ch-09-02
+        excerpt: "Brand Protection 把 film/TV、advertising、press release、merchandise、partnership 導向不同單位；商標使用需提交 Trademark Use Request，誤用需 Misuse Report，商品需 licensed vendors。"
+    status: extracted

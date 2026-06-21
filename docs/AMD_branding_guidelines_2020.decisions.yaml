@@ -1,0 +1,146 @@
+# L3 決策卡 sidecar — AMD
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: AMD_branding_guidelines_2020
+decisions:
+  - id: dp-system-toolkit-over-template
+    title: 企業視覺系統給「可組合工具箱」而非僵硬模板
+    problem:
+      statement: 要求每個版面長得完全相同會扼殺多元內容；但完全自由又會失去一致性。
+      signals: [many_teams, many_agencies, diverse_content, system_consistency, mass_touchpoints]
+    solution:
+      module: Visual Language
+      move: 把識別定義為可獨立或組合使用的 core elements（tools, not a rigid system），用固定決策順序取代固定模板
+      layer: visual_core
+    reason:
+      - 彈性必須被結構化；系統不靠固定模板，而靠固定決策順序
+      - 元素可獨立使用也可組合，支援多元內容又維持辨識
+      - 用受控的技法集允許創意變化又維持辨識
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, consumer_retail_hospitality]
+      brand_types: [mass_consumer, category_creator]
+      conditions: []
+      archetypes: [full_brand_system, corporate_toolkit, brand_experience_guide]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Layout System, Examples]
+    anti_patterns:
+      - 一次使用所有元素造成過載
+      - 只提供單一固定版型，使用者只會複製貼上
+    evidence:
+      - brand_id: AMD_branding_guidelines_2020
+        chapter: ch-01-01
+        excerpt: "Brand Toolkit：品牌是一個系統，不是單一標誌；創意應在共用零件中發生，先列元素再給操作規則。任何品牌指南都需要一個工具包索引。"
+    status: extracted
+
+  - id: dp-from-to-voice-translation
+    title: 技術品牌語氣指南要給「轉譯規則」，不只是列形容詞
+    problem:
+      statement: 科學與技術公司容易陷入術語化，受眾停在「所以呢？」而非「原來如此」。
+      signals: [technical_jargon_risk, expert_audience, b2b]
+    solution:
+      module: Voice and Tone
+      move: 用 from/to 對照把語氣轉型具體化（術語→可親近、數據→人性利益）
+      layer: language
+    reason:
+      - 科學溝通應讓人理解「所以呢」，而不是只展示知識量
+      - 語氣指南應定義正向特質、負向邊界與轉譯方式，而不只是列形容詞
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, finance]
+      brand_types: []
+      conditions: [expert_audience, technical_translation]
+      archetypes: [full_brand_system, brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Messaging]
+      enables: [Content Design]
+    anti_patterns:
+      - 只列 tone adjectives 卻沒有轉譯方法
+    evidence:
+      - brand_id: AMD_branding_guidelines_2020
+        chapter: ch-01-02
+        excerpt: "語氣應 forthright、clear、confident，從技術能力轉譯為使用者利益，不可只列產品功能；自信來自證據與清楚度，而非誇張修辭。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+    evidence:
+      - brand_id: AMD_branding_guidelines_2020
+        chapter: ch-01-03
+        excerpt: "clear space 以標誌內部元素量測（1x 留白），並指定最小寬度 0.675 inch、建議寬高 20%；標誌系統需要空間治理與尺寸治理。"
+    status: extracted
+
+  - id: dp-custom-typeface-as-identity-asset
+    title: 用專屬字體當識別資產，擺脫系統預設字並統一語氣
+    problem:
+      statement: 仰賴系統預設字體的品牌缺乏獨特性與一致語氣，跨媒介又常因字體缺失而失控；但又需要在無法安裝字型的環境保有 fallback。
+      signals: [identity_distinctiveness, system_consistency, brand_recognition, multi_media]
+    solution:
+      module: Typography System
+      move: 建立核心品牌字體作為識別資產，並指定 secondary/system fallback 與語系替代字體、字重與最佳實務
+      layer: visual_core
+    reason:
+      - 專屬字體系統讓品牌不再依賴 default fonts，並讓文字有共同語氣
+      - 字體指南不能只列品牌字體，也要處理語系覆蓋、商務工具限制與 fallback
+      - 搭配 system fallback，可在無法安裝字型的環境維持一致
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger]
+      conditions: [identity_distinctiveness, multi_media]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: [Design Tokens]
+    anti_patterns:
+      - 直接沿用系統字當品牌字體，缺乏 fallback 規範
+    evidence:
+      - brand_id: AMD_branding_guidelines_2020
+        chapter: ch-01-05
+        excerpt: "以 Klavika 為核心字體、Arial 為次要字體，並提供各語系替代字體（如繁體中文 Noto Sans）；企業字體系統必須在品牌性與實務可取得性之間折衷。"
+    status: extracted
+
+  - id: dp-approval-gate-for-exceptions
+    title: 例外不是漏洞，用審核閘門把差異收進可治理的模組
+    problem:
+      statement: 規則無法窮舉所有情境，現實組織總會有例外；若放任各單位自行決定，例外會逐步擴張成破壞系統的破口。
+      signals: [exception_handling, multi_unit_consistency, governance, scaling_risk]
+    solution:
+      module: Governance
+      move: 例外章節須明確寫出「為何例外／何時可用／不可擴張到哪裡」，並交由品牌管理單位審核
+      layer: governance
+    reason:
+      - 例外應回到品牌團隊，而不是由使用者自行決定
+      - guideline 不是靜態真理，而是可被維護的治理文件
+    applicable_when:
+      industries: [public_sector, finance]
+      brand_types: [institutional_public_trust, platform_ecosystem, heritage_legacy]
+      conditions: [multi_unit_consistency, exception_handling]
+      archetypes: [multi_brand_architecture, corporate_toolkit]
+    dependencies:
+      requires: [Governance]
+      enables: []
+    anti_patterns:
+      - 例外只寫「可以這樣做」卻不寫適用邊界與審核者
+      - 各單位把一次性例外當成通用替代方案沿用
+    evidence:
+      - brand_id: AMD_branding_guidelines_2020
+        chapter: ch-01-09
+        excerpt: "Governance Loop：使用規則 → 遇到例外 → 聯絡品牌團隊 → 核准或更新；例外應回到品牌團隊，而不是由使用者自行解釋。"
+    status: extracted

@@ -1,0 +1,29 @@
+{
+  "skill_name": "design-guideline-coach",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "幫新客戶規劃 design guideline（互動教練模式）。",
+      "expected_output": "Starts Intake with exactly one question (client name or first missing field). Does not output full plan or write clients/ files until all intake questions are answered.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "（接續 intake 全部答完後）",
+      "expected_output": "Presents one complete Guideline Plan in a single message for confirmation. Does not write blueprint.yaml or note.md before user confirms.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "確認，照這個 plan 開始產出。",
+      "expected_output": "After explicit confirmation, builds clients/<slug>/ with intake.yaml, blueprint.yaml, index.yaml, note.md, coach_session.md, and updates plan status to confirmed.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "不用談策略，直接幫我寫 Logo 章節。",
+      "expected_output": "During Intake, asks one challenge-related follow-up if skipping strategy; during Plan phase, records skip/TBD rather than writing Logo draft before plan confirmation.",
+      "files": []
+    }
+  ]
+}

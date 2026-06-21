@@ -1,0 +1,286 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: McDelivery_brandbook_2017
+index_ref: docs/McDelivery_brandbook_2017.index.yaml
+note_ref: docs/McDelivery_brandbook_2017.note.md
+archetype: brand_experience_guide
+industry: consumer_retail_hospitality
+modules:
+- Operations
+- Governance
+- AI-Checkable Rules
+- Visual Identity
+- Measurement
+- Localization
+- Color System
+- Compliance
+- Layout System
+- Typography System
+- Examples
+- Legal and Trademark
+depth:
+  strategy: low
+  visual: high
+  governance: high
+  top_level_chapter_count: 8
+  section_count: 5
+chapter_sequence:
+- id: ch-01
+  title: Version History
+  order: 1
+  level: 1
+- id: ch-02
+  title: McDelivery Logo
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Primary Logo and Clear Space
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Colors, Size and Backgrounds
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Violations
+  order: 3
+  level: 2
+- id: ch-03
+  title: Logo Variants
+  order: 3
+  level: 1
+- id: ch-04
+  title: Co-Branding
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Primary and Secondary Co-Branding Lockups
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Uber Eats Co-Branding
+  order: 2
+  level: 2
+- id: ch-05
+  title: Color Palette
+  order: 5
+  level: 1
+- id: ch-06
+  title: Typography
+  order: 6
+  level: 1
+- id: ch-07
+  title: In Use Examples
+  order: 7
+  level: 1
+- id: ch-08
+  title: Legal
+  order: 8
+  level: 1
+frameworks:
+- name: Version-change traceability
+  chapter: ch-01
+  chapter_title: Version History
+- name: Logo integrity system：symbol meaning、lockup relation、spacing unit、colour role、scale threshold、background contrast
+  chapter: ch-02
+  chapter_title: McDelivery Logo
+- name: Semantic logo anatomy
+  chapter: ch-02-01
+  chapter_title: Primary Logo and Clear Space
+- name: Contextual logo adaptation：standard、regional exception、small-size simplification、contrast fallback
+  chapter: ch-02-02
+  chapter_title: Colors, Size and Backgrounds
+- name: Violation taxonomy：colour、geometry、effects、container、background、relationship、semantic misuse
+  chapter: ch-02-03
+  chapter_title: Violations
+- name: Exception-based variant selection
+  chapter: ch-03
+  chapter_title: Logo Variants
+- name: Co-brand lockup geometry：order、optical size、keyline position、spacing、colour、clear space
+  chapter: ch-04
+  chapter_title: Co-Branding
+- name: Lockup selection by spatial constraint
+  chapter: ch-04-01
+  chapter_title: Primary and Secondary Co-Branding Lockups
+- name: Partner-specific co-brand module
+  chapter: ch-04-02
+  chapter_title: Uber Eats Co-Branding
+- name: Colour specification plus production adjustment
+  chapter: ch-05
+  chapter_title: Color Palette
+- name: Typeface vs wordmark boundary
+  chapter: ch-06
+  chapter_title: Typography
+- name: Application evidence set
+  chapter: ch-07
+  chapter_title: In Use Examples
+- name: Legal clearance workflow：internal-only distribution、local counsel, market clearance, Golden Arches Code, trademark
+    co...
+  chapter: ch-08
+  chapter_title: Legal
+patterns:
+- name: 在 logo guideline 前置 version history，有助於跨市場同步。
+  chapter: ch-01
+  chapter_title: Version History
+- name: 以最大白點直徑作為 clear-space 與 co-brand spacing 的共同測量單位。
+  chapter: ch-02
+  chapter_title: McDelivery Logo
+- name: 使用 logo 內部 dot 作為 modular unit。
+  chapter: ch-02-01
+  chapter_title: Primary Logo and Clear Space
+- name: 對數位高解析螢幕用 scale factor 換算最小尺寸。
+  chapter: ch-02-02
+  chapter_title: Colors, Size and Backgrounds
+- name: Do-not list 是 AI-checkable rules 的最好來源。
+  chapter: ch-02-03
+  chapter_title: Violations
+- name: 以媒體限制觸發變體，例如 digital leaderboard 或 black-and-white newspaper。
+  chapter: ch-03
+  chapter_title: Logo Variants
+- name: keyline spacing 與 clear space 共用 5x biggest white dot，形成一致的幾何系統。
+  chapter: ch-04
+  chapter_title: Co-Branding
+- name: 空間不足時允許 secondary，但仍回到相同 spacing rule。
+  chapter: ch-04-01
+  chapter_title: Primary and Secondary Co-Branding Lockups
+- name: 把 Asia alternate version 寫入同一章，避免市場自行替換。
+  chapter: ch-04-02
+  chapter_title: Uber Eats Co-Branding
+- name: 同時提供 coated/uncoated PMS，適合多印刷情境。
+  chapter: ch-05
+  chapter_title: Color Palette
+- name: 明確禁止 partner typefaces 進入本品牌 communications。
+  chapter: ch-06
+  chapter_title: Typography
+- name: 把不同媒體集中於範例章，避免每個規則章過度細分。
+  chapter: ch-07
+  chapter_title: In Use Examples
+- name: logo guideline 結尾以 legal notices 收束，可提醒設計決策仍需法律審核。
+  chapter: ch-08
+  chapter_title: Legal
+rules_ai_checkable:
+- module: ''
+  criterion: 使用者應以 v1.9 的 Uber Eats branding 和 Asian Market wording 為準。
+  chapter: ch-01
+  chapter_title: Version History
+- module: Visual Identity
+  criterion: emblem 與 wordmark 成對使用，未經市場 marketing lead 核准不得單獨使用 emblem；clear space 至少為最大白點直徑 3 倍；wordmark 在淺底用黑、深底用白；低對比背景使用
+    single color logo。
+  chapter: ch-02
+  chapter_title: McDelivery Logo
+- module: Visual Identity
+  criterion: clear space >= 3x biggest white dot diameter；emblem without wordmark 需 McDonald’s marketing lead in your market
+    approval。
+  chapter: ch-02-01
+  chapter_title: Primary Logo and Clear Space
+- module: Color System
+  criterion: print emblem diameter 不得小於 0.375 inch；digital low-resolution 不得小於 48px，高解析需等效換算；simplified emblem 僅可用於小於 48px
+    的 digital 且不得小於 16px；green logo 只可用於已核准以 green 為 primary colour 的特定 European markets，全球或跨區域作品改用 Red。
+  chapter: ch-02-02
+  chapter_title: Colors, Size and Backgrounds
+- module: ''
+  criterion: 不得改 logo colors；不得 distortion/rotation/redraw；不得加 gradients/shadows/effects；不得置於 clashing 或 low-contrast background；不得使用
+    emblem as an M。
+  chapter: ch-02-03
+  chapter_title: Violations
+- module: Visual Identity
+  criterion: logo variants 僅在 standard logo 不可能使用時使用；每種變體需 McDonald’s marketing lead in your market approval；horizontal lockup
+    用於 leaderboard 和 digital banner ads；one-colour 版本需確保 circle/background darker than arches/dotted line。
+  chapter: ch-03
+  chapter_title: Logo Variants
+- module: Brand Strategy
+  criterion: McDelivery logo 置於 partner logo 前；keyline 與兩 logo 等距，距離各為最大白點直徑 5x；keyline 顏色需匹配 McDelivery wordmark 黑或白；keyline
+    寬度為小白點直徑 1/3x；co-brand clear space 至少 5x 最大白點直徑。
+  chapter: ch-04
+  chapter_title: Co-Branding
+- module: Brand Strategy
+  criterion: vertical co-branding 用於 horizontal space at a premium；horizontal co-branding 用於 vertical space at a premium 且
+    partner 有合適水平 logo；horizontal McDelivery lockup 仍受 2.2 restrictions 約束。
+  chapter: ch-04-01
+  chapter_title: Primary and Secondary Co-Branding Lockups
+- module: Brand Strategy
+  criterion: Uber Eats delivers McDelivery orders 的市場使用此 lockup；使用 primary McDelivery logo 時兩 logo 同寬；keyline 必須在 logos 間垂直與水平置中且全長等於
+    logos；彩色背景除 green/red 造成可讀性問題外使用 full colour logos，最後手段才用 white single colour。
+  chapter: ch-04-02
+  chapter_title: Uber Eats Co-Branding
+- module: Color System
+  criterion: 'McDonald’s Yellow Hex #FFC836；Red Hex #BD0017；Green Hex #264F36；若 substrate 改變油墨外觀，必須調整 ink formulation 以接近
+    target colour。'
+  chapter: ch-05
+  chapter_title: Color Palette
+- module: Typography System
+  criterion: 文字需使用 Lovin’ Sans；不得用 Lovin’ Sans 重建 McDelivery wordmark；co-branding partners’ brand typefaces 不應用於 McDelivery
+    communications。
+  chapter: ch-06
+  chapter_title: Typography
+- module: ''
+  criterion: 應用需回到前述 clear space、minimum size、background contrast 與 approval requirements；不可因範例而忽略基本規則。
+  chapter: ch-07
+  chapter_title: In Use Examples
+- module: ''
+  criterion: TM symbol 應保留在 emblem 與 wordmark 右下，顏色匹配其所附元素；simplified emblem 不加 TM，但 wordmark 保留 TM；材料不得未經 McDonald’s Legal
+    Department 書面同意向系統外揭露或散布；任何 local market advertising materials 需法律 clearance。
+  chapter: ch-08
+  chapter_title: Legal
+chapters:
+- id: ch-01
+  title: Version History
+  modules:
+  - Operations
+  - Governance
+- id: ch-02
+  title: McDelivery Logo
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-02-01
+  title: Primary Logo and Clear Space
+  modules:
+  - Measurement
+  - Governance
+- id: ch-02-02
+  title: Colors, Size and Backgrounds
+  modules:
+  - Localization
+  - Color System
+- id: ch-02-03
+  title: Violations
+  modules:
+  - AI-Checkable Rules
+  - Compliance
+- id: ch-03
+  title: Logo Variants
+  modules:
+  - Governance
+- id: ch-04
+  title: Co-Branding
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+- id: ch-04-02
+  title: Uber Eats Co-Branding
+  modules:
+  - Localization
+- id: ch-05
+  title: Color Palette
+  modules:
+  - Color System
+- id: ch-06
+  title: Typography
+  modules:
+  - Typography System
+  - Governance
+- id: ch-07
+  title: In Use Examples
+  modules:
+  - Examples
+- id: ch-08
+  title: Legal
+  modules:
+  - Legal and Trademark
+  - Compliance
+  - Governance

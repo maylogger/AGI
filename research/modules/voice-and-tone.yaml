@@ -1,0 +1,54 @@
+# L2 模組知識 — Voice and Tone
+# schema：research/schemas/module_knowledge.schema.yaml
+
+module: Voice and Tone
+slug: voice-and-tone
+foundational: false
+layer: language
+purpose: 把品牌人格與訊息策略轉成可執行的語氣規則，讓文案產出有一致性格而非個人風格。
+problem_when_absent: 文案語氣隨作者而變，品牌人格無法被感知，技術品牌易陷入術語化。
+corpus_frequency:
+  doc_count: 53
+  pct: 41.4
+
+driven_by:
+  - input: brand_personality
+    affects: tone_tactics
+    mapping:
+      - when: [technical, expert]
+        tend_to: [提供 from/to 轉譯規則：術語→可親近, 數據→人性利益]
+        evidence:
+          - {brand_id: 3M_Visual_Identity_Guidelines_2015, chapter: ch-01-03}
+      - when: [playful, community]
+        tend_to: [人格化語氣, 對話式, 允許幽默但設邊界]
+        evidence:
+          - {brand_id: Discord_BrandGuideline_2021}
+      - when: [trustworthy, institutional]
+        tend_to: [清楚、克制、避免誇飾, 風險溝通與免責語句一致]
+  - input: audience
+    affects: register
+    mapping:
+      - when: [b2b, expert]
+        tend_to: [專業但去術語, 以利益與證據說話]
+      - when: [b2c, mass]
+        tend_to: [口語、情感、引導行動]
+
+spec_dimensions:
+  - 語氣特徵與 persona
+  - from/to 轉譯對照
+  - 可做 / 不可做語句範例
+  - 不同情境的語域調整
+  - 風險/免責語句一致性（受規範產業）
+
+related_decision_patterns:
+  - dp-from-to-voice-translation
+  - dp-persona-driven-voice
+
+dependencies:
+  requires: [Messaging]
+  recommends: [Content Design]
+
+reference_brands:
+  - 3M_Visual_Identity_Guidelines_2015
+  - Discord_BrandGuideline_2021
+  - SAS_brand_creative_guide_2021

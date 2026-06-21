@@ -1,0 +1,78 @@
+# AGI Context Schema（L4 情境知識層）
+#
+# 兩個檔共用此 schema：
+#   research/contexts/industries.yaml   — 產業 → 商業問題 / 強調模組 / 推薦決策卡
+#   research/contexts/brand_types.yaml  — 品牌定位類型 → 同上
+#
+# 目的：讓推理引擎能做「新能源 → Story Framework / Technology Visualization /
+# Future Narrative」「金融 → Trust / Risk Communication / Governance」這類對應，
+# 並且每條對應都連回 evidence_brands（從 128 份語料歸納，可回溯）。
+
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: AGI Context Map
+type: object
+required:
+  - kind
+  - version
+  - entries
+properties:
+  kind:
+    type: string
+    enum: [industry, brand_type]
+  version:
+    type: integer
+  updated:
+    type: string
+  entries:
+    type: array
+    items:
+      type: object
+      required: [id, label, evidence_brands]
+      properties:
+        id:
+          type: string
+          description: snake_case 唯一 id，例如 new_energy、finance、luxury
+        label:
+          type: string
+          description: 繁體中文顯示名稱
+        aliases:
+          type: array
+          description: 比對客戶輸入時的同義詞（中英）
+          items:
+            type: string
+        description:
+          type: string
+          description: 此情境的特徵說明（繁體中文）
+        business_problems:
+          type: array
+          description: 此情境典型的商業／溝通問題（對應決策卡 problem.signals）
+          items:
+            type: string
+        emphasize_modules:
+          type: array
+          description: 此情境應加重的模組（情境知識）
+          items:
+            type: string
+        de_emphasize_modules:
+          type: array
+          description: 此情境通常較不需要或可精簡的模組
+          items:
+            type: string
+        recommended_patterns:
+          type: array
+          description: 推薦的決策卡 id（dp-）
+          items:
+            type: string
+        typical_archetypes:
+          type: array
+          description: 此情境常見的 guideline 原型
+          items:
+            type: string
+        evidence_brands:
+          type: array
+          description: 從語料歸納、屬於此情境的 brand_id（可回溯）
+          items:
+            type: string
+        notes:
+          type: string
+          description: 補充說明或邊界判斷（可選）

@@ -1,0 +1,98 @@
+# L3 決策卡 sidecar — Sony Group Brand Message make.believe Concept and Usage Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: sony_make_believe_2009
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型集團若直接寫 logo 規格，組合標誌會只剩機械規則，缺少可回推的語義來源。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先用 make.believe 品牌訊息（imagination → belief → making real）定義跨事業語義錨點，再進入 composite logo 與 motion logo 規格
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 沒有此章，logo 使用只剩機械規格
+      - 品牌訊息應能整合組織內部差異，而不是新增一個口號
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, media_entertainment]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: sony_make_believe_2009
+        chapter: ch-01
+        excerpt: "make.believe 是後續 composite logo 與 motion logo 的語義前提；沒有此章，logo 使用只剩機械規格；brand message framework：imagination → belief → making real → electronics + entertainment unity。"
+    status: extracted
+
+  - id: dp-one-brand-one-voice-governance
+    title: 以「one brand, one voice」治理目標收束跨產品跨夥伴的一致性
+    problem:
+      statement: 跨電子、娛樂、設計與工程的集團，若缺乏統一品牌訊息與部署規則，各事業會各自詮釋而讓品牌碎裂。
+      signals: [consistency_across_partners, ecosystem_consistency, multi_market, brand_fragmentation_risk]
+    solution:
+      module: Governance
+      move: 以單一 make.believe 品牌訊息整合跨事業溝通，並用 business area → communication type → mandatory/recommended/not permitted 的應用矩陣分層部署
+      layer: governance
+    reason:
+      - 集團品牌訊息可整合組織內部差異，而不是新增一個口號
+      - 策略訊息需要分層 deployment，不是所有資產都同等套用
+      - 把 brand message rollout 寫成應用矩陣，是大型組織可複用模式
+    applicable_when:
+      industries: [finance, tech_software, media_entertainment]
+      brand_types: [platform_ecosystem, institutional_public_trust, heritage_legacy]
+      conditions: [consistency_across_partners, multi_market]
+      archetypes: [corporate_toolkit, brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Governance]
+    anti_patterns:
+      - 只給視覺風格而無交付前審核點，讓使用者憑審美直覺操作
+    evidence:
+      - brand_id: sony_make_believe_2009
+        chapter: ch-01
+        excerpt: "在跨電子、娛樂、設計與工程的 Sony 集團內建立單一品牌訊息，整合組織內部差異而非新增口號。"
+      - brand_id: sony_make_believe_2009
+        chapter: ch-02
+        excerpt: "usage matrix framework：business area → communication type → mandatory/recommended/not permitted；策略訊息需要分層 deployment。"
+    status: extracted
+
+  - id: dp-approval-gate-for-exceptions
+    title: 例外不是漏洞，用審核閘門把差異收進可治理的模組
+    problem:
+      statement: 規則無法窮舉所有情境，現實組織總會有例外；若放任各單位自行決定，例外會逐步擴張成破壞系統的破口。
+      signals: [exception_handling, multi_unit_consistency, governance, scaling_risk]
+    solution:
+      module: Governance
+      move: 用 mandatory/recommended/not permitted 矩陣界定使用邊界，並把修訂、廢止與非英語翻譯例外交由 Sony CEO approval 與母規則治理
+      layer: governance
+    reason:
+      - 例外章節應寫出「為何例外」「何時可用」「不可擴張到哪裡」
+      - 全球品牌訊息需要明確的 authority、timebox 與 localization exception
+      - Design knowledge base 應保存 guideline 的法律階層與生命週期
+    applicable_when:
+      industries: [public_sector, finance, media_entertainment]
+      brand_types: [institutional_public_trust, platform_ecosystem, heritage_legacy]
+      conditions: [multi_unit_consistency, exception_handling]
+      archetypes: [multi_brand_architecture, corporate_toolkit]
+    dependencies:
+      requires: [Governance]
+      enables: []
+    anti_patterns:
+      - 各單位把一次性例外當成通用替代方案沿用
+    evidence:
+      - brand_id: sony_make_believe_2009
+        chapter: ch-02
+        excerpt: "hardware/application software 不得任意使用 composite logo；以 mandatory/recommended/not permitted 矩陣界定使用邊界。"
+      - brand_id: sony_make_believe_2009
+        chapter: ch-06
+        excerpt: "make.believe 原則上英文使用，僅列明國家/語言可用翻譯；修訂/廢止需 Sony CEO approval，適用期間 2009-09 至 2014-08。"
+    status: extracted

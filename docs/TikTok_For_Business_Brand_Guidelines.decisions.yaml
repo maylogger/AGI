@@ -1,0 +1,125 @@
+# L3 決策卡 sidecar — TikTok For Business
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: TikTok_For_Business_Brand_Guidelines
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先把平台使命作為上游來源（platform mission → business mission → creative behavior），再進入視覺與廣告執行
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌規範可將 platform truth 作為所有後續模組的驗收條件
+      - 先建立判斷標準，後續視覺與語氣才有可回溯的語義來源
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: TikTok_For_Business_Brand_Guidelines
+        chapter: ch-01
+        excerpt: "把 TikTok 平台使命作為商業品牌的上游來源，避免 TikTok For Business 變成一般廣告科技品牌；platform mission → business mission → creative behavior → brand execution。"
+    status: extracted
+
+  - id: dp-persona-driven-voice
+    title: 從產品行為與用戶語言抽取語氣，而非另造企業腔
+    problem:
+      statement: 平台／社群品牌若用一般企業口吻發聲，會顯得疏離、像公告，無法與用戶建立歸屬感。
+      signals: [personality_expression, community, relatability, differentiation]
+    solution:
+      module: Voice and Tone
+      move: 從平台原生行為抽取語氣（write the way people talk），用 playful energy + business relevance + direct outcome 的閾值平衡有趣與可信
+      layer: language
+    reason:
+      - 品牌系統必須從產品行為抽取，而不是在產品外另造裝飾語言
+      - B2B 品牌仍應繼承產品平台的文化，不應只轉向理性績效語言
+      - playfulness 是策略工具，不是任意搞笑
+    applicable_when:
+      industries: [tech_software, media_entertainment]
+      brand_types: [challenger]
+      conditions: [community_driven, product_led]
+      archetypes: [brand_experience_guide, product_design_system]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Messaging, Content Design]
+    anti_patterns:
+      - 文案聽起來像一般科技平台公告
+    evidence:
+      - brand_id: TikTok_For_Business_Brand_Guidelines
+        chapter: ch-02-01
+        excerpt: "smart and direct、hint of playfulness、write the way people talk；對商業受眾說話不等於變嚴肅，playfulness 是策略工具而非任意搞笑。"
+    status: extracted
+
+  - id: dp-system-toolkit-over-template
+    title: 企業視覺系統給「可組合工具箱」而非僵硬模板
+    problem:
+      statement: 要求每個版面長得完全相同會扼殺多元內容；但完全自由又會失去一致性。
+      signals: [many_teams, many_agencies, diverse_content, system_consistency, mass_touchpoints]
+    solution:
+      module: Visual Language
+      move: 從核心 logo primitives 派生圖形家族（circle → bubble/pattern/emphasis），並像 UI component 一樣定義 props 與可近用條件
+      layer: visual_core
+    reason:
+      - 彈性必須被結構化；系統不靠固定模板，而靠固定決策順序
+      - 設計系統最好從核心 logo primitives 派生，而不是另加裝飾素材
+      - 用受控的技法集允許創意變化又維持辨識
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, consumer_retail_hospitality]
+      brand_types: [mass_consumer, category_creator]
+      conditions: []
+      archetypes: [full_brand_system, corporate_toolkit, brand_experience_guide]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Layout System, Examples]
+    anti_patterns:
+      - 新增圖形若無法回溯到 logo 圓形或平台行為，視為不符合規定
+    evidence:
+      - brand_id: TikTok_For_Business_Brand_Guidelines
+        chapter: ch-03-04
+        excerpt: "工具箱不是自由裝飾庫，每個元素都有來源、用途、尺寸與可近用條件；品牌圖形元件可像 UI component 一樣定義 props（fill/stroke、color、roundness、size、placement）。"
+      - brand_id: TikTok_For_Business_Brand_Guidelines
+        chapter: ch-03
+        excerpt: "設計系統最好從核心 logo primitives 派生，而不是另加裝飾素材；logo-derived visual language：circle → bubble / pattern / emphasis / rounded phone shape。"
+    status: extracted
+
+  - id: dp-bold-contrast-for-challenger
+    title: 用單一高彩度主色建立 equity，並以可用／禁用配色維持張力
+    problem:
+      statement: 挑戰者品牌需要在飽和市場中快速被認出並表達鮮明個性，溫和保守的配色會被淹沒。
+      signals: [differentiation, breakthrough_attention, personality_expression]
+    solution:
+      module: Color System
+      move: 以品牌 equity 高能量色建立辨識，並用「每版限一個主色、highlight 限一色、禁用清單」維持焦點與可近用性
+      layer: visual_core
+    reason:
+      - 高能量色彩需要透過限制數量與背景對比維持焦點
+      - 色彩規範同時處理「可用」與「過量使用」問題
+      - 可近用性應直接寫入品牌色規則，而不是交給設計者事後判斷
+    applicable_when:
+      industries: [tech_software]
+      brand_types: [challenger]
+      conditions: [saturated_market, personality_expression]
+      archetypes: [brand_experience_guide, full_brand_system]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Color System, Accessibility]
+    anti_patterns:
+      - 開放任意配色稀釋主色 equity
+      - 用 Splash 強調白底文字造成可近用性不足
+    evidence:
+      - brand_id: TikTok_For_Business_Brand_Guidelines
+        chapter: ch-03-03
+        excerpt: "背景每個 composition 限一個 brand color；highlight text 不得超過一個 emphasis color；不得用 Splash 強調白底文字、不得使用 gradients 或新顏色。"
+    status: extracted

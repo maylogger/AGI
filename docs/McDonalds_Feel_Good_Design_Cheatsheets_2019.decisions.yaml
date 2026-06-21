@@ -1,0 +1,59 @@
+# L3 決策卡 sidecar — McDonald's（大眾消費 / 高頻觸點）
+# schema：research/schemas/decision_pattern.schema.yaml
+
+brand_id: McDonalds_Feel_Good_Design_Cheatsheets_2019
+decisions:
+  - id: dp-cheatsheet-for-mass-touchpoints
+    title: 用單頁 cheatsheet 降低大量觸點與非設計者的執行門檻
+    problem:
+      statement: 大眾品牌觸點極多、執行者多非專業設計師，完整手冊難以被快速查用，導致一致性下降。
+      signals: [mass_touchpoints, non_designer_executors, franchise_governance, ease_of_execution]
+    solution:
+      module: Operations
+      move: 把每個系統（標誌、色彩、字體、攝影、圖案）壓縮成高密度單頁 cheatsheet，含可做／不可做與核准窗口
+      layer: governance
+    reason:
+      - 把設計系統轉成 checklist 可降低採用成本
+      - 高頻觸點需要快速可查、低決策負擔的格式
+    applicable_when:
+      industries: [consumer_retail_hospitality]
+      brand_types: [mass_consumer]
+      conditions: [mass_touchpoints, ease_of_execution]
+      archetypes: [corporate_toolkit, brand_experience_guide]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Examples, Governance]
+    anti_patterns:
+      - 只提供厚重手冊卻無速查摘要
+    evidence:
+      - brand_id: McDonalds_Feel_Good_Design_Cheatsheets_2019
+        chapter: ch-01
+        excerpt: "以高密度方式總結 Feel-Good Design 系統，每個系統一張 cheatsheet（Golden Arches、色彩、字體、攝影、圖案、餐廳設計）。"
+      - brand_id: McDonalds_Feel_Good_Design_Cheatsheets_2019
+        chapter: ch-04
+        excerpt: "Brand Color Cheatsheet：定義 Golden Brand with Red accents 的比例、色彩值、功能色與材料色限制。"
+    status: seed
+
+  - id: dp-system-toolkit-over-template
+    title: 給可組合的設計技法而非單一模板
+    problem:
+      statement: 大眾品牌需要在大量市場與觸點維持一致，但又不能讓所有素材長得一模一樣。
+      signals: [diverse_content, system_consistency, mass_touchpoints]
+    solution:
+      module: Visual Language
+      move: 把核心資產（Golden Arches）定義成可裁切、可動態化的 Archery 技法集，而非固定版型
+      layer: visual_core
+    reason:
+      - 用受控的技法集允許創意變化又維持辨識
+    applicable_when:
+      industries: [consumer_retail_hospitality]
+      brand_types: [mass_consumer]
+      archetypes: [corporate_toolkit, brand_experience_guide]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Examples]
+    evidence:
+      - brand_id: McDonalds_Feel_Good_Design_Cheatsheets_2019
+        chapter: ch-03
+        excerpt: "Archery Cheatsheet：把 Golden Arches 轉為 creative/dynamic 技法，包含 cropping、motion、staging、angled、repetition。"
+    status: seed

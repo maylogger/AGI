@@ -1,0 +1,176 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: DALENYS_Brand guidelines_2021
+index_ref: docs/DALENYS_Brand guidelines_2021.index.yaml
+note_ref: docs/DALENYS_Brand guidelines_2021.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- Brand Strategy
+- Messaging
+- Knowledge Architecture
+- Color System
+- Visual Identity
+- AI-Checkable Rules
+- Compliance
+- Information Design
+- Operations
+- Governance
+depth:
+  strategy: medium
+  visual: medium
+  governance: high
+  top_level_chapter_count: 4
+  section_count: 4
+chapter_sequence:
+- id: ch-01
+  title: Foreword
+  order: 1
+  level: 1
+- id: ch-02
+  title: Contents and Brand Scope
+  order: 2
+  level: 1
+- id: ch-03
+  title: Brand elements
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Our logo
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Logo clearspace and minimum sizes
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Logo restrictions
+  order: 3
+  level: 2
+- id: ch-03-04
+  title: Colour palette
+  order: 4
+  level: 2
+- id: ch-04
+  title: Get in touch
+  order: 4
+  level: 1
+frameworks:
+- name: payment -> connection -> journey -> connected offers
+  chapter: ch-01
+  chapter_title: Foreword
+- name: strategy -> elements -> language -> devices -> imagery -> information graphics -> applications
+  chapter: ch-02
+  chapter_title: Contents and Brand Scope
+- name: logo construction -> spacing/minimum size -> prohibited modifications -> palette roles
+  chapter: ch-03
+  chapter_title: Brand elements
+- name: monogram + logotype dual asset model
+  chapter: ch-03-01
+  chapter_title: Our logo
+- name: x-height unit -> clearspace -> print/screen reproduction test
+  chapter: ch-03-02
+  chapter_title: Logo clearspace and minimum sizes
+- name: approved artwork + prohibited transformations
+  chapter: ch-03-03
+  chapter_title: Logo restrictions
+- name: primary lead + background neutrals + text color + secondary information colors
+  chapter: ch-03-04
+  chapter_title: Colour palette
+- name: guideline coverage -> special use-case -> communication owner
+  chapter: ch-04
+  chapter_title: Get in touch
+patterns:
+- name: 用 CEO foreword 將業務轉型授權給品牌系統。
+  chapter: ch-01
+  chapter_title: Foreword
+- name: 以 persistent table of contents 作為品牌文件導航模式。
+  chapter: ch-02
+  chapter_title: Contents and Brand Scope
+- name: logo 可由 symbol 與 logotype 分離使用，形成 stamp/mark of quality。
+  chapter: ch-03
+  chapter_title: Brand elements
+- name: monogram 作為小尺寸與圖形化場景的品牌印記。
+  chapter: ch-03-01
+  chapter_title: Our logo
+- name: small-size use requires proofing，不只看規格數字。
+  chapter: ch-03-02
+  chapter_title: Logo clearspace and minimum sizes
+- name: restrictions 章應列出比例、lockup、字體、色彩、背景、endorsement 等不同錯誤類型。
+  chapter: ch-03-03
+  chapter_title: Logo restrictions
+- name: 色彩 token 需附用途限制。
+  chapter: ch-03-04
+  chapter_title: Colour palette
+- name: 每份 guideline 應有 brand support contact。
+  chapter: ch-04
+  chapter_title: Get in touch
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI 可檢查：必須使用 master logo artwork；logo 不得改比例、修改 monogram/logotype lockup、改 logotype 字體、拆開重上色、放在雙色背景上，或使用 By Natixis
+    Payment endorsement。
+  chapter: ch-03
+  chapter_title: Brand elements
+- module: Visual Identity
+  criterion: AI 可檢查：使用 logo 時需確認 monogram 與 logotype 版本符合官方 artwork；不可自行重新繪製。
+  chapter: ch-03-01
+  chapter_title: Our logo
+- module: Visual Identity
+  criterion: AI 可檢查：logo 四周需至少保留以 logotype D 高度定義的 x 空間；照片背景上必須有足夠對比；小於建議尺寸時必須做 print/screen tests。
+  chapter: ch-03-02
+  chapter_title: Logo clearspace and minimum sizes
+- module: Visual Identity
+  criterion: AI 可檢查：不得 alter proportions、edit monogram/logotype lockup、change logotype typeface、separately recolour monogram、place
+    logo over two colours、use By Natixis Payment endorsement。
+  chapter: ch-03-03
+  chapter_title: Logo restrictions
+- module: ''
+  criterion: AI 可檢查：yellow 應主導 applications；white/silver 可作背景；text navy 僅作文字；secondary colors 不得作 flood backgrounds，只用於 charts、illustrations、infographics。
+  chapter: ch-03-04
+  chapter_title: Colour palette
+- module: ''
+  criterion: AI 可檢查：遇到未定義或抽取不完整的規範時，不應自行推論，應升級至 communication contact。
+  chapter: ch-04
+  chapter_title: Get in touch
+chapters:
+- id: ch-01
+  title: Foreword
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-02
+  title: Contents and Brand Scope
+  modules:
+  - Knowledge Architecture
+- id: ch-03
+  title: Brand elements
+  modules:
+  - Color System
+  - Visual Identity
+- id: ch-03-01
+  title: Our logo
+  modules:
+  - Visual Identity
+- id: ch-03-02
+  title: Logo clearspace and minimum sizes
+  modules:
+  - AI-Checkable Rules
+- id: ch-03-03
+  title: Logo restrictions
+  modules:
+  - AI-Checkable Rules
+  - Compliance
+  - Visual Identity
+- id: ch-03-04
+  title: Colour palette
+  modules:
+  - Color System
+  - Information Design
+- id: ch-04
+  title: Get in touch
+  modules:
+  - Operations
+  - Governance

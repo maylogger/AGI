@@ -1,0 +1,33 @@
+# L3 決策卡 sidecar — ARTE Social Media Style Guide
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Arte_ Social_Media_Style_Guide_2017
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 先把一句品牌主張轉成跨媒體的行為語法，後續版面、動態與字體才有可回溯依據
+    applicable_when:
+      industries: [media_entertainment, tech_software]
+      brand_types: [category_creator, challenger]
+      conditions: [new_identity, content_forward_identity]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Motion Identity, Layout System, Typography System]
+    anti_patterns:
+      - 直接寫社群尺寸與模板，讓子頻道各自發展成不同品牌
+    evidence:
+      - brand_id: Arte_ Social_Media_Style_Guide_2017
+        chapter: ch-01
+        excerpt: "Concept-to-system framework：brand idea → motion direction → layout gravity → typography behavior → channel templates；把 broadcast identity 核心敘事先轉成系統，避免社群頭圖、影片與子頻道各自發展成不同品牌。"
+    status: extracted

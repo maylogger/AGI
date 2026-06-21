@@ -1,0 +1,259 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: eftpos_Brand_Guidelines_2021
+index_ref: docs/eftpos_Brand_Guidelines_2021.index.yaml
+note_ref: docs/eftpos_Brand_Guidelines_2021.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- Product Language
+- Brand Strategy
+- Voice and Tone
+- Design Tokens
+- Visual Identity
+- Governance
+- AI-Checkable Rules
+- Typography System
+- Color System
+- Accessibility
+- Photography System
+- Layout System
+- Iconography System
+- Legal and Trademark
+- Brand Architecture
+- Examples
+- Operations
+- Compliance
+- UI Components
+- Interaction Design
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 5
+  section_count: 6
+chapter_sequence:
+- id: ch-01
+  title: Our Brand
+  order: 1
+  level: 1
+- id: ch-02
+  title: Identity System
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Typography and Colour
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Layout and Imagery
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Co-branding
+  order: 4
+  level: 2
+- id: ch-03
+  title: Application Examples
+  order: 3
+  level: 1
+- id: ch-04
+  title: Card Branding and Contactless Requirements
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Compliance and Licensing
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Card and Device Rules
+  order: 2
+  level: 2
+- id: ch-05
+  title: Mobile and Online Brand Requirements
+  order: 5
+  level: 1
+frameworks:
+- name: business / what we do / purpose → personality → values → manifesto
+  chapter: ch-01
+  chapter_title: Our Brand
+- name: core toolkit → logo governance → type / color tokens → layout systems → imagery / co-branding
+  chapter: ch-02
+  chapter_title: Identity System
+- name: application space → logo composition → colour mode → approval requirement
+  chapter: ch-02-01
+  chapter_title: Logo
+- name: brand palette for identity + functional palette for UX / reports / complex journeys
+  chapter: ch-02-02
+  chapter_title: Typography and Colour
+- name: layout grid + authentic photography taxonomy + simple rounded icon rules
+  chapter: ch-02-03
+  chapter_title: Layout and Imagery
+- name: logo parity + clear space + divider keyline + approval
+  chapter: ch-02-04
+  chapter_title: Co-branding
+- name: corporate template system + campaign / retail application system
+  chapter: ch-03
+  chapter_title: Application Examples
+- name: member responsibility → artwork approval → card type rules → contactless licensing → terminal / decal parity
+  chapter: ch-04
+  chapter_title: Card Branding and Contactless Requirements
+- name: approval before use + licence conditions + infringement notification + termination windows
+  chapter: ch-04-01
+  chapter_title: Compliance and Licensing
+- name: card type → required mark → position → size / spacing → approval
+  chapter: ch-04-02
+  chapter_title: Card and Device Rules
+- name: digital card art requirements + wallet platform specs + brand approval
+  chapter: ch-05
+  chapter_title: Mobile and Online Brand Requirements
+patterns:
+- name: 可複用為 fintech brand foundation：把技術能力轉譯為社會目的與人性特質。
+  chapter: ch-01
+  chapter_title: Our Brand
+- name: 將 logo anatomy 連到 gradients、curves、neumorphism 與 grid，使整個視覺語言由核心符號派生。
+  chapter: ch-02
+  chapter_title: Identity System
+- name: restricted-use variants 適合處理銀行卡、第三方背景與不可控環境。
+  chapter: ch-02-01
+  chapter_title: Logo
+- name: 用 functional colours 作為 restricted secondary palette，可避免資料視覺化隨意擴色。
+  chapter: ch-02-02
+  chapter_title: Typography and Colour
+- name: local heroes / customer experience / Australia / studio 是服務型品牌攝影分類模型。
+  chapter: ch-02-03
+  chapter_title: Layout and Imagery
+- name: 可複用為 payment network co-branding module。
+  chapter: ch-02-04
+  chapter_title: Co-branding
+- name: 可複用為 guideline 的 application library：先純粹 look & feel，再列日常模板與外部媒體。
+  chapter: ch-03
+  chapter_title: Application Examples
+- name: 可複用為 regulated brand requirements module。
+  chapter: ch-04
+  chapter_title: Card Branding and Contactless Requirements
+- name: 可複用為 B2B2C network brand governance。
+  chapter: ch-04-01
+  chapter_title: Compliance and Licensing
+- name: 卡片規格可拆成正面規則、背面規則、wordmark 規則、contactless 規則。
+  chapter: ch-04-02
+  chapter_title: Card and Device Rules
+- name: 可複用為 mobile wallet card art module。
+  chapter: ch-05
+  chapter_title: Mobile and Online Brand Requirements
+rules_ai_checkable:
+- module: ''
+  criterion: 不得使用非官方 logo artwork；不得 alter、re-draw、re-create；corporate communications 必須帶 registered trademark symbol；所有 brandmark
+    artwork 需送 Brand and Marketing team approval。
+  chapter: ch-02
+  chapter_title: Identity System
+- module: Visual Identity
+  criterion: 清除空間等於 eftpos wordmark x-height；整體 logo 不得小於 8mm / 23px 或 17mm / 48px 版本門檻；primary with tagline 25mm / 70px，small
+    use 10mm / 28px；不得 stretch、skew、rotate、flip、drop shadow、3D effects 或低對比背景。
+  chapter: ch-02-01
+  chapter_title: Logo
+- module: Typography System
+  criterion: Waratah HEX `E50056`、Jacaranda `401463`、Eucalypt Flower `B0147D`、Midnight Purple `1F0038`；functional colours
+    僅在 primary palette 不足時少量使用，外部溝通需 approval。
+  chapter: ch-02-02
+  chapter_title: Typography and Colour
+- module: Brand Strategy
+  criterion: eftpos logo 寬度至少等於其他 network logos；divider 與各 logo 間距為 2X；divider 延伸超過 logo edge 的高度為 X；所有 co-branding 需 approval。
+  chapter: ch-02-04
+  chapter_title: Co-branding
+- module: ''
+  criterion: Word / PowerPoint 應使用提供模板與預設字級；poster 與 OOH 若為 working draft 或 reference images，應標示不可作最終授權素材。
+  chapter: ch-03
+  chapter_title: Application Examples
+- module: Brand Strategy
+  criterion: 所有 card designs 與 eftpos brandmark / corporate logo 使用必須先 approval；contactless lockup 不得小於 21mm / 60px；front
+    of card 的 eftpos logo 與 contactless mark 必須分離；reverse mono logo restricted 且需 permission。
+  chapter: ch-04
+  chapter_title: Card Branding and Contactless Requirements
+- module: Compliance
+  criterion: 會員必須經 Service Now Member Portal 提交 finished scale colour sample；未經書面同意不得公開文件；Contactless Mark 使用須包含 attribution
+    並遵守 EMVCo guidelines。
+  chapter: ch-04-01
+  chapter_title: Compliance and Licensing
+- module: ''
+  criterion: eftpos only cards front 必須有 eftpos brandmark；debit / prepaid wordmark 不得與 logo 整合；multi-network cards 背面必須顯示
+    eftpos logo 或 contactless lockup；terminal logos 必須 parity；acceptance decals 背景通常 white。
+  chapter: ch-04-02
+  chapter_title: Card and Device Rules
+- module: Brand Strategy
+  criterion: 所有 UI 需 eftpos branding approval；digital card art 不得顯示 cardholder name、PAN、BIN、expiry、EMV chip 或實體卡照片；Apple /
+    Google / Samsung card art 需 RGB、1536 x 969 PNG 輸出、無邊框留白、不可含 CVV。
+  chapter: ch-05
+  chapter_title: Mobile and Online Brand Requirements
+chapters:
+- id: ch-01
+  title: Our Brand
+  modules:
+  - Product Language
+  - Brand Strategy
+  - Voice and Tone
+- id: ch-02
+  title: Identity System
+  modules:
+  - Design Tokens
+  - Visual Identity
+  - Governance
+- id: ch-02-01
+  title: Logo
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02-02
+  title: Typography and Colour
+  modules:
+  - Typography System
+  - Color System
+  - Accessibility
+- id: ch-02-03
+  title: Layout and Imagery
+  modules:
+  - Photography System
+  - Layout System
+  - Iconography System
+- id: ch-02-04
+  title: Co-branding
+  modules:
+  - Legal and Trademark
+  - Brand Architecture
+  - AI-Checkable Rules
+- id: ch-03
+  title: Application Examples
+  modules:
+  - Examples
+  - Operations
+- id: ch-04
+  title: Card Branding and Contactless Requirements
+  modules:
+  - Legal and Trademark
+  - Compliance
+  - Product Language
+- id: ch-04-01
+  title: Compliance and Licensing
+  modules:
+  - Legal and Trademark
+  - Compliance
+  - Governance
+- id: ch-04-02
+  title: Card and Device Rules
+  modules:
+  - AI-Checkable Rules
+  - Product Language
+  - UI Components
+- id: ch-05
+  title: Mobile and Online Brand Requirements
+  modules:
+  - Compliance
+  - Product Language
+  - Interaction Design

@@ -1,0 +1,316 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Tripadvisor_partners_2020
+index_ref: docs/Tripadvisor_partners_2020.index.yaml
+note_ref: docs/Tripadvisor_partners_2020.note.md
+archetype: product_design_system
+industry: null
+modules:
+- Legal and Trademark
+- Operations
+- Governance
+- Design Tokens
+- Visual Identity
+- AI-Checkable Rules
+- Layout System
+- Localization
+- Typography System
+- Color System
+- Content Safety
+- Data Visualization
+- Information Design
+- UI Components
+- Measurement
+depth:
+  strategy: low
+  visual: high
+  governance: high
+  top_level_chapter_count: 4
+  section_count: 10
+chapter_sequence:
+- id: ch-01
+  title: Intro
+  order: 1
+  level: 1
+- id: ch-02
+  title: Visual Identity
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Primary and Secondary Logo Suite
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Minimum Clearspace and Symbol
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Partnership Lockups
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Logo Usage and Don'ts
+  order: 4
+  level: 2
+- id: ch-02-05
+  title: Travelers' Choice Logos
+  order: 5
+  level: 2
+- id: ch-02-06
+  title: Proper Name, Color Palette, Typography
+  order: 6
+  level: 2
+- id: ch-03
+  title: Ratings and Reviews
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Bubbles
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Ratings & Reviews Dos and Don'ts
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Traveler Rating Text and Image
+  order: 3
+  level: 2
+- id: ch-03-04
+  title: Tripadvisor Ranking
+  order: 4
+  level: 2
+- id: ch-04
+  title: Additional Information
+  order: 4
+  level: 1
+frameworks:
+- name: Partner Use Governance：授權目的、規範遵循、材料送審、帳戶經理核准
+  chapter: ch-01
+  chapter_title: Intro
+- name: Visual Identity Compliance Stack：asset source、logo selection、spacing、minimum size、background use、naming、color/type
+  chapter: ch-02
+  chapter_title: Visual Identity
+- name: Primary-first fallback：先用 primary；背景或留白困難才用 secondary
+  chapter: ch-02-01
+  chapter_title: Primary and Secondary Logo Suite
+- name: Intrinsic Measurement Framework：用 logo 自身部件建立比例尺度
+  chapter: ch-02-02
+  chapter_title: Minimum Clearspace and Symbol
+- name: Co-brand Alignment：方向、間距、比例、對齊
+  chapter: ch-02-03
+  chapter_title: Partnership Lockups
+- name: Positive/Negative Compliance：先定義 preferred use，再列禁止變形
+  chapter: ch-02-04
+  chapter_title: Logo Usage and Don'ts
+- name: Award Badge Governance：eligibility、size、clearspace、localization、misuse prevention
+  chapter: ch-02-05
+  chapter_title: Travelers' Choice Logos
+- name: Identity Token Stack：name casing、color values、typeface priority
+  chapter: ch-02-06
+  chapter_title: Proper Name, Color Palette, Typography
+- name: Review Integrity Framework：authenticity、attribution、context preservation、recency、property relevance
+  chapter: ch-03
+  chapter_title: Ratings and Reviews
+- name: Rating Semantics：aggregate vs individual
+  chapter: ch-03-01
+  chapter_title: Bubbles
+- name: Context Preservation Model：quote、date、source、property、language、photo relation
+  chapter: ch-03-02
+  chapter_title: Ratings & Reviews Dos and Don'ts
+- name: Rating Component Spec：label、source logo、count、visual dimensions、color/background
+  chapter: ch-03-03
+  chapter_title: Traveler Rating Text and Image
+- name: Temporal Claim Governance
+  chapter: ch-03-04
+  chapter_title: Tripadvisor Ranking
+- name: Operational Compliance Loop：served assets、campaign tracking、reporting、final approval
+  chapter: ch-04
+  chapter_title: Additional Information
+patterns:
+- name: 合作夥伴 guideline 常見的 Approval Gate Pattern。
+  chapter: ch-01
+  chapter_title: Intro
+- name: Logo Suite Matrix、Clearspace Unit、Partner Lockup Template、Don'ts Board、Token Palette。
+  chapter: ch-02
+  chapter_title: Visual Identity
+- name: Responsive Logo Family + Environmental Fallback。
+  chapter: ch-02-01
+  chapter_title: Primary and Secondary Logo Suite
+- name: Clearspace from Mark Anatomy。
+  chapter: ch-02-02
+  chapter_title: Minimum Clearspace and Symbol
+- name: Partner Lockup Template。
+  chapter: ch-02-03
+  chapter_title: Partnership Lockups
+- name: Don'ts Board 是 visual identity guideline 的高效治理模式。
+  chapter: ch-02-04
+  chapter_title: Logo Usage and Don'ts
+- name: Credential Logo Module。
+  chapter: ch-02-05
+  chapter_title: Travelers' Choice Logos
+- name: Token Table、Typeface Fallback Ladder。
+  chapter: ch-02-06
+  chapter_title: Proper Name, Color Palette, Typography
+- name: UGC Citation Rules、Rating Display Pattern、Anti-Fraud Don'ts。
+  chapter: ch-03
+  chapter_title: Ratings and Reviews
+- name: Data-Meaning Icon Pairing。
+  chapter: ch-03-01
+  chapter_title: Bubbles
+- name: Review Citation Checklist。
+  chapter: ch-03-02
+  chapter_title: Ratings & Reviews Dos and Don'ts
+- name: Attributed Rating Component。
+  chapter: ch-03-03
+  chapter_title: Traveler Rating Text and Image
+- name: As-of Date Label。
+  chapter: ch-03-04
+  chapter_title: Tripadvisor Ranking
+- name: Remote Asset Serving、Tracking Pixel Requirement、Post-Campaign Report。
+  chapter: ch-04
+  chapter_title: Additional Information
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：任何含 Tripadvisor branding/content 的 advertising 或 marketing materials 必須標記為需 Tripadvisor 審核；缺少 approval
+    metadata 時不可發布；素材應送交 account manager。
+  chapter: ch-01
+  chapter_title: Intro
+- module: ''
+  criterion: AI 可檢查：不得從 Web 抓取品牌資產；Tripadvisor 名稱 T 大寫、a 小寫且無空格；TripGreen 為 `#34E0A1`；Trip Sans 不可用時依序使用 Poppins/Roboto，再退回
+    Helvetica/Courier。
+  chapter: ch-02
+  chapter_title: Visual Identity
+- module: Visual Identity
+  criterion: AI 可檢查：primary horizontal/Ollie >= 20px high；primary vertical >= 37px 或 50px high；secondary logo/horizontal >=
+    35px high；secondary vertical >= 52px；small-space secondary vertical >= 69px。
+  chapter: ch-02-01
+  chapter_title: Primary and Secondary Logo Suite
+- module: ''
+  criterion: AI 可檢查：logo 四周 clearspace >= 1 pupil width；symbol-only 必須同頁已有 primary logo 或 Tripadvisor 名稱；不得在無 attribution
+    的位置只放 Ollie。
+  chapter: ch-02-02
+  chapter_title: Minimum Clearspace and Symbol
+- module: ''
+  criterion: AI 可檢查：Tripadvisor logo 與合作方元素距離 >= 1 pupil width；不得改變 Tripadvisor logo 內部比例；水平與垂直 lockup 必須使用核准模板。
+  chapter: ch-02-03
+  chapter_title: Partnership Lockups
+- module: Visual Identity
+  criterion: AI 可檢查：不得 fragment/crop/bleed logo；不得 tilt/rotate；不得加 outlines/drop shadows；不得改 typeface；不得 invert logo；不得拆開
+    logo；不得黑色 logo 置於深色品牌色；不得放在 busy backgrounds；不得使用非 Tripadvisor 提供資產。
+  chapter: ch-02-04
+  chapter_title: Logo Usage and Don'ts
+- module: Visual Identity
+  criterion: AI 可檢查：print width >= 0.5in/13mm；web width >= 50px；clearspace >= logo height 的 1/4；US-English 用 Travelers'，其他市場用
+    Travellers'，日本與中國使用各自 localized version；不得 invert 或 pull apart。
+  chapter: ch-02-05
+  chapter_title: Travelers' Choice Logos
+- module: Color System
+  criterion: AI 可檢查：必須寫作 `Tripadvisor`，T 大寫、a 小寫、無空格；TripGreen `#34E0A1`；Sand `#FAF1ED`；Black `#000000`；White `#FFFFFF`；Trip
+    Sans 不可用時用 Poppins/Roboto，再用 Helvetica/Courier。
+  chapter: ch-02-06
+  chapter_title: Proper Name, Color Palette, Typography
+- module: ''
+  criterion: AI 可檢查：引用評論需加引號、日期、Tripadvisor traveler attribution；不得編造評論；不得把一地評論用於另一地；不得把行銷文案放進引號假裝評論；ranking 必須標示月份年份或日期。
+  chapter: ch-03
+  chapter_title: Ratings and Reviews
+- module: ''
+  criterion: AI 可檢查：aggregate bubble 必須同頁出現 primary Tripadvisor logo 或 “Tripadvisor”；individual review bubble 必須以 “A Tripadvisor
+    traveler review” 等語句明示來源；不得只放 bubble 而無語義標註。
+  chapter: ch-03-01
+  chapter_title: Bubbles
+- module: ''
+  criterion: AI 可檢查：review quote 必須有 quotation marks、review date、Tripadvisor traveler attribution；5-bubble rave review 需整體
+    property rating >= 4/5，且若使用 don'ts 條件中的 rave claim，需近 6 個月 5-bubble review、overall >= 4、good standing；不得編輯到誤導、不得跨 property
+    使用、不得 invent review、不得以 headline 偽裝 review、不得讓 content/bubble 疊在照片上。
+  chapter: ch-03-02
+  chapter_title: Ratings & Reviews Dos and Don'ts
+- module: ''
+  criterion: AI 可檢查：rating 旁需有 “Tripadvisor Traveler Rating” 與 review count；空間不足時需有 logo 且每個 rating rollover 顯示 “Tripadvisor
+    Traveler Rating”；aggregate bubble 左側需有 Tripadvisor owl；owl >= 20px high；bubble graphic >= 55px wide；bubble 為 standard
+    Tripadvisor green 且白底。
+  chapter: ch-03-03
+  chapter_title: Traveler Rating Text and Image
+- module: ''
+  criterion: AI 可檢查：任何 “#1” 或 popularity ranking claim 必須包含 as-of month/year；除 API 動態 banner 外，bubble ratings、rankings、number
+    of reviews 均需附 date，如 “as of 16 Mar, 2020”。
+  chapter: ch-03-04
+  chapter_title: Tripadvisor Ranking
+- module: ''
+  criterion: AI 可檢查：Tripadvisor logos 與 rating bubbles 不得由 partner local hosting；campaign 必須有 Tripadvisor tracking pixel 或完成後
+    CTR/impressions report；所有 content use 必須 final approval。
+  chapter: ch-04
+  chapter_title: Additional Information
+chapters:
+- id: ch-01
+  title: Intro
+  modules:
+  - Legal and Trademark
+  - Operations
+  - Governance
+- id: ch-02
+  title: Visual Identity
+  modules:
+  - Design Tokens
+  - Visual Identity
+  - Governance
+- id: ch-02-01
+  title: Primary and Secondary Logo Suite
+  modules:
+  - AI-Checkable Rules
+- id: ch-02-02
+  title: Minimum Clearspace and Symbol
+  modules:
+  - Layout System
+- id: ch-02-03
+  title: Partnership Lockups
+  modules:
+  - Layout System
+- id: ch-02-04
+  title: Logo Usage and Don'ts
+  modules:
+  - AI-Checkable Rules
+  - Governance
+- id: ch-02-05
+  title: Travelers' Choice Logos
+  modules:
+  - Localization
+- id: ch-02-06
+  title: Proper Name, Color Palette, Typography
+  modules:
+  - Typography System
+  - Color System
+  - Design Tokens
+- id: ch-03
+  title: Ratings and Reviews
+  modules:
+  - Legal and Trademark
+  - Content Safety
+- id: ch-03-01
+  title: Bubbles
+  modules:
+  - Data Visualization
+  - Information Design
+- id: ch-03-02
+  title: Ratings & Reviews Dos and Don'ts
+  modules:
+  - AI-Checkable Rules
+  - Content Safety
+- id: ch-03-03
+  title: Traveler Rating Text and Image
+  modules:
+  - UI Components
+  - Information Design
+- id: ch-03-04
+  title: Tripadvisor Ranking
+  modules:
+  - Measurement
+  - Governance
+- id: ch-04
+  title: Additional Information
+  modules:
+  - Measurement
+  - Operations

@@ -1,0 +1,148 @@
+title: "Corporate Design Stadt Bern 2021"
+source: "sources/Bern_Stadt_2021.pdf"
+date: "2021"
+version: "Ausgabe 2021"
+language: "de"
+summary: "瑞士伯恩市政府的 Corporate Design manual，將市徽、色彩、字體、版面、電子媒體、文件、導視、車輛服裝與活動現場露出整合為具治理效力的公共機構識別系統。"
+chapters:
+  - id: "ch-01"
+    title: "Grundlagen: Die Marke"
+    level: 1
+    order: 1
+    pages: "5-12"
+    summary: "定義 Stadtmarke、市徽授權、基礎色、字體與 Stadtmarke/Themenmarke/Direktionsmarke 的構成規則。"
+    children:
+      - id: "ch-01-01"
+        title: "Wappen und Stadtmarke"
+        level: 2
+        order: 1
+        pages: "6-7"
+        summary: "規範市徽方向、法定授權與作為 city sender 的固定呈現。"
+      - id: "ch-01-02"
+        title: "Farben, Schriften und Markenaufbau"
+        level: 2
+        order: 2
+        pages: "8-12"
+        summary: "以色彩數值、Univers/Arial 字體與 Wappen 尺寸比例建立可量化基礎系統。"
+  - id: "ch-02"
+    title: "Integrierte Kommunikation"
+    level: 1
+    order: 2
+    pages: "13-14"
+    summary: "透過跨媒體 campaign 範例說明訊息、時間與視覺形式的一致整合。"
+    children:
+      - id: "ch-02-01"
+        title: "Kampagne Beispiel"
+        level: 2
+        order: 1
+        pages: "14"
+        summary: "以投票 campaign 示範不同媒體保留核心訊息與圖形元素。"
+  - id: "ch-03"
+    title: "Elektronische Kommunikation"
+    level: 1
+    order: 3
+    pages: "15-20"
+    summary: "規範 social media、website/subsites、電子看板與影片中的 city sender 呈現。"
+    children:
+      - id: "ch-03-01"
+        title: "Social Media and Internet"
+        level: 2
+        order: 1
+        pages: "16-18"
+        summary: "定義 profile image、subsite、短網址、QR code、圖片授權與 header image 規則。"
+      - id: "ch-03-02"
+        title: "Elektronische Medien and Videos"
+        level: 2
+        order: 2
+        pages: "19-20"
+        summary: "規範螢幕格式模板、影片 intro/title/watermark/lower-third/outro。"
+  - id: "ch-04"
+    title: "Printmedien – Layoutsystem"
+    level: 1
+    order: 4
+    pages: "21-27"
+    summary: "建立印刷品的 Markenzone、Farbcode、Absender、Textzone、Submarken 與 Sponsoren 區域。"
+    children:
+      - id: "ch-04-01"
+        title: "Layout Aufbau and DIN Formats"
+        level: 2
+        order: 1
+        pages: "22-23"
+        summary: "以 Wappen 寬度推導 DIN 格式中的色條、品牌區與文字區比例。"
+      - id: "ch-04-02"
+        title: "Posters, Special Formats and Background"
+        level: 2
+        order: 2
+        pages: "24-27"
+        summary: "規範 F4/F200、特殊比例、mark background、線紋與深色材質例外。"
+  - id: "ch-05"
+    title: "Umsetzungen Dachmarke"
+    level: 1
+    order: 5
+    pages: "29-31"
+    summary: "展示 Dienststelle 如何在城市 umbrella brand 下保留局部視覺差異。"
+    children:
+      - id: "ch-05-01"
+        title: "Entsorgung + Recycling and Hochbau"
+        level: 2
+        order: 1
+        pages: "30-31"
+        summary: "以部門色、圖像、文字玩法與固定 sender 建立可控差異化。"
+  - id: "ch-06"
+    title: "Dokumente"
+    level: 1
+    order: 6
+    pages: "33-35"
+    summary: "規範信件、信封、名片與官方文件的例外系統與治理責任。"
+    children:
+      - id: "ch-06-01"
+        title: "Briefschaften and Amtliche Dokumente"
+        level: 2
+        order: 1
+        pages: "34-35"
+        summary: "以 Office 可用字體、地址區、紙張與官方排序規範文書一致性。"
+  - id: "ch-07"
+    title: "Signaletik"
+    level: 1
+    order: 7
+    pages: "37-44"
+    summary: "將建築內外標示、無障礙、學校、公園、墓園與 pictograms 系統化。"
+    children:
+      - id: "ch-07-01"
+        title: "Building Signage and Accessibility"
+        level: 2
+        order: 1
+        pages: "38-41"
+        summary: "以材料、字高、安裝高度、對比、Braille/relief 規範導視可讀性。"
+      - id: "ch-07-02"
+        title: "Schools, Parks and Pictograms"
+        level: 2
+        order: 2
+        pages: "42-44"
+        summary: "規範學校 stele、園區資訊牌與 pictogram 應用。"
+  - id: "ch-08"
+    title: "Fahrzeuge und Kleidung"
+    level: 1
+    order: 8
+    pages: "45-46"
+    summary: "規範市府車輛與工作服在公共空間中的品牌露出。"
+    children:
+      - id: "ch-08-01"
+        title: "Vehicles and Clothing"
+        level: 2
+        order: 1
+        pages: "46"
+        summary: "以車體顏色、logo size、色條方向與服裝正背面使用管理現場識別。"
+  - id: "ch-09"
+    title: "Präsenz der Stadt"
+    level: 1
+    order: 9
+    pages: "47-48"
+    summary: "規範市府在活動、媒體會與公共活動中的 rollup、folding wall 與 banner。"
+    children:
+      - id: "ch-09-01"
+        title: "Wir leben Bern"
+        level: 2
+        order: 1
+        pages: "48"
+        summary: "提供尺寸、材質、使用情境與市府現場形象素材。"

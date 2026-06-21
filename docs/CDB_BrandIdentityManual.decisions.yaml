@@ -1,0 +1,174 @@
+# L3 決策卡 sidecar — Caribbean Development Bank Brand Identity Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: CDB_BrandIdentityManual
+decisions:
+  - id: dp-contact-before-appendix
+    title: 在技術資料前先給治理窗口，讓 guideline 成為可改善系統
+    problem:
+      statement: 規則無法涵蓋所有情境，缺乏權威決策入口時，例外用法無人裁決。
+      signals: [exceptions_expected, governance]
+    solution:
+      module: Governance
+      move: 在主內容與 appendix 之間放置聯絡窗口與核准／回饋入口
+      layer: governance
+    reason:
+      - 規則無法涵蓋所有情境，必須提供權威決策入口
+      - guideline 應包含 owner 與 feedback channel，而非靜態文件
+      - 用 governance preamble 把設計規則連到組織風險
+    applicable_when:
+      industries: [finance]
+      brand_types: [institutional_public_trust]
+      conditions: [governance]
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit, logo_asset_guidelines]
+    dependencies:
+      requires: [Governance]
+      enables: [Operations]
+    evidence:
+      - brand_id: CDB_BrandIdentityManual
+        chapter: ch-01
+        excerpt: "以 governance preamble 把品牌規則連到組織風險；任何輸出應可追溯到本手冊對應章節，規格不明時應聯絡 CDB Bank Secretary's Unit，未授權方不得自行發起 branded communications。"
+    status: extracted
+
+  - id: dp-asset-protection-for-legacy
+    title: 把歷史品牌的核心識別當成不可妥協的資產來保護
+    problem:
+      statement: 歷史悠久的品牌，其 logo、色彩與材質是長期累積的資產；任何外部合作或內部輸出都可能在不經意間稀釋它。
+      signals: [heritage, asset_protection, consistency_over_time, brand_dilution_risk]
+    solution:
+      module: Visual Identity
+      move: 把 logo 版本、光學幾何、最小尺寸、清除區與色彩重製定為不可妥協的資產規則，並要求以 Pantone/CMYK 準確匹配
+      layer: visual_core
+    reason:
+      - 保護高信任機構的核心識別，讓所有合作與內部輸出不削弱品牌資產
+      - master artwork 是唯一正確來源，logo 的比例、顏色與元件關係固定
+      - 機構規範應明確處理色彩重製與最小尺寸
+    applicable_when:
+      industries: [finance, luxury_premium]
+      brand_types: [institutional_public_trust, heritage_legacy, premium_luxury]
+      conditions: [heritage, asset_protection]
+      archetypes: [brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 以螢幕或列印稿視覺匹配色彩，造成跨媒介色差
+      - 允許重畫或重組 logo 元件
+    evidence:
+      - brand_id: CDB_BrandIdentityManual
+        chapter: ch-02
+        excerpt: "logo elements 不得 reposition、recolour、distort、remove、改變比例關係或加特效；master artwork 是唯一正確來源，須依 Pantone Inc. 標準配色檢查。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - 相對單位可建立 scalable spacing token，不被固定像素綁死
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - minimum clear space = 1x o，optimal = 2x o
+    evidence:
+      - brand_id: CDB_BrandIdentityManual
+        chapter: ch-02-01
+        excerpt: "clear space 等於 logo type 中 E 的高度；任何 graphic element、typography 或 pattern 不得進入以 E 高度定義的排除區，clear-space token 綁定 logo 內部可見元素。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗與照片複雜度建立對比決策樹，限定白／深色兩種標誌
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - Logo 顏色規範應基於對比與背景風險，而非只列色票
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: CDB_BrandIdentityManual
+        chapter: ch-02-02
+        excerpt: "依 background/reproduction need 選用 full colour、flat colour、B&W、reverse colour、reverse B&W 版本；不得使用未授權色彩，印刷廣告最小 logo diameter 25mm。"
+    status: extracted
+
+  - id: dp-media-split-typography
+    title: 依媒介分流字體系統（print / digital / body）
+    problem:
+      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+      signals: [print_and_digital, readability, licensing]
+    solution:
+      module: Typography System
+      move: 區分 print font、digital font 與 secondary/body font，並各自規範字級與行距
+      layer: visual_core
+    reason:
+      - 不同媒介的可讀性與授權條件不同
+      - 字體規範應搭配用途說明，而非只列字體名稱
+      - typeface policy 應依 production environment 分級
+    applicable_when:
+      industries: [finance, public_sector, education]
+      brand_types: [institutional_public_trust]
+      conditions: [print_and_digital]
+      archetypes: [brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: []
+    examples:
+      - body copy 使用 Segoe UI Regular 10pt / 14pt leading
+    evidence:
+      - brand_id: CDB_BrandIdentityManual
+        chapter: ch-02-03
+        excerpt: "external communications 用 Futura/Granjon 等品牌字體、internal Office 用 Arial/Verdana/Times New Roman；signature 必須 Arial Bold，print advertising body 用 Granjon Roman/Bold、header 用 Futura，依用途分層。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - co-branding 是 legal/governance 問題，不只是排版問題
+      - partner logo 不得壓過 owner logo
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance, Legal and Trademark]
+    evidence:
+      - brand_id: CDB_BrandIdentityManual
+        chapter: ch-05
+        excerpt: "CDB logo 使用需 pre-authorization 並預留 7 working days、never bigger than partner logo、理想 1:1 visual space，且不得出現在 product-oriented communication 旁，避免被誤認為背書。"
+    status: extracted

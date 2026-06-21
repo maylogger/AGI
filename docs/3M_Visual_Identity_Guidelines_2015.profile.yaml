@@ -1,0 +1,579 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: 3M_Visual_Identity_Guidelines_2015
+index_ref: docs/3M_Visual_Identity_Guidelines_2015.index.yaml
+note_ref: docs/3M_Visual_Identity_Guidelines_2015.note.md
+archetype: full_brand_system
+industry: industrial_materials_science
+modules:
+- Brand Strategy
+- Voice and Tone
+- Messaging
+- Knowledge Architecture
+- Governance
+- Evaluation Framework
+- Content Design
+- Photography System
+- Layout System
+- Visual Language
+- Design Tokens
+- Visual Identity
+- Legal and Trademark
+- AI-Checkable Rules
+- Color System
+- Typography System
+- Iconography System
+- Examples
+- Operations
+- Design Process
+depth:
+  strategy: high
+  visual: high
+  governance: high
+  top_level_chapter_count: 5
+  section_count: 22
+chapter_sequence:
+- id: ch-01
+  title: Our Brand
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: The Brand Is Who We Are
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Personality
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Brand Voice
+  order: 3
+  level: 2
+- id: ch-01-04
+  title: Brand Platform and Headlines
+  order: 4
+  level: 2
+- id: ch-02
+  title: Our New Visual Identity
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: System Overview
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Lockup and Logo
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Color
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Typography
+  order: 4
+  level: 2
+- id: ch-02-05
+  title: Photography
+  order: 5
+  level: 2
+- id: ch-02-06
+  title: Grids
+  order: 6
+  level: 2
+- id: ch-02-07
+  title: Shape
+  order: 7
+  level: 2
+- id: ch-02-08
+  title: Mesh
+  order: 8
+  level: 2
+- id: ch-02-09
+  title: Icons
+  order: 9
+  level: 2
+- id: ch-03
+  title: Putting It All Together
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Simple System Options
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Grid-Based Layout Rules
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Triangle Construction and Use
+  order: 3
+  level: 2
+- id: ch-03-04
+  title: Mesh Assets and Rules
+  order: 4
+  level: 2
+- id: ch-03-05
+  title: Best-in-Class Examples
+  order: 5
+  level: 2
+- id: ch-03-06
+  title: Filenaming and Source Files
+  order: 6
+  level: 2
+- id: ch-04
+  title: Contact
+  order: 4
+  level: 1
+- id: ch-05
+  title: Color Appendix
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Color Sets and Greyscale Options
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Individual Color Set Specifications
+  order: 2
+  level: 2
+- id: ch-05-03
+  title: Greyscale Color Set
+  order: 3
+  level: 2
+frameworks:
+- name: Who We Are -> How We Communicate -> Brand Platform -> Visual System
+  chapter: ch-01
+  chapter_title: Our Brand
+- name: Vision / Strategies / Values / Actions 四層框架
+  chapter: ch-01-01
+  chapter_title: The Brand Is Who We Are
+- name: Personality Filter：每個溝通產出需通過五個人格軸的檢查
+  chapter: ch-01-02
+  chapter_title: Personality
+- name: Voice Transformation Framework：smart -> accessible、facts -> benefits、so what -> ah-ha
+  chapter: ch-01-03
+  chapter_title: Brand Voice
+- name: Science -> Applied Benefit headline framework
+  chapter: ch-01-04
+  chapter_title: Brand Platform and Headlines
+- name: Trifecta System：power of 3、triangle、mesh、3-column grid 與 science/life linkage
+  chapter: ch-02
+  chapter_title: Our New Visual Identity
+- name: Core Element Toolkit：每個元素有明確角色，可獨立或組合
+  chapter: ch-02-01
+  chapter_title: System Overview
+- name: Logo Governance Framework：asset state、usage context、spatial control、color control、legal control
+  chapter: ch-02-02
+  chapter_title: Lockup and Logo
+- name: Adjacent Color Set Framework：18 sets、one set per application、approved RGB/CMYK gradients
+  chapter: ch-02-03
+  chapter_title: Color
+- name: Typographic Utility Framework：font family、weight、leading、kerning、callout、color rules
+  chapter: ch-02-04
+  chapter_title: Typography
+- name: Photography Story Matrix：Product / People / Place / Epic 對應不同敘事距離
+  chapter: ch-02-05
+  chapter_title: Photography
+- name: Scalable Grid Framework：primary information on 3x3，secondary detail on 6x6，content-rich formats use multiples of 3
+  chapter: ch-02-06
+  chapter_title: Grids
+- name: Triangle Usage Framework：bold single shape、safe-area three shapes、secondary mesh pattern
+  chapter: ch-02-07
+  chapter_title: Shape
+- name: Mesh as Secondary Texture Framework：替代 photography、支援 divider/background、不得主導所有資訊
+  chapter: ch-02-08
+  chapter_title: Mesh
+- name: Provisional Icon Governance：use available examples、contact team before new icon creation
+  chapter: ch-02-09
+  chapter_title: Icons
+- name: Application Assembly Framework：grid -> type -> visual option -> one color set -> production assets
+  chapter: ch-03
+  chapter_title: Putting It All Together
+- name: Four-Step Assembly Framework
+  chapter: ch-03-01
+  chapter_title: Simple System Options
+- name: Margin-Logo Scaling Framework
+  chapter: ch-03-02
+  chapter_title: Grid-Based Layout Rules
+- name: Grid-Locked Triangle Framework
+  chapter: ch-03-03
+  chapter_title: Triangle Construction and Use
+- name: Managed Asset Framework：format-specific files、approved colors、limited transformations
+  chapter: ch-03-04
+  chapter_title: Mesh Assets and Rules
+- name: Example-as-Validation Framework
+  chapter: ch-03-05
+  chapter_title: Best-in-Class Examples
+- name: Asset Naming Schema
+  chapter: ch-03-06
+  chapter_title: Filenaming and Source Files
+- name: Approval and Feedback Loop
+  chapter: ch-04
+  chapter_title: Contact
+- name: Color Set Specification Framework：三色 set + two-color mesh pairs + media availability
+  chapter: ch-05
+  chapter_title: Color Appendix
+- name: Set-First Color Selection
+  chapter: ch-05-01
+  chapter_title: Color Sets and Greyscale Options
+- name: Per-Set Token Sheet
+  chapter: ch-05-02
+  chapter_title: Individual Color Set Specifications
+- name: Greyscale Token Framework
+  chapter: ch-05-03
+  chapter_title: Greyscale Color Set
+patterns:
+- name: brand-as-system
+  chapter: ch-01
+  chapter_title: Our Brand
+- name: platform/tagline as long-term idea
+  chapter: ch-01
+  chapter_title: Our Brand
+- name: voice tactics before visual rules
+  chapter: ch-01
+  chapter_title: Our Brand
+- name: 可複用模式是把 corporate strategy inventory 放在 visual guideline 前段。
+  chapter: ch-01-01
+  chapter_title: The Brand Is Who We Are
+- name: 可複用模式是 brand personality word set as creative evaluation criteria。
+  chapter: ch-01-02
+  chapter_title: Personality
+- name: persona-driven voice
+  chapter: ch-01-03
+  chapter_title: Brand Voice
+- name: from/to voice tactics
+  chapter: ch-01-03
+  chapter_title: Brand Voice
+- name: benefit translation
+  chapter: ch-01-03
+  chapter_title: Brand Voice
+- name: 可複用模式是 platform as grammar：以固定句法讓多元內容保持一致。
+  chapter: ch-01-04
+  chapter_title: Brand Platform and Headlines
+- name: modular identity toolkit
+  chapter: ch-02
+  chapter_title: Our New Visual Identity
+- name: system overview before details
+  chapter: ch-02
+  chapter_title: Our New Visual Identity
+- name: core elements designed to work alone or together
+  chapter: ch-02
+  chapter_title: Our New Visual Identity
+- name: 可複用模式是 visual identity onboarding page。
+  chapter: ch-02-01
+  chapter_title: System Overview
+- name: lockup vs logo matrix
+  chapter: ch-02-02
+  chapter_title: Lockup and Logo
+- name: TM rule
+  chapter: ch-02-02
+  chapter_title: Lockup and Logo
+- name: single logo per viewing pane
+  chapter: ch-02-02
+  chapter_title: Lockup and Logo
+- name: clearspace based on logo height
+  chapter: ch-02-02
+  chapter_title: Lockup and Logo
+- name: palette as sets
+  chapter: ch-02-03
+  chapter_title: Color
+- name: not individual pickers；embedded swatches and source files
+  chapter: ch-02-03
+  chapter_title: Color
+- name: custom corporate typeface
+  chapter: ch-02-04
+  chapter_title: Typography
+- name: system fallback
+  chapter: ch-02-04
+  chapter_title: Typography
+- name: type dos/donts
+  chapter: ch-02-04
+  chapter_title: Typography
+- name: black-or-white text rule
+  chapter: ch-02-04
+  chapter_title: Typography
+- name: four-category photography system
+  chapter: ch-02-05
+  chapter_title: Photography
+- name: shared style principles
+  chapter: ch-02-05
+  chapter_title: Photography
+- name: product-on-white utilitarian rule
+  chapter: ch-02-05
+  chapter_title: Photography
+- name: 可複用模式是 brand concept reflected in layout grid。
+  chapter: ch-02-06
+  chapter_title: Grids
+- name: 可複用模式是 owned shape system。
+  chapter: ch-02-07
+  chapter_title: Shape
+- name: 可複用模式是 science-inspired texture asset。
+  chapter: ch-02-08
+  chapter_title: Mesh
+- name: 可複用模式是 incomplete library with governance guardrail。
+  chapter: ch-02-09
+  chapter_title: Icons
+- name: assemble-not-template
+  chapter: ch-03
+  chapter_title: Putting It All Together
+- name: application examples after rules
+  chapter: ch-03
+  chapter_title: Putting It All Together
+- name: filenaming as operations layer
+  chapter: ch-03
+  chapter_title: Putting It All Together
+- name: 可複用模式是 high-level communication recipe。
+  chapter: ch-03-01
+  chapter_title: Simple System Options
+- name: 可複用模式是 format examples plus scaling factors。
+  chapter: ch-03-02
+  chapter_title: Grid-Based Layout Rules
+- name: triangle from grid points
+  chapter: ch-03-03
+  chapter_title: Triangle Construction and Use
+- name: type bleed over edge
+  chapter: ch-03-03
+  chapter_title: Triangle Construction and Use
+- name: gradient direction tied to triangle geometry
+  chapter: ch-03-03
+  chapter_title: Triangle Construction and Use
+- name: 可複用模式是 asset library plus modification constraints。
+  chapter: ch-03-04
+  chapter_title: Mesh Assets and Rules
+- name: 可複用模式是 best-in-class pages after rule pages。
+  chapter: ch-03-05
+  chapter_title: Best-in-Class Examples
+- name: 可複用模式是 file naming guide for brand assets。
+  chapter: ch-03-06
+  chapter_title: Filenaming and Source Files
+- name: 可複用模式是 contact chapter before appendix。
+  chapter: ch-04
+  chapter_title: Contact
+- name: appendix as token database
+  chapter: ch-05
+  chapter_title: Color Appendix
+- name: individual set pages
+  chapter: ch-05
+  chapter_title: Color Appendix
+- name: print/screen availability labels
+  chapter: ch-05
+  chapter_title: Color Appendix
+- name: 可複用模式是 color set index before detailed tokens。
+  chapter: ch-05-01
+  chapter_title: Color Sets and Greyscale Options
+- name: 可複用模式是 repeated specification template。
+  chapter: ch-05-02
+  chapter_title: Individual Color Set Specifications
+- name: 可複用模式是 approved neutral alternative。
+  chapter: ch-05-03
+  chapter_title: Greyscale Color Set
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查文案是否顯示 curiosity、purposeful sharing、optimism，並避免過度封閉或純技術炫耀。
+  chapter: ch-01-02
+  chapter_title: Personality
+- module: ''
+  criterion: AI 可檢查產出是否使用 3M lockup/logo、3M Circular、one color set、3x3 grid、triangle/mesh/photography 中合適元素。
+  chapter: ch-02
+  chapter_title: Our New Visual Identity
+- module: ''
+  criterion: AI 可檢查設計是否至少選用必要核心元素，並避免一次使用所有元素造成過載。
+  chapter: ch-02-01
+  chapter_title: System Overview
+- module: Visual Identity
+  criterion: AI 可檢查 lockup 是否含 TM、tagline 是否未單獨出現、lockup minimum height 是否 >= 0.27 in / 7 mm / 19 px、logo minimum height 是否
+    >= 0.2 in / 5 mm / 13 px、同一視窗是否只有一個 3M logo。
+  chapter: ch-02-02
+  chapter_title: Lockup and Logo
+- module: Typography System
+  criterion: AI 可檢查 headlines 是否 sentence case、leading 是否約 1:1.1、body leading 是否約 1:1.25、文字是否只使用黑或白、同一 viewing page 是否只用黑或白一種文字色。
+  chapter: ch-02-04
+  chapter_title: Typography
+- module: ''
+  criterion: AI 可檢查主要資訊是否對齊 3x3 grid，複雜內容是否使用 6x6 或 3 的倍數延展。
+  chapter: ch-02-06
+  chapter_title: Grids
+- module: ''
+  criterion: AI 可檢查高階溝通是否使用 grid、3M Circular、single triangle / three triangles / mesh 之一，並每份 document 只用一組 color set 或 greyscale。
+  chapter: ch-03
+  chapter_title: Putting It All Together
+- module: ''
+  criterion: AI 可檢查是否先有 grid 與 3M Circular，是否只選一個主要視覺策略，是否只用一組色彩。
+  chapter: ch-03-01
+  chapter_title: Simple System Options
+- module: Layout System
+  criterion: AI 可檢查標準格式 logo height 是否等於 margin；typography 是否盡量不超過三種尺寸；gutters 是否為 x、x/2 或 x/4。
+  chapter: ch-03-02
+  chapter_title: Grid-Based Layout Rules
+- module: ''
+  criterion: AI 可檢查 mesh 是否使用 approved format、是否最多放大 5-10% 作 bleed、是否未拉伸/壓縮/重建/套 stroke/多組漸層混用。
+  chapter: ch-03-04
+  chapter_title: Mesh Assets and Rules
+- module: ''
+  criterion: AI 可檢查檔名是否包含 asset type、format、color/color set、color space 與副檔名，例如 `3M_Lockup_CMYK_Pos.eps` 或 `3M_Mesh_Ltr_LtOrng_Orng_RGB.ai`。
+  chapter: ch-03-06
+  chapter_title: Filenaming and Source Files
+- module: ''
+  criterion: AI 可檢查特殊或未涵蓋情境是否標記需要向 brandcentral 或 id@mmm.com 詢問。
+  chapter: ch-04
+  chapter_title: Contact
+- module: Color System
+  criterion: 'AI 可檢查灰階是否使用 #000000、#595959、#A8A8A8、#D2D2D2、#FFFFFF 等核准值。'
+  chapter: ch-05-03
+  chapter_title: Greyscale Color Set
+chapters:
+- id: ch-01
+  title: Our Brand
+  modules:
+  - Brand Strategy
+  - Voice and Tone
+  - Messaging
+  - Knowledge Architecture
+- id: ch-01-01
+  title: The Brand Is Who We Are
+  modules:
+  - Brand Strategy
+  - Governance
+- id: ch-01-02
+  title: Personality
+  modules:
+  - Brand Strategy
+  - Evaluation Framework
+- id: ch-01-03
+  title: Brand Voice
+  modules:
+  - Content Design
+  - Voice and Tone
+  - Messaging
+- id: ch-01-04
+  title: Brand Platform and Headlines
+  modules:
+  - Brand Strategy
+  - Content Design
+  - Messaging
+- id: ch-02
+  title: Our New Visual Identity
+  modules:
+  - Photography System
+  - Layout System
+  - Visual Language
+  - Design Tokens
+  - Visual Identity
+- id: ch-02-01
+  title: System Overview
+  modules:
+  - Visual Language
+  - Knowledge Architecture
+- id: ch-02-02
+  title: Lockup and Logo
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02-03
+  title: Color
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Design Tokens
+- id: ch-02-04
+  title: Typography
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+- id: ch-02-05
+  title: Photography
+  modules:
+  - Photography System
+  - Visual Language
+- id: ch-02-06
+  title: Grids
+  modules:
+  - Layout System
+- id: ch-02-07
+  title: Shape
+  modules:
+  - Layout System
+  - Visual Language
+- id: ch-02-08
+  title: Mesh
+  modules:
+  - AI-Checkable Rules
+  - Visual Language
+  - Design Tokens
+- id: ch-02-09
+  title: Icons
+  modules:
+  - Iconography System
+  - Governance
+- id: ch-03
+  title: Putting It All Together
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Examples
+  - Operations
+- id: ch-03-01
+  title: Simple System Options
+  modules:
+  - Layout System
+  - Design Process
+- id: ch-03-02
+  title: Grid-Based Layout Rules
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+- id: ch-03-03
+  title: Triangle Construction and Use
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Language
+- id: ch-03-04
+  title: Mesh Assets and Rules
+  modules:
+  - AI-Checkable Rules
+  - Visual Language
+  - Operations
+- id: ch-03-05
+  title: Best-in-Class Examples
+  modules:
+  - Examples
+  - Governance
+- id: ch-03-06
+  title: Filenaming and Source Files
+  modules:
+  - Design Tokens
+  - Operations
+  - Governance
+- id: ch-04
+  title: Contact
+  modules:
+  - Operations
+  - Governance
+- id: ch-05
+  title: Color Appendix
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Design Tokens
+  - Operations
+- id: ch-05-01
+  title: Color Sets and Greyscale Options
+  modules:
+  - Color System
+  - Knowledge Architecture
+- id: ch-05-02
+  title: Individual Color Set Specifications
+  modules:
+  - Design Tokens
+  - Operations
+- id: ch-05-03
+  title: Greyscale Color Set
+  modules:
+  - Color System
+  - Design Tokens

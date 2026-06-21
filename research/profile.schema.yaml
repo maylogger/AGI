@@ -1,0 +1,131 @@
+# AGI Profile Schema
+# 聚合層：跨語料可查詢欄位。結構層見 docs/*.index.yaml，研究層見 docs/*.note.md
+#
+# 產生方式：python scripts/generate_profiles.py
+
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: AGI Profile
+type: object
+required:
+  - brand_id
+  - index_ref
+  - note_ref
+  - modules
+  - depth
+  - chapter_sequence
+properties:
+  brand_id:
+    type: string
+    description: 與 index/note 檔名 stem 相同（不含副檔名）
+  index_ref:
+    type: string
+    description: 相對於 repo root 的 index.yaml 路徑
+  note_ref:
+    type: string
+    description: 相對於 repo root 的 note.md 路徑
+  archetype:
+    type: string
+    description: Guideline 原型 ID，定義見 research/archetypes.yaml
+    enum:
+      - corporate_toolkit
+      - full_brand_system
+      - multi_brand_architecture
+      - product_design_system
+      - logo_asset_guidelines
+      - campaign_touchpoint
+      - brand_experience_guide
+  industry:
+    type: string
+    description: 產業標籤（可後補）
+    nullable: true
+  modules:
+    type: array
+    items:
+      type: string
+    description: 文件級模組覆蓋（從 note Abstraction 正規化、去重）
+  depth:
+    type: object
+    required:
+      - strategy
+      - visual
+      - governance
+      - top_level_chapter_count
+      - section_count
+    properties:
+      strategy:
+        enum: [low, medium, high]
+      visual:
+        enum: [low, medium, high]
+      governance:
+        enum: [low, medium, high]
+      top_level_chapter_count:
+        type: integer
+      section_count:
+        type: integer
+  chapter_sequence:
+    type: array
+    items:
+      type: object
+      required: [id, title, order]
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        order:
+          type: integer
+        level:
+          type: integer
+  frameworks:
+    type: array
+    items:
+      type: object
+      required: [name, chapter]
+      properties:
+        name:
+          type: string
+        chapter:
+          type: string
+        chapter_title:
+          type: string
+  patterns:
+    type: array
+    items:
+      type: object
+      required: [name, chapter]
+      properties:
+        name:
+          type: string
+        chapter:
+          type: string
+        chapter_title:
+          type: string
+  rules_ai_checkable:
+    type: array
+    items:
+      type: object
+      required: [criterion, chapter]
+      properties:
+        module:
+          type: string
+        criterion:
+          type: string
+        chapter:
+          type: string
+        chapter_title:
+          type: string
+  chapters:
+    type: array
+    description: 章節級模組標籤（chapter id → modules）
+    items:
+      type: object
+      required: [id, modules]
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        modules:
+          type: array
+          items:
+            type: string

@@ -1,0 +1,457 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: accor_hotels_2015_compressed
+index_ref: docs/accor_hotels_2015_compressed.index.yaml
+note_ref: docs/accor_hotels_2015_compressed.note.md
+archetype: brand_experience_guide
+industry: consumer_retail_hospitality
+modules:
+- Operations
+- Knowledge Architecture
+- Governance
+- Photography System
+- Visual Language
+- Design Tokens
+- Messaging
+- Visual Identity
+- AI-Checkable Rules
+- Typography System
+- Content Design
+- Layout System
+- Color System
+- Brand Architecture
+- Iconography System
+- Legal and Trademark
+- Examples
+- Data Visualization
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 3
+  section_count: 19
+chapter_sequence:
+- id: ch-01
+  title: User Guide
+  order: 1
+  level: 1
+- id: ch-02
+  title: Fundamentals
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Generic Statement
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Employees, Customers and Franchisees Statements
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Logo
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Logo Protection Area, Minimum Sizes and Positioning
+  order: 4
+  level: 2
+- id: ch-02-05
+  title: Logo Use With a Background
+  order: 5
+  level: 2
+- id: ch-02-06
+  title: Logo Don'ts
+  order: 6
+  level: 2
+- id: ch-02-07
+  title: The Color Palette
+  order: 7
+  level: 2
+- id: ch-02-08
+  title: Fonts
+  order: 8
+  level: 2
+- id: ch-02-09
+  title: Horizontal Brand Frieze
+  order: 9
+  level: 2
+- id: ch-02-10
+  title: Vertical Brand Frieze
+  order: 10
+  level: 2
+- id: ch-02-11
+  title: Pictograms
+  order: 11
+  level: 2
+- id: ch-02-12
+  title: Artwork Principles
+  order: 12
+  level: 2
+- id: ch-02-13
+  title: Artwork Examples of Visuals
+  order: 13
+  level: 2
+- id: ch-03
+  title: Stationery & Office Applications
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Email Tagline
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Business Cards
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Note Cards
+  order: 3
+  level: 2
+- id: ch-03-04
+  title: Letterhead and Following Page
+  order: 4
+  level: 2
+- id: ch-03-05
+  title: Internal PowerPoint Presentation
+  order: 5
+  level: 2
+- id: ch-03-06
+  title: Press Releases
+  order: 6
+  level: 2
+frameworks:
+- name: Guideline -> Platform -> Downloads -> Asset Folder 的資產存取框架
+  chapter: ch-01
+  chapter_title: User Guide
+- name: Fundamentals Framework：statement、identity mark、tokens、type、portfolio system、icons、photography/artwork
+  chapter: ch-02
+  chapter_title: Fundamentals
+- name: Statement as Brand Asset：text content + typographic treatment + width relation to logo
+  chapter: ch-02-01
+  chapter_title: Generic Statement
+- name: Audience-Specific Statement Framework
+  chapter: ch-02-02
+  chapter_title: Employees, Customers and Franchisees Statements
+- name: Logo Variant Framework：default with tagline、dark background、black mono、crisis without tagline
+  chapter: ch-02-03
+  chapter_title: Logo
+- name: Internal-Letter Clearspace Framework
+  chapter: ch-02-04
+  chapter_title: Logo Protection Area, Minimum Sizes and Positioning
+- name: Background Contrast Framework
+  chapter: ch-02-05
+  chapter_title: Logo Use With a Background
+- name: Logo Misuse Taxonomy
+  chapter: ch-02-06
+  chapter_title: Logo Don'ts
+- name: Priority Palette Framework：identity colors first、additional colors limited use
+  chapter: ch-02-07
+  chapter_title: The Color Palette
+- name: Professional Font + Office Replacement Framework
+  chapter: ch-02-08
+  chapter_title: Fonts
+- name: Portfolio Frieze Framework
+  chapter: ch-02-09
+  chapter_title: Horizontal Brand Frieze
+- name: Orientation Variant Framework
+  chapter: ch-02-10
+  chapter_title: Vertical Brand Frieze
+- name: Controlled Pictogram Library
+  chapter: ch-02-11
+  chapter_title: Pictograms
+- name: Feel Welcome Visual Story Framework
+  chapter: ch-02-12
+  chapter_title: Artwork Principles
+- name: Example-as-Style Calibration
+  chapter: ch-02-13
+  chapter_title: Artwork Examples of Visuals
+- name: Office Application Template Framework
+  chapter: ch-03
+  chapter_title: Stationery & Office Applications
+- name: Email Signature Variant Framework
+  chapter: ch-03-01
+  chapter_title: Email Tagline
+- name: Business Card Template Framework
+  chapter: ch-03-02
+  chapter_title: Business Cards
+- name: Context-Sensitive Template Variant
+  chapter: ch-03-03
+  chapter_title: Note Cards
+- name: Printed Shell + Office Text Framework
+  chapter: ch-03-04
+  chapter_title: Letterhead and Following Page
+- name: Presentation Template System
+  chapter: ch-03-05
+  chapter_title: Internal PowerPoint Presentation
+- name: Press Release Template Variant Framework
+  chapter: ch-03-06
+  chapter_title: Press Releases
+patterns:
+- name: user guide as asset map
+  chapter: ch-01
+  chapter_title: User Guide
+- name: printer/desktop file split
+  chapter: ch-01
+  chapter_title: User Guide
+- name: supplier font responsibility
+  chapter: ch-01
+  chapter_title: User Guide
+- name: brand statement as emotional anchor
+  chapter: ch-02
+  chapter_title: Fundamentals
+- name: logo clearspace
+  chapter: ch-02
+  chapter_title: Fundamentals
+- name: limited palette
+  chapter: ch-02
+  chapter_title: Fundamentals
+- name: portfolio frieze
+  chapter: ch-02
+  chapter_title: Fundamentals
+- name: custom pictogram library
+  chapter: ch-02
+  chapter_title: Fundamentals
+- name: photo-artwork principles
+  chapter: ch-02
+  chapter_title: Fundamentals
+- name: 可複用模式是將品牌精神做成可下載、可排版、可檢查的 statement module。
+  chapter: ch-02-01
+  chapter_title: Generic Statement
+- name: 可複用模式是 one visual grammar with multiple audience messages。
+  chapter: ch-02-02
+  chapter_title: Employees, Customers and Franchisees Statements
+- name: crisis communication logo variant
+  chapter: ch-02-03
+  chapter_title: Logo
+- name: symbol/name/tagline decomposition
+  chapter: ch-02-03
+  chapter_title: Logo
+- name: 可複用模式是以 wordmark 內部元素建立 clearspace。
+  chapter: ch-02-04
+  chapter_title: Logo Protection Area, Minimum Sizes and Positioning
+- name: 可複用模式是 logo background compatibility matrix。
+  chapter: ch-02-05
+  chapter_title: Logo Use With a Background
+- name: 可複用模式是 non-exhaustive donts page。
+  chapter: ch-02-06
+  chapter_title: Logo Don'ts
+- name: 可複用模式是 limited palette with usage constraints。
+  chapter: ch-02-07
+  chapter_title: The Color Palette
+- name: primary font
+  chapter: ch-02-08
+  chapter_title: Fonts
+- name: accent font
+  chapter: ch-02-08
+  chapter_title: Fonts
+- name: system replacement mapping
+  chapter: ch-02-08
+  chapter_title: Fonts
+- name: 可複用模式是 flexible brand portfolio strip。
+  chapter: ch-02-09
+  chapter_title: Horizontal Brand Frieze
+- name: 可複用模式是 horizontal module with vertical variant。
+  chapter: ch-02-10
+  chapter_title: Vertical Brand Frieze
+- name: 可複用模式是 hospitality/service pictogram set。
+  chapter: ch-02-11
+  chapter_title: Pictograms
+- name: 可複用模式是 brand promise expressed as micro-interactions。
+  chapter: ch-02-12
+  chapter_title: Artwork Principles
+- name: 可複用模式是 principles followed by visual examples。
+  chapter: ch-02-13
+  chapter_title: Artwork Examples of Visuals
+- name: stationery spec sheet
+  chapter: ch-03
+  chapter_title: Stationery & Office Applications
+- name: template variants
+  chapter: ch-03
+  chapter_title: Stationery & Office Applications
+- name: crisis/no-tagline option
+  chapter: ch-03
+  chapter_title: Stationery & Office Applications
+- name: office font substitution
+  chapter: ch-03
+  chapter_title: Stationery & Office Applications
+- name: 可複用模式是 email tagline as controlled template。
+  chapter: ch-03-01
+  chapter_title: Email Tagline
+- name: 可複用模式是 fixed production spec plus variable content fields。
+  chapter: ch-03-02
+  chapter_title: Business Cards
+- name: 可複用模式是 standard/personalized plus crisis no-tagline option。
+  chapter: ch-03-03
+  chapter_title: Note Cards
+- name: 可複用模式是 branded letterhead with system-font typing layer。
+  chapter: ch-03-04
+  chapter_title: Letterhead and Following Page
+- name: 可複用模式是 slide type inventory。
+  chapter: ch-03-05
+  chapter_title: Internal PowerPoint Presentation
+- name: 可複用模式是 PR template with standard/event and tagline variants。
+  chapter: ch-03-06
+  chapter_title: Press Releases
+rules_ai_checkable:
+- module: ''
+  criterion: 可檢查規則包含 statement 寬度不得超過 logo、logo 必須置中、保護區不可放其他元素、dark blue/honey/white 為主色、輔助色只作節奏或 highlight。
+  chapter: ch-02
+  chapter_title: Fundamentals
+- module: Visual Identity
+  criterion: AI 可檢查保護區內無其他圖形，logo with tagline 最小 22 mm / 62 px，without tagline 最小 13 mm / 36 px，logo 是否置中且不左/右對齊。
+  chapter: ch-02-04
+  chapter_title: Logo Protection Area, Minimum Sizes and Positioning
+- module: Color System
+  criterion: 'AI 可檢查是否使用 #002b41、#e6a500、#ffffff 等品牌色；frost grey、nacarat red、tapenade green 是否只用於允許用途。'
+  chapter: ch-02-07
+  chapter_title: The Color Palette
+- module: ''
+  criterion: AI 可檢查文件是否使用指定尺寸、Pantone 7546 C + 7550 C、指定紙張、Gotham/Trebuchet/Georgia 字體與對應模板版本。
+  chapter: ch-03
+  chapter_title: Stationery & Office Applications
+- module: ''
+  criterion: AI 可檢查尺寸是否 90 x 55 mm、印刷是否 Pantone 7546 C + 7550 C、紙張是否 350g white card、第一行職稱是否可選語言且第二行英文。
+  chapter: ch-03-02
+  chapter_title: Business Cards
+- module: ''
+  criterion: AI 可檢查 A4 尺寸、紙張、Gotham 印刷模板與 Trebuchet 內文是否正確使用。
+  chapter: ch-03-04
+  chapter_title: Letterhead and Following Page
+- module: ''
+  criterion: AI 可檢查 PowerPoint 是否使用 4:3 或 16:9 核准模板、字體是否 Georgia/Trebuchet、separator 色彩是否來自 AccorHotels palette。
+  chapter: ch-03-05
+  chapter_title: Internal PowerPoint Presentation
+- module: ''
+  criterion: AI 可檢查 press release 是否 A4、使用 Trebuchet、可用 CMYK 或 PDF、敏感情境是否選 without Feel Welcome tagline。
+  chapter: ch-03-06
+  chapter_title: Press Releases
+chapters:
+- id: ch-01
+  title: User Guide
+  modules:
+  - Operations
+  - Knowledge Architecture
+  - Governance
+- id: ch-02
+  title: Fundamentals
+  modules:
+  - Photography System
+  - Visual Language
+  - Design Tokens
+  - Messaging
+  - Visual Identity
+- id: ch-02-01
+  title: Generic Statement
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Messaging
+- id: ch-02-02
+  title: Employees, Customers and Franchisees Statements
+  modules:
+  - Content Design
+  - Messaging
+- id: ch-02-03
+  title: Logo
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-02-04
+  title: Logo Protection Area, Minimum Sizes and Positioning
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Identity
+- id: ch-02-05
+  title: Logo Use With a Background
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02-06
+  title: Logo Don'ts
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-02-07
+  title: The Color Palette
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Design Tokens
+- id: ch-02-08
+  title: Fonts
+  modules:
+  - Typography System
+  - Operations
+- id: ch-02-09
+  title: Horizontal Brand Frieze
+  modules:
+  - Brand Architecture
+  - Layout System
+  - Visual Identity
+- id: ch-02-10
+  title: Vertical Brand Frieze
+  modules:
+  - Brand Architecture
+  - Layout System
+- id: ch-02-11
+  title: Pictograms
+  modules:
+  - Iconography System
+  - Operations
+- id: ch-02-12
+  title: Artwork Principles
+  modules:
+  - Legal and Trademark
+  - Photography System
+  - Visual Language
+- id: ch-02-13
+  title: Artwork Examples of Visuals
+  modules:
+  - Photography System
+  - Examples
+- id: ch-03
+  title: Stationery & Office Applications
+  modules:
+  - Layout System
+  - Typography System
+  - Operations
+  - Governance
+- id: ch-03-01
+  title: Email Tagline
+  modules:
+  - Messaging
+  - Operations
+- id: ch-03-02
+  title: Business Cards
+  modules:
+  - Layout System
+  - Operations
+- id: ch-03-03
+  title: Note Cards
+  modules:
+  - Operations
+  - Governance
+- id: ch-03-04
+  title: Letterhead and Following Page
+  modules:
+  - Layout System
+  - Typography System
+  - Operations
+- id: ch-03-05
+  title: Internal PowerPoint Presentation
+  modules:
+  - Data Visualization
+  - Layout System
+  - Operations
+- id: ch-03-06
+  title: Press Releases
+  modules:
+  - Content Design
+  - Operations
+  - Governance

@@ -1,0 +1,122 @@
+# L3 決策卡 sidecar — Prime Video
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: PV_Branding_Guidelines_Logos_Lock_Ups._CB1539191655_
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌不是單一標誌，而是組織如何行動與如何溝通
+      - 品牌是決策系統，不是美術風格；每個視覺與文案選擇都應能回推到品牌支柱
+      - 先建立判斷標準，後續視覺與語氣才有可回溯的語義來源
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: PV_Branding_Guidelines_Logos_Lock_Ups._CB1539191655_
+        chapter: ch-01
+        excerpt: "先處理『Prime Video 到底是什麼』的認知問題，先定義服務公式與品牌層級，再規範標誌與文案；平台品牌應把服務關係前置成資訊架構，不應只靠 Logo 區分。"
+    status: extracted
+
+  - id: dp-logo-vs-lockup-distinction
+    title: 區分 public-facing lockup 與 corporate logo 的使用場景
+    problem:
+      statement: 單一標誌資產被套用到所有情境，混淆對外溝通與企業署名，且難以同時治理法律與一致性。
+      signals: [multiple_logo_contexts, trademark, legal_governance]
+    solution:
+      module: Visual Identity
+      move: 明確區分 lockup 與 logo 的使用情境，並用 asset state + usage context + spatial/color/legal control 統一治理
+      layer: visual_core
+    reason:
+      - 標誌資產不可重建、不可任意改比例
+      - trademark 與 tagline 須由法律與品牌一致性共同治理
+    applicable_when:
+      industries: [industrial_materials_science, finance, tech_software]
+      brand_types: [heritage_legacy, platform_ecosystem]
+      conditions: [trademark]
+      archetypes: [brand_experience_guide, corporate_toolkit, multi_brand_architecture]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Legal and Trademark, Governance]
+    evidence:
+      - brand_id: PV_Branding_Guidelines_Logos_Lock_Ups._CB1539191655_
+        chapter: ch-02
+        excerpt: "以 Primary Service Logo 與 Global Marketing Logo 兩種 pattern 區分服務內辨識與全球 off-platform 信任歸因；子品牌 guideline 應明確定義何時需要母品牌背書，而不是只列 Logo 檔。"
+      - brand_id: PV_Branding_Guidelines_Logos_Lock_Ups._CB1539191655_
+        chapter: ch-02-02
+        excerpt: "在 Prime 認知不足的市場，於 Prime Video mark 上附加 amazon 歸因建立信任；市場認知與媒介所有權決定 Logo attribution。"
+    status: extracted
+
+  - id: dp-content-forward-flexible-identity
+    title: 讓識別當承載內容的框架，並以可調品牌音量平衡影像與品牌
+    problem:
+      statement: 內容導向品牌（媒體、出版、頻道）若讓識別搶走影像注意力，會削弱真正的內容資產；但完全沒有品牌又失去辨識。
+      signals: [content_forward_identity, multi_platform, motion_behavior, brand_recognition_vs_content]
+    solution:
+      module: Visual Language
+      move: 確立 content-forward 原則（識別是承載影像的框架），並用 Image／Message／Brand 三元素的可調「品牌音量」決定每個輸出的識別顯著度
+      layer: strategy
+    reason:
+      - 品牌應支援探索，而不是遮蔽內容；真實影像與知識進展比裝飾性識別更重要
+      - 好的品牌系統不是單一規則，而是可調節的平衡機制
+      - 品牌音量可轉成 AI 對版面密度與識別顯著度的檢查
+    applicable_when:
+      industries: [media_entertainment]
+      brand_types: [category_creator, challenger]
+      conditions: [content_forward_identity, multi_platform]
+      archetypes: [brand_experience_guide, product_design_system, campaign_touchpoint]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Layout System, Motion Identity]
+    anti_patterns:
+      - 影像優先情境仍使用過量遮罩或圖形
+      - 同時提高 image/message/brand 三者造成視覺擁擠
+    evidence:
+      - brand_id: PV_Branding_Guidelines_Logos_Lock_Ups._CB1539191655_
+        chapter: ch-03
+        excerpt: "品牌露出必須可見但不破壞觀看體驗，避免 bug 與內容競爭或被平台 UI 遮擋；以版型與平台雙條件管理品牌顯著度。"
+    status: extracted
+
+  - id: dp-contact-before-appendix
+    title: 在技術資料前先給治理窗口，讓 guideline 成為可改善系統
+    problem:
+      statement: 規則無法涵蓋所有情境，缺乏權威決策入口時，例外用法無人裁決。
+      signals: [exceptions_expected, governance]
+    solution:
+      module: Governance
+      move: 在主內容與 appendix 之間放置聯絡窗口與核准／回饋入口
+      layer: governance
+    reason:
+      - 規則無法涵蓋所有情境，必須提供權威決策入口
+      - guideline 應包含 owner 與 feedback channel，而非靜態文件
+      - guideline 需要 owner 與 feedback channel
+    applicable_when:
+      industries: [finance]
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit, logo_asset_guidelines]
+    dependencies:
+      requires: [Governance]
+      enables: [Operations]
+    evidence:
+      - brand_id: PV_Branding_Guidelines_Logos_Lock_Ups._CB1539191655_
+        chapter: ch-04
+        excerpt: "用 FAQ 與 design toolkit 補足規範無法涵蓋的命名、法律與市場問題，作為治理層與受控素材入口；複雜品牌需要 FAQ 作為 governance API。"
+    status: extracted

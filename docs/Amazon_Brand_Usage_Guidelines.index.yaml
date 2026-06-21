@@ -1,0 +1,96 @@
+title: 'Amazon Brand Usage Guidelines'
+source: 'sources/Amazon_Brand_Usage_Guidelines.pdf'
+date: '2012-10-08'
+language: 'en'
+summary: '這份 display advertising style guide 規範連到 Amazon.com 的廣告如何使用 Amazon 品牌、CTA、logo、色彩、素材與 co-branding。'
+chapters:
+  - id: 'ch-01'
+    title: 'Overview'
+    level: 1
+    order: 1
+    pages: '1'
+    summary: '說明文件目的、審核要求與相關 technical specs 來源，將 Amazon 品牌使用定位為需事前核准的廣告治理議題。'
+    children: []
+  - id: 'ch-02'
+    title: 'Call To Action and Messaging'
+    level: 1
+    order: 2
+    pages: '1-3'
+    summary: '規範 CTA 文案、文字連結、按鈕、大小寫、品牌片語、折扣訊息與不可接受內容。'
+    children:
+      - id: 'ch-02-01'
+        title: 'CTA Overview and Recommended CTAs'
+        level: 2
+        order: 1
+        pages: '1'
+        summary: 'CTA 應短、清楚、與 landing page 行為一致，並依購物與互動情境使用允許文案。'
+      - id: 'ch-02-02'
+        title: 'Amazon Text Link CTAs'
+        level: 2
+        order: 2
+        pages: '2'
+        summary: '規定文字連結字體尺寸、底線樣式、單行長度、顏色一致性、透明度與 .com 用法。'
+      - id: 'ch-02-03'
+        title: 'Amazon Branded Button CTAs'
+        level: 2
+        order: 3
+        pages: '2'
+        summary: '一般廣告不得使用 Amazon branded buttons，僅 eCommerce ads 的特定按鈕例外。'
+      - id: 'ch-02-04'
+        title: 'Capitalization, Brand Phrases and Offers'
+        level: 2
+        order: 4
+        pages: '2-3'
+        summary: 'Amazon 必須 title case；專有片語、free offers、shipping discounts、prices 與 sweepstakes 需審核或受限制。'
+      - id: 'ch-02-05'
+        title: 'Restricted and Unacceptable Ad Content'
+        level: 2
+        order: 5
+        pages: '3'
+        summary: '禁止欺騙、錯誤、誤導內容，以及未經明確許可使用 Amazon 專有詞、片語或產品名稱。'
+  - id: 'ch-03'
+    title: 'Logos and Imagery'
+    level: 1
+    order: 3
+    pages: '4-5'
+    summary: '規定 Amazon logo、其他 logo、icons、site elements 與 product imagery 的審核、尺寸、留白、顏色與授權。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Amazon.com Logo Guidelines'
+        level: 2
+        order: 1
+        pages: '4'
+        summary: 'Logo 使用必須核准；最小尺寸為 1 inch 或 72px，留白以字母 o 計算，並列出禁止改圖、缺 smile、陰影與花紋背景等規則。'
+      - id: 'ch-03-02'
+        title: 'Additional Logos, Icons and Product Imagery'
+        level: 2
+        order: 2
+        pages: '5'
+        summary: 'Amazon family logos、icons、site elements 與商品圖需明確核准，素材必須由廣告主擁有或已取得權利。'
+  - id: 'ch-04'
+    title: 'Colors'
+    level: 1
+    order: 4
+    pages: '5'
+    summary: '規範 Amazon Orange、Amazon Blue 與避免模仿 Amazon.com 介面的視覺分離要求。'
+    children: []
+  - id: 'ch-05'
+    title: 'Technical Specs and More'
+    level: 1
+    order: 5
+    pages: '5'
+    summary: '提供 technical specs、eligible ad units、advertiser types 等更多規範入口。'
+    children: []
+  - id: 'ch-06'
+    title: 'Co-Branding'
+    level: 1
+    order: 6
+    pages: '6'
+    summary: '區分 on Amazon 與 off Amazon 廣告中 logo 與 CTA 的使用策略，避免把站內內容與廣告混淆。'
+    children:
+      - id: 'ch-06-01'
+        title: 'Branding On and Off Amazon'
+        level: 2
+        order: 1
+        pages: '6'
+        summary: '站內 placement 強烈不建議使用 Amazon logo；站外 AAP placement 應清楚顯示 Amazon logo 或合適 text link CTA。'

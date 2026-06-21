@@ -1,0 +1,56 @@
+title: 'Discord Brand Guidelines'
+source: 'sources/Discord_BrandGuideline_2021.pdf'
+version: '1.0'
+language: 'en'
+summary: 'Discord 2021 品牌規範，將產品中的社群、對話、狀態與歸屬感轉譯為語氣、標誌、色彩、字體與應用系統。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction'
+    level: 1
+    order: 1
+    pages: '1-12'
+    summary: '定義 Discord 是多元社群的線上歸屬空間，並說明 mission、vision、positioning、tone of voice 與 messaging variations。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Tone of Voice'
+        level: 2
+        order: 1
+        pages: '10-12'
+        summary: '以 playful、original、relatable、reliable 定義語氣，並區分 brand lines、user quotes 與 product value。'
+  - id: 'ch-02'
+    title: 'Logo, Symbol, Wordmark and Tagline'
+    level: 1
+    order: 2
+    pages: '13-25'
+    summary: '規範 Discord logo、Clyde icon、Clyde expressions、wordmark、placement、partner lockup 與使用禁忌。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Logo System'
+        level: 2
+        order: 1
+        pages: '14-18'
+        summary: '說明 logo 組成、small logo、clear space、Clyde 與 wordmark 版本。'
+      - id: 'ch-02-02'
+        title: 'Placement and Usage'
+        level: 2
+        order: 2
+        pages: '19-25'
+        summary: '定義 logo、tagline、partner lockup 位置與成功 / 失敗案例。'
+  - id: 'ch-03'
+    title: 'Brand Colors'
+    level: 1
+    order: 3
+    pages: '26-39'
+    summary: '以 Blurple 為核心，定義品牌色盤、配色、禁用組合、UI colours 與 Community Pattern。'
+  - id: 'ch-04'
+    title: 'Typography'
+    level: 1
+    order: 4
+    pages: '40-52'
+    summary: '規範 Ginto Nord、Whitney、fallback fonts、typestyles、line heights、text lockups、quotes、placement、3D type 與禁用變體。'
+  - id: 'ch-05'
+    title: 'Brand in Use'
+    level: 1
+    order: 5
+    pages: '53-73'
+    summary: '展示 brand lines、community lines、user quotes、chat dialog、audio dialog、end cards、stationery 與 asset library。'

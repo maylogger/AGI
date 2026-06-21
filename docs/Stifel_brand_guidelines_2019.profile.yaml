@@ -1,0 +1,235 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Stifel_brand_guidelines_2019
+index_ref: docs/Stifel_brand_guidelines_2019.index.yaml
+note_ref: docs/Stifel_brand_guidelines_2019.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Compliance
+- Visual Identity
+- Governance
+- Color System
+- Brand Architecture
+- Data Visualization
+- Design Tokens
+- Typography System
+- Photography System
+- Content Safety
+- Operations
+- Legal and Trademark
+- AI-Checkable Rules
+- Content Design
+- Examples
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 8
+  section_count: 2
+chapter_sequence:
+- id: ch-01
+  title: Our Logo
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Logo Colors, Backgrounds and Spacing
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Unacceptable Usage and Name Extensions
+  order: 2
+  level: 2
+- id: ch-02
+  title: Color Palette
+  order: 2
+  level: 1
+- id: ch-03
+  title: Our Typography
+  order: 3
+  level: 1
+- id: ch-04
+  title: Visual Guidelines
+  order: 4
+  level: 1
+- id: ch-05
+  title: Stationery Guidelines
+  order: 5
+  level: 1
+- id: ch-06
+  title: Brand Grammar
+  order: 6
+  level: 1
+- id: ch-07
+  title: Brand Examples
+  order: 7
+  level: 1
+- id: ch-08
+  title: More Information
+  order: 8
+  level: 1
+frameworks:
+- name: identity compliance framework：approved artwork、approved colors、environment checks、minimum dimensions、extension templa...
+  chapter: ch-01
+  chapter_title: Our Logo
+- name: output-aware logo color selection
+  chapter: ch-01-01
+  chapter_title: Logo Colors, Backgrounds and Spacing
+- name: sub-brand containment：department name、group name、individual name 都從屬於 corporate logo
+  chapter: ch-01-02
+  chapter_title: Unacceptable Usage and Name Extensions
+- name: tiered palette framework：brand anchor、complement, information set, asset taxonomy
+  chapter: ch-02
+  chapter_title: Color Palette
+- name: typographic compliance framework
+  chapter: ch-03
+  chapter_title: Our Typography
+- name: financial imagery risk filter：audience fit、message fit、professionalism、permission record、resolution fit
+  chapter: ch-04
+  chapter_title: Visual Guidelines
+- name: controlled template system
+  chapter: ch-05
+  chapter_title: Stationery Guidelines
+- name: brand grammar linting framework
+  chapter: ch-06
+  chapter_title: Brand Grammar
+- name: example-based governance
+  chapter: ch-07
+  chapter_title: Brand Examples
+- name: distributed support routing
+  chapter: ch-08
+  chapter_title: More Information
+patterns:
+- name: 常見企業 logo governance：正確版本、背景條件、clearspace、minimum size、tagline、misuse list、sub-entity lockups。
+  chapter: ch-01
+  chapter_title: Our Logo
+- name: blue preferred、white reversed、black grayscale fallback。
+  chapter: ch-01-01
+  chapter_title: Logo Colors, Backgrounds and Spacing
+- name: 用垂直線、字高比例與單行/多行替代版型處理長名稱。
+  chapter: ch-01-02
+  chapter_title: Unacceptable Usage and Name Extensions
+- name: Level III 擴展資訊分類；Level IV 將語意類別綁定固定色。
+  chapter: ch-02
+  chapter_title: Color Palette
+- name: print primary font + digital fallback + minimum disclosure size。
+  chapter: ch-03
+  chapter_title: Our Typography
+- name: 正向情緒詞 + avoid-list + rights management。
+  chapter: ch-04
+  chapter_title: Visual Guidelines
+- name: 名片限制 custom logos/colors；簽名允許 website、reply email、approved social badge 等連結變體。
+  chapter: ch-05
+  chapter_title: Stationery Guidelines
+- name: formal name first、shortened name conditional、unacceptable variants blacklist。
+  chapter: ch-06
+  chapter_title: Brand Grammar
+- name: brochure cover 可無圖、上方圖或滿版圖；advertisements 隨版位變化但需呈現 Stifel brand。
+  chapter: ch-07
+  chapter_title: Brand Examples
+- name: branding、social media、marketing resources、material request 分流。
+  chapter: ch-08
+  chapter_title: More Information
+rules_ai_checkable:
+- module: Visual Identity
+  criterion: AI 可檢查：logo 不得重新繪製或改變；高度不得低於 0.25 inch 或 17px；寬度不得低於 0.8 inch；clear space 至少為 S cap height 的 1/2；tagline logo
+    高度不得低於 0.4 inch；division name 不得低於 8pt。
+  chapter: ch-01
+  chapter_title: Our Logo
+- module: Visual Identity
+  criterion: AI 可檢查：數位與彩色印刷優先使用 Stifel Blue 或 white；黑版只用於黑白印刷或單色 imprints；影像背景不得干擾 logo；clear space 必須至少為 S 高度的 1/2。
+  chapter: ch-01-01
+  chapter_title: Logo Colors, Backgrounds and Spacing
+- module: ''
+  criterion: AI 可檢查：group name 不得比 Stifel logo 更 prominent；未列明的 division/department name 需 Marketing, Advertising & Graphics
+    特別許可；group name capital letters 高度需依規格為 logo 參照字高的 1/2 或 1/3。
+  chapter: ch-01-02
+  chapter_title: Unacceptable Usage and Name Extensions
+- module: Color System
+  criterion: AI 可檢查：Stifel Blue 必須為 Pantone 540 / RGB 0 48 87 / HEX `#003057`；黑色為 `#000000`；Level III 色彩僅用於 charts、graphs、diagrams；建立
+    asset class chart 時必須使用預先指定的資產類別色。
+  chapter: ch-02
+  chapter_title: Color Palette
+- module: Typography System
+  criterion: AI 可檢查：print communication 使用 Meta Office；digital formatting 使用 Arial；disclosure 通常為 8pt Meta Light Italic；任何
+    type 不得低於 8pt；digital type 不得低於 10pt；body copy 不得 justify；不得 hyphenate。
+  chapter: ch-03
+  chapter_title: Our Typography
+- module: ''
+  criterion: AI 可檢查：不得使用 bags of money、nest eggs、money growing on trees、upward-trending charts 或不符合實際資料的誇張表情；印刷影像需 300dpi；數位需
+    72dpi；使用任何圖像需保留 permission record。
+  chapter: ch-04
+  chapter_title: Visual Guidelines
+- module: ''
+  criterion: AI 可檢查：business cards 不得加入 custom group logos 或 special colors；正面不得列超過兩個名字；三個以上名字應一到兩名在正面、全部在背面；website 必須先通過
+    Marketing, Advertising & Graphics public communications review。
+  chapter: ch-05
+  chapter_title: Stationery Guidelines
+- module: Brand Strategy
+  criterion: AI 可檢查：正式名稱須為 `Stifel, Nicolaus & Company, Incorporated`；母公司為 `Stifel Financial Corp.`；不得使用 `Stifel Nicolaus`、`Stifel
+    Financial`、`Stifel, Nicolaus & Company, Inc.` 等列明變體；句號後與冒號後使用兩個空格；一到九拼字，10 以上用數字；4 位以上整數加逗號。
+  chapter: ch-06
+  chapter_title: Brand Grammar
+- module: Brand Strategy
+  criterion: AI 可檢查：advertisement 必須透過 imagery、color、typography、messaging 呈現品牌；brochure cover 影像使用需符合允許配置；advisor websites
+    可在 Stifel brand 內客製。
+  chapter: ch-07
+  chapter_title: Brand Examples
+chapters:
+- id: ch-01
+  title: Our Logo
+  modules:
+  - Compliance
+  - Visual Identity
+  - Governance
+- id: ch-01-01
+  title: Logo Colors, Backgrounds and Spacing
+  modules:
+  - Color System
+  - Visual Identity
+- id: ch-01-02
+  title: Unacceptable Usage and Name Extensions
+  modules:
+  - Brand Architecture
+  - Governance
+- id: ch-02
+  title: Color Palette
+  modules:
+  - Data Visualization
+  - Color System
+  - Design Tokens
+- id: ch-03
+  title: Our Typography
+  modules:
+  - Compliance
+  - Typography System
+- id: ch-04
+  title: Visual Guidelines
+  modules:
+  - Photography System
+  - Compliance
+  - Content Safety
+- id: ch-05
+  title: Stationery Guidelines
+  modules:
+  - Operations
+  - Governance
+- id: ch-06
+  title: Brand Grammar
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Content Design
+- id: ch-07
+  title: Brand Examples
+  modules:
+  - Examples
+  - Governance
+- id: ch-08
+  title: More Information
+  modules:
+  - Operations
+  - Governance

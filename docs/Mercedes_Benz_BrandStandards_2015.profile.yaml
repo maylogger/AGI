@@ -1,0 +1,355 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Mercedes_Benz_BrandStandards_2015
+index_ref: docs/Mercedes_Benz_BrandStandards_2015.index.yaml
+note_ref: docs/Mercedes_Benz_BrandStandards_2015.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Legal and Trademark
+- Compliance
+- Operations
+- Governance
+- Knowledge Architecture
+- AI-Checkable Rules
+- Brand Strategy
+- Messaging
+- Content Design
+- Voice and Tone
+- Measurement
+- Layout System
+- Typography System
+- Visual Identity
+- Product Language
+depth:
+  strategy: medium
+  visual: medium
+  governance: high
+  top_level_chapter_count: 4
+  section_count: 12
+chapter_sequence:
+- id: ch-01
+  title: Introduction and Legal Summary
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Program Scope
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Legal and Consultation
+  order: 2
+  level: 2
+- id: ch-02
+  title: 'Section I: Category I Infractions'
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Language Usage
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Monthly Sales Program Guide Compliance
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Fleet and AOI
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Strategy Compatibility and Service Marketing
+  order: 4
+  level: 2
+- id: ch-02-05
+  title: Category I Strike Policy
+  order: 5
+  level: 2
+- id: ch-03
+  title: 'Section II: Category II Brand Standards'
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Brand Separation and Marks
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Typography and Panorama Layout
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Co-Branding and Corporate Typeface
+  order: 3
+  level: 2
+- id: ch-03-04
+  title: Names, Nomenclature and Assets
+  order: 4
+  level: 2
+- id: ch-03-05
+  title: Category II Infraction Policy
+  order: 5
+  level: 2
+- id: ch-04
+  title: Legal Disclaimer Language
+  order: 4
+  level: 1
+frameworks:
+- name: governance chain：dealer communication → MBBCS rules → MBCCS consult/monitoring → bonus eligibility → brand equity
+    pro...
+  chapter: ch-01
+  chapter_title: Introduction and Legal Summary
+- name: scope matrix：vehicle/service × paid/non-paid × offline/digital × dealer/AOI
+  chapter: ch-01-01
+  chapter_title: Program Scope
+- name: consultation lifecycle：question → pre-approval → validity window → monitoring → eligibility decision
+  chapter: ch-01-02
+  chapter_title: Legal and Consultation
+- name: severity-based compliance：Category I = brand-harm / bonus-risk；Category II = consistency / best practice
+  chapter: ch-02
+  chapter_title: 'Section I: Category I Infractions'
+- name: language risk ladder：pricing disclosure → incentive framing → distress terms → unsupported claims → misleading vehicl...
+  chapter: ch-02-01
+  chapter_title: Language Usage
+- name: source-of-truth compliance：offer claim → official guide → date range → disclosure → placement
+  chapter: ch-02-02
+  chapter_title: Monthly Sales Program Guide Compliance
+- name: market governance：program type → eligibility → geography → competitive impact
+  chapter: ch-02-03
+  chapter_title: Fleet and AOI
+- name: brand-fit review：message → medium → service/product context → prestige impact → compliance outcome
+  chapter: ch-02-04
+  chapter_title: Strategy Compatibility and Service Marketing
+- name: violation → strike → eligibility impact → remediation/monitoring
+  chapter: ch-02-05
+  chapter_title: Category I Strike Policy
+- name: identity system → layout principle → applications → co-branding → policy
+  chapter: ch-03
+  chapter_title: 'Section II: Category II Brand Standards'
+- name: mark governance：asset version → context → proximity → hierarchy → approval
+  chapter: ch-03-01
+  chapter_title: Brand Separation and Marks
+- name: layout grammar：visual field → headline/subheadline → brand mark → offer/disclaimer → dealer information
+  chapter: ch-03-02
+  chapter_title: Typography and Panorama Layout
+- name: co-brand hierarchy：primary brand → partner role → lockup spacing → typography consistency
+  chapter: ch-03-03
+  chapter_title: Co-Branding and Corporate Typeface
+- name: asset governance：approved name → approved visual asset → usage context → reproduction quality
+  chapter: ch-03-04
+  chapter_title: Names, Nomenclature and Assets
+- name: minor/major identity issue → notice → correction → infraction record
+  chapter: ch-03-05
+  chapter_title: Category II Infraction Policy
+- name: claim-to-disclaimer mapping：claim type → required disclaimer → placement/readability → legal review
+  chapter: ch-04
+  chapter_title: Legal Disclaimer Language
+patterns:
+- name: 適合 franchise / dealer network 的 guideline pattern：先建立金錢激勵與稽核後果，再進入語言與視覺規則。
+  chapter: ch-01
+  chapter_title: Introduction and Legal Summary
+- name: inclusive of, but not limited to
+  chapter: ch-01-01
+  chapter_title: Program Scope
+- name: 大型品牌常用 review service 將靜態 guideline 延伸成活的審核機制。
+  chapter: ch-01-02
+  chapter_title: Legal and Consultation
+- name: 禁用語 + 可接受替代語
+  chapter: ch-02
+  chapter_title: 'Section I: Category I Infractions'
+- name: 可說 / 不可說 / 需加註
+  chapter: ch-02-01
+  chapter_title: Language Usage
+- name: 把外部生成素材限制在官方 offer schema 內，是分散式行銷治理的核心模式。
+  chapter: ch-02-02
+  chapter_title: Monthly Sales Program Guide Compliance
+- name: 地理與方案權限是 dealer guideline 的必要維度。
+  chapter: ch-02-03
+  chapter_title: Fleet and AOI
+- name: 結合 hard rules 與 strategic fit 是成熟 guideline 的特徵。
+  chapter: ch-02-04
+  chapter_title: Strategy Compatibility and Service Marketing
+- name: 嚴重違規章節結尾配置 enforcement overview，可提升規則權重。
+  chapter: ch-02-05
+  chapter_title: Category I Strike Policy
+- name: 以 Panorama layout 作為跨媒介版面母型，讓不同素材有一致的品牌空間感。
+  chapter: ch-03
+  chapter_title: 'Section II: Category II Brand Standards'
+- name: 可使用版本
+  chapter: ch-03-01
+  chapter_title: Brand Separation and Marks
+- name: 不可形成的關係暗示
+  chapter: ch-03-01
+  chapter_title: Brand Separation and Marks
+- name: 建立 signature layout principle 比只給單張模板更具延展性。
+  chapter: ch-03-02
+  chapter_title: Typography and Panorama Layout
+- name: 用 typeface 做為品牌治理工具，避免 dealer 或 partner 用任意字體稀釋形象。
+  chapter: ch-03-03
+  chapter_title: Co-Branding and Corporate Typeface
+- name: 命名規則與素材庫管理應放在同一治理架構中。
+  chapter: ch-03-04
+  chapter_title: Names, Nomenclature and Assets
+- name: 以風險分級治理品牌錯誤，可避免所有錯誤都被同等處理。
+  chapter: ch-03-05
+  chapter_title: Category II Infraction Policy
+- name: 建立 disclaimer library 是規定型 guideline 的 reusable module。
+  chapter: ch-04
+  chapter_title: Legal Disclaimer Language
+rules_ai_checkable:
+- module: ''
+  criterion: 任何 Tier 3 新車或服務行銷都應可追溯到 approved standards；法律、lease、APR 與 finance 訊息需由 dealer legal counsel 檢查；MBCCS consult
+    approval 僅在指定期間內有效。
+  chapter: ch-01
+  chapter_title: Introduction and Legal Summary
+- module: ''
+  criterion: consult approval 有效期 60 天；Sales Operations monthly offers 只在該月有效；website review 需保留七日 turnaround；superlative
+    claims 需由 dealer 提供佐證。
+  chapter: ch-01-02
+  chapter_title: Legal and Consultation
+- module: ''
+  criterion: 不得使用 discount、clearance、liquidation、blowout、overstocked、save $X off MSRP 等 distress language；新車價格必須以 MSRP 或 Monthly
+    Sales Program Guide 為基準；未清楚標示 used/CPO 時視為 new vehicle。
+  chapter: ch-02
+  chapter_title: 'Section I: Category I Infractions'
+- module: ''
+  criterion: 文案不得含有 dealer cost、invoice、rebate、cash back、low prices 等價格削弱詞；superlative claims 必須可文件化；starting at price 若搭配非代表車款圖片需揭露。
+  chapter: ch-02-01
+  chapter_title: Language Usage
+- module: Compliance
+  criterion: Lease/APR 數字、期限與資格必須與當月指南一致；過期方案不可延用；必要 disclaimer 不可省略或放到不可讀位置。
+  chapter: ch-02-02
+  chapter_title: Monthly Sales Program Guide Compliance
+- module: ''
+  criterion: Fleet/USAA 溝通不可被一般消費者折扣化理解；AOI 問題應交由 Regional Marketing Manager；不得以跨區促銷掠奪其他經銷商市場。
+  chapter: ch-02-03
+  chapter_title: Fleet and AOI
+- module: ''
+  criterion: 素材不得暗示 Mercedes-Benz 是 economy、discount 或 distressed goods；服務行銷需維持 premium service expectation；媒體環境不得與品牌價值衝突。
+  chapter: ch-02-04
+  chapter_title: Strategy Compatibility and Service Marketing
+- module: Brand Strategy
+  criterion: Mercedes-Benz Star、word mark 與 claim 不得任意變形、重組或與其他品牌混淆；合作夥伴與 pre-owned 溝通需明確分離；版面應遵循指定 typography 與 Panorama
+    結構。
+  chapter: ch-03
+  chapter_title: 'Section II: Category II Brand Standards'
+- module: Brand Strategy
+  criterion: 不得把 Star、word mark 或 claim 與非核准品牌鎖定；pre-owned 與新車訊息需清楚區分；不得讓合作夥伴視覺高於 Mercedes-Benz 品牌層級。
+  chapter: ch-03-01
+  chapter_title: Brand Separation and Marks
+- module: Typography System
+  criterion: 標題、副標與 disclaimer 應遵循指定層級；不得用擁擠折扣版面破壞 panorama 空間；版面需保留品牌標誌可讀性與資訊清楚度。
+  chapter: ch-03-02
+  chapter_title: Typography and Panorama Layout
+- module: Typography System
+  criterion: 合作素材不得暗示未授權 endorsement；corporate typeface 應用在指定品牌文字層級；partner mark 不應壓過 Mercedes-Benz mark。
+  chapter: ch-03-03
+  chapter_title: Co-Branding and Corporate Typeface
+- module: ''
+  criterion: 車型命名需符合 Mercedes-Benz nomenclature；未授權 art、photo、video 不可替代官方素材；dealer trade name 應遵循指定格式。
+  chapter: ch-03-04
+  chapter_title: Names, Nomenclature and Assets
+- module: ''
+  criterion: 含 airbag、radio、print offer 或 prepaid maintenance claims 的素材需使用對應 disclaimer；disclaimer 不得缺漏、過期或小到不可讀；金融與服務條款需與主張一致。
+  chapter: ch-04
+  chapter_title: Legal Disclaimer Language
+chapters:
+- id: ch-01
+  title: Introduction and Legal Summary
+  modules:
+  - Legal and Trademark
+  - Compliance
+  - Operations
+  - Governance
+- id: ch-01-01
+  title: Program Scope
+  modules:
+  - Compliance
+  - Operations
+  - Knowledge Architecture
+- id: ch-01-02
+  title: Legal and Consultation
+  modules:
+  - Compliance
+  - Operations
+  - Governance
+- id: ch-02
+  title: 'Section I: Category I Infractions'
+  modules:
+  - AI-Checkable Rules
+  - Compliance
+  - Brand Strategy
+  - Messaging
+- id: ch-02-01
+  title: Language Usage
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+- id: ch-02-02
+  title: Monthly Sales Program Guide Compliance
+  modules:
+  - Legal and Trademark
+  - Compliance
+  - Operations
+- id: ch-02-03
+  title: Fleet and AOI
+  modules:
+  - Compliance
+  - Operations
+  - Governance
+- id: ch-02-04
+  title: Strategy Compatibility and Service Marketing
+  modules:
+  - Measurement
+  - Brand Strategy
+  - Governance
+- id: ch-02-05
+  title: Category I Strike Policy
+  modules:
+  - Measurement
+  - Compliance
+  - Governance
+- id: ch-03
+  title: 'Section II: Category II Brand Standards'
+  modules:
+  - Legal and Trademark
+  - Layout System
+  - Typography System
+  - Visual Identity
+- id: ch-03-01
+  title: Brand Separation and Marks
+  modules:
+  - Legal and Trademark
+  - Visual Identity
+  - Governance
+- id: ch-03-02
+  title: Typography and Panorama Layout
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Typography System
+- id: ch-03-03
+  title: Co-Branding and Corporate Typeface
+  modules:
+  - Legal and Trademark
+  - Typography System
+- id: ch-03-04
+  title: Names, Nomenclature and Assets
+  modules:
+  - Legal and Trademark
+  - Product Language
+  - Governance
+- id: ch-03-05
+  title: Category II Infraction Policy
+  modules:
+  - Measurement
+  - Compliance
+  - Governance
+- id: ch-04
+  title: Legal Disclaimer Language
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Compliance

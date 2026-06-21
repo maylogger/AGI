@@ -1,0 +1,147 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: destination_canada_brand_booklet
+index_ref: docs/destination_canada_brand_booklet.index.yaml
+note_ref: docs/destination_canada_brand_booklet.note.md
+archetype: brand_experience_guide
+industry: public_sector
+modules:
+- Brand Strategy
+- Visual Language
+- Messaging
+- Knowledge Architecture
+- Typography System
+- Color System
+- Visual Identity
+- Voice and Tone
+- Governance
+- Operations
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 5
+  section_count: 7
+chapter_sequence:
+- id: ch-01
+  title: Welcome and Brand Narrative
+  order: 1
+  level: 1
+- id: ch-02
+  title: Brand Architecture
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Our Belief
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Our Promise
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Our Signature
+  order: 3
+  level: 2
+- id: ch-03
+  title: Visual Identity
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Our Logo
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Our Typography
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Our Colours
+  order: 3
+  level: 2
+- id: ch-04
+  title: Brand Behaviour
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Behaviour Set
+  order: 1
+  level: 2
+- id: ch-05
+  title: Au Revoir / Goodbye
+  order: 5
+  level: 1
+frameworks:
+- name: 採用「世界需要更多加拿大 → 旅行者擁有 open minds / intrepid spirits → Canada for glowing hearts」的敘事漏斗
+  chapter: ch-01
+  chapter_title: Welcome and Brand Narrative
+- name: North Star belief → traveller promise → public signature 的三段式決策框架
+  chapter: ch-02
+  chapter_title: Brand Architecture
+- name: 主標誌規則 → typography → primary colour → secondary palette 的基礎 identity toolkit
+  chapter: ch-03
+  chapter_title: Visual Identity
+- name: 六個 brand behaviours 形成行為檢核清單：spark、invite、unleash、stay、be、speak
+  chapter: ch-04
+  chapter_title: Brand Behaviour
+- name: guideline completion → personal story prompt → hashtag / booth / mail submission
+  chapter: ch-05
+  chapter_title: Au Revoir / Goodbye
+patterns:
+- name: 可複用為目的地品牌的 emotional onboarding pattern：用 manifesto 先定義目的地的精神角色。
+  chapter: ch-01
+  chapter_title: Welcome and Brand Narrative
+- name: 可複用為品牌核心頁：信念負責內部決策，承諾負責體驗品質，signature 負責外部記憶。
+  chapter: ch-02
+  chapter_title: Brand Architecture
+- name: 以國旗色作主色、以地理意象命名次色，適合目的地品牌建立易記色彩系統。
+  chapter: ch-03
+  chapter_title: Visual Identity
+- name: 品牌人格 → 可觀察行為 → 受眾感受
+  chapter: ch-04
+  chapter_title: Brand Behaviour
+- name: 可複用為內部品牌上線手冊的 activation ending。
+  chapter: ch-05
+  chapter_title: Au Revoir / Goodbye
+rules_ai_checkable:
+- module: ''
+  criterion: logo 預設使用紅色；紅色或深色背景使用白色反白；最小尺寸 10 mm 或 28 px；avatar 僅作社群頭像；favicon 使用指定小尺寸。
+  chapter: ch-03
+  chapter_title: Visual Identity
+- module: Brand Strategy
+  criterion: 溝通應具備至少一項行為證據；不得冷漠、排外、過度制式或只講功能；語氣應誠實、開放、樂於協作。
+  chapter: ch-04
+  chapter_title: Brand Behaviour
+chapters:
+- id: ch-01
+  title: Welcome and Brand Narrative
+  modules:
+  - Brand Strategy
+  - Visual Language
+  - Messaging
+- id: ch-02
+  title: Brand Architecture
+  modules:
+  - Brand Strategy
+  - Messaging
+  - Knowledge Architecture
+- id: ch-03
+  title: Visual Identity
+  modules:
+  - Typography System
+  - Color System
+  - Visual Identity
+- id: ch-04
+  title: Brand Behaviour
+  modules:
+  - Brand Strategy
+  - Voice and Tone
+  - Governance
+- id: ch-05
+  title: Au Revoir / Goodbye
+  modules:
+  - Messaging
+  - Operations

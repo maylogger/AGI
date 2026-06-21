@@ -1,0 +1,79 @@
+title: "Identité Visuelle Musée Zadkine"
+source: "sources/Musee_zadkine.pdf"
+language: "fr"
+summary: "Musée Zadkine 的視覺識別規範，定義基礎元素、紙品、導視、出版、電子出版與衍生商品，並需遵守巴黎市政府的總體規則。"
+chapters:
+  - id: "ch-01"
+    title: "Les éléments de base"
+    level: 1
+    order: 1
+    pages: "3-16"
+    summary: "定義 logotype 色彩版本、最小尺寸、邊距、cartouche、cohabitation、禁用項、影像、色彩與字體。"
+    children:
+      - id: "ch-01-01"
+        title: "Le logotype"
+        level: 2
+        order: 1
+        pages: "4-8"
+        summary: "提供 Granit、Ébène、Noyer、黑、白等 logo 版本與 CMYK/RVB/Pantone 值。"
+      - id: "ch-01-02"
+        title: "Taille, marge et cartouche"
+        level: 2
+        order: 2
+        pages: "9"
+        summary: "設定 logo 最小寬度 30 mm、四周邊距為 logo 寬度 1/20，並定義 cartouche 使用。"
+      - id: "ch-01-03"
+        title: "Cohabitation and Interdits"
+        level: 2
+        order: 3
+        pages: "10-11"
+        summary: "規範多 logo 水平排列、基線對齊、左右間距與十大禁用方式。"
+      - id: "ch-01-04"
+        title: "Iconography, Color and Typography"
+        level: 2
+        order: 4
+        pages: "12-16"
+        summary: "影像偏好材質與觸感；色彩取自木、石等雕塑材料；字體以 Helvetica Neue 為主、Arial 為替代。"
+  - id: "ch-02"
+    title: "La papeterie"
+    level: 1
+    order: 2
+    pages: "17-24"
+    summary: "規範名片、信紙、卡片、信封、便條紙、電子簽名與印章等日常文具應用。"
+  - id: "ch-03"
+    title: "La signalétique"
+    level: 1
+    order: 3
+    pages: "25-29"
+    summary: "規範 institutional/exhibition banners、入口門面與 badges。"
+  - id: "ch-04"
+    title: "L’édition"
+    level: 1
+    order: 4
+    pages: "30-53"
+    summary: "規範 institutional 與 event communication 的海報、卡片、摺頁、邀請卡、flyer、新聞稿、press kit、資料夾、廣告、展覽目錄與 co-editions。"
+    children:
+      - id: "ch-04-01"
+        title: "Communication institutionnelle"
+        level: 2
+        order: 1
+        pages: "30-38"
+        summary: "處理機構型海報、明信片與依巴黎市政府 charte 的參觀摺頁/宣傳摺頁。"
+      - id: "ch-04-02"
+        title: "Communication évènementielle"
+        level: 2
+        order: 2
+        pages: "39-53"
+        summary: "處理展覽型海報、邀請卡、flyer、新聞稿、press kit、廣告與 co-editions。"
+  - id: "ch-05"
+    title: "L’édition électronique"
+    level: 1
+    order: 5
+    pages: "54-62"
+    summary: "規範 web invitation、animated banners 與 e-newsletter，包含 jpg/pdf 用法與 728x90、160x600、300x250 等尺寸。"
+  - id: "ch-06"
+    title: "Produits dérivés"
+    level: 1
+    order: 6
+    pages: "63-69"
+    summary: "規範筆、馬克杯、袋子、書籤等博物館衍生品的品牌應用。"

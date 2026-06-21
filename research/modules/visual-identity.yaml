@@ -1,0 +1,67 @@
+# L2 固定知識 — Visual Identity（Logo 與核心識別資產）
+# schema：research/schemas/module_knowledge.schema.yaml
+
+module: Visual Identity
+slug: visual-identity
+foundational: true
+layer: visual_core
+purpose: 定義並保護品牌最核心的識別資產（logo、lockup、標誌系統），確保跨情境可辨識且不可任意改造。
+problem_when_absent: 各方自行縮放、改色、重建 logo，品牌辨識度與法律保護崩解。
+corpus_frequency:
+  doc_count: 112
+  pct: 87.5
+
+driven_by:
+  - input: brand_architecture
+    affects: logo_system_complexity
+    mapping:
+      - when: [single_brand]
+        tend_to: [單一主 logo + 少量變體, clearspace 與最小尺寸即足夠]
+        evidence:
+          - {brand_id: DFPI_BrandGuidelines, chapter: ch-02}
+      - when: [parent_child, multi_brand, cobrand_heavy]
+        tend_to: [logo 選用矩陣, 母子品牌 lockup, co-branding 主從規則, 背書層級]
+        evidence:
+          - {brand_id: WouldBankGroup_Branding_Visual_Identity_Guidelines_2016}
+          - {brand_id: HP_CoBranding_Guidelines_2020}
+  - input: brand_personality
+    affects: identity_construction_logic
+    mapping:
+      - when: [system_driven, innovative]
+        tend_to: [logo 連結幾何或品牌概念, 可組合的識別工具箱]
+        evidence:
+          - {brand_id: 3M_Visual_Identity_Guidelines_2015, chapter: ch-02-02}
+      - when: [heritage, premium]
+        tend_to: [wordmark 為主, 嚴格比例與留白, 強調不可改造的歷史資產]
+        evidence:
+          - {brand_id: CalvinKlein_Logo&GraphicGuidelines_2017}
+  - input: compliance_needs
+    affects: legal_governance_depth
+    mapping:
+      - when: [trademark]
+        tend_to: [TM 標示規則, 商標文字使用, 授權與第三方使用條款]
+        evidence:
+          - {brand_id: Nintendo_Corporate_Identity_Graphics_Standards_Manual_2008}
+          - {brand_id: 3M_Visual_Identity_Guidelines_2015, chapter: ch-02-02}
+
+spec_dimensions:
+  - 主 logo / lockup / 變體
+  - clearspace（留白）
+  - 最小尺寸
+  - 色彩版本（正/負/單色）
+  - 放置與背景規則
+  - 禁用範例
+  - 商標（TM/®）與法律標示
+
+related_decision_patterns:
+  - dp-logo-vs-lockup-distinction
+  - dp-clearspace-from-logo-geometry
+
+dependencies:
+  requires: []
+  recommends: [Color System, Typography System, Legal and Trademark, Governance]
+
+reference_brands:
+  - 3M_Visual_Identity_Guidelines_2015
+  - DFPI_BrandGuidelines
+  - WouldBankGroup_Branding_Visual_Identity_Guidelines_2016

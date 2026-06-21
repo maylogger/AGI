@@ -1,0 +1,275 @@
+title: "AXA Design Principles"
+source: "sources/AXA_Design_principles_2017.pdf"
+date: "2017-05"
+language: "en"
+summary: "AXA 設計原則將品牌目的、標誌、Switch 視覺裝置、色彩、字體、語氣、影像、插畫、版面、動畫與品牌合作整合成可跨媒介使用的品牌系統。"
+chapters:
+  - id: "ch-01"
+    title: "A New Direction"
+    level: 1
+    order: 1
+    pages: "3-9"
+    summary: "建立 AXA 從 protect/payer 轉向 empower/partner 的品牌方向，並把 human、modern、simple 轉成設計系統目標。"
+    children:
+      - id: "ch-01-01"
+        title: "Welcome"
+        level: 2
+        order: 1
+        pages: "3"
+        summary: "說明 AXA 正轉向以顧客為中心的品牌旅程。"
+      - id: "ch-01-02"
+        title: "Being More Iconic"
+        level: 2
+        order: 2
+        pages: "5"
+        summary: "以 Airbnb、Nike、Apple 等案例說明符號如何承載品牌意義。"
+      - id: "ch-01-03"
+        title: "Kit of Parts"
+        level: 2
+        order: 3
+        pages: "9"
+        summary: "列出 Logo、Switch、色彩、字體、語氣、攝影、插畫與版面等核心零件。"
+  - id: "ch-02"
+    title: "The Logo"
+    level: 1
+    order: 2
+    pages: "10-14"
+    summary: "定義 solid logo 與 open blue/white logo 的角色、使用情境、可見性與禁止用法。"
+    children:
+      - id: "ch-02-01"
+        title: "Three Key Principles"
+        level: 2
+        order: 1
+        pages: "11"
+        summary: "說明三種 logo 版本與不再把 tagline 鎖定於 logo 的改變。"
+      - id: "ch-02-02"
+        title: "Logo Versions"
+        level: 2
+        order: 2
+        pages: "12"
+        summary: "區分 solid、open blue、open white 的背景與媒介情境。"
+      - id: "ch-02-03"
+        title: "What Does Not Work"
+        level: 2
+        order: 3
+        pages: "14"
+        summary: "禁止改變 logo、stroke、版本與 tagline lockup。"
+  - id: "ch-03"
+    title: "The Switch"
+    level: 1
+    order: 3
+    pages: "15-42"
+    summary: "把 AXA logo 內的 Switch 轉為敘事裝置，分為 hero、list、cropped、outline 四種用途。"
+    children:
+      - id: "ch-03-01"
+        title: "Hero"
+        level: 2
+        order: 1
+        pages: "18-28"
+        summary: "用於最高衝擊力的顧客故事，Switch 需與影像或插畫互動。"
+      - id: "ch-03-02"
+        title: "List"
+        level: 2
+        order: 2
+        pages: "29-31"
+        summary: "用垂直進程表現顧客與 AXA 的合作旅程。"
+      - id: "ch-03-03"
+        title: "Cropped and Outline"
+        level: 2
+        order: 3
+        pages: "32-40"
+        summary: "在無人物或高端溝通中使用裁切或線框 Switch。"
+  - id: "ch-04"
+    title: "Colour"
+    level: 1
+    order: 4
+    pages: "43-48"
+    summary: "定義 AXA 色彩規格、組合表與錯誤用法，支援 Switch、背景與溝通層級。"
+    children:
+      - id: "ch-04-01"
+        title: "Specifications"
+        level: 2
+        order: 1
+        pages: "45"
+        summary: "提供色彩數值與角色。"
+      - id: "ch-04-02"
+        title: "Combination Table"
+        level: 2
+        order: 2
+        pages: "47"
+        summary: "說明色彩搭配與對比選擇。"
+  - id: "ch-05"
+    title: "Typography"
+    level: 1
+    order: 5
+    pages: "49-57"
+    summary: "規範 AXA 字體、排版使用與錯誤用法，讓訊息可讀且與 Switch 互動一致。"
+    children:
+      - id: "ch-05-01"
+        title: "Typefaces"
+        level: 2
+        order: 1
+        pages: "51"
+        summary: "列出主要字體與角色。"
+      - id: "ch-05-02"
+        title: "How to Use It"
+        level: 2
+        order: 2
+        pages: "52-56"
+        summary: "說明標題、內文、對齊與階層的使用。"
+  - id: "ch-06"
+    title: "Tone of Voice"
+    level: 1
+    order: 6
+    pages: "58-64"
+    summary: "定義 AXA 語氣如何看大局、處理當下、呈現進展並撰寫 body copy。"
+    children:
+      - id: "ch-06-01"
+        title: "Three Key Principles"
+        level: 2
+        order: 1
+        pages: "59"
+        summary: "建立語氣核心原則。"
+      - id: "ch-06-02"
+        title: "Looking at the Bigger Picture"
+        level: 2
+        order: 2
+        pages: "61"
+        summary: "要求訊息連結長期目的。"
+      - id: "ch-06-03"
+        title: "Dealing with the Now"
+        level: 2
+        order: 3
+        pages: "62"
+        summary: "要求回應顧客當下需求。"
+      - id: "ch-06-04"
+        title: "Showing Progression"
+        level: 2
+        order: 4
+        pages: "63"
+        summary: "以進展感支援品牌旅程。"
+  - id: "ch-07"
+    title: "Photography"
+    level: 1
+    order: 7
+    pages: "65-70"
+    summary: "定義 forward-moving people、forward-looking people 與 products 的影像方向及禁例。"
+    children:
+      - id: "ch-07-01"
+        title: "Forward-Moving People"
+        level: 2
+        order: 1
+        pages: "67"
+        summary: "呈現人物行動與前進感。"
+      - id: "ch-07-02"
+        title: "Forward-Looking People"
+        level: 2
+        order: 2
+        pages: "68"
+        summary: "呈現面向未來與樂觀情緒。"
+      - id: "ch-07-03"
+        title: "Products"
+        level: 2
+        order: 3
+        pages: "69"
+        summary: "說明產品影像如何支援故事。"
+  - id: "ch-08"
+    title: "Illustration"
+    level: 1
+    order: 8
+    pages: "71-82"
+    summary: "規範插畫概覽、故事、風格原則、主題、使用方式與禁例。"
+    children:
+      - id: "ch-08-01"
+        title: "Storytelling"
+        level: 2
+        order: 1
+        pages: "74"
+        summary: "說明插畫如何支援 AXA 故事。"
+      - id: "ch-08-02"
+        title: "Style Principles"
+        level: 2
+        order: 2
+        pages: "75-78"
+        summary: "建立插畫風格與比例原則。"
+      - id: "ch-08-03"
+        title: "Themes and Usage"
+        level: 2
+        order: 3
+        pages: "79-81"
+        summary: "說明主題、使用情境與限制。"
+  - id: "ch-09"
+    title: "Grid and Layout"
+    level: 1
+    order: 9
+    pages: "83-109"
+    summary: "定義基本版面、格式、identifier、hero/list/cropped 版型、body copy、spreads 與禁例。"
+    children:
+      - id: "ch-09-01"
+        title: "Introduction and Overview"
+        level: 2
+        order: 1
+        pages: "83-86"
+        summary: "建立網格與版面基礎。"
+      - id: "ch-09-02"
+        title: "Hero Formats"
+        level: 2
+        order: 2
+        pages: "90-94"
+        summary: "規範 hero Switch 在不同方向與尺寸中的配置。"
+      - id: "ch-09-03"
+        title: "List and Cropped Formats"
+        level: 2
+        order: 3
+        pages: "95-100"
+        summary: "規範 list/cropped 溝通的格式與定位。"
+      - id: "ch-09-04"
+        title: "Body Copy and Spreads"
+        level: 2
+        order: 4
+        pages: "103-106"
+        summary: "說明內文與跨頁版面。"
+  - id: "ch-10"
+    title: "Animation"
+    level: 1
+    order: 10
+    pages: "110-117"
+    summary: "說明動畫中的 key principles、使用方式與錯誤用法。"
+    children:
+      - id: "ch-10-01"
+        title: "Three Key Principles"
+        level: 2
+        order: 1
+        pages: "111"
+        summary: "建立動態使用原則。"
+      - id: "ch-10-02"
+        title: "How to Use It"
+        level: 2
+        order: 2
+        pages: "112-116"
+        summary: "說明 motion 中元素如何進入、互動與收束。"
+  - id: "ch-11"
+    title: "Brand Partnership"
+    level: 1
+    order: 11
+    pages: "118-120"
+    summary: "定義 AXA-led、equal、partner-led 三種品牌合作關係與禁例。"
+    children:
+      - id: "ch-11-01"
+        title: "AXA-led"
+        level: 2
+        order: 1
+        pages: "118"
+        summary: "AXA 主導時的品牌層級。"
+      - id: "ch-11-02"
+        title: "Equal"
+        level: 2
+        order: 2
+        pages: "119"
+        summary: "雙方平等時的共同露出。"
+      - id: "ch-11-03"
+        title: "Partner-led"
+        level: 2
+        order: 3
+        pages: "120"
+        summary: "合作方主導時 AXA 的品牌位置。"

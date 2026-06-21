@@ -1,0 +1,119 @@
+# L3 決策卡 sidecar — Central Bank of Bahrain
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: Central_Bank_of_Bahrain_Brand Identity Guidelines
+decisions:
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗與照片複雜度建立對比決策樹，限定白／深色兩種標誌
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - Logo 顏色規範應基於對比與背景風險，而非只列色票
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: Central_Bank_of_Bahrain_Brand Identity Guidelines
+        chapter: ch-01
+        excerpt: "以 background brightness / reproduction mode 決定 logo 版本：light 用 primary，dark 用 white reverse，黑白/灰階用 black-only。"
+    status: extracted
+
+  - id: dp-contact-before-appendix
+    title: 在技術資料前先給治理窗口，讓 guideline 成為可改善系統
+    problem:
+      statement: 規則無法涵蓋所有情境，缺乏權威決策入口時，例外用法無人裁決。
+      signals: [exceptions_expected, governance]
+    solution:
+      module: Governance
+      move: 在主內容與 appendix 之間放置聯絡窗口與核准／回饋入口
+      layer: governance
+    reason:
+      - 規則無法涵蓋所有情境，必須提供權威決策入口
+      - guideline 應包含 owner 與 feedback channel，而非靜態文件
+      - guideline 需要 owner 與 feedback channel
+    applicable_when:
+      industries: [finance]
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit, logo_asset_guidelines]
+    dependencies:
+      requires: [Governance]
+      enables: [Operations]
+    evidence:
+      - brand_id: Central_Bank_of_Bahrain_Brand Identity Guidelines
+        chapter: ch-06
+        excerpt: "越精簡的 guideline 越需要清楚的 escalation channel；若使用情境未被本指南涵蓋，應向 External Communications Unit 確認。"
+    status: extracted
+
+  - id: dp-name-usage-governance
+    title: 用名稱使用規則治理品牌正式稱謂與縮寫，避免權威被稀釋
+    problem:
+      statement: 品牌的正式名稱、縮寫與商標符號若放任各單位、媒體或文件自由書寫，會出現多種非正式簡稱與錯誤寫法，稀釋機構權威與商標權利。
+      signals: [name_governance, trademark, abbreviation_misuse, authority_dilution]
+    solution:
+      module: Legal and Trademark
+      move: 明訂首次提及用全名、後續用核准縮寫，並列出禁用變體與商標符號規則
+      layer: governance
+    reason:
+      - 機構或商標型品牌的名稱本身是信任與法律資產，不能被隨意簡化
+      - 用「首次提及／後續縮寫／禁用變體」三段式規則可直接轉成 copy lint
+      - 名稱治理是品牌系統的一部分，與 logo 一樣維持識別一致
+    applicable_when:
+      industries: [finance, public_sector, luxury_premium]
+      brand_types: [institutional_public_trust, heritage_legacy, premium_luxury]
+      conditions: [trademark, name_governance]
+      archetypes: [corporate_toolkit, brand_experience_guide, logo_asset_guidelines]
+    dependencies:
+      requires: [Governance]
+      enables: [Content Design, Legal and Trademark]
+    anti_patterns:
+      - 只給 logo 規範卻不規範文字中的名稱與縮寫寫法
+      - 放任媒體與內部文件自創簡稱
+    evidence:
+      - brand_id: Central_Bank_of_Bahrain_Brand Identity Guidelines
+        chapter: ch-03
+        excerpt: "首次引用使用 Central Bank of Bahrain，後續使用 CBB；禁用 Bahrain’s Central Bank、Central Bank、CB of Bahrain、CB，金融監管機構的名稱是信任資產。"
+    status: extracted
+
+  - id: dp-bilingual-identity-system
+    title: 用語言平權的雙語標誌與分語字體治理多語品牌
+    problem:
+      statement: 跨語言、跨文化的品牌若只把標誌與字體做翻譯版本，會讓某一語言層被視為附屬裝飾，並在多語環境出現字形、排序與可讀性不一致。
+      signals: [multilingual, bilingual, localization, cross_cultural_audience]
+    solution:
+      module: Typography System
+      move: 把語言平權內建到標誌結構（雙語字形融合），並為每種文字系統指定字體、用途與排序規則
+      layer: visual_core
+    reason:
+      - 多語品牌最好把語言平權內建在 logo 結構，而非只做翻譯版本
+      - typography token 應包含 language 維度，為每種文字系統做 role mapping
+      - 明定語言排序與例外法律情境，可降低使用者自行重排雙語標誌的風險
+    applicable_when:
+      industries: [public_sector, finance, education]
+      brand_types: [institutional_public_trust]
+      conditions: [multilingual, localization]
+      archetypes: [brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Visual Identity, Typography System]
+      enables: [Localization, Accessibility]
+    anti_patterns:
+      - 只提供翻譯版本，讓單一語言層支配另一層
+      - 字體規範未標註語言維度，輔助字體污染主識別
+    evidence:
+      - brand_id: Central_Bank_of_Bahrain_Brand Identity Guidelines
+        chapter: ch-05
+        excerpt: "建立英阿雙語文字系統：Zona Pro 用於 English headings、Maven Pro 用於 English body、Cairo 用於 Arabic headings/body；多語品牌需要每種文字系統的 typography role mapping。"
+    status: extracted

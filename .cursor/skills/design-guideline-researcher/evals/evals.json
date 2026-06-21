@@ -1,0 +1,23 @@
+{
+  "skill_name": "design-guideline-researcher",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我把幾份 brand guideline PDF 放進 sources/ 了，請幫我建立 docs/<PDF檔名>.index.yaml 和 docs/<PDF檔名>.note.md。note.md 不要摘要，請從 Design Infrastructure Researcher 角度分析每個章節為什麼被設計成這樣。",
+      "expected_output": "For each new readable PDF in sources/, creates docs/<PDF-name>.index.yaml with chapter structure and docs/<PDF-name>.note.md with the eleven-dimension research analysis, including Visual Evidence.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "sources/ 裡有新舊 PDF 混在一起。已經有完整 index.yaml 和 Design Infrastructure Researcher note.md 的文件不要重做，只有缺 note.md 或還是摘要型筆記的才補上。",
+      "expected_output": "Skips complete outputs, reuses complete index.yaml when possible, rewrites only missing or summary-style note.md files, and reports skipped vs processed PDFs.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "請把這份 design system guideline PDF 轉成 Agentic Guideline Intelligence。index.yaml 要保留章節層級，note.md 要抽象出可重複使用的 framework、pattern、rule 和 module taxonomy。",
+      "expected_output": "Builds a structured index.yaml and a research note that identifies chapter purpose, definitions, relationships, execution methods, principles, frameworks, patterns, rules, reusable knowledge, abstraction categories, and visual evidence usage.",
+      "files": []
+    }
+  ]
+}

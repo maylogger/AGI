@@ -1,0 +1,199 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: ICBA_corporate_Brand_guidelines_2020
+index_ref: docs/ICBA_corporate_Brand_guidelines_2020.index.yaml
+note_ref: docs/ICBA_corporate_Brand_guidelines_2020.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- Compliance
+- Operations
+- Governance
+- Content Design
+- Messaging
+- Legal and Trademark
+- AI-Checkable Rules
+- Visual Identity
+- Layout System
+- Color System
+- Design Tokens
+- Typography System
+- Iconography System
+- Information Design
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 6
+  section_count: 3
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-02
+  title: Our Brand
+  order: 2
+  level: 1
+- id: ch-03
+  title: Logo
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Primary and Secondary Logo
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Minimum Size, Usage and Placement
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Tagline and Trademarks
+  order: 3
+  level: 2
+- id: ch-04
+  title: Color
+  order: 4
+  level: 1
+- id: ch-05
+  title: Typography
+  order: 5
+  level: 1
+- id: ch-06
+  title: Iconography
+  order: 6
+  level: 1
+frameworks:
+- name: brand guideline -> assigned marketing support -> proof review -> production/dissemination
+  chapter: ch-01
+  chapter_title: Introduction
+- name: boilerplate -> mission -> vision
+  chapter: ch-02
+  chapter_title: Our Brand
+- name: primary logo -> secondary logo -> size/space -> placement -> tagline/trademark
+  chapter: ch-03
+  chapter_title: Logo
+- name: primary default + secondary exceptions
+  chapter: ch-03-01
+  chapter_title: Primary and Secondary Logo
+- name: legibility threshold + background contrast + alignment rule
+  chapter: ch-03-02
+  chapter_title: Minimum Size, Usage and Placement
+- name: primary tagline + secondary tagline + mark status + first-mention rule
+  chapter: ch-03-03
+  chapter_title: Tagline and Trademarks
+- name: primary brand color + subsidiary palette + service pillar accents
+  chapter: ch-04
+  chapter_title: Color
+- name: primary typeface + system fallback
+  chapter: ch-05
+  chapter_title: Typography
+- name: single stroke outline + ICBA blue + service/neutral accent
+  chapter: ch-06
+  chapter_title: Iconography
+patterns:
+- name: 在指南前段放置 approval workflow，降低錯誤素材進入量產的機率。
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 將對外敘述集中成可更新來源，並指向網站上的最新版本。
+  chapter: ch-02
+  chapter_title: Our Brand
+- name: 用正確/錯誤範例教育非設計使用者。
+  chapter: ch-03
+  chapter_title: Logo
+- name: logo library 應標明每個版本的合法情境。
+  chapter: ch-03-01
+  chapter_title: Primary and Secondary Logo
+- name: 規定 logo 與 headline/copy 的分離與對齊。
+  chapter: ch-03-02
+  chapter_title: Minimum Size, Usage and Placement
+- name: 用商標清單建立可檢查 vocabulary。
+  chapter: ch-03-03
+  chapter_title: Tagline and Trademarks
+- name: 用 secondary color 表示產品/服務 pillar。
+  chapter: ch-04
+  chapter_title: Color
+- name: 品牌字體搭配 Office fallback。
+  chapter: ch-05
+  chapter_title: Typography
+- name: 雙色圖示一色固定為主品牌色，另一色承載分類或中性用途。
+  chapter: ch-06
+  chapter_title: Iconography
+rules_ai_checkable:
+- module: ''
+  criterion: 所有對外 mass production/dissemination 素材需在最早 proof stage 交由行銷支援人員審核；送審需盡可能提供全彩硬拷貝或 PDF；審核至少預留兩個工作天。
+  chapter: ch-01
+  chapter_title: Introduction
+- module: Brand Strategy
+  criterion: Boilerplate 應使用最新來源；首次提及 Independent Community Bankers of America 應保留 ®；不得改變 mission「create and promote an environment
+    where community banks flourish」的核心語意。
+  chapter: ch-02
+  chapter_title: Our Brand
+- module: Visual Identity
+  criterion: 外部溝通必須出現 ICBA logo；完整 logo 不得小於 1.5 英吋或 110px；swoosh logo 不得小於 0.5 英吋或 35px；不得拉伸、壓縮、傾斜、旋轉、重新上色、加陰影或更改元素位置。
+  chapter: ch-03
+  chapter_title: Logo
+- module: ''
+  criterion: '`The Nation’s Voice for Community Banks®` 是主要 tagline；`One Mission. Community Banks.®` 用於 promotional materials
+    並可供 state associations 使用；兩個 tagline 不應彼此接近；商標或註冊標記僅在文案首次提及加上。'
+  chapter: ch-03-03
+  chapter_title: Tagline and Trademarks
+- module: Color System
+  criterion: Primary palette 應用於所有 ICBA branding；secondary colors 只能作為 ICBA blue 旁的 accent；不得用 secondary color 取代 ICBA blue
+    的主導地位。
+  chapter: ch-04
+  chapter_title: Color
+- module: Iconography System
+  criterion: 圖示需維持視覺上的 stroke weight；accent 只能使用 ICBA blue 加一個 Services Network Subsidiary color 或 ICBA light blue；縮放時不得改變線條視覺重量。
+  chapter: ch-06
+  chapter_title: Iconography
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - Compliance
+  - Operations
+  - Governance
+- id: ch-02
+  title: Our Brand
+  modules:
+  - Content Design
+  - Messaging
+- id: ch-03
+  title: Logo
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-03-01
+  title: Primary and Secondary Logo
+  modules:
+  - Visual Identity
+  - Governance
+- id: ch-03-02
+  title: Minimum Size, Usage and Placement
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+- id: ch-03-03
+  title: Tagline and Trademarks
+  modules:
+  - Legal and Trademark
+  - Content Design
+- id: ch-04
+  title: Color
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-05
+  title: Typography
+  modules:
+  - Typography System
+- id: ch-06
+  title: Iconography
+  modules:
+  - Iconography System
+  - Information Design

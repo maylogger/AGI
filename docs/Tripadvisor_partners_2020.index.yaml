@@ -1,0 +1,92 @@
+title: "Tripadvisor Brand Guidelines for Partners"
+source: "sources/Tripadvisor_partners_2020.pdf"
+date: "2020-03"
+language: "en"
+summary: "Tripadvisor 對合作夥伴使用品牌、評分、評論與行銷素材的規範，兼具 visual identity、內容誠信與審核流程。"
+chapters:
+  - id: "ch-01"
+    title: "Intro"
+    level: 1
+    order: 1
+    pages: "3-4"
+    summary: "說明合作夥伴可使用 Tripadvisor 內容與品牌，但所有材料需先由 Tripadvisor 審核核准。"
+  - id: "ch-02"
+    title: "Visual Identity"
+    level: 1
+    order: 2
+    pages: "5-23"
+    summary: "定義 logo suite、partnership lockups、logo 使用禁忌、獎項 logo、正確命名、色彩與字體。"
+    children:
+      - id: "ch-02-01"
+        title: "Primary and Secondary Logo Suite"
+        level: 2
+        order: 1
+        pages: "6-10"
+        summary: "展示主要與次要 logo family，並列出各版本最小尺寸。"
+      - id: "ch-02-02"
+        title: "Minimum Clearspace and Symbol"
+        level: 2
+        order: 2
+        pages: "11-12"
+        summary: "以 owl pupil 寬度定義 clearspace，並說明 symbol-only 使用條件。"
+      - id: "ch-02-03"
+        title: "Partnership Lockups"
+        level: 2
+        order: 3
+        pages: "13-14"
+        summary: "定義合作 lockup 的水平、垂直排列與至少一個 pupil 寬度的間距。"
+      - id: "ch-02-04"
+        title: "Logo Usage and Don'ts"
+        level: 2
+        order: 4
+        pages: "15-17"
+        summary: "規定 primary/secondary lockup 在背景上的用法，並列出不得裁切、旋轉、加效果、拆解或置於忙碌背景等禁忌。"
+      - id: "ch-02-05"
+        title: "Travelers' Choice Logos"
+        level: 2
+        order: 5
+        pages: "18-19"
+        summary: "定義 Travelers' Choice 與 Best of the Best logo 的用途、最小尺寸、clear space 與本地化拼寫。"
+      - id: "ch-02-06"
+        title: "Proper Name, Color Palette, Typography"
+        level: 2
+        order: 6
+        pages: "20-23"
+        summary: "規定 Tripadvisor 正確大小寫與無空格命名，並列出色彩 palette、比例與 Trip Sans 字體替代層級。"
+  - id: "ch-03"
+    title: "Ratings and Reviews"
+    level: 1
+    order: 3
+    pages: "24-30"
+    summary: "規範評分泡泡、評論引用、評分文字、評分影像與排名引用，保護使用者生成內容的完整性。"
+    children:
+      - id: "ch-03-01"
+        title: "Bubbles"
+        level: 2
+        order: 1
+        pages: "25"
+        summary: "說明 aggregate rating 與 individual traveler rating 的泡泡標示條件。"
+      - id: "ch-03-02"
+        title: "Ratings & Reviews Dos and Don'ts"
+        level: 2
+        order: 2
+        pages: "26-27"
+        summary: "列出評論引用必須加引號、日期、來源語句與禁止捏造、誤導、移用評論等規則。"
+      - id: "ch-03-03"
+        title: "Traveler Rating Text and Image"
+        level: 2
+        order: 3
+        pages: "28-29"
+        summary: "規定 traveler rating 文字、review count、owl 與 bubble graphic 尺寸與顏色。"
+      - id: "ch-03-04"
+        title: "Tripadvisor Ranking"
+        level: 2
+        order: 4
+        pages: "30"
+        summary: "要求引用 popularity ranking 時標註具體年月或日期。"
+  - id: "ch-04"
+    title: "Additional Information"
+    level: 1
+    order: 4
+    pages: "31-32"
+    summary: "規定 logo 與 ratings bubbles 由 Tripadvisor URL 提供、不得本地儲存，並要求活動追蹤與最終內容核准。"

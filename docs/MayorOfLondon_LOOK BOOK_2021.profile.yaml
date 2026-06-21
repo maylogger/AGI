@@ -1,0 +1,328 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: MayorOfLondon_LOOK BOOK_2021
+index_ref: docs/MayorOfLondon_LOOK BOOK_2021.index.yaml
+note_ref: docs/MayorOfLondon_LOOK BOOK_2021.note.md
+archetype: full_brand_system
+industry: public_sector
+modules:
+- Brand Strategy
+- Messaging
+- Governance
+- AI-Checkable Rules
+- Visual Identity
+- Brand Architecture
+- Compliance
+- Iconography System
+- Typography System
+- Voice and Tone
+- Color System
+- Accessibility
+- Content Design
+- Illustration System
+- Operations
+- Photography System
+- Content Safety
+- Knowledge Architecture
+- Layout System
+depth:
+  strategy: high
+  visual: high
+  governance: high
+  top_level_chapter_count: 6
+  section_count: 8
+chapter_sequence:
+- id: ch-01
+  title: Brand Foundation
+  order: 1
+  level: 1
+- id: ch-02
+  title: Our Logos
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo Space, Size and Options
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Partners, Supporters and Sponsors
+  order: 2
+  level: 2
+- id: ch-03
+  title: Core Visual and Content Tools
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Accessibility
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Fonts and Tone of Voice
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Illustration, Iconography and Website
+  order: 3
+  level: 2
+- id: ch-04
+  title: Printed Material
+  order: 4
+  level: 1
+- id: ch-05
+  title: Photography
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Photography Principles and Vetting
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Mayor, Case Studies, Events and Locations
+  order: 2
+  level: 2
+- id: ch-05-03
+  title: Social Shotlist, Consent and Image Library
+  order: 3
+  level: 2
+- id: ch-06
+  title: Templates
+  order: 6
+  level: 1
+frameworks:
+- name: Civic brand framework：brand ownership、core principle、brand principles、tools、recognition
+  chapter: ch-01
+  chapter_title: Brand Foundation
+- name: Logo governance pipeline：request、draft review、format rule、partner hierarchy、approval before publish
+  chapter: ch-02
+  chapter_title: Our Logos
+- name: Logo selection matrix by role
+  chapter: ch-02-01
+  chapter_title: Logo Space, Size and Options
+- name: Co-brand hierarchy：owner、partner、supporter、sponsor
+  chapter: ch-02-02
+  chapter_title: Partners, Supporters and Sponsors
+- name: Toolchain framework：palette、accessibility gate、type system、voice, visual aids、digital guidelines
+  chapter: ch-03
+  chapter_title: Core Visual and Content Tools
+- name: Accessibility compliance checklist：WCAG AA、single-page PDF、tagging、reading order、alt text、legible text、approved colours
+  chapter: ch-03-01
+  chapter_title: Accessibility
+- name: Voice principle to copy check：plain、direct、audience relevant、optimistic
+  chapter: ch-03-02
+  chapter_title: Fonts and Tone of Voice
+- name: Supportive visual aid checklist
+  chapter: ch-03-03
+  chapter_title: Illustration, Iconography and Website
+- name: Print operations checklist：supplier、export standard、stock、size、spine, file copies
+  chapter: ch-04
+  chapter_title: Printed Material
+- name: Civic photography governance：principles、vetting, scenario rules, consent, metadata, library access
+  chapter: ch-05
+  chapter_title: Photography
+- name: Photo vetting scorecard
+  chapter: ch-05-01
+  chapter_title: Photography Principles and Vetting
+- name: Scenario-specific photography checklist
+  chapter: ch-05-02
+  chapter_title: Mayor, Case Studies, Events and Locations
+- name: Photo operations workflow：shot planning、consent, metadata, library access
+  chapter: ch-05-03
+  chapter_title: Social Shotlist, Consent and Image Library
+- name: Template library by output channel
+  chapter: ch-06
+  chapter_title: Templates
+patterns:
+- name: 誰說話
+  chapter: ch-01
+  chapter_title: Brand Foundation
+- name: 怎麼說
+  chapter: ch-01
+  chapter_title: Brand Foundation
+- name: page height divided by 8/6
+  chapter: ch-02
+  chapter_title: Our Logos
+- name: 把使用情境直接綁定不同 logo，而非讓設計師憑感覺選。
+  chapter: ch-02-01
+  chapter_title: Logo Space, Size and Options
+- name: 贊助 logo 不得超過主 logo 三分之一，是簡潔的 hierarchy rule。
+  chapter: ch-02-02
+  chapter_title: Partners, Supporters and Sponsors
+- name: 把 accessibility 放在視覺工具區，而不是附錄，表示它是設計前提。
+  chapter: ch-03
+  chapter_title: Core Visual and Content Tools
+- name: 用 approved contrast pairs 降低設計者自行判斷錯誤。
+  chapter: ch-03-01
+  chapter_title: Accessibility
+- name: 使用 external design 時提醒字體 license，將法務與設計接在一起。
+  chapter: ch-03-02
+  chapter_title: Fonts and Tone of Voice
+- name: 將圖示固定在 80px square 與 1.5pt line weight 形成小型 icon system。
+  chapter: ch-03-03
+  chapter_title: Illustration, Iconography and Website
+- name: 把 spine calculation 寫成公式，讓 production estimate 可重複。
+  chapter: ch-04
+  chapter_title: Printed Material
+- name: do not use photos that
+  chapter: ch-05
+  chapter_title: Photography
+- name: 把品牌原則轉為攝影原則，可跨 campaign 使用。
+  chapter: ch-05-01
+  chapter_title: Photography Principles and Vetting
+- name: 不同內容類型有不同風險：Mayor 需去除政治人物，case studies 需故事性，events 需多角度。
+  chapter: ch-05-02
+  chapter_title: Mayor, Case Studies, Events and Locations
+- name: 用 shotlist 確保活動輸出能支援多平台需求。
+  chapter: ch-05-03
+  chapter_title: Social Shotlist, Consent and Image Library
+- name: 同一 sponsor/supporter logo rule 在 leaflet、certificate、slides、flags、boards 中重複使用，形成一致治理。
+  chapter: ch-06
+  chapter_title: Templates
+rules_ai_checkable:
+- module: Visual Identity
+  criterion: logo 只可使用 Creative team supplied files；不得改動；發布前需送審；print 最小 30mm wide、screen 最小 150px wide；logo clear space 以
+    page height/8 或 landscape/square page height/6 計算，minimum clear space 為 M 高度兩倍。
+  chapter: ch-02
+  chapter_title: Our Logos
+- module: Visual Identity
+  criterion: Double royal poster logo 210mm、A4 70mm、A5 55mm、DL 45mm；light background 用 grey，dark background 用 white；不要使用 GLA
+    logo 推廣 Mayor's work。
+  chapter: ch-02-01
+  chapter_title: Logo Space, Size and Options
+- module: ''
+  criterion: partner logo 需與 Mayor logo 成比例且保留 clear space；sponsor logos 不得大於 Mayor of London logo 的 1/3；sponsor logos 置於
+    artwork bottom under content，並沿 vertical centres 對齊。
+  chapter: ch-02-02
+  chapter_title: Partners, Supporters and Sponsors
+- module: ''
+  criterion: 線上工作至少符合 WCAG 2.1 AA；不得使用未列出的 accessible colour combinations；印刷最小字級 12pt/15pt leading；digital aim 18pt or above；icon
+    80px square、1.5pt line weight。
+  chapter: ch-03
+  chapter_title: Core Visual and Content Tools
+- module: ''
+  criterion: PDF 應 single page export、tag every item、check logical reading order、include alt copy、確保 references/footnotes
+    可讀；線上材料至少 WCAG 2.1 AA。
+  chapter: ch-03-01
+  chapter_title: Accessibility
+- module: Voice and Tone
+  criterion: 外包需確認 Aktiv Grotesk license；minimum print type 12pt/15pt leading；文案應 simple、easy to understand、no jargon、get
+    to the point immediately。
+  chapter: ch-03-02
+  chapter_title: Fonts and Tone of Voice
+- module: Iconography System
+  criterion: icons 必須 relevant 且 easy to understand；所有 icons 以 80px square、1.5pt line weight 建立；illustration 只在 appropriate
+    情境使用。
+  chapter: ch-03-03
+  chapter_title: Illustration, Iconography and Website
+- module: ''
+  criterion: 印刷報價需經 CDS；PDF for print 使用 PDF/X-1a:2001；需含 crop marks and bleed；標準 stock 為 Revive 100 Offset uncoated；spine
+    = No. of pages x paper weight / 2000。
+  chapter: ch-04
+  chapter_title: Printed Material
+- module: ''
+  criterion: 不得使用 previous administration pre-May 2016 images；Mayor 照片需 active and engaging 且 staff/political figures out
+    of shot；個人或群體成為焦點時需先簽 consent；提交影像需標 title、photographer、date、description、attendees、location/borough。
+  chapter: ch-05
+  chapter_title: Photography
+- module: ''
+  criterion: 影像應呈現 recognisable、real、diverse London；不得使用不代表 real Londoners 或看起來 staged 的照片。
+  chapter: ch-05-01
+  chapter_title: Photography Principles and Vetting
+- module: ''
+  criterion: Mayor 應在 real and relatable environments 中互動；approved photos 不應跨 policy areas/campaigns 重複；location photography
+    必須 relevant 且 support the story；avoid scenes without people。
+  chapter: ch-05-02
+  chapter_title: Mayor, Case Studies, Events and Locations
+- module: ''
+  criterion: focus individual/group must sign consent before shoot；images submitted must include title、photographer、date、description、attendees、location
+    including borough；拍攝 Mayor speech/event 時需包含觀眾多元與反應。
+  chapter: ch-05-03
+  chapter_title: Social Shotlist, Consent and Image Library
+- module: ''
+  criterion: video frame panel 可為 85% wide/25% square height 或 base panel 1/3 tile height；minimum type size 37.5pt；leaflet
+    main body max 60 words；supporter logos 通常為 MoL logo 寬度 1/3；event branding artwork 需 high-res print-ready PDF、Pantone references、crop
+    marks/bleed、fonts outlined。
+  chapter: ch-06
+  chapter_title: Templates
+chapters:
+- id: ch-01
+  title: Brand Foundation
+  modules:
+  - Brand Strategy
+  - Messaging
+  - Governance
+- id: ch-02
+  title: Our Logos
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-02-01
+  title: Logo Space, Size and Options
+  modules:
+  - Brand Architecture
+  - Compliance
+- id: ch-02-02
+  title: Partners, Supporters and Sponsors
+  modules:
+  - AI-Checkable Rules
+  - Governance
+- id: ch-03
+  title: Core Visual and Content Tools
+  modules:
+  - Iconography System
+  - Typography System
+  - Voice and Tone
+  - Color System
+  - Accessibility
+- id: ch-03-01
+  title: Accessibility
+  modules:
+  - AI-Checkable Rules
+  - Compliance
+  - Accessibility
+- id: ch-03-02
+  title: Fonts and Tone of Voice
+  modules:
+  - Typography System
+  - Content Design
+  - Voice and Tone
+- id: ch-03-03
+  title: Illustration, Iconography and Website
+  modules:
+  - Illustration System
+  - Iconography System
+- id: ch-04
+  title: Printed Material
+  modules:
+  - AI-Checkable Rules
+  - Operations
+- id: ch-05
+  title: Photography
+  modules:
+  - Photography System
+  - Content Safety
+  - Governance
+- id: ch-05-01
+  title: Photography Principles and Vetting
+  modules:
+  - Photography System
+  - Governance
+- id: ch-05-02
+  title: Mayor, Case Studies, Events and Locations
+  modules:
+  - Photography System
+- id: ch-05-03
+  title: Social Shotlist, Consent and Image Library
+  modules:
+  - Photography System
+  - Operations
+  - Knowledge Architecture
+- id: ch-06
+  title: Templates
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Operations

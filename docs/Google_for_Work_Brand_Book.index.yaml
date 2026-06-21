@@ -1,0 +1,61 @@
+title: 'Google for Work Partner Brand Book'
+source: 'sources/Google_for_Work_Brand_Book.pdf'
+language: 'en'
+summary: 'Google for Work 夥伴品牌手冊，將工作方式願景、受眾心態、語氣、標誌、色彩、標語與字體規範轉成可執行的品牌使用規則。'
+chapters:
+  - id: 'ch-01'
+    title: 'Strategy'
+    level: 1
+    order: 1
+    pages: '4-14'
+    summary: '定義 Google for Work 的工作願景、共享心態、品牌架構、語氣與溝通原則。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Brand Vision Statement'
+        level: 2
+        order: 1
+        pages: '4'
+        summary: '以「work the way you live」說明品牌承諾與工作場景轉變。'
+      - id: 'ch-01-02'
+        title: 'Shared Mindset and Positioning'
+        level: 2
+        order: 2
+        pages: '6-10'
+        summary: '描述科技友善、好奇、樂觀且追求更好工作方式的目標受眾。'
+      - id: 'ch-01-03'
+        title: 'Brand Voice and Tone'
+        level: 2
+        order: 3
+        pages: '11-14'
+        summary: '規範語氣應專業、聰明、輕鬆、有趣且避免自大、術語與硬銷。'
+  - id: 'ch-02'
+    title: 'Brand Elements'
+    level: 1
+    order: 2
+    pages: '15-31'
+    summary: '規範標誌、產品 lockup、夥伴 badge、清除空間、尺寸、色彩、標語與字體使用。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Logo System'
+        level: 2
+        order: 1
+        pages: '15-24'
+        summary: '要求使用提供的標誌檔案，保持比例、構型、清除空間、最小尺寸與背景對比。'
+      - id: 'ch-02-02'
+        title: 'Color Palette'
+        level: 2
+        order: 2
+        pages: '25'
+        summary: '定義灰、藍、紅、黃、綠與 Pantone/CMYK/RGB/Hex 對應，支撐一致視覺身份。'
+      - id: 'ch-02-03'
+        title: 'Tagline and Vision Usage'
+        level: 2
+        order: 3
+        pages: '26-28'
+        summary: '說明 Gone Google 的時態判斷，以及 work the way you live 不應出現在創意素材。'
+      - id: 'ch-02-04'
+        title: 'Typography'
+        level: 2
+        order: 4
+        pages: '29-31'
+        summary: '以 Roboto 為主要字體、Arial 為有限替代，並規範階層、可讀性、字級與行距。'

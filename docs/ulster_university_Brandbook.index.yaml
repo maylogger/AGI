@@ -1,0 +1,106 @@
+title: "Ulster University Brand Handbook"
+source: "sources/ulster_university_Brandbook.pdf"
+version: "1.1"
+date: "March 2019"
+language: "en"
+summary: "Ulster University 的品牌手冊，將 We Believe in Brave 的品牌定位轉譯為語氣、標誌、色彩、字體、資訊圖表、網格與攝影系統。"
+chapters:
+  - id: "ch-01"
+    title: "Brand Overview"
+    level: 1
+    order: 1
+    pages: "3-5"
+    summary: "說明品牌信念、品牌重要性，以及定位與視覺溝通兩大元素如何互相支撐。"
+    children:
+      - id: "ch-01-01"
+        title: "Our Brand Mantra"
+        level: 2
+        order: 1
+        pages: "3"
+        summary: "以 We Believe in Brave 作為行動哲學與創意基準。"
+      - id: "ch-01-02"
+        title: "Why our Brand is Important"
+        level: 2
+        order: 2
+        pages: "4"
+        summary: "將品牌定義為受眾感知，並把手冊定位為創意平台而非僵化公式。"
+      - id: "ch-01-03"
+        title: "Our Brand Elements"
+        level: 2
+        order: 3
+        pages: "5"
+        summary: "把品牌拆成品牌定位與視覺溝通，前者驅動訊息，後者讓聲音可見。"
+  - id: "ch-02"
+    title: "Brand Positioning"
+    level: 1
+    order: 2
+    pages: "6-17"
+    summary: "定義品牌框架、品牌驅動、使命、語氣與個性，使品牌理念可被組織成訊息決策。"
+    children:
+      - id: "ch-02-01"
+        title: "Brand Positioning Framework"
+        level: 2
+        order: 1
+        pages: "7"
+        summary: "以使命、品牌驅動、語氣、個性、支柱與支持主題構成定位架構。"
+      - id: "ch-02-02"
+        title: "Brand Driver and Mission Statement"
+        level: 2
+        order: 2
+        pages: "8-11"
+        summary: "把 We Believe in Brave 與 world class civic university 使命轉成判斷品牌行動的基準。"
+      - id: "ch-02-03"
+        title: "Tone of Voice"
+        level: 2
+        order: 3
+        pages: "12-15"
+        summary: "以 confidence and clarity 指導文字，並用 do/don't 範例展示可執行語氣。"
+      - id: "ch-02-04"
+        title: "Personality"
+        level: 2
+        order: 4
+        pages: "16-17"
+        summary: "定義 ambitious、creative、collaborative、entrepreneurial 四個品牌人格。"
+  - id: "ch-03"
+    title: "Brand Toolkit"
+    level: 1
+    order: 3
+    pages: "18-88"
+    summary: "提供視覺識別工具，包括標誌、色彩、字體、資訊圖表、網格與攝影規範。"
+    children:
+      - id: "ch-03-01"
+        title: "Brandmark"
+        level: 2
+        order: 1
+        pages: "19-40"
+        summary: "規範品牌標誌版本、留白、最小尺寸、lockup、共同品牌、放置與錯誤用法。"
+      - id: "ch-03-02"
+        title: "Colour"
+        level: 2
+        order: 2
+        pages: "41-53"
+        summary: "建立以藍色為核心的主色、輔助色、互補色與比例使用原則。"
+      - id: "ch-03-03"
+        title: "Typography"
+        level: 2
+        order: 3
+        pages: "54-58"
+        summary: "指定 Futura PT 權重、字距、行距、替代字體與錯誤排版。"
+      - id: "ch-03-04"
+        title: "Infographics"
+        level: 2
+        order: 4
+        pages: "59-64"
+        summary: "定義圖示線條風格、色彩組合與從長文轉為資訊圖表的流程。"
+      - id: "ch-03-05"
+        title: "Grid System"
+        level: 2
+        order: 5
+        pages: "65-76"
+        summary: "以 12x12 網格建立可靈活疊加圖像、文字與形狀的版面系統。"
+      - id: "ch-03-06"
+        title: "Photography"
+        level: 2
+        order: 6
+        pages: "77-88"
+        summary: "定義攝影原則、類別、動態影像與影像處理，以呈現勇敢、真實與有衝擊力的品牌。"

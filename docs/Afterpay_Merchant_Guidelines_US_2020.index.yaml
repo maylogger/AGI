@@ -1,0 +1,99 @@
+title: 'Afterpay Merchant Brand Guidelines US'
+source: 'sources/Afterpay_Merchant_Guidelines_US_2020.pdf'
+date: '2020-07-30'
+language: 'en'
+summary: '這份 merchant guideline 將 Afterpay 的品牌策略、視覺識別、合作規範與電商接觸點訊息轉成商家可執行的品牌使用規則。'
+chapters:
+  - id: 'ch-01'
+    title: 'Brand Foundation'
+    level: 1
+    order: 1
+    pages: '1-11'
+    summary: '定義願景、使命、品牌信念、價值、目的與服務對象，作為後續視覺與訊息規範的策略基礎。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Vision, Mission, Brand and Values'
+        level: 2
+        order: 1
+        pages: '1-9'
+        summary: '以金融公平、無息分期與 win-win 的敘事定位品牌，並列出 Keep it Real、Be Brave、Do the Right Thing、Shape the Future 等價值。'
+      - id: 'ch-01-02'
+        title: 'Purpose and Customer'
+        level: 2
+        order: 2
+        pages: '10-11'
+        summary: '把目標客群描述為重視透明、可控預算、價值表達與無負擔選擇的新世代消費者。'
+  - id: 'ch-02'
+    title: 'Brand Elements'
+    level: 1
+    order: 2
+    pages: '12-21'
+    summary: '定義 logo 意義、lock-up、badge、Loop icon、合作排列、色彩、字體與錯誤使用。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Logo, Badge and Loop Icon'
+        level: 2
+        order: 1
+        pages: '12-16'
+        summary: '說明 logo 象徵商家、顧客與 Afterpay 的循環關係，並規定 lock-up、badge、icon 的背景、留白與最小尺寸。'
+      - id: 'ch-02-02'
+        title: 'Brand Collaboration'
+        level: 2
+        order: 2
+        pages: '17-18'
+        summary: '規定 partner lock-up 的 X 符號、排列順序、視覺平衡、色彩模式與留白。'
+      - id: 'ch-02-03'
+        title: 'Color and Typography'
+        level: 2
+        order: 3
+        pages: '19-20'
+        summary: '指定 Bondi Mint、黑、白作為主色，並以 Italian Plate No2 Expanded 作為品牌字體。'
+      - id: 'ch-02-04'
+        title: 'Afterpay Don’ts'
+        level: 2
+        order: 4
+        pages: '21'
+        summary: '列出不得改色、置入圖片、旋轉、扭曲、重排、陰影、漸層、外框或移除 Loop 等錯誤用法。'
+  - id: 'ch-03'
+    title: 'Best Practices'
+    level: 1
+    order: 3
+    pages: '22-39'
+    summary: '把品牌訊息、教育文案、網站元件、FAQ、PDP、購物車、結帳、社群與 email 應用轉成商家導入規則。'
+    children:
+      - id: 'ch-03-01'
+        title: 'How to Talk About Afterpay'
+        level: 2
+        order: 1
+        pages: '22-23'
+        summary: '定義服務說明、正向描述、禁止聯想與品牌名稱大小寫。'
+      - id: 'ch-03-02'
+        title: 'Marketing Messaging'
+        level: 2
+        order: 2
+        pages: '24-25'
+        summary: '提供 primary messaging、教育文案、社群 tag、price breakdown 與 introduction copy。'
+      - id: 'ch-03-03'
+        title: 'Afterpay on Your Website'
+        level: 2
+        order: 3
+        pages: '26-28'
+        summary: '規定 top strip、banner、arrival page 等網站推廣元件需簡短、清楚、對比足夠且附上 disclaimer。'
+      - id: 'ch-03-04'
+        title: 'Explaining How Afterpay Works'
+        level: 2
+        order: 4
+        pages: '29-32'
+        summary: '以 FAQ 與 lightbox 方式說明付款流程、資格、退貨、限制與支援資訊。'
+      - id: 'ch-03-05'
+        title: 'Merchant Website Touchpoints'
+        level: 2
+        order: 5
+        pages: '33-35'
+        summary: '示範 listing page、PDP、cart 與 checkout 中如何呈現分期金額、導流與付款資訊。'
+      - id: 'ch-03-06'
+        title: 'Social and Email Examples'
+        level: 2
+        order: 6
+        pages: '36-39'
+        summary: '提供 social introduce、upsell、educate 與 email 推廣範例，延伸網站內規範到外部行銷渠道。'

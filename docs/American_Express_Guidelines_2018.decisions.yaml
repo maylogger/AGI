@@ -1,0 +1,88 @@
+# L3 決策卡 sidecar — American Express Communication Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: American_Express_Guidelines_2018
+decisions:
+  - id: dp-trademark-permission-flow
+    title: 用授權閘門治理第三方商標使用，先處理混淆與背書風險
+    problem:
+      statement: 平台品牌被大量第三方使用商標與資產，若無授權流程，會造成商標混淆與誤導性背書風險。
+      signals: [trademark_protection, partner_governance, endorsement_risk, third_party_usage]
+    solution:
+      module: Legal and Trademark
+      move: 以「核准來源 + 允許情境 + 禁止改作 + permission gate」治理，高風險情境須送審並附最終版本、描述與 script
+      layer: governance
+    reason:
+      - 審核應前置於製作，越高風險的媒體越需要多階段送審
+      - 把品牌規範從靜態文件轉成審核流程，材料超過一年需重新驗證
+      - permission section 將品牌治理流程化，降低設計師自行判斷品牌風險
+    applicable_when:
+      industries: [tech_software, finance]
+      brand_types: [platform_ecosystem]
+      conditions: [third_party_usage, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Legal and Trademark]
+      enables: [Governance]
+    anti_patterns:
+      - 只給視覺規格而無使用情境風險表與審核材料清單
+      - 放任第三方自行判斷法律與背書風險
+    evidence:
+      - brand_id: American_Express_Guidelines_2018
+        chapter: ch-04-01
+        excerpt: "Touchpoint approval matrix：media type → required review stage；ATL 非 TV 需在 brief、concept/creative、final execution 三階段送審，所有 marketing materials 必須送 American Express representative。"
+      - brand_id: American_Express_Guidelines_2018
+        chapter: ch-04-02
+        excerpt: "最終版製作前須送審、市面素材超過一年需重審；即使未明文違規但可能傷害品牌，仍可要求修正。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+    evidence:
+      - brand_id: American_Express_Guidelines_2018
+        chapter: ch-01-01
+        excerpt: "logotype clearspace 至少 3X、Blue Box 與元素距離至少 1/3X、與 bank logo 距離至少 1.5X，以標誌相對單位（X）定義留白矩陣。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: American_Express_Guidelines_2018
+        chapter: ch-03-02
+        excerpt: "Competitive adjacency framework：與 competitor products/logos 並列時 American Express 標誌需在 preferred 或 equal position，overlap 時完整卡需在上層，以位置與遮擋層級維持品牌權重。"
+    status: extracted

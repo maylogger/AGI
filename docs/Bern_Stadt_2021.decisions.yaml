@@ -1,0 +1,112 @@
+# L3 決策卡 sidecar — Corporate Design Stadt Bern 2021
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Bern_Stadt_2021
+decisions:
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（Wappen 寬度）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 政府品牌可用「歷史符號 + 現代量測系統」同時維持合法性與執行效率
+    applicable_when:
+      industries: [public_sector]
+      brand_types: [institutional_public_trust]
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+    evidence:
+      - brand_id: Bern_Stadt_2021
+        chapter: ch-01
+        excerpt: "以市徽尺寸作為比例單位：Wappen 寬 7mm 時 Stadtmarke 全長 25mm，市徽周圍至少保留一個 Wappen 寬度，讓不同媒介版面可一致推導。"
+    status: extracted
+
+  - id: dp-media-split-typography
+    title: 依媒介分流字體系統（print / digital / body）
+    problem:
+      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+      signals: [print_and_digital, readability, licensing]
+    solution:
+      module: Typography System
+      move: 區分 print font 與電子／Office 字體，並讓一般員工可用系統字操作
+      layer: visual_core
+    reason:
+      - 不同媒介的可讀性與授權條件不同
+      - 文書 guideline 應依「可由一般員工操作」設計，而非只依設計部門工具
+    applicable_when:
+      industries: [public_sector, finance, education]
+      brand_types: [institutional_public_trust]
+      conditions: [print_and_digital]
+      archetypes: [brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Typography System]
+    evidence:
+      - brand_id: Bern_Stadt_2021
+        chapter: ch-01-02
+        excerpt: "Print 使用 Univers；電子模板與 PowerPoint 使用 Arial；商務信件使用 Arial 10，降低使用者與輔助工具負擔。"
+    status: extracted
+
+  - id: dp-restrained-palette-for-trust
+    title: 用克制的配色與權威主色傳達信任
+    problem:
+      statement: 受規範、以信任為核心的機構，若用高彩度或隨意配色會削弱權威與可信度。
+      signals: [trust, public_trust, regulatory_compliance]
+    solution:
+      module: Color System
+      move: 以法定 heraldic 色為主、限定核准色值，並跨材質（印刷／網頁／塗裝／貼膜）一致定義
+      layer: visual_core
+    reason:
+      - 信任型品牌的色彩應強調穩定與權威而非情緒刺激
+      - 若品牌會上牆、上車、上網站，色彩 token 必須跨材料定義
+    applicable_when:
+      industries: [public_sector, finance]
+      brand_types: [institutional_public_trust, heritage_legacy]
+      conditions: [trust, regulatory_compliance]
+      archetypes: [brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Color System]
+      enables: [Design Tokens]
+    anti_patterns:
+      - 使用未列出的色值（如黃色不屬 Bern heraldic colors）
+    evidence:
+      - brand_id: Bern_Stadt_2021
+        chapter: ch-01-02
+        excerpt: "以紅、黑、灰、白法定 heraldic 色為基礎，並以 CMYK/RGB/Web/Pantone/RAL/NCS/Scotchcal/Vink-Acril 跨材質定義；黃色不屬 Bern heraldic colors。"
+    status: extracted
+
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 用 endorsed brand 模式讓部門有服務辨識，但 sender（市府）作為責任來源不可消失
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - 大型公共組織可用 endorsed brand 模式讓服務有個性但不分裂
+    applicable_when:
+      industries: [public_sector, education]
+      brand_types: [institutional_public_trust]
+      conditions: [multi_unit_consistency, sub_unit_identity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 部門自創獨立主品牌
+      - 差異化元素覆蓋 title/text、submark 或 sponsor zones
+    evidence:
+      - brand_id: Bern_Stadt_2021
+        chapter: ch-05
+        excerpt: "Umsetzungen Dachmarke：Dienststelle 在城市 umbrella brand 下用部門色、圖像、字體玩法建立辨識，但 sender 保持市府；產品與服務改變，sender 不變。"
+    status: extracted

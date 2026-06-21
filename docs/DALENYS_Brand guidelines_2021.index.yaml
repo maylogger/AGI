@@ -1,0 +1,56 @@
+title: 'Dalenys Brand Guidelines'
+source: 'sources/DALENYS_Brand guidelines_2021.pdf'
+version: '1.8'
+date: 'February 2021'
+language: 'en'
+summary: 'Dalenys 的品牌規範摘錄，定義 payment is just the start 的品牌定位、logo、clearspace、限制、色彩與聯絡方式；部分數字與色碼在 PDF 文字抽取中失真，未納入不可靠精確值。'
+chapters:
+  - id: 'ch-01'
+    title: 'Foreword'
+    level: 1
+    order: 1
+    pages: '1-2'
+    summary: 'CEO 以 payment experiences 與 customer experiences 說明 Dalenys 正在演進，payment 是 customer journey 的開始。'
+  - id: 'ch-02'
+    title: 'Contents and Brand Scope'
+    level: 1
+    order: 2
+    pages: '2-6'
+    summary: '重複列出品牌規範涵蓋的定位、元素、口吻、graphic device、攝影、iconography、infographics、applications 與物料。'
+  - id: 'ch-03'
+    title: 'Brand elements'
+    level: 1
+    order: 3
+    pages: '2-5'
+    summary: '可辨識內容主要涵蓋 logo、clearspace/minimum sizes、restrictions 與 colour palette。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Our logo'
+        level: 2
+        order: 1
+        pages: '2'
+        summary: '定義 logo 由 Dalenys D monogram 與 logotype 組成，可在應用中分離。'
+      - id: 'ch-03-02'
+        title: 'Logo clearspace and minimum sizes'
+        level: 2
+        order: 2
+        pages: '3'
+        summary: '以 logotype D 高度作為 clearspace 單位，並要求小尺寸印刷與螢幕輸出需測試。'
+      - id: 'ch-03-03'
+        title: 'Logo restrictions'
+        level: 2
+        order: 3
+        pages: '4'
+        summary: '要求使用 master logo artwork，不得改比例、lockup、字體、色彩、背景或 Natixis Payment endorsement。'
+      - id: 'ch-03-04'
+        title: 'Colour palette'
+        level: 2
+        order: 4
+        pages: '5'
+        summary: '定義 yellow 為 lead brand colour，white/silver 為背景，text navy 只作文字，secondary colors 用於 charting、illustrations、infographics。'
+  - id: 'ch-04'
+    title: 'Get in touch'
+    level: 1
+    order: 4
+    pages: '6-7'
+    summary: '提供 communication@dalenys.com 作為文件與特殊使用情境的詢問窗口。'

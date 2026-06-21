@@ -1,0 +1,112 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Microsoft_Bing_Logo_icon_2020
+index_ref: docs/Microsoft_Bing_Logo_icon_2020.index.yaml
+note_ref: docs/Microsoft_Bing_Logo_icon_2020.note.md
+archetype: logo_asset_guidelines
+industry: tech_software
+modules:
+- Legal and Trademark
+- Compliance
+- Governance
+- Product Language
+- Visual Identity
+- AI-Checkable Rules
+- Accessibility
+- Iconography System
+- Design Tokens
+depth:
+  strategy: low
+  visual: medium
+  governance: high
+  top_level_chapter_count: 4
+  section_count: 0
+chapter_sequence:
+- id: ch-01
+  title: Usage Requirements
+  order: 1
+  level: 1
+- id: ch-02
+  title: Our Elements
+  order: 2
+  level: 1
+- id: ch-03
+  title: Logo and Logo Usage
+  order: 3
+  level: 1
+- id: ch-04
+  title: Product Icon
+  order: 4
+  level: 1
+frameworks:
+- name: authorization flow：existing agreement → general Microsoft guidelines → business owner license → brand team contact
+  chapter: ch-01
+  chapter_title: Usage Requirements
+- name: element set：logo → icon → attribution phrase
+  chapter: ch-02
+  chapter_title: Our Elements
+- name: background-based logo selection：light → positive gray logotype；dark/photo dark area → white knock-out
+  chapter: ch-03
+  chapter_title: Logo and Logo Usage
+- name: icon lockup metrics：base width → clear space fractions → label relation → minimum size
+  chapter: ch-04
+  chapter_title: Product Icon
+patterns:
+- name: 短型商標 guideline 常先以 legal decision tree 控制入口，再提供少量視覺規格。
+  chapter: ch-01
+  chapter_title: Usage Requirements
+- name: 用 attribution phrase 支援產品資料來源標示，而非開放完整品牌系統。
+  chapter: ch-02
+  chapter_title: Our Elements
+- name: logo 使用規範可用二元背景判斷支援快速審核。
+  chapter: ch-03
+  chapter_title: Logo and Logo Usage
+- name: 用 X-based spacing 讓 icon 在不同尺寸下仍能被一致再製。
+  chapter: ch-04
+  chapter_title: Product Icon
+rules_ai_checkable:
+- module: ''
+  criterion: 若使用 logo、名稱或暗示 Microsoft Bing 贊助、背書、相容性，即需確認 license；使用方式必須準確反映公司/產品與 Bing 的關係；不確定時需取得 Microsoft business owner
+    或 brand team 授權。
+  chapter: ch-01
+  chapter_title: Usage Requirements
+- module: ''
+  criterion: 若使用 “Results from Microsoft Bing” 或類似語句，需與實際資料來源/相容關係一致；不可用元素暗示超出事實的合作關係。
+  chapter: ch-02
+  chapter_title: Our Elements
+- module: Visual Identity
+  criterion: light/white background 使用 positive version；dark background 或照片暗部使用 knock-out version；不得選用導致低對比或不可讀的版本。
+  chapter: ch-03
+  chapter_title: Logo and Logo Usage
+- module: Iconography System
+  criterion: icon width 不得小於 0.16 in / 4.23 mm / 16 px；標籤與 icon 的間距應遵循 X、1/2X、1/8X 比例；不得縮放到標籤不可讀或 icon 形狀失真。
+  chapter: ch-04
+  chapter_title: Product Icon
+chapters:
+- id: ch-01
+  title: Usage Requirements
+  modules:
+  - Legal and Trademark
+  - Compliance
+  - Governance
+- id: ch-02
+  title: Our Elements
+  modules:
+  - Legal and Trademark
+  - Product Language
+  - Visual Identity
+- id: ch-03
+  title: Logo and Logo Usage
+  modules:
+  - AI-Checkable Rules
+  - Accessibility
+  - Visual Identity
+- id: ch-04
+  title: Product Icon
+  modules:
+  - AI-Checkable Rules
+  - Iconography System
+  - Design Tokens

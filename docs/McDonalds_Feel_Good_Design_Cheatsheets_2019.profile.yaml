@@ -1,0 +1,197 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: McDonalds_Feel_Good_Design_Cheatsheets_2019
+index_ref: docs/McDonalds_Feel_Good_Design_Cheatsheets_2019.index.yaml
+note_ref: docs/McDonalds_Feel_Good_Design_Cheatsheets_2019.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Brand Strategy
+- Knowledge Architecture
+- AI-Checkable Rules
+- Visual Identity
+- Governance
+- Visual Language
+- Color System
+- Design Tokens
+- Localization
+- Typography System
+- Accessibility
+- Photography System
+- Illustration System
+depth:
+  strategy: low
+  visual: high
+  governance: medium
+  top_level_chapter_count: 9
+  section_count: 0
+chapter_sequence:
+- id: ch-01
+  title: Feel-Good Design Overview
+  order: 1
+  level: 1
+- id: ch-02
+  title: The Golden Arches Cheatsheet
+  order: 2
+  level: 1
+- id: ch-03
+  title: Archery Cheatsheet
+  order: 3
+  level: 1
+- id: ch-04
+  title: Brand Color Cheatsheet
+  order: 4
+  level: 1
+- id: ch-05
+  title: Typography Cheatsheet
+  order: 5
+  level: 1
+- id: ch-06
+  title: Food Photography Cheatsheet
+  order: 6
+  level: 1
+- id: ch-07
+  title: Lifestyle Photography Cheatsheet
+  order: 7
+  level: 1
+- id: ch-08
+  title: Playful Patterns and Product Illustrations Cheatsheet
+  order: 8
+  level: 1
+- id: ch-09
+  title: Restaurant Design Cheatsheet
+  order: 9
+  level: 1
+frameworks:
+- name: Feel-Good system stack：promise、personality、visual assets、principles、touchpoint applications
+  chapter: ch-01
+  chapter_title: Feel-Good Design Overview
+- name: Symbol hierarchy：Arches as icon、Token as support、wordmark as corporate/fascia use、tagline as purposeful accent
+  chapter: ch-02
+  chapter_title: The Golden Arches Cheatsheet
+- name: Archery decision model：context intensity、technique selection、brand reinforcement、purpose check
+  chapter: ch-03
+  chapter_title: Archery Cheatsheet
+- name: Color proportion framework：hero palette、red accent techniques、functional palette limited use、materials palette
+  chapter: ch-04
+  chapter_title: Brand Color Cheatsheet
+- name: Typography usage matrix：role、weight、line spacing、highlight colour、language fallback、accessibility
+  chapter: ch-05
+  chapter_title: Typography Cheatsheet
+- name: Food photo checklist：authentic props、Perfect Serve、flawesome detail、natural light、depth, motion
+  chapter: ch-06
+  chapter_title: Food Photography Cheatsheet
+- name: Lifestyle photo checklist by cast、moment、environment、brand cues、emotion
+  chapter: ch-07
+  chapter_title: Lifestyle Photography Cheatsheet
+- name: Pattern governance：approved assets、allowed contexts、colour integrity、scale/repetition limits、approval gate
+  chapter: ch-08
+  chapter_title: Playful Patterns and Product Illustrations Cheatsheet
+- name: Spatial brand infrastructure：materials、symbol integration、service zones、technology、interaction、community seating
+  chapter: ch-09
+  chapter_title: Restaurant Design Cheatsheet
+patterns:
+- name: 用 cheatsheet 壓縮複雜 design system，適合作為全球快速對齊工具。
+  chapter: ch-01
+  chapter_title: Feel-Good Design Overview
+- name: 以 corner placement 與 flexible quadrant 建立 Token 的版面行為。
+  chapter: ch-02
+  chapter_title: The Golden Arches Cheatsheet
+- name: out in the world 使用 bolder Archery；own branded spaces 使用 subtle Archery。
+  chapter: ch-03
+  chapter_title: Archery Cheatsheet
+- name: Red 可透過 typography、information graphics、illustrative details、photography、propping 加入。
+  chapter: ch-04
+  chapter_title: Brand Color Cheatsheet
+- name: too tight / just right / too spaced out
+  chapter: ch-05
+  chapter_title: Typography Cheatsheet
+- name: 以 wrapper 承載食物而非直接放表面，連結真實消費情境。
+  chapter: ch-06
+  chapter_title: Food Photography Cheatsheet
+- name: 用 touches of Gold 與 accents of Red 在攝影中嵌入品牌色，而不是硬上色塊。
+  chapter: ch-07
+  chapter_title: Lifestyle Photography Cheatsheet
+- name: 用食物特徵抽象成 repeatable pattern，是產品 equity 的圖形化。
+  chapter: ch-08
+  chapter_title: Playful Patterns and Product Illustrations Cheatsheet
+- name: from bold statements to subtle details，讓同一符號可在尺度上變化。
+  chapter: ch-09
+  chapter_title: Restaurant Design Cheatsheet
+rules_ai_checkable:
+- module: ''
+  criterion: wordmark 只用黑或白，不得與 Golden Arches lock up；tagline 不得與 Golden Arches 或 Token lock up；Golden Arches clearspace 為
+    arch leg 寬度 2x，minimum height print 4mm、digital 15px；Token minimum print 6mm、digital 25px，置於 layout corner，偏好 bottom left
+    或 top right；不得使用非 Gold 的 Golden Arches，不得用作 letterform 或加 drop shadow。
+  chapter: ch-02
+  chapter_title: The Golden Arches Cheatsheet
+- module: ''
+  criterion: 只使用 provided cropped artwork；極端裁切使 Arches 不明顯時，out-of-home 必須用 Golden Arches mark 或 Token 強化；alternative crops
+    in photography 需 Global Brand team approval；不得 alter Golden Arches；Archery 不得只是 decoration。
+  chapter: ch-03
+  chapter_title: Archery Cheatsheet
+- module: Color System
+  criterion: Gold Hex FFBC0D，Red Hex DB0007；Black 不再是 masterbrand core colour，只用於 type；不得使用新 visual identity palette 外的色彩；Charcoal、light
+    gray、kraft 保留給 internal communications 或部分 illustration elements。
+  chapter: ch-04
+  chapter_title: Brand Color Cheatsheet
+- module: ''
+  criterion: 使用餐廳實際用材質作 props；使用 Perfect Serve packaging；food staged on wrapper, not directly on a surface；不得用 wood、metal
+    等不符合品牌真實性的 props/materials。
+  chapter: ch-06
+  chapter_title: Food Photography Cheatsheet
+- module: ''
+  criterion: casting 應 diverse、lighthearted、optimistic；scenario 應 spontaneous、in-the-moment、positive、uplifting；lighting 應
+    golden/natural；product and idealized packaging must be delicious and unmistakable。
+  chapter: ch-07
+  chapter_title: Lifestyle Photography Cheatsheet
+- module: ''
+  criterion: 不得改 Playful Pattern colors；避免與 photography 一起使用；避免重複 Jumble；避免縮放過大或過小；Playful Patterns 需 Global Brand team approval；只使用
+    provided product illustrations，新增插畫需 Global Brand approval。
+  chapter: ch-08
+  chapter_title: Playful Patterns and Product Illustrations Cheatsheet
+chapters:
+- id: ch-01
+  title: Feel-Good Design Overview
+  modules:
+  - Brand Strategy
+  - Knowledge Architecture
+- id: ch-02
+  title: The Golden Arches Cheatsheet
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-03
+  title: Archery Cheatsheet
+  modules:
+  - Visual Language
+  - Governance
+- id: ch-04
+  title: Brand Color Cheatsheet
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Design Tokens
+- id: ch-05
+  title: Typography Cheatsheet
+  modules:
+  - Localization
+  - Typography System
+  - Accessibility
+- id: ch-06
+  title: Food Photography Cheatsheet
+  modules:
+  - Photography System
+- id: ch-07
+  title: Lifestyle Photography Cheatsheet
+  modules:
+  - Photography System
+- id: ch-08
+  title: Playful Patterns and Product Illustrations Cheatsheet
+  modules:
+  - Illustration System
+  - Governance

@@ -1,0 +1,87 @@
+# L3 決策卡 sidecar — Melbourne Airport（機場企業／航空／零售識別）
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: MA_Style-Guide_
+decisions:
+  - id: dp-contact-before-appendix
+    title: 在技術資料前先給治理窗口，讓 guideline 成為可改善系統
+    problem:
+      statement: 規則無法涵蓋所有情境，缺乏權威決策入口時，例外用法無人裁決。
+      signals: [exceptions_expected, governance]
+    solution:
+      module: Governance
+      move: 在開場即指定品牌 owner 與 marketing contact，並說明何時使用 guideline、何時詢問團隊
+      layer: governance
+    reason:
+      - 規則無法涵蓋所有情境，必須提供權威決策入口
+      - 成熟 guideline 應提供 owner/contact，否則規範無法被執行與更新
+      - guideline 需要 owner 與 feedback channel，而非靜態文件
+    applicable_when:
+      industries: [finance]
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit, logo_asset_guidelines]
+    dependencies:
+      requires: [Governance]
+      enables: [Operations]
+    evidence:
+      - brand_id: MA_Style-Guide_
+        chapter: ch-01
+        excerpt: "所有 Melbourne Airport branded items 應參照此書；若有未涵蓋或 bespoke item，需聯繫 Marketing team；成熟 guideline 應提供 owner/contact，否則規範無法被執行與更新。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（字母 M 的高度）作為相對留白基準，並設最小尺寸下限
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - 定位彈性應搭配明確的不可變條件，才能讓品牌不僵化也不失控
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - clear space 不得小於 Melbourne Airport mark 中 M 高度，水平 logo 不得小於 35mm
+    evidence:
+      - brand_id: MA_Style-Guide_
+        chapter: ch-02-01
+        excerpt: "用字母 M 的高度定義 clear space；clear space 不得小於 Melbourne Airport mark 中 M 高度，水平 logo 不得小於 35mm、堆疊版不得小於 20mm。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗建立 logo 版本決策，深底反白、淺底用 charcoal/black
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - Logo 顏色規範應基於對比與背景風險，而非只列色票
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: MA_Style-Guide_
+        chapter: ch-02-01
+        excerpt: "不得改色、拉伸、扭曲、加濾鏡或置於低解析與低對比背景；深底可反白，淺底用 charcoal/black。"
+    status: extracted

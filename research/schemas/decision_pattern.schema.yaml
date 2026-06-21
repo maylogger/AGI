@@ -1,0 +1,161 @@
+# AGI Decision Pattern Schema（L3 決策層）
+#
+# 決策模式卡（Decision Pattern）是知識圖譜的核心單位，捕捉高階設計師的
+# problem → solution → reason 推理，而不只是「品牌長什麼樣」。
+#
+# 兩種存在形式：
+#   - 各文件 sidecar：docs/<brand_id>.decisions.yaml（含原始證據，strict）
+#   - 編譯後全域圖譜：research/decision_patterns.yaml
+#     （由 scripts/compile_knowledge_graph.py 聚合、去重、累計證據）
+#
+# strict evidence 原則：每張卡至少要有一筆 evidence 連到既有 docs 的章節，
+# 否則編譯時會被標記為 unverified 並排除於推理之外（防止 AI 幻想建議）。
+
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: AGI Decision Pattern
+type: object
+required:
+  - id
+  - problem
+  - solution
+  - reason
+  - evidence
+properties:
+  id:
+    type: string
+    description: >
+      全域唯一、語意化、kebab-case，前綴 dp-。
+      命名建議：dp-<solution 概念>-<problem 概念>，例如 dp-story-framework-category-education。
+    pattern: "^dp-[a-z0-9-]+$"
+
+  title:
+    type: string
+    description: 一句話人類可讀標題（繁體中文）
+
+  problem:
+    type: object
+    description: 這張卡要解決的商業／溝通／治理問題
+    required: [statement]
+    properties:
+      statement:
+        type: string
+        description: 問題陳述（繁體中文），描述情境而非品牌
+      signals:
+        type: array
+        description: >
+          可被客戶 intake 觸發的訊號標籤（snake_case）。
+          推理引擎用 signals 比對客戶情境，例如 new_category、high_education_cost。
+        items:
+          type: string
+
+  solution:
+    type: object
+    description: 高階設計師採用的設計手法（move）
+    required: [move]
+    properties:
+      module:
+        type: string
+        description: 對應的 guideline 模組（見 module taxonomy）
+      move:
+        type: string
+        description: 具體設計手法或框架名稱（繁體中文可），例如「漸進式 Story Framework」
+      layer:
+        type: string
+        description: 此 move 屬於哪個知識層
+        enum: [strategy, language, visual_core, visual_extended, product, governance]
+
+  reason:
+    type: array
+    description: 為什麼這個 solution 能解決這個 problem（這是整個知識庫的核心價值）
+    items:
+      type: string
+
+  applicable_when:
+    type: object
+    description: 什麼情況下這張卡適用；推理引擎據此匹配新客戶
+    properties:
+      industries:
+        type: array
+        description: 適用產業 id（見 research/contexts/industries.yaml）
+        items:
+          type: string
+      brand_types:
+        type: array
+        description: 適用品牌類型 id（見 research/contexts/brand_types.yaml）
+        items:
+          type: string
+      conditions:
+        type: array
+        description: 其他情境條件標籤（snake_case）
+        items:
+          type: string
+      archetypes:
+        type: array
+        description: 常見於哪些 guideline 原型（見 research/archetypes.yaml）
+        items:
+          type: string
+
+  dependencies:
+    type: object
+    description: 與其他模組／決策卡的關係，供章節排序與一致性檢查
+    properties:
+      requires:
+        type: array
+        description: 前置必要（模組名或 dp- id）
+        items:
+          type: string
+      enables:
+        type: array
+        description: 此決策啟用／支撐的後續模組或決策
+        items:
+          type: string
+      conflicts_with:
+        type: array
+        description: 互斥或語意衝突的決策卡 id
+        items:
+          type: string
+
+  examples:
+    type: array
+    description: 具體落地範例（描述手法，不抄色值／標語）
+    items:
+      type: string
+
+  anti_patterns:
+    type: array
+    description: 此情境下常見錯誤或反面作法
+    items:
+      type: string
+
+  evidence:
+    type: array
+    description: >
+      證據來源（strict：sidecar 至少一筆）。每筆連到既有 docs 的章節，
+      讓「為什麼這樣安排」可回溯到實際先例，而非 AI 杜撰。
+    items:
+      type: object
+      required: [brand_id, chapter]
+      properties:
+        brand_id:
+          type: string
+          description: 對應 docs/<brand_id>.note.md / index.yaml 的 stem
+        chapter:
+          type: string
+          description: index.yaml 的章節 id，例如 ch-03、ch-02-01
+        excerpt:
+          type: string
+          description: note.md 中支持此決策的關鍵語句（繁體中文，可節錄）
+
+  confidence:
+    type: number
+    description: >
+      0–1。編譯時可由證據份數推估（越多獨立品牌支持越高）。
+      sidecar 可留空，由 compile script 計算。
+    minimum: 0
+    maximum: 1
+
+  status:
+    type: string
+    description: 編譯與審核狀態
+    enum: [seed, extracted, verified, unverified, deprecated]
+    default: extracted

@@ -1,0 +1,167 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Bolt_Brand_Guidelines_2019
+index_ref: docs/Bolt_Brand_Guidelines_2019.index.yaml
+note_ref: docs/Bolt_Brand_Guidelines_2019.note.md
+archetype: brand_experience_guide
+industry: tech_software
+modules:
+- AI-Checkable Rules
+- Voice and Tone
+- Messaging
+- Visual Identity
+- Brand Architecture
+- Layout System
+- Governance
+- Typography System
+- Color System
+- Design Tokens
+- Operations
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 6
+  section_count: 4
+chapter_sequence:
+- id: ch-01
+  title: Messaging
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Overview and Personality Tenets
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Expressing Brand, Product and Taglines
+  order: 2
+  level: 2
+- id: ch-02
+  title: Visual Identity
+  order: 2
+  level: 1
+- id: ch-03
+  title: Brand Architecture
+  order: 3
+  level: 1
+- id: ch-04
+  title: Usage Parameters
+  order: 4
+  level: 1
+- id: ch-05
+  title: Color & Typography
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Palettes
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Typography and Hierarchy
+  order: 2
+  level: 2
+- id: ch-06
+  title: Applications
+  order: 6
+  level: 1
+frameworks:
+- name: personality spectrum 框架透過 friend/classic/rebel/authority、premium/mass appeal 等軸線定位品牌語氣
+  chapter: ch-01
+  chapter_title: Messaging
+- name: identity kernel 框架：logomark 是最小單位，primary logo 是常態使用單位，inverse 是環境適配
+  chapter: ch-02
+  chapter_title: Visual Identity
+- name: lockup framework 以 orientation、spacing、size relationship 與 text pairing 管理子品牌
+  chapter: ch-03
+  chapter_title: Brand Architecture
+- name: usage control framework 包含 spacing、pairing、background、transformation 與 prohibited treatments
+  chapter: ch-04
+  chapter_title: Usage Parameters
+- name: design token framework：core colors、neutral colors、accent colors、font family、type scale、hierarchy
+  chapter: ch-05
+  chapter_title: Color & Typography
+- name: application framework 包含 substrate、scale、contrast、placement 與 production constraint
+  chapter: ch-06
+  chapter_title: Applications
+patterns:
+- name: 可複用模式是用『+ / –』語氣規則列出應追求與應避免的寫法。
+  chapter: ch-01
+  chapter_title: Messaging
+- name: 可複用模式包括 mark/logo 分離、正反版本、主使用優先與變體限制。
+  chapter: ch-02
+  chapter_title: Visual Identity
+- name: 可複用模式是以固定 lockup 管理延伸品牌，而非讓每個子品牌生成獨立 logo。
+  chapter: ch-03
+  chapter_title: Brand Architecture
+- name: 可複用模式是 clear-space token + do-not gallery。
+  chapter: ch-04
+  chapter_title: Usage Parameters
+- name: 可複用模式包括核心色維持識別、中性色支援介面、accent 色控制重點、字級階層管理資訊。
+  chapter: ch-05
+  chapter_title: Color & Typography
+- name: 可複用模式是先用核心標誌和色彩建立辨識，再依材質限制調整細節。
+  chapter: ch-06
+  chapter_title: Applications
+rules_ai_checkable:
+- module: ''
+  criterion: AI-checkable：文案應偏 precise、direct、premium、ambitious、professional；不得 overtly fun、self-important、careless、fluffy、apologetic
+    或 average。
+  chapter: ch-01
+  chapter_title: Messaging
+- module: ''
+  criterion: AI-checkable：使用標誌時需選擇核准 primary 或 inverse 版本；不得自行重組、加效果、改比例或在低對比背景使用。
+  chapter: ch-02
+  chapter_title: Visual Identity
+- module: Brand Strategy
+  criterion: AI-checkable：子品牌需使用核准 horizontal 或 vertical lockup；間距與對齊需符合 construction；不得讓子品牌文字大於或視覺上壓過母品牌。
+  chapter: ch-03
+  chapter_title: Brand Architecture
+- module: ''
+  criterion: AI-checkable：標誌周圍需留有指定安全距離；不得拉伸、旋轉、加陰影、改色、置於複雜或低對比背景；partner pairing 不得破壞 Bolt 層級。
+  chapter: ch-04
+  chapter_title: Usage Parameters
+- module: Color System
+  criterion: AI-checkable：素材需使用核准色票；accent 不得取代 core；標題與內文需符合 type hierarchy；不得過度混色、亂用字重或建立未核准字級。
+  chapter: ch-05
+  chapter_title: Color & Typography
+- module: ''
+  criterion: AI-checkable：實體物標誌需保持可讀；避免低對比印刷；不得新增口號或圖形破壞品牌 hierarchy。
+  chapter: ch-06
+  chapter_title: Applications
+chapters:
+- id: ch-01
+  title: Messaging
+  modules:
+  - AI-Checkable Rules
+  - Voice and Tone
+  - Messaging
+- id: ch-02
+  title: Visual Identity
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-03
+  title: Brand Architecture
+  modules:
+  - Brand Architecture
+  - Layout System
+  - Governance
+- id: ch-04
+  title: Usage Parameters
+  modules:
+  - AI-Checkable Rules
+  - Governance
+- id: ch-05
+  title: Color & Typography
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Color System
+  - Design Tokens
+- id: ch-06
+  title: Applications
+  modules:
+  - Operations

@@ -1,0 +1,51 @@
+# L2 模組知識 — Messaging
+# schema：research/schemas/module_knowledge.schema.yaml
+
+module: Messaging
+slug: messaging
+foundational: false
+layer: strategy
+purpose: 建立訊息階層與敘事框架，決定「先說什麼、怎麼鋪陳」，是語氣與內容版型的上游。
+problem_when_absent: 內容缺乏層次，所有資訊同等權重，受眾無法被逐步引導，語氣失去依據。
+corpus_frequency:
+  doc_count: 61
+  pct: 47.7
+
+driven_by:
+  - input: market_education_cost
+    affects: narrative_framework
+    mapping:
+      - when: [new_category, high_education_cost]
+        tend_to: [漸進式敘事（Attract→Engage→Connect 類）, 控制單次訊息深度]
+        evidence:
+          - {brand_id: 3M_Visual_Identity_Guidelines_2015, chapter: ch-01-04}
+      - when: [established_category, comparison_driven]
+        tend_to: [benefit ladder, 差異化主張, 競品對照]
+  - input: brand_positioning
+    affects: message_hierarchy
+    mapping:
+      - when: [platform_brand, b2b]
+        tend_to: [one brand one voice, 主張階層, buyer persona 對應訊息]
+        evidence:
+          - {brand_id: Paypal_Corporate_master_brand_guidelines_2013}
+          - {brand_id: BlackBerry_Cylance_Brand_Guidelines_2019}
+
+spec_dimensions:
+  - 訊息階層 / 主張
+  - 敘事框架（如 Story Framework）
+  - buyer persona 對應訊息
+  - headline 生成邏輯
+  - 關鍵字與禁用詞
+
+related_decision_patterns:
+  - dp-story-framework-category-education
+  - dp-message-hierarchy-by-persona
+
+dependencies:
+  requires: [Brand Strategy]
+  recommends: [Voice and Tone, Content Design]
+
+reference_brands:
+  - 3M_Visual_Identity_Guidelines_2015
+  - Paypal_Corporate_master_brand_guidelines_2013
+  - BlackBerry_Cylance_Brand_Guidelines_2019

@@ -1,0 +1,203 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Klepierre_Charte_graphique_2013
+index_ref: docs/Klepierre_Charte_graphique_2013.index.yaml
+note_ref: docs/Klepierre_Charte_graphique_2013.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Legal and Trademark
+- AI-Checkable Rules
+- Visual Identity
+- Data Visualization
+- Color System
+- Typography System
+- Operations
+- Illustration System
+- Visual Language
+- Photography System
+- Layout System
+- Examples
+- Brand Architecture
+- Governance
+depth:
+  strategy: low
+  visual: high
+  governance: high
+  top_level_chapter_count: 7
+  section_count: 2
+chapter_sequence:
+- id: ch-01
+  title: Le Logotype
+  order: 1
+  level: 1
+- id: ch-02
+  title: Les Couleurs du Système
+  order: 2
+  level: 1
+- id: ch-03
+  title: La Typographie
+  order: 3
+  level: 1
+- id: ch-04
+  title: Les Éléments Graphiques
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: K Fenêtre and Graphic Vocabulary
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Graphiques
+  order: 2
+  level: 2
+- id: ch-05
+  title: L'Iconographie
+  order: 5
+  level: 1
+- id: ch-06
+  title: Les Applications
+  order: 6
+  level: 1
+- id: ch-07
+  title: Annexes
+  order: 7
+  level: 1
+frameworks:
+- name: logo integrity framework：background suitability、minimum size、protective space、positioning、forbidden transformations
+  chapter: ch-01
+  chapter_title: Le Logotype
+- name: tiered colour system：primary colours -> tints -> secondary/accompaniment colours
+  chapter: ch-02
+  chapter_title: Les Couleurs du Système
+- name: professional/office font split
+  chapter: ch-03
+  chapter_title: La Typographie
+- name: symbol-derived graphic system
+  chapter: ch-04
+  chapter_title: Les Éléments Graphiques
+- name: logo-as-window framework
+  chapter: ch-04-01
+  chapter_title: K Fenêtre and Graphic Vocabulary
+- name: brand-coloured data visualization
+  chapter: ch-04-02
+  chapter_title: Graphiques
+- name: subject-driven imagery framework
+  chapter: ch-05
+  chapter_title: L'Iconographie
+- name: corporate collateral template system
+  chapter: ch-06
+  chapter_title: Les Applications
+- name: brand architecture extension rules
+  chapter: ch-07
+  chapter_title: Annexes
+patterns:
+- name: 用不同背景情境區分 positif、négatif、cartouche 與 monochrome exception。
+  chapter: ch-01
+  chapter_title: Le Logotype
+- name: 將輔助色定位為 graphs、tables、cartouches 的補充資源。
+  chapter: ch-02
+  chapter_title: Les Couleurs du Système
+- name: 建立 design font 與 office fallback 的雙軌治理。
+  chapter: ch-03
+  chapter_title: La Typographie
+- name: 以 logo 局部形狀建立非窮盡圖形清單，允許變化但限定來源。
+  chapter: ch-04
+  chapter_title: Les Éléments Graphiques
+- name: 同一 symbol 可在 photo mask、overlay、illustration motif 中重複。
+  chapter: ch-04-01
+  chapter_title: K Fenêtre and Graphic Vocabulary
+- name: 圖表使用品牌色階與輔助色，搭配灰階區分資訊層級。
+  chapter: ch-04-02
+  chapter_title: Graphiques
+- name: 以三類主題管理影像庫，避免選圖漂移。
+  chapter: ch-05
+  chapter_title: L'Iconographie
+- name: 將 Arial、品牌色與固定資訊欄位套入 email、Word、Excel、PowerPoint。
+  chapter: ch-06
+  chapter_title: Les Applications
+- name: 內部品牌偏 symbol-derived，子品牌偏完整 logo。
+  chapter: ch-07
+  chapter_title: Annexes
+rules_ai_checkable:
+- module: Visual Identity
+  criterion: logo 不得改變 symbol 形狀、比例、typography、gradient colours；不得放在混亂背景；彩色 logo 不得放深色背景；白色 logo 需在 corporate colours 存在時使用。
+  chapter: ch-01
+  chapter_title: Le Logotype
+- module: ''
+  criterion: 不得使用 palette 外顏色；不得用 tramées 色彩設定正文；不得整頁彩色文字；不得在標題使用 tramées；secondary colours 應少量使用。
+  chapter: ch-02
+  chapter_title: Les Couleurs du Système
+- module: ''
+  criterion: édition 應使用 Museo Sans；bureautique 應使用 Arial；不得在辦公模板使用未授權或不可用字體。
+  chapter: ch-03
+  chapter_title: La Typographie
+- module: ''
+  criterion: K fenêtre 不得與 logo typography 結合；照片必須讓 symbol 可讀；symbol 內外照片需一致；K fenêtre 只能用 gradient 或 white；不得在照片上使用不透明 K
+    fenêtre。
+  chapter: ch-04
+  chapter_title: Les Éléments Graphiques
+- module: ''
+  criterion: 若 K symbol 內照片與外部照片不同或造成不可讀，應判定不合格。
+  chapter: ch-04-01
+  chapter_title: K Fenêtre and Graphic Vocabulary
+- module: ''
+  criterion: 圖表色彩應從指定 palette 取用；不得使用外部隨機色。
+  chapter: ch-04-02
+  chapter_title: Graphiques
+- module: Iconography System
+  criterion: 不得使用未突顯 shopper 或 enseigne 的圖片；不得同一媒介混合彩色與黑白；不得加色彩濾鏡；不得使用陰暗低對比圖片。
+  chapter: ch-05
+  chapter_title: L'Iconographie
+chapters:
+- id: ch-01
+  title: Le Logotype
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02
+  title: Les Couleurs du Système
+  modules:
+  - Data Visualization
+  - Color System
+- id: ch-03
+  title: La Typographie
+  modules:
+  - Typography System
+  - Operations
+- id: ch-04
+  title: Les Éléments Graphiques
+  modules:
+  - Illustration System
+  - Data Visualization
+  - Visual Language
+- id: ch-04-01
+  title: K Fenêtre and Graphic Vocabulary
+  modules:
+  - Photography System
+  - Visual Language
+- id: ch-04-02
+  title: Graphiques
+  modules:
+  - Data Visualization
+  - Color System
+- id: ch-05
+  title: L'Iconographie
+  modules:
+  - Photography System
+  - AI-Checkable Rules
+- id: ch-06
+  title: Les Applications
+  modules:
+  - Layout System
+  - Examples
+  - Operations
+- id: ch-07
+  title: Annexes
+  modules:
+  - Brand Architecture
+  - Governance

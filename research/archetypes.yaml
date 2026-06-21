@@ -1,0 +1,289 @@
+# Guideline Archetypes — AGI 原型定義
+# 供 Coach Agent 推薦結構、模組與章節順序；分類規則見 classification.priority（數字越小越優先匹配）
+# 回填 profile：python scripts/assign_archetypes.py
+
+version: 1
+updated: "2026-06-18"
+
+archetypes:
+  - id: corporate_toolkit
+    name: 企業品牌工具包
+    description: >
+      扁平、執行導向的 B2B 企業工具包：單一大章或多個小節，策略薄、資產與應用規則厚。
+      適合多團隊、多代理商需快速查規範的成熟企業品牌。
+    precedent_ids:
+      - AMD_branding_guidelines_2020
+    must_have_modules:
+      - Visual Identity
+      - Color System
+      - Typography System
+      - Governance
+    recommended_modules:
+      - Messaging
+      - Operations
+      - Compliance
+      - Motion Identity
+    typical_depth:
+      strategy: [low, medium]
+      visual: [high]
+      governance: [medium, high]
+    typical_chapter_sequence:
+      - Overview / Toolkit
+      - Tone of Voice
+      - Logo
+      - Color
+      - Typography
+      - Applications
+      - Governance / Contacts
+    classification:
+      priority: 1
+      top_level_max: 2
+      sections_min: 5
+
+  - id: full_brand_system
+    name: 完整消費者品牌系統
+    description: >
+      策略前置的完整品牌系統：Platform、Pillars、Story Framework 後接視覺、影像、語氣全模組。
+      適合消費者品牌、產品體驗需強一致敘事與識別的組織。
+    precedent_ids:
+      - LucidMotors
+      - I_amsterdam_Brand_Manual_EN_2019
+    must_have_modules:
+      - Brand Strategy
+      - Messaging
+      - Visual Identity
+      - Color System
+      - Typography System
+    recommended_modules:
+      - Voice and Tone
+      - Photography System
+      - Motion Identity
+      - Product Language
+      - Governance
+    typical_depth:
+      strategy: [high]
+      visual: [high]
+      governance: [medium, high]
+    typical_chapter_sequence:
+      - Brand / Platform
+      - Brand Pillars
+      - Story Framework
+      - Logo
+      - Color
+      - Typography
+      - Imagery
+      - Voice
+    classification:
+      priority: 2
+      strategy_depth: high
+      any_of:
+        - sections_min: 20
+        - top_level_min: 6
+        - sections_min: 15
+          modules_all:
+            - Brand Strategy
+            - Messaging
+
+  - id: multi_brand_architecture
+    name: 多品牌架構指南
+    description: >
+      以品牌架構與治理為核心：母品牌、子品牌、合作品牌、出版與聯名層級。
+      適合國際組織、金融集團、多實體品牌集合。
+    precedent_ids:
+      - WouldBankGroup_Branding_Visual_Identity_Guidelines_2016
+      - Santander_EN
+      - PayU_ Brand_Guidelines_2021
+    must_have_modules:
+      - Brand Architecture
+      - Governance
+      - Visual Identity
+    recommended_modules:
+      - Compliance
+      - Layout System
+      - Partnership Branding
+      - Publication Design
+      - AI-Checkable Rules
+    typical_depth:
+      strategy: [medium]
+      visual: [medium, high]
+      governance: [medium, high]
+    typical_chapter_sequence:
+      - Brand Architecture Overview
+      - Master Brand / Sub-brands
+      - Logo Selection Matrix
+      - Co-branding / Partnership
+      - Applications
+      - Governance
+    classification:
+      priority: 3
+      modules_all:
+        - Brand Architecture
+      sections_min: 12
+      any_of:
+        - modules_any:
+            - Partnership Branding
+            - Publication Design
+        - chapter_title_keywords_any:
+            - partner
+            - co-brand
+            - subsidiary
+            - group
+            - world bank
+            - master brand
+            - sub-brand
+
+  - id: product_design_system
+    name: 產品設計系統 / UI 規範
+    description: >
+      以元件、互動、token 為核心的產品或數位體驗規範，常伴隨品牌視覺但重心在 UI 執行。
+      適合 SaaS、平台產品、app 與 design system 團隊。
+    precedent_ids:
+      - Microsoft_Xbox_brand_guidelines_2019
+      - google_marketing_platform_visual_guidelines
+      - Discord_BrandGuideline_2021
+    must_have_modules:
+      - Design Tokens
+      - Visual Identity
+    recommended_modules:
+      - UI Components
+      - Interaction Design
+      - Typography System
+      - Color System
+      - Accessibility
+      - Product Language
+    typical_depth:
+      strategy: [low, medium]
+      visual: [high]
+      governance: [medium, high]
+    typical_chapter_sequence:
+      - Brand Principles
+      - Color / Tokens
+      - Typography
+      - Components
+      - Layout / Patterns
+      - Accessibility
+    classification:
+      priority: 4
+      modules_any:
+        - UI Components
+        - Interaction Design
+      modules_all:
+        - Design Tokens
+      modules_none:
+        - Brand Architecture
+
+  - id: logo_asset_guidelines
+    name: Logo 與資產聚焦指南
+    description: >
+      章節精簡、以標誌與核心資產下載與使用為主，策略與敘事篇幅少。
+      適合合作夥伴、媒體、通路只需 logo 規範的情境。
+    precedent_ids:
+      - Tripadvisor_Logo_Guidelines_2020
+      - optile_Logo_Guidelines_2018
+      - TheEmirates_LogoGuidelines
+    must_have_modules:
+      - Visual Identity
+      - Governance
+    recommended_modules:
+      - Design Tokens
+      - AI-Checkable Rules
+      - Accessibility
+    typical_depth:
+      strategy: [low]
+      visual: [medium, high]
+      governance: [medium]
+    typical_chapter_sequence:
+      - Download / Assets
+      - Primary Logo
+      - Logo Variants
+      - Clear Space / Color
+      - Don'ts
+    classification:
+      priority: 5
+      top_level_max: 4
+      sections_max: 8
+      strategy_depth: low
+      modules_all:
+        - Visual Identity
+      modules_none:
+        - Brand Strategy
+        - Brand Architecture
+
+  - id: campaign_touchpoint
+    name: 活動 / 通路觸點指南
+    description: >
+      聚焦特定活動、動態識別或單一通路（影片結尾、標誌系統、活動視覺）。
+      適合 campaign、event branding、motion end slate 等專項規範。
+    precedent_ids:
+      - IBM_ThinkSummit_2020
+      - IBM_Be_Equal_2020
+      - McDelivery_brandbook_2017
+    must_have_modules:
+      - Visual Identity
+    recommended_modules:
+      - Motion Identity
+      - Content Design
+      - Photography System
+      - Governance
+    typical_depth:
+      strategy: [low, medium]
+      visual: [high]
+      governance: [medium]
+    typical_chapter_sequence:
+      - Campaign Overview
+      - Visual Theme
+      - Logo / Lockups
+      - Applications
+      - Motion / Video
+    classification:
+      priority: 6
+      modules_any:
+        - Motion Identity
+      sections_max: 12
+      top_level_max: 5
+      strategy_depth_not: high
+      any_of:
+        - brand_id_keywords_any:
+            - summit
+            - campaign
+            - event
+            - delivery
+            - olympic
+            - equal
+
+  - id: brand_experience_guide
+    name: 標準品牌體驗指南
+    description: >
+      最常見的企業／機構品牌手冊：策略中等、視覺與治理完整，章節數中等。
+      適合多數單一品牌組織的預設參考原型。
+    precedent_ids:
+      - Slack-Brand-Guidelines
+      - Heathrow_Brand_guidelines_2018
+      - Volvo_2021_compressed
+    must_have_modules:
+      - Visual Identity
+      - Color System
+      - Typography System
+      - Governance
+    recommended_modules:
+      - Brand Strategy
+      - Messaging
+      - Voice and Tone
+      - Photography System
+      - Layout System
+      - Operations
+    typical_depth:
+      strategy: [medium]
+      visual: [high]
+      governance: [medium, high]
+    typical_chapter_sequence:
+      - Brand / Purpose
+      - Logo
+      - Color
+      - Typography
+      - Imagery
+      - Voice
+      - Applications
+    classification:
+      priority: 99
+      default: true

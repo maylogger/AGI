@@ -1,0 +1,294 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: BlackBerry_Cylance_Brand_Guidelines_2019
+index_ref: docs/BlackBerry_Cylance_Brand_Guidelines_2019.index.yaml
+note_ref: docs/BlackBerry_Cylance_Brand_Guidelines_2019.note.md
+archetype: brand_experience_guide
+industry: tech_software
+modules:
+- AI-Checkable Rules
+- Brand Strategy
+- Voice and Tone
+- Messaging
+- Legal and Trademark
+- Content Design
+- Measurement
+- Operations
+- Iconography System
+- Design Tokens
+- Visual Identity
+- Governance
+- Typography System
+- Color System
+- Photography System
+- Content Safety
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 5
+  section_count: 12
+chapter_sequence:
+- id: ch-01
+  title: Brand Voice
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Brand Mantra and Position
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Pillars, Value and Message Frame
+  order: 2
+  level: 2
+- id: ch-02
+  title: Brand Personas
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Persona Overview and Deep Dives
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Buyer Journey
+  order: 2
+  level: 2
+- id: ch-03
+  title: Visual Brand
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Color and Typography
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Logo and Brand Hierarchy
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Photography, Smart Antivirus and Iconography
+  order: 3
+  level: 2
+- id: ch-03-04
+  title: Co-branding
+  order: 4
+  level: 2
+- id: ch-04
+  title: Brand Messaging Guidelines
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: General Style Topics
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Specific Word Styles
+  order: 2
+  level: 2
+- id: ch-04-03
+  title: Approved Descriptions
+  order: 3
+  level: 2
+- id: ch-05
+  title: Brand Checklist
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Requirements and Checklist
+  order: 1
+  level: 2
+frameworks:
+- name: Messaging Stack：mission → mantra → position → pillars → value → allowed message claims
+  chapter: ch-01
+  chapter_title: Brand Voice
+- name: Core Claim Framework：science → AI/math → prevention → business confidence
+  chapter: ch-01-01
+  chapter_title: Brand Mantra and Position
+- name: Persona-to-Message Framework：role → stress → aspiration → objection → tone → content channel
+  chapter: ch-02
+  chapter_title: Brand Personas
+- name: Message Adaptation Matrix：executive value vs
+  chapter: ch-02-01
+  chapter_title: Persona Overview and Deep Dives
+- name: Journey-to-Content Framework
+  chapter: ch-02-02
+  chapter_title: Buyer Journey
+- name: Visual System Stack：tokens → master logo → product tiers → imagery/icon library → partner governance
+  chapter: ch-03
+  chapter_title: Visual Brand
+- name: Design Token Framework
+  chapter: ch-03-01
+  chapter_title: Color and Typography
+- name: Brand Hierarchy Framework：tier → shield/icon → name style → trademark rule
+  chapter: ch-03-02
+  chapter_title: Logo and Brand Hierarchy
+- name: Imagery and Icon Governance
+  chapter: ch-03-03
+  chapter_title: Photography, Smart Antivirus and Iconography
+- name: Co-brand Approval Framework
+  chapter: ch-03-04
+  chapter_title: Co-branding
+- name: Editorial Governance System：strategic rules → term dictionary → trademark rules → approved boilerplates
+  chapter: ch-04
+  chapter_title: Brand Messaging Guidelines
+- name: Semantic Precision Framework
+  chapter: ch-04-01
+  chapter_title: General Style Topics
+- name: Preflight Checklist Framework
+  chapter: ch-05
+  chapter_title: Brand Checklist
+patterns:
+- name: 公司做什麼
+  chapter: ch-01
+  chapter_title: Brand Voice
+- name: 使用者因此能做什麼
+  chapter: ch-01
+  chapter_title: Brand Voice
+- name: boilerplate 同時服務媒體、網站、簡報與外部 vendor 描述。
+  chapter: ch-01-01
+  chapter_title: Brand Mantra and Position
+- name: Frank 需要 strategic confidence；Preston 需要 practical ease、透明與能減少混亂的工具。
+  chapter: ch-02
+  chapter_title: Brand Personas
+- name: 把 skepticism 明寫出來，讓文案規則可以禁止空泛 AI 話術。
+  chapter: ch-02-01
+  chapter_title: Persona Overview and Deep Dives
+- name: 將 marketing 與 sales support 依階段分配，而非全程同一訊息。
+  chapter: ch-02-02
+  chapter_title: Buyer Journey
+- name: 以 master brand shield 和 shared palette 統一多產品家族，同時用 gradients 區分產品。
+  chapter: ch-03
+  chapter_title: Visual Brand
+- name: 高飽和 accent colors 用於 charts、buttons、產品差異，不應濫用。
+  chapter: ch-03-01
+  chapter_title: Color and Typography
+- name: 使用 shared shield 作為 grounding element，讓產品 icon 可變但品牌根系一致。
+  chapter: ch-03-02
+  chapter_title: Logo and Brand Hierarchy
+- name: icon catalog 以 concept + execution 統一，允許功能族群擴張。
+  chapter: ch-03-03
+  chapter_title: Photography, Smart Antivirus and Iconography
+- name: 把不符合規定成本明確歸於 partner/sponsor，可減少規則被忽略。
+  chapter: ch-03-04
+  chapter_title: Co-branding
+- name: 把常犯錯詞彙直接列成 exact form，可支援 AI linting。
+  chapter: ch-04
+  chapter_title: Brand Messaging Guidelines
+- name: 如果不確定
+  chapter: ch-04-01
+  chapter_title: General Style Topics
+- name: 把抽象要求如 future focused 轉成具體問題：是否用 updated Green、Forza、updated icon set、updated gradients。
+  chapter: ch-05
+  chapter_title: Brand Checklist
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: logo 必須含 ®；不得改色、加 glow/drop shadow/tagline、旋轉/skew、移除 emblem；gradients 只能用 45°、60° 或 -60°，不得 straight up/down；icon
+    可用 80-400px；partner logo 建議 1:1 等大並維持 0.5 in/72 px spacing。
+  chapter: ch-03
+  chapter_title: Visual Brand
+- module: Color System
+  criterion: Cylance Green 為 `#2EEF37`；primary colors 應為設計 foundation；secondary palette 應 sparingly 使用。
+  chapter: ch-03-01
+  chapter_title: Color and Typography
+- module: Visual Identity
+  criterion: Product names 使用 Neogrey Medium 30pt tracking 500pt；Tier 03 使用 24pt tracking 200pt；產品 logo 應含 trademark 或依 tier
+    指示不含；stacked logo 主要用於 1:1 小方形。
+  chapter: ch-03-02
+  chapter_title: Logo and Brand Hierarchy
+- module: Iconography System
+  criterion: Smart Antivirus 不得使用 enterprise backgrounds/imagery；icons 應來自 updated set；影像需符合 refresh direction。
+  chapter: ch-03-03
+  chapter_title: Photography, Smart Antivirus and Iconography
+- module: Brand Strategy
+  criterion: 任何 digital properties 使用 powered-by logo 前需 approval；不得用 dividing line 暗示錯誤關係；不得在 off-brand background 上 pairing。
+  chapter: ch-03-04
+  chapter_title: Co-branding
+- module: Brand Strategy
+  criterion: 使用 Oxford comma；不可用 `&` 或 `+` 替代 and；電話格式 `+1-XXX-XXX-XXXX`；第三人稱為預設；BlackBerry Cylance 指公司，CylancePROTECT/CylanceOPTICS
+    指產品；不要公開引用 VirusTotal。
+  chapter: ch-04
+  chapter_title: Brand Messaging Guidelines
+- module: Brand Strategy
+  criterion: 交付前需檢查 trademark、company/product name distinction、cybersecurity 詞形、Oxford comma、AI/ML 重複、logo registered mark、updated
+    assets。
+  chapter: ch-05
+  chapter_title: Brand Checklist
+chapters:
+- id: ch-01
+  title: Brand Voice
+  modules:
+  - AI-Checkable Rules
+  - Brand Strategy
+  - Voice and Tone
+  - Messaging
+- id: ch-01-01
+  title: Brand Mantra and Position
+  modules:
+  - Legal and Trademark
+  - Messaging
+- id: ch-02
+  title: Brand Personas
+  modules:
+  - Content Design
+  - Messaging
+- id: ch-02-01
+  title: Persona Overview and Deep Dives
+  modules:
+  - Content Design
+  - Voice and Tone
+- id: ch-02-02
+  title: Buyer Journey
+  modules:
+  - Measurement
+  - Operations
+- id: ch-03
+  title: Visual Brand
+  modules:
+  - Iconography System
+  - Design Tokens
+  - Visual Identity
+  - Governance
+- id: ch-03-01
+  title: Color and Typography
+  modules:
+  - Typography System
+  - Color System
+  - Design Tokens
+- id: ch-03-02
+  title: Logo and Brand Hierarchy
+  modules:
+  - AI-Checkable Rules
+- id: ch-03-03
+  title: Photography, Smart Antivirus and Iconography
+  modules:
+  - Photography System
+  - Iconography System
+  - Governance
+- id: ch-03-04
+  title: Co-branding
+  modules:
+  - Legal and Trademark
+  - Governance
+- id: ch-04
+  title: Brand Messaging Guidelines
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+- id: ch-04-01
+  title: General Style Topics
+  modules:
+  - AI-Checkable Rules
+  - Messaging
+  - Content Safety
+- id: ch-05
+  title: Brand Checklist
+  modules:
+  - Measurement
+  - AI-Checkable Rules
+  - Operations
+  - Governance

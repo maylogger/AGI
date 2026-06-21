@@ -1,0 +1,61 @@
+# L3 決策卡 sidecar — AirAsia
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: airasia_brand_guidelines_2017
+decisions:
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+    evidence:
+      - brand_id: airasia_brand_guidelines_2017
+        chapter: ch-02-03
+        excerpt: "logo 周圍至少保留半徑 1/2 的 clear space，用資產自身幾何產生 spacing token；clear space 應用相對單位比固定 px 更適合多媒介品牌。"
+    status: extracted
+
+  - id: dp-bold-contrast-for-challenger
+    title: 用單一高彩度主色建立 equity，並以可用／禁用配色維持張力
+    problem:
+      statement: 挑戰者品牌需要在飽和市場中快速被認出並表達鮮明個性，溫和保守的配色會被淹沒。
+      signals: [differentiation, breakthrough_attention, personality_expression]
+    solution:
+      module: Color System
+      move: 以單一高彩度品牌主色建立辨識 equity，並明確列出「可用組合／禁用組合」與比例上限維持張力與一致
+      layer: visual_core
+    reason:
+      - 以 signature 主色作品牌 equity，secondary palette 只能輔助而非取代
+      - 色彩比例上限是比「use sparingly」更可執行的治理方式
+    applicable_when:
+      industries: [tech_software]
+      brand_types: [challenger]
+      conditions: [saturated_market, personality_expression]
+      archetypes: [brand_experience_guide, full_brand_system]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Color System, Accessibility]
+    anti_patterns:
+      - 開放任意配色稀釋主色 equity
+    evidence:
+      - brand_id: airasia_brand_guidelines_2017
+        chapter: ch-04
+        excerpt: "用有限色彩建立高度辨識，並控制次要色不稀釋 signature red；signature color 是品牌資產，secondary palette 只能輔助而非取代。"
+      - brand_id: airasia_brand_guidelines_2017
+        chapter: ch-04-02
+        excerpt: "搭配主色時 secondary colours 不應超過版面 50%，特殊產品或航線發布才可例外成為主調；可把 color dominance ratio 納入 AI 檢查判斷主色是否被削弱。"
+    status: extracted

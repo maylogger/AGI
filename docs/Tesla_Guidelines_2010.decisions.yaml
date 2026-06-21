@@ -1,0 +1,143 @@
+# L3 決策卡 sidecar — Tesla Brand Manual 2010
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Tesla_Guidelines_2010
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 以 mission-to-identity 框架先用創辦使命與技術定位定錨，再導入 identity toolkit 與應用規則
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌一致性是中長期 equity 的來源；創新品牌也需要紀律化的識別治理
+      - 品牌手冊導言應把設計規範與組織使命連結，提升規則遵從動機
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, new_energy_mobility]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: Tesla_Guidelines_2010
+        chapter: ch-01
+        excerpt: "mission-to-identity framework：company story、technology purpose、global consistency、application rules；以創辦使命先行，再導入視覺工具箱。"
+    status: extracted
+
+  - id: dp-logo-vs-lockup-distinction
+    title: 區分 public-facing lockup 與 corporate logo 的使用場景
+    problem:
+      statement: 單一標誌資產被套用到所有情境，混淆對外溝通與企業署名，且難以同時治理法律與一致性。
+      signals: [multiple_logo_contexts, trademark, legal_governance]
+    solution:
+      module: Visual Identity
+      move: 用 permission-tiered identity system 區分可廣泛使用的 wordmark 與需核准的 symbolic marks（Flag/T）與產品 wordmark
+      layer: visual_core
+    reason:
+      - 標誌資產不可重建、不可任意改比例
+      - 越具象徵性、越接近品牌核心的符號，越需要嚴格控制
+      - 品牌識別不必同權限；可依風險分層管理
+    applicable_when:
+      industries: [industrial_materials_science, finance, tech_software]
+      brand_types: [heritage_legacy, platform_ecosystem]
+      conditions: [trademark]
+      archetypes: [brand_experience_guide, corporate_toolkit, multi_brand_architecture]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Legal and Trademark, Governance]
+    evidence:
+      - brand_id: Tesla_Guidelines_2010
+        chapter: ch-02
+        excerpt: "permission-tiered identity system：wordmark 可廣泛使用，Tesla Flag 與 Tesla T 不得提供第三方且需 Corporate Marketing 與 Chief Designer 核准。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以 wordmark 自身高度作為 clearspace 量尺，使留白隨標誌縮放維持比例
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    evidence:
+      - brand_id: Tesla_Guidelines_2010
+        chapter: ch-02-01
+        excerpt: "wordmark 四周 clearspace 至少等於 wordmark 高度；不得 inline 作為 headline/copy 的一部分。"
+    status: extracted
+
+  - id: dp-media-split-typography
+    title: 依媒介分流字體系統（print / digital / body）
+    problem:
+      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+      signals: [print_and_digital, readability, licensing]
+    solution:
+      module: Typography System
+      move: 以 primary／secondary／electronic fallback 分層（print/design 用品牌字體，電子應用用系統字體替代）
+      layer: visual_core
+    reason:
+      - 不同媒介的可讀性與授權條件不同
+      - typography guideline 應明確定義媒介 fallback，而非只指定美術字體
+    applicable_when:
+      industries: [finance, public_sector, education]
+      brand_types: []
+      conditions: [print_and_digital]
+      archetypes: [brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: []
+    examples:
+      - Helvetica 主字體、Gotham 標題、Arial 電子應用替代
+    evidence:
+      - brand_id: Tesla_Guidelines_2010
+        chapter: ch-03
+        excerpt: "Helvetica 為 primary/copy font、Gotham 為 headline font、Arial 為 electronic font；電子應用使用 Arial 取代 Helvetica。"
+    status: extracted
+
+  - id: dp-approval-gate-for-exceptions
+    title: 例外不是漏洞，用審核閘門把差異收進可治理的模組
+    problem:
+      statement: 規則無法窮舉所有情境，現實組織總會有例外；若放任各單位自行決定，例外會逐步擴張成破壞系統的破口。
+      signals: [exception_handling, multi_unit_consistency, governance, scaling_risk]
+    solution:
+      module: Governance
+      move: 為 lifestyle/merchandise 例外設計 hard rules（區分用途、不得嚴重扭曲、必須出現 identity、投產前核准），把彈性收進審核閘門
+      layer: governance
+    reason:
+      - 生活風格品牌需要彈性，但彈性必須被核准與最低身份規則約束
+      - 品牌一致性不是取消差異，而是把差異收進可治理的模組
+    applicable_when:
+      industries: [public_sector, finance]
+      brand_types: [institutional_public_trust, platform_ecosystem, heritage_legacy]
+      conditions: [multi_unit_consistency, exception_handling]
+      archetypes: [multi_brand_architecture, corporate_toolkit]
+    dependencies:
+      requires: [Governance]
+      enables: []
+    anti_patterns:
+      - 例外只寫「可以這樣做」卻不寫適用邊界與審核者
+    evidence:
+      - brand_id: Tesla_Guidelines_2010
+        chapter: ch-07
+        excerpt: "區分公司/產品代表性物件與 fashion items；fashion items 可拆解 logo 但不得嚴重扭曲，物件某處必須出現 Tesla identity，投產前需 Corporate Marketing 與 Chief Designer 核准。"
+    status: extracted

@@ -1,0 +1,75 @@
+title: 'Kinokuniya Visual Rebrand Brand Guidelines'
+source: 'sources/kinokuniya_brand_guidelines.pdf'
+language: 'en'
+summary: 'Kinokuniya 視覺再品牌 guideline，將文化啟蒙的品牌策略轉為 brandmark、色彩、字體、圖樣、應用系統與 Week of Kino campaign。'
+chapters:
+  - id: 'ch-01'
+    title: 'Brand Strategy'
+    level: 1
+    order: 1
+    pages: '4-6'
+    summary: '定義 Kinokuniya 的人格特質與品牌目的。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Personality Traits'
+        level: 2
+        order: 1
+        pages: '5'
+        summary: '以 open-minded、all-encompassing、amiable、curious、adventurous 描述品牌人格。'
+      - id: 'ch-01-02'
+        title: 'Brand Purpose'
+        level: 2
+        order: 2
+        pages: '6'
+        summary: '以 Cultural Enlightenment 定義品牌透過文化擴展知識與視野。'
+  - id: 'ch-02'
+    title: 'Brand Identity Assets'
+    level: 1
+    order: 2
+    pages: '7-22'
+    summary: '規範 brandmark、正誤用、名稱書寫、secondary logos、最小尺寸、色彩、字體、攝影、圖樣與資產摘要。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Brandmark and Logo Usage'
+        level: 2
+        order: 1
+        pages: '8-13'
+        summary: '定義新品牌標誌、正確/錯誤使用、文字中名稱寫法、堆疊版本、多語版本與最小尺寸。'
+      - id: 'ch-02-02'
+        title: 'Color, Typography, Photography, Patterns'
+        level: 2
+        order: 2
+        pages: '14-21'
+        summary: '建立藍黃導向色彩、Kino typeface、Roboto body font、攝影與圖樣應用方式。'
+      - id: 'ch-02-03'
+        title: 'Brand Summary Assets'
+        level: 2
+        order: 3
+        pages: '22'
+        summary: '以一頁彙整 logo lockups、minimum size、typography、palette、photography/patterns。'
+  - id: 'ch-03'
+    title: 'Brand Identity System'
+    level: 1
+    order: 3
+    pages: '23-29'
+    summary: '展示品牌如何轉譯到 storefront、in-store use、membership cards、posters 等媒介。'
+    children:
+      - id: 'ch-03-01'
+        title: 'System Use and Applications'
+        level: 2
+        order: 1
+        pages: '24-29'
+        summary: '以應用畫面測試品牌資產在不同媒介中的一致性。'
+  - id: 'ch-04'
+    title: 'Week of Kino Campaign'
+    level: 1
+    order: 4
+    pages: '30-38'
+    summary: '提出 Week of Kino summer festival campaign，作為 50 周年與視覺再品牌的啟動活動。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Campaign Touchpoints'
+        level: 2
+        order: 1
+        pages: '31-37'
+        summary: '涵蓋 information booth、wish papers、festival streamers、OOH、street banners、poster 與 microsite。'

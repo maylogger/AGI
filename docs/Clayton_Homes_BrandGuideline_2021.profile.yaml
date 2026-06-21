@@ -1,0 +1,325 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Clayton_Homes_BrandGuideline_2021
+index_ref: docs/Clayton_Homes_BrandGuideline_2021.index.yaml
+note_ref: docs/Clayton_Homes_BrandGuideline_2021.note.md
+archetype: multi_brand_architecture
+industry: consumer_retail_hospitality
+modules:
+- Brand Strategy
+- Voice and Tone
+- Messaging
+- Knowledge Architecture
+- Governance
+- AI-Checkable Rules
+- Content Design
+- Brand Architecture
+- Photography System
+- Typography System
+- Color System
+- Design Tokens
+- Visual Identity
+- Legal and Trademark
+- Visual Language
+- Examples
+- Operations
+- Layout System
+depth:
+  strategy: high
+  visual: high
+  governance: high
+  top_level_chapter_count: 3
+  section_count: 13
+chapter_sequence:
+- id: ch-01
+  title: The Big Stuff
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Introduction
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Brand Personality
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Brand Architecture
+  order: 3
+  level: 2
+- id: ch-02
+  title: The Technical Stuff
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: The Clayton Logotype
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Typography
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Color Palette
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Photography
+  order: 4
+  level: 2
+- id: ch-03
+  title: The Nitty Gritty
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Brand Campaign Guidelines
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Retail Campaign Guidelines
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Vehicle Fleet
+  order: 3
+  level: 2
+- id: ch-03-04
+  title: Individual Sub-brand Guidelines
+  order: 4
+  level: 2
+- id: ch-03-05
+  title: Buyer Personas
+  order: 5
+  level: 2
+- id: ch-03-06
+  title: Brand Summary
+  order: 6
+  level: 2
+frameworks:
+- name: 從 purpose、promise、tagline、language、tone、voice、core tenets 到 personas，形成策略到內容的決策框架
+  chapter: ch-01
+  chapter_title: The Big Stuff
+- name: history -> capability -> values -> aspiration 的信任建立框架
+  chapter: ch-01-01
+  chapter_title: Introduction
+- name: purpose/promise/tagline -> language/tone/voice -> phrases/core tenets -> Prefabulous filter
+  chapter: ch-01-02
+  chapter_title: Brand Personality
+- name: master brand endorsement framework
+  chapter: ch-01-03
+  chapter_title: Brand Architecture
+- name: identity elements -> constraints -> approved variants -> application examples
+  chapter: ch-02
+  chapter_title: The Technical Stuff
+- name: unit-based clear space and variant permission model
+  chapter: ch-02-01
+  chapter_title: The Clayton Logotype
+- name: body size -> subhead x1
+  chapter: ch-02-02
+  chapter_title: Typography
+- name: primary backbone -> secondary accent -> neutral sophistication -> family-brand references
+  chapter: ch-02-03
+  chapter_title: Color Palette
+- name: subject type -> desired emotional traits -> selection/cropping criteria
+  chapter: ch-02-04
+  chapter_title: Photography
+- name: brand system -> campaign formats -> sales activation -> sub-brand variation -> customer segmentation
+  chapter: ch-03
+  chapter_title: The Nitty Gritty
+- name: tagline meaning -> tone guardrails -> channel-specific layout examples
+  chapter: ch-03-01
+  chapter_title: Brand Campaign Guidelines
+- name: Clayton work stricter brand system；FOB work broader creative variation
+  chapter: ch-03-02
+  chapter_title: Retail Campaign Guidelines
+- name: vehicle category -> approved asset placement
+  chapter: ch-03-03
+  chapter_title: Vehicle Fleet
+- name: 'sub-brand card: positioning copy + color + typography + asset link'
+  chapter: ch-03-04
+  chapter_title: Individual Sub-brand Guidelines
+- name: persona profile + journey stage + purchase trigger + messaging implication
+  chapter: ch-03-05
+  chapter_title: Buyer Personas
+- name: guideline -> contact owner
+  chapter: ch-03-06
+  chapter_title: Brand Summary
+patterns:
+- name: brand personality to expression
+  chapter: ch-01
+  chapter_title: The Big Stuff
+- name: 用企業歷史作為品牌治理的正當性來源。
+  chapter: ch-01-01
+  chapter_title: Introduction
+- name: 用禁用詞管理品類偏見，用品牌 shorthand 管理創意一致性。
+  chapter: ch-01-02
+  chapter_title: Brand Personality
+- name: 家族品牌章節先定義共同承諾，再在後續提供各子品牌規格。
+  chapter: ch-01-03
+  chapter_title: Brand Architecture
+- name: 每個視覺系統先給 preferred use，再給 outlier/alternate use，最後列出 abuse cases。
+  chapter: ch-02
+  chapter_title: The Technical Stuff
+- name: 以核心 logo 元件作為測量單位，是可複用的 identity measurement pattern。
+  chapter: ch-02-01
+  chapter_title: The Clayton Logotype
+- name: 用 typography scale formula 取代主觀大小判斷。
+  chapter: ch-02-02
+  chapter_title: Typography
+- name: 色彩章同時提供 token、組合與情境用途。
+  chapter: ch-02-03
+  chapter_title: Color Palette
+- name: 為每種影像類型指定情緒形容詞與禁用構圖。
+  chapter: ch-02-04
+  chapter_title: Photography
+- name: 用應用範例把抽象規範轉成可直接比對的成品模式。
+  chapter: ch-03
+  chapter_title: The Nitty Gritty
+- name: 同一 campaign idea 以 OOH、TV、digital、social 多格式轉譯。
+  chapter: ch-03-01
+  chapter_title: Brand Campaign Guidelines
+- name: 同一 offer 依品牌層級產生兩套視覺策略。
+  chapter: ch-03-02
+  chapter_title: Retail Campaign Guidelines
+- name: 按 asset type 建立應用規範，而不是用單一模板硬套。
+  chapter: ch-03-03
+  chapter_title: Vehicle Fleet
+- name: 用 standardized brand card 管理 brand portfolio。
+  chapter: ch-03-04
+  chapter_title: Individual Sub-brand Guidelines
+- name: 把 slogan 的意義依 persona 重新詮釋。
+  chapter: ch-03-05
+  chapter_title: Buyer Personas
+- name: 在文件末尾放置 brand steward contact。
+  chapter: ch-03-06
+  chapter_title: Brand Summary
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：文案不得使用 mobile homes、trailers、single-wides、double-wides、triple-wides、cheap housing、plants/factories；語氣需符合
+    simple、understandable、consistent 與 authentic、optimistic、fun。
+  chapter: ch-01
+  chapter_title: The Big Stuff
+- module: Brand Strategy
+  criterion: AI 可檢查：標語需使用 Have it made®；tone 不得 preachy、overly sales-driven 或貶低 manufactured homes；應優先使用 home、home buying、home
+    owning、Clayton Built®。
+  chapter: ch-01-02
+  chapter_title: Brand Personality
+- module: Brand Strategy
+  criterion: AI 可檢查：子品牌敘事需回扣 quality、home buying/owning experience、fun/rewarding；不得只呈現獨立風格而無 Clayton 關聯。
+  chapter: ch-01-03
+  chapter_title: Brand Architecture
+- module: Visual Identity
+  criterion: AI 可檢查：logo 周圍空白至少等於指定 o 單位；print 不小於 .5 inch，digital 不小於 64px @1x；不得拉伸、傾斜、改形、加未核准 modifier、使用未核准色、放在低對比影像上。
+  chapter: ch-02-01
+  chapter_title: The Clayton Logotype
+- module: Typography System
+  criterion: AI 可檢查：headline 使用 Helvetica Neue LT Std 85 Heavy 或 Acumin Pro Black；headline sentence case；headline tracking
+    約 -40；多行 headline size:leading 為 1:1；body tracking +20，leading 約 1:1.33，窄欄可到 1:1.5。
+  chapter: ch-02-02
+  chapter_title: Typography
+- module: ''
+  criterion: AI 可檢查：campaign 必須保持 Clayton logo/font/color 規範；retail 可更活潑但不得犧牲 premium feel；FOB 不應放 Clayton logo；personas 內容需對應
+    identify、engage、convert、upsell。
+  chapter: ch-03
+  chapter_title: The Nitty Gritty
+- module: Brand Strategy
+  criterion: AI 可檢查：headline 大且清楚並錨定角落；logo 位於對角或居中且可讀；語氣需 fun、engaging、earnest、sophisticated；不得 too goofy 或 preachy。
+  chapter: ch-03-01
+  chapter_title: Brand Campaign Guidelines
+- module: ''
+  criterion: AI 可檢查：車隊應使用核准 logo、保持可讀性，不得扭曲 logo 或放在破壞對比的車體位置。
+  chapter: ch-03-03
+  chapter_title: Vehicle Fleet
+- module: Brand Strategy
+  criterion: AI 可檢查：每個子品牌輸出需使用對應字體與色票；不得將 Clayton Built、Cavalier、Marlette、Schult、SE Homes 的語氣與色彩混用。
+  chapter: ch-03-04
+  chapter_title: Individual Sub-brand Guidelines
+chapters:
+- id: ch-01
+  title: The Big Stuff
+  modules:
+  - Brand Strategy
+  - Voice and Tone
+  - Messaging
+  - Knowledge Architecture
+- id: ch-01-01
+  title: Introduction
+  modules:
+  - Brand Strategy
+  - Governance
+- id: ch-01-02
+  title: Brand Personality
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+- id: ch-01-03
+  title: Brand Architecture
+  modules:
+  - Brand Architecture
+  - Governance
+- id: ch-02
+  title: The Technical Stuff
+  modules:
+  - Photography System
+  - Typography System
+  - Color System
+  - Design Tokens
+  - Visual Identity
+- id: ch-02-01
+  title: The Clayton Logotype
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02-02
+  title: Typography
+  modules:
+  - Typography System
+  - Design Tokens
+- id: ch-02-03
+  title: Color Palette
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-02-04
+  title: Photography
+  modules:
+  - Photography System
+  - Visual Language
+- id: ch-03
+  title: The Nitty Gritty
+  modules:
+  - Examples
+  - Messaging
+  - Operations
+- id: ch-03-01
+  title: Brand Campaign Guidelines
+  modules:
+  - Layout System
+  - Messaging
+- id: ch-03-02
+  title: Retail Campaign Guidelines
+  modules:
+  - Governance
+- id: ch-03-03
+  title: Vehicle Fleet
+  modules:
+  - Operations
+- id: ch-03-04
+  title: Individual Sub-brand Guidelines
+  modules:
+  - Brand Architecture
+  - Design Tokens
+- id: ch-03-05
+  title: Buyer Personas
+  modules:
+  - Messaging
+- id: ch-03-06
+  title: Brand Summary
+  modules:
+  - Operations
+  - Governance

@@ -1,0 +1,92 @@
+# L3 決策卡 sidecar — Zoom Partner Messaging and Branding Guide
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: ZOOM_2022
+decisions:
+  - id: dp-trademark-permission-flow
+    title: 用授權閘門治理第三方商標使用，先處理混淆與背書風險
+    problem:
+      statement: 平台品牌被大量第三方使用商標與資產，若無授權流程，會造成商標混淆與誤導性背書風險。
+      signals: [trademark_protection, partner_governance, endorsement_risk, third_party_usage]
+    solution:
+      module: Legal and Trademark
+      move: 把行銷便利與商標風險放在同一份操作文件，以 scope → 後果 → review/approval → trademark attribution 的可撤銷授權治理
+      layer: governance
+    reason:
+      - partner brand guidelines 應明確連結品牌規則、商標權與可執行後果
+      - 平台品牌 guideline 應優先處理 trademark confusion 與 endorsement risk，再處理美學一致
+      - permission section 將品牌治理流程化，降低設計師自行判斷法律風險
+    applicable_when:
+      industries: [tech_software]
+      brand_types: [platform_ecosystem]
+      conditions: [third_party_usage, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Legal and Trademark]
+      enables: [Governance]
+    anti_patterns:
+      - 只給視覺規格而無使用情境風險表與審核材料清單
+      - 放任第三方自行判斷法律與背書風險
+    evidence:
+      - brand_id: ZOOM_2022
+        chapter: ch-01
+        excerpt: "合作品牌治理需要把行銷便利與法律/商標風險放在同一份操作文件中；若不符合規定需 rectification，嚴重時可撤銷 Zoom trademark 使用權。"
+      - brand_id: ZOOM_2022
+        chapter: ch-10
+        excerpt: "Zoom Marks 需 license 或 express written permission；任何 featuring Zoom Mark 的溝通應包含 proper trademark attribution，並符合 guideline 與 partner agreement license terms。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌高度（logo height）作為相對留白基準，並訂最小尺寸 token
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    evidence:
+      - brand_id: ZOOM_2022
+        chapter: ch-05-01
+        excerpt: "Zoom logo clear space 至少等於 logo height，並訂最小尺寸（不得小於 18 px 高或 80 px 寬）。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以分隔線、固定主從位置與平衡尺寸定義 partner primary + 平台 secondary 的 joint lock-up
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - joint lock-up 不是融合品牌，而是兩個來源用分隔符保持邊界
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - joint lock-up 使用 plus、x、equal 等關係符號而非分隔線
+    evidence:
+      - brand_id: ZOOM_2022
+        chapter: ch-06-03
+        excerpt: "joint lock-up 不是融合品牌，而是兩個來源用 divider 保持邊界；partner logo 永遠 primary、Zoom secondary，必須使用 vertical/horizontal divider 並維持平衡尺寸。"
+    status: extracted

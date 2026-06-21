@@ -1,0 +1,188 @@
+title: "Barbican Identity Guidelines"
+source: "sources/Barbican_Centre_brand_guidelines_2017.pdf"
+date: "2017"
+language: "en"
+summary: "Barbican identity guidelines 以 logo、lock-up、grid、Futura 字體、typography、art forms 與 design examples 建立高度系統化的藝文機構視覺識別。"
+chapters:
+  - id: "ch-01"
+    title: "Core Elements Introduction"
+    level: 1
+    order: 1
+    pages: "1-5"
+    summary: "說明 Barbican identity 不只是 logo，而是由核心元素共同形成的可辨識設計方案。"
+    children:
+      - id: "ch-01-01"
+        title: "Contents"
+        level: 2
+        order: 1
+        pages: "2-3"
+        summary: "列出 Core Elements、Art Forms 與 Design Examples。"
+      - id: "ch-01-02"
+        title: "Introduction"
+        level: 2
+        order: 2
+        pages: "4-5"
+        summary: "說明核心元素支援高彈性的視覺溝通。"
+  - id: "ch-02"
+    title: "Logo"
+    level: 1
+    order: 2
+    pages: "7-15"
+    summary: "規範 Barbican 圓形 logo 的介紹、定位、保護區與色彩對比。"
+    children:
+      - id: "ch-02-01"
+        title: "Logo Introduction"
+        level: 2
+        order: 1
+        pages: "8-9"
+        summary: "logo 是跨 Barbican 溝通的通用品質保證。"
+      - id: "ch-02-02"
+        title: "Logo Positioning"
+        level: 2
+        order: 2
+        pages: "10-11"
+        summary: "logo 以 full circle artwork 出血到頁面邊緣。"
+      - id: "ch-02-03"
+        title: "Protecting and Colour"
+        level: 2
+        order: 3
+        pages: "12-15"
+        summary: "定義 exclusion zone 與背景/半圓/文字的對比要求。"
+  - id: "ch-03"
+    title: "Lock-up"
+    level: 1
+    order: 3
+    pages: "17-25"
+    summary: "定義 logo 與 essential information 的固定關係、字體、位置與特殊合作情境。"
+    children:
+      - id: "ch-03-01"
+        title: "Lock-up Introduction"
+        level: 2
+        order: 1
+        pages: "18-19"
+        summary: "說明 lock-up 是 logo 與資訊的固定關係。"
+      - id: "ch-03-02"
+        title: "Typeface and Positioning"
+        level: 2
+        order: 2
+        pages: "20-23"
+        summary: "使用 Futura Book，並依 A5/A4/A3 等格式定位。"
+      - id: "ch-03-03"
+        title: "Special Case Lock-up"
+        level: 2
+        order: 3
+        pages: "24-25"
+        summary: "處理 resident company 或 promoter logo 共存。"
+  - id: "ch-04"
+    title: "Grid"
+    level: 1
+    order: 4
+    pages: "27-37"
+    summary: "以 shared measurement units、format sets 與 six-column grid 建立跨藝術形式的版面結構。"
+    children:
+      - id: "ch-04-01"
+        title: "Grid Introduction"
+        level: 2
+        order: 1
+        pages: "28-29"
+        summary: "grid 是組織圖文與攝影元素的結構基礎。"
+      - id: "ch-04-02"
+        title: "Grid Sets and Formats"
+        level: 2
+        order: 2
+        pages: "30-33"
+        summary: "不同格式共用測量單位與 logo/lock-up 框架。"
+      - id: "ch-04-03"
+        title: "Column Grid"
+        level: 2
+        order: 3
+        pages: "34-37"
+        summary: "六欄 grid 支援行銷 literature 的彈性組合。"
+  - id: "ch-05"
+    title: "Typeface"
+    level: 1
+    order: 5
+    pages: "39-51"
+    summary: "規範 Scangraphic Futura 作為 Barbican identity 的核心字體與字重樣張。"
+    children:
+      - id: "ch-05-01"
+        title: "Typeface Introduction"
+        level: 2
+        order: 1
+        pages: "40-41"
+        summary: "Futura 是品牌核心，兼具 clean、distinctive、legible。"
+      - id: "ch-05-02"
+        title: "Typeface Weights"
+        level: 2
+        order: 2
+        pages: "42-43"
+        summary: "Futura Bold 最常用，其他字重支援表達。"
+      - id: "ch-05-03"
+        title: "Typeface Specimens"
+        level: 2
+        order: 3
+        pages: "45-51"
+        summary: "展示字重、斜體、數字與符號。"
+  - id: "ch-06"
+    title: "Typography"
+    level: 1
+    order: 6
+    pages: "53-69"
+    summary: "定義 ranged left、ragged edge、line spacing、letter spacing、emphasis 與 hierarchy。"
+    children:
+      - id: "ch-06-01"
+        title: "Arrangement of Text"
+        level: 2
+        order: 1
+        pages: "56-57"
+        summary: "文字 always ranged left，避免全大寫句子。"
+      - id: "ch-06-02"
+        title: "Line and Letter Spacing"
+        level: 2
+        order: 2
+        pages: "58-65"
+        summary: "仔細控制 leading、tracking 與可讀性。"
+      - id: "ch-06-03"
+        title: "Emphasis and Hierarchy"
+        level: 2
+        order: 3
+        pages: "66-69"
+        summary: "建立重點與階層。"
+  - id: "ch-07"
+    title: "Art Forms"
+    level: 1
+    order: 7
+    pages: "73-111"
+    summary: "針對 Theatre、Art、Film、Music、Barbican 等藝術形式展示身份系統的分支應用。"
+    children:
+      - id: "ch-07-01"
+        title: "Theatre"
+        level: 2
+        order: 1
+        pages: "73-77"
+        summary: "展示劇場分支應用。"
+      - id: "ch-07-02"
+        title: "Art"
+        level: 2
+        order: 2
+        pages: "79-87"
+        summary: "展示藝術分支應用。"
+      - id: "ch-07-03"
+        title: "Film, Music, Barbican"
+        level: 2
+        order: 3
+        pages: "89-111"
+        summary: "展示影像、音樂與整體 Barbican 溝通。"
+  - id: "ch-08"
+    title: "Design Examples"
+    level: 1
+    order: 8
+    pages: "113-137"
+    summary: "以完整設計案例展示核心元素、藝術形式與行銷素材如何落地。"
+    children:
+      - id: "ch-08-01"
+        title: "Application Examples"
+        level: 2
+        order: 1
+        pages: "113-137"
+        summary: "提供多種應用範例與 campaign 類型。"

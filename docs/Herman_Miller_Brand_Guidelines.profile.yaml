@@ -1,0 +1,263 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Herman_Miller_Brand_Guidelines
+index_ref: docs/Herman_Miller_Brand_Guidelines.index.yaml
+note_ref: docs/Herman_Miller_Brand_Guidelines.note.md
+archetype: full_brand_system
+industry: industrial_materials_science
+modules:
+- Brand Strategy
+- Governance
+- Messaging
+- Brand Architecture
+- Visual Identity
+- Layout System
+- Operations
+- Legal and Trademark
+- Typography System
+- Color System
+- Content Design
+- Voice and Tone
+- AI-Checkable Rules
+- Examples
+- Design Process
+- Knowledge Architecture
+depth:
+  strategy: high
+  visual: high
+  governance: high
+  top_level_chapter_count: 10
+  section_count: 2
+chapter_sequence:
+- id: ch-01
+  title: Advocating for the Herman Miller Brand
+  order: 1
+  level: 1
+- id: ch-02
+  title: Brand Introduction
+  order: 2
+  level: 1
+- id: ch-03
+  title: Logomark Evolution
+  order: 3
+  level: 1
+- id: ch-04
+  title: Business Communications
+  order: 4
+  level: 1
+- id: ch-05
+  title: The Visual Use of the Brand
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Space, Scale and Color
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Type, Media and Trademarks
+  order: 2
+  level: 2
+- id: ch-06
+  title: The Written Use of the Brand
+  order: 6
+  level: 1
+- id: ch-07
+  title: Authorship of the Brand
+  order: 7
+  level: 1
+- id: ch-08
+  title: Making Brand Decisions
+  order: 8
+  level: 1
+- id: ch-09
+  title: Resources
+  order: 9
+  level: 1
+- id: ch-10
+  title: Bibliography
+  order: 10
+  level: 1
+frameworks:
+- name: brand advocacy framework：asset awareness -> consistent expression -> collective strengthening
+  chapter: ch-01
+  chapter_title: Advocating for the Herman Miller Brand
+- name: perception -> research attributes -> promise statement
+  chapter: ch-02
+  chapter_title: Brand Introduction
+- name: identity transition framework：paired recognition -> standalone symbol
+  chapter: ch-03
+  chapter_title: Logomark Evolution
+- name: template-based operations framework
+  chapter: ch-04
+  chapter_title: Business Communications
+- name: visual identity implementation framework
+  chapter: ch-05
+  chapter_title: The Visual Use of the Brand
+- name: identity spacing and scaling token framework
+  chapter: ch-05-01
+  chapter_title: Space, Scale and Color
+- name: media-specific asset selection framework
+  chapter: ch-05-02
+  chapter_title: Type, Media and Trademarks
+- name: promise usage framework：corporate/brand context yes；headline/tagline/logomark association no
+  chapter: ch-06
+  chapter_title: The Written Use of the Brand
+- name: first mention authorship framework
+  chapter: ch-07
+  chapter_title: Authorship of the Brand
+- name: six-guidepost brand decision framework
+  chapter: ch-08
+  chapter_title: Making Brand Decisions
+- name: support escalation framework
+  chapter: ch-09
+  chapter_title: Resources
+- name: learning resource framework
+  chapter: ch-10
+  chapter_title: Bibliography
+patterns:
+- name: join us
+  chapter: ch-01
+  chapter_title: Advocating for the Herman Miller Brand
+- name: 用兩個性格詞濃縮品牌定位，再用承諾句擴寫。
+  chapter: ch-02
+  chapter_title: Brand Introduction
+- name: 新符號先與名稱一起出現，逐步建立獨立識別。
+  chapter: ch-03
+  chapter_title: Logomark Evolution
+- name: 將低創意、高頻率 touchpoint 模板化。
+  chapter: ch-04
+  chapter_title: Business Communications
+- name: 不同媒介使用不同精細度的 mark file。
+  chapter: ch-05
+  chapter_title: The Visual Use of the Brand
+- name: 大版面不必放大 logo；應讓空間提升品牌感。
+  chapter: ch-05-01
+  chapter_title: Space, Scale and Color
+- name: 為 pixel/small/large sizes 準備不同 mark font file。
+  chapter: ch-05-02
+  chapter_title: Type, Media and Trademarks
+- name: 長度依場景縮放，但承諾句意與人本焦點不變。
+  chapter: ch-06
+  chapter_title: The Written Use of the Brand
+- name: 品牌名 + product/service/program + trademark + noun。
+  chapter: ch-07
+  chapter_title: Authorship of the Brand
+- name: 每個範例標註使用了哪些 guideposts，讓評估可學習。
+  chapter: ch-08
+  chapter_title: Making Brand Decisions
+- name: 讓使用者知道何時不自行判斷。
+  chapter: ch-09
+  chapter_title: Resources
+- name: 以 Neumeier、Wheeler、Arden、Adamson 等品牌設計參考建立共同語言。
+  chapter: ch-10
+  chapter_title: Bibliography
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI 可檢查：品牌素材應至少遵守 logomark 與 brand promise 兩類規範；不得把 guideline 視為只管 logo。
+  chapter: ch-01
+  chapter_title: Advocating for the Herman Miller Brand
+- module: Brand Strategy
+  criterion: AI 可檢查：品牌說明需同時反映 pioneer 與 advocate；不得只說 furniture company。
+  chapter: ch-02
+  chapter_title: Brand Introduction
+- module: Visual Identity
+  criterion: AI 可檢查：過渡期素材需以 logotype、web address 或文案第一次提及建立 Herman Miller authorship；不得讓 standalone mark 失去語境。
+  chapter: ch-03
+  chapter_title: Logomark Evolution
+- module: ''
+  criterion: AI 可檢查：標準商務通信應使用 Brand Marketing 提供模板；不得自行重建 letterhead 或 presentation structure。
+  chapter: ch-04
+  chapter_title: Business Communications
+- module: Brand Strategy
+  criterion: AI 可檢查：logomark clear space 至少為 mark size 的 50%；logotype clear space 至少為 capital H 高；商標名稱首次出現需加 trademark symbol
+    且作 adjective modifying noun。
+  chapter: ch-05
+  chapter_title: The Visual Use of the Brand
+- module: Color System
+  criterion: AI 可檢查：logomark 至少指定最小直徑；白底上 stylized M 內部為白；深色/影像/複雜圖案上 stylized M 應為白以確保可見。
+  chapter: ch-05-01
+  chapter_title: Space, Scale and Color
+- module: Typography System
+  criterion: AI 可檢查：影像檔縮放不得超過實際需要尺寸上下 10%；Micro 用於 below 16pt，Normal 16-72pt，Display above 72pt；印刷品需包含 copyright line。
+  chapter: ch-05-02
+  chapter_title: Type, Media and Trademarks
+- module: Brand Strategy
+  criterion: AI 可檢查：不可把「for a better world around you」作 headline 或 tagline；phrase 必須保持完整；可與 work/create/make/design/build
+    等 action verb 結合。
+  chapter: ch-06
+  chapter_title: The Written Use of the Brand
+- module: Brand Strategy
+  criterion: AI 可檢查：素材需至少能對應一個 guidepost；基本 ingredients 應包含 product name/trademark、copy message、logomark、image、CTA website、copyright
+    protection；不得加 drop shadow、bevel、拉伸、錯色、outline、填入影像或混合 logomark/logotype。
+  chapter: ch-08
+  chapter_title: Making Brand Decisions
+chapters:
+- id: ch-01
+  title: Advocating for the Herman Miller Brand
+  modules:
+  - Brand Strategy
+  - Governance
+- id: ch-02
+  title: Brand Introduction
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-03
+  title: Logomark Evolution
+  modules:
+  - Brand Architecture
+  - Visual Identity
+- id: ch-04
+  title: Business Communications
+  modules:
+  - Layout System
+  - Operations
+- id: ch-05
+  title: The Visual Use of the Brand
+  modules:
+  - Legal and Trademark
+  - Typography System
+  - Visual Identity
+- id: ch-05-01
+  title: Space, Scale and Color
+  modules:
+  - Layout System
+  - Color System
+  - Visual Identity
+- id: ch-05-02
+  title: Type, Media and Trademarks
+  modules:
+  - Legal and Trademark
+  - Typography System
+- id: ch-06
+  title: The Written Use of the Brand
+  modules:
+  - Content Design
+  - Voice and Tone
+  - Messaging
+- id: ch-07
+  title: Authorship of the Brand
+  modules:
+  - Legal and Trademark
+  - Brand Architecture
+  - Messaging
+- id: ch-08
+  title: Making Brand Decisions
+  modules:
+  - AI-Checkable Rules
+  - Examples
+  - Design Process
+  - Governance
+- id: ch-09
+  title: Resources
+  modules:
+  - Operations
+  - Governance
+- id: ch-10
+  title: Bibliography
+  modules:
+  - Knowledge Architecture
+  - Design Process

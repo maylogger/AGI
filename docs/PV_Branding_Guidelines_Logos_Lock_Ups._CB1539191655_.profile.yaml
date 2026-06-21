@@ -1,0 +1,236 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: PV_Branding_Guidelines_Logos_Lock_Ups._CB1539191655_
+index_ref: docs/PV_Branding_Guidelines_Logos_Lock_Ups._CB1539191655_.index.yaml
+note_ref: docs/PV_Branding_Guidelines_Logos_Lock_Ups._CB1539191655_.note.md
+archetype: brand_experience_guide
+industry: media_entertainment
+modules:
+- Brand Strategy
+- Messaging
+- Knowledge Architecture
+- AI-Checkable Rules
+- Product Language
+- Content Design
+- Legal and Trademark
+- Visual Identity
+- Brand Architecture
+- Motion Identity
+- Layout System
+- Voice and Tone
+- Governance
+- Operations
+depth:
+  strategy: high
+  visual: medium
+  governance: high
+  top_level_chapter_count: 4
+  section_count: 8
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Welcome and Brand Hierarchy
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Service Overview
+  order: 2
+  level: 2
+- id: ch-02
+  title: Core Brand Elements
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Primary Service Logo
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Global Marketing Logo
+  order: 2
+  level: 2
+- id: ch-03
+  title: Marketing Branding
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Bug Placement for Social
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Prime Video Endcard
+  order: 2
+  level: 2
+- id: ch-04
+  title: Resources
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: FAQ
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Design Toolkit
+  order: 2
+  level: 2
+frameworks:
+- name: 可抽象為「母品牌信任 -> 會員價值 -> 服務內容 -> 使用情境」的品牌層級框架，以及「what / where / access」的顧客理解框架
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 可重用為多方案服務的「內容、權益、通路」三軸框架
+  chapter: ch-01-02
+  chapter_title: Service Overview
+- name: Logo 選擇框架可寫成：市場是否為 US/UK/DE、是否 off-platform、是否 Amazon owned property、是否存在尺寸限制
+  chapter: ch-02
+  chapter_title: Core Brand Elements
+- name: 情境判斷為「服務內或成熟市場 -> 使用 Primary Service Logo」
+  chapter: ch-02-01
+  chapter_title: Primary Service Logo
+- name: 市場認知與媒介所有權決定 Logo attribution
+  chapter: ch-02-02
+  chapter_title: Global Marketing Logo
+- name: 版型比例 -> 平台 -> UI 風險 -> bug 位置與透明度
+  chapter: ch-03
+  chapter_title: Marketing Branding
+- name: 版型驅動的 placement decision table
+  chapter: ch-03-01
+  chapter_title: Bug Placement for Social
+- name: 內容是否 Prime Original、是否需強化 Prime membership linkage
+  chapter: ch-03-02
+  chapter_title: Prime Video Endcard
+- name: FAQ 以 General、Global、Logo、Marketing 分類，形成 issue taxonomy
+  chapter: ch-04
+  chapter_title: Resources
+- name: 問題類型 -> 合法名稱/品牌名稱/市場/媒介 -> 可用語句
+  chapter: ch-04-01
+  chapter_title: FAQ
+- name: 規範文件 + 官方素材庫的雙層治理
+  chapter: ch-04-02
+  chapter_title: Design Toolkit
+patterns:
+- name: 先定義服務公式，再規範標誌與文案，是多產品平台常見的 guideline pattern。
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 用簡短分類語句替代組織內部術語，降低跨市場誤用。
+  chapter: ch-01-02
+  chapter_title: Service Overview
+- name: 品牌以同一核心 mark 搭配可選母品牌 attribution，是平台子品牌常用治理模式。
+  chapter: ch-02
+  chapter_title: Core Brand Elements
+- name: 同一品牌在 UI 與 marketing 中保留一致核心形。
+  chapter: ch-02-01
+  chapter_title: Primary Service Logo
+- name: 使用母品牌作為信任增幅器，而不是重新命名服務。
+  chapter: ch-02-02
+  chapter_title: Global Marketing Logo
+- name: 社群品牌規範常把通用 Logo 系統轉成 aspect-ratio-specific overlays。
+  chapter: ch-03
+  chapter_title: Marketing Branding
+- name: 社群素材採固定角落與透明度控制。
+  chapter: ch-03-01
+  chapter_title: Bug Placement for Social
+- name: 用固定短語將法律、商業與品牌語氣綁定。
+  chapter: ch-03-02
+  chapter_title: Prime Video Endcard
+- name: 把常見錯誤與例外放進資源章，讓 guideline 成為支援系統。
+  chapter: ch-04
+  chapter_title: Resources
+- name: FAQ 能把抽象 brand strategy 轉為客服式決策。
+  chapter: ch-04-01
+  chapter_title: FAQ
+- name: 在 guideline 尾端設置 toolkit，可降低錯檔與舊版素材使用。
+  chapter: ch-04-02
+  chapter_title: Design Toolkit
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查準則：出現 rent/buy 或 Channels 時不得暗示已包含於 Prime；出現 Prime 會員內容時應使用 no extra cost、Included with Prime 或等效權益語。
+  chapter: ch-01-02
+  chapter_title: Service Overview
+- module: Brand Strategy
+  criterion: AI 可檢查準則：Primary Service Logo 最小寬度 75px；Global Marketing Logo 最小寬度 125px；Logo 周圍不得有文字、邊框或圖形侵入 clear space；文案句子中應拼出品牌名，不以
+    Logo 取代文字。
+  chapter: ch-02
+  chapter_title: Core Brand Elements
+- module: Visual Identity
+  criterion: AI 可檢查準則：寬度不得小於 75px；copy 中使用「Prime Video」文字；不得把 Logo 嵌入句子。
+  chapter: ch-02-01
+  chapter_title: Primary Service Logo
+- module: Visual Identity
+  criterion: AI 可檢查準則：寬度不得小於 125px；copy 中使用「Amazon Prime Video」文字；在 Prime recognition limited market 的 off-platform 行銷應使用此版本。
+  chapter: ch-02-02
+  chapter_title: Global Marketing Logo
+- module: Brand Strategy
+  criterion: AI 可檢查準則：社群 bug 皆為 70% opacity；除 16:9 YouTube 外，社群 bug 應置於右上；Included with Prime 文案不得改寫。
+  chapter: ch-03
+  chapter_title: Marketing Branding
+- module: ''
+  criterion: AI 可檢查準則：非 YouTube 16:9 社群 bug 應在右上；所有 bug opacity 應為 70%；9:16 使用指定較大 safe placement。
+  chapter: ch-03-01
+  chapter_title: Bug Placement for Social
+- module: ''
+  criterion: AI 可檢查準則：「Included with Prime」不得改字；獨家內容可使用「Only on」；Prime benefit 文案不得暗示 rent/buy 已免費包含。
+  chapter: ch-03-02
+  chapter_title: Prime Video Endcard
+- module: ''
+  criterion: AI 可檢查準則：不得改 Logo 顏色或呈現；Logo 檔格式限 EPS、PNG、JPG；Prime Video 作為 proper name 不在地化；「only with Prime」指 Prime benefit，「only
+    on Prime Video」指服務。
+  chapter: ch-04-01
+  chapter_title: FAQ
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - Brand Strategy
+  - Messaging
+  - Knowledge Architecture
+- id: ch-01-02
+  title: Service Overview
+  modules:
+  - AI-Checkable Rules
+  - Product Language
+  - Content Design
+- id: ch-02
+  title: Core Brand Elements
+  modules:
+  - Legal and Trademark
+  - Visual Identity
+- id: ch-02-02
+  title: Global Marketing Logo
+  modules:
+  - Brand Architecture
+- id: ch-03
+  title: Marketing Branding
+  modules:
+  - AI-Checkable Rules
+  - Motion Identity
+- id: ch-03-01
+  title: Bug Placement for Social
+  modules:
+  - Layout System
+  - Motion Identity
+- id: ch-03-02
+  title: Prime Video Endcard
+  modules:
+  - Content Design
+  - Messaging
+- id: ch-04
+  title: Resources
+  modules:
+  - Legal and Trademark
+  - Voice and Tone
+  - Governance
+- id: ch-04-01
+  title: FAQ
+  modules:
+  - Messaging
+  - Knowledge Architecture
+- id: ch-04-02
+  title: Design Toolkit
+  modules:
+  - Operations
+  - Governance

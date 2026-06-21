@@ -1,0 +1,93 @@
+title: "São Paulo Brandbook"
+source: "sources/SAO_PAULO_BRANDBOOK_2011.pdf"
+version: "v1.4 Digital English"
+date: "2011-12"
+language: "en"
+summary: "São Paulo 旅遊城市品牌書，從品牌支柱、品牌本質與策略視角，延伸到 Logo、圖樣、攝影、字體、色彩、品牌並置規則、應用範例與電子原稿命名。"
+chapters:
+  - id: "ch-01"
+    title: "Presentation"
+    level: 1
+    order: 1
+    pages: "4-5"
+    summary: "說明 São Paulo 品牌不只是廣告活動，而是任何人都可用來推廣城市的可信識別系統。"
+  - id: "ch-02"
+    title: "Brand Pillars"
+    level: 1
+    order: 2
+    pages: "6-15"
+    summary: "以 unexpected、differences、present、communities 四組敘事建立城市品牌情感與社會價值。"
+  - id: "ch-03"
+    title: "Brand Essence and Strategic View"
+    level: 1
+    order: 3
+    pages: "16-19"
+    summary: "定義 experience it all、tourism/business/licensed products 的品牌潛力，以及 subjective/objective brand expression。"
+  - id: "ch-04"
+    title: "Visual Elements"
+    level: 1
+    order: 4
+    pages: "20-53"
+    summary: "定義六個視覺元素：Logo、colors、typography、secondary graphics、photography、pattern，並提供版本、禁用、攝影、字體與色值。"
+    children:
+      - id: "ch-04-01"
+        title: "Logo Versions and Care"
+        level: 2
+        order: 1
+        pages: "22-39"
+        summary: "涵蓋 preferred logo、symbol positions、colored backgrounds、description、restricted use、tagline、motion、clear space、minimum size 與 inappropriate use。"
+      - id: "ch-04-02"
+        title: "Patterns and Secondary Graphics"
+        level: 2
+        order: 2
+        pages: "40-45"
+        summary: "定義 preferred/secondary pattern 與可調整但需保持透視匯聚的 secondary graphics。"
+      - id: "ch-04-03"
+        title: "Photographic Style"
+        level: 2
+        order: 3
+        pages: "46-49"
+        summary: "要求攝影避免城市陳腔濫調，使用 unusual angles、chromatic pattern、overlays、overexposure、lomography、lightpainting。"
+      - id: "ch-04-04"
+        title: "Typography and Colors"
+        level: 2
+        order: 4
+        pages: "50-53"
+        summary: "定義 Museo Sans 字族、Arial 例外，以及 MASP Red、Liberdade Yellow、Ibirapuera Green、Paulista Blue、Tietê Blue。"
+  - id: "ch-05"
+    title: "Application Rules"
+    level: 1
+    order: 5
+    pages: "54-67"
+    summary: "規範 São Paulo 品牌與 São Paulo Turismo、Government and Entities、Partners、Third Parties 及其他政府/活動/品牌的權重與排序。"
+    children:
+      - id: "ch-05-01"
+        title: "Convergence Scenarios"
+        level: 2
+        order: 1
+        pages: "54-63"
+        summary: "依使用者與地理/利益情境決定 São Paulo 品牌與其他品牌誰在 foreground/background。"
+      - id: "ch-05-02"
+        title: "Association Rules"
+        level: 2
+        order: 2
+        pages: "64-67"
+        summary: "定義與政府品牌、其他品牌、活動品牌並列時的左右順序、分隔線與最大高度。"
+  - id: "ch-06"
+    title: "Examples of Application"
+    level: 1
+    order: 6
+    pages: "68-91"
+    summary: "展示多種溝通平台上的品牌應用，以驗證 experience it all 概念與視覺元素組合。"
+  - id: "ch-07"
+    title: "Electronic Originals"
+    level: 1
+    order: 7
+    pages: "92-101"
+    summary: "定義電子原稿檔名系統、授權提醒、版本/variation/appearance/color/file format，並列出 Logo、tagline、graphics、pattern、motion 檔案。"
+  - id: "ch-08"
+    title: "Credits and Legal Notices"
+    level: 1
+    order: 8
+    pages: "102-104"
+    summary: "列出 SPTuris、影像著作權、版本、政府與專案團隊資訊。"

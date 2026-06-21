@@ -1,0 +1,164 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: BNPP_Brand_creative_bd_2012
+index_ref: docs/BNPP_Brand_creative_bd_2012.index.yaml
+note_ref: docs/BNPP_Brand_creative_bd_2012.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- Photography System
+- AI-Checkable Rules
+- Visual Language
+- Information Design
+- Color System
+- Design Tokens
+- Iconography System
+- Typography System
+- Content Design
+- Voice and Tone
+depth:
+  strategy: medium
+  visual: high
+  governance: low
+  top_level_chapter_count: 5
+  section_count: 8
+chapter_sequence:
+- id: ch-01
+  title: Iconographie
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: La photographie chez BNP Paribas
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Les principes de notre iconographie
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Rechercher une photo et les interdits
+  order: 3
+  level: 2
+- id: ch-02
+  title: Couleurs
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Nos couleurs de marque et principales
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Couleurs additionnelles et palette générale
+  order: 2
+  level: 2
+- id: ch-03
+  title: Typographies
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Typographies et collection
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Exemples et pictogrammes
+  order: 2
+  level: 2
+- id: ch-04
+  title: Style éditorial
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Tonalité et règles éditoriales
+  order: 1
+  level: 2
+- id: ch-05
+  title: Questions et supports
+  order: 5
+  level: 1
+frameworks:
+- name: 五原則框架 Authenticitė/Humanité/Instantanéité/Imperfection/Interprétation 可用於選圖、拍攝 brief 與審稿
+  chapter: ch-01
+  chapter_title: Iconographie
+- name: 這是一個 image evaluation rubric，可作為 DAM metadata、AI vision review 或攝影 brief 的欄位
+  chapter: ch-01-02
+  chapter_title: Les principes de notre iconographie
+- name: 色彩框架可拆為 brand color → primary palette → additional palette → general palette → examples
+  chapter: ch-02
+  chapter_title: Couleurs
+- name: typography system 包含 font family、hierarchy、application examples 與 symbol/pictogram extension
+  chapter: ch-03
+  chapter_title: Typographies
+- name: content framework 可由 tone attributes、dos/don'ts、sentence clarity、audience benefit 組成
+  chapter: ch-04
+  chapter_title: Style éditorial
+patterns:
+- name: 可複用模式包括人物作為變化主體、捕捉關鍵瞬間、保留合理不完美、避免過度敘述。
+  chapter: ch-01
+  chapter_title: Iconographie
+- name: 可複用的判斷模式是『情境線索 + 人物中心 + 低度修飾 + 開放敘事』。
+  chapter: ch-01-02
+  chapter_title: Les principes de notre iconographie
+- name: 可複用模式是用色彩角色而非單純色票清單來治理設計。
+  chapter: ch-02
+  chapter_title: Couleurs
+- name: 常見模式是主字體承擔品牌聲音，輔助字體處理資訊層級與特殊情境。
+  chapter: ch-03
+  chapter_title: Typographies
+- name: 可複用模式是從品牌人格產生 voice rule，再用例句與禁忌維持一致。
+  chapter: ch-04
+  chapter_title: Style éditorial
+rules_ai_checkable:
+- module: Iconography System
+  criterion: AI-checkable：優先使用彩色照片；避免插畫、photomontage、黑白照；retouch 僅可微調光線或場景，不得更換背景、拼貼或新增人物。
+  chapter: ch-01
+  chapter_title: Iconographie
+- module: Iconography System
+  criterion: AI-checkable：照片不得看起來明顯棚拍或過度擺拍；人物或人類痕跡需可辨識；畫面應允許正向詮釋而非只描述產品。
+  chapter: ch-01-02
+  chapter_title: Les principes de notre iconographie
+- module: ''
+  criterion: AI-checkable：核心品牌綠需在主要品牌接觸點中可見；輔助色不得單獨取代品牌色；同一版面應維持核准色票與合理對比。
+  chapter: ch-02
+  chapter_title: Couleurs
+- module: ''
+  criterion: AI-checkable：輸出需使用核准字體；標題、內文與輔助資訊需有可辨識層級；不得混用未授權字體造成系統斷裂。
+  chapter: ch-03
+  chapter_title: Typographies
+- module: ''
+  criterion: AI-checkable：文案應避免金融術語堆疊；每段主要訊息應包含受眾利益；語氣不得自誇、冷漠或含糊。
+  chapter: ch-04
+  chapter_title: Style éditorial
+chapters:
+- id: ch-01
+  title: Iconographie
+  modules:
+  - Photography System
+  - AI-Checkable Rules
+  - Visual Language
+- id: ch-01-02
+  title: Les principes de notre iconographie
+  modules:
+  - Photography System
+  - AI-Checkable Rules
+  - Information Design
+- id: ch-02
+  title: Couleurs
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Design Tokens
+- id: ch-03
+  title: Typographies
+  modules:
+  - Iconography System
+  - Typography System
+  - Design Tokens
+- id: ch-04
+  title: Style éditorial
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone

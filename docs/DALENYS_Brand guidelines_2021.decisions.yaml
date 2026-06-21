@@ -1,0 +1,122 @@
+# L3 決策卡 sidecar — Dalenys Brand Guidelines 2021
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: DALENYS_Brand guidelines_2021
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌不是單一標誌，而是組織如何行動與如何溝通
+      - B2B/fintech guideline 可以用一句主張把功能服務升級為體驗平台
+      - 先建立判斷標準，後續視覺與語氣才有可回溯的語義來源
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, finance]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: DALENYS_Brand guidelines_2021
+        chapter: ch-01
+        excerpt: "用 CEO foreword 把「Payment is just the start」定為策略原點（payment → connection → journey → connected offers），讓後續 logo、色彩與 graphic device 都回到體驗平台主張，而非只談交易處理。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - 對數值抽取不可靠的文件，保留比例規則比猜測數字更安全
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - minimum clear space = 1x o，optimal = 2x o
+    evidence:
+      - brand_id: DALENYS_Brand guidelines_2021
+        chapter: ch-03-02
+        excerpt: "以 logotype D 高度作為 clearspace 的 x 單位，logo 四周需至少保留該 x 空間，小於建議尺寸時須做 print/screen tests。"
+    status: extracted
+
+  - id: dp-palette-roles-and-usage-limits
+    title: 用色彩角色與用途限制治理調色盤，而非只給色票清單
+    problem:
+      statement: 只提供一串色票時，設計者會把任何顏色當成可自由使用，導致主色被稀釋、輔助色被誤用為大面積背景，跨應用失去一致性。
+      signals: [color_governance, palette_misuse, brand_color_equity, multi_application]
+    solution:
+      module: Color System
+      move: 為每個顏色指定角色（主色／背景／文字／功能／輔助），並明訂「可作背景／不可作背景」與少量使用門檻
+      layer: visual_core
+    reason:
+      - 主色承擔品牌記憶，輔助色承擔資訊與插圖功能
+      - color token 需附用途限制（可作背景、不可作背景），才能被審稿與自動檢查
+      - 把識別色與功能色分離並對後者加治理門檻，可避免資料視覺化隨意擴色
+    applicable_when:
+      industries: [finance, consumer_retail_hospitality, luxury_premium, nonprofit_social]
+      brand_types: [mass_consumer, institutional_public_trust, premium_luxury]
+      conditions: [color_governance, multi_application]
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit]
+    dependencies:
+      requires: [Color System]
+      enables: [Design Tokens, Accessibility]
+    anti_patterns:
+      - 只給一串色票，未說明每色角色與可否作背景
+      - 讓輔助／功能色被當成大面積品牌背景
+    evidence:
+      - brand_id: DALENYS_Brand guidelines_2021
+        chapter: ch-03-04
+        excerpt: "yellow 為 lead brand colour、white/silver 作背景、text navy 僅作文字，secondary colors 只用於 charting/illustrations/infographics 且不得作 flood backgrounds。"
+    status: extracted
+
+  - id: dp-contact-before-appendix
+    title: 在技術資料前先給治理窗口，讓 guideline 成為可改善系統
+    problem:
+      statement: 規則無法涵蓋所有情境，缺乏權威決策入口時，例外用法無人裁決。
+      signals: [exceptions_expected, governance]
+    solution:
+      module: Governance
+      move: 在主內容與 appendix 之間放置聯絡窗口與核准／回饋入口
+      layer: governance
+    reason:
+      - 規則無法涵蓋所有情境，必須提供權威決策入口
+      - guideline 應包含 owner 與 feedback channel，而非靜態文件
+      - 遇到未定義或抽取不完整的規範時，不應自行推論，應升級至 communication contact
+    applicable_when:
+      industries: [finance]
+      brand_types: [institutional_public_trust]
+      conditions: [governance, exceptions_expected]
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit, logo_asset_guidelines]
+    dependencies:
+      requires: [Governance]
+      enables: [Operations]
+    evidence:
+      - brand_id: DALENYS_Brand guidelines_2021
+        chapter: ch-04
+        excerpt: "以 communication@dalenys.com 作為文件與特殊使用情境的詢問窗口，承認例外情境並提供 escalation path。"
+    status: extracted

@@ -1,0 +1,356 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Barbican_Centre_brand_guidelines_2017
+index_ref: docs/Barbican_Centre_brand_guidelines_2017.index.yaml
+note_ref: docs/Barbican_Centre_brand_guidelines_2017.note.md
+archetype: brand_experience_guide
+industry: media_entertainment
+modules:
+- Brand Strategy
+- Knowledge Architecture
+- Visual Identity
+- AI-Checkable Rules
+- Layout System
+- Governance
+- Operations
+- Information Design
+- Design Tokens
+- Typography System
+- Accessibility
+- Brand Architecture
+- Examples
+- Visual Language
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 8
+  section_count: 21
+chapter_sequence:
+- id: ch-01
+  title: Core Elements Introduction
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Contents
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Introduction
+  order: 2
+  level: 2
+- id: ch-02
+  title: Logo
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo Introduction
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Logo Positioning
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Protecting and Colour
+  order: 3
+  level: 2
+- id: ch-03
+  title: Lock-up
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Lock-up Introduction
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Typeface and Positioning
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Special Case Lock-up
+  order: 3
+  level: 2
+- id: ch-04
+  title: Grid
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Grid Introduction
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Grid Sets and Formats
+  order: 2
+  level: 2
+- id: ch-04-03
+  title: Column Grid
+  order: 3
+  level: 2
+- id: ch-05
+  title: Typeface
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Typeface Introduction
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Typeface Weights
+  order: 2
+  level: 2
+- id: ch-05-03
+  title: Typeface Specimens
+  order: 3
+  level: 2
+- id: ch-06
+  title: Typography
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Arrangement of Text
+  order: 1
+  level: 2
+- id: ch-06-02
+  title: Line and Letter Spacing
+  order: 2
+  level: 2
+- id: ch-06-03
+  title: Emphasis and Hierarchy
+  order: 3
+  level: 2
+- id: ch-07
+  title: Art Forms
+  order: 7
+  level: 1
+- id: ch-07-01
+  title: Theatre
+  order: 1
+  level: 2
+- id: ch-07-02
+  title: Art
+  order: 2
+  level: 2
+- id: ch-07-03
+  title: Film, Music, Barbican
+  order: 3
+  level: 2
+- id: ch-08
+  title: Design Examples
+  order: 8
+  level: 1
+- id: ch-08-01
+  title: Application Examples
+  order: 1
+  level: 2
+frameworks:
+- name: Core Elements -> Art Forms -> Design Examples，先建構規則，再展示分支與應用
+  chapter: ch-01
+  chapter_title: Core Elements Introduction
+- name: Logo Integrity：positioning、exclusion、contrast、special-case approval
+  chapter: ch-02
+  chapter_title: Logo
+- name: Fixed Relationship + Format Placement + Special Case Exception
+  chapter: ch-03
+  chapter_title: Lock-up
+- name: Format Set -> Vertical Units -> Column Grid -> Element Alignment
+  chapter: ch-04
+  chapter_title: Grid
+- name: Font Source -> Weight Range -> Specimen Verification
+  chapter: ch-05
+  chapter_title: Typeface
+- name: Text Arrangement -> Spacing -> Emphasis -> Hierarchy
+  chapter: ch-06
+  chapter_title: Typography
+- name: Shared Core + Art-Form Expression
+  chapter: ch-07
+  chapter_title: Art Forms
+- name: Rule Demonstration Gallery：每個案例都是多個核心元素的組合證據
+  chapter: ch-08
+  chapter_title: Design Examples
+patterns:
+- name: 不是 logo』開場
+  chapter: ch-01
+  chapter_title: Core Elements Introduction
+- name: 核心元素索引
+  chapter: ch-01
+  chapter_title: Core Elements Introduction
+- name: 分層目錄
+  chapter: ch-01
+  chapter_title: Core Elements Introduction
+- name: 以範例證明彈性
+  chapter: ch-01
+  chapter_title: Core Elements Introduction
+- name: 出血 logo
+  chapter: ch-02
+  chapter_title: Logo
+- name: crop marks
+  chapter: ch-02
+  chapter_title: Logo
+- name: exclusion zone
+  chapter: ch-02
+  chapter_title: Logo
+- name: 對比色規則與例外聯絡窗口
+  chapter: ch-02
+  chapter_title: Logo
+- name: 品牌資訊 lock-up
+  chapter: ch-03
+  chapter_title: Lock-up
+- name: 模板索取
+  chapter: ch-03
+  chapter_title: Lock-up
+- name: 合作方共存
+  chapter: ch-03
+  chapter_title: Lock-up
+- name: 固定 typographic values
+  chapter: ch-03
+  chapter_title: Lock-up
+- name: format families
+  chapter: ch-04
+  chapter_title: Grid
+- name: shared units
+  chapter: ch-04
+  chapter_title: Grid
+- name: six-column literature grid
+  chapter: ch-04
+  chapter_title: Grid
+- name: aligned balanced proportional rule
+  chapter: ch-04
+  chapter_title: Grid
+- name: 官方字庫來源
+  chapter: ch-05
+  chapter_title: Typeface
+- name: 主要字重
+  chapter: ch-05
+  chapter_title: Typeface
+- name: 替代粗體選項
+  chapter: ch-05
+  chapter_title: Typeface
+- name: 完整 glyph specimen
+  chapter: ch-05
+  chapter_title: Typeface
+- name: 左對齊規則
+  chapter: ch-06
+  chapter_title: Typography
+- name: ragged edge 修整
+  chapter: ch-06
+  chapter_title: Typography
+- name: 禁止全大寫句子
+  chapter: ch-06
+  chapter_title: Typography
+- name: 字距與行距控制
+  chapter: ch-06
+  chapter_title: Typography
+- name: 依內容垂直分支示例
+  chapter: ch-07
+  chapter_title: Art Forms
+- name: 同系統多語氣展示
+  chapter: ch-07
+  chapter_title: Art Forms
+- name: 節目類型與品牌架構共存
+  chapter: ch-07
+  chapter_title: Art Forms
+- name: 完成品 gallery
+  chapter: ch-08
+  chapter_title: Design Examples
+- name: 特殊 campaign 範例
+  chapter: ch-08
+  chapter_title: Design Examples
+- name: 核心元素追蹤
+  chapter: ch-08
+  chapter_title: Design Examples
+- name: 對設計自由度的視覺校準
+  chapter: ch-08
+  chapter_title: Design Examples
+rules_ai_checkable:
+- module: ''
+  criterion: 可檢查規則：文件需能將每個應用追溯到 logo、lock-up、grid、typeface 或 typography；不得把單一 logo 使用視為完整 identity。
+  chapter: ch-01
+  chapter_title: Core Elements Introduction
+- module: Visual Identity
+  criterion: 可檢查規則：logo 應使用完整圓形 artwork；最終稿不得保留 crop marks；logo full-circle 必須與背景形成對比；Barbican word 必須與半圓形成黑/白或設計色對比；特殊例外需聯絡
+    printdesign。
+  chapter: ch-02
+  chapter_title: Logo
+- module: ''
+  criterion: 可檢查規則：lock-up relationship 不得改變；Futura Book 可在 legibility issue 時改 Futura Bold；tracking/leading 不得調整；合作 lock-up
+    優先黑或反白並固定位置。
+  chapter: ch-03
+  chapter_title: Lock-up
+- module: ''
+  criterion: 可檢查規則：所有元素應對齊 grid；格式應使用核准 grid set；文字、圖片與 logo/lock-up 需保持平衡與比例；不得任意偏離欄位造成不專業版面。
+  chapter: ch-04
+  chapter_title: Grid
+- module: Typography System
+  criterion: 可檢查規則：Barbican identity 使用 Scangraphic Futura；Futura Bold 是主要行銷字重；Futura SB Bold 或 SH Bold 依既有模板使用；不得混用未核准 Futura
+    版本。
+  chapter: ch-05
+  chapter_title: Typeface
+- module: Typography System
+  criterion: 可檢查規則：Barbican typography always ranged left；句子不得 solely in capitals；ragged edge 應平衡；typographic elements 需共同支援
+    hierarchy。
+  chapter: ch-06
+  chapter_title: Typography
+- module: ''
+  criterion: 可檢查規則：每個 art form 應仍使用 Barbican core elements；不得建立與核心字體/grid/logo 無關的獨立視覺；分支差異應主要來自內容、圖像與版面節奏。
+  chapter: ch-07
+  chapter_title: Art Forms
+- module: ''
+  criterion: 可檢查規則：案例應可辨識 logo/lock-up/grid/typeface 的使用；範例不得被當成任意偏離核心規則的授權；特殊案例需能說明例外理由。
+  chapter: ch-08
+  chapter_title: Design Examples
+chapters:
+- id: ch-01
+  title: Core Elements Introduction
+  modules:
+  - Brand Strategy
+  - Knowledge Architecture
+  - Visual Identity
+- id: ch-02
+  title: Logo
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Identity
+  - Governance
+- id: ch-03
+  title: Lock-up
+  modules:
+  - Operations
+  - Visual Identity
+  - Governance
+  - Information Design
+- id: ch-04
+  title: Grid
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Design Tokens
+  - Operations
+- id: ch-05
+  title: Typeface
+  modules:
+  - Typography System
+  - Design Tokens
+  - Operations
+- id: ch-06
+  title: Typography
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Accessibility
+- id: ch-07
+  title: Art Forms
+  modules:
+  - Brand Architecture
+  - Examples
+  - Visual Language
+- id: ch-08
+  title: Design Examples
+  modules:
+  - Examples
+  - Knowledge Architecture
+  - Governance

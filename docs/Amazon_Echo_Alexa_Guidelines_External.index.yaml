@@ -1,0 +1,106 @@
+title: 'Guidelines for Amazon Echo and Alexa Brand Usage'
+source: 'sources/Amazon_Echo_Alexa_Guidelines_External.pdf'
+version: 'V 3.0'
+date: '2019-01-31'
+language: 'en'
+summary: '這份 external partner guideline 規範 Amazon Echo 與 Alexa 的品牌資產、審核流程、視覺系統、badging、co-branding、語音互動、影像製作與 trademark 使用。'
+chapters:
+  - id: 'ch-01'
+    title: 'Guide Purpose and Review Process'
+    level: 1
+    order: 1
+    pages: '1-4'
+    summary: '說明指南用途、重要性、使用時機、需審核的素材類型、提交管道與目錄。'
+    children:
+      - id: 'ch-01-01'
+        title: 'What Is This Guide'
+        level: 2
+        order: 1
+        pages: '1-2'
+        summary: '將指南定位為協助外部夥伴正確使用名稱、logo、字體、攝影與 Alexa/Echo 整合的品牌要求。'
+      - id: 'ch-01-02'
+        title: 'Review Process'
+        level: 2
+        order: 2
+        pages: '3'
+        summary: '列出 TV、radio、video、packaging、POS、promotion、logo on hardware、特殊 use cases、press release 等需送審項目與 10 business days 時程。'
+  - id: 'ch-02'
+    title: 'Amazon Echo Guidelines'
+    level: 1
+    order: 2
+    pages: '5-23'
+    summary: '定義 Echo device family、product lineup、logo、色彩、字體、iconography、light ring 與 product wrap 規則。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Echo Devices and Product Lineup'
+        level: 2
+        order: 1
+        pages: '6-7'
+        summary: '定義 Echo devices、endpoints、companions、gadgets，並要求使用完整產品名稱。'
+      - id: 'ch-02-02'
+        title: 'Echo Logo System'
+        level: 2
+        order: 2
+        pages: '8-14'
+        summary: '規範 Amazon Echo logo、Echo Smile logo、變體、最小尺寸、clear space、錯誤用法與產品價格／label callout。'
+      - id: 'ch-02-03'
+        title: 'Echo Color and Typography'
+        level: 2
+        order: 3
+        pages: '15-20'
+        summary: '指定 Echo Blue、Squid Ink、White 與 Amazon Ember 字體系統，並規定 headline、subhead、body、tracking、leading 與 white space。'
+      - id: 'ch-02-04'
+        title: 'Echo Iconography, Light Ring and Wraps'
+        level: 2
+        order: 4
+        pages: '21-23'
+        summary: '定義 Echo icon style、light ring state 與第三方 wrap 在商標、兒童內容、審核、功能遮擋與外部 branding 上的限制。'
+  - id: 'ch-03'
+    title: 'Alexa Guidelines'
+    level: 1
+    order: 3
+    pages: '24-47'
+    summary: '定義 Alexa 品牌、人設、產品關係、logo、色彩、badge、co-branding、speech bubble、skills、互動呈現、影像製作、SAG 與 trademark 規範。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Alexa Definition and Personality'
+        level: 2
+        order: 1
+        pages: '25-26'
+        summary: '定義 Alexa 是 cloud-based voice service，並用 approachable、efficient、trustworthy、natural 建立 AI personality 邊界。'
+      - id: 'ch-03-02'
+        title: 'Products and Services That Work With Alexa'
+        level: 2
+        order: 2
+        pages: '27-28'
+        summary: '提供 Alexa Built-in、Works with Alexa、skills、automotive、shopping、hotel rooms 等 approved descriptions 與應用 domain。'
+      - id: 'ch-03-03'
+        title: 'Alexa Logo and Color'
+        level: 2
+        order: 3
+        pages: '29-34'
+        summary: '規範 Alexa logo、Amazon Alexa lockup、Smile logo、變體、最小尺寸、clear space 與 Alexa Blue 色彩。'
+      - id: 'ch-03-04'
+        title: 'Alexa Badging and Co-Branding'
+        level: 2
+        order: 4
+        pages: '35-39'
+        summary: '定義 badge 類型、使用資格、最小尺寸、顏色、留白、不得多 badge，以及 co-branding 的 logo 視覺大小與間距。'
+      - id: 'ch-03-05'
+        title: 'Speech Bubble and Alexa Skills'
+        level: 2
+        order: 5
+        pages: '40-42'
+        summary: '以 speech bubble 表示 utterance，規定 flag、typeface、height、width、color、call-and-response 與 skill icon 整合。'
+      - id: 'ch-03-06'
+        title: 'Marketing Representation and Interaction'
+        level: 2
+        order: 6
+        pages: '43-44'
+        summary: '規定如何呈現 Echo devices 與 Alexa，包括 hands-free、daily routine、exact utterances、wake word、claims、兒童限制與禁止詞。'
+      - id: 'ch-03-07'
+        title: 'Film, Photography, SAG and Trademark'
+        level: 2
+        order: 7
+        pages: '45-47'
+        summary: '規範 Echo screen/device 拍攝、post-production、Alexa voice talent SAG-AFTRA 權利與 Amazon trademarks 使用。'

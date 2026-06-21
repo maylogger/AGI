@@ -1,0 +1,73 @@
+title: 'Brickline Greenway Brand Guidelines'
+source: 'sources/Brickline_Greenway_Brand_Guidlines_2020.pdf'
+version: 'Brand Guidelines'
+date: 'Oct 2020'
+language: 'en'
+summary: 'Brickline Greenway 的品牌規範，將城市連結、社群參與與公共空間願景轉成平台、訊息、識別、圖像表達、品牌階層與應用系統。'
+chapters:
+  - id: 'ch-01'
+    title: 'Brand Platform'
+    level: 1
+    order: 1
+    pages: '4-9'
+    summary: '定義 Big Idea、Commitment、Tone、Attributes 與 Principles。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Big Idea and Commitment'
+        level: 2
+        order: 1
+        pages: '5-6'
+        summary: '用 Opening up the city, bringing us together 與 civic trust 定位品牌。'
+      - id: 'ch-01-02'
+        title: 'Tone, Attributes and Principles'
+        level: 2
+        order: 2
+        pages: '7-9'
+        summary: '定義 warm、optimistic、lively 等語氣與設計原則。'
+  - id: 'ch-02'
+    title: 'Messaging Toolkit'
+    level: 1
+    order: 2
+    pages: '10-24'
+    summary: '建立 brand story、messaging principles、audience、tone/vocabulary、sample messages 與 do/don''ts。'
+    children: []
+  - id: 'ch-03'
+    title: 'Logo'
+    level: 1
+    order: 3
+    pages: '25-33'
+    summary: '規範 primary、secondary、alternate logos、clear space、minimum size、placement 與 logo don''ts。'
+    children: []
+  - id: 'ch-04'
+    title: 'Color and Typography'
+    level: 1
+    order: 4
+    pages: '34-44'
+    summary: '定義色盤、對比、色彩使用、symbol/supergraphic colors 與字體排版。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Color System'
+        level: 2
+        order: 1
+        pages: '35-40'
+        summary: '包含 color palette、contrast ratios、usage 與 don''ts。'
+      - id: 'ch-04-02'
+        title: 'Typography'
+        level: 2
+        order: 2
+        pages: '41-44'
+        summary: '定義 primary font、secondary fonts 與 typesetting。'
+  - id: 'ch-05'
+    title: 'Imagery and Graphic Expressions'
+    level: 1
+    order: 5
+    pages: '45-59'
+    summary: '規範 photography、renders、content frames、connecting brick graphic、graphic pathways、motion 與 don''ts。'
+    children: []
+  - id: 'ch-06'
+    title: 'GRG Brand Hierarchy and Sample Applications'
+    level: 1
+    order: 6
+    pages: '60-83'
+    summary: '處理 GRG endorsement、endorsed lockups、construction hoardings、print、boards、PowerPoint、social、website、swag、signage、icons 與 spatial applications。'
+    children: []

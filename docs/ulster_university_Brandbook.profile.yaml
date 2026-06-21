@@ -1,0 +1,205 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: ulster_university_Brandbook
+index_ref: docs/ulster_university_Brandbook.index.yaml
+note_ref: docs/ulster_university_Brandbook.note.md
+archetype: brand_experience_guide
+industry: education
+modules:
+- Brand Strategy
+- Knowledge Architecture
+- Governance
+- Visual Identity
+- Voice and Tone
+- Messaging
+- AI-Checkable Rules
+- Content Design
+- Photography System
+- Layout System
+- Typography System
+- Color System
+- Legal and Trademark
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 3
+  section_count: 13
+chapter_sequence:
+- id: ch-01
+  title: Brand Overview
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Our Brand Mantra
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Why our Brand is Important
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Our Brand Elements
+  order: 3
+  level: 2
+- id: ch-02
+  title: Brand Positioning
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Brand Positioning Framework
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Brand Driver and Mission Statement
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Tone of Voice
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Personality
+  order: 4
+  level: 2
+- id: ch-03
+  title: Brand Toolkit
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Brandmark
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Colour
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Typography
+  order: 3
+  level: 2
+- id: ch-03-04
+  title: Infographics
+  order: 4
+  level: 2
+- id: ch-03-05
+  title: Grid System
+  order: 5
+  level: 2
+- id: ch-03-06
+  title: Photography
+  order: 6
+  level: 2
+frameworks:
+- name: 採用「Brand Positioning + Visual Communications」雙軸架構，前者定義聲音，後者把聲音視覺化
+  chapter: ch-01
+  chapter_title: Brand Overview
+- name: 「voice drives visuals」是本節核心框架
+  chapter: ch-01-03
+  chapter_title: Our Brand Elements
+- name: Brand Positioning Framework 將 mission、brand driver、tone、personality、pillars 與 themes 組成決策樹
+  chapter: ch-02
+  chapter_title: Brand Positioning
+- name: Audience -> Objective -> Language -> Engagement -> Ease 的寫作檢查流程
+  chapter: ch-02-03
+  chapter_title: Tone of Voice
+- name: 四人格作為創意評估矩陣
+  chapter: ch-02-04
+  chapter_title: Personality
+- name: Core asset rules + creative composition rules + negative examples
+  chapter: ch-03
+  chapter_title: Brand Toolkit
+- name: Logo hierarchy + application context + exception approval
+  chapter: ch-03-01
+  chapter_title: Brandmark
+patterns:
+- name: 先宣告品牌信念，再說明品牌重要性，最後拆成可治理元素，是常見的 guideline onboarding pattern。
+  chapter: ch-01
+  chapter_title: Brand Overview
+- name: 使用元素清單作為後續章節 navigation，也作為審核 checklist。
+  chapter: ch-01-03
+  chapter_title: Our Brand Elements
+- name: 用 mantra 驅動、mission 定位、tone 執行、personality 校準，是可複用的品牌語意架構。
+  chapter: ch-02
+  chapter_title: Brand Positioning
+- name: 將負面清單與正面動詞並置，可快速建立審稿標準。
+  chapter: ch-02-03
+  chapter_title: Tone of Voice
+- name: 以少量高層形容詞建立跨 touchpoint 的一致性。
+  chapter: ch-02-04
+  chapter_title: Personality
+- name: 定義 -> 規格 -> 範例 -> 禁用
+  chapter: ch-03
+  chapter_title: Brand Toolkit
+- name: 不同用途提供不同版本，但所有版本共享留白與清晰度規則。
+  chapter: ch-03-01
+  chapter_title: Brandmark
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI 可檢查：任何品牌輸出應能對應到 `We Believe in Brave`；文件應同時包含 positioning 與 visual communication rationale；不得把 guideline 描述為僅限版型公式。
+  chapter: ch-01
+  chapter_title: Brand Overview
+- module: Brand Strategy
+  criterion: AI 可檢查：文案需能被標記為 confident/clear；不得使用未解釋 acronyms；強論點不得埋在長文後段；每個 communication 必須說出正向故事。
+  chapter: ch-02
+  chapter_title: Brand Positioning
+- module: ''
+  criterion: AI 可檢查：輸出應至少對應一項人格；不得傳達保守、孤立、被動或只服務內部流程的訊息。
+  chapter: ch-02-04
+  chapter_title: Personality
+- module: Brand Strategy
+  criterion: AI 可檢查：標誌不可變形、重繪、改色；色彩必須來自 palette；字體限 Futura PT/Arial fallback；影像需自然、動態、非 staged。
+  chapter: ch-03
+  chapter_title: Brand Toolkit
+- module: Brand Strategy
+  criterion: AI 可檢查：不得 stretch/distort/recreate；不得使用未核准 sub-brand lockup；clear space 至少等於 U 符號厚段寬，例外最多降到一半；print minimum 25mm，digital
+    minimum 95px。
+  chapter: ch-03-01
+  chapter_title: Brandmark
+chapters:
+- id: ch-01
+  title: Brand Overview
+  modules:
+  - Brand Strategy
+  - Knowledge Architecture
+  - Governance
+- id: ch-01-03
+  title: Our Brand Elements
+  modules:
+  - Brand Strategy
+  - Knowledge Architecture
+  - Visual Identity
+- id: ch-02
+  title: Brand Positioning
+  modules:
+  - Brand Strategy
+  - Voice and Tone
+  - Messaging
+- id: ch-02-03
+  title: Tone of Voice
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+- id: ch-02-04
+  title: Personality
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-03
+  title: Brand Toolkit
+  modules:
+  - Photography System
+  - Layout System
+  - Typography System
+  - Color System
+  - Visual Identity
+- id: ch-03-01
+  title: Brandmark
+  modules:
+  - Legal and Trademark
+  - Visual Identity
+  - Governance

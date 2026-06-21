@@ -1,0 +1,122 @@
+# L3 決策卡 sidecar — MiddleCap（投資集團視覺識別手冊）
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: middlecap_design_manual_2019
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, style_over_system, strategy_refresh]
+    solution:
+      module: Brand Strategy
+      move: 先以 mood/演進章節宣告品牌方向（成熟化、降權舊符號），再讓色彩、字體與標誌規則承接
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 先建立判斷標準，後續視覺與語氣才有可回溯的語義來源
+      - 當品牌進入成熟期，guideline 應明確宣告哪些舊符號被降權、哪些新語氣升級為系統方向
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: middlecap_design_manual_2019
+        chapter: ch-01
+        excerpt: "先交代品牌正在從較單一強烈的青色識別演進為更成熟的視覺語氣；若沒有此章，後續深色、材質感與弱化 cyan 的規則會像任意美術選擇。"
+    status: extracted
+
+  - id: dp-restrained-palette-for-trust
+    title: 用克制的配色與權威主色傳達信任
+    problem:
+      statement: 受規範、以信任為核心的機構，若用高彩度或隨意配色會削弱權威與可信度。
+      signals: [trust, consistency_across_partners]
+    solution:
+      module: Color System
+      move: 以深灰／中性權威主色為大面積基底，輔色克制只負責資訊重點，並把色彩限定為列出的核准值
+      layer: visual_core
+    reason:
+      - 信任型品牌的色彩應強調穩定與權威而非情緒刺激
+      - 主色建立信任，輔色提供節奏；色彩角色比色彩數量更重要
+      - 高彩度色應被治理，否則會壓過成熟化品牌語氣
+    applicable_when:
+      industries: [finance, public_sector]
+      brand_types: [institutional_public_trust, heritage_legacy]
+      conditions: [trust, regulatory_compliance]
+      archetypes: [brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Color System]
+      enables: [Accessibility, Design Tokens]
+    anti_patterns:
+      - 自行新增色彩或使用未列出的色值
+      - 讓高彩度輔色（橘）成為大面積背景，壓過成熟語氣
+    evidence:
+      - brand_id: middlecap_design_manual_2019
+        chapter: ch-03
+        excerpt: "把品牌從強 cyan 語氣轉為深色主導、輔色點綴；主色應優先使用 #29313e、#616466，藍可用於較大色塊、橘限於文字或圖形重點。"
+      - brand_id: middlecap_design_manual_2019
+        chapter: ch-03-01
+        excerpt: "以兩個深灰承擔企業嚴肅度，主色可承擔情緒定位與版面秩序；不得以任意近似灰替換指定深灰。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景條件決定核准的單色版本（深灰／反白），變體為受控 fallback 而非創意自由
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - 變體應是受控 fallback，而不是創意自由
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: middlecap_design_manual_2019
+        chapter: ch-02-03
+        excerpt: "深色背景使用白色版；單色需求使用核准深灰/白版本；favicon 不使用完整字標，變體應是受控 fallback。"
+    status: extracted
+
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 以「master brand logo + descriptor slot」建立命名槽位，事業部統一加註在主標誌下方，不另建獨立標誌語言
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - 組織架構可以透過受控延展表達，而不是讓每個 division 自行設計
+      - 多部門品牌應建立命名槽位、位置與比例規則，以避免品牌碎片化
+    applicable_when:
+      industries: [public_sector, education]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [multi_unit_consistency, multi_entity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 各單位自行創造分支品牌與專屬標誌語言
+    evidence:
+      - brand_id: middlecap_design_manual_2019
+        chapter: ch-05
+        excerpt: "division logo 由基本標誌加上下方 division name 組成，不建立獨立子品牌語言；不得改變主標誌比例，多部門品牌應建立命名槽位、位置與比例規則以避免品牌碎片化。"
+    status: extracted

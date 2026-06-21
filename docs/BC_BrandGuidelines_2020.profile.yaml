@@ -1,0 +1,349 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: BC_BrandGuidelines_2020
+index_ref: docs/BC_BrandGuidelines_2020.index.yaml
+note_ref: docs/BC_BrandGuidelines_2020.note.md
+archetype: multi_brand_architecture
+industry: tech_software
+modules:
+- Brand Strategy
+- Messaging
+- Knowledge Architecture
+- AI-Checkable Rules
+- Visual Identity
+- Governance
+- Color System
+- Design Tokens
+- Accessibility
+- Typography System
+- Layout System
+- Visual Language
+- Photography System
+- Content Design
+- Data Visualization
+- Iconography System
+- Information Design
+- Brand Architecture
+- Motion Identity
+- Operations
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 8
+  section_count: 18
+chapter_sequence:
+- id: ch-01
+  title: Our Brand and Messaging Framework
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: 2020 Updates
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Build, Innovate, Grow
+  order: 2
+  level: 2
+- id: ch-02
+  title: Our Logo
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Concept and Primary Logo
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Secondary Mark and Best Practices
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Branded Partner Lockups
+  order: 3
+  level: 2
+- id: ch-03
+  title: Color Palette
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Overview and Palette
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Swatches and Gradients
+  order: 2
+  level: 2
+- id: ch-04
+  title: Typography
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Typography Palette
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Hierarchy
+  order: 2
+  level: 2
+- id: ch-05
+  title: Geometry and Patterns
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Shape Palette
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Pattern Use
+  order: 2
+  level: 2
+- id: ch-06
+  title: Photography
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Our People
+  order: 1
+  level: 2
+- id: ch-06-02
+  title: Merchants and Customers
+  order: 2
+  level: 2
+- id: ch-07
+  title: Iconography and Data Visualization
+  order: 7
+  level: 1
+- id: ch-07-01
+  title: Iconography
+  order: 1
+  level: 2
+- id: ch-07-02
+  title: Data Visualization
+  order: 2
+  level: 2
+- id: ch-08
+  title: Digital, Media, and Brand Extensions
+  order: 8
+  level: 1
+- id: ch-08-01
+  title: Imagery and Website/Digital
+  order: 1
+  level: 2
+- id: ch-08-02
+  title: Video and Slides
+  order: 2
+  level: 2
+- id: ch-08-03
+  title: Partner Program and Extensions
+  order: 3
+  level: 2
+frameworks:
+- name: Build -> Innovate -> Grow，對應 foundation、flexibility、scale
+  chapter: ch-01
+  chapter_title: Our Brand and Messaging Framework
+- name: Logo System：primary wordmark、secondary B mark、clearspace、minimum size、partner lockup
+  chapter: ch-02
+  chapter_title: Our Logo
+- name: Primary Foundation + Secondary Accent + Grayscale + Gradients
+  chapter: ch-03
+  chapter_title: Color Palette
+- name: Brand Font + Web Safe Fallback + Type Scale + Accent Highlight
+  chapter: ch-04
+  chapter_title: Typography
+- name: 90° Triangle -> Shape Palette -> Pattern Variants -> Legibility Controls
+  chapter: ch-05
+  chapter_title: Geometry and Patterns
+- name: People Behind Platform + Merchants Using Platform + Customers Experiencing Brands
+  chapter: ch-06
+  chapter_title: Photography
+- name: Contextual Icon Families + Branded Data Display
+  chapter: ch-07
+  chapter_title: Iconography and Data Visualization
+- name: Core Identity -> Channel Systems -> Ecosystem/Extension Governance
+  chapter: ch-08
+  chapter_title: Digital, Media, and Brand Extensions
+patterns:
+- name: 年度更新頁
+  chapter: ch-01
+  chapter_title: Our Brand and Messaging Framework
+- name: 三段式 messaging framework
+  chapter: ch-01
+  chapter_title: Our Brand and Messaging Framework
+- name: 產品功能到品牌利益的映射
+  chapter: ch-01
+  chapter_title: Our Brand and Messaging Framework
+- name: 符號語意說明
+  chapter: ch-02
+  chapter_title: Our Logo
+- name: mark fallback
+  chapter: ch-02
+  chapter_title: Our Logo
+- name: Y/2 留白
+  chapter: ch-02
+  chapter_title: Our Logo
+- name: improper use wall
+  chapter: ch-02
+  chapter_title: Our Logo
+- name: co-brand divider
+  chapter: ch-02
+  chapter_title: Our Logo
+- name: 多色值 token
+  chapter: ch-03
+  chapter_title: Color Palette
+- name: use ratio
+  chapter: ch-03
+  chapter_title: Color Palette
+- name: screen/print grayscale 分流
+  chapter: ch-03
+  chapter_title: Color Palette
+- name: gradient stop 說明
+  chapter: ch-03
+  chapter_title: Color Palette
+- name: brand font/fallback 分層
+  chapter: ch-04
+  chapter_title: Typography
+- name: H1 highlight single-word emphasis
+  chapter: ch-04
+  chapter_title: Typography
+- name: type scale token
+  chapter: ch-04
+  chapter_title: Typography
+- name: 幾何形作為品牌 building blocks
+  chapter: ch-05
+  chapter_title: Geometry and Patterns
+- name: stroked vs bold patterns
+  chapter: ch-05
+  chapter_title: Geometry and Patterns
+- name: pattern/text contrast rules
+  chapter: ch-05
+  chapter_title: Geometry and Patterns
+- name: 員工環境照
+  chapter: ch-06
+  chapter_title: Photography
+- name: portrait
+  chapter: ch-06
+  chapter_title: Photography
+- name: merchant/customer journey
+  chapter: ch-06
+  chapter_title: Photography
+- name: 重用商家自有 imagery 作平台彈性證據
+  chapter: ch-06
+  chapter_title: Photography
+- name: 行銷 icon
+  chapter: ch-07
+  chapter_title: Iconography and Data Visualization
+- name: 產品 icon
+  chapter: ch-07
+  chapter_title: Iconography and Data Visualization
+- name: help/developer icon 分層
+  chapter: ch-07
+  chapter_title: Iconography and Data Visualization
+- name: 以及圖表色彩與標籤規則
+  chapter: ch-07
+  chapter_title: Iconography and Data Visualization
+- name: website rules
+  chapter: ch-08
+  chapter_title: Digital, Media, and Brand Extensions
+- name: video production guidance
+  chapter: ch-08
+  chapter_title: Digital, Media, and Brand Extensions
+- name: slide templates
+  chapter: ch-08
+  chapter_title: Digital, Media, and Brand Extensions
+- name: partner ecosystem visual refresh
+  chapter: ch-08
+  chapter_title: Digital, Media, and Brand Extensions
+- name: brand extension taxonomy
+  chapter: ch-08
+  chapter_title: Digital, Media, and Brand Extensions
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: 可檢查規則：對外訊息應能對應 Build/Innovate/Grow 之一；不得只描述功能而不說明商家利益；2020 新素材需反映 imagery/video/slides/partners 更新。
+  chapter: ch-01
+  chapter_title: Our Brand and Messaging Framework
+- module: Visual Identity
+  criterion: '可檢查規則：B mark 只在 wordmark 低於 80px/1in 或避免重複時使用；clearspace 至少為各自高度 Y/2；不得拉伸、堆疊、改色、加陰影或修改兩個 mark；partner divider
+    stroke 為 #AFB4BE 1.5px。'
+  chapter: ch-02
+  chapter_title: Our Logo
+- module: Color System
+  criterion: '可檢查規則：核心 palette 應使用 #121118、#FFFFFF、#0D52FF 等核准值；purple/green 為主要 accent 且應節制；pink 為 tertiary；Twilight/Northern
+    Lights 等漸層需保留 middle color-stops 防止 banding。'
+  chapter: ch-03
+  chapter_title: Color Palette
+- module: Typography System
+  criterion: '可檢查規則：Gotham 為主要字體；Source Sans Pro 只在 Gotham 不可用如 product/Google Docs 時使用；H1 highlight 使用 #03EADA 且只強調單字或單行；highlight
+    位置約在 x-height 一半並向右偏移約半個字寬。'
+  chapter: ch-04
+  chapter_title: Typography
+- module: ''
+  criterion: 可檢查規則：stroked pattern square 尺寸約 15px 至 115px；文字疊在 intricate pattern 上需高對比、大而粗；bold pattern 背景與形狀漸層整體對比應較低；不得讓
+    pattern 與前景 copy 競爭。
+  chapter: ch-05
+  chapter_title: Geometry and Patterns
+- module: ''
+  criterion: 可檢查規則：影像應有人、互動或商務成果；不得只呈現無脈絡科技抽象圖；商家圖像應服務 growth/versatility 敘事；人物照應反映 bright modern creative spaces。
+  chapter: ch-06
+  chapter_title: Photography
+- module: Iconography System
+  criterion: 可檢查規則：icon 風格應符合所屬場景；資料圖不得濫用 accent 色；圖表需有清楚標籤與對比；不可用裝飾圖形模糊數值。
+  chapter: ch-07
+  chapter_title: Iconography and Data Visualization
+- module: Brand Strategy
+  criterion: 可檢查規則：數位/影片/簡報需使用核准 logo、色彩、字體與圖像風格；partner 素材需使用標準化 partnership system；BigCommerce Essentials 與 extensions 不得建立無關主品牌的新視覺語言。
+  chapter: ch-08
+  chapter_title: Digital, Media, and Brand Extensions
+chapters:
+- id: ch-01
+  title: Our Brand and Messaging Framework
+  modules:
+  - Brand Strategy
+  - Messaging
+  - Knowledge Architecture
+- id: ch-02
+  title: Our Logo
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-03
+  title: Color Palette
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Design Tokens
+  - Accessibility
+- id: ch-04
+  title: Typography
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Design Tokens
+- id: ch-05
+  title: Geometry and Patterns
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Language
+- id: ch-06
+  title: Photography
+  modules:
+  - Photography System
+  - Content Design
+- id: ch-07
+  title: Iconography and Data Visualization
+  modules:
+  - Data Visualization
+  - AI-Checkable Rules
+  - Iconography System
+  - Information Design
+- id: ch-08
+  title: Digital, Media, and Brand Extensions
+  modules:
+  - Brand Architecture
+  - Motion Identity
+  - Operations
+  - Governance

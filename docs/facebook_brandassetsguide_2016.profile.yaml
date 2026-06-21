@@ -1,0 +1,195 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: facebook_brandassetsguide_2016
+index_ref: docs/facebook_brandassetsguide_2016.index.yaml
+note_ref: docs/facebook_brandassetsguide_2016.note.md
+archetype: brand_experience_guide
+industry: tech_software
+modules:
+- Brand Strategy
+- Knowledge Architecture
+- Governance
+- Legal and Trademark
+- Content Safety
+- Compliance
+- Operations
+- Product Language
+- UI Components
+- Interaction Design
+depth:
+  strategy: low
+  visual: medium
+  governance: high
+  top_level_chapter_count: 4
+  section_count: 5
+chapter_sequence:
+- id: ch-01
+  title: Welcome
+  order: 1
+  level: 1
+- id: ch-02
+  title: General Guidelines
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: General Do’s / Don’ts and talking about Facebook
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Merchandizing and requesting permission
+  order: 2
+  level: 2
+- id: ch-03
+  title: Brand Assets
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Logos and Badges
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Reactions
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Screens
+  order: 3
+  level: 2
+- id: ch-04
+  title: FAQs
+  order: 4
+  level: 1
+frameworks:
+- name: 採「mission rationale + user scope + asset source」框架
+  chapter: ch-01
+  chapter_title: Welcome
+- name: 採「asset integrity + trademark language + risk contexts + request flow」框架
+  chapter: ch-02
+  chapter_title: General Guidelines
+- name: 採「commercialization ban + media permission gate」框架
+  chapter: ch-02-02
+  chapter_title: Merchandizing and requesting permission
+- name: 採「asset-specific permissible use」框架
+  chapter: ch-03
+  chapter_title: Brand Assets
+- name: 採「presence / non-functional like / CTA thumb / badge」分類框架
+  chapter: ch-03-01
+  chapter_title: Logos and Badges
+- name: 採「collection integrity + contextual messaging」框架
+  chapter: ch-03-02
+  chapter_title: Reactions
+- name: 採「accurate UI reproduction + rights-cleared customization」框架
+  chapter: ch-03-03
+  chapter_title: Screens
+- name: 採「common question + policy answer + escalation path」框架
+  chapter: ch-04
+  chapter_title: FAQs
+patterns:
+- name: 在法律式 guideline 前先說明品牌任務，可降低使用者對限制的抗拒。
+  chapter: ch-01
+  chapter_title: Welcome
+- name: 把 permission 放在 guideline 早段，讓高風險使用先被流程攔截。
+  chapter: ch-02
+  chapter_title: General Guidelines
+- name: 把商品化與媒體劇情使用視為不同風險類別。
+  chapter: ch-02-02
+  chapter_title: Merchandizing and requesting permission
+- name: 不同 asset 共用治理欄位，形成可擴充品牌資產知識模型。
+  chapter: ch-03
+  chapter_title: Brand Assets
+- name: 每個圖示都綁定媒體與行動，避免成為自由 icon。
+  chapter: ch-03-01
+  chapter_title: Logos and Badges
+- name: 完整 collection 是避免單一符號被過度語義化的治理模式。
+  chapter: ch-03-02
+  chapter_title: Reactions
+- name: 可自訂內容層，但不可改變 UI 結構層。
+  chapter: ch-03-03
+  chapter_title: Screens
+- name: FAQ 可作為 guideline 的 support layer。
+  chapter: ch-04
+  chapter_title: FAQs
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：不得使用模仿 Facebook 的商標/域名/logo；不得將 Facebook 與第三方名稱或 generic terms 結合成新標誌；不得用於 pornography、illegal activities
+    或違反 Terms 的材料；Facebook 不可作動詞、複數或縮寫。
+  chapter: ch-02
+  chapter_title: General Guidelines
+- module: ''
+  criterion: AI 可檢查：不得在 clothing/hats/mugs 等 merchandise 使用 Facebook trademarks/logos/IP；TV/film 使用需透過 facebookbrand.com/requests；request
+    需包含最終呈現與腳本或 synopsis。
+  chapter: ch-02-02
+  chapter_title: Merchandizing and requesting permission
+- module: Brand Strategy
+  criterion: AI 可檢查：f logo 主要用於 presence；Like Button Icon 不可 online 或 Facebook Ads 使用；Thumb Icon 不可和其他 Facebook symbols 並列；Badge
+    online 需直接連到 Facebook presence；Reactions 不可拆散或改造；Screens 需置於 device context。
+  chapter: ch-03
+  chapter_title: Brand Assets
+- module: Visual Identity
+  criterion: AI 可檢查：Like Button Icon 不得用於 online、online ads 或 Facebook Ads；Like Button/Thumb Icon 不得取代文字 like；Thumb Icon 必須搭配清楚
+    written CTA；f logo 不得成為最突出元素；所有 logo/badge 不得改色、變形、重畫、動畫化或實體物件化。
+  chapter: ch-03-01
+  chapter_title: Logos and Badges
+- module: ''
+  criterion: AI 可檢查：Reactions 必須以完整 collection 顯示；不得替換、增加、改色、改比例、動畫化、實體化；TV & Film 使用需 prior written permission；不得使用非 facebookbrand.com
+    assets。
+  chapter: ch-03-02
+  chapter_title: Reactions
+- module: ''
+  criterion: AI 可檢查：screens 不得大於 100% file size；不得裁切 mobile top/sides；iOS 用 San Francisco、Android 用 Roboto、Web 用 Helvetica；不得
+    blur/redact/annotate；不得使用未授權 PII、第三方商標或 copyrighted content。
+  chapter: ch-03-03
+  chapter_title: Screens
+- module: ''
+  criterion: AI 可檢查：Facebook assets 不可用於 merchandise；只能用官方 Brand Resource Center 資產；Facebook 不可作動詞；film/book/play 使用 logo/image
+    需 written permission。
+  chapter: ch-04
+  chapter_title: FAQs
+chapters:
+- id: ch-01
+  title: Welcome
+  modules:
+  - Brand Strategy
+  - Knowledge Architecture
+  - Governance
+- id: ch-02
+  title: General Guidelines
+  modules:
+  - Legal and Trademark
+  - Content Safety
+  - Governance
+- id: ch-02-02
+  title: Merchandizing and requesting permission
+  modules:
+  - Legal and Trademark
+  - Compliance
+  - Operations
+- id: ch-03
+  title: Brand Assets
+  modules:
+  - Product Language
+  - UI Components
+- id: ch-03-01
+  title: Logos and Badges
+  modules:
+  - Legal and Trademark
+  - Interaction Design
+- id: ch-03-02
+  title: Reactions
+  modules:
+  - Product Language
+  - UI Components
+  - Content Safety
+- id: ch-03-03
+  title: Screens
+  modules:
+  - Legal and Trademark
+- id: ch-04
+  title: FAQs
+  modules:
+  - Compliance
+  - Knowledge Architecture
+  - Governance

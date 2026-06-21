@@ -1,0 +1,209 @@
+# L3 決策卡 sidecar — Commonwealth Foundation Brand Guidelines (Consistent communications)
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: Consistent_communications_Brand_Guidelines_2018
+decisions:
+  - id: dp-origin-story-before-rules
+    title: 先把使命變成共用語言系統，再進入視覺規範
+    problem:
+      statement: 公益／使命型品牌若一開始就談視覺規範，色彩、攝影與字體會失去策略根基，淪為各自詮釋的風格選擇。
+      signals: [mission_communication, no_strategic_foundation, participation, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先用 voice attributes → mission → tagline → short/long description 把使命轉成可被全員共用的語言系統，再讓視覺承接其意義
+      layer: strategy
+    reason:
+      - 先把使命變成可被員工、設計師與文案共同使用的語言系統，避免後續視覺規範失去策略根基
+      - 品牌不只在 logo，而是在信封、工作坊準備、電話回應等行為中被感知
+      - 視覺識別應從組織運作模型中生成，而非只做裝飾
+    applicable_when:
+      industries: [nonprofit_social]
+      brand_types: [mission_driven]
+      conditions: [new_identity, mission_communication]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Voice and Tone, Messaging]
+    anti_patterns:
+      - 先寫 logo／色彩規格，把使命只放在封面口號
+    evidence:
+      - brand_id: Consistent_communications_Brand_Guidelines_2018
+        chapter: ch-01
+        excerpt: "先把 brand 定義成組織人格與被感知方式（brand personality → visual identity tools → governance by communications team），再以 weave metaphor 從 civic dialogue 與 collaboration 生成視覺語言。"
+    status: extracted
+
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 用人格詞集（Curious/Sharing/Free Thinking/Caring/Optimistic）當每個產出的檢查軸
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - mission/value 可被轉譯為 accessibility、tone 和 partnership governance 的檢查規則
+      - 可複用為 brand voice QA rubric，用正向特質與負向偏差共同審核
+    applicable_when:
+      industries: [industrial_materials_science, nonprofit_social]
+      brand_types: [challenger, category_creator, mission_driven]
+      conditions: []
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Visual Language, Content Design]
+    evidence:
+      - brand_id: Consistent_communications_Brand_Guidelines_2018
+        chapter: ch-01-02
+        excerpt: "以 Diversity、Collaboration、Integrity、Ingenuity 四個價值作評估軸，品牌文案需尊重這四項、不得排除非專業受眾或弱化透明度。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - logo 的空間關係與元件本身同等重要
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - minimum clear space = 1x o，optimal = 2x o
+    evidence:
+      - brand_id: Consistent_communications_Brand_Guidelines_2018
+        chapter: ch-02-01
+        excerpt: "safe area 為 Commonwealth capital letters 高度的 2 倍，以字母高度 X 定義留白；vertical logo 最小高度 25mm、horizontal 最小寬度 55mm。"
+    status: extracted
+
+  - id: dp-media-split-typography
+    title: 依媒介分流字體系統（print / digital / body）
+    problem:
+      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+      signals: [print_and_digital, readability, licensing]
+    solution:
+      module: Typography System
+      move: 區分 print font、digital font 與 secondary/body font，並各自規範字級與行距
+      layer: visual_core
+    reason:
+      - 不同媒介的可讀性與授權條件不同
+      - 字體規範應搭配用途說明，而非只列字體名稱
+      - 品牌字體需要有可取得的替代方案，否則規範無法在組織內落地
+    applicable_when:
+      industries: [finance, public_sector, education, nonprofit_social]
+      brand_types: [institutional_public_trust, mission_driven]
+      conditions: [print_and_digital]
+      archetypes: [brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: []
+    examples:
+      - body copy 使用 Segoe UI Regular 10pt / 14pt leading
+    evidence:
+      - brand_id: Consistent_communications_Brand_Guidelines_2018
+        chapter: ch-02-03
+        excerpt: "PMN Caecilia 用於 professional design 材料、Trebuchet MS 用於內部文件與 fallback，把 licensing/availability 納入字體決策。"
+    status: extracted
+
+  - id: dp-accessible-contrast-pairs
+    title: 把可近用性前置成核准對比配色，而非設計者自行判斷
+    problem:
+      statement: 公共資訊面向全體市民與輔助科技，若放任設計者自由配色，容易產生不符合無障礙標準、身心障礙者無法閱讀的組合。
+      signals: [accessibility, public_trust, inclusive_audience, regulatory_compliance]
+    solution:
+      module: Accessibility
+      move: 把可近用性放在視覺工具區（而非附錄），明訂至少符合 WCAG 2.1 AA，並只允許清單內的核准對比配色
+      layer: visual_core
+    reason:
+      - 公共機構不應把可近用性視為加分項，而是最低標準
+      - accessibility 是品牌可信度的一部分，不是事後檢查
+      - 用 poor/good/excellent contrast 對照降低設計者自行判斷錯誤
+    applicable_when:
+      industries: [public_sector, education, nonprofit_social]
+      brand_types: [institutional_public_trust, mission_driven]
+      conditions: [accessibility, inclusive_audience]
+      archetypes: [brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Color System]
+      enables: [Governance]
+    anti_patterns:
+      - 把無障礙規範放在附錄，當成可選加分項
+      - highlight 只靠顏色而無冗餘標示
+    evidence:
+      - brand_id: Consistent_communications_Brand_Guidelines_2018
+        chapter: ch-03
+        excerpt: "main text 不得小於 9pt、圖片疊字需最大對比、highlight 不得只靠顏色，並以 poor/good/excellent contrast 對照與紙張 glare、binding crease 等實體條件規範可讀性。"
+    status: extracted
+
+  - id: dp-from-to-voice-translation
+    title: 技術品牌語氣指南要給「轉譯規則」，不只是列形容詞
+    problem:
+      statement: 科學與技術公司容易陷入術語化，受眾停在「所以呢？」而非「原來如此」。
+      signals: [technical_jargon_risk, expert_audience, b2b]
+    solution:
+      module: Voice and Tone
+      move: 用 from/to 對照把語氣轉型具體化（術語→可親近、數據→人性利益）
+      layer: language
+    reason:
+      - 提供轉譯規則比列 tone adjectives 更可執行
+      - 權威不必等於複雜，清楚也是尊重受眾
+      - 用 avoid/replace pair 直接轉成 rewrite rule
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, finance, public_sector, nonprofit_social]
+      brand_types: [institutional_public_trust, mission_driven]
+      conditions: [expert_audience, technical_translation]
+      archetypes: [full_brand_system, brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Messaging]
+      enables: [Content Design]
+    examples:
+      - from technical jargon → to personal and accessible
+      - from facts and figures → to human stories with benefits
+    anti_patterns:
+      - 只列 tone adjectives 卻沒有轉譯方法
+    evidence:
+      - brand_id: Consistent_communications_Brand_Guidelines_2018
+        chapter: ch-05-02
+        excerpt: "語氣須 approachable、inclusive、succinct、simple、authoritative without over-authoritative，並以 avoid/replace pair（如 because 取代 due to the fact that）把語氣轉成 rewrite rule。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - 公共資金與合作關係需要透明、可追蹤、彼此承認
+      - partner visibility 與 grant visibility 因權力關係不同需分開治理
+    applicable_when:
+      industries: [nonprofit_social, public_sector, finance]
+      brand_types: [institutional_public_trust, mission_driven]
+      conditions: [cobranding, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: Consistent_communications_Brand_Guidelines_2018
+        chapter: ch-06-01
+        excerpt: "partner logos side by side、Foundation logo on left、logos equal size，並要求 print proofs 在分發/印刷前 approval、web 需 link to commonwealthfoundation.com。"
+    status: extracted

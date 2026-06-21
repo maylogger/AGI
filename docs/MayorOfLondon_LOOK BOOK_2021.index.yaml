@@ -1,0 +1,92 @@
+title: 'Mayor of London Brand Guidelines Look Book'
+source: 'sources/MayorOfLondon_LOOK BOOK_2021.pdf'
+language: 'en'
+summary: '這份 look book 將 Mayor of London 的公共品牌原則、識別工具、可近用性、攝影與模板治理整合成可執行規範。'
+chapters:
+  - id: 'ch-01'
+    title: 'Brand Foundation'
+    level: 1
+    order: 1
+    pages: '4-7'
+    summary: '定義 Mayor of London 與 London Assembly 的品牌分工、核心原則、品牌原則與工具。'
+  - id: 'ch-02'
+    title: 'Our Logos'
+    level: 1
+    order: 2
+    pages: '8-18'
+    summary: '規範 logo 申請、審核、clear space、尺寸、選項、顏色與 partner/sponsor 情境。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Logo Space, Size and Options'
+        level: 2
+        order: 1
+        pages: '9-14'
+        summary: '以頁高比例、M 高度、固定寬度與顏色對比建立 logo 使用規則。'
+      - id: 'ch-02-02'
+        title: 'Partners, Supporters and Sponsors'
+        level: 2
+        order: 2
+        pages: '15-18'
+        summary: '規範合作、支持與贊助 logo 的比例、位置、清晰度與審核流程。'
+  - id: 'ch-03'
+    title: 'Core Visual and Content Tools'
+    level: 1
+    order: 3
+    pages: '19-29'
+    summary: '涵蓋色彩、可近用性、字體、語氣、插畫、圖示與網站指引。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Accessibility'
+        level: 2
+        order: 1
+        pages: '20-22'
+        summary: '要求線上材料至少符合 WCAG 2.1 AA，並規範 accessible PDF 與可用色彩組合。'
+      - id: 'ch-03-02'
+        title: 'Fonts and Tone of Voice'
+        level: 2
+        order: 2
+        pages: '23-26'
+        summary: '指定 Aktiv Grotesk/Arial、字級、plain English 與四項語氣原則。'
+      - id: 'ch-03-03'
+        title: 'Illustration, Iconography and Website'
+        level: 2
+        order: 3
+        pages: '27-29'
+        summary: '定義插畫與圖示的簡潔、清楚、親近與品牌支援角色。'
+  - id: 'ch-04'
+    title: 'Printed Material'
+    level: 1
+    order: 4
+    pages: '30-31'
+    summary: '規範 print suppliers、PDF/X-1a export、紙材、尺寸與 spine 計算。'
+  - id: 'ch-05'
+    title: 'Photography'
+    level: 1
+    order: 5
+    pages: '32-53'
+    summary: '定義真實、多元、情感、事件、地點、社群拍攝、consent 與 image library 使用。'
+    children:
+      - id: 'ch-05-01'
+        title: 'Photography Principles and Vetting'
+        level: 2
+        order: 1
+        pages: '32-35'
+        summary: '建立 real/honest、human/emotional、diverse、inspiring 等攝影原則與審核邏輯。'
+      - id: 'ch-05-02'
+        title: 'Mayor, Case Studies, Events and Locations'
+        level: 2
+        order: 2
+        pages: '36-47'
+        summary: '規範 Mayor、case studies、events、locations、website portraits 與禁用影像。'
+      - id: 'ch-05-03'
+        title: 'Social Shotlist, Consent and Image Library'
+        level: 2
+        order: 3
+        pages: '48-53'
+        summary: '提供 social media 拍攝清單、consent form 要求、metadata summary 與 image library 入口。'
+  - id: 'ch-06'
+    title: 'Templates'
+    level: 1
+    order: 6
+    pages: '54-74'
+    summary: '規範社群、影片、簡報、leaflet、certificate、banner、exhibition、report 與 event branding 模板。'

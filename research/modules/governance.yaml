@@ -1,0 +1,61 @@
+# L2 固定知識 — Governance
+# schema：research/schemas/module_knowledge.schema.yaml
+
+module: Governance
+slug: governance
+foundational: true
+layer: governance
+purpose: 提供核准流程、聯絡窗口、例外處理與回饋機制，讓 guideline 從靜態文件變成可持續維護的治理系統。
+problem_when_absent: 規則無法涵蓋的情境無人裁決，子品牌與代理商各自發展，品牌一致性隨時間瓦解。
+corpus_frequency:
+  doc_count: 116
+  pct: 90.6
+
+driven_by:
+  - input: governance_maturity
+    affects: governance_depth
+    mapping:
+      - when: [none]
+        tend_to: [最簡：聯絡 email + 基本核准入口, 規則需更具體以降低裁量]
+        evidence:
+          - {brand_id: 3M_Visual_Identity_Guidelines_2015, chapter: ch-04}
+      - when: [emerging]
+        tend_to: [品牌負責人 + 審核點 + 資產取得方式]
+      - when: [mature]
+        tend_to: [完整審核鏈, 資產庫治理, 違規政策, 品牌檢查清單]
+        evidence:
+          - {brand_id: Mercedes_Benz_BrandStandards_2015}
+          - {brand_id: BlackBerry_Cylance_Brand_Guidelines_2019}
+  - input: brand_architecture
+    affects: approval_routing
+    mapping:
+      - when: [multi_brand, cobrand_heavy]
+        tend_to: [子品牌與聯名需經中央核准, 例外治理, 合作分層核准]
+        evidence:
+          - {brand_id: WouldBankGroup_Branding_Visual_Identity_Guidelines_2016}
+  - input: compliance_needs
+    affects: review_chain
+    mapping:
+      - when: [industry_regulation, content_safety]
+        tend_to: [法務/規定審核併入核准鏈, 內容安全審查]
+
+spec_dimensions:
+  - 核准流程與決策權
+  - 聯絡窗口 / owner
+  - 資產取得與下載
+  - 例外與特殊用途處理
+  - 違規政策（若成熟）
+  - 回饋與版本更新機制
+
+related_decision_patterns:
+  - dp-contact-before-appendix
+  - dp-approval-gate-for-exceptions
+
+dependencies:
+  requires: []
+  recommends: [Operations, Compliance, Legal and Trademark]
+
+reference_brands:
+  - 3M_Visual_Identity_Guidelines_2015
+  - WouldBankGroup_Branding_Visual_Identity_Guidelines_2016
+  - Mercedes_Benz_BrandStandards_2015

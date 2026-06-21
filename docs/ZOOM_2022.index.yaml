@@ -1,0 +1,181 @@
+title: 'Zoom Partner Messaging and Branding Guide'
+source: 'sources/ZOOM_2022.pdf'
+version: 'January 2022'
+date: '2022-01'
+language: 'en'
+summary: '這份指南為 Zoom partner ecosystem 定義訊息、品牌、logo、partner designation、數位行銷、co-marketing 範例、資源與法律規定規則。'
+chapters:
+  - id: 'ch-01'
+    title: 'Welcome'
+    level: 1
+    order: 1
+    pages: '3'
+    summary: '說明本指南適用於 Zoom partner ecosystem，所有 partner communications 與 marketing campaigns 必須遵守。'
+  - id: 'ch-02'
+    title: 'Guiding Principles'
+    level: 1
+    order: 2
+    pages: '5-9'
+    summary: '定義 Growing Together、Agility、Clarity、Partner-Led Announcements 與 partnership writing examples。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Growing Together and Agility'
+        level: 2
+        order: 1
+        pages: '5-6'
+        summary: '說明 Zoom voice/tone 與使用 Partner Portal templates 以加速上市。'
+      - id: 'ch-02-02'
+        title: 'Clarity'
+        level: 2
+        order: 2
+        pages: '7'
+        summary: '區分 partner-led 與 Zoom-led co-marketing 的主品牌、logo 排序、視覺系統與 CTA 歸屬。'
+      - id: 'ch-02-03'
+        title: 'Partner-Led Announcements'
+        level: 2
+        order: 3
+        pages: '8-9'
+        summary: '規範 press releases、review process、禁用語與建議 announcement language。'
+  - id: 'ch-03'
+    title: 'Core Messaging'
+    level: 1
+    order: 3
+    pages: '11-18'
+    summary: '提供 Zoom platform positioning、產品服務描述、命名分類、partner company/product names 與 app naming 規則。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Zoom as a Video Communications Platform'
+        level: 2
+        order: 1
+        pages: '11-14'
+        summary: '定義 Zoom 的 platform、enterprise、innovation 訊息與 50/40/20 字 positioning。'
+      - id: 'ch-03-02'
+        title: 'Naming and Categorization'
+        level: 2
+        order: 2
+        pages: '15'
+        summary: '規範 Zoom capitalization、trademark adjective use、不得把 Zoom 作名詞或動詞。'
+      - id: 'ch-03-03'
+        title: 'Partner Company, Product and App Names'
+        level: 2
+        order: 3
+        pages: '16-18'
+        summary: '規範 partner name/domain/social handle 與 Zoom App Marketplace app naming，避免混淆。'
+  - id: 'ch-04'
+    title: 'Zoom Branding Standards'
+    level: 1
+    order: 4
+    pages: '20-24'
+    summary: '規範 Zoom wordmark、colors/typography references、Zoom App Icon、photography 與 videos。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Zoom Wordmark and App Icon'
+        level: 2
+        order: 1
+        pages: '20-21'
+        summary: 'Zoom wordmark 用於公司/品牌引用，app icon 只可用於 Zoom application reference。'
+      - id: 'ch-04-02'
+        title: 'Photography and Videos'
+        level: 2
+        order: 2
+        pages: '22-24'
+        summary: '只使用核准照片，不得修改 Zoom UI 或影片，不得使用過期影片。'
+  - id: 'ch-05'
+    title: 'Logo Usage'
+    level: 1
+    order: 5
+    pages: '26-48'
+    summary: '定義 Zoom Logo、Zoom Phone、Zoom Rooms、Powered by Zoom、Zoom App Marketplace、Zoom Events 的版本、clear space、minimum size 與 usage matrix。'
+    children:
+      - id: 'ch-05-01'
+        title: 'Zoom Logo'
+        level: 2
+        order: 1
+        pages: '26-29'
+        summary: 'Zoom wordmark 只可使用 Zoom blue 或 white，需 clear space，並有不同媒介允許/禁止矩陣。'
+      - id: 'ch-05-02'
+        title: 'Product Logos'
+        level: 2
+        order: 2
+        pages: '30-35'
+        summary: 'Zoom Phone 與 Zoom Rooms logo 有清除空間、最小尺寸與使用矩陣。'
+      - id: 'ch-05-03'
+        title: 'Powered by Zoom'
+        level: 2
+        order: 3
+        pages: '36-40'
+        summary: '適用於宣傳由 Zoom platform 提供支援的產品、方案、服務或活動，含 print 與 streaming 規則。'
+      - id: 'ch-05-04'
+        title: 'Marketplace and Events Logos'
+        level: 2
+        order: 4
+        pages: '41-48'
+        summary: '規範 Zoom App Marketplace 與 Zoom Events logo/lock-up 的版本、clear space、minimum size 與審核聯絡。'
+  - id: 'ch-06'
+    title: 'Partner Program Designations'
+    level: 1
+    order: 6
+    pages: '50-62'
+    summary: '定義 partner designations、badges、certified badge、lock-ups、usage matrix、do/don’t 與 joint lock-up。'
+    children:
+      - id: 'ch-06-01'
+        title: 'Program Designations and Badges'
+        level: 2
+        order: 1
+        pages: '50-55'
+        summary: '定義 Solution Provider、Distributor、Hardware Partner、Service Provider、Alliance Partner、ISV、Developer 等 designation 與 badge 規格。'
+      - id: 'ch-06-02'
+        title: 'Partner Lock-ups and Usage Matrix'
+        level: 2
+        order: 2
+        pages: '56-59'
+        summary: 'lock-up 用於水平空間需求，usage matrix 規範網站、email、collateral、event、ads、social、promo material。'
+      - id: 'ch-06-03'
+        title: 'Do’s & Don’ts and Joint Lock-up'
+        level: 2
+        order: 3
+        pages: '60-62'
+        summary: '規範 partner logo 永遠 primary、badge/lock-up 只作 secondary stamp，joint lock-up 必須使用 divider。'
+  - id: 'ch-07'
+    title: 'Digital Marketing and Media Buying'
+    level: 1
+    order: 7
+    pages: '64-66'
+    summary: '規範 partner websites、landing pages、SEO/display/domain names、social media 與 email marketing。'
+    children:
+      - id: 'ch-07-01'
+        title: 'Partner Websites and Landing Pages'
+        level: 2
+        order: 1
+        pages: '64'
+        summary: 'partner 可在自有網站呈現 Zoom offering 或建立 Zoom-dedicated landing page，但不得仿製 Zoom 網站。'
+      - id: 'ch-07-02'
+        title: 'SEO, Display Advertising and Domain Names'
+        level: 2
+        order: 2
+        pages: '65'
+        summary: '規範 Zoom keywords、domain path、display creative approval 與 domain name 禁止事項。'
+      - id: 'ch-07-03'
+        title: 'Social Media and Email Marketing'
+        level: 2
+        order: 3
+        pages: '66'
+        summary: '禁止在 social handles/tags/profile images 中混淆使用 Zoom 品牌，email subject 應清楚來自 partner。'
+  - id: 'ch-08'
+    title: 'Partner-Led Co-Marketing Examples'
+    level: 1
+    order: 8
+    pages: '68-76'
+    summary: '以 websites、landing pages、email、social banners、flyers、presentations、solution briefs、booth graphics 與 promotional items 展示 partner-led 應用。'
+  - id: 'ch-09'
+    title: 'Additional Resources'
+    level: 1
+    order: 9
+    pages: '78'
+    summary: '列出 Zoom website、blog、social、Partner Portal、App Marketplace、Brand Guide、media kit 等資源與聯絡信箱。'
+  - id: 'ch-10'
+    title: 'Legal'
+    level: 1
+    order: 10
+    pages: '80-82'
+    summary: '定義 Zoom Marks、trademark attribution、legal contacts 與 downloadable asset links。'

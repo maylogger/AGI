@@ -1,0 +1,65 @@
+# L3 決策卡 sidecar — YNCU + Community First Graphics Standards
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: YNCU_Graphics_Standards_2019
+decisions:
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 從 logo 內部幾何（house half-circle mouth 寬度）取出單位作為四周清除區，禁止任何元素侵入
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - clear space 應隨 logo 等比縮放，而非固定絕對值
+      - clear space token 最好取自品牌符號，使規則具可視化記憶點
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    evidence:
+      - brand_id: YNCU_Graphics_Standards_2019
+        chapter: ch-02-03
+        excerpt: "以 house half-circle mouth 的寬度作為 clear space 測量基準；Geometric clear-space framework：extract unit from logo → apply around all sides → prohibit intrusion。"
+      - brand_id: YNCU_Graphics_Standards_2019
+        chapter: ch-03-03
+        excerpt: "Community First logo 周圍不得有 artwork、type 或 panel edges 侵入 clear space，clearance distance 應與 logo 尺寸同步縮放。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 用背景黑度門檻建立 logo 版本決策矩陣（10% black 用 full colour、30% 用 100% black、50% 以上用 reverse），背景條件決定版本而非偏好
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - 版本選擇應由背景條件決定，而非使用者偏好
+      - 用背景 luminance/黑度建立 logo 版本規則，比單純列「深色/淺色」更可檢查
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: YNCU_Graphics_Standards_2019
+        chapter: ch-04-01
+        excerpt: "10% black 或更淺背景使用 full colour；30% black 背景使用 100% black；50% black 或更深背景使用 reverse；textured background 需人工確認 legibility。"
+      - brand_id: YNCU_Graphics_Standards_2019
+        chapter: ch-02-01
+        excerpt: "Version decision matrix：full color、black/white、reversed、on green、on grey；全彩可行時優先使用 primary colour version，背景條件決定版本。"
+    status: extracted

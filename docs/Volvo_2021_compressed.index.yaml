@@ -1,0 +1,129 @@
+title: "Volvo Experience and Identity Guideline"
+source: "sources/Volvo_2021_compressed.pdf"
+version: "November 2021"
+date: "2021-11"
+language: "en"
+summary: "Volvo 的 Experience and Identity Guideline，將 core and explore 品牌管理、商標治理與視覺、語氣、數位、空間、服務車等接觸點整合為一致品牌體驗。"
+chapters:
+  - id: "ch-01"
+    title: "Introduction"
+    level: 1
+    order: 1
+    pages: "3-7"
+    summary: "定義 Volvo 品牌體驗、core and explore 管理模型、商標規則、關鍵原則與核心元素。"
+    children:
+      - id: "ch-01-01"
+        title: "Core and Explore"
+        level: 2
+        order: 1
+        pages: "4"
+        summary: "以 non-negotiable core 與 local activation explore 區分品牌治理與情境執行。"
+      - id: "ch-01-02"
+        title: "Volvo Trademark Rules"
+        level: 2
+        order: 2
+        pages: "5"
+        summary: "提供 9 條 golden rules，保護 Volvo trademark 不被誤用、稀釋或偷用。"
+      - id: "ch-01-03"
+        title: "Key Principles"
+        level: 2
+        order: 3
+        pages: "6"
+        summary: "將 one brand、sensory/verbal/visual identity、customer centricity 與 governance 連成共同原則。"
+  - id: "ch-02"
+    title: "Logotypes"
+    level: 1
+    order: 2
+    pages: "8-18"
+    summary: "規範 Volvo 與 Volvo Penta 的 primary/secondary logotypes、尺寸、留白、放置、用色與禁用方式。"
+    children:
+      - id: "ch-02-01"
+        title: "Primary Logotypes"
+        level: 2
+        order: 1
+        pages: "8-14"
+        summary: "定義 Volvo Spread Word Mark 與 Volvo Penta Spread Word Mark 的主識別用途。"
+      - id: "ch-02-02"
+        title: "Secondary Logotypes"
+        level: 2
+        order: 2
+        pages: "15-17"
+        summary: "當 primary logotype 可讀性不足時，使用 Volvo Iron Mark 或 Volvo Penta stacked word mark。"
+      - id: "ch-02-03"
+        title: "Logotype Do Not"
+        level: 2
+        order: 3
+        pages: "18"
+        summary: "列出不可改色、壓縮、拉伸、旋轉、加 tagline、裁切、加效果或自造 logo。"
+  - id: "ch-03"
+    title: "Typography"
+    level: 1
+    order: 3
+    pages: "19-23"
+    summary: "定義 Volvo Novum、Volvo Broad、字距行距、語言替代字體與錯誤排版。"
+  - id: "ch-04"
+    title: "Colors"
+    level: 1
+    order: 4
+    pages: "24-30"
+    summary: "建立 Volvo main colors、accent colors、functional colors 與 extended UI palette，並限制 Volvo Blue 用途。"
+  - id: "ch-05"
+    title: "Icons"
+    level: 1
+    order: 5
+    pages: "31-35"
+    summary: "定義 Volvo icons 的簡潔功能、用色、文字搭配、launch icon 系統與禁用規則。"
+  - id: "ch-06"
+    title: "Layout Principles"
+    level: 1
+    order: 6
+    pages: "36-40"
+    summary: "以 generous space、simplicity、clear order、attention to details 四原則形成高級、清楚、易用版面。"
+  - id: "ch-07"
+    title: "Image Tonality"
+    level: 1
+    order: 7
+    pages: "41-48"
+    summary: "規範溫暖色調、故事性、人性存在、清楚光源、真實性、產品拍攝與錯誤影像。"
+  - id: "ch-08"
+    title: "Tone of Voice"
+    level: 1
+    order: 8
+    pages: "49-51"
+    summary: "定義 Volvo 的 verbal identity：competent、intelligent、sympathetic、challenging、witty、powerful、explanatory、evidence-based。"
+  - id: "ch-09"
+    title: "Digital Interfaces"
+    level: 1
+    order: 9
+    pages: "52-53"
+    summary: "提出 Volvo UX 原則：user needs、business value、consistency、technology handshake、validation、dependencies。"
+  - id: "ch-10"
+    title: "Inspirational Examples"
+    level: 1
+    order: 10
+    pages: "54-60"
+    summary: "展示 web banners、apps、social posts、brochures、ads、direct marketing、rollups、posters 與 multi-brand 應用。"
+  - id: "ch-11"
+    title: "Events and Sponsorships"
+    level: 1
+    order: 11
+    pages: "61-63"
+    summary: "提供 events 與 sponsorships 的品牌表現方向，要求活動曝光仍維持 Volvo core identity。"
+  - id: "ch-12"
+    title: "Interior Principles"
+    level: 1
+    order: 12
+    pages: "65-69"
+    summary: "將 Volvo 品牌轉為室內體驗，涵蓋歡迎感、材質色彩 mood board、概念發展、布局與設計考量。"
+  - id: "ch-13"
+    title: "Service Vehicles"
+    level: 1
+    order: 13
+    pages: "70-74"
+    summary: "規範 Volvo-branded service vehicles 的 striping、active information areas、dealer identity 與 Volvo Action Service。"
+  - id: "ch-14"
+    title: "References"
+    level: 1
+    order: 14
+    pages: "75"
+    summary: "提供相關資源與進一步參照。"

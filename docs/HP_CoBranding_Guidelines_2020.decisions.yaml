@@ -1,0 +1,64 @@
+# L3 決策卡 sidecar — HP Co-Branding Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: HP_CoBranding_Guidelines_2020
+decisions:
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - logo 配置不是裝飾，而是關係聲明；位置、大小與 proximity 都會改變受眾對合作權重的理解
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: HP_CoBranding_Guidelines_2020
+        chapter: ch-03
+        excerpt: "用 X-based measurement 管理分隔線、留白與最小尺寸：spatial configuration 不得堆疊、重疊或散落；lockup 最小留白建議 0.5x、最小尺寸不得低於 0.25 inch 或 20px、divider line 為黑色 1pt。"
+    status: extracted
+
+  - id: dp-trademark-permission-flow
+    title: 用授權閘門治理第三方商標使用，先處理混淆與背書風險
+    problem:
+      statement: 平台品牌被大量第三方使用商標與資產，若無授權流程，會造成商標混淆與誤導性背書風險。
+      signals: [trademark_protection, partner_governance, endorsement_risk, third_party_usage]
+    solution:
+      module: Legal and Trademark
+      move: 以「核准來源 + 允許情境 + 禁止改作 + permission gate」治理，高風險情境須送審並附最終版本、描述與 script
+      layer: governance
+    reason:
+      - 平台品牌 guideline 應優先處理 trademark confusion 與 endorsement risk，再處理美學一致
+      - permission section 將品牌治理流程化，降低設計師自行判斷法律風險
+      - co-branding guideline 必須包含價值不相容條款，因為品牌聯名本身會轉移聲譽風險
+    applicable_when:
+      industries: [tech_software]
+      brand_types: [platform_ecosystem]
+      conditions: [third_party_usage, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Legal and Trademark]
+      enables: [Governance]
+    anti_patterns:
+      - 只給視覺規格而無使用情境風險表與審核材料清單
+      - 放任第三方自行判斷法律與背書風險
+    evidence:
+      - brand_id: HP_CoBranding_Guidelines_2020
+        chapter: ch-07
+        excerpt: "Terms and Resources 用強制 disclaimer、禁止項目與拒絕權把法律風險轉成內容生產規則：暴力、武器、歧視或性不當活動可被拒絕共同品牌或資助；HP 修飾語需大寫、product-descriptive communications 需加 warranty disclaimer。"
+      - brand_id: HP_CoBranding_Guidelines_2020
+        chapter: ch-05
+        excerpt: "Partner-led 情境若 partner guideline 不允許 lockup，需洽 Brand Central；品牌 guideline 應承認外部規範的優先性並設置升級詢問機制。"
+    status: extracted

@@ -1,0 +1,49 @@
+title: "Mojaloop Brand Guidelines"
+source: "sources/mojaloop_Brand_Guidelines_2020.pdf"
+date: "April 2020"
+language: "en"
+summary: "Mojaloop 的開源金融科技品牌規範，區分 Foundation 與 Project logo，並定義字體、色彩比例與人本攝影原則。"
+chapters:
+  - id: "ch-01"
+    title: "Logo"
+    level: 1
+    order: 1
+    pages: "3-8"
+    summary: "定義 Foundation 與 Project logo 的使用情境、版本、clear space、最小尺寸、背景對比與禁用方式。"
+    children:
+      - id: "ch-01-01"
+        title: "Foundation and Project Logos"
+        level: 2
+        order: 1
+        pages: "3-5"
+        summary: "Foundation logo 指涉實體組織，Project logo 指涉開源專案。"
+      - id: "ch-01-02"
+        title: "Clear Space and Minimum Size"
+        level: 2
+        order: 2
+        pages: "6"
+        summary: "以字母 m 的寬高建立清除空間，並設定 print 20 mm、screen 50 px 的最小尺寸。"
+      - id: "ch-01-03"
+        title: "Proper and Improper Use"
+        level: 2
+        order: 3
+        pages: "7-8"
+        summary: "以背景深淺、5:1 對比、10%/30% black thresholds 與禁用變形規則治理 logo。"
+  - id: "ch-02"
+    title: "Type"
+    level: 1
+    order: 2
+    pages: "9"
+    summary: "指定 Varela Round 作為 display、Open Sans 作為 body，並定義權重、leading、kerning/tracking。"
+  - id: "ch-03"
+    title: "Color"
+    level: 1
+    order: 3
+    pages: "10-12"
+    summary: "定義 Blue 與 White 為核心色，輔色用於視覺興趣、資訊區分、圖表與插畫；另提供比例輪與 tint/shade。"
+  - id: "ch-04"
+    title: "Photography"
+    level: 1
+    order: 4
+    pages: "13-14"
+    summary: "攝影需真實、人本、賦權且避免 stock/staged、黑白、無焦點或與受眾不符的影像。"

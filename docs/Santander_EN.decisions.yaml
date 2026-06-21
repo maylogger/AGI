@@ -1,0 +1,75 @@
+# L3 決策卡 sidecar — Santander（金融）
+# schema：research/schemas/decision_pattern.schema.yaml
+
+brand_id: Santander_EN
+decisions:
+  - id: dp-restrained-palette-for-trust
+    title: 用克制的配色與權威主色傳達信任
+    problem:
+      statement: 金融品牌需要穩定、可信的視覺語言，並在大量夥伴與市場中保持一致。
+      signals: [trust, consistency_across_partners]
+    solution:
+      module: Color System
+      move: 少數主色（White/Red/Sky/Black）+ 建議使用比例，並提供跨媒介色值
+      layer: visual_core
+    reason:
+      - 限定主色與比例可在多市場維持一致辨識
+    applicable_when:
+      industries: [finance]
+      brand_types: [institutional_public_trust, heritage_legacy]
+      conditions: [trust]
+      archetypes: [brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Color System]
+    evidence:
+      - brand_id: Santander_EN
+        chapter: ch-03
+        excerpt: "定義 White、Red、Sky、Black 主要色與建議使用比例，並提供 PMS、HEX、RGB、CMYK、RAL。"
+    status: seed
+
+  - id: dp-contact-before-appendix
+    title: 提供品牌團隊聯絡窗口作為治理入口
+    problem:
+      statement: 基礎指南無法涵蓋所有疑問，缺乏窗口時使用者只能各自判斷。
+      signals: [governance, exceptions_expected]
+    solution:
+      module: Governance
+      move: 在文件結尾提供品牌團隊聯絡方式作為疑問與核准入口
+      layer: governance
+    reason:
+      - guideline 需要 owner 與 feedback channel
+    applicable_when:
+      industries: [finance]
+      archetypes: [brand_experience_guide, logo_asset_guidelines]
+    dependencies:
+      requires: [Governance]
+    evidence:
+      - brand_id: Santander_EN
+        chapter: ch-04
+        excerpt: "提醒若對 guideline 有疑問，應聯絡 Banco Santander brand team。"
+    status: seed
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: Santander_EN
+        chapter: ch-02-03
+        excerpt: "以 grid、四個 modules 距離與 1pt line 定義 Santander 與 partner brand lockup。"
+    status: seed

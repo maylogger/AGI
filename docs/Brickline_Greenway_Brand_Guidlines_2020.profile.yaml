@@ -1,0 +1,174 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Brickline_Greenway_Brand_Guidlines_2020
+index_ref: docs/Brickline_Greenway_Brand_Guidlines_2020.index.yaml
+note_ref: docs/Brickline_Greenway_Brand_Guidlines_2020.note.md
+archetype: full_brand_system
+industry: public_sector
+modules:
+- Brand Strategy
+- Governance
+- AI-Checkable Rules
+- Content Design
+- Voice and Tone
+- Messaging
+- Visual Identity
+- Typography System
+- Color System
+- Design Tokens
+- Accessibility
+- Visual Language
+- Motion Identity
+- Brand Architecture
+- Operations
+depth:
+  strategy: high
+  visual: high
+  governance: medium
+  top_level_chapter_count: 6
+  section_count: 4
+chapter_sequence:
+- id: ch-01
+  title: Brand Platform
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Big Idea and Commitment
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Tone, Attributes and Principles
+  order: 2
+  level: 2
+- id: ch-02
+  title: Messaging Toolkit
+  order: 2
+  level: 1
+- id: ch-03
+  title: Logo
+  order: 3
+  level: 1
+- id: ch-04
+  title: Color and Typography
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Color System
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Typography
+  order: 2
+  level: 2
+- id: ch-05
+  title: Imagery and Graphic Expressions
+  order: 5
+  level: 1
+- id: ch-06
+  title: GRG Brand Hierarchy and Sample Applications
+  order: 6
+  level: 1
+frameworks:
+- name: platform framework：Big Idea → Commitment → Tone → Attributes → Principles，將願景逐步轉成表現規則
+  chapter: ch-01
+  chapter_title: Brand Platform
+- name: messaging framework 包含 story、principles、audience map、tone vocabulary、sample message 與 compliance checks
+  chapter: ch-02
+  chapter_title: Messaging Toolkit
+- name: logo system framework：primary identity、secondary alternatives、clear space、minimum size、placement、misuse control
+  chapter: ch-03
+  chapter_title: Logo
+- name: design token + accessibility framework：palette、contrast ratio、usage role、font hierarchy、typesetting
+  chapter: ch-04
+  chapter_title: Color and Typography
+- name: graphic expression framework：photo/render evidence、frame system、pathway motif、motion rules、misuse gallery
+  chapter: ch-05
+  chapter_title: Imagery and Graphic Expressions
+- name: governance-to-application framework：endorsement hierarchy → lockup rules → communication templates → spatial translation
+  chapter: ch-06
+  chapter_title: GRG Brand Hierarchy and Sample Applications
+patterns:
+- name: 可複用模式是用城市動詞與社群價值定義地方品牌，而非只用地理或設施描述。
+  chapter: ch-01
+  chapter_title: Brand Platform
+- name: 可複用模式是用詞彙庫與訊息樣板讓非品牌團隊也能產生一致內容。
+  chapter: ch-02
+  chapter_title: Messaging Toolkit
+- name: 可複用模式是用 alternate logo 解決實務限制，但以 primary logo 維持主識別。
+  chapter: ch-03
+  chapter_title: Logo
+- name: 可複用模式包括以對比比率治理色彩、以主副字體分配品牌聲音與資訊清晰度。
+  chapter: ch-04
+  chapter_title: Color and Typography
+- name: 可複用模式包括 supergraphic、frame construction、community sourced content 與 spatial motif translation。
+  chapter: ch-05
+  chapter_title: Imagery and Graphic Expressions
+- name: 可複用模式是將品牌從 2D 素材延伸到 signage、icons、bridge、seating、pavilion 等空間元素。
+  chapter: ch-06
+  chapter_title: GRG Brand Hierarchy and Sample Applications
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI-checkable：對外訊息應可連回 opening up the city 或 bringing us together；不得只談建設本身而忽略人、地方與共同參與。
+  chapter: ch-01
+  chapter_title: Brand Platform
+- module: ''
+  criterion: AI-checkable：文案應使用 warm、optimistic、lively、straight up、bold 的語氣；需提及人、地方或連結；避免排他、官僚、空泛或只講工程進度。
+  chapter: ch-02
+  chapter_title: Messaging Toolkit
+- module: Visual Identity
+  criterion: AI-checkable：不得低於 minimum size；需保留 clear space；不得改色、拉伸、重排、套用效果或放在影響可讀性的背景上。
+  chapter: ch-03
+  chapter_title: Logo
+- module: Color System
+  criterion: AI-checkable：色彩組合需符合指定 contrast ratios；不得使用未核准色；標題與內文需遵守 typesetting；symbol/supergraphic 顏色需依規範搭配。
+  chapter: ch-04
+  chapter_title: Color and Typography
+- module: Photography System
+  criterion: AI-checkable：content frame 應依 construction 使用；connecting brick 不得任意變形或過度裝飾；community content 使用需維持可讀與品牌色彩關係。
+  chapter: ch-05
+  chapter_title: Imagery and Graphic Expressions
+- module: Brand Strategy
+  criterion: AI-checkable：GRG lockup 需使用核准比例；應用物需保留 Brickline Greenway 主體識別；signage/icons/spatial graphics 不得脫離核准色彩與 graphic
+    pathway。
+  chapter: ch-06
+  chapter_title: GRG Brand Hierarchy and Sample Applications
+chapters:
+- id: ch-01
+  title: Brand Platform
+  modules:
+  - Brand Strategy
+  - Governance
+- id: ch-02
+  title: Messaging Toolkit
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+  - Messaging
+- id: ch-03
+  title: Logo
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-04
+  title: Color and Typography
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Color System
+  - Design Tokens
+  - Accessibility
+- id: ch-05
+  title: Imagery and Graphic Expressions
+  modules:
+  - Visual Language
+  - Motion Identity
+- id: ch-06
+  title: GRG Brand Hierarchy and Sample Applications
+  modules:
+  - Brand Architecture
+  - Operations
+  - Governance

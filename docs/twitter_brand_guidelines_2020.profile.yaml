@@ -1,0 +1,231 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: twitter_brand_guidelines_2020
+index_ref: docs/twitter_brand_guidelines_2020.index.yaml
+note_ref: docs/twitter_brand_guidelines_2020.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Legal and Trademark
+- Governance
+- AI-Checkable Rules
+- Visual Identity
+- Layout System
+- Color System
+- Accessibility
+- UI Components
+- Content Design
+- Compliance
+depth:
+  strategy: low
+  visual: high
+  governance: high
+  top_level_chapter_count: 6
+  section_count: 4
+chapter_sequence:
+- id: ch-01
+  title: Using the Twitter Brand
+  order: 1
+  level: 1
+- id: ch-02
+  title: Our Logo
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: The Basics
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Spacing
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Color
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Social Icons
+  order: 4
+  level: 2
+- id: ch-03
+  title: Logo Pairing Lockups
+  order: 3
+  level: 1
+- id: ch-04
+  title: Tweet Treatments
+  order: 4
+  level: 1
+- id: ch-05
+  title: Twitter Marks
+  order: 5
+  level: 1
+- id: ch-06
+  title: 'Legal: Twitter Trademark Guidelines'
+  order: 6
+  level: 1
+frameworks:
+- name: Core Element Guide + Exception Escalation
+  chapter: ch-01
+  chapter_title: Using the Twitter Brand
+- name: Logo Protection Framework：approved colors、no modification、space, minimum size、social use
+  chapter: ch-02
+  chapter_title: Our Logo
+- name: Immutable Mark Policy
+  chapter: ch-02-01
+  chapter_title: The Basics
+- name: Proportional Clearspace Model
+  chapter: ch-02-02
+  chapter_title: Spacing
+- name: Background-Dependent Logo Color
+  chapter: ch-02-03
+  chapter_title: Color
+- name: Social Icon Component Rule
+  chapter: ch-02-04
+  chapter_title: Social Icons
+- name: Attribution Lockup Framework：logo + handle/hashtag + clearspace + type ownership
+  chapter: ch-03
+  chapter_title: Logo Pairing Lockups
+- name: Tweet Rendering Integrity：existence、message fidelity、visual template、credit, rights
+  chapter: ch-04
+  chapter_title: Tweet Treatments
+- name: Trademark Scope + Use Context Matrix
+  chapter: ch-05
+  chapter_title: Twitter Marks
+- name: Trademark License Compliance
+  chapter: ch-06
+  chapter_title: 'Legal: Twitter Trademark Guidelines'
+patterns:
+- name: Scope Statement with Trademark Contact。
+  chapter: ch-01
+  chapter_title: Using the Twitter Brand
+- name: Minimal Logo Ruleset。
+  chapter: ch-02
+  chapter_title: Our Logo
+- name: Logo Basics Checklist。
+  chapter: ch-02-01
+  chapter_title: The Basics
+- name: Clearspace as Percentage of Mark Width。
+  chapter: ch-02-02
+  chapter_title: Spacing
+- name: Image Overlay Contrast Rule。
+  chapter: ch-02-03
+  chapter_title: Color
+- name: Container-flexible, Mark-fixed。
+  chapter: ch-02-04
+  chapter_title: Social Icons
+- name: Platform Handle Lockup。
+  chapter: ch-03
+  chapter_title: Logo Pairing Lockups
+- name: Platform Content Card Treatment。
+  chapter: ch-04
+  chapter_title: Tweet Treatments
+- name: Protected Marks Inventory。
+  chapter: ch-05
+  chapter_title: Twitter Marks
+- name: Legal Enforcement Appendix。
+  chapter: ch-06
+  chapter_title: 'Legal: Twitter Trademark Guidelines'
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI 可檢查：若使用情境不屬於 logo、hashtag/@reply、Tweets 或本文件明列範圍，需標記為「需聯絡 trademarks@twitter.com」；不得自行推定許可。
+  chapter: ch-01
+  chapter_title: Using the Twitter Brand
+- module: Visual Identity
+  criterion: AI 可檢查：logo 只可為 Twitter blue 或 white；黑色例外需 approval；不得 alter/rotate/modify/animate；不得使用 outdated versions；clearspace
+    >= 150% logo width；logo minimum width >= 16px。
+  chapter: ch-02
+  chapter_title: Our Logo
+- module: ''
+  criterion: AI 可檢查：logo fill 只能為 Twitter blue 或 white；black exception 必須有 approval flag；不得改形、旋轉、動畫、擬聲或使用舊版。
+  chapter: ch-02-01
+  chapter_title: The Basics
+- module: ''
+  criterion: AI 可檢查：logo bounding box 周圍 clearspace >= 1.5 x logo width；rendered width >= 16px。
+  chapter: ch-02-02
+  chapter_title: Spacing
+- module: Color System
+  criterion: AI 可檢查：image background 上 logo 必須為 white；light image 應加 10-20% black tint 以維持 white logo legibility；非 blue/white
+    logo 需 permission。
+  chapter: ch-02-03
+  chapter_title: Color
+- module: Iconography System
+  criterion: AI 可檢查：social icon minimum width >= 32px；Twitter icon 與其他 social icons 等尺寸等高度；logo 本身仍只能 blue/white；有可能時移除容器；容器限
+    circle/square/rounded square。
+  chapter: ch-02-04
+  chapter_title: Social Icons
+- module: Visual Identity
+  criterion: AI 可檢查：logo pairing 中 logo 必須 blue/white；text scale = 100% logo height；需遵守 clearspace；不得加 gradients、unapproved
+    patterns、special effects、drop shadows、extra elements、anatomy、random textures；不得 personify、multiply、skew/rotate/stretch、stack
+    multiple logos、與 headlines/other logos lock up。
+  chapter: ch-03
+  chapter_title: Logo Pairing Lockups
+- module: ''
+  criterion: AI 可檢查：Tweet 必須為平台上真實存在；不得 alter message；@handle/Tweet/timestamp 用 Helvetica Neue Regular；username 用 Helvetica
+    Neue Bold；Tweet + Media template 不得 alter image；必須顯示 account full name、handle 與 Twitter logo；第三方 Tweet/logo/image 需 legal
+    review。
+  chapter: ch-04
+  chapter_title: Tweet Treatments
+- module: ''
+  criterion: AI 可檢查：Twitter/Tweet/Retweet 必須大寫首字；不得把 Twitter marks 納入公司、產品、服務、網站、domain、application 名稱；書籍/出版物需清楚表示 about Twitter,
+    not by Twitter；除 hashtag/handle lockup 或 social icons 外，不允許製作販售贈送帶 Twitter name/logo 的商品。
+  chapter: ch-05
+  chapter_title: Twitter Marks
+- module: ''
+  criterion: AI 可檢查：不得改比例/顏色/形狀或增減元素；marks 需獨立出現並與其他視覺/文字元素保持合理間距；不得妨礙完整 readability/display；不得暗示 sponsorship/endorsement；不得用於貶損；Tweet/Retweet
+    marks 僅可指 Twitter products；需使用 unique product/app/site name；含 marks 的 materials 必須顯示 trademark statement：“TWITTER, TWEET,
+    RETWEET and the Twitter Bird logo are trademarks of Twitter Inc. or its affiliates.”
+  chapter: ch-06
+  chapter_title: 'Legal: Twitter Trademark Guidelines'
+chapters:
+- id: ch-01
+  title: Using the Twitter Brand
+  modules:
+  - Legal and Trademark
+  - Governance
+- id: ch-02
+  title: Our Logo
+  modules:
+  - AI-Checkable Rules
+- id: ch-02-01
+  title: The Basics
+  modules:
+  - Visual Identity
+  - Governance
+- id: ch-02-02
+  title: Spacing
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+- id: ch-02-03
+  title: Color
+  modules:
+  - Color System
+  - Accessibility
+  - Governance
+- id: ch-02-04
+  title: Social Icons
+  modules:
+  - UI Components
+- id: ch-03
+  title: Logo Pairing Lockups
+  modules:
+  - AI-Checkable Rules
+- id: ch-04
+  title: Tweet Treatments
+  modules:
+  - Legal and Trademark
+  - UI Components
+  - Content Design
+- id: ch-05
+  title: Twitter Marks
+  modules:
+  - Legal and Trademark
+- id: ch-06
+  title: 'Legal: Twitter Trademark Guidelines'
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Compliance

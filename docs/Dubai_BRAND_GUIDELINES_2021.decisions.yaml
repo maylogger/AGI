@@ -1,0 +1,218 @@
+# L3 決策卡 sidecar — Dubai Brand Guidelines 2021
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: Dubai_BRAND_GUIDELINES_2021
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌不是單一標誌，而是組織如何行動與如何溝通
+      - 品牌是決策系統，不是美術風格；每個視覺與文案選擇都應能回推到品牌支柱
+      - 先建立判斷標準，後續視覺與語氣才有可回溯的語義來源
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: Dubai_BRAND_GUIDELINES_2021
+        chapter: ch-01
+        excerpt: "先建立判斷標準再進入視覺、語氣或應用規格；以 vision → mission pillars → proposition → promise 的城市品牌策略框架，讓所有識別應用服務於一致城市形象。"
+    status: extracted
+
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 先建立「誰在說話」的判斷層，再以 umbrella → member → VPU/GP → lockup → special case 的層級把組織結構視覺化
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - 大型系統可用「可辨識但不獨立」的 secondary line 管理內部單位
+      - 任何多實體品牌系統都需要先建立「誰在說話」的判斷層，再談 logo 放置
+    applicable_when:
+      industries: [public_sector, education]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [multi_unit_consistency, multi_entity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 各單位自行創造分支品牌與專屬 tagline
+      - 只列 logo 圖檔卻不給「何時用 umbrella、何時用單一機構」的判斷規則
+    evidence:
+      - brand_id: Dubai_BRAND_GUIDELINES_2021
+        chapter: ch-02
+        excerpt: "在 umbrella architecture 下管理 Department of Tourism、Dubai Calendar、City of Dubai、Dubai Business Events、Government 等 brandmark；brandmark taxonomy 需同時描述誰可用與用在哪種情境。"
+    status: extracted
+
+  - id: dp-bilingual-identity-system
+    title: 用語言平權的雙語標誌與分語字體治理多語品牌
+    problem:
+      statement: 跨語言、跨文化的品牌若只把標誌與字體做翻譯版本，會讓某一語言層被視為附屬裝飾，並在多語環境出現字形、排序與可讀性不一致。
+      signals: [multilingual, bilingual, localization, cross_cultural_audience]
+    solution:
+      module: Typography System
+      move: 把語言平權內建到標誌結構（雙語字形融合），並為每種文字系統指定字體、用途與排序規則
+      layer: visual_core
+    reason:
+      - 多語品牌最好把語言平權內建在 logo 結構，而非只做翻譯版本
+      - typography token 應包含 language 維度，為每種文字系統做 role mapping
+      - 標誌解剖頁可降低使用者自行重排雙語標誌的風險
+    applicable_when:
+      industries: [public_sector, finance, education]
+      brand_types: [institutional_public_trust]
+      conditions: [multilingual, localization]
+      archetypes: [brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Visual Identity, Typography System]
+      enables: [Localization, Accessibility]
+    anti_patterns:
+      - 只提供翻譯版本，讓單一語言層支配另一層
+      - 字體規範未標註語言維度，輔助字體污染主識別
+    evidence:
+      - brand_id: Dubai_BRAND_GUIDELINES_2021
+        chapter: ch-02-01
+        excerpt: "brandmark 由 English layer 與 Arabic layer 兩層字母融合構成，反映 Dubai 文化交會；不得拆除任一語言層或讓單一語言層支配另一層。"
+      - brand_id: Dubai_BRAND_GUIDELINES_2021
+        chapter: ch-03
+        excerpt: "以 DIN、Droid Kufic、Dubai Font、PingFang SC、Calibri、Brush Script 對應 Arabic/English/Mandarin 與不同情境，建立 language script × medium × formality 的字體矩陣。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - 留白是識別權重與可讀性的保護機制，需隨標誌縮放
+      - 相對單位可建立 scalable spacing token，不被固定像素綁死
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - minimum clear space = 1x o，optimal = 2x o
+    evidence:
+      - brand_id: Dubai_BRAND_GUIDELINES_2021
+        chapter: ch-05
+        excerpt: "exclusion zone 以 Arabic letter daal 的上半部為單位、排除區不得小於 1 daal，用標誌自身文化字形作 spacing unit 同時維持比例與語義。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗與照片複雜度建立對比決策樹，限定白／深色兩種標誌
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - Logo 顏色規範應基於對比與背景風險，而非只列色票
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: Dubai_BRAND_GUIDELINES_2021
+        chapter: ch-02
+        excerpt: "Department of Tourism 白版用於深色背景、藍版用於白／淺色背景；original colours 僅用於全白或全黑且無圖片背景，依背景對比選用而非自由配色。"
+    status: extracted
+
+  - id: dp-trademark-permission-flow
+    title: 用授權閘門治理第三方商標使用，先處理混淆與背書風險
+    problem:
+      statement: 平台品牌被大量第三方使用商標與資產，若無授權流程，會造成商標混淆與誤導性背書風險。
+      signals: [trademark_protection, partner_governance, endorsement_risk, third_party_usage]
+    solution:
+      module: Legal and Trademark
+      move: 以「核准來源 + 允許情境 + 禁止改作 + permission gate」治理，高風險情境須送審並附最終版本、描述與 script
+      layer: governance
+    reason:
+      - 平台品牌 guideline 應優先處理 trademark confusion 與 endorsement risk，再處理美學一致
+      - 越接近大眾媒體、商業廣告、包裝與劇情敘事，審查需求越高
+      - permission section 將品牌治理流程化，降低設計師自行判斷法律風險
+    applicable_when:
+      industries: [tech_software]
+      brand_types: [platform_ecosystem]
+      conditions: [third_party_usage, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Legal and Trademark]
+      enables: [Governance]
+    anti_patterns:
+      - 只給視覺規格而無使用情境風險表與審核材料清單
+      - 放任第三方自行判斷法律與背書風險
+    evidence:
+      - brand_id: Dubai_BRAND_GUIDELINES_2021
+        chapter: ch-10
+        excerpt: "Marks 不得商業使用、商品化、廣告使用、貶損或暗示 endorsement，使用需加 attribution，並保留 DTCM inspection / cease and desist 權利；合作 endorsement 需先滿足 flag bearer / MOU 等資格。"
+      - brand_id: Dubai_BRAND_GUIDELINES_2021
+        chapter: ch-09
+        excerpt: "partner endorsement 需通過 eligibility → permitted use → collateral placement → risk review；endorsement 不得對 Brand Dubai equity 造成重大負面風險。"
+    status: extracted
+
+  - id: dp-palette-roles-and-usage-limits
+    title: 用色彩角色與用途限制治理調色盤，而非只給色票清單
+    problem:
+      statement: 只提供一串色票時，設計者會把任何顏色當成可自由使用，導致主色被稀釋、輔助色被誤用為大面積背景，跨應用失去一致性。
+      signals: [color_governance, palette_misuse, brand_color_equity, multi_application]
+    solution:
+      module: Color System
+      move: 為每個顏色指定角色（主色／背景／文字／功能／輔助），並明訂「可作背景／不可作背景」與少量使用門檻
+      layer: visual_core
+    reason:
+      - 主色承擔品牌記憶，輔助／功能色承擔資訊與插圖，角色混用會稀釋品牌資產
+      - color token 需附用途限制（可作背景、不可作背景），才能被審稿與自動檢查
+      - 多品牌色彩治理應明確定義 shared tokens 與 local tokens
+    applicable_when:
+      industries: [finance, consumer_retail_hospitality, luxury_premium, nonprofit_social]
+      brand_types: [mass_consumer, institutional_public_trust, premium_luxury]
+      conditions: [color_governance, multi_application]
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit]
+    dependencies:
+      requires: [Color System]
+      enables: [Design Tokens, Accessibility]
+    anti_patterns:
+      - 只給一串色票，未說明每色角色與可否作背景
+      - 讓輔助／功能色被當成大面積品牌背景
+    evidence:
+      - brand_id: Dubai_BRAND_GUIDELINES_2021
+        chapter: ch-04
+        excerpt: "共用 Dubai Beige、Cool Grey 等中性色，再為各子品牌給差異 accent；不得將 Dubai Calendar 紅黃橘系套用於 Business Events，色彩需符合該子品牌 palette。"
+    status: extracted

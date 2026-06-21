@@ -1,0 +1,219 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: TheEmirates_LogoGuidelines
+index_ref: docs/TheEmirates_LogoGuidelines.index.yaml
+note_ref: docs/TheEmirates_LogoGuidelines.note.md
+archetype: brand_experience_guide
+industry: public_sector
+modules:
+- Legal and Trademark
+- AI-Checkable Rules
+- Visual Identity
+- Governance
+- Layout System
+- Compliance
+- Messaging
+- Color System
+- Design Tokens
+- Localization
+- Typography System
+- Operations
+- Brand Strategy
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 8
+  section_count: 2
+chapter_sequence:
+- id: ch-01
+  title: Brandmark Assets
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Brandmark Construction and Usage
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Misuses and Prohibited Applications
+  order: 2
+  level: 2
+- id: ch-02
+  title: Our Core Philosophy
+  order: 2
+  level: 1
+- id: ch-03
+  title: Colour
+  order: 3
+  level: 1
+- id: ch-04
+  title: Typography
+  order: 4
+  level: 1
+- id: ch-05
+  title: Digital
+  order: 5
+  level: 1
+- id: ch-06
+  title: Materials
+  order: 6
+  level: 1
+- id: ch-07
+  title: Co-branding and Endorsement
+  order: 7
+  level: 1
+- id: ch-08
+  title: Contact Us
+  order: 8
+  level: 1
+frameworks:
+- name: asset hierarchy：primary lockup → secondary lockup → symbol-only exception；risk hierarchy：誤用 → 禁止物件 → 禁止場域 → 需審批事件
+  chapter: ch-01
+  chapter_title: Brandmark Assets
+- name: context-based choice：預設垂直 → 空間不足用水平 → 小型或特殊工藝才用 symbol-only
+  chapter: ch-01-01
+  chapter_title: Brandmark Construction and Usage
+- name: prohibition taxonomy：disposable、undesirable、dangerous、flooring、inappropriate apparel、unregulated events、sensitive
+    loc...
+  chapter: ch-01-02
+  chapter_title: Misuses and Prohibited Applications
+- name: message placement framework：locked-up to logo、headline、adapted headline、body copy sign-off、merchandise slogan
+  chapter: ch-02
+  chapter_title: Our Core Philosophy
+- name: national-symbol color system：flag meaning → Pantone anchor → media-specific conversion → test output
+  chapter: ch-03
+  chapter_title: Colour
+- name: font stack governance：primary brand font → secondary storytelling font → office system fallback
+  chapter: ch-04
+  chapter_title: Typography
+- name: email signature matrix：single brand / co-branding × with philosophy / without philosophy
+  chapter: ch-05
+  chapter_title: Digital
+- name: material-to-finish mapping：hard material → blind emboss/deboss；textile → full colour embroidery/silk screen；leather
+    →...
+  chapter: ch-06
+  chapter_title: Materials
+- name: association decision framework：value alignment → message implication → scenario type → logo prominence → philosophy
+    u...
+  chapter: ch-07
+  chapter_title: Co-branding and Endorsement
+- name: rulebook + approval owner
+  chapter: ch-08
+  chapter_title: Contact Us
+patterns:
+- name: logo asset decision tree 可供自動版面系統依尺寸、背景與媒介選擇版本。
+  chapter: ch-01-01
+  chapter_title: Brandmark Construction and Usage
+- name: 可複用為 high-integrity brand 的 negative application checklist。
+  chapter: ch-01-02
+  chapter_title: Misuses and Prohibited Applications
+- name: 把核心理念當作可插拔 copy asset，而非固定 slogan，可支援多語與合作溝通。
+  chapter: ch-02
+  chapter_title: Our Core Philosophy
+- name: 對國家或機構品牌，主色通常承載法定 / 文化象徵，而非單純美感選擇。
+  chapter: ch-03
+  chapter_title: Colour
+- name: 將商用字體來源與 fallback 一起列出，可降低跨組織執行落差。
+  chapter: ch-04
+  chapter_title: Typography
+- name: 以矩陣方式列出常見 digital templates，可供品牌工具自動產生。
+  chapter: ch-05
+  chapter_title: Digital
+- name: 把材質與工藝建立對照表，是 merchandise / production guideline 的通用結構。
+  chapter: ch-06
+  chapter_title: Materials
+- name: 這段關係傳遞什麼訊息
+  chapter: ch-07
+  chapter_title: Co-branding and Endorsement
+- name: 治理型 guideline 應把聯絡與審批資料視為系統元件。
+  chapter: ch-08
+  chapter_title: Contact Us
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: 不可改變 lockup、間距、字標、symbol 形狀、旋轉與比例；primary / secondary logo 在 print 最小高度分別不得低於 14mm / 7mm，在 digital 不得低於 50px
+    / 25px；不可放在會被踩踏、丟棄、污染、危險或有損品牌尊嚴的物件與場域。
+  chapter: ch-01
+  chapter_title: Brandmark Assets
+- module: Brand Strategy
+  criterion: 影像或影片上只能用單色白 / 黑 logo 並確保最高對比；full-colour logo 不得覆蓋影像或影片；symbol-only 僅限小尺寸、壓印、頭像等特定用途。
+  chapter: ch-01-01
+  chapter_title: Brandmark Construction and Usage
+- module: ''
+  criterion: 若物件會被丟棄、踩踏、污染、藏污、危害、與酒精或廁浴空間相鄰，應判定不可使用；事件若內容或表演者不可控且可能損害品牌價值，需拒絕或送審。
+  chapter: ch-01-02
+  chapter_title: Misuses and Prohibited Applications
+- module: ''
+  criterion: lockup 時 core philosophy 必須在 logo 右側且以分隔線隔開；不可放在上、下、左；背書他牌時不可使用 core philosophy；merchandise 上不可緊鄰或置於 logo 下方，需
+    Brand Office 核准。
+  chapter: ch-02
+  chapter_title: Our Core Philosophy
+- module: ''
+  criterion: 印刷與螢幕輸出不可只依表列 CMYK/RGB 值直接定稿；需測試以匹配 Pantone shade。
+  chapter: ch-03
+  chapter_title: Colour
+- module: ''
+  criterion: 使用 core philosophy 的 email signature 必須遵循 Section 2.02；co-branded email signature 中 Emirates Brand 或帶 core philosophy
+    的 lockup 應在共同品牌序列最後。
+  chapter: ch-05
+  chapter_title: Digital
+- module: ''
+  criterion: 紙、木、銀金屬、金金屬應使用無色 blind emboss/deboss；紡織可用 full-colour embroidery 或 silk screen；皮革不得加色，只允許 blind deboss。
+  chapter: ch-06
+  chapter_title: Materials
+- module: Brand Strategy
+  criterion: co-branding 可選擇是否加入 core philosophy，但若加入需依 Section 2.02；Emirates Brand 應在 co-brand 序列最後；endorsement 不得使用 core
+    philosophy，且 Emirates Brand 必須低於或晚於被背書品牌。
+  chapter: ch-07
+  chapter_title: Co-branding and Endorsement
+chapters:
+- id: ch-01
+  title: Brandmark Assets
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-01-01
+  title: Brandmark Construction and Usage
+  modules:
+  - Layout System
+  - Visual Identity
+- id: ch-01-02
+  title: Misuses and Prohibited Applications
+  modules:
+  - Compliance
+  - Governance
+- id: ch-02
+  title: Our Core Philosophy
+  modules:
+  - Messaging
+  - Visual Identity
+  - Governance
+- id: ch-03
+  title: Colour
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-04
+  title: Typography
+  modules:
+  - Localization
+  - Typography System
+  - Operations
+- id: ch-05
+  title: Digital
+  modules:
+  - Operations
+- id: ch-07
+  title: Co-branding and Endorsement
+  modules:
+  - Brand Strategy
+  - Governance
+- id: ch-08
+  title: Contact Us
+  modules:
+  - Operations
+  - Governance

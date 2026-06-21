@@ -1,0 +1,319 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Apple_ID_Guidelines_Channel_2016
+index_ref: docs/Apple_ID_Guidelines_Channel_2016.index.yaml
+note_ref: docs/Apple_ID_Guidelines_Channel_2016.note.md
+archetype: brand_experience_guide
+industry: tech_software
+modules:
+- Operations
+- Governance
+- Legal and Trademark
+- AI-Checkable Rules
+- Visual Identity
+- Information Design
+- Compliance
+- Product Language
+- Measurement
+- Localization
+- Content Design
+- Knowledge Architecture
+depth:
+  strategy: low
+  visual: medium
+  governance: high
+  top_level_chapter_count: 8
+  section_count: 5
+chapter_sequence:
+- id: ch-01
+  title: Apple Sales Web
+  order: 1
+  level: 1
+- id: ch-02
+  title: Using Apple Channel Signatures
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Signature Configuration and Graphic Standards
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Communication Touchpoints
+  order: 2
+  level: 2
+- id: ch-03
+  title: Apple-Certified Individuals
+  order: 3
+  level: 1
+- id: ch-04
+  title: Using Apple Assets
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Product Photos and Refresh
+  order: 1
+  level: 2
+- id: ch-05
+  title: Reseller Store Identity
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Naming and Store Exterior
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Store Interior and Concessions
+  order: 2
+  level: 2
+- id: ch-06
+  title: Editorial Guidelines
+  order: 6
+  level: 1
+- id: ch-07
+  title: Apple Trademarks and Credit Lines
+  order: 7
+  level: 1
+- id: ch-08
+  title: For More Information
+  order: 8
+  level: 1
+frameworks:
+- name: Authorized asset source framework：權限、搜尋、下載、版本更新、支援
+  chapter: ch-01
+  chapter_title: Apple Sales Web
+- name: Endorsement hierarchy framework：reseller identity first，Apple signature smaller/secondary，only one relevant authoriza...
+  chapter: ch-02
+  chapter_title: Using Apple Channel Signatures
+- name: Configuration selection framework：layout space、regional localization availability、communication content relevance
+  chapter: ch-02-01
+  chapter_title: Signature Configuration and Graphic Standards
+- name: Touchpoint permission matrix：allowed, text-only, prohibited, approval required, size/placement limited
+  chapter: ch-02-02
+  chapter_title: Communication Touchpoints
+- name: Subject-of-certification framework：individual vs company vs employee capability statement
+  chapter: ch-03
+  chapter_title: Apple-Certified Individuals
+- name: Product asset lifecycle framework：source -> allowed manipulation -> size/resolution -> refresh -> retirement
+  chapter: ch-04
+  chapter_title: Using Apple Assets
+- name: Refresh governance framework：asset version、display context、retirement obligation
+  chapter: ch-04-01
+  chapter_title: Product Photos and Refresh
+- name: Retail separation framework：own identity, secondary Apple authorization, avoid proprietary Apple forms/materials,
+    ada...
+  chapter: ch-05
+  chapter_title: Reseller Store Identity
+- name: Exterior compliance matrix：name, material, signature size, distance, color, lighting, variance
+  chapter: ch-05-01
+  chapter_title: Naming and Store Exterior
+- name: Interior product-focus framework：uncluttered display, own retail identity, controlled Apple POS, no proprietary repli...
+  chapter: ch-05-02
+  chapter_title: Store Interior and Concessions
+- name: Controlled terminology framework：authorized phrase, capitalization, localization source, no abbreviation
+  chapter: ch-06
+  chapter_title: Editorial Guidelines
+- name: Trademark compliance framework：correct mark, first-use symbol, credit line, no translation, regional note
+  chapter: ch-07
+  chapter_title: Apple Trademarks and Credit Lines
+- name: Support routing framework：identity assets、product marketing、trademark/legal
+  chapter: ch-08
+  chapter_title: For More Information
+patterns:
+- name: official asset source
+  chapter: ch-01
+  chapter_title: Apple Sales Web
+- name: co-brand signature
+  chapter: ch-02
+  chapter_title: Using Apple Channel Signatures
+- name: authorization selection
+  chapter: ch-02
+  chapter_title: Using Apple Channel Signatures
+- name: multi-authorization display
+  chapter: ch-02
+  chapter_title: Using Apple Channel Signatures
+- name: touchpoint exceptions
+  chapter: ch-02
+  chapter_title: Using Apple Channel Signatures
+- name: 可複用於 partner badge systems、certification marks、marketplace partner pages。
+  chapter: ch-02-01
+  chapter_title: Signature Configuration and Graphic Standards
+- name: 可複用於 social avatar rules、event sponsorship rules、vehicle livery rules、merchandise approval rules。
+  chapter: ch-02-02
+  chapter_title: Communication Touchpoints
+- name: 適用於專業證照、agent certification、training badge 的使用規範。
+  chapter: ch-03
+  chapter_title: Apple-Certified Individuals
+- name: 可複用於硬體、車款、包裝與應用截圖等高控制產品資產。
+  chapter: ch-04
+  chapter_title: Using Apple Assets
+- name: 可轉為 DAM metadata 與週期性審核流程。
+  chapter: ch-04-01
+  chapter_title: Product Photos and Refresh
+- name: 可複用為 partner retail guideline、shop-in-shop governance、fixture exclusion list。
+  chapter: ch-05
+  chapter_title: Reseller Store Identity
+- name: 適合擴充成 computer vision audit checklist。
+  chapter: ch-05-01
+  chapter_title: Naming and Store Exterior
+- name: 可複用為 showroom fixture rulebook 與 shop-in-shop signage rules。
+  chapter: ch-05-02
+  chapter_title: Store Interior and Concessions
+- name: 可複用於 product name linting、partner authorization copy checker。
+  chapter: ch-06
+  chapter_title: Editorial Guidelines
+- name: 可複用到多國品牌法務審核與 footer legal notice generator。
+  chapter: ch-07
+  chapter_title: Apple Trademarks and Credit Lines
+- name: Guideline 應在末尾提供 escalation contacts 與 decision authority。
+  chapter: ch-08
+  chapter_title: For More Information
+rules_ai_checkable:
+- module: ''
+  criterion: 通路簽名 artwork、產品照片、產品訊息與模板應從 ASW 或 Apple 提供資產取得；不得以 Apple 官網資產替代。
+  chapter: ch-01
+  chapter_title: Apple Sales Web
+- module: ''
+  criterion: 通路簽名只能全黑或全白；最小尺寸為 Apple logo 高度 8 mm print / 35 px onscreen；clearspace 至少 Apple logo 高度的一半；通路簽名必須小於店家/公司身分；每頁或每個表面偏好只用一個
+    Apple signature；不得單獨使用 Apple logo、不得改字體/間距/顏色、不得加入陰影/反光/3D/旋轉/動畫、不得與公司名稱組成新 signature。
+  chapter: ch-02
+  chapter_title: Using Apple Channel Signatures
+- module: ''
+  criterion: 多授權不可用於產品 promotion；不得堆疊多個完整 signatures 或並排多個 Apple logo；不得混合一行與兩行 logotype；business authorization 不可與 personal
+    certification 合併。
+  chapter: ch-02-01
+  chapter_title: Signature Configuration and Graphic Standards
+- module: ''
+  criterion: website/email headers 可用 two-line 35 px 高，reseller identity 與 signature 至少 35 px 間距；email 結尾不可放 signature；social
+    media 不可使用 signature 圖形，只能文字提及授權；event sponsor list 不可用 Apple signature；service vehicle 每側只用一個 Authorized Service Provider
+    signature，高度 40-80 mm；shopping bag signature 不得大於 reseller logotype cap height 50%；stationery signature 不得超過 store identity
+    高度一半且不可印於信封。
+  chapter: ch-02-02
+  chapter_title: Communication Touchpoints
+- module: ''
+  criterion: 個人認證簽名不得出現在公司廣告、brochure 或 online promotion；email 結尾只能文字提及認證，不放 certification signature；公司只能用文字說明「雇用具備某能力認證的人員」。
+  chapter: ch-03
+  chapter_title: Apple-Certified Individuals
+- module: ''
+  criterion: 只用 ASW 提供且指定給 reseller 的產品照片；不得使用 Apple lifestyle/promotional images、官網圖或 PR 圖；不得自行拍攝 Apple 產品；不得修改照片、加字、加 violator、動畫、增強或替換螢幕圖；資產通常只能縮放不超過
+    10%；超過 20 inch 高的大圖需另取高解析；不得展示過時圖形或轉讓/出售 Apple assets。
+  chapter: ch-04
+  chapter_title: Using Apple Assets
+- module: ''
+  criterion: 不得展示 glass logo、Garamond font、rainbow-striped Apple logo 等 historic graphics；不得捐贈、出售或轉移舊圖形。
+  chapter: ch-04-01
+  chapter_title: Product Photos and Refresh
+- module: ''
+  criterion: 店名/公司名/網站/社群名不得含 Apple、Mac、iPad、iPhone、iPod 等商標；外觀 signature 用 two-line，為 reseller logotype cap height 50%，高度不得超過
+    400 mm 或低於 100 mm；standard facade 與 reseller identity 至少 2 m 間距，short fascia 至少 200 mm；eye-level signature Apple logo
+    固定 100 mm；window cling 每門/入口只用一個且放於室內純玻璃；不得用 stainless steel 外觀或複製 Apple fixture；室內 sign 不可用 Apple channel signature，只能文字表示
+    authorization，黑 bar 高度不得超過 100 mm。
+  chapter: ch-05
+  chapter_title: Reseller Store Identity
+- module: ''
+  criterion: Apple signature 不得高於 store logo；只用全黑或全白；不得多個 signature；illumination 必須全 signature 且 reseller identity 也被照明；不得用
+    colored lights/filters；nonconforming sign 需提供地點描述、要求、圖面與照片並先取得地方建管許可。
+  chapter: ch-05-01
+  chapter_title: Naming and Store Exterior
+- module: ''
+  criterion: 不得使用 maple/oak hardwood、stainless steel 等 Apple fixture 材料；不得複製 Apple round table、Parsons table、consultation
+    bar 等 proprietary elements；multi-brand concession signature 只可用於 brand-organized concessions，header Apple logo 200 mm，eye-level/lower
+    100 mm；室內 sign 不可放 Apple channel signature；banner 僅限暫時促銷且不得顯示 Apple signature。
+  chapter: ch-05-02
+  chapter_title: Store Interior and Concessions
+- module: ''
+  criterion: Apple Authorized Reseller 等每字首字母大寫；授權名稱需與周圍文字同字體風格；多授權每次都需包含 Apple 且完整拼出；localized authorization 只能用 Apple artwork
+    上的譯文；Apple 和商標不得翻譯或音譯；iPhone/iPad/iPod touch 必須保持正確大小寫，即使句首也小寫 i。
+  chapter: ch-06
+  chapter_title: Editorial Guidelines
+- module: ''
+  criterion: 美國境內首次出現 Apple trademark/service mark 需加 ™/SM/®；不得在 Apple-provided channel signature artwork 加 trademark symbol；credit
+    lines 只列素材中出現的商標，Apple 和 Apple logo 永遠優先；Apple Inc. 僅保留法律文件，顧客溝通用 Apple。
+  chapter: ch-07
+  chapter_title: Apple Trademarks and Credit Lines
+- module: ''
+  criterion: 若需要 signature artwork 或 reseller communication 資訊，使用 ASW；若是產品行銷，使用 product asset kits；若是商標問題，參照 legal guidelines。
+  chapter: ch-08
+  chapter_title: For More Information
+chapters:
+- id: ch-01
+  title: Apple Sales Web
+  modules:
+  - Operations
+  - Governance
+- id: ch-02
+  title: Using Apple Channel Signatures
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-02-01
+  title: Signature Configuration and Graphic Standards
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+  - Information Design
+- id: ch-02-02
+  title: Communication Touchpoints
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Operations
+  - Governance
+- id: ch-03
+  title: Apple-Certified Individuals
+  modules:
+  - Legal and Trademark
+  - Compliance
+  - Governance
+- id: ch-04
+  title: Using Apple Assets
+  modules:
+  - AI-Checkable Rules
+  - Product Language
+  - Governance
+- id: ch-04-01
+  title: Product Photos and Refresh
+  modules:
+  - Measurement
+  - Operations
+  - Governance
+- id: ch-05
+  title: Reseller Store Identity
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Governance
+- id: ch-05-01
+  title: Naming and Store Exterior
+  modules:
+  - AI-Checkable Rules
+  - Compliance
+- id: ch-05-02
+  title: Store Interior and Concessions
+  modules:
+  - AI-Checkable Rules
+  - Governance
+- id: ch-06
+  title: Editorial Guidelines
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Localization
+  - Content Design
+- id: ch-07
+  title: Apple Trademarks and Credit Lines
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Localization
+  - Compliance
+- id: ch-08
+  title: For More Information
+  modules:
+  - Operations
+  - Knowledge Architecture
+  - Governance

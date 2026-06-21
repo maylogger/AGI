@@ -1,0 +1,38 @@
+# L3 決策卡 sidecar — National Geographic
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: National_Geographic_Style_Guide
+decisions:
+  - id: dp-content-forward-flexible-identity
+    title: 讓識別當承載內容的框架，並以可調品牌音量平衡影像與品牌
+    problem:
+      statement: 內容導向品牌（媒體、出版、頻道）若讓識別搶走影像注意力，會削弱真正的內容資產；但完全沒有品牌又失去辨識。
+      signals: [content_forward_identity, multi_platform, motion_behavior, brand_recognition_vs_content]
+    solution:
+      module: Visual Language
+      move: 確立 content-forward 原則（識別是承載影像的框架），並用 Image／Message／Brand 三元素的可調「品牌音量」決定每個輸出的識別顯著度
+      layer: strategy
+    reason:
+      - 品牌應支援探索，而不是遮蔽內容；真實影像與知識進展比裝飾性識別更重要
+      - 好的品牌系統不是單一規則，而是可調節的平衡機制
+      - 品牌音量可轉成 AI 對版面密度與識別顯著度的檢查
+    applicable_when:
+      industries: [media_entertainment]
+      brand_types: [category_creator, challenger]
+      conditions: [content_forward_identity, multi_platform]
+      archetypes: [brand_experience_guide, product_design_system, campaign_touchpoint]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Layout System, Motion Identity]
+    anti_patterns:
+      - 影像優先情境仍使用過量遮罩或圖形
+      - 同時提高 image/message/brand 三者造成視覺擁擠
+    evidence:
+      - brand_id: National_Geographic_Style_Guide
+        chapter: ch-01-03
+        excerpt: "確立識別是承載影像的框架，而非搶走影像注意力；品牌元素需可依內容需求調整音量。"
+      - brand_id: National_Geographic_Style_Guide
+        chapter: ch-04
+        excerpt: "三元素平衡框架：Imagery、Message、Brand Volume 互相牽制；不得同時提高三者造成視覺擁擠，每個輸出需能說明所選音量等級。"
+    status: extracted

@@ -1,0 +1,51 @@
+title: "Visa Digital Brand Guidelines"
+source: "sources/VISA_Digital_Brand Guidelines_2018.pdf"
+version: "1.0"
+date: "2018"
+language: "en"
+summary: "Visa 的數位品牌指南，聚焦 UX 原則、數位語氣、Visa Brand Mark、sensory branding、credentials 與 digital card art。"
+chapters:
+  - id: "ch-01"
+    title: "Getting Started"
+    level: 1
+    order: 1
+    pages: "4-6"
+    summary: "建立數位支付體驗的北極星：fast、authentic、iconic、smart，並定義簡潔人性化語氣。"
+    children:
+      - id: "ch-01-01"
+        title: "UX Principles"
+        level: 2
+        order: 1
+        pages: "5"
+        summary: "以不過度複雜、人性、可記憶與預判需求構成 Visa-enabled UX 原則。"
+      - id: "ch-01-02"
+        title: "Digital Tone of Voice"
+        level: 2
+        order: 2
+        pages: "6"
+        summary: "在 snackable content 情境下要求溝通精簡、清楚且像人對人說話。"
+  - id: "ch-02"
+    title: "Visa Digital Brand Elements"
+    level: 1
+    order: 2
+    pages: "7-21"
+    summary: "規範 Visa Brand Mark、sensory branding、credentials 與 digital card art 的數位使用。"
+    children:
+      - id: "ch-02-01"
+        title: "Visa Brand Mark"
+        level: 2
+        order: 1
+        pages: "8-11"
+        summary: "定義 logo 色彩、背景、staging、尺寸、留白、文字寫法與產品識別符。"
+      - id: "ch-02-02"
+        title: "Visa Sensory Branding"
+        level: 2
+        order: 2
+        pages: "12-16"
+        summary: "以動畫、聲音與觸覺提示建立完成交易等不可見支付事件的信任提示。"
+      - id: "ch-02-03"
+        title: "Visa Credentials and Card Art"
+        level: 2
+        order: 3
+        pages: "17-21"
+        summary: "規範 digital credentials、token service、last four digits、card art 與 contactless icon 的顯示方式。"

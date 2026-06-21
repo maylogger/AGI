@@ -1,0 +1,146 @@
+# L3 決策卡 sidecar — Dell Brand Identity Standards
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: DELL_BRANDBOOK_2010
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌不是單一標誌，而是組織如何行動與如何溝通
+      - 品牌是決策系統，不是美術風格；每個視覺與文案選擇都應能回推到品牌支柱
+      - 先建立判斷標準，後續視覺與語氣才有可回溯的語義來源
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: DELL_BRANDBOOK_2010
+        chapter: ch-01
+        excerpt: "用創辦人訊息建立品牌識別是競爭優勢與全員責任；品牌不是表面標誌，而是每個行動與溝通回扣目的後累積的資產，purpose/customer needs -> brand value -> visual identity responsibility。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - 留白是識別權重與可讀性的保護機制，需隨標誌縮放
+      - 相對單位可建立 scalable spacing token，不被固定像素綁死
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - minimum clear space = 1x o，optimal = 2x o
+    evidence:
+      - brand_id: DELL_BRANDBOOK_2010
+        chapter: ch-02-02
+        excerpt: "clear space 以 Dell 字樣中 D 的高度為單位定義，可用品牌字母高自動量測並跨尺寸維持一致。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗與照片複雜度建立對比決策樹，限定白／深色兩種標誌
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - Logo 顏色規範應基於對比與背景風險，而非只列色票
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: DELL_BRANDBOOK_2010
+        chapter: ch-02-03
+        excerpt: "Dell Blue logo 只能用於白底，white logo 用於 solid color/imagery，light/dark gray logo 不得置於彩色背景；變體依背景對比選用而非自由配色。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: DELL_BRANDBOOK_2010
+        chapter: ch-02-04
+        excerpt: "partner lockup 必須以 vertical rule 與 1.5x spacing 分隔、separator 不得傾斜；department lockup 距 logo 1x cap height，維持 Dell 視覺優先級。"
+    status: extracted
+
+  - id: dp-custom-typeface-as-identity-asset
+    title: 用專屬字體當識別資產，擺脫系統預設字並統一語氣
+    problem:
+      statement: 仰賴系統預設字體的品牌缺乏獨特性與一致語氣，跨媒介又常因字體缺失而失控；但又需要在無法安裝字型的環境保有 fallback。
+      signals: [identity_distinctiveness, system_consistency, brand_recognition, multi_media]
+    solution:
+      module: Typography System
+      move: 建立專屬企業字體（3M Circular）作為核心識別資產，並指定 web/system fallback 與字重、leading、kerning、字色規則
+      layer: visual_core
+    reason:
+      - 專屬字體系統讓品牌不再依賴 default fonts，並讓文字有精準、現代、可讀的共同語氣
+      - 字體系統要以 utility 為核心；可讀性與一致性優先於裝飾
+      - 搭配 system fallback，可在無法安裝字型的環境維持一致
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger]
+      conditions: [identity_distinctiveness, multi_media]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: [Design Tokens]
+    anti_patterns:
+      - 直接沿用系統字當品牌字體，缺乏 fallback 規範
+    evidence:
+      - brand_id: DELL_BRANDBOOK_2010
+        chapter: ch-04
+        excerpt: "以 Museo for Dell、Museo Sans for Dell 為品牌字體，並指定 Trebuchet fallback 與 localized typefaces，於 web/email/Office/localized 環境維持一致。"
+    status: extracted

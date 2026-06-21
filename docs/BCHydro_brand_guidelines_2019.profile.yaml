@@ -1,0 +1,360 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: BCHydro_brand_guidelines_2019
+index_ref: docs/BCHydro_brand_guidelines_2019.index.yaml
+note_ref: docs/BCHydro_brand_guidelines_2019.note.md
+archetype: brand_experience_guide
+industry: public_sector
+modules:
+- Brand Architecture
+- Brand Strategy
+- Knowledge Architecture
+- AI-Checkable Rules
+- Content Design
+- Voice and Tone
+- Accessibility
+- Legal and Trademark
+- Visual Identity
+- Governance
+- Typography System
+- Operations
+- Compliance
+- Color System
+- Layout System
+- UI Components
+- Information Design
+- Illustration System
+- Photography System
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 8
+  section_count: 20
+chapter_sequence:
+- id: ch-01
+  title: Brand Overview
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Who We Are
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Brand Toolkit
+  order: 2
+  level: 2
+- id: ch-02
+  title: Tone of Voice
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Brand Tone
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Tips to Humanize Our Tone
+  order: 2
+  level: 2
+- id: ch-03
+  title: Our Logo
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: BC Hydro Logo
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Clear Space and Variations
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Misuse and Lock-ups
+  order: 3
+  level: 2
+- id: ch-04
+  title: Typography
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Primary and Alternative Typography
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Editorial Details
+  order: 2
+  level: 2
+- id: ch-04-03
+  title: Typesetting Details
+  order: 3
+  level: 2
+- id: ch-05
+  title: Our Colours
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Palette and Safety Colours
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Using Colours
+  order: 2
+  level: 2
+- id: ch-05-03
+  title: Documents and Photography
+  order: 3
+  level: 2
+- id: ch-06
+  title: Design Elements
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Coloured Bars
+  order: 1
+  level: 2
+- id: ch-06-02
+  title: Call-outs
+  order: 2
+  level: 2
+- id: ch-07
+  title: Illustration
+  order: 7
+  level: 1
+- id: ch-07-01
+  title: Line and Full-colour Illustration
+  order: 1
+  level: 2
+- id: ch-07-02
+  title: People and Safety Illustration
+  order: 2
+  level: 2
+- id: ch-08
+  title: Photography
+  order: 8
+  level: 1
+- id: ch-08-01
+  title: Universal and Online Photography
+  order: 1
+  level: 2
+- id: ch-08-02
+  title: Stock and Product Photography
+  order: 2
+  level: 2
+- id: ch-08-03
+  title: Photo Misuse
+  order: 3
+  level: 2
+frameworks:
+- name: Purpose + Tagline + Toolkit
+  chapter: ch-01
+  chapter_title: Brand Overview
+- name: Smart + Authentic + Relatable，再落到 humanization checklist
+  chapter: ch-02
+  chapter_title: Tone of Voice
+- name: Logo Anatomy -> Clear Space/Size -> Variants -> Misuse -> Partnership
+  chapter: ch-03
+  chapter_title: Our Logo
+- name: Primary Typeface -> Alternative Typeface -> Editorial Micro-rules -> Typesetting Parameters
+  chapter: ch-04
+  chapter_title: Typography
+- name: Palette -> Safety -> Tint -> Medium -> Content Context
+  chapter: ch-05
+  chapter_title: Our Colours
+- name: Utility Visual Elements：bar for structure、call-out for emphasis
+  chapter: ch-06
+  chapter_title: Design Elements
+- name: Illustration Style Families：line、full-colour、people、safety people、safety backgrounds
+  chapter: ch-07
+  chapter_title: Illustration
+- name: Photography Source/Use Matrix：universal、online、stock、product、misuse
+  chapter: ch-08
+  chapter_title: Photography
+patterns:
+- name: 品牌整併敘事
+  chapter: ch-01
+  chapter_title: Brand Overview
+- name: tagline 重新定位
+  chapter: ch-01
+  chapter_title: Brand Overview
+- name: toolkit inventory
+  chapter: ch-01
+  chapter_title: Brand Overview
+- name: 語氣人格化
+  chapter: ch-02
+  chapter_title: Tone of Voice
+- name: audience-first
+  chapter: ch-02
+  chapter_title: Tone of Voice
+- name: ban phrase
+  chapter: ch-02
+  chapter_title: Tone of Voice
+- name: 避免 acronym/jargon
+  chapter: ch-02
+  chapter_title: Tone of Voice
+- name: 直接 CTA
+  chapter: ch-02
+  chapter_title: Tone of Voice
+- name: 以 symbol 作 clear space guide
+  chapter: ch-03
+  chapter_title: Our Logo
+- name: SVG preferred
+  chapter: ch-03
+  chapter_title: Our Logo
+- name: symbol-only usage
+  chapter: ch-03
+  chapter_title: Our Logo
+- name: partner比例規則
+  chapter: ch-03
+  chapter_title: Our Logo
+- name: 工具 fallback
+  chapter: ch-04
+  chapter_title: Typography
+- name: 名稱大小寫
+  chapter: ch-04
+  chapter_title: Typography
+- name: 電話格式
+  chapter: ch-04
+  chapter_title: Typography
+- name: URL 格式
+  chapter: ch-04
+  chapter_title: Typography
+- name: 最小字級
+  chapter: ch-04
+  chapter_title: Typography
+- name: leading multiplier
+  chapter: ch-04
+  chapter_title: Typography
+- name: 安全色分流
+  chapter: ch-05
+  chapter_title: Our Colours
+- name: print/digital 差異
+  chapter: ch-05
+  chapter_title: Our Colours
+- name: 短長文件配色策略
+  chapter: ch-05
+  chapter_title: Our Colours
+- name: copy/photo contrast
+  chapter: ch-05
+  chapter_title: Our Colours
+- name: 色條
+  chapter: ch-06
+  chapter_title: Design Elements
+- name: 重點框
+  chapter: ch-06
+  chapter_title: Design Elements
+- name: 與字體/色彩 token 組合
+  chapter: ch-06
+  chapter_title: Design Elements
+- name: 人物插畫
+  chapter: ch-07
+  chapter_title: Illustration
+- name: 情境插畫
+  chapter: ch-07
+  chapter_title: Illustration
+- name: 安全插畫分流
+  chapter: ch-07
+  chapter_title: Illustration
+- name: 背景與資訊結合
+  chapter: ch-07
+  chapter_title: Illustration
+- name: universal style
+  chapter: ch-08
+  chapter_title: Photography
+- name: online adaptation
+  chapter: ch-08
+  chapter_title: Photography
+- name: stock image guardrails
+  chapter: ch-08
+  chapter_title: Photography
+- name: product image rules
+  chapter: ch-08
+  chapter_title: Photography
+- name: misuse gallery
+  chapter: ch-08
+  chapter_title: Photography
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: 可檢查規則：power smart 應作為公司行為/目的而非獨立計畫；品牌素材應連回 BC Hydro；不得形成第二個獨立 Power Smart 品牌。
+  chapter: ch-01
+  chapter_title: Brand Overview
+- module: Voice and Tone
+  criterion: 可檢查規則：文案需先說 benefits/effects/risks；避免內部語言與縮寫；保持 concise/scannable/helpful；可用 we/our；禁用 'we are committed to'；使用直接
+    action-oriented CTA；尊重 preferred pronouns。
+  chapter: ch-02
+  chapter_title: Tone of Voice
+- module: Visual Identity
+  criterion: 可檢查規則：clear space 至少等於 symbol；數位優先 SVG，96px 時元素應清楚；without-tagline 只用於 signage/permanent installations；symbol-only
+    用於 permanent signage/power boxes/uniforms；partner logo 65%、BC Hydro 100%；lock-up 不可用於 T-shirts 等 promotional materials。
+  chapter: ch-03
+  chapter_title: Our Logo
+- module: Typography System
+  criterion: 可檢查規則：GT Haptik 為主，Arial 僅於 GT Haptik 不可用；headlines sentence case；body leading 為字級 1.5 倍；alternative subhead
+    all caps letter-spacing 75；regular 最小 6pt，medium/bold/black 最小 9pt；BC Hydro 不可斷行；power smart 一般 lower case；URL 不用 www。
+  chapter: ch-04
+  chapter_title: Typography
+- module: ''
+  criterion: 可檢查規則：coloured bars 應使用核准色；call-outs 應突出重要資訊而非裝飾；不可讓輔助元素干擾內文可讀性。
+  chapter: ch-06
+  chapter_title: Design Elements
+- module: ''
+  criterion: 可檢查規則：安全插畫需清楚呈現風險或正確行為；人物風格需與品牌 palette 一致；不得使用過度卡通或與安全語意衝突的圖像。
+  chapter: ch-07
+  chapter_title: Illustration
+- module: ''
+  criterion: 可檢查規則：影像應符合真實 BC 生活或服務情境；stock photo 不應過度 staged；產品照需清楚且不脫離品牌語境；不得使用低品質、與語氣不符或誤導情境的照片。
+  chapter: ch-08
+  chapter_title: Photography
+chapters:
+- id: ch-01
+  title: Brand Overview
+  modules:
+  - Brand Architecture
+  - Brand Strategy
+  - Knowledge Architecture
+- id: ch-02
+  title: Tone of Voice
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+  - Accessibility
+- id: ch-03
+  title: Our Logo
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-04
+  title: Typography
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Content Design
+  - Operations
+- id: ch-05
+  title: Our Colours
+  modules:
+  - AI-Checkable Rules
+  - Compliance
+  - Color System
+  - Accessibility
+- id: ch-06
+  title: Design Elements
+  modules:
+  - Layout System
+  - UI Components
+  - Information Design
+- id: ch-07
+  title: Illustration
+  modules:
+  - Illustration System
+  - Accessibility
+- id: ch-08
+  title: Photography
+  modules:
+  - Photography System
+  - Governance

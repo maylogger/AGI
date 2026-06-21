@@ -1,0 +1,101 @@
+# L3 決策卡 sidecar — M&G Investments（投資集團品牌識別）
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: MG_investments_identity guidelines_2014
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system]
+    solution:
+      module: Brand Strategy
+      move: 先以品牌模型（positioning → attributes → visual style → tone of voice → applications）把投資定位轉成視覺與語氣來源，再進入規格
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 視覺一致性必須服務品牌定位，而不是只維持美術統一
+      - 品牌定位可作為 AI 審稿的 top-level semantic check
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: MG_investments_identity guidelines_2014
+        chapter: ch-01
+        excerpt: "先說明為何強品牌需要被管理，並把 M&G 的投資定位轉成視覺與語氣系統的來源；brand model：positioning → attributes → visual style → tone of voice → applications。"
+      - brand_id: MG_investments_identity guidelines_2014
+        chapter: ch-01-01
+        excerpt: "以 heavyweight investment with an independent spirit 作為品牌核心；所有素材應能回扣此定位，視覺一致性必須服務品牌定位而非只維持美術統一。"
+    status: extracted
+
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 以 masterbrand-led architecture（shared core → business-specific adaptations → approval control）治理主品牌與固定收益、房地產子業務
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - 子業務不得自行發明與核心品牌無關的識別
+      - 多業務品牌應把「共享哪些元素」「差異化哪些元素」寫成可檢查矩陣
+    applicable_when:
+      industries: [public_sector, education]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [multi_unit_consistency, multi_entity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 各單位自行創造分支品牌與專屬識別
+    evidence:
+      - brand_id: MG_investments_identity guidelines_2014
+        chapter: ch-01-02
+        excerpt: "masterbrand-led architecture：shared core → business-specific adaptations → approval control；子業務不得自行發明與核心品牌無關的識別。"
+      - brand_id: MG_investments_identity guidelines_2014
+        chapter: ch-07
+        excerpt: "子品牌不應另起爐灶，而應透過受控變體反映受眾與產品差異；Institutional materials 使用核准 stationery 與 monotone photography，joint materials 不得破壞 M&G 層級。"
+    status: extracted
+
+  - id: dp-approval-gate-for-exceptions
+    title: 例外不是漏洞，用審核閘門把差異收進可治理的模組
+    problem:
+      statement: 規則無法窮舉所有情境，現實組織總會有例外；若放任各單位自行決定，例外會逐步擴張成破壞系統的破口。
+      signals: [exception_handling, multi_unit_consistency, governance, scaling_risk]
+    solution:
+      module: Governance
+      move: 在開頭與 appendix 建立 approval authority 與 escalation path，新 artwork/template/供應商/代理商皆須經 Global Marketing Director / Design & Print team 核准
+      layer: governance
+    reason:
+      - guideline 開頭應同時建立品牌理由、使用範圍與 approval authority，否則後續規格缺乏治理力
+      - 品牌不只由設計師執行，所有寫作者、供應商與代理商都需要一致準則
+      - guideline 應包含 escalation path 與 content rules，不只提供設計規格
+    applicable_when:
+      industries: [public_sector, finance]
+      brand_types: [institutional_public_trust, platform_ecosystem, heritage_legacy]
+      conditions: [multi_unit_consistency, exception_handling]
+      archetypes: [multi_brand_architecture, corporate_toolkit]
+    dependencies:
+      requires: [Governance]
+      enables: []
+    anti_patterns:
+      - 例外只寫「可以這樣做」卻不寫適用邊界與審核者
+    evidence:
+      - brand_id: MG_investments_identity guidelines_2014
+        chapter: ch-01
+        excerpt: "新 artwork、design element、template、supplier 或 agency 必須經 Global Marketing Director / Design & Print team 核准；所有尺寸以 mm 為準、不得從螢幕或列印稿量測。"
+      - brand_id: MG_investments_identity guidelines_2014
+        chapter: ch-09
+        excerpt: "回到開頭的 approval governance 並補足語言層面一致性；新代理商需核准、新設計或模板需審批。"
+    status: extracted

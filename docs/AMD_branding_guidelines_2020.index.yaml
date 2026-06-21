@@ -1,0 +1,68 @@
+title: "AMD Corporate and Product Branding Guidelines"
+source: "sources/AMD_branding_guidelines_2020.pdf"
+version: "2.2"
+date: "2018-09"
+language: "en"
+summary: "AMD 品牌規範說明企業與產品品牌的語氣、標誌、色彩、字體、電子郵件簽名、遊戲行銷與影片結尾標示規則，核心目標是維持一致且可辨識的 AMD 品牌識別。"
+chapters:
+  - id: "ch-01"
+    title: "AMD Branding Guidelines"
+    level: 1
+    order: 1
+    pages: "1-22"
+    summary: "本文件提供 AMD 品牌工具包，將視覺與文字規範整合為一致的品牌使用準則。"
+    children:
+      - id: "ch-01-01"
+        title: "Overview of Toolkit"
+        level: 2
+        order: 1
+        pages: "3"
+        summary: "介紹品牌工具包的核心元素，包含標誌、語氣、色彩、標語與字體，強調創意可被鼓勵，但不可犧牲品牌一致性。"
+      - id: "ch-01-02"
+        title: "Tone of Voice"
+        level: 2
+        order: 2
+        pages: "4"
+        summary: "AMD 的語氣應直接、清楚且有自信，傳達創新、夥伴關係與未來願景，同時避免傲慢。"
+      - id: "ch-01-03"
+        title: "Logo"
+        level: 2
+        order: 3
+        pages: "5-10"
+        summary: "規範 AMD 標誌的標準黑白版本、內外部使用情境、留白、尺寸、位置、標語組合與禁止用法。"
+      - id: "ch-01-04"
+        title: "Color"
+        level: 2
+        order: 4
+        pages: "11-12"
+        summary: "定義企業色彩與中性色盤，並說明在企業、上市行銷與產品創意中如何保持動態、可信且一致的色彩表現。"
+      - id: "ch-01-05"
+        title: "Typography"
+        level: 2
+        order: 5
+        pages: "13-17"
+        summary: "說明 Klavika 與 Arial 的核心字體角色、OpenType 特性、地區替代字體，以及標題、內文與項目符號的最佳實務。"
+      - id: "ch-01-06"
+        title: "Interim Email Signatures"
+        level: 2
+        order: 6
+        pages: "18"
+        summary: "提供一致的 AMD 電子郵件簽名樣式，可依受眾或情境選用不同品牌色彩版本。"
+      - id: "ch-01-07"
+        title: "Video Game Marketing"
+        level: 2
+        order: 7
+        pages: "19-20"
+        summary: "依 ESRB 與 ARC 原則規範遊戲行銷素材，要求正確呈現分級並避免不當暴力、血腥、性暗示、毒品與未成年飲酒內容。"
+      - id: "ch-01-08"
+        title: "Tagging Video Content"
+        level: 2
+        order: 8
+        pages: "21"
+        summary: "所有 AMD 影片內容都必須在結尾畫面放置 AMD 標誌，通常以白色標誌置中呈現在黑色背景上。"
+      - id: "ch-01-09"
+        title: "Contacts and Resources"
+        level: 2
+        order: 9
+        pages: "22"
+        summary: "提供品牌核准聯絡方式與法律聲明，並說明文件內容可能因產品、路線圖或技術變更而更新。"

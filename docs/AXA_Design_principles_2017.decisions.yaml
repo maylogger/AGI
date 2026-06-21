@@ -1,0 +1,142 @@
+# L3 決策卡 sidecar — AXA Design Principles
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: AXA_Design_principles_2017
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 大型品牌更新應先建立「策略語意 → 系統零件」的橋接層，讓設計規則可追溯到品牌目的
+    applicable_when:
+      industries: [finance, industrial_materials_science, tech_software]
+      brand_types: [institutional_public_trust, heritage_legacy]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - 把品牌更新當成換裝，讓新符號變成形式更新而非可被治理的品牌目的
+    evidence:
+      - brand_id: AXA_Design_principles_2017
+        chapter: ch-01
+        excerpt: "Purpose → Customer Experience → Creative Platform → Kit of Parts，先重寫品牌戰略前提；若沒有它，Switch、開放標誌與顧客故事會變成形式更新，而不是可被治理的品牌目的。"
+    status: extracted
+
+  - id: dp-system-toolkit-over-template
+    title: 企業視覺系統給「可組合工具箱」而非僵硬模板
+    problem:
+      statement: 要求每個版面長得完全相同會扼殺多元內容；但完全自由又會失去一致性。
+      signals: [many_teams, diverse_content, system_consistency, mass_touchpoints]
+    solution:
+      module: Visual Language
+      move: 把識別定義為可獨立或組合使用的 core elements（tools, not a rigid system），用固定決策順序取代固定模板
+      layer: visual_core
+    reason:
+      - 彈性必須被結構化；多規則系統要簡化成少數可延展原則
+      - 元素可獨立使用也可組合，支援多元內容又維持辨識
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, finance]
+      brand_types: [institutional_public_trust, category_creator]
+      conditions: []
+      archetypes: [full_brand_system, corporate_toolkit, brand_experience_guide]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Layout System, Examples]
+    anti_patterns:
+      - 把品牌只當成單一標誌而非可組合的識別零件
+    evidence:
+      - brand_id: AXA_Design_principles_2017
+        chapter: ch-01-03
+        excerpt: "Kit of Parts：品牌不只是 logo，而是一組可被組合的識別元件（Logo、Switch、色彩、字體、語氣、攝影、插畫、版面）；多規則系統要簡化成少數可延展原則。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗與照片複雜度建立對比決策樹，限定白／深色兩種標誌
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - 標誌指南應分離「資產版本」與「使用情境」，由背景與媒介決定版本
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: AXA_Design_principles_2017
+        chapter: ch-02-02
+        excerpt: "Asset Version Matrix：solid 用於企業與高可視性，open blue/white 用於溝通與影像背景；logo 在所有背景上必須保持 legible。"
+    status: extracted
+
+  - id: dp-from-to-voice-translation
+    title: 技術品牌語氣指南要給「轉譯規則」，不只是列形容詞
+    problem:
+      statement: 科學與技術公司容易陷入術語化，受眾停在「所以呢？」而非「原來如此」。
+      signals: [technical_jargon_risk, expert_audience, b2b]
+    solution:
+      module: Voice and Tone
+      move: 用 from/to 對照把語氣轉型具體化（術語→可親近、數據→人性利益、功能→生活結果）
+      layer: language
+    reason:
+      - 提供轉譯規則比列 tone adjectives 更可執行
+      - 語氣可用「時間視角」建模，而非只列形容詞，並把功能轉成生活結果
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, finance]
+      brand_types: []
+      conditions: [expert_audience, technical_translation]
+      archetypes: [full_brand_system, brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Messaging]
+      enables: [Content Design]
+    anti_patterns:
+      - 只列 tone adjectives 卻沒有轉譯方法
+      - 只列品牌成就而不連到顧客生活
+    evidence:
+      - brand_id: AXA_Design_principles_2017
+        chapter: ch-06
+        excerpt: "語氣可用 Bigger Picture / Now / Progression 的時間視角建模，而非只列形容詞；文案應以顧客為受益者，把功能轉成生活結果，不可只列 AXA achievements。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - 合作品牌指南應把「關係模型」先定義清楚，再給視覺配置
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: AXA_Design_principles_2017
+        chapter: ch-11
+        excerpt: "Partnership Leadership Matrix：AXA-led / Equal / Partner-led，先判定合作主導權，logo 比例與位置需反映關係，不得自創 lock-up。"
+    status: extracted

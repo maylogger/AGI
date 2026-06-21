@@ -1,0 +1,82 @@
+title: 'American Express Communication Guidelines'
+source: 'sources/American_Express_Guidelines_2018.pdf'
+date: 'June 2018'
+language: 'en'
+summary: 'American Express 對合作夥伴與共同品牌溝通材料的視覺識別、攝影、Card art 與審核流程規範，重點在維持 Blue Box、標語、關係裝置與卡面呈現的一致性。'
+chapters:
+  - id: 'ch-01'
+    title: 'Essential Visual Identity Elements'
+    level: 1
+    order: 1
+    pages: '1-9'
+    summary: '定義 Blue Box、替代標誌、clearspace、lock-up、tagline、品牌色與字體的基本使用規則。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Blue Box Logo and Alternate Logo'
+        level: 2
+        order: 1
+        pages: '2-6'
+        summary: '以尺寸級距、最小尺寸、檔案類型、留白與 do/don’t 管理核心標誌與小尺寸替代標誌。'
+      - id: 'ch-01-02'
+        title: 'Taglines and Look Dos and Don’ts'
+        level: 2
+        order: 2
+        pages: '7-9'
+        summary: '規範標語在促銷、服務與廣告中的使用情境、最小尺寸、lock-up 與禁用方式。'
+  - id: 'ch-02'
+    title: 'Photography and Relationship Device'
+    level: 1
+    order: 2
+    pages: '10-15'
+    summary: '說明影像策略、構圖、人物呈現與 Relationship Device 的象徵、裁切、整合及禁用規則。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Photography Strategy and Composition'
+        level: 2
+        order: 1
+        pages: '10-12'
+        summary: '要求真實、可企及、社交共享、富色彩且不雜亂的影像，讓 Cardmember 成為主角。'
+      - id: 'ch-02-02'
+        title: 'Relationship Device Rules'
+        level: 2
+        order: 2
+        pages: '13-15'
+        summary: '定義 RD 的構成元素、人物整合、裁切邊界與單一使用限制。'
+  - id: 'ch-03'
+    title: 'Card Art in Marketing'
+    level: 1
+    order: 3
+    pages: '16-19'
+    summary: '規範卡面在行銷中的可見性、準確性、安全資料、mock card 標示、產品排序與競品並列位置。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Card Visibility and Accuracy'
+        level: 2
+        order: 1
+        pages: '16-17'
+        summary: '要求卡面完整或至少關鍵標誌可見，不得縮小超過 50%，不得使用有效帳號或失真呈現。'
+      - id: 'ch-03-02'
+        title: 'Co-brand and Competitor Contexts'
+        level: 2
+        order: 2
+        pages: '18-19'
+        summary: '要求 American Express 在多品牌或多網路情境中保持優先或同等位置，避免卡面被物件化或加料。'
+  - id: 'ch-04'
+    title: 'Brand Review Governance'
+    level: 1
+    order: 4
+    pages: '20-23'
+    summary: '定義 ATL、不同觸點的送審階段、何時重新送審，以及核准狀態與 SLA。'
+    children:
+      - id: 'ch-04-01'
+        title: 'ATL and Touchpoint Review'
+        level: 2
+        order: 1
+        pages: '20-21'
+        summary: '列出 mass media、數位與新產品/卡面設計在不同開發階段需送審的節點。'
+      - id: 'ch-04-02'
+        title: 'Submission Timing and Outcomes'
+        level: 2
+        order: 2
+        pages: '22-23'
+        summary: '要求最終版製作前送審、超過一年上架素材重審，並以四種狀態回覆。'

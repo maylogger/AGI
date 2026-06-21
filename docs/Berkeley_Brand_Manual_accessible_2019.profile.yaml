@@ -1,0 +1,301 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Berkeley_Brand_Manual_accessible_2019
+index_ref: docs/Berkeley_Brand_Manual_accessible_2019.index.yaml
+note_ref: docs/Berkeley_Brand_Manual_accessible_2019.note.md
+archetype: full_brand_system
+industry: education
+modules:
+- Brand Strategy
+- Knowledge Architecture
+- Governance
+- AI-Checkable Rules
+- Content Design
+- Voice and Tone
+- Messaging
+- Legal and Trademark
+- Color System
+- Design Tokens
+- Accessibility
+- Typography System
+- Visual Language
+- Photography System
+- Layout System
+- Brand Architecture
+- Operations
+depth:
+  strategy: high
+  visual: high
+  governance: high
+  top_level_chapter_count: 9
+  section_count: 13
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Audience and Usage
+  order: 1
+  level: 2
+- id: ch-02
+  title: Telling Our Story
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Positioning and Creative Platform
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Crafting Content and Creative Brief
+  order: 2
+  level: 2
+- id: ch-03
+  title: Our Logo, Seal & Spirit Mark
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Logo Usage
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Seal, Name and Cal
+  order: 2
+  level: 2
+- id: ch-04
+  title: Color
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Palette Structure and Accessibility
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Color Spectrum
+  order: 2
+  level: 2
+- id: ch-05
+  title: Typography
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Type Palette and Usage
+  order: 1
+  level: 2
+- id: ch-06
+  title: Photography
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Photo Style and Gallery Governance
+  order: 1
+  level: 2
+- id: ch-07
+  title: Graphic Elements
+  order: 7
+  level: 1
+- id: ch-07-01
+  title: Element Library and Usage Constraints
+  order: 1
+  level: 2
+- id: ch-08
+  title: Brand Architecture System
+  order: 8
+  level: 1
+- id: ch-08-01
+  title: Decision Flow and Lockups
+  order: 1
+  level: 2
+- id: ch-09
+  title: Brand Partnership System
+  order: 9
+  level: 1
+- id: ch-09-01
+  title: Partnership Evaluation and Lockups
+  order: 1
+  level: 2
+- id: ch-09-02
+  title: Brand Protection
+  order: 2
+  level: 2
+frameworks:
+- name: Institutional Alignment Framework：audience roles、shared themes、advocacy、consistent storytelling
+  chapter: ch-01
+  chapter_title: Introduction
+- name: Narrative Infrastructure：positioning core、creative platform、strengths、tone spectrum、project brief
+  chapter: ch-02
+  chapter_title: Telling Our Story
+- name: Definition → Positioning → Expression
+  chapter: ch-02-01
+  chapter_title: Positioning and Creative Platform
+- name: Institutional Mark Hierarchy：wordmark、seal、academic name、athletics name、spirit mark
+  chapter: ch-03
+  chapter_title: Our Logo, Seal & Spirit Mark
+- name: Layered Palette Framework：primary heritage → alternate heritage → secondary groups → accessibility pairings
+  chapter: ch-04
+  chapter_title: Color
+- name: Typographic Spectrum：formal/casual × subtle/bold
+  chapter: ch-05
+  chapter_title: Typography
+- name: Photography Taxonomy：topical impact、cultural Berkeleyness、historical legacy
+  chapter: ch-06
+  chapter_title: Photography
+- name: Graphic Element Library：purpose、skill level、usage constraints、composition behavior
+  chapter: ch-07
+  chapter_title: Graphic Elements
+- name: Institutional Brand Architecture：entity role → relationship to master brand → lockup type → medium exception
+  chapter: ch-08
+  chapter_title: Brand Architecture System
+- name: Partnership Governance Framework：relationship type → value/risk evaluation → visual permission → lifecycle management
+  chapter: ch-09
+  chapter_title: Brand Partnership System
+- name: Brand Protection Operations Map
+  chapter: ch-09-02
+  chapter_title: Brand Protection
+patterns:
+- name: 這是設計規範，不關我事
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 不是 tagline
+  chapter: ch-02
+  chapter_title: Telling Our Story
+- name: 用 conceptual core 指導 messaging、campaign、channels、experience。
+  chapter: ch-02-01
+  chapter_title: Positioning and Creative Platform
+- name: 把 Berkeley 與 Cal 的語義分工明寫，避免 athletics equity 侵入 academic context。
+  chapter: ch-03
+  chapter_title: Our Logo, Seal & Spirit Mark
+- name: 用具校園地名的色彩命名建立記憶與在地感。
+  chapter: ch-04
+  chapter_title: Color
+- name: 用一個大字族內的多風格滿足不同語氣，而不是多套字體拼接。
+  chapter: ch-05
+  chapter_title: Typography
+- name: 把圖庫治理和版權 metadata 納入攝影章，避免素材風格與授權分離。
+  chapter: ch-06
+  chapter_title: Photography
+- name: 用光的隱喻組織不同元素，使元素集合不只是裝飾素材庫。
+  chapter: ch-07
+  chapter_title: Graphic Elements
+- name: 用 flow chart 讓非品牌專家自行分類單位，再送審 lockup。
+  chapter: ch-08
+  chapter_title: Brand Architecture System
+- name: Supporter 不與 Berkeley logo 視覺並列，而以 copy/dialogue recognition，避免誤導為正式品牌聯盟。
+  chapter: ch-09
+  chapter_title: Brand Partnership System
+- name: 將 film/TV、advertising、press release、merchandise、partnership 分別導向不同單位。
+  chapter: ch-09-02
+  chapter_title: Brand Protection
+rules_ai_checkable:
+- module: ''
+  criterion: 每個 communication 至少應連結一個 key strength；voice 應符合 curious、intense、optimistic、influential、socially conscious、independent、real、open；brief
+    需包含 audience、key message、proof points、call to action。
+  chapter: ch-02
+  chapter_title: Telling Our Story
+- module: Visual Identity
+  criterion: logo 最小 1 inch 或 175px；seal 最小 1.25 inch 或 215px；logo 不得 recreated/typeset；不得 stretch、alter typeface、rearrange、rotate、crop、shadow、add
+    colors；Cal Script 不得用於 academic purposes；first reference 用 UC Berkeley，後續用 Berkeley。
+  chapter: ch-03
+  chapter_title: Our Logo, Seal & Spirit Mark
+- module: Color System
+  criterion: Berkeley Blue `#003262` 與 California Gold `#FDB515` 應出現在所有 communications；heritage colors 不得使用 screens/tints；vibrants
+    不得用於 body text 或 small headlines；文字色需符合 large/small text allowed pairings。
+  chapter: ch-04
+  chapter_title: Color
+- module: Typography System
+  criterion: Freight family leading 可先以 point size + 2pt 作為起點；tracking 應略緊並使用 optical kerning；alternative fonts 用於 web/business
+    documents。
+  chapter: ch-05
+  chapter_title: Typography
+- module: ''
+  criterion: 歷史照片應 supporting role；architecture sparingly；gallery images noncommercial only；credit mandatory；no resale/no
+    third-party use without permission；下載時檢查 metadata。
+  chapter: ch-06
+  chapter_title: Photography
+- module: ''
+  criterion: 除 structural elements 外，單件設計不得使用超過一種 graphic element；apertures 不超過三個 shapes/三種相近 hue 且 photo frame 留出口；tessellation
+    白色 50-80% opacity 且 layout 中保留 2-3 octagons；prism colors 應互相和諧。
+  chapter: ch-07
+  chapter_title: Graphic Elements
+- module: Brand Strategy
+  criterion: 所有 unit lockups 需 Office of Communications & Public Affairs approval；unit names in web headers must be text,
+    not images；academic departments print lockups 通常需 parent endorser line；digital headers 可省略 primary sub-brand endorser
+    line；lockup clear space 等於 Berkeley B 高度；wordmark width 至少 1 inch/175px。
+  chapter: ch-08
+  chapter_title: Brand Architecture System
+- module: Brand Strategy
+  criterion: partner relationship 必須有有效且 fully executed agreement；multiple sponsor logos 超過五個時考慮 tiered structure 或列名；multiple
+    sponsors with single event must be Berkeley Blue；supporters 不得與 Berkeley logo 或單位 logo 視覺並列；Berkeley 保留基於 mission/core
+    values 拒絕 partner 的權利。
+  chapter: ch-09
+  chapter_title: Brand Partnership System
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - Brand Strategy
+  - Knowledge Architecture
+  - Governance
+- id: ch-02
+  title: Telling Our Story
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+  - Messaging
+- id: ch-02-01
+  title: Positioning and Creative Platform
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-03
+  title: Our Logo, Seal & Spirit Mark
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+- id: ch-04
+  title: Color
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Design Tokens
+  - Accessibility
+- id: ch-05
+  title: Typography
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Visual Language
+- id: ch-06
+  title: Photography
+  modules:
+  - Legal and Trademark
+  - Photography System
+  - Governance
+- id: ch-07
+  title: Graphic Elements
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Language
+- id: ch-08
+  title: Brand Architecture System
+  modules:
+  - Brand Architecture
+  - AI-Checkable Rules
+  - Governance
+- id: ch-09
+  title: Brand Partnership System
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Governance
+- id: ch-09-02
+  title: Brand Protection
+  modules:
+  - Legal and Trademark
+  - Operations
+  - Governance

@@ -1,0 +1,61 @@
+title: 'Klépierre Charte Graphique'
+source: 'sources/Klepierre_Charte_graphique_2013.pdf'
+date: '2013-01-31'
+language: 'fr'
+summary: 'Klépierre 2013 圖形憲章，將商業中心品牌定位轉為 logotype、色彩、字體、圖形語彙、攝影、應用與子品牌規範。'
+chapters:
+  - id: 'ch-01'
+    title: 'Le Logotype'
+    level: 1
+    order: 1
+    pages: '5-12'
+    summary: '定義 logotype 的概念、明暗背景、最小尺寸、保護空間、定位、尺寸放置與禁用。'
+  - id: 'ch-02'
+    title: 'Les Couleurs du Système'
+    level: 1
+    order: 2
+    pages: '13-16'
+    summary: '定義主要色、輔助色、漸層與色彩禁用規範。'
+  - id: 'ch-03'
+    title: 'La Typographie'
+    level: 1
+    order: 3
+    pages: '17-18'
+    summary: '指定 Museo Sans 作為 édition 字體、Arial 作為 bureautique 字體。'
+  - id: 'ch-04'
+    title: 'Les Éléments Graphiques'
+    level: 1
+    order: 4
+    pages: '19-24'
+    summary: '規範 K fenêtre、圖形形式、插畫語彙與圖表色彩。'
+    children:
+      - id: 'ch-04-01'
+        title: 'K Fenêtre and Graphic Vocabulary'
+        level: 2
+        order: 1
+        pages: '20-23'
+        summary: '將 logo symbol 延伸為可裝載圖片、透明圖層、漸層與插畫語彙的圖形系統。'
+      - id: 'ch-04-02'
+        title: 'Graphiques'
+        level: 2
+        order: 2
+        pages: '24'
+        summary: '以 palette 支援圖表、表格與資訊視覺。'
+  - id: 'ch-05'
+    title: "L'Iconographie"
+    level: 1
+    order: 5
+    pages: '25-28'
+    summary: '規範 shoppers、enseignes & produits、centres & architecture 的攝影主題、風格與禁用。'
+  - id: 'ch-06'
+    title: 'Les Applications'
+    level: 1
+    order: 6
+    pages: '29-35'
+    summary: '展示 papeterie、bureautique、Word、Excel、PowerPoint 與 signalétique 應用。'
+  - id: 'ch-07'
+    title: 'Annexes'
+    level: 1
+    order: 7
+    pages: '36-37'
+    summary: '說明 marques internes 與 marques filles 的 logo 與字體關係。'

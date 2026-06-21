@@ -1,0 +1,81 @@
+title: 'Heathrow Brand Guidelines'
+source: 'sources/Heathrow_Brand_guidelines_2018.pdf'
+version: '3.0'
+date: '2018'
+language: 'en'
+summary: 'Heathrow 2018 品牌指南，涵蓋願景價值、標誌與 lock-up 系統、色彩、視覺語言、影像、圖示、字體、商品、影片、語氣與 editorial style。'
+chapters:
+  - id: 'ch-01'
+    title: 'Vision, Values and Logo System'
+    level: 1
+    order: 1
+    pages: '3-11'
+    summary: '從使命與價值出發，規範 Heathrow logo、尺寸、internal signature、third-party branding、legibility 與 email signature。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Our Vision and Values'
+        level: 2
+        order: 1
+        pages: '3'
+        summary: '以 best airport service、making every journey better 與五個價值作為品牌根基。'
+      - id: 'ch-01-02'
+        title: 'Logo and Signature Rules'
+        level: 2
+        order: 2
+        pages: '4-11'
+        summary: '規範 logo 變體、H-height 尺寸、排除區、internal signature 與背景可讀性。'
+  - id: 'ch-02'
+    title: 'Service Lock-ups'
+    level: 1
+    order: 2
+    pages: '12-24'
+    summary: '用 general、enhanced、parking、division lock-up 管理服務、部門與 premium/core 之間的品牌關係。'
+  - id: 'ch-03'
+    title: 'Colour'
+    level: 1
+    order: 3
+    pages: '25-29'
+    summary: '定義 Heathrow purple、highlight pink、grey、black、core/premium 色彩權重與漸層。'
+  - id: 'ch-04'
+    title: 'Visual Language and Imagery'
+    level: 1
+    order: 4
+    pages: '30-37'
+    summary: '規範 Core/Premium styling、全版影像中的 logo 可讀性、magic moments、pictograms 與插畫風格。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Core and Premium Styling'
+        level: 2
+        order: 1
+        pages: '31-32'
+        summary: '用 factual/influential/premium 三分法分配白、紫、黑與影像處理。'
+      - id: 'ch-04-02'
+        title: 'Imagery and Visual Assets'
+        level: 2
+        order: 2
+        pages: '33-37'
+        summary: '要求影像單一、有故事性、真實旅客行為，圖示與插畫需由品牌系統授權。'
+  - id: 'ch-05'
+    title: 'Typography, Merchandising and Motion'
+    level: 1
+    order: 5
+    pages: '38-45'
+    summary: '定義 Frutiger/Arial、標題大小寫、商品 logo、刺繡版本與 media sting。'
+  - id: 'ch-06'
+    title: 'Tone of Voice'
+    level: 1
+    order: 6
+    pages: '46-53'
+    summary: '以乘客大使為語氣模型，要求溫暖、歡迎、 helpful、專業、誠實、簡潔且以乘客利益為先。'
+  - id: 'ch-07'
+    title: 'Appendix: Presentational and Typographic Rules'
+    level: 1
+    order: 7
+    pages: '54-58'
+    summary: '提供縮寫、年齡、bullet、大小寫、日期時間、包容語言、命名、數字、標點、拼字、電話與量測規則。'
+  - id: 'ch-08'
+    title: 'Contacts'
+    level: 1
+    order: 8
+    pages: '59-62'
+    summary: '列出品牌團隊、文案、設計、攝影、影片、商品與印刷供應商聯絡資訊。'

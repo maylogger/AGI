@@ -1,0 +1,192 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: starling_bank_brand_guidelines
+index_ref: docs/starling_bank_brand_guidelines.index.yaml
+note_ref: docs/starling_bank_brand_guidelines.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Knowledge Architecture
+- Governance
+- AI-Checkable Rules
+- Visual Identity
+- Design Tokens
+- Layout System
+- Color System
+- Operations
+depth:
+  strategy: low
+  visual: high
+  governance: medium
+  top_level_chapter_count: 5
+  section_count: 6
+chapter_sequence:
+- id: ch-01
+  title: Introduction and Scope
+  order: 1
+  level: 1
+- id: ch-02
+  title: Horizontal Logo System
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Construction and Minimum Size
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Clearspace
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Colourways
+  order: 3
+  level: 2
+- id: ch-03
+  title: Vertical Logo System
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Use Case and Minimum Size
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Clearspace
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Colourways
+  order: 3
+  level: 2
+- id: ch-04
+  title: Colour Palette
+  order: 4
+  level: 1
+- id: ch-05
+  title: Contact
+  order: 5
+  level: 1
+frameworks:
+- name: 採用「scope first」框架：先界定用途，再提供可執行規格
+  chapter: ch-01
+  chapter_title: Introduction and Scope
+- name: 以「尺寸可讀性 + clearspace + 背景對比」作為 logo placement framework
+  chapter: ch-02
+  chapter_title: Horizontal Logo System
+- name: minimum viable recognition threshold
+  chapter: ch-02-01
+  chapter_title: Construction and Minimum Size
+- name: logo-derived spacing system
+  chapter: ch-03-02
+  chapter_title: Clearspace
+- name: background-to-logo mapping
+  chapter: ch-03-03
+  chapter_title: Colourways
+- name: variant governance framework：default variant、conditional variant、shared rules
+  chapter: ch-03
+  chapter_title: Vertical Logo System
+- name: semantic palette with implementation values
+  chapter: ch-04
+  chapter_title: Colour Palette
+- name: human review fallback
+  chapter: ch-05
+  chapter_title: Contact
+patterns:
+- name: 適合小型數位品牌規範使用的 minimal governance pattern：導言、logo variants、clearspace、colour tokens、contact。
+  chapter: ch-01
+  chapter_title: Introduction and Scope
+- name: 標誌系統常見的三段式規範：minimum size、exclusion zone、colourway by background。
+  chapter: ch-02
+  chapter_title: Horizontal Logo System
+- name: 用最小高度而非寬度定義 logo 可讀性。
+  chapter: ch-02-01
+  chapter_title: Construction and Minimum Size
+- name: 以標誌字母或符號的一部分作為 exclusion zone。
+  chapter: ch-03-02
+  chapter_title: Clearspace
+- name: 按背景明度與彩度選擇標誌反白或淺色版本。
+  chapter: ch-03-03
+  chapter_title: Colourways
+- name: 垂直 logo 適合 badge-like 或 centerpiece 情境，需要更多留白。
+  chapter: ch-03
+  chapter_title: Vertical Logo System
+- name: 核心色、輔助中性色、強調色的三層色盤。
+  chapter: ch-04
+  chapter_title: Colour Palette
+- name: 在規範結尾放置品牌聯絡窗口。
+  chapter: ch-05
+  chapter_title: Contact
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：若輸出內容涉及 Starling 線上標誌或色彩，必須引用此文件；若涉及離線印刷、攝影或語氣，應標記為超出此文件範圍。
+  chapter: ch-01
+  chapter_title: Introduction and Scope
+- module: Visual Identity
+  criterion: AI 可檢查：水平 logo 高度不得低於 20px；四周清除空間需至少為 S mark 的 0.5 倍；白底與淺色背景優先使用 primary colourway；深色背景使用 light colourway；亮色背景使用
+    white colourway。
+  chapter: ch-02
+  chapter_title: Horizontal Logo System
+- module: ''
+  criterion: AI 可檢查：任何水平 logo rendition 的 rendered height 必須大於或等於 20px。
+  chapter: ch-02-01
+  chapter_title: Construction and Minimum Size
+- module: ''
+  criterion: AI 可檢查：logo bounding box 外 0.5 個 S mark 尺寸內不得有文字、圖示、邊框或影像干擾物。
+  chapter: ch-03-02
+  chapter_title: Clearspace
+- module: ''
+  criterion: AI 可檢查：白色或淺色背景應用 primary colourway；深色背景應用 light colourway；高彩度亮色背景應用 white colourway；不得在低對比背景使用 primary logo。
+  chapter: ch-03-03
+  chapter_title: Colourways
+- module: Visual Identity
+  criterion: AI 可檢查：垂直 logo 高度不得低於 60px；應置中或獨立使用；周圍需有大量清除空間；colourway 選擇需遵守與水平 logo 相同的背景規則。
+  chapter: ch-03
+  chapter_title: Vertical Logo System
+- module: ''
+  criterion: AI 可檢查：Starling Purple 必須使用 HEX `#6935D3`；Starling Sand 使用 `#F6EFEA`；Starling Orange 使用 `#F08357`；Starling Teal
+    使用 `#68D9CF`；Starling Navy 使用 `#192851`。
+  chapter: ch-04
+  chapter_title: Colour Palette
+chapters:
+- id: ch-01
+  title: Introduction and Scope
+  modules:
+  - Knowledge Architecture
+  - Governance
+- id: ch-02
+  title: Horizontal Logo System
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02-01
+  title: Construction and Minimum Size
+  modules:
+  - Design Tokens
+  - Visual Identity
+- id: ch-03-02
+  title: Clearspace
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+- id: ch-03-03
+  title: Colourways
+  modules:
+  - Color System
+  - Visual Identity
+- id: ch-03
+  title: Vertical Logo System
+  modules:
+  - Visual Identity
+  - Governance
+- id: ch-04
+  title: Colour Palette
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-05
+  title: Contact
+  modules:
+  - Operations
+  - Governance

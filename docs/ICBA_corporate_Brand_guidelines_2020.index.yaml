@@ -1,0 +1,61 @@
+title: 'ICBA Brand Guidelines'
+source: 'sources/ICBA_corporate_Brand_guidelines_2020.pdf'
+date: '2020-07'
+language: 'en'
+summary: 'ICBA 的企業品牌指南，為協會內外部溝通建立一致的 logo、品牌敘述、色彩、字體與圖示規範。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction'
+    level: 1
+    order: 1
+    pages: '3'
+    summary: '說明品牌指南的用途、適用對象與行銷素材審核流程。'
+  - id: 'ch-02'
+    title: 'Our Brand'
+    level: 1
+    order: 2
+    pages: '4'
+    summary: '提供 boilerplate、mission 與 vision，作為 ICBA 對外敘事基礎。'
+  - id: 'ch-03'
+    title: 'Logo'
+    level: 1
+    order: 3
+    pages: '5-11'
+    summary: '規範 primary/secondary logo、最小尺寸、正確使用、位置、tagline、註冊與商標。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Primary and Secondary Logo'
+        level: 2
+        order: 1
+        pages: '5-6'
+        summary: '定義主 logo 與空間受限或內部情境可用的次要 logo。'
+      - id: 'ch-03-02'
+        title: 'Minimum Size, Usage and Placement'
+        level: 2
+        order: 2
+        pages: '7-9'
+        summary: '定義最小尺寸、背景與變形限制，以及 logo 與標題/內文的對齊關係。'
+      - id: 'ch-03-03'
+        title: 'Tagline and Trademarks'
+        level: 2
+        order: 3
+        pages: '10-11'
+        summary: '規範主要與次要 tagline 的使用情境，以及 ®、TM、SM 標示。'
+  - id: 'ch-04'
+    title: 'Color'
+    level: 1
+    order: 4
+    pages: '12'
+    summary: '定義 ICBA primary、subsidiary、secondary 與 neutral 色票及用途。'
+  - id: 'ch-05'
+    title: 'Typography'
+    level: 1
+    order: 5
+    pages: '13-14'
+    summary: '規範 Proxima Nova 作為官方字體，Calibri 作為 Office/email 替代字體。'
+  - id: 'ch-06'
+    title: 'Iconography'
+    level: 1
+    order: 6
+    pages: '15'
+    summary: '規範單一筆畫線性圖示與雙色 accent 的使用。'

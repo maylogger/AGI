@@ -1,0 +1,90 @@
+# L3 決策卡 sidecar — The BA Way: British Airways Brand Guidelines 2007
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: British_airways_brand_guidelines_2007
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先講清楚 refresh 的商業理由與 proposition/values/heritage，再進入 toolkit 與 application
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 大型服務品牌 guideline 應把品牌價值、服務標準與視覺更新放在同一邏輯中，避免 identity refresh 脫離營運
+    applicable_when:
+      industries: [consumer_retail_hospitality, finance, tech_software]
+      brand_types: [heritage_legacy, institutional_public_trust]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - 把 identity refresh 當成視覺更新而脫離服務與營運
+    evidence:
+      - brand_id: British_airways_brand_guidelines_2007
+        chapter: ch-01
+        excerpt: "Summary 先講 2007 refresh 的商業理由，以 proposition、values、heritage 與三種 identity presentation 建立從內部服務標準到外部視覺表現的邏輯鏈，讓 Speedmarque、palette、攝影都回到 premium experience。"
+    status: extracted
+
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 把六項品牌價值設計成 creative reality-check，每件輸出須至少支持一項且不得與任何 value 矛盾
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - 服務品牌的 guideline 可把價值清單設計成 creative reality-check
+    applicable_when:
+      industries: [consumer_retail_hospitality, industrial_materials_science, nonprofit_social]
+      brand_types: [heritage_legacy, institutional_public_trust]
+      conditions: [needs_evaluation_criteria]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Content Design]
+    evidence:
+      - brand_id: British_airways_brand_guidelines_2007
+        chapter: ch-01-01
+        excerpt: "把 Safe and secure、Responsible、British、Professional、Warm、Thoughtful 設計成 creative reality-check：素材應至少明確支持一項 BA value，且不得與任何 value 矛盾。"
+      - brand_id: British_airways_brand_guidelines_2007
+        chapter: ch-05
+        excerpt: "Appendix A 把 service values 轉成 writing principles，再用例句訓練一致語氣，可轉成 content QA checklist 或 LLM prompt guardrail。"
+    status: extracted
+
+  - id: dp-system-toolkit-over-template
+    title: 企業視覺系統給「可組合工具箱」而非僵硬模板
+    problem:
+      statement: 要求每個版面長得完全相同會扼殺多元內容；但完全自由又會失去一致性。
+      signals: [many_teams, diverse_content, system_consistency, mass_touchpoints]
+    solution:
+      module: Visual Language
+      move: 把 refreshed identity 拆成可全球部署的 kit of parts，定義元素之間的關係而非固定模板
+      layer: visual_core
+    reason:
+      - 彈性必須被結構化；全球航空品牌需要 robust and flexible graphic platform
+      - toolkit 章應定義元素之間的關係，因一致性通常毀在比例、位置與搭配，而非資產本身
+    applicable_when:
+      industries: [consumer_retail_hospitality, industrial_materials_science, tech_software]
+      brand_types: [heritage_legacy, institutional_public_trust]
+      conditions: [system_consistency, mass_touchpoints]
+      archetypes: [full_brand_system, corporate_toolkit, brand_experience_guide]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Layout System, Examples]
+    anti_patterns:
+      - 讓任一元素單獨造成不一致
+    evidence:
+      - brand_id: British_airways_brand_guidelines_2007
+        chapter: ch-02
+        excerpt: "kit-of-parts framework：symbol、wordmark、color、type、image、layout relationship；identity 是一組元素與關係而非單一 logo，每個元件都需按正確關係共同使用。"
+    status: extracted

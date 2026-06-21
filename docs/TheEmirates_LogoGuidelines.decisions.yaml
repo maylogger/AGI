@@ -1,0 +1,140 @@
+# L3 決策卡 sidecar — The Emirates Logo Usage Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: TheEmirates_LogoGuidelines
+decisions:
+  - id: dp-asset-protection-for-legacy
+    title: 把歷史品牌的核心識別當成不可妥協的資產來保護
+    problem:
+      statement: 國家級品牌的標誌是象徵尊嚴與公共信任的資產，任何輸出或載體都可能在不經意間貶損它。
+      signals: [heritage, asset_protection, consistency_over_time, brand_dilution_risk]
+    solution:
+      module: Visual Identity
+      move: 用 asset hierarchy（primary → secondary → symbol-only）與不可變的 lockup/間距/比例規則保護 7 線 symbol 與雙語 wordmark
+      layer: visual_core
+    reason:
+      - 國家級品牌的標誌規範不只維持美觀，也是在維護象徵尊嚴、政治語境與公共信任
+      - 辨識度來自一致性；例外只能由使用情境觸發，不能由主觀喜好觸發
+    applicable_when:
+      industries: [luxury_premium, public_sector]
+      brand_types: [heritage_legacy, premium_luxury, institutional_public_trust]
+      conditions: [heritage, asset_protection]
+      archetypes: [brand_experience_guide, corporate_toolkit, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 允許自由改變 lockup、間距、字標、symbol 形狀、旋轉與比例
+    evidence:
+      - brand_id: TheEmirates_LogoGuidelines
+        chapter: ch-01
+        excerpt: "不可改變 lockup、間距、字標、symbol 形狀、旋轉與比例；asset hierarchy：primary → secondary → symbol-only exception，標誌規範在維護象徵尊嚴與公共信任。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性；在影像或影片上更易失去可讀性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 在影像或影片上只允許單色白／黑 logo 並確保最高對比，full-colour logo 不得覆蓋影像或影片
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - Logo 顏色規範應基於對比與背景風險，而非只列色票
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: TheEmirates_LogoGuidelines
+        chapter: ch-01-01
+        excerpt: "影像或影片上只能用單色白／黑 logo 並確保最高對比；full-colour logo 不得覆蓋影像或影片。"
+    status: extracted
+
+  - id: dp-custom-typeface-as-identity-asset
+    title: 用專屬字體當識別資產，擺脫系統預設字並統一語氣
+    problem:
+      statement: 雙語品牌需在拉丁與阿文之間維持一致語調，仰賴系統字會失去獨特性，又需在辦公環境保有 fallback。
+      signals: [identity_distinctiveness, system_consistency, brand_recognition, multi_media]
+    solution:
+      module: Typography System
+      move: 以 Codec Pro / Suisse Int'l 與 Publico Headline / Greta Text Arabic 建立雙語字體階層，並指定 Century Gothic / Tahoma 等系統 fallback
+      layer: visual_core
+    reason:
+      - 專屬字體系統讓品牌不再依賴 default fonts，並讓文字有一致語氣
+      - 跨語系 typography guideline 應包含語系配對與替代字體
+      - 搭配 system fallback，可在無法安裝字型的環境維持一致
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, public_sector]
+      brand_types: [category_creator, heritage_legacy, challenger, institutional_public_trust]
+      conditions: [identity_distinctiveness, multi_media]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: [Design Tokens]
+    anti_patterns:
+      - 直接沿用系統字當品牌字體，缺乏 fallback 規範
+    evidence:
+      - brand_id: TheEmirates_LogoGuidelines
+        chapter: ch-04
+        excerpt: "font stack governance：primary brand font → secondary storytelling font → office system fallback；無法使用主要字體時 Latin 改 Century Gothic、Arabic 改 Tahoma。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名與背書情境若沒有秩序規則，夥伴標誌的相對顯著性與順序會失控，混淆主從與背書關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 用 role-based prominence 與出現順序治理：co-branding 平等、endorsement 降低顯著性，Emirates Brand 在序列最後
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - 聯名是平等合作，背書是降低顯著性；兩者不能用同一套 logo 排序規則
+    applicable_when:
+      industries: [finance, tech_software, public_sector]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: TheEmirates_LogoGuidelines
+        chapter: ch-07
+        excerpt: "association decision framework：value alignment → message implication → scenario type → logo prominence；Emirates Brand 應在 co-brand 序列最後，endorsement 時必須低於或晚於被背書品牌。"
+    status: extracted
+
+  - id: dp-contact-before-appendix
+    title: 在技術資料前先給治理窗口，讓 guideline 成為可改善系統
+    problem:
+      statement: 規則無法涵蓋所有情境，缺乏權威決策入口時，例外用法無人裁決。
+      signals: [exceptions_expected, governance]
+    solution:
+      module: Governance
+      move: 建立 The Emirates Brand Office 作為例外處理與授權判斷的單一入口
+      layer: governance
+    reason:
+      - 規則無法涵蓋所有情境，必須提供權威決策入口
+      - 再完整的 guideline 也需要明確 owner，否則例外會變成非正式口頭判斷
+    applicable_when:
+      industries: [finance, public_sector]
+      brand_types: [institutional_public_trust]
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit, logo_asset_guidelines]
+    dependencies:
+      requires: [Governance]
+      enables: [Operations]
+    evidence:
+      - brand_id: TheEmirates_LogoGuidelines
+        chapter: ch-08
+        excerpt: "遇到未列出的 prohibited application、活動使用、merchandise 放置或 co-branding 例外時，應聯繫 Brand Office（rulebook + approval owner）。"
+    status: extracted

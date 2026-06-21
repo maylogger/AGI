@@ -1,0 +1,136 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: PayU_ Brand_Guidelines_2021
+index_ref: docs/PayU_ Brand_Guidelines_2021.index.yaml
+note_ref: docs/PayU_ Brand_Guidelines_2021.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Brand Strategy
+- Visual Identity
+- Data Visualization
+- Color System
+- Typography System
+- Layout System
+- Visual Language
+- Illustration System
+- Iconography System
+- Photography System
+- Content Design
+depth:
+  strategy: medium
+  visual: high
+  governance: low
+  top_level_chapter_count: 8
+  section_count: 0
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-02
+  title: Logo
+  order: 2
+  level: 1
+- id: ch-03
+  title: Colour Palette
+  order: 3
+  level: 1
+- id: ch-04
+  title: Typography
+  order: 4
+  level: 1
+- id: ch-05
+  title: Graphical Holding Devices
+  order: 5
+  level: 1
+- id: ch-06
+  title: Graphic Elements
+  order: 6
+  level: 1
+- id: ch-07
+  title: Photography
+  order: 7
+  level: 1
+- id: ch-08
+  title: Contact
+  order: 8
+  level: 1
+frameworks:
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-02
+  chapter_title: Logo
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-03
+  chapter_title: Colour Palette
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-04
+  chapter_title: Typography
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-05
+  chapter_title: Graphical Holding Devices
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-06
+  chapter_title: Graphic Elements
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-07
+  chapter_title: Photography
+patterns:
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-02
+  chapter_title: Logo
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-03
+  chapter_title: Colour Palette
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-04
+  chapter_title: Typography
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-05
+  chapter_title: Graphical Holding Devices
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-06
+  chapter_title: Graphic Elements
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-07
+  chapter_title: Photography
+rules_ai_checkable: []
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - Brand Strategy
+  - Visual Identity
+- id: ch-03
+  title: Colour Palette
+  modules:
+  - Data Visualization
+  - Color System
+- id: ch-04
+  title: Typography
+  modules:
+  - Typography System
+- id: ch-05
+  title: Graphical Holding Devices
+  modules:
+  - Layout System
+  - Visual Language
+- id: ch-06
+  title: Graphic Elements
+  modules:
+  - Illustration System
+  - Iconography System
+- id: ch-07
+  title: Photography
+  modules:
+  - Photography System
+  - Content Design

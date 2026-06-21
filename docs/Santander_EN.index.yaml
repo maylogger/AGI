@@ -1,0 +1,55 @@
+title: "Basic Guidelines for Santander"
+source: "sources/Santander_EN.PDF"
+date: "2020"
+language: "en"
+summary: "Santander 2020 基礎品牌指南，提供 logotype、版本選擇、黑白版、留白、最小尺寸、cobranding、final artwork nomenclature 與 primary color palette。"
+chapters:
+  - id: "ch-01"
+    title: "Introduction"
+    level: 1
+    order: 1
+    pages: "1-2"
+    summary: "說明此文件提供 Santander 品牌實作所需的基礎視覺資源與 final artwork。"
+  - id: "ch-02"
+    title: "Logotype"
+    level: 1
+    order: 2
+    pages: "3-9"
+    summary: "定義 Santander corporate logotype、main/secondary/symbol versions、黑白版、clear space、minimum size、cobranding 與檔名系統。"
+    children:
+      - id: "ch-02-01"
+        title: "Meaning and Versions"
+        level: 2
+        order: 1
+        pages: "4-6"
+        summary: "說明 flame、oval platform、red 的品牌含義，以及 main、secondary、symbol、black/white 版本用途。"
+      - id: "ch-02-02"
+        title: "Clear Space and Minimum Size"
+        level: 2
+        order: 2
+        pages: "7"
+        summary: "以 flame symbol width 與 28x28 grid 定義留白，並設定各版本最小尺寸。"
+      - id: "ch-02-03"
+        title: "Cobranding"
+        level: 2
+        order: 3
+        pages: "8"
+        summary: "以 grid、四個 modules 距離與 1pt line 定義 Santander 與 partner brand lockup。"
+      - id: "ch-02-04"
+        title: "Final Artworks Nomenclature"
+        level: 2
+        order: 4
+        pages: "9"
+        summary: "提供 final artwork 檔名結構，包含 brand、version、condition、color mode 與 format。"
+  - id: "ch-03"
+    title: "Color Palette"
+    level: 1
+    order: 3
+    pages: "10-11"
+    summary: "定義 White、Red、Sky、Black 主要色與建議使用比例，並提供 PMS、HEX、RGB、CMYK、RAL。"
+  - id: "ch-04"
+    title: "Contact"
+    level: 1
+    order: 4
+    pages: "12"
+    summary: "提醒若對 guideline 有疑問，應聯絡 Banco Santander brand team。"

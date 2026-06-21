@@ -1,0 +1,268 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: FluoroSeal_Brand_Guidelines_2021
+index_ref: docs/FluoroSeal_Brand_Guidelines_2021.index.yaml
+note_ref: docs/FluoroSeal_Brand_Guidelines_2021.note.md
+archetype: brand_experience_guide
+industry: industrial_materials_science
+modules:
+- Brand Strategy
+- Voice and Tone
+- Knowledge Architecture
+- Governance
+- Messaging
+- Content Design
+- Visual Language
+- Design Tokens
+- Visual Identity
+- AI-Checkable Rules
+- Color System
+- Iconography System
+- Typography System
+- Photography System
+- Operations
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 5
+  section_count: 7
+chapter_sequence:
+- id: ch-01
+  title: Brand
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Mission, Vision and Values
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Brand Identity and Brand Essence
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Tone of Voice
+  order: 3
+  level: 2
+- id: ch-01-04
+  title: FluoroSeal Company Story
+  order: 4
+  level: 2
+- id: ch-02
+  title: Visual Elements
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo System
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Color System
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Typography and Icon Style
+  order: 3
+  level: 2
+- id: ch-03
+  title: Imagery
+  order: 3
+  level: 1
+- id: ch-04
+  title: Applications
+  order: 4
+  level: 1
+- id: ch-05
+  title: Contact
+  order: 5
+  level: 1
+frameworks:
+- name: 品牌框架是「value proposition -> mission -> vision -> values -> essence -> voice -> history」
+  chapter: ch-01
+  chapter_title: Brand
+- name: 策略框架是「what we offer -> why we exist -> where we are going -> how we behave」
+  chapter: ch-01-01
+  chapter_title: Mission, Vision and Values
+- name: essence 框架是「association -> promise -> partnership -> end-user impact -> shared future」
+  chapter: ch-01-02
+  chapter_title: Brand Identity and Brand Essence
+- name: voice 框架是「customer-tailored -> expert insight -> respect -> professionalism -> openness」
+  chapter: ch-01-03
+  chapter_title: Tone of Voice
+- name: 故事框架是「founding -> ownership/facility shifts -> global expansion -> acquisitions -> today’s investment」
+  chapter: ch-01-04
+  chapter_title: FluoroSeal Company Story
+- name: 視覺元素框架是「logo -> color -> typography -> icon -> imagery bridge」
+  chapter: ch-02
+  chapter_title: Visual Elements
+- name: logo 框架是「background -> variant -> placement -> clear space -> minimum width -> misuse check」
+  chapter: ch-02-01
+  chapter_title: Logo System
+- name: 色彩框架是「primary background -> key visual elements -> secondary accent -> white separation」
+  chapter: ch-02-02
+  chapter_title: Color System
+- name: 字體框架是「preferred fonts -> fallback -> role mapping -> print/web variants -> size examples」；icon 框架是「single-color glyph...
+  chapter: ch-02-03
+  chapter_title: Typography and Icon Style
+- name: 影像框架是「communication need -> image level -> subject/focus -> background/context -> usage examples -> optional filter」
+  chapter: ch-03
+  chapter_title: Imagery
+- name: 應用框架是「item -> dimensions -> paper/printing -> margins/bleed/window -> visual example」
+  chapter: ch-04
+  chapter_title: Applications
+- name: 治理框架是「疑問/例外 -> Marketing and Communications -> 批准或指引」
+  chapter: ch-05
+  chapter_title: Contact
+patterns:
+- name: 工業品牌用價值與歷史建立信任，再讓視覺語言承接技術與人性兩種面向。
+  chapter: ch-01
+  chapter_title: Brand
+- name: 將 values 寫成行為動詞，比單字口號更容易轉入 voice 與影像審核。
+  chapter: ch-01-01
+  chapter_title: Mission, Vision and Values
+- name: 一句 essence 可作為 guideline 的跨章節 evaluation rubric。
+  chapter: ch-01-02
+  chapter_title: Brand Identity and Brand Essence
+- name: 能力 + 謙遜
+  chapter: ch-01-03
+  chapter_title: Tone of Voice
+- name: B2B guideline 可用 timeline 把抽象 brand credibility 實證化。
+  chapter: ch-01-04
+  chapter_title: FluoroSeal Company Story
+- name: 先定核心元素，再定應用與例外，是品牌手冊常見可複用架構。
+  chapter: ch-02
+  chapter_title: Visual Elements
+- name: 把 icon version 限定為少數情境且需批准，是控制品牌縮寫的治理模式。
+  chapter: ch-02-01
+  chapter_title: Logo System
+- name: 一次只用一個 additional color 是可移植的色彩治理規則。
+  chapter: ch-02-02
+  chapter_title: Color System
+- name: 以角色分配字體而非僅列字體，可轉成審核規則。
+  chapter: ch-02-03
+  chapter_title: Typography and Icon Style
+- name: 三層 imagery taxonomy 是可複用的影像治理架構，避免所有照片承擔同一目的。
+  chapter: ch-03
+  chapter_title: Imagery
+- name: 將 brand applications 寫成 production spec，是讓 guideline 從設計走向營運的必要模式。
+  chapter: ch-04
+  chapter_title: Applications
+- name: 完整 brand manual 仍需要 human owner 來處理未覆蓋情境。
+  chapter: ch-05
+  chapter_title: Contact
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI 可檢查：品牌表述應包含 partnership/customer value；不得只談產品規格而忽略 customer commitment；核心 essence 應維持 “Building Value Together”。
+  chapter: ch-01
+  chapter_title: Brand
+- module: ''
+  criterion: AI 可檢查：品牌文案需能反映 integrity、responsibility、legacy、quality、customer commitment、innovation；不可宣稱與 industrial valve
+    expertise 無關的品牌定位。
+  chapter: ch-01-01
+  chapter_title: Mission, Vision and Values
+- module: Brand Strategy
+  criterion: AI 可檢查：溝通內容若提到 FluoroSeal 應能連到 building value 或 partnership；不得只呈現 isolated product without customer value。
+  chapter: ch-01-02
+  chapter_title: Brand Identity and Brand Essence
+- module: ''
+  criterion: AI 可檢查：品牌歷史敘述應維持正確時間順序；不得將未載明的 milestone 編入官方故事。
+  chapter: ch-01-04
+  chapter_title: FluoroSeal Company Story
+- module: ''
+  criterion: AI 可檢查：所有 key visual elements 應使用 primary colors 或 white；secondary colors 只能作補充且一次一色；不得引入未核准字體。
+  chapter: ch-02
+  chapter_title: Visual Elements
+- module: Visual Identity
+  criterion: AI 可檢查：master blue logo 用於淺色背景；negative logo 用於 corporate blue 背景；mono logo 限於不可彩色印刷；preferred placement 為 top
+    center，否則 bottom left/right；logo 最小寬度應大於 25 mm / 95 px；不得旋轉、拉伸、改色、加漸層、描邊、改字體或使用 busy background。
+  chapter: ch-02-01
+  chapter_title: Logo System
+- module: Color System
+  criterion: 'AI 可檢查：key visual elements 只能用 primary colors 與 white；secondary colors 不應混用；使用 primary/secondary colors 時應以
+    white 分隔；Corporate Blue 應使用 #00558C。'
+  chapter: ch-02-02
+  chapter_title: Color System
+- module: Typography System
+  criterion: AI 可檢查：headlines/subtitles 用 Lato Bold；intro paragraphs 用 Lato Bold Italic；body text 用 Open Sans；小文字/符號/captions
+    用 Open Sans；若 Lato/Open Sans 不可用，使用 Arial；每個 icon 或 icon group 僅使用一種 palette color。
+  chapter: ch-02-03
+  chapter_title: Typography and Icon Style
+- module: Photography System
+  criterion: AI 可檢查：Level I 產品圖應高解析、白底、清楚細節、移除非產品背景；Level II 應呈現 location/plant/equipment，branding discrete 且盡量無人；Level III
+    應呈現真實工作場景，不可 staged；color filter 應先 grayscale，再 multiply adjustment layer 並使用核准色碼。
+  chapter: ch-03
+  chapter_title: Imagery
+- module: ''
+  criterion: AI 可檢查：business card 尺寸應為 3.5 x 2 in / 88.9 x 50.8 mm，含 bleed 為 3.75 x 2.25 in；letterhead US letter 應為 8.5 x
+    11 in，A4 為 210 x 297 mm；email signature 應為 613 px x 150 px；#10 envelope 應為 4 1/8 x 9 1/2 in。
+  chapter: ch-04
+  chapter_title: Applications
+chapters:
+- id: ch-01
+  title: Brand
+  modules:
+  - Brand Strategy
+  - Voice and Tone
+  - Knowledge Architecture
+- id: ch-01-01
+  title: Mission, Vision and Values
+  modules:
+  - Brand Strategy
+  - Governance
+- id: ch-01-02
+  title: Brand Identity and Brand Essence
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-01-03
+  title: Tone of Voice
+  modules:
+  - Content Design
+  - Voice and Tone
+- id: ch-01-04
+  title: FluoroSeal Company Story
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-02
+  title: Visual Elements
+  modules:
+  - Visual Language
+  - Design Tokens
+  - Visual Identity
+- id: ch-02-01
+  title: Logo System
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-02-02
+  title: Color System
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Design Tokens
+- id: ch-02-03
+  title: Typography and Icon Style
+  modules:
+  - AI-Checkable Rules
+  - Iconography System
+  - Typography System
+- id: ch-03
+  title: Imagery
+  modules:
+  - Photography System
+  - AI-Checkable Rules
+  - Visual Language
+- id: ch-04
+  title: Applications
+  modules:
+  - Operations
+- id: ch-05
+  title: Contact
+  modules:
+  - Operations
+  - Governance

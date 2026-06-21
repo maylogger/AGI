@@ -1,0 +1,456 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Consistent_communications_Brand_Guidelines_2018
+index_ref: docs/Consistent_communications_Brand_Guidelines_2018.index.yaml
+note_ref: docs/Consistent_communications_Brand_Guidelines_2018.note.md
+archetype: full_brand_system
+industry: nonprofit_social
+modules:
+- Brand Strategy
+- Knowledge Architecture
+- Operations
+- Governance
+- Messaging
+- Visual Identity
+- AI-Checkable Rules
+- Visual Language
+- Typography System
+- Color System
+- Design Tokens
+- Brand Architecture
+- Accessibility
+- Photography System
+- Content Safety
+- Content Design
+- Voice and Tone
+- Localization
+- Compliance
+depth:
+  strategy: high
+  visual: high
+  governance: high
+  top_level_chapter_count: 8
+  section_count: 14
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Consistent communications
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Vision and mission
+  order: 2
+  level: 2
+- id: ch-02
+  title: Our visual identity
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Pattern
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Typefaces
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Colour
+  order: 4
+  level: 2
+- id: ch-02-05
+  title: Special uses and Sub-brand
+  order: 5
+  level: 2
+- id: ch-02-06
+  title: Examples and templates
+  order: 6
+  level: 2
+- id: ch-03
+  title: Accessibility
+  order: 3
+  level: 1
+- id: ch-04
+  title: Using images
+  order: 4
+  level: 1
+- id: ch-05
+  title: House style
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Standard text and terms
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Tone of voice and use of English
+  order: 2
+  level: 2
+- id: ch-05-03
+  title: Numbers and punctuation
+  order: 3
+  level: 2
+- id: ch-05-04
+  title: Contact details and Writing for the web
+  order: 4
+  level: 2
+- id: ch-06
+  title: Visibility guidelines
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Partners
+  order: 1
+  level: 2
+- id: ch-06-02
+  title: Grant recipients
+  order: 2
+  level: 2
+- id: ch-07
+  title: Digital files
+  order: 7
+  level: 1
+- id: ch-08
+  title: Contact
+  order: 8
+  level: 1
+frameworks:
+- name: brand personality -> visual identity tools -> governance by communications team
+  chapter: ch-01
+  chapter_title: Introduction
+- name: communication material -> brand expression -> communication team governance
+  chapter: ch-01-01
+  chapter_title: Consistent communications
+- name: vision -> mission -> values -> identity metaphor
+  chapter: ch-01-02
+  chapter_title: Vision and mission
+- name: metaphor -> symbol -> pattern -> applications/templates
+  chapter: ch-02
+  chapter_title: Our visual identity
+- name: orientation choice + minimum size + safe area + alternate color
+  chapter: ch-02-01
+  chapter_title: Logo
+- name: fixed geometry + flexible composition
+  chapter: ch-02-02
+  chapter_title: Pattern
+- name: professional font + system font fallback
+  chapter: ch-02-03
+  chapter_title: Typefaces
+- name: logo-derived palette -> use categories -> technical values
+  chapter: ch-02-04
+  chapter_title: Colour
+- name: special use -> approved method -> minimum size/lockup rules
+  chapter: ch-02-05
+  chapter_title: Special uses and Sub-brand
+- name: professional examples + in-house preformatted templates
+  chapter: ch-02-06
+  chapter_title: Examples and templates
+- name: legibility + contrast + material conditions + redundant cues
+  chapter: ch-03
+  chapter_title: Accessibility
+- name: rights -> narrative relevance -> technical quality -> storage ownership
+  chapter: ch-04
+  chapter_title: Using images
+- name: standard content -> tone -> grammar/style -> digital scanning
+  chapter: ch-05
+  chapter_title: House style
+- name: approved boilerplate + glossary
+  chapter: ch-05-01
+  chapter_title: Standard text and terms
+- name: clarity + inclusivity + controlled authority
+  chapter: ch-05-02
+  chapter_title: Tone of voice and use of English
+- name: default rule + exception cases
+  chapter: ch-05-03
+  chapter_title: Numbers and punctuation
+- name: contact hierarchy + inverted pyramid web writing
+  chapter: ch-05-04
+  chapter_title: Contact details and Writing for the web
+- name: relationship type -> required acknowledgement -> approval/reporting flow
+  chapter: ch-06
+  chapter_title: Visibility guidelines
+- name: joint production + approval + reciprocal publishing
+  chapter: ch-06-01
+  chapter_title: Partners
+- name: funding acknowledgement + web link + reporting evidence
+  chapter: ch-06-02
+  chapter_title: Grant recipients
+- name: file type -> use case -> resolution -> colour mode -> allowed recipient
+  chapter: ch-07
+  chapter_title: Digital files
+- name: document -> owner/contact
+  chapter: ch-08
+  chapter_title: Contact
+patterns:
+- name: 以 definition-first 開場降低跨部門誤解。
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 把 guideline 作為組織共同操作手冊，而非設計部門內部文件。
+  chapter: ch-01-01
+  chapter_title: Consistent communications
+- name: 先定義制度角色，再定義表達規則。
+  chapter: ch-01-02
+  chapter_title: Vision and mission
+- name: 用 logo underlying structure 生成 secondary pattern 是可複用 identity pattern。
+  chapter: ch-02
+  chapter_title: Our visual identity
+- name: 用字母高度 X 定義 safe area。
+  chapter: ch-02-01
+  chapter_title: Logo
+- name: pattern library 作為品牌視覺動態來源。
+  chapter: ch-02-02
+  chapter_title: Pattern
+- name: 以字體性格相似性選擇 in-house substitute。
+  chapter: ch-02-03
+  chapter_title: Typefaces
+- name: 同一色彩提供 print/screen/web 三種 token。
+  chapter: ch-02-04
+  chapter_title: Colour
+- name: 對子品牌使用 adjusted logos，避免直接拼貼。
+  chapter: ch-02-05
+  chapter_title: Special uses and Sub-brand
+- name: 把高品質外部應用與日常內部模板放在同一章。
+  chapter: ch-02-06
+  chapter_title: Examples and templates
+- name: 把 print-specific accessibility 與 screen-based accessibility 放在同一章。
+  chapter: ch-03
+  chapter_title: Accessibility
+- name: 若沒有合適、合法、高品質影像，就不使用影像。
+  chapter: ch-04
+  chapter_title: Using images
+- name: house style 同時管理內容、語法、格式與 web usability。
+  chapter: ch-05
+  chapter_title: House style
+- name: standard text 與 glossary 放在同一節。
+  chapter: ch-05-01
+  chapter_title: Standard text and terms
+- name: 用 avoid/replace pair 直接轉成 rewrite rule。
+  chapter: ch-05-02
+  chapter_title: Tone of voice and use of English
+- name: 每個語法規則都列出 when to override。
+  chapter: ch-05-03
+  chapter_title: Numbers and punctuation
+- name: web guideline 從讀者行為出發，而非從出版習慣出發。
+  chapter: ch-05-04
+  chapter_title: Contact details and Writing for the web
+- name: partner visibility 與 grant visibility 分開，因權力關係和責任不同。
+  chapter: ch-06
+  chapter_title: Visibility guidelines
+- name: 將品牌 visibility 納入 partnership agreements。
+  chapter: ch-06-01
+  chapter_title: Partners
+- name: 受補助者可用 logo lock-up 或文字替代，但不可不承認。
+  chapter: ch-06-02
+  chapter_title: Grant recipients
+- name: 把檔案索引放進 guideline 可降低錯拿素材。
+  chapter: ch-07
+  chapter_title: Digital files
+- name: contact page 作為 escalation path。
+  chapter: ch-08
+  chapter_title: Contact
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：品牌介紹需連結 civic voices、participation、peaceful/equitable society；不得只描述 visual identity。
+  chapter: ch-01
+  chapter_title: Introduction
+- module: ''
+  criterion: AI 可檢查：品牌文案需尊重 diversity、collaboration、integrity、ingenuity；不得排除非專業受眾或弱化透明度。
+  chapter: ch-01-02
+  chapter_title: Vision and mission
+- module: ''
+  criterion: AI 可檢查：pattern 可 resize、flip、crop，但不可 rotate；logo safe area 與最小尺寸需遵守；專業與 in-house 用字需分流。
+  chapter: ch-02
+  chapter_title: Our visual identity
+- module: Visual Identity
+  criterion: AI 可檢查：vertical logo 最小高度 25mm；horizontal logo 最小寬度 55mm；safe area 為 Commonwealth capital letters 高度的 2 倍；不得換字體、拆分重組、改變元件大小、旋轉或拉伸。
+  chapter: ch-02-01
+  chapter_title: Logo
+- module: ''
+  criterion: AI 可檢查：pattern 不得旋轉；可裁切與翻轉；若需 bespoke version 應使用 raw files 並由 professional supplier 處理。
+  chapter: ch-02-02
+  chapter_title: Pattern
+- module: Typography System
+  criterion: AI 可檢查：專業設計材料使用 PMN Caecilia；內部文件、簡報、信件、報告使用 Trebuchet MS；主文字不得小於 accessibility 規範。
+  chapter: ch-02-03
+  chapter_title: Typefaces
+- module: ''
+  criterion: AI 可檢查：gradients 必須至少由 primary 或 enhanced palette 中一色定義；色值需匹配核准 CMYK/RGB/HEX；text-based documents 優先 primary
+    palette。
+  chapter: ch-02-04
+  chapter_title: Colour
+- module: Brand Strategy
+  criterion: AI 可檢查：bespoke logo colors 僅可用 Adobe Illustrator Recolor Artwork；Commonwealth Writers lock-ups 不得改動；vertical
+    lock-up 最小 40mm，horizontal 最小 24mm。
+  chapter: ch-02-05
+  chapter_title: Special uses and Sub-brand
+- module: ''
+  criterion: AI 可檢查：in-house letter/report 使用 Trebuchet MS 11pt，paragraph line spacing multiple 1.15，header/footer 只在 first
+    page。
+  chapter: ch-02-06
+  chapter_title: Examples and templates
+- module: ''
+  criterion: AI 可檢查：main text 不得小於 9pt；不得使用大寫字作長文字；italics sparingly；large text flush left/rag right；不得右對齊正文；圖片疊字需最大對比；highlight
+    不得只靠顏色。
+  chapter: ch-03
+  chapter_title: Accessibility
+- module: ''
+  criterion: AI 可檢查：每張圖需有短 caption；需 credit/copyright/permission；避免無關建築或物件；裁切需保留原始來源完整性；in-house camera 應用最高解析度拍攝。
+  chapter: ch-04
+  chapter_title: Using images
+- module: ''
+  criterion: AI 可檢查：使用 UK spelling；避免 jargon、不解釋 acronyms、excessive adjectives；句子目標 15-20 words；web text 比 print 少 50%；不得使用
+    etc.；Foundation 作單數。
+  chapter: ch-05
+  chapter_title: House style
+- module: ''
+  criterion: AI 可檢查：短描述需寫「We are the Commonwealth’s agency for civil society」；strapline 為「More voices for a fairer world」；術語定義不得任意縮短到失去民主/participation
+    意義。
+  chapter: ch-05-01
+  chapter_title: Standard text and terms
+- module: Voice and Tone
+  criterion: AI 可檢查：第一次出現 acronym 需拼出；不用 they/them 指 Foundation；Foundation is 而非 are；使用 you 與受眾直接溝通；使用 colour、organisation、programme
+    等 UK spelling。
+  chapter: ch-05-02
+  chapter_title: Tone of voice and use of English
+- module: ''
+  criterion: AI 可檢查：zero-nine 拼字、10+ 用數字；時間用 9am/9.30pm；日期用 21 December；百分比正文寫 25 per cent；bullet list 以 colon 引入且項目末不加標點；預設單引號；heading
+    只首字大寫；& 拼為 and，除非組織名固定用 &。
+  chapter: ch-05-03
+  chapter_title: Numbers and punctuation
+- module: ''
+  criterion: AI 可檢查：web content 開頭需先給 who/what/where/when/why/how；paragraph <60 words；避免 click here/more；圖片需 alt text；不要在
+    named URL 中使用 http://，自有 URL 寫 commonwealthfoundation.com。
+  chapter: ch-05-04
+  chapter_title: Contact details and Writing for the web
+- module: ''
+  criterion: AI 可檢查：partner logos side by side，Foundation logo on left，logos equal size；text-only materials 使用指定 organized/supported
+    by line；web 需 link to commonwealthfoundation.com；press releases 需提前給 Communications Manager proof。
+  chapter: ch-06
+  chapter_title: Visibility guidelines
+- module: ''
+  criterion: AI 可檢查：print/screen materials related to funded project 必須 include Supported by logo lock-up；text-only 使用「This
+    project is supported by the Commonwealth Foundation」；需送交 copies 作 reporting。
+  chapter: ch-06-02
+  chapter_title: Grant recipients
+- module: ''
+  criterion: AI 可檢查：JPEG/PNG 不得供 printers/design suppliers；TIFF 用於 leaflets/posters；AI/EPS 僅供 designers/printers 且需確認供應商接受。
+  chapter: ch-07
+  chapter_title: Digital files
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - Brand Strategy
+  - Knowledge Architecture
+- id: ch-01-01
+  title: Consistent communications
+  modules:
+  - Operations
+  - Governance
+- id: ch-01-02
+  title: Vision and mission
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-02
+  title: Our visual identity
+  modules:
+  - Visual Identity
+- id: ch-02-01
+  title: Logo
+  modules:
+  - AI-Checkable Rules
+- id: ch-02-02
+  title: Pattern
+  modules:
+  - Visual Language
+- id: ch-02-03
+  title: Typefaces
+  modules:
+  - Typography System
+  - Operations
+- id: ch-02-04
+  title: Colour
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-02-05
+  title: Special uses and Sub-brand
+  modules:
+  - Brand Architecture
+  - Governance
+- id: ch-02-06
+  title: Examples and templates
+  modules:
+  - Operations
+- id: ch-03
+  title: Accessibility
+  modules:
+  - AI-Checkable Rules
+  - Accessibility
+- id: ch-04
+  title: Using images
+  modules:
+  - Photography System
+  - Operations
+  - Content Safety
+- id: ch-05
+  title: House style
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+- id: ch-05-01
+  title: Standard text and terms
+  modules:
+  - Content Design
+  - Messaging
+- id: ch-05-02
+  title: Tone of voice and use of English
+  modules:
+  - Localization
+  - Voice and Tone
+- id: ch-05-03
+  title: Numbers and punctuation
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+- id: ch-05-04
+  title: Contact details and Writing for the web
+  modules:
+  - Content Design
+  - Accessibility
+- id: ch-06
+  title: Visibility guidelines
+  modules:
+  - Compliance
+  - Operations
+  - Governance
+- id: ch-06-01
+  title: Partners
+  modules:
+  - Operations
+  - Governance
+- id: ch-06-02
+  title: Grant recipients
+  modules:
+  - Compliance
+  - Operations
+- id: ch-07
+  title: Digital files
+  modules:
+  - Operations
+- id: ch-08
+  title: Contact
+  modules:
+  - Operations
+  - Governance

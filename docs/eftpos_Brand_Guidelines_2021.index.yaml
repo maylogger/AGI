@@ -1,0 +1,75 @@
+title: 'eftpos Brand Guidelines'
+source: 'sources/eftpos_Brand_Guidelines_2021.pdf'
+version: '1.0'
+date: 'Published March 2021'
+language: 'en'
+summary: 'eftpos 2021 品牌規範，從品牌策略、視覺識別、應用範例延伸到卡片、contactless、mobile 與 online 品牌規定要求。'
+chapters:
+  - id: 'ch-01'
+    title: 'Our Brand'
+    level: 1
+    order: 1
+    pages: '4-8'
+    summary: '定義 eftpos 作為 Australia’s original fintech，包含故事、personality、values 與 manifesto。'
+  - id: 'ch-02'
+    title: 'Identity System'
+    level: 1
+    order: 2
+    pages: '9-35'
+    summary: '建立 core toolkit、logo、typography、colour、overlays、gradients、neumorphism、margins、grid、photography、iconography 與 co-branding。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Logo'
+        level: 2
+        order: 1
+        pages: '11-19'
+        summary: '規範 primary、horizontal、small use logo、clear space、minimum sizes、usage、placement 與 imagery use。'
+      - id: 'ch-02-02'
+        title: 'Typography and Colour'
+        level: 2
+        order: 2
+        pages: '20-25'
+        summary: '定義 Sharp Grotesk、Manrope、Arial fallback、品牌色、功能色、overlays 與 gradients。'
+      - id: 'ch-02-03'
+        title: 'Layout and Imagery'
+        level: 2
+        order: 3
+        pages: '26-33'
+        summary: '定義 neumorphism、margin、grid、photography areas、local heroes、Australia 與 iconography。'
+      - id: 'ch-02-04'
+        title: 'Co-branding'
+        level: 2
+        order: 4
+        pages: '34-35'
+        summary: '規範共同品牌中的 optical balance、logo width、clear space 與 divider keylines。'
+  - id: 'ch-03'
+    title: 'Application Examples'
+    level: 1
+    order: 3
+    pages: '36-51'
+    summary: '展示 look and feel、stationery、folders、document covers、flyers、collateral、Word、PowerPoint、shopfront decal、merchandise、posters、OOH 與 signage。'
+  - id: 'ch-04'
+    title: 'Card Branding and Contactless Requirements'
+    level: 1
+    order: 4
+    pages: '52-76'
+    summary: '規範會員 approval、licensing、contactless lockup、card appearance、prepaid、multi-network、co-brand cards、terminal devices 與 acceptance decals。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Compliance and Licensing'
+        level: 2
+        order: 1
+        pages: '53-55'
+        summary: '要求所有 card designs 與 brandmark 使用先取得 eftpos approval，並列 contactless marks sublicence 條款。'
+      - id: 'ch-04-02'
+        title: 'Card and Device Rules'
+        level: 2
+        order: 2
+        pages: '56-76'
+        summary: '定義 contactless lockup、clear space、minimum size、不同卡種與裝置上的 logo / wordmark / decals 要求。'
+  - id: 'ch-05'
+    title: 'Mobile and Online Brand Requirements'
+    level: 1
+    order: 5
+    pages: '77-85'
+    summary: '規範 mobile user interfaces、digitised card presentation、contactless brandmark device，以及 Apple Pay、Google Pay、Samsung Pay 與第三方 wallet 規格。'

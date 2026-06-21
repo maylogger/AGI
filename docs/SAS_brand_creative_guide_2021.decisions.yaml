@@ -1,0 +1,146 @@
+# L3 決策卡 sidecar — SAS Brand Creative Guide
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: SAS_brand_creative_guide_2021
+decisions:
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 用 smart/caring/bold/trustworthy 人格特質當每個 communication 的檢查軸，並把特質寫成後續 voice 與 visual 的判準
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - 技術品牌不應冷硬；科學可以是好奇、慷慨且樂觀的
+      - 品牌 guideline 應把人格特質寫成後續 voice 與 visual 的判準
+    applicable_when:
+      industries: [industrial_materials_science, nonprofit_social, tech_software]
+      brand_types: [challenger, category_creator, mission_driven]
+      conditions: []
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Visual Language, Content Design]
+    evidence:
+      - brand_id: SAS_brand_creative_guide_2021
+        chapter: ch-01
+        excerpt: "品牌內容應能對應 smart、caring、bold、trustworthy 至少一項；品牌 guideline 應把人格特質寫成後續 voice 與 visual 的判準。"
+    status: extracted
+
+  - id: dp-accessible-contrast-pairs
+    title: 把可近用性前置成核准對比配色，而非設計者自行判斷
+    problem:
+      statement: 公共資訊面向全體市民與輔助科技，若放任設計者自由配色，容易產生不符合無障礙標準、身心障礙者無法閱讀的組合。
+      signals: [accessibility, public_trust, inclusive_audience, regulatory_compliance]
+    solution:
+      module: Accessibility
+      move: 把 ADA contrast 與通過對比的文字/背景組合直接寫進品牌色規則，並提供對應 UI/web palette
+      layer: visual_core
+    reason:
+      - 色彩不只表現品牌，也要服務 accessibility 與數位狀態
+      - 可近用性可以被寫成 design token 與 contrast pair governance
+    applicable_when:
+      industries: [public_sector, education, tech_software]
+      brand_types: [institutional_public_trust]
+      conditions: [accessibility, inclusive_audience]
+      archetypes: [brand_experience_guide, product_design_system]
+    dependencies:
+      requires: [Color System]
+      enables: [Governance]
+    anti_patterns:
+      - 把無障礙規範放在附錄，當成可選加分項
+    evidence:
+      - brand_id: SAS_brand_creative_guide_2021
+        chapter: ch-04
+        excerpt: "文字/背景需通過指定 contrast，提供 ADA compliance 與對應 UI/web palette；可近用性應直接寫入品牌色規則而非事後判斷。"
+    status: extracted
+
+  - id: dp-color-set-over-single-pickers
+    title: 用「色組」而非單色清單管理豐富色彩的自由度
+    problem:
+      statement: 多彩品牌若只給單色清單，配色會失控，跨媒介色差難以驗證。
+      signals: [rich_palette, color_governance, multi_media]
+    solution:
+      module: Color System
+      move: 用 warm/cool/neutral combination systems 與比例規則管理配色，並把品牌色與產品 UI 色分層
+      layer: visual_core
+    reason:
+      - 多彩系統需要約束；色彩組合應可預先測試
+      - 把品牌色與產品 UI 色分層，是 SaaS 品牌常見成熟模式
+    applicable_when:
+      industries: [industrial_materials_science, media_entertainment, tech_software]
+      brand_types: []
+      conditions: [rich_palette]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Color System]
+      enables: [Design Tokens]
+    anti_patterns:
+      - 讓設計者從單色任意組合
+      - 任意新增非品牌色
+    evidence:
+      - brand_id: SAS_brand_creative_guide_2021
+        chapter: ch-04
+        excerpt: "色彩組合需屬 warm/cool/neutral 系統，並以 proportion 規範比例；把 campaign mood、accessibility 與 product UI 三層分離。"
+    status: extracted
+
+  - id: dp-custom-typeface-as-identity-asset
+    title: 用專屬字體當識別資產，擺脫系統預設字並統一語氣
+    problem:
+      statement: 仰賴系統預設字體的品牌缺乏獨特性與一致語氣，跨媒介又常因字體缺失而失控；但又需要在無法安裝字型的環境保有 fallback。
+      signals: [identity_distinctiveness, system_consistency, brand_recognition, multi_media]
+    solution:
+      module: Typography System
+      move: 以 Avenir Next W1G 作品牌字體承載未來感，並指定 Inter 作 software/web/Office fallback 與 hierarchy 規則
+      layer: visual_core
+    reason:
+      - 專屬字體系統讓品牌不再依賴 default fonts，並讓文字有一致語氣
+      - 字體選擇應服務品牌性格與實際可用性
+      - 字體 guideline 應記錄 semantic rationale 與 operational fallback
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger]
+      conditions: [identity_distinctiveness, multi_media]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: [Design Tokens]
+    anti_patterns:
+      - 直接沿用系統字當品牌字體，缺乏 fallback 規範
+    evidence:
+      - brand_id: SAS_brand_creative_guide_2021
+        chapter: ch-05
+        excerpt: "品牌輸出優先 Avenir Next W1G，software/web/Office 可用 Inter fallback；字體 guideline 應記錄 semantic rationale 與 operational fallback。"
+    status: extracted
+
+  - id: dp-approval-gate-for-exceptions
+    title: 例外不是漏洞，用審核閘門把差異收進可治理的模組
+    problem:
+      statement: 規則無法窮舉所有情境，現實組織總會有例外；若放任各單位自行決定，例外會逐步擴張成破壞系統的破口。
+      signals: [exception_handling, multi_unit_consistency, governance, scaling_risk]
+    solution:
+      module: Governance
+      move: event/campaign mark 不得單獨出現且需依 reach/audience/frequency 判斷是否需要獨立 mark，並走 exception review
+      layer: governance
+    reason:
+      - 活動或 campaign 可有 word mark，但不得脫離主品牌
+      - 例外章節應寫出「何時可用」「不可擴張到哪裡」並交由審核
+    applicable_when:
+      industries: [public_sector, finance, tech_software]
+      brand_types: [institutional_public_trust, platform_ecosystem, heritage_legacy]
+      conditions: [multi_unit_consistency, exception_handling]
+      archetypes: [multi_brand_architecture, corporate_toolkit]
+    dependencies:
+      requires: [Governance]
+      enables: []
+    anti_patterns:
+      - 例外只寫「可以這樣做」卻不寫適用邊界與審核者
+    evidence:
+      - brand_id: SAS_brand_creative_guide_2021
+        chapter: ch-10
+        excerpt: "event/campaign word mark 不得單獨出現，SAS logo 需近距離但不可整合進 word mark；需依 reach/audience/frequency 判斷是否需要獨立 mark（exception review）。"
+    status: extracted

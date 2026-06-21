@@ -1,0 +1,38 @@
+# L3 決策卡 sidecar — Mayor of London
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: MayorOfLondon_LOOK BOOK_2021
+decisions:
+  - id: dp-accessible-contrast-pairs
+    title: 把可近用性前置成核准對比配色，而非設計者自行判斷
+    problem:
+      statement: 公共資訊面向全體市民與輔助科技，若放任設計者自由配色，容易產生不符合無障礙標準、身心障礙者無法閱讀的組合。
+      signals: [accessibility, public_trust, inclusive_audience, regulatory_compliance]
+    solution:
+      module: Accessibility
+      move: 把可近用性放在視覺工具區（而非附錄），明訂至少符合 WCAG 2.1 AA，並只允許清單內的核准對比配色
+      layer: visual_core
+    reason:
+      - 公共機構不應把可近用性視為加分項，而是最低標準
+      - 用 approved contrast pairs 降低設計者自行判斷錯誤
+      - 可近用性可以被寫成 design token 與 contrast pair governance
+    applicable_when:
+      industries: [public_sector, education]
+      brand_types: [institutional_public_trust]
+      conditions: [accessibility, inclusive_audience]
+      archetypes: [brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Color System]
+      enables: [Governance]
+    anti_patterns:
+      - 把無障礙規範放在附錄，當成可選加分項
+      - 使用未列出的 accessible colour combinations
+    evidence:
+      - brand_id: MayorOfLondon_LOOK BOOK_2021
+        chapter: ch-03-01
+        excerpt: "用 approved contrast pairs 降低設計者自行判斷錯誤；PDF 應 single page export、tag every item、include alt copy，線上材料至少 WCAG 2.1 AA。"
+      - brand_id: MayorOfLondon_LOOK BOOK_2021
+        chapter: ch-03
+        excerpt: "把 accessibility 放在視覺工具區，而不是附錄，表示它是設計前提；不得使用未列出的 accessible colour combinations。"
+    status: extracted

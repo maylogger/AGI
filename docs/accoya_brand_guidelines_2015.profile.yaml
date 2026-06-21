@@ -1,0 +1,636 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: accoya_brand_guidelines_2015
+index_ref: docs/accoya_brand_guidelines_2015.index.yaml
+note_ref: docs/accoya_brand_guidelines_2015.note.md
+archetype: brand_experience_guide
+industry: industrial_materials_science
+modules:
+- Legal and Trademark
+- AI-Checkable Rules
+- Compliance
+- Governance
+- Messaging
+- Content Safety
+- Product Language
+- Brand Strategy
+- Visual Identity
+- Color System
+- Design Tokens
+- Content Design
+- Layout System
+- Brand Architecture
+- Iconography System
+- Localization
+- Information Design
+- Typography System
+- Operations
+- Visual Language
+- Photography System
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 6
+  section_count: 25
+chapter_sequence:
+- id: ch-01
+  title: Background
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Brand Protection and Intellectual Property
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Rules of Promotion
+  order: 2
+  level: 2
+- id: ch-02
+  title: Introduction
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: The Accoya Brand
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Our Brand Personality
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: The Accoya Name and Trimarque Device
+  order: 3
+  level: 2
+- id: ch-03
+  title: The Accoya Identity
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Identity Introduction
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Colour Palette
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Protecting the Trademarks and Copyright
+  order: 3
+  level: 2
+- id: ch-03-04
+  title: The Green Tab Logo
+  order: 4
+  level: 2
+- id: ch-03-05
+  title: Joint Branding
+  order: 5
+  level: 2
+- id: ch-03-06
+  title: Accoya Accreditations
+  order: 6
+  level: 2
+- id: ch-04
+  title: The Accoya Icons
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Multilingual Accoya Icons
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Icons Explained
+  order: 2
+  level: 2
+- id: ch-04-03
+  title: Displaying the Accoya Icons
+  order: 3
+  level: 2
+- id: ch-05
+  title: Type and Straplines
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Print Typeface
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Web Typeface
+  order: 2
+  level: 2
+- id: ch-05-03
+  title: Typography
+  order: 3
+  level: 2
+- id: ch-05-04
+  title: Primary Strapline
+  order: 4
+  level: 2
+- id: ch-06
+  title: Other Elements
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Imagery
+  order: 1
+  level: 2
+- id: ch-06-02
+  title: Website
+  order: 2
+  level: 2
+- id: ch-06-03
+  title: Accoya Email Marketing and Toolkit
+  order: 3
+  level: 2
+- id: ch-06-04
+  title: Made With
+  order: 4
+  level: 2
+- id: ch-06-05
+  title: Licensee Branding
+  order: 5
+  level: 2
+- id: ch-06-06
+  title: Affiliate Marks
+  order: 6
+  level: 2
+- id: ch-06-07
+  title: Contact Us
+  order: 7
+  level: 2
+frameworks:
+- name: IP Protection -> Authorized Promotion -> Visual Identity 的治理框架
+  chapter: ch-01
+  chapter_title: Background
+- name: Brand Asset + IP Asset Protection Framework
+  chapter: ch-01-01
+  chapter_title: Brand Protection and Intellectual Property
+- name: Consistent Product Promotion Framework
+  chapter: ch-01-02
+  chapter_title: Rules of Promotion
+- name: Technology Proof -> Brand Meaning -> Visual Symbol Framework
+  chapter: ch-02
+  chapter_title: Introduction
+- name: Distributed Brand Stewardship Framework
+  chapter: ch-02-01
+  chapter_title: The Accoya Brand
+- name: Performance-Based Personality Framework
+  chapter: ch-02-02
+  chapter_title: Our Brand Personality
+- name: Name Semantics + Symbol Semantics Framework
+  chapter: ch-02-03
+  chapter_title: The Accoya Name and Trimarque Device
+- name: Identity Governance Framework：logo placement + tokens + legal statement + partner hierarchy + credentials
+  chapter: ch-03
+  chapter_title: The Accoya Identity
+- name: Edge Tab Identity Framework
+  chapter: ch-03-01
+  chapter_title: Identity Introduction
+- name: Primary/Secondary/Material Finish Palette Framework
+  chapter: ch-03-02
+  chapter_title: Colour Palette
+- name: Trademark-in-Text Framework
+  chapter: ch-03-03
+  chapter_title: Protecting the Trademarks and Copyright
+- name: Bleed-Off Tab Logo Framework
+  chapter: ch-03-04
+  chapter_title: The Green Tab Logo
+- name: Partner Containment Framework
+  chapter: ch-03-05
+  chapter_title: Joint Branding
+- name: Certification Governance Framework
+  chapter: ch-03-06
+  chapter_title: Accoya Accreditations
+- name: Feature Icon Communication Framework
+  chapter: ch-04
+  chapter_title: The Accoya Icons
+- name: Localized Icon System Framework
+  chapter: ch-04-01
+  chapter_title: Multilingual Accoya Icons
+- name: Icon Label -> Evidence Bullets Framework
+  chapter: ch-04-02
+  chapter_title: Icons Explained
+- name: Hero Benefits + Supporting Benefits Framework
+  chapter: ch-04-03
+  chapter_title: Displaying the Accoya Icons
+- name: Neo Sans Typography + Strapline Framework
+  chapter: ch-05
+  chapter_title: Type and Straplines
+- name: Print Type Hierarchy Framework
+  chapter: ch-05-01
+  chapter_title: Print Typeface
+- name: Web Typeface Fallback Framework
+  chapter: ch-05-02
+  chapter_title: Web Typeface
+- name: Headline Accent Line Framework
+  chapter: ch-05-03
+  chapter_title: Typography
+- name: Primary/Secondary Strapline Placement Framework
+  chapter: ch-05-04
+  chapter_title: Primary Strapline
+- name: Channel and Partner Governance Framework
+  chapter: ch-06
+  chapter_title: Other Elements
+- name: Image Permission and Credit Framework
+  chapter: ch-06-01
+  chapter_title: Imagery
+- name: Third-Party Website Naming Framework
+  chapter: ch-06-02
+  chapter_title: Website
+- name: Central Toolkit Distribution Framework
+  chapter: ch-06-03
+  chapter_title: Accoya Email Marketing and Toolkit
+- name: Ingredient Endorsement Mark Framework
+  chapter: ch-06-04
+  chapter_title: Made With
+- name: Licensee Tab Placement Framework
+  chapter: ch-06-05
+  chapter_title: Licensee Branding
+- name: Affiliate Endorsement Mark Framework
+  chapter: ch-06-06
+  chapter_title: Affiliate Marks
+- name: Brand Guardian Contact Framework
+  chapter: ch-06-07
+  chapter_title: Contact Us
+patterns:
+- name: 商標歸屬聲明
+  chapter: ch-01
+  chapter_title: Background
+- name: 授權使用
+  chapter: ch-01
+  chapter_title: Background
+- name: 品牌材料檢查權
+  chapter: ch-01
+  chapter_title: Background
+- name: 事實性產品宣稱
+  chapter: ch-01
+  chapter_title: Background
+- name: 可複用模式是 brand guideline 中先列保護範圍與檢查權。
+  chapter: ch-01-01
+  chapter_title: Brand Protection and Intellectual Property
+- name: 可複用模式是 factual claims + visual guides + supplier question escalation。
+  chapter: ch-01-02
+  chapter_title: Rules of Promotion
+- name: product-origin story
+  chapter: ch-02
+  chapter_title: Introduction
+- name: core competencies
+  chapter: ch-02
+  chapter_title: Introduction
+- name: symbol semantics
+  chapter: ch-02
+  chapter_title: Introduction
+- name: 可複用模式是 supply-chain brand responsibility statement。
+  chapter: ch-02-01
+  chapter_title: The Accoya Brand
+- name: 可複用模式是 essence/vision/mission + competencies/attributes。
+  chapter: ch-02-02
+  chapter_title: Our Brand Personality
+- name: 可複用模式是 symbol component meaning explanation。
+  chapter: ch-02-03
+  chapter_title: The Accoya Name and Trimarque Device
+- name: tab logo
+  chapter: ch-03
+  chapter_title: The Accoya Identity
+- name: edge bleed rule
+  chapter: ch-03
+  chapter_title: The Accoya Identity
+- name: partner brand containment
+  chapter: ch-03
+  chapter_title: The Accoya Identity
+- name: certification usage order
+  chapter: ch-03
+  chapter_title: The Accoya Identity
+- name: 可複用模式是 edge-attached logo rather than floating logo。
+  chapter: ch-03-01
+  chapter_title: Identity Introduction
+- name: 可複用模式是 product-material brand palette with metallic ink guidance。
+  chapter: ch-03-02
+  chapter_title: Colour Palette
+- name: 可複用模式是 AutoCorrect-supported trademark typography。
+  chapter: ch-03-03
+  chapter_title: Protecting the Trademarks and Copyright
+- name: 可複用模式是 logo as edge label。
+  chapter: ch-03-04
+  chapter_title: The Green Tab Logo
+- name: 可複用模式是 ingredient brand + partner brand allocated zones。
+  chapter: ch-03-05
+  chapter_title: Joint Branding
+- name: 可複用模式是 primary accreditations plus regional recognitions。
+  chapter: ch-03-06
+  chapter_title: Accoya Accreditations
+- name: multilingual icon sets
+  chapter: ch-04
+  chapter_title: The Accoya Icons
+- name: fixed order
+  chapter: ch-04
+  chapter_title: The Accoya Icons
+- name: highlighted key features
+  chapter: ch-04
+  chapter_title: The Accoya Icons
+- name: icon explanations
+  chapter: ch-04
+  chapter_title: The Accoya Icons
+- name: 可複用模式是 same layout, translated labels。
+  chapter: ch-04-01
+  chapter_title: Multilingual Accoya Icons
+- name: 可複用模式是 benefit icon with approved proof copy。
+  chapter: ch-04-02
+  chapter_title: Icons Explained
+- name: 可複用模式是 top-three feature highlight。
+  chapter: ch-04-03
+  chapter_title: Displaying the Accoya Icons
+- name: print/web type split
+  chapter: ch-05
+  chapter_title: Type and Straplines
+- name: live text fallback
+  chapter: ch-05
+  chapter_title: Type and Straplines
+- name: headline accent line
+  chapter: ch-05
+  chapter_title: Type and Straplines
+- name: translated strapline
+  chapter: ch-05
+  chapter_title: Type and Straplines
+- name: 可複用模式是 headline light uppercase + regular body sentence case。
+  chapter: ch-05-01
+  chapter_title: Print Typeface
+- name: 可複用模式是 brand typeface + system fallback。
+  chapter: ch-05-02
+  chapter_title: Web Typeface
+- name: 可複用模式是 typographic signature element。
+  chapter: ch-05-03
+  chapter_title: Typography
+- name: 可複用模式是 translated strapline with position-based styling。
+  chapter: ch-05-04
+  chapter_title: Primary Strapline
+- name: website naming restrictions
+  chapter: ch-06
+  chapter_title: Other Elements
+- name: approved email templates
+  chapter: ch-06
+  chapter_title: Other Elements
+- name: online toolkit
+  chapter: ch-06
+  chapter_title: Other Elements
+- name: ingredient mark
+  chapter: ch-06
+  chapter_title: Other Elements
+- name: licensee mark
+  chapter: ch-06
+  chapter_title: Other Elements
+- name: affiliate endorsement
+  chapter: ch-06
+  chapter_title: Other Elements
+- name: 可複用模式是 consent + credit requirement。
+  chapter: ch-06-01
+  chapter_title: Imagery
+- name: 可複用模式是 prohibited official-looking domains vs allowed partner-owned paths。
+  chapter: ch-06-02
+  chapter_title: Website
+- name: 可複用模式是 online toolkit with access control。
+  chapter: ch-06-03
+  chapter_title: Accoya Email Marketing and Toolkit
+- name: 可複用模式是 Made With badge for component/material brands。
+  chapter: ch-06-04
+  chapter_title: Made With
+- name: 可複用模式是 approved placement variants for licensees。
+  chapter: ch-06-05
+  chapter_title: Licensee Branding
+- name: 可複用模式是 role-specific endorsement marks。
+  chapter: ch-06-06
+  chapter_title: Affiliate Marks
+- name: 可複用模式是 contact chapter with toolkit access note。
+  chapter: ch-06-07
+  chapter_title: Contact Us
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI 可檢查 claims 是否符合 durability class 1、stable、sustainable、reliable、tested/proven 等關鍵屬性。
+  chapter: ch-02-02
+  chapter_title: Our Brand Personality
+- module: ''
+  criterion: 可檢查規則包含 Green Tab 不可 free standing、必須 edge bleed、Accoya® 全文附 ®、認證只在公司 certified 時使用。
+  chapter: ch-03
+  chapter_title: The Accoya Identity
+- module: ''
+  criterion: 'AI 可檢查 Eden green #0db02b、Pitch grey #322d2e、Lime green #c1d82f、Dark grey #535456、Light grey #f2f1f0、Mid grey
+    #a7a9ac 是否正確；Lime green 是否只用於 gradient。'
+  chapter: ch-03-02
+  chapter_title: Colour Palette
+- module: Visual Identity
+  criterion: AI 可檢查 Green Tab 是否 bleed off top/bottom edge、左右至少一個 a 寬且不少於 5mm、寬度 >= 27mm 或 80px。
+  chapter: ch-03-04
+  chapter_title: The Green Tab Logo
+- module: Iconography System
+  criterion: 可檢查規則包含 12 icons 必須固定順序；Dimensionally Stable、Outstanding Durability、Perfect for Coating 必須在上方並依序顯示。
+  chapter: ch-04
+  chapter_title: The Accoya Icons
+- module: Iconography System
+  criterion: AI 可檢查四語版本是否保留 12 icons 與 running order。
+  chapter: ch-04-01
+  chapter_title: Multilingual Accoya Icons
+- module: Typography System
+  criterion: AI 可檢查 email/live text 是否在 Neo Sans 不可用時使用 Arial。
+  chapter: ch-05-02
+  chapter_title: Web Typeface
+- module: Typography System
+  criterion: AI 可檢查 headline 是否 uppercase、線條是否 0.5pt、約 28 度、位置是否 top-left 或 bottom-right 並距字約半字高。
+  chapter: ch-05-03
+  chapter_title: Typography
+- module: ''
+  criterion: AI 可檢查 strapline 是否無標點、最小 6pt / web 12pt，是否使用正確翻譯。
+  chapter: ch-05-04
+  chapter_title: Primary Strapline
+- module: Photography System
+  criterion: AI 可檢查影像是否附 `© Accsys Technologies 2015 (or applicable date). Accsys Technologies is the trading name of Titan
+    Wood Limited.`。
+  chapter: ch-06-01
+  chapter_title: Imagery
+- module: ''
+  criterion: AI 可檢查 Made With 是否有 Accsys 書面核准、尺寸 >= 20mm / 76px、是否沿 base edge 左或右、是否不靠近 headers。
+  chapter: ch-06-04
+  chapter_title: Made With
+chapters:
+- id: ch-01
+  title: Background
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Compliance
+  - Governance
+- id: ch-01-01
+  title: Brand Protection and Intellectual Property
+  modules:
+  - Legal and Trademark
+  - Compliance
+- id: ch-01-02
+  title: Rules of Promotion
+  modules:
+  - Compliance
+  - Messaging
+  - Content Safety
+- id: ch-02
+  title: Introduction
+  modules:
+  - Product Language
+  - Brand Strategy
+  - Visual Identity
+- id: ch-02-01
+  title: The Accoya Brand
+  modules:
+  - Brand Strategy
+  - Governance
+- id: ch-02-02
+  title: Our Brand Personality
+  modules:
+  - Product Language
+  - Brand Strategy
+  - Messaging
+- id: ch-02-03
+  title: The Accoya Name and Trimarque Device
+  modules:
+  - Legal and Trademark
+  - Visual Identity
+- id: ch-03
+  title: The Accoya Identity
+  modules:
+  - AI-Checkable Rules
+  - Compliance
+  - Visual Identity
+  - Governance
+- id: ch-03-01
+  title: Identity Introduction
+  modules:
+  - Product Language
+  - Visual Identity
+- id: ch-03-02
+  title: Colour Palette
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-03-03
+  title: Protecting the Trademarks and Copyright
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Content Design
+- id: ch-03-04
+  title: The Green Tab Logo
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Identity
+- id: ch-03-05
+  title: Joint Branding
+  modules:
+  - Brand Architecture
+  - Visual Identity
+  - Governance
+- id: ch-03-06
+  title: Accoya Accreditations
+  modules:
+  - AI-Checkable Rules
+  - Compliance
+  - Governance
+- id: ch-04
+  title: The Accoya Icons
+  modules:
+  - AI-Checkable Rules
+  - Iconography System
+  - Product Language
+  - Content Design
+- id: ch-04-01
+  title: Multilingual Accoya Icons
+  modules:
+  - Iconography System
+  - Localization
+- id: ch-04-02
+  title: Icons Explained
+  modules:
+  - AI-Checkable Rules
+  - Product Language
+  - Content Safety
+- id: ch-04-03
+  title: Displaying the Accoya Icons
+  modules:
+  - AI-Checkable Rules
+  - Iconography System
+  - Information Design
+- id: ch-05
+  title: Type and Straplines
+  modules:
+  - AI-Checkable Rules
+  - Localization
+  - Typography System
+  - Messaging
+- id: ch-05-01
+  title: Print Typeface
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+- id: ch-05-02
+  title: Web Typeface
+  modules:
+  - Typography System
+  - Operations
+- id: ch-05-03
+  title: Typography
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Visual Language
+- id: ch-05-04
+  title: Primary Strapline
+  modules:
+  - AI-Checkable Rules
+  - Localization
+  - Messaging
+- id: ch-06
+  title: Other Elements
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Operations
+  - Governance
+- id: ch-06-01
+  title: Imagery
+  modules:
+  - Legal and Trademark
+  - Photography System
+- id: ch-06-02
+  title: Website
+  modules:
+  - Legal and Trademark
+  - Operations
+  - Governance
+- id: ch-06-03
+  title: Accoya Email Marketing and Toolkit
+  modules:
+  - Localization
+  - Messaging
+  - Operations
+- id: ch-06-04
+  title: Made With
+  modules:
+  - AI-Checkable Rules
+  - Product Language
+  - Governance
+- id: ch-06-05
+  title: Licensee Branding
+  modules:
+  - Brand Architecture
+  - Governance
+- id: ch-06-06
+  title: Affiliate Marks
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Governance
+- id: ch-06-07
+  title: Contact Us
+  modules:
+  - Operations
+  - Governance

@@ -1,0 +1,74 @@
+title: "Xbox Brand Guidelines"
+source: "sources/Microsoft_Xbox_brand_guidelines_2019.pdf"
+date: "2019-04-15"
+language: "en"
+summary: "Xbox brand guidelines 定義 Xbox 通訊的創意原則、訊息原則、logo、色彩、字體、硬體、版面、Xbox and Windows 共品牌、accessories、partnerships、responsible gaming、tagline、Microsoft logo guidance 與資產索引。"
+chapters:
+  - id: "ch-01"
+    title: "Identity"
+    level: 1
+    order: 1
+    pages: "5-8"
+    summary: "說明 creative principles、messaging principles、signature layouts 與 Lead with Xbox 的活動/贊助原則。"
+    children:
+      - id: "ch-01-01"
+        title: "Creative and Messaging Principles"
+        level: 2
+        order: 1
+        pages: "5-6"
+        summary: "定義 premium、simple、iconic、experience forward、differentiated，以及自信、簡潔、主打體驗、不同於競品的文案方向。"
+      - id: "ch-01-02"
+        title: "Xbox Signature Layouts and Lead with Xbox"
+        level: 2
+        order: 2
+        pages: "7-8"
+        summary: "說明 Xbox signature layouts 與在 events / sponsorships 中使用 Xbox logo 的情境。"
+  - id: "ch-02"
+    title: "Elements"
+    level: 1
+    order: 2
+    pages: "10-19"
+    summary: "定義 Xbox logo、logo options、clear space、minimum size、logo sizing、color、type、style it right 與 hardware。"
+    children:
+      - id: "ch-02-01"
+        title: "Logo System"
+        level: 2
+        order: 1
+        pages: "11-15"
+        summary: "規範完整 logo、preferred horizontal logo、clear space、minimum size 與 logo sizing。"
+      - id: "ch-02-02"
+        title: "Color, Type and Hardware"
+        level: 2
+        order: 2
+        pages: "17-19"
+        summary: "定義 Xbox Green、Segoe Pro 字體、正確風格與硬體呈現。"
+  - id: "ch-03"
+    title: "Xbox Layout"
+    level: 1
+    order: 3
+    pages: "21-23"
+    summary: "規範 placement of elements、margins and type，以及 green bar 作為 Xbox layout signature。"
+  - id: "ch-04"
+    title: "Xbox and Windows"
+    level: 1
+    order: 4
+    pages: "25-38"
+    summary: "說明如何判斷 primary brand、選擇 logo、clear space、Windows color、imagery、Xbox app、multiplatform branding bars、game advertising 與 event monitor topper。"
+  - id: "ch-05"
+    title: "Xbox Accessories"
+    level: 1
+    order: 5
+    pages: "40-45"
+    summary: "涵蓋 Xbox accessories、Elite placement of elements、overview、logo、clear space、controller hardware primary product photography 與 nomenclature。"
+  - id: "ch-06"
+    title: "Partnerships"
+    level: 1
+    order: 6
+    pages: "48-52"
+    summary: "規範 partnering with Xbox、hierarchy、name and logo、product lockup 與 proportion。"
+  - id: "ch-07"
+    title: "Appendix"
+    level: 1
+    order: 7
+    pages: "54-66"
+    summary: "包含 What’s new、updated color palette、Xbox Elite Series 2、responsible gaming、video/photoshoots、Jump in tagline、Microsoft logo guidance、asset index 與 guideline reference。"

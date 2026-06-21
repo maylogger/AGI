@@ -1,0 +1,111 @@
+title: 'Coldwell Banker Global Luxury Identity Standards'
+source: 'sources/Coldwell_Banker_2020.pdf'
+date: 'September 2020'
+language: 'en'
+summary: 'Coldwell Banker Global Luxury 的高端房地產識別標準，整合品牌價值、logo/logomark、語氣、色彩、字體、攝影、應用、法務商標與 DBA lockup。'
+chapters:
+  - id: 'ch-01'
+    title: 'Core Values'
+    level: 1
+    order: 1
+    pages: '5'
+    summary: '以 Home、Awesomeness、Ingenuity、Excellence 建立品牌精神與服務態度。'
+  - id: 'ch-02'
+    title: 'Logo, Logomark and Voice'
+    level: 1
+    order: 2
+    pages: '6-16'
+    summary: '定義 luxury identity 的 logo 版本、尺寸、安全距離、禁用規則、logomark 與 quiet confidence 語氣。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Logo'
+        level: 2
+        order: 1
+        pages: '6-10'
+        summary: '說明 stacked/horizontal logo、最小尺寸、safety space、DBA variations 與禁用情境。'
+      - id: 'ch-02-02'
+        title: 'Logomark'
+        level: 2
+        order: 2
+        pages: '11-14'
+        summary: '定義 circular seal 作為 accent、identifier、social profile 與 swag 的使用方式。'
+      - id: 'ch-02-03'
+        title: 'Voice'
+        level: 2
+        order: 3
+        pages: '15-16'
+        summary: '以 thoughtful、informative、clear 與 quiet confidence 管理 luxury copywriting。'
+  - id: 'ch-03'
+    title: 'Color and Typography'
+    level: 1
+    order: 3
+    pages: '17-20'
+    summary: '定義精煉色彩系統、數位色彩、字體家族與文字表現範例。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Color Palette'
+        level: 2
+        order: 1
+        pages: '17-18'
+        summary: '以黑白灰為主，Camel Hair 與 Aegean 為輔，並規範 digital palette 與 UI 用色。'
+      - id: 'ch-03-02'
+        title: 'Typography'
+        level: 2
+        order: 2
+        pages: '19-20'
+        summary: '指定 Adobe Garamond Pro、Helvetica Neue LT Std、Geometos Neue 與數位替代字體。'
+  - id: 'ch-04'
+    title: 'Photography'
+    level: 1
+    order: 4
+    pages: '21-24'
+    summary: '規範 exterior、interior、detail photography 應呈現戲劇光線、奢華氛圍與細節質感。'
+  - id: 'ch-05'
+    title: 'Applications'
+    level: 1
+    order: 5
+    pages: '25-53'
+    summary: '提供 stationery、advertising、collateral、social、HTML email、event materials 與 signage 的版型應用。'
+    children:
+      - id: 'ch-05-01'
+        title: 'Stationery'
+        level: 2
+        order: 1
+        pages: '26-33'
+        summary: '展示名片、信紙、便條、信封與 housing folder 選項。'
+      - id: 'ch-05-02'
+        title: 'Advertising and Collateral'
+        level: 2
+        order: 2
+        pages: '34-43'
+        summary: '提供 branding ads、seller ads、listing ads、magazine spread 與 postcards。'
+      - id: 'ch-05-03'
+        title: 'Social, Email and Event Materials'
+        level: 2
+        order: 3
+        pages: '44-48'
+        summary: '展示社群貼文、HTML email、banner、table skirt 與 tent card。'
+      - id: 'ch-05-04'
+        title: 'Signage'
+        level: 2
+        order: 4
+        pages: '49-53'
+        summary: '定義 yard signs、directional signs、sign riders 與 top/bottom information structure。'
+  - id: 'ch-06'
+    title: 'Identity Requirements'
+    level: 1
+    order: 6
+    pages: '54-58'
+    summary: '規範商標、disclaimer、registered service mark、mark in copy 與 trademark notations。'
+  - id: 'ch-07'
+    title: 'Logo with DBA'
+    level: 1
+    order: 7
+    pages: '59-66'
+    summary: '依 vertical/horizontal、stacked/non-stacked、single/double-line 與 long names 定義 DBA lockup。'
+  - id: 'ch-08'
+    title: 'Closing'
+    level: 1
+    order: 8
+    pages: '67'
+    summary: '以 Live a life of LUXURY 與 copyright/legal copy 收束。'

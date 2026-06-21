@@ -1,0 +1,87 @@
+title: 'Melbourne Airport Brand Guidelines'
+source: 'sources/MA_Style-Guide_.pdf'
+version: 'July 2018'
+language: 'en'
+summary: '這份文件建立 Melbourne Airport 的企業識別、品牌應用、航空業務與零售子系統規範。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction'
+    level: 1
+    order: 1
+    pages: '1-3'
+    summary: '說明品牌由外觀、語言與行為共同支撐，並要求所有 branded collateral 遵循此書。'
+  - id: 'ch-02'
+    title: 'Brand Identity'
+    level: 1
+    order: 2
+    pages: '4-16'
+    summary: '定義 master logo、色彩、字體與攝影，建立 Melbourne Airport 的核心識別。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Master Logo'
+        level: 2
+        order: 1
+        pages: '5-9'
+        summary: '規範 primary/secondary logos、定位、clear space、minimum size 與 logo usage。'
+      - id: 'ch-02-02'
+        title: 'Colour Palette'
+        level: 2
+        order: 2
+        pages: '10-12'
+        summary: '以 charcoal、white、gold 與 Melbourne-inspired secondary palette 建立主次色彩。'
+      - id: 'ch-02-03'
+        title: 'Typography and Photography'
+        level: 2
+        order: 3
+        pages: '13-16'
+        summary: '指定 Avenir/Arial 字體層級與動態、現代、精緻的攝影方向。'
+  - id: 'ch-03'
+    title: 'Brand Applications'
+    level: 1
+    order: 3
+    pages: '17-29'
+    summary: '展示 business cards、stationery、media release、presentation、EDM 與 vision strip 等應用。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Stationery and Communications'
+        level: 2
+        order: 1
+        pages: '18-21'
+        summary: '規範名片、公司信紙與 media release 的版面、紙材、logo 與文字處理。'
+      - id: 'ch-03-02'
+        title: 'Presentation and EDM Templates'
+        level: 2
+        order: 2
+        pages: '22-28'
+        summary: '建立 PowerPoint 與 EDM 的模組化版面、字級、CTA、色彩與 spacing 規則。'
+      - id: 'ch-03-03'
+        title: 'Vision Strip'
+        level: 2
+        order: 3
+        pages: '29'
+        summary: '定義 terminal glazing 上的導視式品牌延伸，包含最小高度與 contrast 要求。'
+  - id: 'ch-04'
+    title: 'Melbourne Airport Aviation'
+    level: 1
+    order: 4
+    pages: '30-35'
+    summary: '針對 aviation business 建立沿用企業系統但更精緻、輕量與資料化的子品牌規則。'
+  - id: 'ch-05'
+    title: 'Melbourne Airport Retail'
+    level: 1
+    order: 5
+    pages: '36-50'
+    summary: '針對零售情境建立深色基底、圖片取色、對話式字體、CTA、店家品牌與攝影應用。'
+    children:
+      - id: 'ch-05-01'
+        title: 'Retail Identity'
+        level: 2
+        order: 1
+        pages: '37-41'
+        summary: '規範 retail palette、typography、call-to-action device 與 retailer branding。'
+      - id: 'ch-05-02'
+        title: 'Retail Photography and Campaign Applications'
+        level: 2
+        order: 2
+        pages: '42-50'
+        summary: '定義自然、真實、編輯感的 retail photography 與 campaign 範例應用。'

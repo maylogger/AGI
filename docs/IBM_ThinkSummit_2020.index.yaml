@@ -1,0 +1,117 @@
+title: 'Think Brand Guidelines: Think Summit Assets'
+source: 'sources/IBM_ThinkSummit_2020.pdf'
+date: '2020-09-03'
+language: 'en'
+summary: 'IBM Think Summit 的事件品牌指南，將 IBM Think 品牌、年度視覺系統、活動架構與全球地方峰會素材治理整合為大型活動設計基礎設施。'
+chapters:
+  - id: 'ch-01'
+    title: 'Objective and Goals'
+    level: 1
+    order: 1
+    pages: '3-5'
+    summary: '說明 Think 活動的目的、全球敘事角色與 Think Summit 作為地方化事件模型的任務。'
+  - id: 'ch-02'
+    title: 'Brand Elements'
+    level: 1
+    order: 2
+    pages: '6-33'
+    summary: '定義 IBM logo、尺寸、字體、Think grid、tagline、Think identity、各種 lockup 與 misuse。'
+    children:
+      - id: 'ch-02-01'
+        title: 'IBM Logo Usage and Typography'
+        level: 2
+        order: 1
+        pages: '7-10'
+        summary: '規範 IBM 基礎識別、logo 尺寸與字體。'
+      - id: 'ch-02-02'
+        title: 'Think Identity and Lockups'
+        level: 2
+        order: 2
+        pages: '13-32'
+        summary: '規範 Think tagline、Think 2020 logotype、Think Summit、Think Leadership 與 PartnerWorld lockup。'
+      - id: 'ch-02-03'
+        title: 'Logo Misuse'
+        level: 2
+        order: 3
+        pages: '33'
+        summary: '禁止未核准 lockup、變形 wordmark 或任意操作 Think 品牌外觀。'
+  - id: 'ch-03'
+    title: '2020 Think Brand System'
+    level: 1
+    order: 3
+    pages: '34-64'
+    summary: '說明 2020 年 Think 品牌系統、色彩、campaign graphics、conference architecture、photography、gallery 與 merchandise。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Color Palette and Campaign Graphics'
+        level: 2
+        order: 1
+        pages: '35-47'
+        summary: '以年度 sonic identity 與資料視覺化建立 2020 campaign graphics 與色彩系統。'
+      - id: 'ch-03-02'
+        title: 'Conference Architecture and Photography'
+        level: 2
+        order: 2
+        pages: '47-58'
+        summary: '規範會議資訊架構、場域分類與影像風格。'
+      - id: 'ch-03-03'
+        title: 'Gallery and Merchandise'
+        level: 2
+        order: 3
+        pages: '58-64'
+        summary: '展示品牌素材與周邊商品的應用範圍。'
+  - id: 'ch-04'
+    title: '2020 Think Summits'
+    level: 1
+    order: 4
+    pages: '65-69'
+    summary: '定義地方峰會的 objectives、audience、tagline usage 與 signature moments。'
+  - id: 'ch-05'
+    title: 'Event Elements and Applications'
+    level: 1
+    order: 5
+    pages: '70-146'
+    summary: '規範溝通物、社群、email、paid media、signage、registration、staging 與 topic zones 等活動素材。'
+    children:
+      - id: 'ch-05-01'
+        title: 'Communications'
+        level: 2
+        order: 1
+        pages: '72-99'
+        summary: '涵蓋 logos、buttons、colors、grids、Drupal、social、email、GIF、news tiles 與 paid media。'
+      - id: 'ch-05-02'
+        title: 'Signage, Wayfinding and Registration'
+        level: 2
+        order: 2
+        pages: '100-112'
+        summary: '規範主題、quickscreens、easel signs、註冊物、名牌、入口、banner 與 folder。'
+      - id: 'ch-05-03'
+        title: 'General Session and Staging'
+        level: 2
+        order: 3
+        pages: '113-120'
+        summary: '提供小中大型舞台、agenda、PowerPoint 與文件模板。'
+      - id: 'ch-05-04'
+        title: 'Think Topics and Zones'
+        level: 2
+        order: 4
+        pages: '121-146'
+        summary: '為 Business Partners、Cloud and Data、Smarter Business、Security、Infrastructure 等區域提供素材。'
+  - id: 'ch-06'
+    title: 'Environmental Enhancements'
+    level: 1
+    order: 6
+    pages: '147-156'
+    summary: '說明 brand hierarchy、Think brand moments、3D marks、IBM Rebus、Be Equal 與 Diversity 8-Bar 等環境強化物。'
+  - id: 'ch-07'
+    title: 'Digital Events'
+    level: 1
+    order: 7
+    pages: '157-177'
+    summary: '說明轉向數位活動的原因、IBM CHQ support 與數位平台規格。'
+  - id: 'ch-08'
+    title: 'Sponsors, Content and Approvals'
+    level: 1
+    order: 8
+    pages: '178-191'
+    summary: '規範贊助、內容與 activation、細節更新、審核流程與聯絡人。'

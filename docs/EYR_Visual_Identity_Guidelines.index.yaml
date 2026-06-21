@@ -1,0 +1,70 @@
+title: 'European Year of Rail 2021 Communications Toolkit: Visual identity guidelines'
+source: 'sources/EYR_Visual_Identity_Guidelines.pdf'
+version: 'Visual identity guidelines'
+date: '2021'
+language: 'en'
+summary: '這份文件定義 European Year of Rail 2021 活動識別的基本元素、視覺概念、影像使用與線上線下材料規則。'
+chapters:
+  - id: 'ch-01'
+    title: 'Basic elements'
+    level: 1
+    order: 1
+    pages: '2-4'
+    summary: '規範 EU emblem、campaign name、Noto Sans 字體與限定色彩系統，建立所有素材的共同識別基礎。'
+    children:
+      - id: 'ch-01-01'
+        title: 'EU emblem and campaign name'
+        level: 2
+        order: 1
+        pages: '2'
+        summary: '要求所有活動素材使用官方 EU emblem，並以一致白框樣式呈現 campaign name。'
+      - id: 'ch-01-02'
+        title: 'Typography and colours'
+        level: 2
+        order: 2
+        pages: '3-4'
+        summary: '指定 Noto Sans 與固定主色、輔色、EU 色彩，限制視覺材料不得使用其他顏色。'
+  - id: 'ch-02'
+    title: 'Visual concept and pictures'
+    level: 1
+    order: 2
+    pages: '5-8'
+    summary: '以綠色車門框架建立焦點與內容區，並規範圖片主體、視角、情緒與多元代表性。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Green frame and motif'
+        level: 2
+        order: 1
+        pages: '5-6'
+        summary: '用綠色 frame 區分 image subject zone 與 text/logo content zone，並以 passenger/freight motif 對應受眾。'
+      - id: 'ch-02-02'
+        title: 'How to use pictures'
+        level: 2
+        order: 2
+        pages: '7-8'
+        summary: '規定圖片需符合受眾、正向情緒、性別與族群平衡，以及合理的車門視角。'
+  - id: 'ch-03'
+    title: 'Online materials'
+    level: 1
+    order: 3
+    pages: '9'
+    summary: '定義社群素材尺寸與文字控制原則，要求視覺主體優先、完整訊息移至 caption。'
+  - id: 'ch-04'
+    title: 'Offline materials'
+    level: 1
+    order: 4
+    pages: '10-12'
+    summary: '規範 posters、partner logo、banners 與 roll-up banner 的文字位置、CTA 與聯名標誌呈現。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Posters'
+        level: 2
+        order: 1
+        pages: '10'
+        summary: '要求 poster 文字放在綠色 overlay 而非門內影像，並加入 CTA 與正確 partner logo white box。'
+      - id: 'ch-04-02'
+        title: 'Banners'
+        level: 2
+        order: 2
+        pages: '11-12'
+        summary: '展示 roll-up 與 wide banner 的實際應用，延續活動名稱、slogan 與 hashtag。'

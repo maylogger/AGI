@@ -1,0 +1,172 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Michelin_DISTRIBUTOR_GUIDE_2019
+index_ref: docs/Michelin_DISTRIBUTOR_GUIDE_2019.index.yaml
+note_ref: docs/Michelin_DISTRIBUTOR_GUIDE_2019.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Legal and Trademark
+- Governance
+- AI-Checkable Rules
+- Visual Identity
+- Design Tokens
+- Layout System
+- Accessibility
+- Compliance
+- Brand Strategy
+depth:
+  strategy: low
+  visual: medium
+  governance: high
+  top_level_chapter_count: 4
+  section_count: 3
+chapter_sequence:
+- id: ch-01
+  title: Purpose and Permission Scope
+  order: 1
+  level: 1
+- id: ch-02
+  title: Use of the Michelin Logo
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo Versions and Size
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Background and Protection Zone
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Advertising, Posters and Brochures
+  order: 3
+  level: 2
+- id: ch-03
+  title: Events and Digital
+  order: 3
+  level: 1
+- id: ch-04
+  title: Key Principles and Validation
+  order: 4
+  level: 1
+frameworks:
+- name: limited brand permission：relationship → product focus → allowed asset → forbidden brand environment → validation
+  chapter: ch-01
+  chapter_title: Purpose and Permission Scope
+- name: logo decision tree：media colour → background colour → logo version → minimum size → protection zone → product proximity
+  chapter: ch-02
+  chapter_title: Use of the Michelin Logo
+- name: preferred asset hierarchy
+  chapter: ch-02-01
+  chapter_title: Logo Versions and Size
+- name: background compatibility：homogeneous area → colour contrast → protected zone
+  chapter: ch-02-02
+  chapter_title: Background and Protection Zone
+- name: advertising hierarchy：retailer brand signs ad → Michelin logo near product → no co-signing
+  chapter: ch-02-03
+  chapter_title: Advertising, Posters and Brochures
+- name: channel rule：event presence / website / app / social → retailer identity first → Michelin content secondary → approve...
+  chapter: ch-03
+  chapter_title: Events and Digital
+- name: principle-based review：sales support → image quality → visual compliance → licensee validation
+  chapter: ch-04
+  chapter_title: Key Principles and Validation
+patterns:
+- name: 授權方只開放 logo，而封鎖 brand style 與 mascot，是高價值品牌控制第三方風險的常見模式。
+  chapter: ch-01
+  chapter_title: Purpose and Permission Scope
+- name: 以 preferred / exception 架構控制 logo 版本，避免經銷商把例外當常態。
+  chapter: ch-02
+  chapter_title: Use of the Michelin Logo
+- name: 將例外版本限定在 production constraints。
+  chapter: ch-02-01
+  chapter_title: Logo Versions and Size
+- name: 用 logo 字母高度作為 clear-space unit，便於跨尺寸縮放。
+  chapter: ch-02-02
+  chapter_title: Background and Protection Zone
+- name: 第三方品牌使用應限制在 product adjacency。
+  chapter: ch-02-03
+  chapter_title: Advertising, Posters and Brochures
+- name: 將品牌風格與內容資產分開治理，允許分享核准內容但禁止套用整體風格。
+  chapter: ch-03
+  chapter_title: Events and Digital
+- name: 短文件可在最後放 principle section，補足規則未覆蓋的新情境。
+  chapter: ch-04
+  chapter_title: Key Principles and Validation
+rules_ai_checkable:
+- module: ''
+  criterion: POS materials 只能使用 Michelin licensee 提供版本；溝通必須聚焦 MICHELIN 產品；沒有直接商業關係者不得使用品牌風格；logo 使用需由 licensee 與 Michelin
+    Lifestyle Marketing and Communication team 驗證。
+  chapter: ch-01
+  chapter_title: Purpose and Permission Scope
+- module: Visual Identity
+  criterion: print 中 MICHELIN name 寬度不得小於 30 mm；screen 不得小於 85 px；不得 tamper、alter、remove parts 或 change proportions；Michelin
+    Man 不得使用；logo 必須放在 MICHELIN 產品附近。
+  chapter: ch-02
+  chapter_title: Use of the Michelin Logo
+- module: Visual Identity
+  criterion: horizontal logo 優先；stacked only as exception；黑白廣告可用 monochrome；最小尺寸為 print 30 mm、screen 85 px。
+  chapter: ch-02-01
+  chapter_title: Logo Versions and Size
+- module: ''
+  criterion: 背景需為均質色區或單純區域；Michelin Man 顏色維持黑線白填；wordmark 在深色背景為白；support line 在黃色背景改藍；保護區內不可有干擾元素。
+  chapter: ch-02-02
+  chapter_title: Background and Protection Zone
+- module: ''
+  criterion: 廣告只能由 distributor/retailer 署名；不可由 MICHELIN 署名或共同署名；MICHELIN logo 必須緊鄰 MICHELIN branded products。
+  chapter: ch-02-03
+  chapter_title: Advertising, Posters and Brochures
+- module: ''
+  criterion: 展會概念與品牌風格必須屬於 distributor/retailer；digital 中 MICHELIN content 必須 secondary；只允許 dedicated MICHELIN product pages；MICHELIN
+    logo 必須小於 distributor/retailer logo；不得在主要 domain 或 URL 使用 Michelin。
+  chapter: ch-03
+  chapter_title: Events and Digital
+- module: ''
+  criterion: MICHELIN brand use 的唯一目標應是推廣可在銷售點取得的 MICHELIN products/services；不得用於競品；不得使用純價格導向、低品質、冗餘或不適當 logo / trademark
+    / Michelin Man；不當使用需識別與修正。
+  chapter: ch-04
+  chapter_title: Key Principles and Validation
+chapters:
+- id: ch-01
+  title: Purpose and Permission Scope
+  modules:
+  - Legal and Trademark
+  - Governance
+- id: ch-02
+  title: Use of the Michelin Logo
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02-01
+  title: Logo Versions and Size
+  modules:
+  - Design Tokens
+  - Visual Identity
+- id: ch-02-02
+  title: Background and Protection Zone
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Accessibility
+- id: ch-02-03
+  title: Advertising, Posters and Brochures
+  modules:
+  - Legal and Trademark
+  - Layout System
+- id: ch-03
+  title: Events and Digital
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Governance
+- id: ch-04
+  title: Key Principles and Validation
+  modules:
+  - Compliance
+  - Brand Strategy
+  - Governance

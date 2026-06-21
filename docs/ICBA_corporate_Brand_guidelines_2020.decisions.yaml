@@ -1,0 +1,67 @@
+# L3 決策卡 sidecar — ICBA Brand Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: ICBA_corporate_Brand_guidelines_2020
+decisions:
+  - id: dp-restrained-palette-for-trust
+    title: 用克制的配色與權威主色傳達信任
+    problem:
+      statement: 受規範、以信任為核心的機構，若用高彩度或隨意配色會削弱權威與可信度。
+      signals: [trust, regulatory_compliance, public_trust, consistency_across_partners]
+    solution:
+      module: Color System
+      move: 以深色／中性權威主色為主、點綴色克制，並把色彩限定為列出的核准值
+      layer: visual_core
+    reason:
+      - 信任型品牌的色彩應強調穩定與權威而非情緒刺激
+      - 限定主色與比例可在多市場維持一致辨識
+      - 色彩可表達服務分類，但主品牌色必須穩定
+    applicable_when:
+      industries: [finance, public_sector]
+      brand_types: [institutional_public_trust, heritage_legacy]
+      conditions: [trust, regulatory_compliance]
+      archetypes: [brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Color System]
+      enables: [Accessibility, Design Tokens]
+    anti_patterns:
+      - 自行新增色彩或使用未列出的色值
+    evidence:
+      - brand_id: ICBA_corporate_Brand_guidelines_2020
+        chapter: ch-04
+        excerpt: "Primary palette 應用於所有 ICBA branding，secondary colors 只能作為 ICBA blue 旁的 accent，不得用 secondary color 取代 ICBA blue 的主導地位；以主色 + service pillar accent 維持機構信任。"
+    status: extracted
+
+  - id: dp-approval-gate-for-exceptions
+    title: 例外不是漏洞，用審核閘門把差異收進可治理的模組
+    problem:
+      statement: 規則無法窮舉所有情境，現實組織總會有例外；若放任各單位自行決定，例外會逐步擴張成破壞系統的破口。
+      signals: [exception_handling, multi_unit_consistency, governance, scaling_risk]
+    solution:
+      module: Governance
+      move: 例外章節須明確寫出「為何例外／何時可用／不可擴張到哪裡」，並交由品牌管理單位審核
+      layer: governance
+    reason:
+      - 例外章節應寫出「為何例外」「何時可用」「不可擴張到哪裡」
+      - 變體存在是為了解決限制，不是為了任意風格化
+      - 品牌規範需要審核節點，否則指南只會停留在參考文件
+    applicable_when:
+      industries: [public_sector, finance]
+      brand_types: [institutional_public_trust, platform_ecosystem, heritage_legacy]
+      conditions: [multi_unit_consistency, exception_handling]
+      archetypes: [multi_brand_architecture, corporate_toolkit]
+    dependencies:
+      requires: [Governance]
+      enables: []
+    anti_patterns:
+      - 例外只寫「可以這樣做」卻不寫適用邊界與審核者
+      - 各單位把一次性例外當成通用替代方案沿用
+    evidence:
+      - brand_id: ICBA_corporate_Brand_guidelines_2020
+        chapter: ch-03-01
+        excerpt: "一般 ICBA 品牌素材應使用 primary logo，secondary logo 僅在空間受限或內部 staff-facing 文件使用；變體存在是為了解決限制，不是為了任意風格化。"
+      - brand_id: ICBA_corporate_Brand_guidelines_2020
+        chapter: ch-01
+        excerpt: "所有對外 mass production/dissemination 素材需在最早 proof stage 交由行銷支援人員審核，審核至少預留兩個工作天，把品牌一致性轉成可治理的審核節點。"
+    status: extracted

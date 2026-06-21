@@ -1,0 +1,126 @@
+# AGI Module Knowledge Schema（L2 固定知識層）
+#
+# 每個 guideline 模組一個檔：research/modules/<module-slug>.yaml
+# 重點不只是「這個模組是什麼」，而是：
+#   1. foundational（固定知識）還是 contextual（情境知識）
+#   2. 它解決什麼問題、為何幾乎所有品牌都需要（若 foundational）
+#   3. driven_by：它的「規格與傾向」由前面哪些策略決策推導
+#      （回應使用者重點：Typography/Color 等固定模組的方向，應由
+#       品牌人格、定位等前置決策決定，而不是固定樣板）
+
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: AGI Module Knowledge
+type: object
+required:
+  - module
+  - foundational
+  - purpose
+properties:
+  module:
+    type: string
+    description: 模組名稱，須與 module taxonomy 一致（如 Typography System）
+
+  slug:
+    type: string
+    description: 檔名用 kebab-case，例如 typography-system
+
+  foundational:
+    type: boolean
+    description: >
+      true = 固定知識（幾乎所有品牌都有，如 Typography、Color、Logo、Accessibility、Governance）；
+      false = 情境知識（依產業／品牌類型才出現）
+
+  layer:
+    type: string
+    enum: [strategy, language, visual_core, visual_extended, product, governance]
+
+  purpose:
+    type: string
+    description: 這個模組存在的根本目的（繁體中文）
+
+  problem_when_absent:
+    type: string
+    description: 若沒有這個模組會發生什麼問題（佐證它為何被需要）
+
+  corpus_frequency:
+    type: object
+    description: 來自 corpus_report 的出現頻率（可選，供推理排序）
+    properties:
+      doc_count:
+        type: integer
+      pct:
+        type: number
+
+  driven_by:
+    type: array
+    description: >
+      決策驅動映射：此模組的規格／傾向由哪些前置決策決定。
+      這是「固定知識也要依前面決策詳細說明」的形式化。
+    items:
+      type: object
+      required: [input, affects]
+      properties:
+        input:
+          type: string
+          description: 上游決策輸入，例如 brand_personality、brand_positioning、audience
+        affects:
+          type: string
+          description: 影響此模組的哪個面向，例如 typeface_personality、palette_temperature
+        mapping:
+          type: array
+          description: 輸入值 → 傾向 的對照（描述方向，不指定品牌專屬數值）
+          items:
+            type: object
+            properties:
+              when:
+                type: array
+                description: 上游輸入的特徵值（如 [trustworthy, institutional]）
+                items:
+                  type: string
+              tend_to:
+                type: array
+                description: 此情況下該模組常見的設計傾向
+                items:
+                  type: string
+              evidence:
+                type: array
+                description: 支持此映射的證據（brand_id + chapter）
+                items:
+                  type: object
+                  required: [brand_id]
+                  properties:
+                    brand_id:
+                      type: string
+                    chapter:
+                      type: string
+
+  spec_dimensions:
+    type: array
+    description: 此模組通常需要定義的規格面向（給 Coach 撰寫初稿時當 checklist）
+    items:
+      type: string
+
+  related_decision_patterns:
+    type: array
+    description: 與此模組相關的決策卡 id（dp-）
+    items:
+      type: string
+
+  dependencies:
+    type: object
+    description: 與其他模組的關係（與 module_graph 對齊）
+    properties:
+      requires:
+        type: array
+        items:
+          type: string
+      recommends:
+        type: array
+        items:
+          type: string
+
+  reference_brands:
+    type: array
+    description: 此模組處理得特別好的先例（供 Coach 引用結構）
+    items:
+      type: string

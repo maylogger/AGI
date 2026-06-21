@@ -1,0 +1,61 @@
+title: "Renasant Bank Visual Standards"
+source: "sources/RenasantBank_brandstandards_2020.pdf"
+date: "2020"
+language: "en"
+summary: "Renasant Bank 的視覺標準，聚焦品牌保護、Logo 與 tagline、清楚留白與比例、字體、色彩、圖樣、寫作風格與品牌素材治理。"
+chapters:
+  - id: "ch-01"
+    title: "Protecting Our Brand"
+    level: 1
+    order: 1
+    pages: "3"
+    summary: "說明品牌代表安全、可靠與理解客戶及社群需求，因此需要嚴格視覺與文體標準。"
+  - id: "ch-02"
+    title: "Logo System"
+    level: 1
+    order: 2
+    pages: "4-8"
+    summary: "定義 Logo 色彩版本、tagline、clear space、proportions、禁止用法、元件名稱與 department logos。"
+    children:
+      - id: "ch-02-01"
+        title: "Our Logo and Logo with Tagline"
+        level: 2
+        order: 1
+        pages: "4-5"
+        summary: "規範主要、次要、單色 Logo 以及 Understanding You tagline 的商標符號與色彩。"
+      - id: "ch-02-02"
+        title: "Clear Space, Proportions and Unacceptable Usage"
+        level: 2
+        order: 2
+        pages: "6-7"
+        summary: "以 RENASANT 字高建立留白，要求鎖定比例並列出不可旋轉、重繪、拆分等禁用。"
+      - id: "ch-02-03"
+        title: "Points of Reference and Department Logos"
+        level: 2
+        order: 3
+        pages: "8"
+        summary: "命名 Logo 元件並說明 department logos 需經 Marketing 核准與追加規範。"
+  - id: "ch-03"
+    title: "Typography"
+    level: 1
+    order: 3
+    pages: "9"
+    summary: "定義 Trajan Pro Bold、Univers LT Std、Glypha LT Std、Archivo Narrow 與 Muli 的使用邊界。"
+  - id: "ch-04"
+    title: "Color Palette and Patterns"
+    level: 1
+    order: 4
+    pages: "10-11"
+    summary: "定義 RNST Dark Blue、Flame Green、Light Blue、Medium Blue、Navy、輔助色與 patterns。"
+  - id: "ch-05"
+    title: "Writing Style"
+    level: 1
+    order: 5
+    pages: "12"
+    summary: "定義用詞、Oxford comma、active voice、phone number、website、address 等寫作規則。"
+  - id: "ch-06"
+    title: "Brand Element Requests and Inquiries"
+    level: 1
+    order: 6
+    pages: "13"
+    summary: "說明官方素材需向 Marketing 取得，工作檔不共享，例外需經行政管道與 Marketing 核准。"

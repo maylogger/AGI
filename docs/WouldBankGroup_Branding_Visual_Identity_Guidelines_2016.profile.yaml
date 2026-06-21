@@ -1,0 +1,212 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: WouldBankGroup_Branding_Visual_Identity_Guidelines_2016
+index_ref: docs/WouldBankGroup_Branding_Visual_Identity_Guidelines_2016.index.yaml
+note_ref: docs/WouldBankGroup_Branding_Visual_Identity_Guidelines_2016.note.md
+archetype: multi_brand_architecture
+industry: public_sector
+modules:
+- Brand Architecture
+- Brand Strategy
+- Governance
+- Compliance
+- Knowledge Architecture
+- AI-Checkable Rules
+- Layout System
+- Publication Design
+depth:
+  strategy: medium
+  visual: medium
+  governance: medium
+  top_level_chapter_count: 6
+  section_count: 19
+chapter_sequence:
+- id: ch-01
+  title: Defining the Brand
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Understanding the World Bank Group
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Access All WBG Branding Assets Online
+  order: 2
+  level: 2
+- id: ch-02
+  title: Visual Identity
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logos Overview and Distinction
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: WBG Logo and Globe
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Corporate Colors
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Fonts
+  order: 4
+  level: 2
+- id: ch-03
+  title: Partnered Brands and Logo Variations
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Logo Hierarchy
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Institution Seals and Member Brands
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Integrated Entities and Special Cases
+  order: 3
+  level: 2
+- id: ch-04
+  title: Partnerships and Products Branding
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Category System and Unifiers
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Category 1 Partnerships
+  order: 2
+  level: 2
+- id: ch-04-03
+  title: Category 2 Partnerships
+  order: 3
+  level: 2
+- id: ch-04-04
+  title: Category 3 Products
+  order: 4
+  level: 2
+- id: ch-05
+  title: Usage Examples
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Templates and Business Communications
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Digital, Social and Special Uses
+  order: 2
+  level: 2
+- id: ch-05-03
+  title: Logo Usage Violations
+  order: 3
+  level: 2
+- id: ch-06
+  title: Publications
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Logo Placement
+  order: 1
+  level: 2
+- id: ch-06-02
+  title: Logo Color and Size
+  order: 2
+  level: 2
+- id: ch-06-03
+  title: Usage Samples
+  order: 3
+  level: 2
+frameworks:
+- name: 共同策略為最高層，成員機構為能力節點，對外材料依代表主體選擇識別
+  chapter: ch-01-01
+  chapter_title: Understanding the World Bank Group
+- name: Decision tree：單一機構活動 → member logo；兩個以上機構或總裁/共同策略活動 → WBG logo
+  chapter: ch-02-01
+  chapter_title: Logos Overview and Distinction
+- name: Exception management：一般規則、允許用例、不可作為 general replacement、需品牌審核
+  chapter: ch-03-03
+  chapter_title: Integrated Entities and Special Cases
+- name: 分類框架同時看 governance、funding、public presence、WBG role、partner role
+  chapter: ch-04-01
+  chapter_title: Category System and Unifiers
+- name: Violation taxonomy：alteration、unauthorized creation、component separation、lookalike creation、outdated asset use
+  chapter: ch-05-03
+  chapter_title: Logo Usage Violations
+- name: Placement decision：cover corner vs centered; spine globe vs typeset name; cosponsor contract vs acknowledgment text
+  chapter: ch-06-01
+  chapter_title: Logo Placement
+patterns:
+- name: 以 mission-driven umbrella narrative 統一多組織品牌。
+  chapter: ch-01-01
+  chapter_title: Understanding the World Bank Group
+- name: 用 usage criteria 綁定 logo 選擇，可複用於任何 house of brands。
+  chapter: ch-02-01
+  chapter_title: Logos Overview and Distinction
+- name: secondary line endorsement、funding/visibility exception、autonomous body visual variation。
+  chapter: ch-03-03
+  chapter_title: Integrated Entities and Special Cases
+- name: 分類表 + unifier wording library。
+  chapter: ch-04-01
+  chapter_title: Category System and Unifiers
+- name: negative checklist 可複用於所有 logo guideline。
+  chapter: ch-05-03
+  chapter_title: Logo Usage Violations
+- name: logo in lower-left with equal trim/spine distance、narrow spine type substitution。
+  chapter: ch-06-01
+  chapter_title: Logo Placement
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：一般外部 flagship publication 應用 WBG corporate logo，而非 GP sublogo；IFC visibility lockup 只可用於列明的 advisory product
+    場景；Treasury 變體不可由其他單位複製。
+  chapter: ch-03-03
+  chapter_title: Integrated Entities and Special Cases
+- module: ''
+  criterion: AI 可檢查：若 program 無 distinct presence apart from WBG，應判為 Category 2；若外部產品有 own logo，需搭配「An Innovation of」或類似 unifier；unifier
+    文字不可任意改成暗示錯誤權責的 wording。
+  chapter: ch-04-01
+  chapter_title: Category System and Unifiers
+- module: Visual Identity
+  criterion: AI 可檢查：cosponsor logo 若存在，應依 contract 或置於 back cover 指定區域；contributors 最佳作法是前言/致謝文字，不是封面 logo；narrow spine less
+    than 3/8 inch 可用 typeset World Bank Group 取代 globe。
+  chapter: ch-06-01
+  chapter_title: Logo Placement
+chapters:
+- id: ch-01-01
+  title: Understanding the World Bank Group
+  modules:
+  - Brand Architecture
+  - Brand Strategy
+- id: ch-02-01
+  title: Logos Overview and Distinction
+  modules:
+  - Brand Architecture
+  - Governance
+- id: ch-03-03
+  title: Integrated Entities and Special Cases
+  modules:
+  - Brand Architecture
+  - Compliance
+  - Governance
+- id: ch-04-01
+  title: Category System and Unifiers
+  modules:
+  - Knowledge Architecture
+  - Governance
+- id: ch-05-03
+  title: Logo Usage Violations
+  modules:
+  - AI-Checkable Rules
+  - Compliance
+- id: ch-06-01
+  title: Logo Placement
+  modules:
+  - Layout System
+  - Publication Design

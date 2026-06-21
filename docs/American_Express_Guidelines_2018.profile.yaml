@@ -1,0 +1,260 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: American_Express_Guidelines_2018
+index_ref: docs/American_Express_Guidelines_2018.index.yaml
+note_ref: docs/American_Express_Guidelines_2018.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- AI-Checkable Rules
+- Typography System
+- Color System
+- Visual Identity
+- Governance
+- Design Tokens
+- Content Design
+- Messaging
+- Photography System
+- Brand Strategy
+- Visual Language
+- Content Safety
+- Legal and Trademark
+- Compliance
+- Product Language
+- Layout System
+- Measurement
+- Operations
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 4
+  section_count: 8
+chapter_sequence:
+- id: ch-01
+  title: Essential Visual Identity Elements
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Blue Box Logo and Alternate Logo
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Taglines and Look Dos and Don’ts
+  order: 2
+  level: 2
+- id: ch-02
+  title: Photography and Relationship Device
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Photography Strategy and Composition
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Relationship Device Rules
+  order: 2
+  level: 2
+- id: ch-03
+  title: Card Art in Marketing
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Card Visibility and Accuracy
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Co-brand and Competitor Contexts
+  order: 2
+  level: 2
+- id: ch-04
+  title: Brand Review Governance
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: ATL and Touchpoint Review
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Submission Timing and Outcomes
+  order: 2
+  level: 2
+frameworks:
+- name: 使用「核心資產 -> 尺寸級距 -> 背景/留白 -> 錯誤排除」框架；標誌版本依高度選擇，tagline 依通訊目的決定是否必要
+  chapter: ch-01
+  chapter_title: Essential Visual Identity Elements
+- name: 尺寸驅動版本選擇框架；核心標誌優先、替代標誌補位
+  chapter: ch-01-01
+  chapter_title: Blue Box Logo and Alternate Logo
+- name: 以「通訊目的 -> 是否 promotional -> 空間條件 -> 使用版本」決策
+  chapter: ch-01-02
+  chapter_title: Taglines and Look Dos and Don’ts
+- name: Hero relationship framework：人物主角、關係裝置、品牌標誌、文案與服務角色共同建立敘事
+  chapter: ch-02
+  chapter_title: Photography and Relationship Device
+- name: Subject-role framework：Cardmember = hero，Card/service = enabler，moment = focal point
+  chapter: ch-02-01
+  chapter_title: Photography Strategy and Composition
+- name: Device integrity framework：可定制文字 + 不可改筆觸 + 可裁切邊界 + 可見性必備元素
+  chapter: ch-02-02
+  chapter_title: Relationship Device Rules
+- name: Product asset integrity framework：可見性、準確性、資料安全、相對位置、禁止變形
+  chapter: ch-03
+  chapter_title: Card Art in Marketing
+- name: Competitive adjacency framework：同場呈現時檢查位置、遮擋、大小、benefit prominence
+  chapter: ch-03-02
+  chapter_title: Co-brand and Competitor Contexts
+- name: Touchpoint approval matrix：media type -> required review stage -> outcome -> resubmission requirement
+  chapter: ch-04
+  chapter_title: Brand Review Governance
+patterns:
+- name: asset scale system
+  chapter: ch-01
+  chapter_title: Essential Visual Identity Elements
+- name: minimum clearspace matrix
+  chapter: ch-01
+  chapter_title: Essential Visual Identity Elements
+- name: do/don’t page
+  chapter: ch-01
+  chapter_title: Essential Visual Identity Elements
+- name: context-based asset substitution
+  chapter: ch-01
+  chapter_title: Essential Visual Identity Elements
+- name: approved file format table
+  chapter: ch-01
+  chapter_title: Essential Visual Identity Elements
+- name: small/regular/large/extra large 的 scale token 可抽象成 logo responsive asset set。
+  chapter: ch-01-01
+  chapter_title: Blue Box Logo and Alternate Logo
+- name: tagline 可被設計成具有使用條件的 message component，而不是固定 brand footer。
+  chapter: ch-01-02
+  chapter_title: Taglines and Look Dos and Don’ts
+- name: hero subject
+  chapter: ch-02
+  chapter_title: Photography and Relationship Device
+- name: shared experience
+  chapter: ch-02
+  chapter_title: Photography and Relationship Device
+- name: uncluttered composition
+  chapter: ch-02
+  chapter_title: Photography and Relationship Device
+- name: diversity criteria
+  chapter: ch-02
+  chapter_title: Photography and Relationship Device
+- name: graphic device integration
+  chapter: ch-02
+  chapter_title: Photography and Relationship Device
+- name: 可複用為 lifestyle photography checklist。
+  chapter: ch-02-01
+  chapter_title: Photography Strategy and Composition
+- name: 可複用為 brand device governance，區分可變欄位與不可變圖形資產。
+  chapter: ch-02-02
+  chapter_title: Relationship Device Rules
+- name: 可複用到任何實體產品影像規範，如裝置、包裝、票卡、會員證。
+  chapter: ch-03
+  chapter_title: Card Art in Marketing
+- name: 品牌在 marketplace、comparison table 或 portfolio page 中可採用相同優先權規則。
+  chapter: ch-03-02
+  chapter_title: Co-brand and Competitor Contexts
+- name: 可複用為品牌審核工作流，適合導入 submission checklist、SLA tracking 與 approval state machine。
+  chapter: ch-04
+  chapter_title: Brand Review Governance
+rules_ai_checkable:
+- module: ''
+  criterion: Blue Box small scale 不得低於 .325 inch 或 40 px；Alternate logo 僅用於小型數位/社群/app/難讀空間且不得低於 .175 inch 或 22 px；Blue Box
+    高度 .325-.45 inch/40-50 px 用 small，.45-1 inch/50-110 px 用 regular，1-4.25 inch/110-410 px 用 large，4.25 inch/410 px 以上用 extra
+    large；logotype clearspace 至少 3X，Blue Box 與元素距離至少 1/3X，與 bank logo 距離至少 1.5X；tagline cap-height 不得低於 .05 inch 或 7 px；標誌與標語不得重繪、改色、改字體、加特效或違反留白。
+  chapter: ch-01
+  chapter_title: Essential Visual Identity Elements
+- module: Visual Identity
+  criterion: 若需要低於 40 px 的 Blue Box，僅可在 22-40 px 範圍改用 Alternate；B/W files 只能用於單色黑白印刷；註冊標記僅在指定國家與位置使用。
+  chapter: ch-01-01
+  chapter_title: Blue Box Logo and Alternate Logo
+- module: ''
+  criterion: promotional/offering/advertising 原則上使用 tagline；transactional/informational 或空間不足可免；horizontal configuration 優先；不可換色、換字體、放在繁忙影像上或與
+    issuer logo 不當 lock-up。
+  chapter: ch-01-02
+  chapter_title: Taglines and Look Dos and Don’ts
+- module: ''
+  criterion: 影像應至少保留廣告元素可讀空間；避免黑白/濾鏡/過度擺拍/忙亂背景/極近特寫；RD 每件作品只能使用一次；RD 只能圍繞人的頭部，不得圍繞手、物件、多人頭部或兒童；American Express logotype、customer
+    name、oval 與至少兩邊須保持可見。
+  chapter: ch-02
+  chapter_title: Photography and Relationship Device
+- module: ''
+  criterion: RD 只能出現一次；logotype 不可裁切；customer name、oval 與至少兩邊需可見；outer frame brush strokes 不可改；只可裁掉兩邊；不得套在手、物件、多個人頭或兒童上。
+  chapter: ch-02-02
+  chapter_title: Relationship Device Rules
+- module: ''
+  criterion: 卡面 artwork 不得縮小超過 50%；Blue Box 或 Centurion 必須可見；使用非有效帳號；若卡面有人名需取得 permission/release；mock card 必須標示 SAMPLE/VOID/非有效卡且不得含
+    CID、expiration date、valid through date 或 magnetic stripe；不得旋轉、倒置、鏡像、加入文案/圖像、做成其他物件。
+  chapter: ch-03
+  chapter_title: Card Art in Marketing
+- module: Governance
+  criterion: 所有 marketing materials 必須送 American Express representative；ATL 非 TV/video 需在 brief、concept/creative proposals、final
+    execution 三階段送審；TVC/video 需 brief、storyboard、rough cut、final execution；新素材 final layout 需 production 前送審；市面素材超過一年需重審；一般
+    review SLA 為 3-5 business days，resubmission 通常 3 business days。
+  chapter: ch-04
+  chapter_title: Brand Review Governance
+chapters:
+- id: ch-01
+  title: Essential Visual Identity Elements
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Color System
+  - Visual Identity
+  - Governance
+- id: ch-01-01
+  title: Blue Box Logo and Alternate Logo
+  modules:
+  - AI-Checkable Rules
+  - Design Tokens
+  - Visual Identity
+- id: ch-01-02
+  title: Taglines and Look Dos and Don’ts
+  modules:
+  - Content Design
+  - Messaging
+  - Governance
+- id: ch-02
+  title: Photography and Relationship Device
+  modules:
+  - Photography System
+  - AI-Checkable Rules
+  - Brand Strategy
+  - Visual Language
+- id: ch-02-01
+  title: Photography Strategy and Composition
+  modules:
+  - Photography System
+  - AI-Checkable Rules
+  - Content Safety
+- id: ch-02-02
+  title: Relationship Device Rules
+  modules:
+  - AI-Checkable Rules
+  - Visual Language
+  - Governance
+- id: ch-03
+  title: Card Art in Marketing
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Compliance
+  - Product Language
+- id: ch-03-02
+  title: Co-brand and Competitor Contexts
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Brand Strategy
+- id: ch-04
+  title: Brand Review Governance
+  modules:
+  - Measurement
+  - Compliance
+  - Operations
+  - Governance

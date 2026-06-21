@@ -1,0 +1,80 @@
+title: 'The Economist Group Brand Style Guide'
+source: 'sources/The_Economist_Group_2017.pdf'
+version: 'V1.0'
+date: 'October 2017'
+language: 'en'
+summary: '這份 The Economist Group 品牌風格指南定義品牌敘事、字體、logo、色彩、signature element、illustration、iconography、UI components 與 e-newsletter 範例。'
+chapters:
+  - id: 'ch-01'
+    title: 'Our Brand'
+    level: 1
+    order: 1
+    pages: '3-6'
+    summary: '說明 The Economist 的獨立新聞立場、歷史、全球讀者、數位產品與內容範圍。'
+  - id: 'ch-02'
+    title: 'Typography'
+    level: 1
+    order: 2
+    pages: '7-8'
+    summary: '定義 Milo Serif 與 Econ Sans 的使用場景、字級、leading、kerning、tracking、數字樣式與 web-safe 替代。'
+  - id: 'ch-03'
+    title: 'Logos and Positioning'
+    level: 1
+    order: 3
+    pages: '9-22'
+    summary: '規範 print/digital logo、keyline versions、group logos、editorial logos、sub-brand logos、avatars、app icons 與大型版位 sizing。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Core Logo Rules'
+        level: 2
+        order: 1
+        pages: '9-12'
+        summary: '定義 print/digital logo 的 artwork、clear space、minimum size、colour 與 keyline 尺寸。'
+      - id: 'ch-03-02'
+        title: 'Group, Editorial and Sub-Brand Logos'
+        level: 2
+        order: 2
+        pages: '13-20'
+        summary: '管理 Group logo、editorial logos、media business logos、EIU logos、social avatars 與 app icons。'
+      - id: 'ch-03-03'
+        title: 'Logo Sizing'
+        level: 2
+        order: 3
+        pages: '21-22'
+        summary: '依 print material、online ads 與大型戶外版位調整 logo 尺寸，使其與版面比例相稱。'
+  - id: 'ch-04'
+    title: 'Colour'
+    level: 1
+    order: 4
+    pages: '23-24'
+    summary: '定義 print 與 digital 的 primary/secondary palette，並強調 Economist Red 應簡潔、節制地使用。'
+  - id: 'ch-05'
+    title: 'Signature Element'
+    level: 1
+    order: 5
+    pages: '25'
+    summary: '定義 brand tag/accent rule 的比例，用於聚焦標題、凸顯功能並調節文字密集頁面節奏。'
+  - id: 'ch-06'
+    title: 'Illustrative Style'
+    level: 1
+    order: 6
+    pages: '26'
+    summary: '鼓勵 ideas-led contemporary illustration，並禁止更改、扭曲、增添或改造 supplied illustrations。'
+  - id: 'ch-07'
+    title: 'Iconography'
+    level: 1
+    order: 7
+    pages: '27-28'
+    summary: '指定使用 Google Material Design icon set，並規範 icon 在圓形容器中的位置與尺寸。'
+  - id: 'ch-08'
+    title: 'User Interface Components'
+    level: 1
+    order: 8
+    pages: '29'
+    summary: '定義 website CTA buttons 與 editorial CTA buttons 的高度、色彩、字體、padding、字級、圓角與 hover 狀態。'
+  - id: 'ch-09'
+    title: 'E-newsletters'
+    level: 1
+    order: 9
+    pages: '30-32'
+    summary: '展示 Daily Dispatch、Editors’ Picks、Seriously Curious 等 e-newsletter，並使用 Georgia 與 Helvetica web-safe fonts。'

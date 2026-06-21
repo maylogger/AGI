@@ -1,0 +1,186 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: WM_Brand_Guidelines
+index_ref: docs/WM_Brand_Guidelines.index.yaml
+note_ref: docs/WM_Brand_Guidelines.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Typography System
+- Visual Identity
+- Governance
+- AI-Checkable Rules
+- Design Tokens
+- Accessibility
+- Color System
+- Content Design
+- Operations
+- Legal and Trademark
+- Brand Architecture
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 7
+  section_count: 2
+chapter_sequence:
+- id: ch-01
+  title: WarnerMedia Lockup Usage
+  order: 1
+  level: 1
+- id: ch-02
+  title: Logo Variations and Technical Specifications
+  order: 2
+  level: 1
+- id: ch-03
+  title: Logo Misuse and Background Control
+  order: 3
+  level: 1
+- id: ch-04
+  title: Color Palette and Usage
+  order: 4
+  level: 1
+- id: ch-05
+  title: Brand Typography and Lettering
+  order: 5
+  level: 1
+- id: ch-06
+  title: Logo File Nomenclature
+  order: 6
+  level: 1
+- id: ch-07
+  title: A WarnerMedia Company Branded Divisional Tagline
+  order: 7
+  level: 1
+- id: ch-07-01
+  title: Tagline Technical Specifications
+  order: 1
+  level: 2
+- id: ch-07-02
+  title: Tagline Misuse and File Nomenclature
+  order: 2
+  level: 2
+frameworks:
+- name: Typographic lockup governance
+  chapter: ch-01
+  chapter_title: WarnerMedia Lockup Usage
+- name: Asset variant matrix by state, color space, format
+  chapter: ch-02
+  chapter_title: Logo Variations and Technical Specifications
+- name: Approved artwork + contrast validation
+  chapter: ch-03
+  chapter_title: Logo Misuse and Background Control
+- name: Neutral primary palette + controlled accent
+  chapter: ch-04
+  chapter_title: Color Palette and Usage
+- name: Corporate typeface + lexical brand name rule
+  chapter: ch-05
+  chapter_title: Brand Typography and Lettering
+- name: Semantic asset naming convention
+  chapter: ch-06
+  chapter_title: Logo File Nomenclature
+- name: Corporate endorsement lockup system
+  chapter: ch-07
+  chapter_title: A WarnerMedia Company Branded Divisional Tagline
+patterns:
+- name: 用少數核准版本處理多數版面限制。
+  chapter: ch-01
+  chapter_title: WarnerMedia Lockup Usage
+- name: 把 downloadable assets 的命名與技術限制放進 guideline，降低錯拿檔案風險。
+  chapter: ch-02
+  chapter_title: Logo Variations and Technical Specifications
+- name: 用正確/錯誤背景並列，是視覺識別常見審核模式。
+  chapter: ch-03
+  chapter_title: Logo Misuse and Background Control
+- name: 用百分比 guidance 防止 accent color 濫用。
+  chapter: ch-04
+  chapter_title: Color Palette and Usage
+- name: 同時規範 type system 與品牌名 spelling/casing。
+  chapter: ch-05
+  chapter_title: Brand Typography and Lettering
+- name: 以固定 token 順序編碼 logo metadata。
+  chapter: ch-06
+  chapter_title: Logo File Nomenclature
+- name: 使用 endorsed-by parent brand tagline 管理多事業體關係。
+  chapter: ch-07
+  chapter_title: A WarnerMedia Company Branded Divisional Tagline
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：lockup 不得被 altered、adjusted、modified；空間允許時優先 horizontal 1-line；只可在核准版本中選擇，不得自建 lockup。
+  chapter: ch-01
+  chapter_title: WarnerMedia Lockup Usage
+- module: Visual Identity
+  criterion: AI 可檢查：1-line lockup print height > 0.075 inch，onscreen > 9px；2-line alternate print height > 0.1556 inch，onscreen
+    > 20px；clear space 至少等於 Warner cap height；正片使用 Black/Grey，反白使用 White/Grey。
+  chapter: ch-02
+  chapter_title: Logo Variations and Technical Specifications
+- module: Visual Identity
+  criterion: AI 可檢查：不得改變 logo color、typeface、word spacing、element size relationship；不得創建新 lockup；白/淺背景用 positive version，深背景用
+    reverse version；不得放在讓 identity 難以閱讀的顏色、圖案或照片上；one-color 需 multi-color unavailable 或 written consent。
+  chapter: ch-03
+  chapter_title: Logo Misuse and Background Control
+- module: Color System
+  criterion: 'AI 可檢查：Black #000000、Grey #959595、White #ffffff、Blue #00a0dd；主色使用應以黑/灰/白為主，Blue 約 10% 且作 accent；所有 communications
+    and marketing materials 應主要使用三主色不得偏離。'
+  chapter: ch-04
+  chapter_title: Color Palette and Usage
+- module: Typography System
+  criterion: AI 可檢查：文字中應寫 `WarnerMedia`，不得寫成 `Warner Media`；一般通訊設計應使用 AT&T Aleck Sans；字標 lockup 不應以非核准字體重做。
+  chapter: ch-05
+  chapter_title: Brand Typography and Lettering
+- module: Visual Identity
+  criterion: AI 可檢查：不得 rename logo artwork files；EPS 用於最高品質 offset/digital print/special applications；JPG 用於 web/onscreen
+    或 PowerPoint/Word 替代；PNG 用於 PowerPoint、Word 與 onscreen 且需要透明支援。
+  chapter: ch-06
+  chapter_title: Logo File Nomenclature
+- module: Brand Strategy
+  criterion: AI 可檢查：非純文字表示時應使用 downloadable logo files；文字形式不得 relegated to mouse type 或 buried with legal/copyright information；所有非文字使用需遵循
+    guideline artwork；tagline standard presentation 應為 2-color format，one-color 例外需 multi-color unavailable 或 written consent。
+  chapter: ch-07
+  chapter_title: A WarnerMedia Company Branded Divisional Tagline
+chapters:
+- id: ch-01
+  title: WarnerMedia Lockup Usage
+  modules:
+  - Typography System
+  - Visual Identity
+  - Governance
+- id: ch-02
+  title: Logo Variations and Technical Specifications
+  modules:
+  - AI-Checkable Rules
+  - Design Tokens
+  - Visual Identity
+- id: ch-03
+  title: Logo Misuse and Background Control
+  modules:
+  - AI-Checkable Rules
+  - Accessibility
+  - Visual Identity
+- id: ch-04
+  title: Color Palette and Usage
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Design Tokens
+- id: ch-05
+  title: Brand Typography and Lettering
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Content Design
+- id: ch-06
+  title: Logo File Nomenclature
+  modules:
+  - Design Tokens
+  - Operations
+  - Governance
+- id: ch-07
+  title: A WarnerMedia Company Branded Divisional Tagline
+  modules:
+  - Legal and Trademark
+  - Brand Architecture
+  - Governance

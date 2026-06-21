@@ -1,0 +1,271 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: The_Economist_Group_2017
+index_ref: docs/The_Economist_Group_2017.index.yaml
+note_ref: docs/The_Economist_Group_2017.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Brand Strategy
+- Content Design
+- Knowledge Architecture
+- Typography System
+- Design Tokens
+- Brand Architecture
+- AI-Checkable Rules
+- Visual Identity
+- Iconography System
+- Layout System
+- Color System
+- Visual Language
+- Illustration System
+- Governance
+- UI Components
+- Operations
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 9
+  section_count: 3
+chapter_sequence:
+- id: ch-01
+  title: Our Brand
+  order: 1
+  level: 1
+- id: ch-02
+  title: Typography
+  order: 2
+  level: 1
+- id: ch-03
+  title: Logos and Positioning
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Core Logo Rules
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Group, Editorial and Sub-Brand Logos
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Logo Sizing
+  order: 3
+  level: 2
+- id: ch-04
+  title: Colour
+  order: 4
+  level: 1
+- id: ch-05
+  title: Signature Element
+  order: 5
+  level: 1
+- id: ch-06
+  title: Illustrative Style
+  order: 6
+  level: 1
+- id: ch-07
+  title: Iconography
+  order: 7
+  level: 1
+- id: ch-08
+  title: User Interface Components
+  order: 8
+  level: 1
+- id: ch-09
+  title: E-newsletters
+  order: 9
+  level: 1
+frameworks:
+- name: heritage-to-system framework：founding belief、editorial stance、global readership、digital expansion、brand elements
+  chapter: ch-01
+  chapter_title: Our Brand
+- name: editorial typography framework：serif for reading/heritage、sans for navigation/action、web-safe fallbacks
+  chapter: ch-02
+  chapter_title: Typography
+- name: multi-brand logo governance：core mark、keyline variants、group marks、editorial/sub-brand marks、icons、sizing references
+  chapter: ch-03
+  chapter_title: Logos and Positioning
+- name: media-specific core mark rules
+  chapter: ch-03-01
+  chapter_title: Core Logo Rules
+- name: portfolio identity system
+  chapter: ch-03-02
+  chapter_title: Group, Editorial and Sub-Brand Logos
+- name: contextual logo scale framework
+  chapter: ch-03-03
+  chapter_title: Logo Sizing
+- name: restrained primary color system
+  chapter: ch-04
+  chapter_title: Colour
+- name: typography-derived graphic device
+  chapter: ch-05
+  chapter_title: Signature Element
+- name: concept-led illustration governance
+  chapter: ch-06
+  chapter_title: Illustrative Style
+- name: external-resource icon governance
+  chapter: ch-07
+  chapter_title: Iconography
+- name: component token specification
+  chapter: ch-08
+  chapter_title: User Interface Components
+- name: email-safe brand application
+  chapter: ch-09
+  chapter_title: E-newsletters
+patterns:
+- name: 知識型媒體品牌常先建立思想傳統，再進入視覺規則。
+  chapter: ch-01
+  chapter_title: Our Brand
+- name: serif/sans 雙軸系統，依內容深度與操作功能分配。
+  chapter: ch-02
+  chapter_title: Typography
+- name: 核心 logo 加 keyline variant，處理低對比背景；sub-brand logos 用 primary/secondary sets 管理。
+  chapter: ch-03
+  chapter_title: Logos and Positioning
+- name: print-mm/pt 與 digital-px 的雙軌規格。
+  chapter: ch-03-01
+  chapter_title: Core Logo Rules
+- name: sub-brand logos grouped by editorial、media business、intelligence unit、apps/social icons。
+  chapter: ch-03-02
+  chapter_title: Group, Editorial and Sub-Brand Logos
+- name: 小型印刷、雜誌封套、大型戶外各自有尺寸參照。
+  chapter: ch-03-03
+  chapter_title: Logo Sizing
+- name: print 使用較少語意色；digital 使用更細分的 UI token。
+  chapter: ch-04
+  chapter_title: Colour
+- name: small accent rule as navigational rhythm。
+  chapter: ch-05
+  chapter_title: Signature Element
+- name: reference artists + broad style direction + alteration ban + contact routing。
+  chapter: ch-06
+  chapter_title: Illustrative Style
+- name: use open source set + brand-specific containment。
+  chapter: ch-07
+  chapter_title: Iconography
+- name: primary registration CTA、red CTA、grey CTA、editorial outline CTA。
+  chapter: ch-08
+  chapter_title: User Interface Components
+- name: newsletter examples as medium-specific proof。
+  chapter: ch-09
+  chapter_title: E-newsletters
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI 可檢查：品牌描述應包含 independent editorial stance、clear analysis、global affairs 或 naturally curious audience；不得把 The
+    Economist 簡化為只談 economics。
+  chapter: ch-01
+  chapter_title: Our Brand
+- module: Typography System
+  criterion: AI 可檢查：body copy at or below 11pt 使用 Milo Serif Text；body copy 不得低於 7pt；headlines above 18pt primarily print
+    使用 Milo Serif Medium；navigation/subscription copy 不得低於 7pt；leading 建議為 font size 120%；kerning set to metrics、tracking
+    set to zero；web-safe fonts 為 Georgia 與 Helvetica。
+  chapter: ch-02
+  chapter_title: Typography
+- module: Visual Identity
+  criterion: AI 可檢查：只能使用 provided vector artwork；不得自製、拉伸、扭曲或改造 logo；print logo 不得低於 6mm；digital logo 不得低於 40px high；print
+    clear space 為 logo height 1/2；digital clear space 為 logo height 1/4；紅底或相近低對比背景須使用 keyline version。
+  chapter: ch-03
+  chapter_title: Logos and Positioning
+- module: Visual Identity
+  criterion: AI 可檢查：print keyline：6mm 以上 0.5pt、12mm 以上 0.5pt、24mm 以上 0.75pt、48mm 以上 1pt；digital keyline：40px/80px 以上 1px、160px
+    以上 2px；digital red 為 `#e3120b` / RGB 227 18 11。
+  chapter: ch-03-01
+  chapter_title: Core Logo Rules
+- module: Visual Identity
+  criterion: AI 可檢查：group logo clear space 與 core logo 一致；group logo print/digital 不得低於 6mm 或 40px；非 core brand business logos
+    使用 group signatures；social avatars 與 app icons 需符合標示的 X 比例。
+  chapter: ch-03-02
+  chapter_title: Group, Editorial and Sub-Brand Logos
+- module: ''
+  criterion: AI 可檢查：digital Economist Red 必須為 `#E3120B`；digital Black 為 `#121212`；CTA active 為 `#3E51B5`；background 為 `#F2F2F2`；metadata
+    為 `#B6B6B6`；core red 應 sparingly 使用，不應成為大面積裝飾色。
+  chapter: ch-04
+  chapter_title: Colour
+- module: ''
+  criterion: AI 可檢查：accent rule 高度參照 section heading cap height；stroke width 取自 `I`；長度為 `2 x I`；用途應限於 title/header focus、feature
+    highlight 或 text-heavy rhythm punctuation。
+  chapter: ch-05
+  chapter_title: Signature Element
+- module: ''
+  criterion: AI 可檢查：插畫 brief 應要求 ideas-led contemporary style；不得改變、扭曲、增添或改造 supplied illustrations；reuse 或 permission 問題需聯絡指定負責人。
+  chapter: ch-06
+  chapter_title: Illustrative Style
+- module: ''
+  criterion: AI 可檢查：registration CTA height 30px、font Econ Sans、font-size 14px、padding 8px 30px、border-radius 4px；blue CTA
+    background `#3e51b5` hover `#4c60eb`；red CTA background `#e3120b` hover `#fc150d`; grey CTA background `#d7d7d7` hover
+    `#3d51b5`; editorial CTA height 34px、background white、border 2px solid `#d7d7d7`。
+  chapter: ch-08
+  chapter_title: User Interface Components
+- module: ''
+  criterion: AI 可檢查：e-newsletter internal content 使用 Georgia serif 與 Helvetica sans serif；不得依賴非 web-safe 字體作為唯一呈現。
+  chapter: ch-09
+  chapter_title: E-newsletters
+chapters:
+- id: ch-01
+  title: Our Brand
+  modules:
+  - Brand Strategy
+  - Content Design
+  - Knowledge Architecture
+- id: ch-02
+  title: Typography
+  modules:
+  - Typography System
+  - Design Tokens
+- id: ch-03
+  title: Logos and Positioning
+  modules:
+  - Brand Architecture
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-03-01
+  title: Core Logo Rules
+  modules:
+  - Design Tokens
+  - Visual Identity
+- id: ch-03-02
+  title: Group, Editorial and Sub-Brand Logos
+  modules:
+  - Brand Architecture
+  - Iconography System
+- id: ch-03-03
+  title: Logo Sizing
+  modules:
+  - Layout System
+  - Visual Identity
+- id: ch-04
+  title: Colour
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-05
+  title: Signature Element
+  modules:
+  - Layout System
+  - Visual Language
+- id: ch-06
+  title: Illustrative Style
+  modules:
+  - Illustration System
+  - Governance
+- id: ch-07
+  title: Iconography
+  modules:
+  - Iconography System
+  - UI Components
+- id: ch-08
+  title: User Interface Components
+  modules:
+  - AI-Checkable Rules
+  - UI Components
+  - Design Tokens
+- id: ch-09
+  title: E-newsletters
+  modules:
+  - Content Design
+  - Operations

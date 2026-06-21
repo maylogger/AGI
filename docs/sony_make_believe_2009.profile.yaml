@@ -1,0 +1,155 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: sony_make_believe_2009
+index_ref: docs/sony_make_believe_2009.index.yaml
+note_ref: docs/sony_make_believe_2009.note.md
+archetype: brand_experience_guide
+industry: media_entertainment
+modules:
+- Brand Strategy
+- Messaging
+- Compliance
+- Operations
+- Governance
+- Legal and Trademark
+- Voice and Tone
+- Visual Identity
+- AI-Checkable Rules
+- Layout System
+- Motion Identity
+- Localization
+depth:
+  strategy: medium
+  visual: medium
+  governance: high
+  top_level_chapter_count: 6
+  section_count: 0
+chapter_sequence:
+- id: ch-01
+  title: The Meaning of make.believe
+  order: 1
+  level: 1
+- id: ch-02
+  title: Application of make.believe
+  order: 2
+  level: 1
+- id: ch-03
+  title: Usage of the Composite Logo
+  order: 3
+  level: 1
+- id: ch-04
+  title: Using the Composite Logo in Print Media and Websites
+  order: 4
+  level: 1
+- id: ch-05
+  title: make.believe Motion Logo
+  order: 5
+  level: 1
+- id: ch-06
+  title: Other Important Information
+  order: 6
+  level: 1
+frameworks:
+- name: brand message framework：imagination → belief → making real → electronics + entertainment unity
+  chapter: ch-01
+  chapter_title: The Meaning of make.believe
+- name: usage matrix framework：business area → communication type → mandatory/recommended/not permitted
+  chapter: ch-02
+  chapter_title: Application of make.believe
+- name: composite mark framework：form → size → isolation zone → background → misuse → legal/pronunciation
+  chapter: ch-03
+  chapter_title: Usage of the Composite Logo
+- name: media application framework：print formula → website header → utility area → misuse rules
+  chapter: ch-04
+  chapter_title: Using the Composite Logo in Print Media and Websites
+- name: motion identity framework：concept duality → visual ignition → duration variants → channel use
+  chapter: ch-05
+  chapter_title: make.believe Motion Logo
+- name: governance framework：parent rules → approved exception → revision authority → validity period → territory/contact
+  chapter: ch-06
+  chapter_title: Other Important Information
+patterns:
+- name: 以 mantra 作為跨事業語義錨點，是集團品牌治理模式。
+  chapter: ch-01
+  chapter_title: The Meaning of make.believe
+- name: 把 brand message rollout 寫成應用矩陣，是大型組織可複用模式。
+  chapter: ch-02
+  chapter_title: Application of make.believe
+- name: 把 pronunciation 納入 logo guideline，顯示品牌訊息同時是視覺與語言資產。
+  chapter: ch-03
+  chapter_title: Usage of the Composite Logo
+- name: 把 header 內 logo zone 與 utility zone 分離，是可複用 website brand pattern。
+  chapter: ch-04
+  chapter_title: Using the Composite Logo in Print Media and Websites
+- name: 用固定秒數版本管理動態 logo，是可複用 motion governance 模式。
+  chapter: ch-05
+  chapter_title: make.believe Motion Logo
+- name: 把 guideline 有效期間與修訂權寫明，是大型企業品牌治理的成熟做法。
+  chapter: ch-06
+  chapter_title: Other Important Information
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：make.believe 相關材料應指向 imagine/make real、technology/content integration 或 Sony unity；不得把它當一般裝飾文字或孤立 campaign
+    slogan。
+  chapter: ch-01
+  chapter_title: The Meaning of make.believe
+- module: ''
+  criterion: AI 可檢查：若屬 Electronics & Networked Services 或 Entertainment 的 marketing/corporate communication，composite logo
+    應為 mandatory；content products/packaging/start-up screen 依表格為 recommended；hardware/application software 不得任意使用。
+  chapter: ch-02
+  chapter_title: Application of make.believe
+- module: Visual Identity
+  criterion: AI 可檢查：不得 stretch、outline、3D/drop shadow、arc、angle、condense、italicize、改字距、改字體、垂直排字、與其他 logo/元素合成或改變 Sony 與 make.believe
+    間距。
+  chapter: ch-03
+  chapter_title: Usage of the Composite Logo
+- module: Visual Identity
+  criterion: AI 可檢查：print composite logo 置於 top left；website header 左側顯示；header 黑底，logo 白色；header 高度需符規定範；utility area 只放
+    make.believe related elements；accent color 約 <=10%；不得改 header 高度、漸層、加入其他 logo/graphics。
+  chapter: ch-04
+  chapter_title: Using the Composite Logo in Print Media and Websites
+- module: Visual Identity
+  criterion: AI 可檢查：motion logo 僅使用官方 1.5/3/5 秒版本；digital media 可用三種版本；不得自行重製 dual element 或變更藍黃光點火效果。
+  chapter: ch-05
+  chapter_title: make.believe Motion Logo
+- module: ''
+  criterion: AI 可檢查：make.believe 原則上英文使用；僅列明國家/語言可用翻譯；第三方不得分發；修訂/廢止需 Sony CEO approval；適用期間 2009-09 至 2014-08。
+  chapter: ch-06
+  chapter_title: Other Important Information
+chapters:
+- id: ch-01
+  title: The Meaning of make.believe
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-02
+  title: Application of make.believe
+  modules:
+  - Compliance
+  - Operations
+  - Governance
+- id: ch-03
+  title: Usage of the Composite Logo
+  modules:
+  - Legal and Trademark
+  - Voice and Tone
+  - Visual Identity
+- id: ch-04
+  title: Using the Composite Logo in Print Media and Websites
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+- id: ch-05
+  title: make.believe Motion Logo
+  modules:
+  - Motion Identity
+  - Visual Identity
+- id: ch-06
+  title: Other Important Information
+  modules:
+  - Localization
+  - Compliance
+  - Governance

@@ -1,0 +1,106 @@
+title: 'HP Co-Branding Guidelines'
+source: 'sources/HP_CoBranding_Guidelines_2020.pdf'
+date: '2020'
+language: 'en'
+summary: '這份文件定義 HP 與合作品牌在共同推廣或共同品牌情境中的主導關係、標誌配置、應用規則與法律限制。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction'
+    level: 1
+    order: 1
+    pages: '1-4'
+    summary: '說明 co-branding 的商業目的、品牌關係差異與 HP-led、Partner-led、50-50 三種合作類型。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Overview'
+        level: 2
+        order: 1
+        pages: '2'
+        summary: '說明有效共同品牌應擴展供應、改善體驗、提升營收與品牌關聯。'
+      - id: 'ch-01-02'
+        title: 'Branded Relationships'
+        level: 2
+        order: 2
+        pages: '3'
+        summary: '區分 co-branding 與 co-marketing。'
+      - id: 'ch-01-03'
+        title: 'Types of Co-branding'
+        level: 2
+        order: 3
+        pages: '4'
+        summary: '定義 HP-led、Partner-led 與 50-50 的主導品牌與執行者。'
+  - id: 'ch-02'
+    title: 'Application'
+    level: 1
+    order: 2
+    pages: '5'
+    summary: '用示例建立 HP-led 與 Partner-led 資產、spatial 與 lockup 配置的判讀語言。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Before We Dive'
+        level: 2
+        order: 1
+        pages: '5'
+        summary: '說明範例僅作參考，不是模板或固定版面。'
+  - id: 'ch-03'
+    title: 'Logo Treatment'
+    level: 1
+    order: 3
+    pages: '6-9'
+    summary: '規範 spatial configuration、lockup configuration、lockup specs 與多品牌標誌配置。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Spatial Configuration'
+        level: 2
+        order: 1
+        pages: '6'
+        summary: '要求不同品牌標誌各有空間，不堆疊、重疊或散落。'
+      - id: 'ch-03-02'
+        title: 'Lockup Configuration and Specs'
+        level: 2
+        order: 2
+        pages: '7-8'
+        summary: '定義 50-50 情境中標誌平衡、分隔線、留白與最小尺寸。'
+      - id: 'ch-03-03'
+        title: 'Multiple Logos'
+        level: 2
+        order: 3
+        pages: '9'
+        summary: '處理 HP 與多個合作方同時出現時的條件與排列。'
+  - id: 'ch-04'
+    title: 'HP-Led'
+    level: 1
+    order: 4
+    pages: '10'
+    summary: '規範 HP 作為主導品牌時的品牌元素、標誌大小、口號與 partner placeholder。'
+  - id: 'ch-05'
+    title: 'Partner-Led'
+    level: 1
+    order: 5
+    pages: '11'
+    summary: '規範合作方主導時 HP 標誌的支持角色、大小限制與相容性檢查。'
+  - id: 'ch-06'
+    title: '50-50 Partnerships'
+    level: 1
+    order: 6
+    pages: '12'
+    summary: '規範平等合作時以受眾、CTA 與品牌相關性判斷視覺主導權，必要時可採中性視覺。'
+  - id: 'ch-07'
+    title: 'Terms and Resources'
+    level: 1
+    order: 7
+    pages: '13-15'
+    summary: '包含法律資訊、morality clause 與 HP Brand、Asset Hub、Sales Central 等資源。'
+    children:
+      - id: 'ch-07-01'
+        title: 'Legal Information'
+        level: 2
+        order: 1
+        pages: '13'
+        summary: '規範 HP 名稱、商標、copyright、URL 與 disclaimer。'
+      - id: 'ch-07-02'
+        title: 'Morality Clause and Resources'
+        level: 2
+        order: 2
+        pages: '14-15'
+        summary: '定義 HP 可拒絕共同品牌或資助的價值不符情境與支援資源。'

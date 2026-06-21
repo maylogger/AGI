@@ -1,0 +1,140 @@
+# L3 決策卡 sidecar — ARTE 2008 Charte Graphique
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: arte_2008_compressed
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 先寫品牌價值的視覺翻譯，再導入具體資產規則，避免規範只剩任意的角度、色彩與形式
+    applicable_when:
+      industries: [media_entertainment, industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System]
+    anti_patterns:
+      - guideline 直接列角度、色彩與形式規則而無價值來源
+    evidence:
+      - brand_id: arte_2008_compressed
+        chapter: ch-01
+        excerpt: "Value-to-grammar framework：humanist values（Ouverture、Respect、Chaleur、Curiosité）→ formal constants → flexible applications；先把人文價值轉為可操作的視覺語法，避免後續規範只剩任意角度、色彩與形式。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗與照片複雜度建立對比決策樹，限定白／深色兩種標誌
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - Logo 顏色規範應基於對比與背景風險，而非只列色票
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: arte_2008_compressed
+        chapter: ch-03
+        excerpt: "orange-like background → white logo；黑白印刷以 50% black 或 white，不用純黑；logo 顏色依背景對比決定而非自由配色。"
+    status: extracted
+
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 先建立「誰在說話」的判斷層，再以 umbrella → member → 子單位 → lockup → special case 的層級把組織結構視覺化
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - Brand architecture 應為子品牌定義「固定母品牌元件」與「可自由設計元件」
+    applicable_when:
+      industries: [public_sector, education, media_entertainment]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [multi_unit_consistency, sub_unit_identity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 各單位自行創造分支品牌與專屬識別
+    evidence:
+      - brand_id: arte_2008_compressed
+        chapter: ch-04
+        excerpt: "Sublogo architecture：masterbrand + descriptor、programme title with/without ARTE；母品牌歸屬必須清晰，但節目品牌需有空間表現多樣性，為子品牌定義固定母品牌元件與可自由設計元件。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+    evidence:
+      - brand_id: arte_2008_compressed
+        chapter: ch-05-01
+        excerpt: "cartouche 位置以 ARTE logo 自身為測量單位：水平間距用 1x ARTE logo 長度，垂直間距用 2x ARTE logo 高度。"
+    status: extracted
+
+  - id: dp-color-set-over-single-pickers
+    title: 用「色組」而非單色清單管理豐富色彩的自由度
+    problem:
+      statement: 多彩品牌若只給單色清單，配色會失控，跨媒介色差難以驗證。
+      signals: [rich_palette, color_governance, multi_media]
+    solution:
+      module: Color System
+      move: 定義命名色組／漸層 token，標註起訖色值與可否搭配 logo 的用途規則，而非讓設計者任意取色
+      layer: visual_core
+    reason:
+      - 多彩系統需要約束；色彩組合應可預先定義並標註用途
+      - Design tokens 可不只記 hex，也記可否搭配 logo、主要／延伸用途與印刷限制
+    applicable_when:
+      industries: [industrial_materials_science, media_entertainment]
+      brand_types: []
+      conditions: [rich_palette]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Color System]
+      enables: [Design Tokens]
+    anti_patterns:
+      - 讓設計者從單色任意組合
+    evidence:
+      - brand_id: arte_2008_compressed
+        chapter: ch-05-01
+        excerpt: "Gradient token framework：以 Tequila Sunrise、Purple、Azure、Emerald 等命名漸層（name、start/end CMYK、logo association permission）建立系統，Fuchsia 與 Orange Juice 通常不與 ARTE logo 結合。"
+    status: extracted

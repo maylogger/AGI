@@ -1,0 +1,107 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: optile_Logo_Guidelines_2018
+index_ref: docs/optile_Logo_Guidelines_2018.index.yaml
+note_ref: docs/optile_Logo_Guidelines_2018.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- Brand Strategy
+- Visual Identity
+- Governance
+- AI-Checkable Rules
+- Color System
+- Layout System
+- Compliance
+depth:
+  strategy: low
+  visual: medium
+  governance: medium
+  top_level_chapter_count: 6
+  section_count: 0
+chapter_sequence:
+- id: ch-01
+  title: Visual Identity and Intent
+  order: 1
+  level: 1
+- id: ch-02
+  title: The Logo
+  order: 2
+  level: 1
+- id: ch-03
+  title: Variations
+  order: 3
+  level: 1
+- id: ch-04
+  title: Exclusion Zone
+  order: 4
+  level: 1
+- id: ch-05
+  title: Logo Misuse
+  order: 5
+  level: 1
+- id: ch-06
+  title: Contact
+  order: 6
+  level: 1
+frameworks:
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-01
+  chapter_title: Visual Identity and Intent
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-02
+  chapter_title: The Logo
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-03
+  chapter_title: Variations
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-04
+  chapter_title: Exclusion Zone
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-05
+  chapter_title: Logo Misuse
+patterns:
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-01
+  chapter_title: Visual Identity and Intent
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-02
+  chapter_title: The Logo
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-03
+  chapter_title: Variations
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-04
+  chapter_title: Exclusion Zone
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-05
+  chapter_title: Logo Misuse
+rules_ai_checkable: []
+chapters:
+- id: ch-01
+  title: Visual Identity and Intent
+  modules:
+  - Brand Strategy
+  - Visual Identity
+  - Governance
+- id: ch-02
+  title: The Logo
+  modules:
+  - Visual Identity
+- id: ch-03
+  title: Variations
+  modules:
+  - AI-Checkable Rules
+  - Color System
+- id: ch-04
+  title: Exclusion Zone
+  modules:
+  - Layout System
+- id: ch-05
+  title: Logo Misuse
+  modules:
+  - AI-Checkable Rules
+  - Compliance

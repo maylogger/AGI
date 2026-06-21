@@ -1,0 +1,73 @@
+title: 'Dubai Brand Guidelines'
+source: 'sources/Dubai_BRAND_GUIDELINES_2021.pdf'
+date: '2021'
+language: 'en'
+summary: 'Dubai 2021 品牌規範，涵蓋城市品牌基礎、品牌標誌、雙語字體、色彩、應用、圖示、視覺內容、語氣、活動、商品、合作與使用條款。'
+chapters:
+  - id: 'ch-01'
+    title: 'Brand Foundation'
+    level: 1
+    order: 1
+    pages: '1-6'
+    summary: '定義 Dubai 的 vision、personality、mission、proposition、promise、strategic framework 與 manifesto inspiration。'
+  - id: 'ch-02'
+    title: 'Brandmarks'
+    level: 1
+    order: 2
+    pages: '7-13'
+    summary: '定義 umbrella architecture 下的 Department of Tourism、Dubai Calendar、City of Dubai、Dubai Business Events 與 Government brandmark。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Brand Anatomy'
+        level: 2
+        order: 1
+        pages: '9'
+        summary: '以 English 與 Arabic 兩層字母融合反映 Dubai 作為文化交會之城。'
+  - id: 'ch-03'
+    title: 'Typography'
+    level: 1
+    order: 3
+    pages: '14-15'
+    summary: '定義 DIN、Droid Kufic、Dubai Font、PingFang SC、Calibri、Brush Script 等多語與用途分工。'
+  - id: 'ch-04'
+    title: 'Colour Palettes'
+    level: 1
+    order: 4
+    pages: '16-20'
+    summary: '為 Department of Tourism、City of Dubai、Dubai Calendar、Dubai Business Events 分別定義 primary 與 secondary colours。'
+  - id: 'ch-05'
+    title: 'Brand Usage'
+    level: 1
+    order: 5
+    pages: '21-24'
+    summary: '規範 brandmark exclusion zone、alignment、minimum size 與 incorrect usage。'
+  - id: 'ch-06'
+    title: 'Applications'
+    level: 1
+    order: 6
+    pages: '25-34'
+    summary: '示範品牌標誌位置、尺寸、shape container、print ads、booklets、emailers、roll ups、digital ads 與特別事件 merchandise 使用。'
+  - id: 'ch-07'
+    title: 'Iconography and Visual Content'
+    level: 1
+    order: 7
+    pages: '35-39'
+    summary: '定義 icon style、map icon categories、Dubai map，以及攝影與影片需包含 people、places、detail 三個 art direction keys。'
+  - id: 'ch-08'
+    title: 'Tone of Voice'
+    level: 1
+    order: 8
+    pages: '40-41'
+    summary: '以 trusted neighbour or friend 定義 cheerful、approachable、knowledgeable 的語氣位置。'
+  - id: 'ch-09'
+    title: 'Events, Merchandise and Partnerships'
+    level: 1
+    order: 9
+    pages: '42-49'
+    summary: '規範展會與室內品牌可見度、商品目錄，以及 partner endorsement criteria 與 collateral rules。'
+  - id: 'ch-10'
+    title: 'Terms of Use'
+    level: 1
+    order: 10
+    pages: '50-51'
+    summary: '定義 Dubai marks 的 limited permitted uses、use requirements、restrictions、DTCM rights 與 enquiries。'

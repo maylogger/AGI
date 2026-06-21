@@ -1,0 +1,63 @@
+title: 'Nintendo Corporate Identity & Graphics Standards Manual'
+source: 'sources/Nintendo_Corporate_Identity_Graphics_Standards_Manual_2008.pdf'
+version: 'external version'
+date: 'March 25, 2008'
+language: 'en'
+summary: '這份手冊以商標保護與全球一致性為核心，定義 Nintendo corporate logo 的名稱、比例、色彩、禁用與產品應用規範。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction and Trademark Governance'
+    level: 1
+    order: 1
+    pages: '1-4'
+    summary: '說明手冊目的、商標保護、著作權標示與全球一致性的必要。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Purpose of Manual'
+        level: 2
+        order: 1
+        pages: '3'
+        summary: '說明手冊如何維持全球一致 corporate look。'
+      - id: 'ch-01-02'
+        title: 'Trademark and Copyright Rules'
+        level: 2
+        order: 2
+        pages: '4'
+        summary: '列出商標語法、符號與著作權標示規則。'
+  - id: 'ch-02'
+    title: 'Logo History and Corporate Name'
+    level: 1
+    order: 2
+    pages: '5-6'
+    summary: '說明 racetrack logo 的演進、2008 全球灰色統一，以及 legal name 使用。'
+  - id: 'ch-03'
+    title: 'Proportion and Protective Area'
+    level: 1
+    order: 3
+    pages: '7'
+    summary: '定義 Nintendo logotype 與 racetrack 必須一起使用，以及 clear space 比例。'
+  - id: 'ch-04'
+    title: 'Logo Color and Backgrounds'
+    level: 1
+    order: 4
+    pages: '8-11'
+    summary: '定義灰、白、黑三種 logo 顏色與不同背景上的可用順序。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Grayscale and Color Backgrounds'
+        level: 2
+        order: 1
+        pages: '9-11'
+        summary: '展示不同背景明度/色彩下的 logo 顏色選擇。'
+  - id: 'ch-05'
+    title: 'Prohibited Use'
+    level: 1
+    order: 5
+    pages: '12-13'
+    summary: '列出 logo 不可變形、改色、加效果或錯誤置放的情況。'
+  - id: 'ch-06'
+    title: 'Applications and Product Graphic Standards'
+    level: 1
+    order: 6
+    pages: '14-19'
+    summary: '示範 corporate logo 在軟體、影片、活動、packshot 與 logo example 中的應用。'

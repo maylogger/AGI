@@ -1,0 +1,267 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: LIFE_Style_Guide
+index_ref: docs/LIFE_Style_Guide.index.yaml
+note_ref: docs/LIFE_Style_Guide.note.md
+archetype: brand_experience_guide
+industry: media_entertainment
+modules:
+- Photography System
+- Brand Strategy
+- Knowledge Architecture
+- AI-Checkable Rules
+- Typography System
+- Color System
+- Visual Identity
+- Compliance
+- Governance
+- Legal and Trademark
+- Layout System
+- Examples
+- Visual Language
+- Operations
+depth:
+  strategy: low
+  visual: high
+  governance: high
+  top_level_chapter_count: 7
+  section_count: 6
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-02
+  title: Branding
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo Guidelines
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Typography and Color Palette
+  order: 2
+  level: 2
+- id: ch-03
+  title: Legal and Approval Information
+  order: 3
+  level: 1
+- id: ch-04
+  title: Packaging
+  order: 4
+  level: 1
+- id: ch-05
+  title: Creative Direction
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: The Covers
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Architecture and Travel
+  order: 2
+  level: 2
+- id: ch-05-03
+  title: Emotion
+  order: 3
+  level: 2
+- id: ch-05-04
+  title: Moments in History
+  order: 4
+  level: 2
+- id: ch-06
+  title: Photography
+  order: 6
+  level: 1
+- id: ch-07
+  title: Product Visuals
+  order: 7
+  level: 1
+frameworks:
+- name: 可視為「Archive Equity → Brand Story → Product Licensing」框架，先證明資產，再提供轉譯規則
+  chapter: ch-01
+  chapter_title: Introduction
+- name: Logo control、typographic voice、color token 三層系統
+  chapter: ch-02
+  chapter_title: Branding
+- name: Logo integrity checklist：color、clear space、placement、background、trademark
+  chapter: ch-02-01
+  chapter_title: Logo Guidelines
+- name: Typeface role map：Light/Medium for body、Bold/Extra Bold for headings、Condensed for titles
+  chapter: ch-02-02
+  chapter_title: Typography and Color Palette
+- name: Image-rights risk matrix：personality、illustration、sculpture/landmark/painting、legal notice
+  chapter: ch-03
+  chapter_title: Legal and Approval Information
+- name: Packaging template system：base visual、flat artwork、front/back variants、theme-specific imagery
+  chapter: ch-04
+  chapter_title: Packaging
+- name: Theme-to-product translation：theme selection、image approval、layout treatment、product context
+  chapter: ch-05
+  chapter_title: Creative Direction
+- name: Cover equity extraction
+  chapter: ch-05-01
+  chapter_title: The Covers
+- name: Place-based archive theming
+  chapter: ch-05-02
+  chapter_title: Architecture and Travel
+- name: Emotional archive curation
+  chapter: ch-05-03
+  chapter_title: Emotion
+- name: Historical moment licensing filter：event significance、rights risk、execution sensitivity、approval
+  chapter: ch-05-04
+  chapter_title: Moments in History
+- name: Theme-indexed asset library
+  chapter: ch-06
+  chapter_title: Photography
+- name: Product application matrix：category、surface、image type、logo visibility、packaging need
+  chapter: ch-07
+  chapter_title: Product Visuals
+patterns:
+- name: 用品牌歷史作為 guideline 開場，可降低後續規範看似任意的風險。
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 以一個尺寸單位 X 定義保護區；以應用情境區分 print、digital、web 色值。
+  chapter: ch-02
+  chapter_title: Branding
+- name: 用品牌字母局部作為測量單位，是常見且可複用的 clear-space pattern。
+  chapter: ch-02-01
+  chapter_title: Logo Guidelines
+- name: 把 heritage typeface 與 contemporary palette 配對，是 archive brand 現代化常見模式。
+  chapter: ch-02-02
+  chapter_title: Typography and Color Palette
+- name: 在 creative guideline 中嵌入 approval gate，可避免後段產品開發才發現法律風險。
+  chapter: ch-03
+  chapter_title: Legal and Approval Information
+- name: 提供 AI 檔名與 option variants，將 guideline 連到實際生產資產。
+  chapter: ch-04
+  chapter_title: Packaging
+- name: 以主題分類降低影像庫複雜度，是大規模 archive commercialization 的核心模式。
+  chapter: ch-05
+  chapter_title: Creative Direction
+- name: 把封面作為 pattern library，可支援多品類延展。
+  chapter: ch-05-01
+  chapter_title: The Covers
+- name: 以城市與旅行作為 lifestyle licensing 的中性高延展主題。
+  chapter: ch-05-02
+  chapter_title: Architecture and Travel
+- name: 把抽象品牌人格轉成可選片的情緒分類。
+  chapter: ch-05-03
+  chapter_title: Emotion
+- name: 以主題頁展示多種 execution，保留審核彈性。
+  chapter: ch-05-04
+  chapter_title: Moments in History
+- name: 將靈感頁與素材索引分離，可避免設計師只能從 mockup 反推素材。
+  chapter: ch-06
+  chapter_title: Photography
+- name: 用品類清單作為品牌授權的需求地圖。
+  chapter: ch-07
+  chapter_title: Product Visuals
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: logo 不得重著色、旋轉、扭曲或置於彩色底；logo 可置於白底或影像上，但必須維持可讀性；LIFE 作為商標必須全大寫；不得把 logo 放進句子或新字詞。
+  chapter: ch-02
+  chapter_title: Branding
+- module: Visual Identity
+  criterion: Protected area 內不得有任何圖形元素；top-left 放置需與上緣、左緣保持等距；若印刷足夠大且比例不變，才可無邊框放置；禁止 upper-lower case 的 Life。
+  chapter: ch-02-01
+  chapter_title: Logo Guidelines
+- module: ''
+  criterion: 使用人物或名人影像時需承擔 publicity claims；使用照片中的插畫、雕塑、地標或繪畫不得假設原作權利已授權；輸出需包含指定 copyright 或 registered trademark notice。
+  chapter: ch-03
+  chapter_title: Legal and Approval Information
+- module: ''
+  criterion: 包裝應保持 clean and minimal；logo、typography、imagery、red panels 必須共同支持 magazine look；文字不可 overpower photographs；使用模板檔名時需選擇對應
+    packaging type。
+  chapter: ch-04
+  chapter_title: Packaging
+- module: ''
+  criterion: 所有 creative 僅供參考且須逐案核准；核准可能受攝影師、題材、執行方式影響；主題範例不得被解讀為完整收藏範圍。
+  chapter: ch-05
+  chapter_title: Creative Direction
+- module: Motion Identity
+  criterion: 涉及人物時需套用 publicity rights 風險；圖像不得因商品化而削弱人物尊重或可讀性。
+  chapter: ch-05-03
+  chapter_title: Emotion
+- module: ''
+  criterion: 歷史人物、戰爭、公民權等敏感題材需逐案審查；不得假設範例代表自動可用。
+  chapter: ch-05-04
+  chapter_title: Moments in History
+- module: ''
+  criterion: 商品應從 approved creative 或 photography 中取材；不得讓圖像或文字壓過照片敘事；不同品類需維持 LIFE logo 與影像主題的一致關係。
+  chapter: ch-07
+  chapter_title: Product Visuals
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - Photography System
+  - Brand Strategy
+  - Knowledge Architecture
+- id: ch-02
+  title: Branding
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Color System
+  - Visual Identity
+- id: ch-02-01
+  title: Logo Guidelines
+  modules:
+  - Compliance
+  - Governance
+- id: ch-02-02
+  title: Typography and Color Palette
+  modules:
+  - Typography System
+  - Color System
+- id: ch-03
+  title: Legal and Approval Information
+  modules:
+  - Legal and Trademark
+  - Compliance
+  - Governance
+- id: ch-04
+  title: Packaging
+  modules:
+  - Layout System
+  - Examples
+- id: ch-05
+  title: Creative Direction
+  modules:
+  - Photography System
+  - Examples
+  - Governance
+- id: ch-05-01
+  title: The Covers
+  modules:
+  - Visual Language
+- id: ch-05-02
+  title: Architecture and Travel
+  modules:
+  - Photography System
+- id: ch-05-03
+  title: Emotion
+  modules:
+  - Photography System
+  - Brand Strategy
+- id: ch-05-04
+  title: Moments in History
+  modules:
+  - Photography System
+  - Governance
+- id: ch-06
+  title: Photography
+  modules:
+  - Photography System
+  - Operations
+  - Knowledge Architecture
+- id: ch-07
+  title: Product Visuals
+  modules:
+  - Examples

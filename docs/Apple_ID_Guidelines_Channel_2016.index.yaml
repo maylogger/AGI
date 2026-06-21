@@ -1,0 +1,92 @@
+title: 'Apple Identity Guidelines for Channel Affiliates and Apple-Certified Individuals'
+source: 'sources/Apple_ID_Guidelines_Channel_2016.pdf'
+date: 'August 2016'
+language: 'en'
+summary: 'Apple 為授權通路、經銷商與認證個人制定的識別使用規範，明確區分 Apple 身分、經銷商自有身分、通路簽名、Apple 資產、店面環境與商標文字使用。'
+chapters:
+  - id: 'ch-01'
+    title: 'Apple Sales Web'
+    level: 1
+    order: 1
+    pages: '5'
+    summary: '說明 Apple Sales Web 是取得通路簽名、產品資產與行銷素材的正式來源。'
+    children: []
+  - id: 'ch-02'
+    title: 'Using Apple Channel Signatures'
+    level: 1
+    order: 2
+    pages: '7-27'
+    summary: '規範通路簽名的構成、顏色、尺寸、留白、多重授權、各媒體觸點與禁止用法。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Signature Configuration and Graphic Standards'
+        level: 2
+        order: 1
+        pages: '7-14'
+        summary: '定義 one-line/two-line/certification signature、黑白顏色、最小留白與常見錯誤。'
+      - id: 'ch-02-02'
+        title: 'Communication Touchpoints'
+        level: 2
+        order: 2
+        pages: '15-27'
+        summary: '針對網站 header、email、social、ebooks、advertising、events、vehicles、merchandise、shirts、shopping bags、stationery 訂出使用邊界。'
+  - id: 'ch-03'
+    title: 'Apple-Certified Individuals'
+    level: 1
+    order: 3
+    pages: '29'
+    summary: '區分個人認證與公司授權，限制認證簽名只能用於個人通訊。'
+    children: []
+  - id: 'ch-04'
+    title: 'Using Apple Assets'
+    level: 1
+    order: 4
+    pages: '31-33'
+    summary: '要求只使用 ASW 提供的現行產品圖片、截圖、文案與資產，不得自行拍攝、修改或沿用過時圖形。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Product Photos and Refresh'
+        level: 2
+        order: 1
+        pages: '31-33'
+        summary: '規範產品照片來源、解析度、縮放、背景、截圖、violator 與更新要求。'
+  - id: 'ch-05'
+    title: 'Reseller Store Identity'
+    level: 1
+    order: 5
+    pages: '35-55'
+    summary: '保護 Apple retail trade dress，要求通路建立自身店面身分，並規範外觀、內裝、招牌、櫥窗、fixture 與多品牌 concession。'
+    children:
+      - id: 'ch-05-01'
+        title: 'Naming and Store Exterior'
+        level: 2
+        order: 1
+        pages: '36-47'
+        summary: '限制命名與外觀簽名尺寸、位置、材料、顏色、照明、window cling 與非標準招牌。'
+      - id: 'ch-05-02'
+        title: 'Store Interior and Concessions'
+        level: 2
+        order: 2
+        pages: '48-55'
+        summary: '規範 fixture 材料、POS 溝通、多品牌區域、室內標牌與暫時性 banner。'
+  - id: 'ch-06'
+    title: 'Editorial Guidelines'
+    level: 1
+    order: 6
+    pages: '57-59'
+    summary: '規範授權名稱、在地化授權文字與 Apple 產品名稱在文案中的大小寫、翻譯與完整性。'
+    children: []
+  - id: 'ch-07'
+    title: 'Apple Trademarks and Credit Lines'
+    level: 1
+    order: 7
+    pages: '61-62'
+    summary: '說明 Apple 商標使用、不得翻譯、符號與 credit line 的法律要求。'
+    children: []
+  - id: 'ch-08'
+    title: 'For More Information'
+    level: 1
+    order: 8
+    pages: '64'
+    summary: '提供 Apple representative、ASW、product asset kits 與法律指南等後續資訊來源。'
+    children: []

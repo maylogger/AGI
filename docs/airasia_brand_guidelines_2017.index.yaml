@@ -1,0 +1,82 @@
+title: 'AirAsia Brand Guidelines: Visual Elements'
+source: 'sources/airasia_brand_guidelines_2017.pdf'
+date: '2017'
+language: 'en'
+summary: '這份短版 visual elements guideline 聚焦 AirAsia 的 logo、tagline、clear space、錯誤用法與色彩系統。'
+chapters:
+  - id: 'ch-01'
+    title: 'Visual Elements Overview'
+    level: 1
+    order: 1
+    pages: '1'
+    summary: '以 logo、tagline、photography、colour、typography 與 signature mark 作為品牌視覺元素範圍。'
+    children: []
+  - id: 'ch-02'
+    title: 'Logo System'
+    level: 1
+    order: 2
+    pages: '2-7'
+    summary: '規範 AirAsia logo 與 AirAsia X logo 的構成、使用情境、最小尺寸、留白、裁切例外與禁止變形。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Logo Construction and Minimum Size'
+        level: 2
+        order: 1
+        pages: '2'
+        summary: '說明 logo 由 wordmark 與 red holding space 組成，最小尺寸為 20mm，且不得修改或重製。'
+      - id: 'ch-02-02'
+        title: 'Wordmark Usage and Extreme Formats'
+        level: 2
+        order: 2
+        pages: '3'
+        summary: '在空間受限或特殊材料中可單獨使用 wordmark，並以版面長度的 1/8 作為極端比例應用基準。'
+      - id: 'ch-02-03'
+        title: 'Clear Space'
+        level: 2
+        order: 3
+        pages: '4-5'
+        summary: '規定 logo 留白至少為 logo 半徑的 1/2，並以範例展示不同版面下的呼吸空間。'
+      - id: 'ch-02-04'
+        title: 'Logo Don’ts'
+        level: 2
+        order: 4
+        pages: '6-7'
+        summary: '列出旋轉、加 .com、分別縮放、換字體、改色、拉伸、特效、裁切、交換色彩等禁止用法。'
+  - id: 'ch-03'
+    title: 'Logo and Tagline'
+    level: 1
+    order: 3
+    pages: '8-9'
+    summary: '定義 tagline 與 airasia.com 的組合使用、色彩、最小尺寸與 CTA 留白。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Tagline Usage'
+        level: 2
+        order: 1
+        pages: '8'
+        summary: '規定 Now Everyone Can Fly 必須與 airasia.com 一起出現在廣告材料中，並以黑白達成最大對比。'
+      - id: 'ch-03-02'
+        title: 'CTA and Tagline Clear Space'
+        level: 2
+        order: 2
+        pages: '9'
+        summary: '以 grid system 1 與 2 示範 logo、CTA、tagline 的留白與排列。'
+  - id: 'ch-04'
+    title: 'Colour System'
+    level: 1
+    order: 4
+    pages: '10-13'
+    summary: '指定 AirAsia Red、黑、白為主色，並規定次要色只能適度使用。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Primary Colour Palette'
+        level: 2
+        order: 1
+        pages: '11'
+        summary: '定義 AirAsia Red Pantone 485C、黑與白的 Pantone、CMYK、RGB 數值。'
+      - id: 'ch-04-02'
+        title: 'Secondary Colour Palette'
+        level: 2
+        order: 2
+        pages: '12-13'
+        summary: '定義次要色可增加變化，但搭配主色時不應超過版面 50%，特殊產品或航線發布可例外成為主調。'

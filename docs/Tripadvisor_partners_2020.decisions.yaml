@@ -1,0 +1,90 @@
+# L3 決策卡 sidecar — Tripadvisor Brand Guidelines for Partners
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Tripadvisor_partners_2020
+decisions:
+  - id: dp-trademark-permission-flow
+    title: 用授權閘門治理第三方商標使用，先處理混淆與背書風險
+    problem:
+      statement: 平台品牌被大量第三方使用商標與資產，若無授權流程，會造成商標混淆與誤導性背書風險。
+      signals: [trademark_protection, partner_governance, endorsement_risk, third_party_usage]
+    solution:
+      module: Legal and Trademark
+      move: 在開頭即定義「可用不等於可直接發布」，以授權目的 → 規範遵循 → 材料送審 → 帳戶經理核准的 approval gate 治理
+      layer: governance
+    reason:
+      - 品牌開放給第三方時，開頭就應定義「可用」不等於「可直接發布」
+      - 合作擴散需要在 attribution、brand consistency 與 content integrity 之間取得平衡
+      - permission section 將品牌治理流程化，降低設計師自行判斷法律風險
+    applicable_when:
+      industries: [tech_software, consumer_retail_hospitality]
+      brand_types: [platform_ecosystem]
+      conditions: [third_party_usage, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Legal and Trademark]
+      enables: [Governance]
+    anti_patterns:
+      - 放任第三方自行判斷法律與背書風險
+    evidence:
+      - brand_id: Tripadvisor_partners_2020
+        chapter: ch-01
+        excerpt: "建立合作夥伴使用 Tripadvisor 品牌與內容的授權邊界；任何含 branding/content 的行銷材料必須先送 Tripadvisor 審核，缺少 approval metadata 不可發布。"
+      - brand_id: Tripadvisor_partners_2020
+        chapter: ch-04
+        excerpt: "logos 與 ratings bubbles 由 Tripadvisor URL 提供、不得本地存放，活動需 tracking 並完成最終內容核准；第三方品牌使用應可更新、可撤換、可追蹤。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌內建部件（owl eye pupil 寬度）作為相對留白單位，使 spacing 隨 logo 比例縮放
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - 使用品牌內建比例作為 spacing token，可避免跨尺寸重新定義
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    evidence:
+      - brand_id: Tripadvisor_partners_2020
+        chapter: ch-02-02
+        excerpt: "clearspace 至少等於 owl eye pupil 寬度；用 logo 自身部件建立比例尺度（Intrinsic Measurement Framework），可隨 logo 比例縮放。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 把 logo clearspace 的模距單位（pupil width）延伸到 partner lockup，並用核准的水平／垂直模板控制方向、間距、比例與對齊
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - 合作露出需要平衡雙方辨識，而不是把 logo 任意拼貼
+    applicable_when:
+      industries: [finance, tech_software, consumer_retail_hospitality]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: Tripadvisor_partners_2020
+        chapter: ch-02-03
+        excerpt: "Tripadvisor logo 與合作方元素距離至少一個 pupil width，必須使用核准的水平與垂直 partnership lockup 模板，不得改變 Tripadvisor logo 內部比例。"
+    status: extracted

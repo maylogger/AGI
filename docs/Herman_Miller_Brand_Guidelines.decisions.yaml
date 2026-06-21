@@ -1,0 +1,57 @@
+# L3 決策卡 sidecar — Herman Miller Brand Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Herman_Miller_Brand_Guidelines
+decisions:
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 用人格詞集（Curious/Sharing/Free Thinking/Caring/Optimistic）當每個產出的檢查軸
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - guideline 可把「好不好」轉成創意評估清單
+      - 每個範例標註使用了哪些 guideposts，讓評估可被學習
+    applicable_when:
+      industries: [industrial_materials_science, nonprofit_social]
+      brand_types: [challenger, category_creator, mission_driven]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Visual Language, Content Design]
+    evidence:
+      - brand_id: Herman_Miller_Brand_Guidelines
+        chapter: ch-08
+        excerpt: "Making Brand Decisions 用 simplify、tell a story、be human、inspire、think big、be spirited 六個 guideposts 作為創意審查準則；素材需至少能對應一個 guidepost，並以近期作品驗證，把『好不好』轉成可學習的評估清單。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - 空間本身是品牌資產，logo 尺寸應搭配版面空間而非跟版面成正比放大
+    applicable_when:
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+    examples:
+      - logomark clear space 至少為 mark size 的 50%；logotype clear space 至少為 capital H 高
+    evidence:
+      - brand_id: Herman_Miller_Brand_Guidelines
+        chapter: ch-05-01
+        excerpt: "logomark clear space 至少為 mark size 的 50%；logotype clear space 至少為 capital H 高；空間本身是品牌資產，logo 尺寸應搭配版面空間，而非跟版面成正比放大。"
+    status: extracted

@@ -1,0 +1,74 @@
+title: 'Google Ads Visual Guidelines'
+source: 'sources/google_ads_visual_guidelines.pdf'
+date: '2017'
+language: 'en'
+summary: 'Google Ads visual guidelines defining brand promise, visual direction, logo lockups, color palette and accessibility, photography, illustration, iconography, animation/video, typography, and related guideline references.'
+chapters:
+  - id: 'ch-01'
+    title: 'Brand Guidelines'
+    level: 1
+    order: 1
+    pages: '4-14'
+    summary: 'Defines the Google Ads brand promise, visual direction, logo lockups, logo do’s and don’ts, logo pairs, and usage matrix.'
+    children:
+      - id: 'ch-01-01'
+        title: 'Brand Promise and Visual Direction'
+        level: 2
+        order: 1
+        pages: '5-6'
+        summary: 'Positions Google Ads as simple, trustworthy, approachable, welcoming, smart, empowering, and professional.'
+      - id: 'ch-01-02'
+        title: 'Logo Lockups and Usage'
+        level: 2
+        order: 2
+        pages: '8-14'
+        summary: 'Defines Google logo lockup, master logo, horizontal and vertical lockups, reverse variants, do’s and don’ts, logo pairs, and product/marketing usage contexts.'
+  - id: 'ch-02'
+    title: 'Color'
+    level: 1
+    order: 2
+    pages: '15-22'
+    summary: 'Defines Google core colors, secondary and tertiary colors, neutrals, hierarchy, build-from-white principle, accessibility contrast, overload avoidance, focus, and tonal depth.'
+  - id: 'ch-03'
+    title: 'Imagery'
+    level: 1
+    order: 3
+    pages: '23-50'
+    summary: 'Defines photography, lifestyle and metaphorical storytelling, situational notes, image do’s and don’ts, image usage standards, brand references, recommended studios, illustration, and iconography.'
+    children:
+      - id: 'ch-03-01'
+        title: 'Photography'
+        level: 2
+        order: 1
+        pages: '24-41'
+        summary: 'Defines authentic, inclusive, user-focused photography with storytelling, diversity, single focal points, proper resolution, and brand reference constraints.'
+      - id: 'ch-03-02'
+        title: 'Illustration'
+        level: 2
+        order: 2
+        pages: '42-48'
+        summary: 'Defines illustration as informative rather than decorative, with build-from-white, simplicity, palette discipline, shape, light, background, people, hands, and symbol guidance.'
+      - id: 'ch-03-03'
+        title: 'Iconography'
+        level: 2
+        order: 3
+        pages: '49-50'
+        summary: 'Defines system icons as simple, friendly, minimal signals for actions, labels, commands, files, devices, directories, and wayfinding.'
+  - id: 'ch-04'
+    title: 'Animation and Video'
+    level: 1
+    order: 4
+    pages: '51-53'
+    summary: 'Defines delivery specs, bandwidth-aware animation, clarity, creative review checklist, inclusion, product currency, readability, and context fit.'
+  - id: 'ch-05'
+    title: 'Typography'
+    level: 1
+    order: 5
+    pages: '54-64'
+    summary: 'Defines typography principles, Roboto, Google Sans, Google Sans Display, Google Slides scaling, headlines, paragraphs, hierarchy, line height, weight, legibility, Product Sans, and Noto.'
+  - id: 'ch-06'
+    title: 'Related Guidelines'
+    level: 1
+    order: 6
+    pages: '65-67'
+    summary: 'References Google Ads Editorial Guide, Google Ads Brand Overview, Google Standards, and related materials.'

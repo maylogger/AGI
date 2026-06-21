@@ -1,0 +1,182 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: bitcoin_Brand_Guidelines
+index_ref: docs/bitcoin_Brand_Guidelines.index.yaml
+note_ref: docs/bitcoin_Brand_Guidelines.note.md
+archetype: brand_experience_guide
+industry: tech_software
+modules:
+- AI-Checkable Rules
+- Brand Strategy
+- Visual Identity
+- Governance
+- Color System
+- Design Tokens
+- Photography System
+- Typography System
+- Operations
+depth:
+  strategy: low
+  visual: high
+  governance: medium
+  top_level_chapter_count: 7
+  section_count: 8
+chapter_sequence:
+- id: ch-01
+  title: Brand Overview
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Logo Meaning Updates
+  order: 1
+  level: 2
+- id: ch-02
+  title: Logo Versions
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Standard Logo and Coin
+  order: 1
+  level: 2
+- id: ch-03
+  title: Brand Asset Usage
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Standard Logo Usage
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Coin Usage
+  order: 2
+  level: 2
+- id: ch-04
+  title: Colors
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Core Color Values
+  order: 1
+  level: 2
+- id: ch-05
+  title: Photography
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Approved Photo Backgrounds
+  order: 1
+  level: 2
+- id: ch-06
+  title: Typography
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Museo Sans Rounded
+  order: 1
+  level: 2
+- id: ch-07
+  title: Conclusion
+  order: 7
+  level: 1
+- id: ch-07-01
+  title: Contacts
+  order: 1
+  level: 2
+frameworks:
+- name: 採用「舊資產問題 → 新視覺選擇 → 品牌聯想」的轉譯框架
+  chapter: ch-01
+  chapter_title: Brand Overview
+- name: 採用 asset taxonomy：Standard Logo、Coin
+  chapter: ch-02
+  chapter_title: Logo Versions
+- name: 背景決策框架：背景亮度/複雜度 → asset version → contrast check → forbidden effects
+  chapter: ch-03
+  chapter_title: Brand Asset Usage
+- name: Design Tokens：brand-yellow、brand-gray
+  chapter: ch-04
+  chapter_title: Colors
+- name: Approved Background Library
+  chapter: ch-05
+  chapter_title: Photography
+- name: Type Weight Ladder：700、500、300
+  chapter: ch-06
+  chapter_title: Typography
+- name: Escalation Path
+  chapter: ch-07
+  chapter_title: Conclusion
+patterns:
+- name: 用微調既有高辨識符號的方法更新品牌，而不是重新發明整個識別。
+  chapter: ch-01
+  chapter_title: Brand Overview
+- name: 展示資產 → 使用條件 → 禁止用法
+  chapter: ch-02
+  chapter_title: Logo Versions
+- name: 使用 do/don't list 將抽象 integrity 轉成具體錯誤類型。
+  chapter: ch-03
+  chapter_title: Brand Asset Usage
+- name: 用少量核心色維持品牌辨識，不擴張過多 secondary palette。
+  chapter: ch-04
+  chapter_title: Colors
+- name: 可用素材集合
+  chapter: ch-05
+  chapter_title: Photography
+- name: 任意攝影原則
+  chapter: ch-05
+  chapter_title: Photography
+- name: 以少量字重建立基本 hierarchy，適合短品牌指南。
+  chapter: ch-06
+  chapter_title: Typography
+- name: 在結尾放置支援窗口，讓例外與疑問不被使用者自行解釋。
+  chapter: ch-07
+  chapter_title: Conclusion
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI 可檢查 logo 字體不可為斜體；主色應接近指定金黃色；灰色不得深到產生威脅或沉重感。
+  chapter: ch-01
+  chapter_title: Brand Overview
+- module: Brand Strategy
+  criterion: logo 不得使用未列色彩；不得 stretch、distort、shadow、bevel、stroke、gradient、transparency；coin 黃色版的 B 應保持白色；logo/coin 不應置於未提供的照片、圖樣或紋理背景。
+  chapter: ch-03
+  chapter_title: Brand Asset Usage
+- module: Color System
+  criterion: AI 可檢查指定黃是否為 `#FAB915`、灰是否為 `#8B8B8B`，或是否落在允許誤差範圍內。
+  chapter: ch-04
+  chapter_title: Colors
+chapters:
+- id: ch-01
+  title: Brand Overview
+  modules:
+  - AI-Checkable Rules
+  - Brand Strategy
+  - Visual Identity
+- id: ch-02
+  title: Logo Versions
+  modules:
+  - Visual Identity
+- id: ch-03
+  title: Brand Asset Usage
+  modules:
+  - AI-Checkable Rules
+  - Governance
+- id: ch-04
+  title: Colors
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-05
+  title: Photography
+  modules:
+  - Photography System
+  - Governance
+- id: ch-06
+  title: Typography
+  modules:
+  - Typography System
+- id: ch-07
+  title: Conclusion
+  modules:
+  - Operations
+  - Governance

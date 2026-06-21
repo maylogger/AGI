@@ -1,0 +1,92 @@
+# L3 決策卡 sidecar — Discord
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Discord_BrandGuideline_2021
+decisions:
+  - id: dp-persona-driven-voice
+    title: 從產品行為與用戶語言抽取語氣，而非另造企業腔
+    problem:
+      statement: 平台／社群品牌若用一般企業口吻發聲，會顯得疏離、像公告，無法與用戶建立歸屬感。
+      signals: [personality_expression, community, relatability, differentiation]
+    solution:
+      module: Voice and Tone
+      move: 從產品行為與用戶實際語言抽取語氣（playful/original/relatable/reliable），讓文案像朋友對話
+      layer: language
+    reason:
+      - 品牌系統必須從產品行為抽取，而不是在產品外另造裝飾語言
+      - 語氣要能反映用戶，而不只是品牌自說自話
+    applicable_when:
+      industries: [tech_software, media_entertainment]
+      brand_types: [challenger]
+      conditions: [community_driven, product_led]
+      archetypes: [brand_experience_guide, product_design_system]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Messaging, Content Design]
+    anti_patterns:
+      - 文案聽起來像一般科技平台公告
+      - user quote 被改寫成企業口吻
+    evidence:
+      - brand_id: Discord_BrandGuideline_2021
+        chapter: ch-01
+        excerpt: "品牌系統必須從產品行為抽取，而不是在產品外另造裝飾語言。"
+      - brand_id: Discord_BrandGuideline_2021
+        chapter: ch-01-01
+        excerpt: "語氣要能反映用戶，而不只是品牌自說自話；user quote 不應被寫成企業口吻。"
+    status: extracted
+
+  - id: dp-bold-contrast-for-challenger
+    title: 用單一高彩度主色建立 equity，並以可用／禁用配色維持張力
+    problem:
+      statement: 挑戰者品牌需要在飽和市場中快速被認出並表達鮮明個性，溫和保守的配色會被淹沒。
+      signals: [differentiation, breakthrough_attention, personality_expression]
+    solution:
+      module: Color System
+      move: 以單一高彩度品牌主色（Blurple）建立辨識 equity，並明確列出「可用組合／禁用組合」維持張力與一致
+      layer: visual_core
+    reason:
+      - 以 Blurple 作品牌 equity，產品狀態色負責語義，user-content 色負責多彩活力
+      - 色彩規範可明確列出「可用組合」與「禁用組合」，便於審稿與可讀性檢查
+    applicable_when:
+      industries: [tech_software]
+      brand_types: [challenger]
+      conditions: [saturated_market, personality_expression]
+      archetypes: [brand_experience_guide, full_brand_system]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Color System, Accessibility]
+    anti_patterns:
+      - 開放任意配色稀釋主色 equity
+      - 在同一動態溝通中混用多套配色方案
+    evidence:
+      - brand_id: Discord_BrandGuideline_2021
+        chapter: ch-03
+        excerpt: "以 Blurple 作品牌 equity；色彩規範可明確列出『可用組合』與『禁用組合』，便於 AI 審稿與 accessibility 檢查。"
+    status: extracted
+
+  - id: dp-message-hierarchy-by-persona
+    title: 把訊息依來源分層，避免所有文案都變成同一種品牌腔
+    problem:
+      statement: 同一品牌在不同情境若用同一種訊息密度與口吻，文案會全變成單一「品牌腔」，無法服務不同受眾層。
+      signals: [multi_audience, content_forward_identity, community]
+    solution:
+      module: Messaging
+      move: 將訊息分為 universal 品牌感、community 社群語彙、functional 產品價值三層，每則文案至少符合一層
+      layer: language
+    reason:
+      - 將語氣與訊息來源分離，可避免所有文案都變成同一種「品牌腔」
+      - 三層 messaging 分別對應情感層、社群層、功能層，可作為社群平台的 copy matrix
+    applicable_when:
+      industries: [tech_software, media_entertainment]
+      brand_types: [challenger, platform_ecosystem]
+      conditions: [multi_audience, community_driven]
+      archetypes: [brand_experience_guide, product_design_system]
+    dependencies:
+      requires: [Brand Strategy, Voice and Tone]
+      enables: [Content Design]
+    evidence:
+      - brand_id: Discord_BrandGuideline_2021
+        chapter: ch-01-01
+        excerpt: "三層 messaging：universal Discord feeling、community-specific lingo、functional product value；將語氣與訊息來源分離，可避免所有文案都變成同一種『品牌腔』。"
+    status: extracted

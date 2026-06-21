@@ -1,0 +1,101 @@
+title: 'BNP Paribas Brand Passport'
+source: 'sources/BNP_Brand_Pass_BD_2012.pdf'
+version: 'Brand Passport'
+date: 'Avril 2012'
+language: 'fr'
+summary: 'BNP Paribas 的品牌護照，將品牌歷史、人格、識別資產、媒體應用與治理問題整合成跨市場溝通規範。'
+chapters:
+  - id: 'ch-01'
+    title: 'Nos principes de communication'
+    level: 1
+    order: 1
+    pages: '10-24'
+    summary: '說明品牌歷史、人格與品牌動態，建立溝通行為的策略理由。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Édito et histoire'
+        level: 2
+        order: 1
+        pages: '10-12'
+        summary: '用領導者論述與品牌來源建立一致溝通的必要性。'
+      - id: 'ch-01-02'
+        title: 'Notre personnalité'
+        level: 2
+        order: 2
+        pages: '14-22'
+        summary: '以 Humain、Responsable、Innovant、Enthousiaste 定義品牌語氣與判斷邊界。'
+      - id: 'ch-01-03'
+        title: 'Notre dynamique de marque'
+        level: 2
+        order: 3
+        pages: '24'
+        summary: '把品牌視為隨世界變化而持續演進的溝通系統。'
+  - id: 'ch-02'
+    title: 'Les outils identitaires'
+    level: 1
+    order: 2
+    pages: '28-52'
+    summary: '列出徽誌、簽名、品牌區塊、字體、圖像、色彩、編輯風格與聲音識別等資產。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Emblème, signature et blocs marque'
+        level: 2
+        order: 1
+        pages: '28-38'
+        summary: '規範核心標誌資產與組合方式，維持識別穩定。'
+      - id: 'ch-02-02'
+        title: 'Typographies, iconographie et couleurs'
+        level: 2
+        order: 2
+        pages: '40-46'
+        summary: '定義視覺語言的字體、圖片與色彩基礎。'
+      - id: 'ch-02-03'
+        title: 'Style éditorial et identité sonore'
+        level: 2
+        order: 3
+        pages: '50-52'
+        summary: '把品牌個性延伸到文字與聲音表現。'
+  - id: 'ch-03'
+    title: 'Application aux supports'
+    level: 1
+    order: 3
+    pages: '56-84'
+    summary: '示範品牌規範如何落到多種媒介與觸點。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Print, digital, bureautique et papeterie'
+        level: 2
+        order: 1
+        pages: '58-64'
+        summary: '把核心識別套用到常態商務與行銷輸出。'
+      - id: 'ch-03-02'
+        title: 'Payment, banners, mobile et social'
+        level: 2
+        order: 2
+        pages: '66-72'
+        summary: '說明交易、動態與社群場景中的品牌一致性。'
+      - id: 'ch-03-03'
+        title: 'Video, radio, signage, events et tennis'
+        level: 2
+        order: 3
+        pages: '74-84'
+        summary: '處理聲音、空間、活動與贊助等複合觸點。'
+  - id: 'ch-04'
+    title: 'Pour aller plus loin'
+    level: 1
+    order: 4
+    pages: '88-102'
+    summary: '提供問題排查、品牌責任、集團品牌與支援資源。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Questions clés et difficultés'
+        level: 2
+        order: 1
+        pages: '88-90'
+        summary: '以檢核問題與常見難題支援落地判斷。'
+      - id: 'ch-04-02'
+        title: 'Responsabilité et marques du Groupe'
+        level: 2
+        order: 2
+        pages: '92-100'
+        summary: '連結企業責任、品牌架構與多品牌治理。'

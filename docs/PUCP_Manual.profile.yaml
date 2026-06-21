@@ -1,0 +1,138 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: PUCP_Manual
+index_ref: docs/PUCP_Manual.index.yaml
+note_ref: docs/PUCP_Manual.note.md
+archetype: brand_experience_guide
+industry: education
+modules:
+- Operations
+- Knowledge Architecture
+- Compliance
+- Typography System
+- Visual Language
+- Color System
+- Layout System
+- Examples
+- Design Tokens
+- Brand Architecture
+- Governance
+depth:
+  strategy: low
+  visual: high
+  governance: medium
+  top_level_chapter_count: 7
+  section_count: 0
+chapter_sequence:
+- id: ch-01
+  title: Introducción al manual
+  order: 1
+  level: 1
+- id: ch-02
+  title: Logotipo
+  order: 2
+  level: 1
+- id: ch-03
+  title: Territorio visual
+  order: 3
+  level: 1
+- id: ch-04
+  title: Lineamientos del sistema
+  order: 4
+  level: 1
+- id: ch-05
+  title: Arquitectura de marca
+  order: 5
+  level: 1
+- id: ch-06
+  title: Papelería
+  order: 6
+  level: 1
+- id: ch-07
+  title: Glosario
+  order: 7
+  level: 1
+frameworks:
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-01
+  chapter_title: Introducción al manual
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-02
+  chapter_title: Logotipo
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-03
+  chapter_title: Territorio visual
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-04
+  chapter_title: Lineamientos del sistema
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-05
+  chapter_title: Arquitectura de marca
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-06
+  chapter_title: Papelería
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-07
+  chapter_title: Glosario
+patterns:
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-01
+  chapter_title: Introducción al manual
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-02
+  chapter_title: Logotipo
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-03
+  chapter_title: Territorio visual
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-04
+  chapter_title: Lineamientos del sistema
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-05
+  chapter_title: Arquitectura de marca
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-06
+  chapter_title: Papelería
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-07
+  chapter_title: Glosario
+rules_ai_checkable: []
+chapters:
+- id: ch-01
+  title: Introducción al manual
+  modules:
+  - Operations
+  - Knowledge Architecture
+- id: ch-02
+  title: Logotipo
+  modules:
+  - Compliance
+- id: ch-03
+  title: Territorio visual
+  modules:
+  - Typography System
+  - Visual Language
+  - Color System
+- id: ch-04
+  title: Lineamientos del sistema
+  modules:
+  - Layout System
+  - Examples
+  - Design Tokens
+- id: ch-05
+  title: Arquitectura de marca
+  modules:
+  - Brand Architecture
+  - Governance
+- id: ch-06
+  title: Papelería
+  modules:
+  - Operations
+- id: ch-07
+  title: Glosario
+  modules:
+  - Knowledge Architecture
+  - Governance

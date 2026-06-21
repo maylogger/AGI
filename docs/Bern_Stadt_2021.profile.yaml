@@ -1,0 +1,263 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Bern_Stadt_2021
+index_ref: docs/Bern_Stadt_2021.index.yaml
+note_ref: docs/Bern_Stadt_2021.note.md
+archetype: brand_experience_guide
+industry: public_sector
+modules:
+- AI-Checkable Rules
+- Design Tokens
+- Visual Identity
+- Governance
+- Content Design
+- Operations
+- Accessibility
+- Layout System
+- Brand Architecture
+- Typography System
+- Compliance
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 9
+  section_count: 13
+chapter_sequence:
+- id: ch-01
+  title: 'Grundlagen: Die Marke'
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Wappen und Stadtmarke
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Farben, Schriften und Markenaufbau
+  order: 2
+  level: 2
+- id: ch-02
+  title: Integrierte Kommunikation
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Kampagne Beispiel
+  order: 1
+  level: 2
+- id: ch-03
+  title: Elektronische Kommunikation
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Social Media and Internet
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Elektronische Medien and Videos
+  order: 2
+  level: 2
+- id: ch-04
+  title: Printmedien – Layoutsystem
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Layout Aufbau and DIN Formats
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Posters, Special Formats and Background
+  order: 2
+  level: 2
+- id: ch-05
+  title: Umsetzungen Dachmarke
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Entsorgung + Recycling and Hochbau
+  order: 1
+  level: 2
+- id: ch-06
+  title: Dokumente
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Briefschaften and Amtliche Dokumente
+  order: 1
+  level: 2
+- id: ch-07
+  title: Signaletik
+  order: 7
+  level: 1
+- id: ch-07-01
+  title: Building Signage and Accessibility
+  order: 1
+  level: 2
+- id: ch-07-02
+  title: Schools, Parks and Pictograms
+  order: 2
+  level: 2
+- id: ch-08
+  title: Fahrzeuge und Kleidung
+  order: 8
+  level: 1
+- id: ch-08-01
+  title: Vehicles and Clothing
+  order: 1
+  level: 2
+- id: ch-09
+  title: Präsenz der Stadt
+  order: 9
+  level: 1
+- id: ch-09-01
+  title: Wir leben Bern
+  order: 1
+  level: 2
+frameworks:
+- name: Civic Identity Framework：sender mark、legal authorization、color code、type system、department/topic extension
+  chapter: ch-01
+  chapter_title: 'Grundlagen: Die Marke'
+- name: Campaign Integration Framework：message consistency、visual continuity、channel adaptation
+  chapter: ch-02
+  chapter_title: Integrierte Kommunikation
+- name: Digital Civic Communication Framework
+  chapter: ch-03
+  chapter_title: Elektronische Kommunikation
+- name: Civic Layout Grid：brand zone fixed、content zone flexible、partner zone constrained
+  chapter: ch-04
+  chapter_title: Printmedien – Layoutsystem
+- name: Endorsed Civic Service Framework
+  chapter: ch-05
+  chapter_title: Umsetzungen Dachmarke
+- name: Civic Stationery System
+  chapter: ch-06
+  chapter_title: Dokumente
+- name: Accessible Civic Signage Framework
+  chapter: ch-07
+  chapter_title: Signaletik
+- name: Mobile Identity Framework
+  chapter: ch-08
+  chapter_title: Fahrzeuge und Kleidung
+- name: Event Presence Kit
+  chapter: ch-09
+  chapter_title: Präsenz der Stadt
+patterns:
+- name: 以市徽尺寸作為比例單位，讓不同媒介的版面可被一致推導。
+  chapter: ch-01
+  chapter_title: 'Grundlagen: Die Marke'
+- name: 核心訊息固定，素材可依媒體尺寸與目標族群調整。
+  chapter: ch-02
+  chapter_title: Integrierte Kommunikation
+- name: social media 新帳號需提早通知資訊服務單位，將治理前移到規劃階段。
+  chapter: ch-03
+  chapter_title: Elektronische Kommunikation
+- name: 用一套 A-format 邏輯比例放大到 F4/F200 poster 與特殊 formatos。
+  chapter: ch-04
+  chapter_title: Printmedien – Layoutsystem
+- name: 產品與服務改變，sender 不變；視覺 key 可換，Dachmarke 不換。
+  chapter: ch-05
+  chapter_title: Umsetzungen Dachmarke
+- name: Office 文件使用系統字體 Arial，降低使用者與輔助工具負擔。
+  chapter: ch-06
+  chapter_title: Dokumente
+- name: 歷史建築需讓標示尊重立面結構，公共學校與園區則以 situational steles 管理。
+  chapter: ch-07
+  chapter_title: Signaletik
+- name: 正面嚴格、背面彈性，讓服裝同時具官方性與實務資訊需求。
+  chapter: ch-08
+  chapter_title: Fahrzeuge und Kleidung
+- name: 用一組 authentic local moments 作為活動背景，讓城市感比單純 logo 更有情緒。
+  chapter: ch-09
+  chapter_title: Präsenz der Stadt
+rules_ai_checkable:
+- module: ''
+  criterion: 市徽與字標不得拆分；熊的方向需符規定則；Wappen 寬 7mm 時 Stadtmarke 全長 25mm；最小寬 18mm；市徽周圍至少一個 Wappen 寬度；黃色不屬 Bern heraldic colors。
+  chapter: ch-01
+  chapter_title: 'Grundlagen: Die Marke'
+- module: ''
+  criterion: profile image 使用 Stadtmarke 或可辨識 Wappen；網頁圖片需書面使用權與人物同意；header image 需能裁切為 1920 × 634；影片短片可省略 intro 但 watermark
+    從首幀可見。
+  chapter: ch-03
+  chapter_title: Elektronische Kommunikation
+- module: Layout System
+  criterion: Markenzone 不放文字；A4/A5 quer/A3 色條 7 Wappen 寬；A5/A6 quer 色條 6 Wappen；A6/A6/5 色條 5 Wappen；print production 使用 100%
+    recycling paper；線紋旋轉 30°。
+  chapter: ch-04
+  chapter_title: Printmedien – Layoutsystem
+- module: ''
+  criterion: 差異化元素需在既有 CD 指引內；sender 必須清楚；不能覆蓋 title/text、submark 或 sponsor zones。
+  chapter: ch-05
+  chapter_title: Umsetzungen Dachmarke
+- module: ''
+  criterion: 商務信件使用 Arial 10；不建議使用 technical aids 容易出問題的字距；信封地址區上方需有 sender；官方文件標題/文字僅用紅、黑、灰。
+  chapter: ch-06
+  chapter_title: Dokumente
+- module: ''
+  criterion: 戶外牌面厚至少 3mm、深至少 2.5cm、無玻璃覆蓋、無反光；大寫字高至少 15mm；安裝高度最多 160cm；relief 字高 15-18mm、relief 高至少 1mm；新標示需符合 SIA-Norm 500。
+  chapter: ch-07
+  chapter_title: Signaletik
+- module: ''
+  criterion: 車輛底色宜白、銀或淺灰；紅色色條永遠在左；車用標準 Wappen 80 × 128.8mm、文字高 25mm；深色衣物用白 logo，淺色衣物用黑印刷/刺繡；服裝正面不得增加其他補充元素。
+  chapter: ch-08
+  chapter_title: Fahrzeuge und Kleidung
+- module: ''
+  criterion: RollUp 80 × 200cm；Faltwand 3 × 2m；Bandenblache 200 × 100cm；特定主題需與 CD Beratung 協調；素材 via Intranet form 取得。
+  chapter: ch-09
+  chapter_title: Präsenz der Stadt
+chapters:
+- id: ch-01
+  title: 'Grundlagen: Die Marke'
+  modules:
+  - AI-Checkable Rules
+  - Design Tokens
+  - Visual Identity
+  - Governance
+- id: ch-02
+  title: Integrierte Kommunikation
+  modules:
+  - Content Design
+  - Operations
+  - Governance
+- id: ch-03
+  title: Elektronische Kommunikation
+  modules:
+  - AI-Checkable Rules
+  - Accessibility
+  - Governance
+- id: ch-04
+  title: Printmedien – Layoutsystem
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Operations
+- id: ch-05
+  title: Umsetzungen Dachmarke
+  modules:
+  - Brand Architecture
+  - Visual Identity
+  - Governance
+- id: ch-06
+  title: Dokumente
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Operations
+  - Accessibility
+- id: ch-07
+  title: Signaletik
+  modules:
+  - AI-Checkable Rules
+  - Compliance
+  - Accessibility
+- id: ch-08
+  title: Fahrzeuge und Kleidung
+  modules:
+  - AI-Checkable Rules
+  - Operations
+- id: ch-09
+  title: Präsenz der Stadt
+  modules:
+  - Operations
+  - Governance

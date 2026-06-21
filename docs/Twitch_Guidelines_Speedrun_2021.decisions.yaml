@@ -1,0 +1,118 @@
+# L3 決策卡 sidecar — Twitch Identity Guidelines (Speedrun Edition)
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Twitch_Guidelines_Speedrun_2021
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先用 community-first brand narrative（multiplayer is everything）定義品牌世界觀，再讓 logo、色彩、語氣承接
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 有效的 identity guideline 可先定義「品牌如何看世界」，再定義「品牌看起來如何」
+      - 品牌相信互動與共同參與比預製內容更有價值
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, media_entertainment]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: Twitch_Guidelines_Speedrun_2021
+        chapter: ch-01
+        excerpt: "Narrative Before Identity，把品牌行為原則放在視覺規格之前；Community-first Brand Frame：place to stream → collective participation → making Twitch together。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 用 cap height / x-height / center line 等 typographic metrics 取代任意像素，定義 internal 與 partnership lockup 的對齊與間距
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - Co-brand 模板可用 typographic metrics 取代任意像素距離，提高跨尺寸穩定性
+    applicable_when:
+      industries: [finance, tech_software, media_entertainment]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: Twitch_Guidelines_Speedrun_2021
+        chapter: ch-03
+        excerpt: "Lockup Alignment Framework：文字高度依 cap height/x-height 對齊、center line 對齊；partner logo 不得侵入 Twitch logo clearspace。"
+    status: extracted
+
+  - id: dp-bold-contrast-for-challenger
+    title: 用單一高彩度主色建立 equity，並以可用／禁用配色維持張力
+    problem:
+      statement: 挑戰者品牌需要在飽和市場中快速被認出並表達鮮明個性，溫和保守的配色會被淹沒。
+      signals: [differentiation, breakthrough_attention, personality_expression]
+    solution:
+      module: Color System
+      move: 以 Twitch Purple 作核心 equity，secondary palette 作 turbo activation，並用核准 logo color pairings 限制搭配
+      layer: visual_core
+    reason:
+      - 核心色彩建立辨識，次要色彩提供速度感、玩心與活動彈性
+      - 少量核准搭配比大量理論色彩更能維持品牌一致性
+      - secondary color 不得取代 Twitch Purple 的核心識別角色
+    applicable_when:
+      industries: [tech_software]
+      brand_types: [challenger]
+      conditions: [saturated_market, personality_expression]
+      archetypes: [brand_experience_guide, full_brand_system]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Color System, Accessibility]
+    anti_patterns:
+      - 自行新增未命名 accent 或讓 secondary color 取代核心識別
+    evidence:
+      - brand_id: Twitch_Guidelines_Speedrun_2021
+        chapter: ch-04-03
+        excerpt: "core communications 的 logo color pairing 必須屬於核准清單（Approved Pairing Matrix）；不得任意將 logo 套用 secondary accent，需避免 secondary color 取代 Twitch Purple 的核心角色。"
+    status: extracted
+
+  - id: dp-persona-driven-voice
+    title: 從產品行為與用戶語言抽取語氣，而非另造企業腔
+    problem:
+      statement: 平台／社群品牌若用一般企業口吻發聲，會顯得疏離、像公告，無法與用戶建立歸屬感。
+      signals: [personality_expression, community, relatability, differentiation]
+    solution:
+      module: Voice and Tone
+      move: 用 voice principles（Mischievous/Purposeful/Iterative/Revolutionary）加 functional/emotional tonal scales，讓品牌說話像社群成員
+      layer: language
+    reason:
+      - 品牌系統必須從產品行為抽取，而不是在產品外另造裝飾語言
+      - voice guideline 最有用的形式是原則加情境刻度，而不是固定句型
+      - 幽默應 good-natured，幫助而不居高臨下
+    applicable_when:
+      industries: [tech_software, media_entertainment]
+      brand_types: [challenger]
+      conditions: [community_driven, product_led]
+      archetypes: [brand_experience_guide, product_design_system]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Messaging, Content Design]
+    anti_patterns:
+      - 文案聽起來像一般科技平台公告
+    evidence:
+      - brand_id: Twitch_Guidelines_Speedrun_2021
+        chapter: ch-07
+        excerpt: "voice principles：Mischievous、Purposeful、Iterative、Revolutionary，回到 community energy；不只看起來像 Twitch，也說話像 Twitch，幽默但友善、幫助而不居高臨下。"
+    status: extracted

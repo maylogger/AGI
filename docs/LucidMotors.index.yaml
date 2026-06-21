@@ -1,0 +1,326 @@
+title: "LucidMotors Brand Guidelines"
+source: "sources/LucidMotors.pdf"
+version: "V1"
+date: "2014-06-11"
+language: "en"
+summary: "LucidMotors 品牌規範定義品牌平台、標誌系統、色彩、字體、影像、圖形與語氣，用以建立一致、清楚、現代且富有能量的消費者品牌識別。"
+chapters:
+  - id: "ch-01"
+    title: "Brand"
+    level: 1
+    order: 1
+    pages: "5-7"
+    summary: "說明 LucidMotors 的使命、願景、定位、品牌支柱與故事框架，建立所有視覺與文字表達的策略基礎。"
+    children:
+      - id: "ch-01-01"
+        title: "Our Platform"
+        level: 2
+        order: 1
+        pages: "5"
+        summary: "定義使命、願景與定位，將 LucidMotors 描述為以創新電能系統驅動的高效能智慧速克達品牌。"
+      - id: "ch-01-02"
+        title: "Brand Pillars"
+        level: 2
+        order: 2
+        pages: "6"
+        summary: "以 Clean、Progressive、Energized 三個支柱描述品牌個性，分別代表清楚透明、前瞻創意與動態樂觀。"
+      - id: "ch-01-03"
+        title: "Story Framework"
+        level: 2
+        order: 3
+        pages: "7"
+        summary: "透過 Attract、Engage、Connect 三層溝通模型，依受眾旅程安排訊息深度與說服方式。"
+  - id: "ch-02"
+    title: "Logo"
+    level: 1
+    order: 2
+    pages: "9-18"
+    summary: "規範 LucidMotors wordmark、清除空間、顏色、Power Bar、Living Power Bar、Power Loop、產品標誌與禁止用法。"
+    children:
+      - id: "ch-02-01"
+        title: "Wordmark"
+        level: 2
+        order: 1
+        pages: "9"
+        summary: "強調 wordmark 是品牌核心識別，代表品牌現代、強而有力且可記憶的特質。"
+      - id: "ch-02-02"
+        title: "Wordmark Detail"
+        level: 2
+        order: 2
+        pages: "10"
+        summary: "依尺寸使用不同 wordmark 資產，確保商標符號可讀，並規定最低尺寸與文案中的 LucidMotors 大小寫。"
+      - id: "ch-02-03"
+        title: "Wordmark Clear Space"
+        level: 2
+        order: 3
+        pages: "11"
+        summary: "以字母 o 的外徑定義最小與最佳留白，並限制 wordmark 不可在同一溝通面上被過度使用。"
+      - id: "ch-02-04"
+        title: "Wordmark Color"
+        level: 2
+        order: 4
+        pages: "12"
+        summary: "採用精簡的單色策略，深色背景使用白色，淺色背景使用 Charcoal，照片上需確保對比清楚。"
+      - id: "ch-02-05"
+        title: "Wordmark Don'ts"
+        level: 2
+        order: 5
+        pages: "13"
+        summary: "禁止拉伸、加效果、用文字取代、旋轉、建立 lockup、改色、變形、作為圖樣或放在過於複雜的背景上。"
+      - id: "ch-02-06"
+        title: "Power Bar"
+        level: 2
+        order: 6
+        pages: "14"
+        summary: "Power Bar 是動態品牌元素，象徵 Energy 到 Impact 之間的動能，需控制厚度與比例。"
+      - id: "ch-02-07"
+        title: "Living Power Bar"
+        level: 2
+        order: 7
+        pages: "15"
+        summary: "Hero gradient 可作為動畫或互動元素，用於地圖、圖表、資料視覺化與過場，呈現品牌的能量與方向感。"
+      - id: "ch-02-08"
+        title: "Power Loop"
+        level: 2
+        order: 8
+        pages: "16"
+        summary: "Power Loop 代表 LucidMotors 電能服務，只在電池、換電站或再生能源故事中使用，且不得與 wordmark 鎖定成固定組合。"
+      - id: "ch-02-09"
+        title: "Logos on Product"
+        level: 2
+        order: 9
+        pages: "17"
+        summary: "產品上的 wordmark 應水平置中並優先處理，Infinity Loop 為次要元素，通常置於下方或以相同製程色呈現。"
+      - id: "ch-02-10"
+        title: "Power Bar Don'ts"
+        level: 2
+        order: 10
+        pages: "18"
+        summary: "禁止同時使用 Power Bar 與 Loop、作為裝飾、與 wordmark 鎖定、加效果、滿版裁切、傾斜或放在低對比背景上。"
+  - id: "ch-03"
+    title: "Color"
+    level: 1
+    order: 3
+    pages: "20-24"
+    summary: "定義 LucidMotors 的色彩比例、色盤、hero gradient、背景與色彩漸層，以及避免破壞清楚感與能量感的禁用方式。"
+    children:
+      - id: "ch-03-01"
+        title: "Color Proportions"
+        level: 2
+        order: 1
+        pages: "20"
+        summary: "白、黑與中性色作為基底，色彩用來聚焦與導引訊息；比例需依情境彈性調整。"
+      - id: "ch-03-02"
+        title: "Color Palette"
+        level: 2
+        order: 2
+        pages: "21"
+        summary: "定義藍、綠、灰階、深藍、Rich Blue、Teal、Hot Green 與 Red 等顏色，並賦予對應的品牌或 UI 意義。"
+      - id: "ch-03-03"
+        title: "Hero Gradient"
+        level: 2
+        order: 3
+        pages: "22"
+        summary: "Hero gradient 用於使用者旅程中的導引，方向由藍到綠，適合線性使用，不應作為大面積完整光譜背景。"
+      - id: "ch-03-04"
+        title: "Gradient Fields"
+        level: 2
+        order: 4
+        pages: "23"
+        summary: "背景漸層用於創造空間與氛圍，色彩漸層用於醒目覆蓋或線條動感，但不可用來塑造物件立體感。"
+      - id: "ch-03-05"
+        title: "Color Don'ts"
+        level: 2
+        order: 5
+        pages: "24"
+        summary: "禁止使用未核准顏色、大面積完整 hero gradient、放射狀 hero gradient、大面積紅色、過密色塊或未核准漸層。"
+  - id: "ch-04"
+    title: "Type"
+    level: 1
+    order: 4
+    pages: "26-31"
+    summary: "規範 LucidMotors 字體系統，包含 Flama 與 Graphik 的角色、標題、內文、字色、實例與禁止用法。"
+    children:
+      - id: "ch-04-01"
+        title: "Typography Overview"
+        level: 2
+        order: 1
+        pages: "26"
+        summary: "Flama 作為主要字體，Graphik 作為次要字體；字體應大膽、清楚、精準，並以產品內容為焦點。"
+      - id: "ch-04-02"
+        title: "Headlines"
+        level: 2
+        order: 2
+        pages: "27"
+        summary: "Flama Semi-condensed Ultralight 用於大型 Attract 訊息，Flama Condensed Bold 用於強勢標題，皆需控制字距與比例。"
+      - id: "ch-04-03"
+        title: "Sub Heads and Body Text"
+        level: 2
+        order: 3
+        pages: "28"
+        summary: "Graphik Light、Semi-bold 與 Black Italic 分別用於內文、清楚的副標與特殊 callout，強調可讀性與清楚層級。"
+      - id: "ch-04-04"
+        title: "Type Color"
+        level: 2
+        order: 4
+        pages: "29"
+        summary: "文字主要使用 Charcoal、White 與 Gray，色彩與漸層只用於聚焦關鍵訊息，不應分散內容清晰度。"
+      - id: "ch-04-05"
+        title: "Type in Use"
+        level: 2
+        order: 5
+        pages: "30"
+        summary: "展示 Attract statement、bold headline、網頁段落與多種內文場景的排版應用方式。"
+      - id: "ch-04-06"
+        title: "Type Don'ts"
+        level: 2
+        order: 6
+        pages: "31"
+        summary: "禁止用 Flama 排長文、使用未授權字體、字級過小、右對齊、強制左右對齊、調整字距行距或讓標題斷字。"
+  - id: "ch-05"
+    title: "Imagery"
+    level: 1
+    order: 5
+    pages: "33-40"
+    summary: "定義 LucidMotors 影像風格，以真實、簡潔、精緻為原則，涵蓋產品、環境、騎士、商品、科技、人像與禁用方式。"
+    children:
+      - id: "ch-05-01"
+        title: "Image Principles"
+        level: 2
+        order: 1
+        pages: "33"
+        summary: "影像應真實、簡單且精緻，避免假、混亂或粗糙的視覺呈現。"
+      - id: "ch-05-02"
+        title: "Premium Product"
+        level: 2
+        order: 2
+        pages: "34"
+        summary: "產品攝影應呈現高品質設計與工藝，使用乾淨、光線精緻且不搶焦點的環境。"
+      - id: "ch-05-03"
+        title: "In The World"
+        level: 2
+        order: 3
+        pages: "35"
+        summary: "真實世界中的產品影像應表現性能與騎乘體驗，地點需簡化並避免讓產品被背景淹沒。"
+      - id: "ch-05-04"
+        title: "Riders"
+        level: 2
+        order: 4
+        pages: "36"
+        summary: "騎士影像應呈現多元社群與角色感，但人物仍須次於產品故事，服裝以實用、現代、簡潔為主。"
+      - id: "ch-05-05"
+        title: "Merchandising"
+        level: 2
+        order: 5
+        pages: "37"
+        summary: "商品與產品基本圖需中性、清楚且功能性強，適合支援 Engage 與 Connect 層級的故事說明。"
+      - id: "ch-05-06"
+        title: "Technology"
+        level: 2
+        order: 6
+        pages: "38"
+        summary: "科技說明要有趣且簡化，可用藍色線框、透明 X-ray 視圖、圓形、紅色警示線與 exploded view 說明系統與零件。"
+      - id: "ch-05-07"
+        title: "Photos of People"
+        level: 2
+        order: 7
+        pages: "39"
+        summary: "人物肖像以清晰黑白風格為主，生活影像則強調真實、自然、多元與具有感染力的使用者體驗。"
+      - id: "ch-05-08"
+        title: "Photo Don'ts"
+        level: 2
+        order: 8
+        pages: "40"
+        summary: "避免忙亂背景、錯誤呈現產品、髒亂場景、假動作、過度後製、無騎士的動態產品姿勢與不適切騎士形象。"
+  - id: "ch-06"
+    title: "Graphics"
+    level: 1
+    order: 6
+    pages: "42-47"
+    summary: "規範資訊圖形、地圖、圖示、徽章與限定版插畫，要求清楚、簡化、功能導向且保留品牌個性。"
+    children:
+      - id: "ch-06-01"
+        title: "Graphic Elements"
+        level: 2
+        order: 1
+        pages: "42"
+        summary: "資訊圖形應扁平、清楚且去除裝飾，使用 crosshatching、透明欄位、圓形與 pill 形狀作為功能性元素。"
+      - id: "ch-06-02"
+        title: "Maps"
+        level: 2
+        order: 2
+        pages: "43"
+        summary: "地圖以中性色為主，使用色彩強調路線、位置與關鍵資訊；功能地圖可高度簡化，hero 地圖可更抽象。"
+      - id: "ch-06-03"
+        title: "Icon Style"
+        level: 2
+        order: 3
+        pages: "44"
+        summary: "圖示應還原到最必要的線條，以基本幾何與 45 度角為基礎，維持方形端點與有限線寬。"
+      - id: "ch-06-04"
+        title: "Icon Use"
+        level: 2
+        order: 4
+        pages: "45"
+        summary: "依尺寸區分 standard 與 hero icon，並依功能選擇容器與顏色，例如紅色僅用於警告或問題。"
+      - id: "ch-06-05"
+        title: "Badge Style"
+        level: 2
+        order: 5
+        pages: "46"
+        summary: "徽章用於互動、獎勵與展現品牌個性，風格需簡單、扁平、大膽，並可考慮螢幕動畫效果。"
+      - id: "ch-06-06"
+        title: "Limited Edition"
+        level: 2
+        order: 6
+        pages: "47"
+        summary: "限定版可透過地區藝術家與多樣插畫風格為品牌注入表現力，形成具地域感與收藏感的視覺系統。"
+  - id: "ch-07"
+    title: "Voice"
+    level: 1
+    order: 7
+    pages: "49-56"
+    summary: "定義 LucidMotors 品牌語氣，讓複雜內容變簡單，並透過 Attract、Engage、Connect 框架建立一致且具感染力的訊息。"
+    children:
+      - id: "ch-07-01"
+        title: "Our Voice"
+        level: 2
+        order: 1
+        pages: "49"
+        summary: "品牌語氣反映 LucidMotors 的個性、創意與巧思，應依環境調整但核心風格保持一致。"
+      - id: "ch-07-02"
+        title: "Reflecting Our Brand"
+        level: 2
+        order: 2
+        pages: "50"
+        summary: "語氣需呼應 Clean、Progressive、Energized，做到清楚、聰明且有啟發性。"
+      - id: "ch-07-03"
+        title: "Our Personality"
+        level: 2
+        order: 3
+        pages: "51"
+        summary: "LucidMotors 的語氣年輕、聰明、創新、直接且不排外，應避免過度技術術語或刻意顯得聰明。"
+      - id: "ch-07-04"
+        title: "Crafting The Message"
+        level: 2
+        order: 4
+        pages: "52"
+        summary: "Attract、Engage、Connect 各自對應不同情境與訊息深度，從吸引注意到說明細節逐步展開。"
+      - id: "ch-07-05"
+        title: "Messaging Framework"
+        level: 2
+        order: 5
+        pages: "53"
+        summary: "訊息框架把品牌承諾、體驗、產品利益與服務利益串成旅程，協助從高層訊息一路延伸到具體賣點。"
+      - id: "ch-07-06"
+        title: "Connecting The Story"
+        level: 2
+        order: 6
+        pages: "54"
+        summary: "示範如何從啟發性訊息逐步連接到功能細節，讓受眾理解產品與服務價值。"
+      - id: "ch-07-07"
+        title: "Writing Examples"
+        level: 2
+        order: 7
+        pages: "55-56"
+        summary: "提供文案範例，示範如何將技術與設計內容轉化為簡單、相關且對使用者有意義的說法。"

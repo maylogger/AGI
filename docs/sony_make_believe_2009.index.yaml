@@ -1,0 +1,43 @@
+title: "Sony Group Brand Message make.believe Concept and Usage Guidelines"
+source: "sources/sony_make_believe_2009.pdf"
+version: "Version 1"
+date: "2009-07-31"
+language: "en"
+summary: "Sony make.believe guideline 將集團品牌訊息定義為統一 electronics、entertainment、design、engineering 與 consumer communication 的品牌語法，並規範 composite logo、print/web/motion 使用與治理。"
+chapters:
+  - id: "ch-01"
+    title: "The Meaning of make.believe"
+    level: 1
+    order: 1
+    pages: "9-21"
+    summary: "說明 make.believe 的品牌概念、mantra 與統一 Sony 跨事業溝通的角色。"
+  - id: "ch-02"
+    title: "Application of make.believe"
+    level: 1
+    order: 2
+    pages: "22-28"
+    summary: "說明 guidelines 目的、使用者、允許使用範圍與 composite logo 在不同活動/產品中的 mandatory/recommended/not permitted 狀態。"
+  - id: "ch-03"
+    title: "Usage of the Composite Logo"
+    level: 1
+    order: 3
+    pages: "29-35"
+    summary: "定義 composite logo form/size、isolation zone、color/background、incorrect usage、trademark notice 與 pronunciation。"
+  - id: "ch-04"
+    title: "Using the Composite Logo in Print Media and Websites"
+    level: 1
+    order: 4
+    pages: "36-45"
+    summary: "規範 print media 與 websites 的 composite logo 位置、尺寸、header、utility area 與錯誤使用。"
+  - id: "ch-05"
+    title: "make.believe Motion Logo"
+    level: 1
+    order: 5
+    pages: "47-49"
+    summary: "定義 motion logo、dual element、1.5/3/5 秒版本與 commercials/digital media 使用。"
+  - id: "ch-06"
+    title: "Other Important Information"
+    level: 1
+    order: 6
+    pages: "51-54"
+    summary: "規範 mantra、非英語國家例外、術語、guideline 階層、修訂權、使用期間、地域與 contact。"

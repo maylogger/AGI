@@ -1,0 +1,224 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: First_Bank_Brand_Guidelines_2021
+index_ref: docs/First_Bank_Brand_Guidelines_2021.index.yaml
+note_ref: docs/First_Bank_Brand_Guidelines_2021.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- Brand Strategy
+- Governance
+- Legal and Trademark
+- AI-Checkable Rules
+- Visual Identity
+- Brand Architecture
+- Color System
+- Design Tokens
+- Information Design
+- Layout System
+- Visual Language
+- Photography System
+- Content Safety
+- Illustration System
+- Iconography System
+- Typography System
+- Content Design
+- Operations
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 8
+  section_count: 2
+chapter_sequence:
+- id: ch-01
+  title: Brand Statement
+  order: 1
+  level: 1
+- id: ch-02
+  title: Logo Specifications
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Primary Logo, Clear Space, Minimum Size, and Misuse
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Lines of Business Logos
+  order: 2
+  level: 2
+- id: ch-03
+  title: Color Palette
+  order: 3
+  level: 1
+- id: ch-04
+  title: Brand Patterns
+  order: 4
+  level: 1
+- id: ch-05
+  title: Imagery
+  order: 5
+  level: 1
+- id: ch-06
+  title: Illustration and Iconography
+  order: 6
+  level: 1
+- id: ch-07
+  title: Typography
+  order: 7
+  level: 1
+- id: ch-08
+  title: Contact
+  order: 8
+  level: 1
+frameworks:
+- name: 品牌基礎框架是「我們代表什麼 -> 如何被看見 -> 為何要一致」
+  chapter: ch-01
+  chapter_title: Brand Statement
+- name: logo 決策框架是「背景顏色/對比 -> 選擇 logo variant -> 套用 clear space -> 檢查 minimum size -> 禁止變形」
+  chapter: ch-02
+  chapter_title: Logo Specifications
+- name: 審核框架是「variant correct? spacing sufficient? size legible? no prohibited transform?」
+  chapter: ch-02-01
+  chapter_title: Primary Logo, Clear Space, Minimum Size, and Misuse
+- name: 業務線框架是「是否屬核准業務 -> 使用對應 lockup -> 保持主品牌比例與顏色」
+  chapter: ch-02-02
+  chapter_title: Lines of Business Logos
+- name: 色彩框架是「core palette -> line-of-business palette -> web palette -> examples in use」
+  chapter: ch-03
+  chapter_title: Color Palette
+- name: pattern 框架是「logo geometry -> pattern family -> application backdrop/frame」
+  chapter: ch-04
+  chapter_title: Brand Patterns
+- name: 影像審核框架是「受眾共鳴 -> 真實瞬間 -> 多元代表 -> 服務/產品語境 -> 品牌色出現 -> 不過度忙亂」
+  chapter: ch-05
+  chapter_title: Imagery
+- name: 插畫審核框架是「是否符合偏好風格 -> 是否包含品牌色 -> 是否適合應用語境」
+  chapter: ch-06
+  chapter_title: Illustration and Iconography
+- name: 字體框架是「媒介 -> typeface family -> role -> case style -> application example」
+  chapter: ch-07
+  chapter_title: Typography
+- name: 例外處理框架是「遇到疑問 -> 聯絡 Marketing -> 取得要求或批准」
+  chapter: ch-08
+  chapter_title: Contact
+patterns:
+- name: 短版 guideline 可先用 one-page statement 建立治理目的，再進入規格。
+  chapter: ch-01
+  chapter_title: Brand Statement
+- name: 以字母單位量測 clear space 是可移植模式，可讓 logo 隨尺寸等比例保護。
+  chapter: ch-02
+  chapter_title: Logo Specifications
+- name: 把 don’ts 轉成 checklist，比只展示漂亮範例更能支援治理。
+  chapter: ch-02-01
+  chapter_title: Primary Logo, Clear Space, Minimum Size, and Misuse
+- name: 以 approved lockup library 管理子業務，而不是建立自由子品牌系統。
+  chapter: ch-02-02
+  chapter_title: Lines of Business Logos
+- name: 以主品牌色做統一，以業務線色做導覽與語境分類。
+  chapter: ch-03
+  chapter_title: Color Palette
+- name: 從核心識別抽出二級圖形語言，是品牌系統常見擴張模式。
+  chapter: ch-04
+  chapter_title: Brand Patterns
+- name: 以 do/don’t 清單管理主觀影像品質，是跨團隊最容易執行的影像治理模式。
+  chapter: ch-05
+  chapter_title: Imagery
+- name: 對成熟度較低的視覺子系統，可先定方向與允許條件。
+  chapter: ch-06
+  chapter_title: Illustration and Iconography
+- name: 角色導向 typography 比單純列字體更容易轉成設計審核。
+  chapter: ch-07
+  chapter_title: Typography
+- name: 短版 guideline 應以明確 owner 收尾。
+  chapter: ch-08
+  chapter_title: Contact
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI 可檢查：所有輸出應能追溯到一致品牌識別；不得把後續元素當成孤立裝飾使用。
+  chapter: ch-01
+  chapter_title: Brand Statement
+- module: Visual Identity
+  criterion: AI 可檢查：logo 最小寬度不得低於 55 px 或 0.76 in；clear space 至少等於 logo 中 F 的寬高；不得拉伸、擠壓、改變紅 bar 比例、加字、描邊、使用業務線色、低對比背景或過時 stacked/horizontal
+    logo。
+  chapter: ch-02
+  chapter_title: Logo Specifications
+- module: Visual Identity
+  criterion: AI 可檢查：背景若無足夠對比需換用替代版本；不得更改比例、bar、字型、顏色、描邊或加入其他文字。
+  chapter: ch-02-01
+  chapter_title: Primary Logo, Clear Space, Minimum Size, and Misuse
+- module: Visual Identity
+  criterion: AI 可檢查：Mortgage 可用名稱置於下方的 logo lockup；Wealth Management 可用長紅 bar；Private Banking 可用 dedicated logo；非核准業務不得自行建立
+    lockup。
+  chapter: ch-02-02
+  chapter_title: Lines of Business Logos
+- module: Color System
+  criterion: 'AI 可檢查：First Bank Red 應使用 #BC152B 或對應 PMS/CMYK/RGB；web palette 應使用指定 hex；業務線素材應套用對應業務色，不應用業務線色替代主 logo 色。'
+  chapter: ch-03
+  chapter_title: Color Palette
+- module: Brand Strategy
+  criterion: AI 可檢查：patterns 應使用 diamond/rectangular-derived shapes；不得使用與 logo 幾何無關的裝飾 pattern；pattern 應協助框住人或訊息，不應干擾可讀性。
+  chapter: ch-04
+  chapter_title: Brand Patterns
+- module: Iconography System
+  criterion: AI 可檢查：插畫需使用 First Bank brand colors；若使用其他風格，需能說明與內容語境的適配；不得與品牌色或樂觀語氣衝突。
+  chapter: ch-06
+  chapter_title: Illustration and Iconography
+chapters:
+- id: ch-01
+  title: Brand Statement
+  modules:
+  - Brand Strategy
+  - Governance
+- id: ch-02
+  title: Logo Specifications
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02-01
+  title: Primary Logo, Clear Space, Minimum Size, and Misuse
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02-02
+  title: Lines of Business Logos
+  modules:
+  - Brand Architecture
+  - Governance
+- id: ch-03
+  title: Color Palette
+  modules:
+  - Color System
+  - Design Tokens
+  - Information Design
+- id: ch-04
+  title: Brand Patterns
+  modules:
+  - Layout System
+  - Visual Language
+- id: ch-05
+  title: Imagery
+  modules:
+  - Photography System
+  - AI-Checkable Rules
+  - Content Safety
+- id: ch-06
+  title: Illustration and Iconography
+  modules:
+  - Illustration System
+  - Iconography System
+- id: ch-07
+  title: Typography
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Content Design
+- id: ch-08
+  title: Contact
+  modules:
+  - Operations
+  - Governance

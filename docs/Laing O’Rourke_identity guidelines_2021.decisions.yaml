@@ -1,0 +1,125 @@
+# L3 決策卡 sidecar — Laing O’Rourke（工程營建 B2B 視覺識別）
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Laing O’Rourke_identity guidelines_2021
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - B2B 工程品牌可先把 operational strategy 轉為 visual principle，再規範設計資產
+      - 複雜產業品牌可把核心作業方式轉成視覺品質語言
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: Laing O’Rourke_identity guidelines_2021
+        chapter: ch-01
+        excerpt: "先定義公司是誰、使命與行為原則，讓視覺系統不是單純 corporate polish，而是工程與創新的外顯；B2B 工程品牌可先把 operational strategy 轉為 visual principle，再規範設計資產。"
+      - brand_id: Laing O’Rourke_identity guidelines_2021
+        chapter: ch-02
+        excerpt: "用企業方法論轉譯 visual tone，而不是從任意美學開始；視覺系統要反映 ease、speed、precision 與 multidisciplinary expertise。"
+    status: extracted
+
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 用少數 guiding principles 當每個產出的跨章節檢查軸（lint rules）
+      layer: strategy
+    reason:
+      - 品牌支柱應足以成為評審準則，而不是只作內部口號
+      - guiding principles 可作為跨章節 lint rules
+      - 設計若使資訊更複雜、不可讀或缺少整體關係，即違反原則
+    applicable_when:
+      industries: [industrial_materials_science, nonprofit_social]
+      brand_types: [challenger, category_creator, mission_driven]
+      conditions: []
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Visual Language, Content Design]
+    evidence:
+      - brand_id: Laing O’Rourke_identity guidelines_2021
+        chapter: ch-01-02
+        excerpt: "以 Absolute alignment、Complete thinking、Sophisticated simplicity 三原則取代冗長價值列表；設計若使資訊更複雜、不可讀或缺少整體關係，即違反 sophisticated simplicity 或 complete thinking。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo lettering K height）作為相對留白基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - 相對單位可建立 scalable spacing token，不被固定像素綁死
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - clear space 為 logo lettering 中 K 高度的 3 倍，minimum size 20mm/75px
+    evidence:
+      - brand_id: Laing O’Rourke_identity guidelines_2021
+        chapter: ch-03-01
+        excerpt: "clear space 為 logo lettering 中 K 高度的 3 倍；minimum size 20mm/75px，不得改比例、旋轉、壓縮或貼齊黑盒邊界。"
+    status: extracted
+
+  - id: dp-approval-gate-for-exceptions
+    title: 例外不是漏洞，用審核閘門把差異收進可治理的模組
+    problem:
+      statement: 規則無法窮舉所有情境，現實組織總會有例外；若放任各單位自行決定，例外會逐步擴張成破壞系統的破口。
+      signals: [exception_handling, multi_unit_consistency, governance, scaling_risk]
+    solution:
+      module: Governance
+      move: 例外與受限資產須交由品牌管理單位（Corporate Affairs）審核，未授權者不得自行使用
+      layer: governance
+    reason:
+      - 成熟企業 guideline 應把例外權限寫入規則，而不是假設所有使用者都能判斷
+      - font/asset guideline 應包含授權與供應商限制，而不只是視覺偏好
+    applicable_when:
+      industries: [public_sector, finance]
+      brand_types: [institutional_public_trust, platform_ecosystem, heritage_legacy]
+      conditions: [multi_unit_consistency, exception_handling]
+      archetypes: [multi_brand_architecture, corporate_toolkit]
+    dependencies:
+      requires: [Governance]
+      enables: []
+    anti_patterns:
+      - 例外只寫「可以這樣做」卻不寫適用邊界與審核者
+      - 各單位把一次性例外當成通用替代方案沿用
+    evidence:
+      - brand_id: Laing O’Rourke_identity guidelines_2021
+        chapter: ch-03
+        excerpt: "涉及例外或 motif 使用時應聯絡 Corporate Affairs；未授權員工不得自行使用 motif 或 Ginger，成熟企業 guideline 應把例外權限寫入規則。"
+      - brand_id: Laing O’Rourke_identity guidelines_2021
+        chapter: ch-03-02
+        excerpt: "Ginger 不得由員工未經許可使用，需配合 Corporate Affairs/設計師授權；font guideline 應包含授權與供應商限制。"
+    status: extracted

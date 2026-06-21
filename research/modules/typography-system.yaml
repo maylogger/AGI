@@ -1,0 +1,72 @@
+# L2 固定知識 — Typography System
+# schema：research/schemas/module_knowledge.schema.yaml
+
+module: Typography System
+slug: typography-system
+foundational: true
+layer: visual_core
+purpose: 讓文字承載品牌語氣、建立資訊層級，並維持跨媒介可讀性與一致性。
+problem_when_absent: 各團隊各自選字體與字級，品牌語氣分裂、可讀性不穩、印刷與數位呈現不一致。
+corpus_frequency:
+  doc_count: 101
+  pct: 78.9
+
+# 重點：字體的「個性與傾向」不是固定樣板，而由前面的策略決策推導
+driven_by:
+  - input: brand_personality
+    affects: typeface_personality
+    mapping:
+      - when: [trustworthy, institutional, conservative]
+        tend_to: [高易讀無襯線或人文襯線, 保守字重域, 穩定字距, 以可讀性與權威感為先]
+        evidence:
+          - {brand_id: DFPI_BrandGuidelines, chapter: ch-03}
+          - {brand_id: Stifel_brand_guidelines_2019}
+      - when: [innovative, energetic, challenger]
+        tend_to: [幾何無襯線或客製字體, 寬字重域, 大字級對比, 把字體當識別資產]
+        evidence:
+          - {brand_id: 3M_Visual_Identity_Guidelines_2015, chapter: ch-02-04}
+          - {brand_id: LucidMotors}
+      - when: [premium, heritage, editorial]
+        tend_to: [襯線或高對比 display 字體, 精緻字距, 大量留白, 編輯式排版]
+        evidence:
+          - {brand_id: Harrods_Brand_Guidelines}
+          - {brand_id: The_Economist_Group_2017}
+  - input: primary_media
+    affects: font_stack_and_fallback
+    mapping:
+      - when: [digital, product_ui]
+        tend_to: [系統字 fallback, web font 授權, 行高與字級以螢幕可讀為準, 進入 design token]
+        evidence:
+          - {brand_id: DFPI_BrandGuidelines, chapter: ch-03}
+      - when: [print]
+        tend_to: [授權印刷字體, 以 pt 與 leading 規範, 區分 print/digital 字體]
+  - input: localization_needs
+    affects: script_coverage
+    mapping:
+      - when: [bilingual, multi_script]
+        tend_to: [主字體需涵蓋多語腳本或指定各語系搭配字體, 雙語排版規則]
+        evidence:
+          - {brand_id: Dubai_BRAND_GUIDELINES_2021}
+          - {brand_id: arte_2008_compressed}
+
+spec_dimensions:
+  - 主字體 / 次字體 / body / display 角色
+  - 字重與可用樣式
+  - web / system fallback
+  - 字級階層與行高（leading）
+  - 字距（kerning / tracking）
+  - 文字色彩與背景對比
+  - 禁用範例（do/don't）
+
+related_decision_patterns:
+  - dp-custom-typeface-as-identity-asset
+  - dp-media-split-typography
+
+dependencies:
+  requires: [Visual Identity]
+  recommends: [Color System, Design Tokens]
+
+reference_brands:
+  - 3M_Visual_Identity_Guidelines_2015
+  - DFPI_BrandGuidelines
+  - The_Economist_Group_2017

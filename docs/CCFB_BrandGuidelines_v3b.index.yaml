@@ -1,0 +1,56 @@
+title: 'Central California Food Bank Brand Identity Guidelines'
+source: 'sources/CCFB_BrandGuidelines_v3b.pdf'
+version: '3B'
+date: '2018-02-23'
+language: 'en'
+summary: 'Central California Food Bank 的品牌識別指南，涵蓋品牌地圖、logo 組成、色彩、檔案格式、留白、字體、禁用規則與 stationery package。'
+chapters:
+  - id: 'ch-01'
+    title: 'Brand Map'
+    level: 1
+    order: 1
+    pages: '3'
+    summary: '以 definition、difference、relevance、core competencies、reputation、personality 建立品牌基礎。'
+  - id: 'ch-02'
+    title: 'Logo System'
+    level: 1
+    order: 2
+    pages: '4-10'
+    summary: '說明 logo bug 與 logotype 的象徵、色彩、logo variations、file/color formats、required whitespace 與 format variations。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Elements of the Logo'
+        level: 2
+        order: 1
+        pages: '4'
+        summary: '把 orange fruit、double C、distribution wheel、five lugnuts、coin slot 等符號連到 food bank 的功能與服務地區。'
+      - id: 'ch-02-02'
+        title: 'Color Palettes and Logo Variations'
+        level: 2
+        order: 2
+        pages: '5-7'
+        summary: '定義 CCFB palette、Feeding America palette、full color、2-color 與含 Feeding America lock-up 的 logo variations。'
+      - id: 'ch-02-03'
+        title: 'File Formats and Color Formats'
+        level: 2
+        order: 3
+        pages: '8'
+        summary: '依 commercial printing、screens、PDF logos、CMYK、Pantone、RGB、reverse 建立媒體與檔案選擇規則。'
+      - id: 'ch-02-04'
+        title: 'Required Whitespace and Format Variations'
+        level: 2
+        order: 4
+        pages: '9-10'
+        summary: '以 logo type capital x-height 定義 1.5X 最小留白，並列出 solid black、two-color spot、reverse、grayscale 等變體。'
+  - id: 'ch-03'
+    title: 'Typography and Incorrect Usage'
+    level: 1
+    order: 3
+    pages: '11-12'
+    summary: '規範 Gotham、Georgia、Arial 等配對字體，以及 logo 不可重新定位、扭曲、改色或置於干擾背景。'
+  - id: 'ch-04'
+    title: 'Stationery Package'
+    level: 1
+    order: 4
+    pages: '13-18'
+    summary: '列出 business cards、envelopes、letterhead、notecards 等 stationery artwork 與 production files 的使用方式。'

@@ -1,0 +1,325 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Volvo_2021_compressed
+index_ref: docs/Volvo_2021_compressed.index.yaml
+note_ref: docs/Volvo_2021_compressed.note.md
+archetype: product_design_system
+industry: null
+modules:
+- Brand Strategy
+- Knowledge Architecture
+- Governance
+- AI-Checkable Rules
+- Visual Identity
+- Localization
+- Typography System
+- Color System
+- Design Tokens
+- Iconography System
+- UI Components
+- Layout System
+- Information Design
+- Photography System
+- Compliance
+- Content Safety
+- Content Design
+- Voice and Tone
+- Design Process
+- Interaction Design
+- Examples
+- Visual Language
+- Operations
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 14
+  section_count: 6
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Core and Explore
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Volvo Trademark Rules
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Key Principles
+  order: 3
+  level: 2
+- id: ch-02
+  title: Logotypes
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Primary Logotypes
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Secondary Logotypes
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Logotype Do Not
+  order: 3
+  level: 2
+- id: ch-03
+  title: Typography
+  order: 3
+  level: 1
+- id: ch-04
+  title: Colors
+  order: 4
+  level: 1
+- id: ch-05
+  title: Icons
+  order: 5
+  level: 1
+- id: ch-06
+  title: Layout Principles
+  order: 6
+  level: 1
+- id: ch-07
+  title: Image Tonality
+  order: 7
+  level: 1
+- id: ch-08
+  title: Tone of Voice
+  order: 8
+  level: 1
+- id: ch-09
+  title: Digital Interfaces
+  order: 9
+  level: 1
+- id: ch-10
+  title: Inspirational Examples
+  order: 10
+  level: 1
+- id: ch-11
+  title: Events and Sponsorships
+  order: 11
+  level: 1
+- id: ch-12
+  title: Interior Principles
+  order: 12
+  level: 1
+- id: ch-13
+  title: Service Vehicles
+  order: 13
+  level: 1
+- id: ch-14
+  title: References
+  order: 14
+  level: 1
+frameworks:
+- name: Core ≈20% / Explore ≈80% brand management model
+  chapter: ch-01
+  chapter_title: Introduction
+- name: Primary when legible, secondary when primary visibility cannot be ensured
+  chapter: ch-02
+  chapter_title: Logotypes
+- name: Functional typeface + brand-impact typeface
+  chapter: ch-03
+  chapter_title: Typography
+- name: 'Brand color hierarchy: restricted brand blue + main palette + supporting accents + functional states'
+  chapter: ch-04
+  chapter_title: Colors
+- name: Icon as functional sign + text as information bearer
+  chapter: ch-05
+  chapter_title: Icons
+- name: Spatial hierarchy framework
+  chapter: ch-06
+  chapter_title: Layout Principles
+- name: Story + human + light + authenticity + product detail
+  chapter: ch-07
+  chapter_title: Image Tonality
+- name: Competent not arrogant; intelligent not intellectual; prove not claim
+  chapter: ch-08
+  chapter_title: Tone of Voice
+- name: User-centered + business-aware + technology-validated UX governance
+  chapter: ch-09
+  chapter_title: Digital Interfaces
+- name: Example library as interpretation layer
+  chapter: ch-10
+  chapter_title: Inspirational Examples
+- name: Experience extension in physical events
+  chapter: ch-11
+  chapter_title: Events and Sponsorships
+- name: Brand-to-space translation
+  chapter: ch-12
+  chapter_title: Interior Principles
+- name: Vehicle livery as mobile brand interface
+  chapter: ch-13
+  chapter_title: Service Vehicles
+patterns:
+- name: 非協商核心 + 在地活化
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 以主標誌建立正式識別，以 secondary mark 處理小尺寸與數位例外。
+  chapter: ch-02
+  chapter_title: Logotypes
+- name: 以專屬字體建立識別，以 fallback/equivalent 支援多語市場。
+  chapter: ch-03
+  chapter_title: Typography
+- name: 把品牌色與功能色分離，避免警告/成功/CTA 被拿去裝飾。
+  chapter: ch-04
+  chapter_title: Colors
+- name: 同一 icon 可搭配不同訊息，避免每個語意都新造圖示。
+  chapter: ch-05
+  chapter_title: Icons
+- name: 以反例診斷版面問題，比抽象美學描述更可操作。
+  chapter: ch-06
+  chapter_title: Layout Principles
+- name: 影像指南同時處理拍攝、stock selection、video 與 legal/GDPR。
+  chapter: ch-07
+  chapter_title: Image Tonality
+- name: 品牌語氣可用價值對照加句子改寫建立可執行規則。
+  chapter: ch-08
+  chapter_title: Tone of Voice
+- name: 把設計流程、技術限制與品牌一致性放在同一章治理。
+  chapter: ch-09
+  chapter_title: Digital Interfaces
+- name: 把規格章與範例庫分開，避免範例被誤認為全部規則。
+  chapter: ch-10
+  chapter_title: Inspirational Examples
+- name: 活動不是例外，而是高風險 touchpoint。
+  chapter: ch-11
+  chapter_title: Events and Sponsorships
+- name: 用 mood board 與 design considerations 將抽象 personality 轉成室內設計輸入。
+  chapter: ch-12
+  chapter_title: Interior Principles
+- name: 將車身分成可放資訊的區域，是交通/服務品牌可複用模式。
+  chapter: ch-13
+  chapter_title: Service Vehicles
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：任何 Volvo activation 不得違反 purpose、values、heritage、aspirations、naming、identity；所有 physical/digital touchpoints
+    都需反映核心價值。
+  chapter: ch-01
+  chapter_title: Introduction
+- module: Visual Identity
+  criterion: AI 可檢查：Volvo Spread Word Mark 最小 20mm/42px；clear zone 3X；Volvo Penta Spread Word Mark 最小 45mm/94px；clear zone
+    4X；Iron Mark 最小 12mm；logotypes 不得改色、壓縮、拉伸、傾斜、旋轉、裁切、加效果、加 business descriptor/tagline 或與插圖組合。
+  chapter: ch-02
+  chapter_title: Logotypes
+- module: Typography System
+  criterion: AI 可檢查：Volvo Broad 不得用於 body copy、長標題或詳細資訊；Broad Outline 不得整句使用；不得手動 bold/italic；不得垂直/旋轉文字；外發 PowerPoint 應存成
+    PDF 保持字體顯示。
+  chapter: ch-03
+  chapter_title: Typography
+- module: Color System
+  criterion: AI 可檢查：Volvo Blue 不得作 decorative/accentuating purpose；accent colors 不得主導 layout；functional colors 只用於 action/alert/feedback；dark
+    theme palette 不得用於白背景，light theme colors 不得用於黑背景；顏色應使用 100%。
+  chapter: ch-04
+  chapter_title: Colors
+- module: Iconography System
+  criterion: AI 可檢查：communication icons 只能用 main colors excluding Volvo Blue；置於 accent backgrounds 時只能黑或白；不得填色、加 3D/gradient/shadow、組合成
+    decorative patterns、使用 clip art；新的 icons 需由 Volvo Group Design 開發。
+  chapter: ch-05
+  chapter_title: Icons
+- module: Layout System
+  criterion: AI 可檢查：版面應有明確主訊息；資訊過多時需拆分；避免多張小圖競爭；限制字體大小與色彩數；物件需對齊且左右上下邊距平衡；Volvo logotype 不得與 main message 競爭。
+  chapter: ch-06
+  chapter_title: Layout Principles
+- module: ''
+  criterion: AI 可檢查：影像應有 warm grey/brown tone；避免 cold blue cast；使用真實 colleague 時需 consent；避免 cut-out images、overly staged
+    handshake、poor resolution、over-retouching、static product with no driver/operator in work environment；不得 greenwash 或誇大社會/安全效益。
+  chapter: ch-07
+  chapter_title: Image Tonality
+- module: Voice and Tone
+  criterion: AI 可檢查：不得使用 `prosperity` 作 standalone heading；claim 必須提供 reference 或 proof；避免 grandiose、aggressive、sarcastic、flattering、overly
+    technical language；文案應 clear、correct、welcoming。
+  chapter: ch-08
+  chapter_title: Tone of Voice
+- module: ''
+  criterion: AI 可檢查：簽訂 sponsorship 前需諮詢 Volvo market communication representative；活動素材仍需遵守 logotype、color、layout 與 trademark
+    rules。
+  chapter: ch-11
+  chapter_title: Events and Sponsorships
+- module: ''
+  criterion: AI 可檢查：service vehicle striping 與 Volvo Action Service 應使用核准區域與 artwork；dealer identity 不得破壞 Volvo logotype hierarchy。
+  chapter: ch-13
+  chapter_title: Service Vehicles
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - Brand Strategy
+  - Knowledge Architecture
+  - Governance
+- id: ch-02
+  title: Logotypes
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-03
+  title: Typography
+  modules:
+  - AI-Checkable Rules
+  - Localization
+  - Typography System
+- id: ch-04
+  title: Colors
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Design Tokens
+- id: ch-05
+  title: Icons
+  modules:
+  - AI-Checkable Rules
+  - Iconography System
+  - UI Components
+- id: ch-06
+  title: Layout Principles
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Information Design
+- id: ch-07
+  title: Image Tonality
+  modules:
+  - Photography System
+  - Compliance
+  - Content Safety
+- id: ch-08
+  title: Tone of Voice
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+- id: ch-09
+  title: Digital Interfaces
+  modules:
+  - Design Process
+  - Interaction Design
+  - Governance
+- id: ch-10
+  title: Inspirational Examples
+  modules:
+  - Examples
+  - Visual Language
+- id: ch-11
+  title: Events and Sponsorships
+  modules:
+  - Operations
+  - Visual Identity
+  - Governance
+- id: ch-12
+  title: Interior Principles
+  modules:
+  - Visual Language
+- id: ch-13
+  title: Service Vehicles
+  modules:
+  - Operations
+  - Governance

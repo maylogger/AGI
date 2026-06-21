@@ -1,0 +1,115 @@
+# L3 決策卡 sidecar — WarnerMedia
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: WM_Brand_Guidelines
+decisions:
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以字標自身的 cap height 作為 clear space 單位，並訂 print/onscreen 最小尺寸
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 最小尺寸、clear space 與檔案版本是 logo 系統的三個基本治理點
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    evidence:
+      - brand_id: WM_Brand_Guidelines
+        chapter: ch-02
+        excerpt: "clear space 至少等於 Warner cap height；1-line lockup print height > 0.075 inch、onscreen > 9px。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗決定 positive／reverse 版本，並要求 approved artwork + contrast validation，legibility 為第一判準
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - 再簡潔的 logo 也會因錯誤背景而不可讀；legibility 是第一判準
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: WM_Brand_Guidelines
+        chapter: ch-03
+        excerpt: "白/淺背景用 positive version、深背景用 reverse version；不得放在讓 identity 難以閱讀的顏色、圖案或照片上。"
+    status: extracted
+
+  - id: dp-restrained-palette-for-trust
+    title: 用克制的配色與權威主色傳達信任
+    problem:
+      statement: 受規範、以信任為核心的機構，若用高彩度或隨意配色會削弱權威與可信度。
+      signals: [trust, regulatory_compliance, public_trust, consistency_across_partners]
+    solution:
+      module: Color System
+      move: 以黑／白／灰中性主色建立穩重感，accent 色限定比例（約 10%）避免搶走主識別
+      layer: visual_core
+    reason:
+      - 信任型品牌的色彩應強調穩定與權威而非情緒刺激
+      - 品牌色彩不必多；少量 accent 可增加活力但不能搶走主識別
+      - 色彩比例比單純列色票更能形成可治理輸出
+    applicable_when:
+      industries: [finance, public_sector, media_entertainment]
+      brand_types: [institutional_public_trust, heritage_legacy]
+      conditions: [trust, consistency_across_partners]
+      archetypes: [brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Color System]
+      enables: [Accessibility, Design Tokens]
+    anti_patterns:
+      - accent color 無比例上限被濫用
+    evidence:
+      - brand_id: WM_Brand_Guidelines
+        chapter: ch-04
+        excerpt: "以 black、white、grey 為主色、blue 作約 10% accent，並用 30/30/30/10 比例與百分比 guidance 防止 accent color 濫用。"
+    status: extracted
+
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 用 "A WarnerMedia Company" endorsement tagline lockup 把 divisions/products 一致地連回母品牌，並比照主 logo 治理其技術規格
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - division endorsement 必須可見、可辨識，不能只當法律附註
+      - endorsement tagline 是 brand architecture 與 legal governance 的交會點
+    applicable_when:
+      industries: [public_sector, education, media_entertainment]
+      brand_types: [institutional_public_trust, platform_ecosystem, heritage_legacy]
+      conditions: [multi_unit_consistency, multi_entity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance, Legal and Trademark]
+    anti_patterns:
+      - 把 endorsement tagline relegated to mouse type 或埋入 legal copy
+    evidence:
+      - brand_id: WM_Brand_Guidelines
+        chapter: ch-07
+        excerpt: "A WarnerMedia Company 是特製 artwork，用來表達 WarnerMedia 與 divisions/companies 的關係；endorsement 必須可見、可辨識，不得 relegated to mouse type 或埋入法律資訊。"
+    status: extracted

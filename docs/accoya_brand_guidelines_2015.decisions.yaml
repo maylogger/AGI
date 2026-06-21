@@ -1,0 +1,91 @@
+# L3 決策卡 sidecar — Accoya
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: accoya_brand_guidelines_2015
+decisions:
+  - id: dp-trademark-permission-flow
+    title: 用授權閘門治理第三方商標使用，先處理混淆與背書風險
+    problem:
+      statement: 平台品牌被大量第三方使用商標與資產，若無授權流程，會造成商標混淆與誤導性背書風險。
+      signals: [trademark_protection, partner_governance, endorsement_risk, third_party_usage]
+    solution:
+      module: Legal and Trademark
+      move: 以「核准來源 + 允許情境 + 禁止改作 + permission gate」治理，高風險情境須送審並附最終版本、描述與 script
+      layer: governance
+    reason:
+      - 平台品牌 guideline 應優先處理 trademark confusion 與 endorsement risk，再處理美學一致
+      - 越接近大眾媒體、商業廣告、包裝與劇情敘事，審查需求越高
+      - permission section 將品牌治理流程化，降低設計師自行判斷法律風險
+    applicable_when:
+      industries: [tech_software]
+      brand_types: [platform_ecosystem]
+      conditions: [third_party_usage, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Legal and Trademark]
+      enables: [Governance]
+    anti_patterns:
+      - 只給視覺規格而無使用情境風險表與審核材料清單
+      - 放任第三方自行判斷法律與背書風險
+    evidence:
+      - brand_id: accoya_brand_guidelines_2015
+        chapter: ch-01-01
+        excerpt: "技術材料品牌的 guideline 應先定義法律保護與宣稱邊界；先列保護範圍與檢查權，並保留 Accsys Technologies 檢查材料與採取行動的權利。"
+      - brand_id: accoya_brand_guidelines_2015
+        chapter: ch-06-04
+        excerpt: "Made With ingredient mark 僅能在 Accsys Technologies 書面核准後使用，將授權與資產請求集中到 Marketing Team，避免第三方自行使用造成品牌與法律誤解。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: accoya_brand_guidelines_2015
+        chapter: ch-03-05
+        excerpt: "聯名需要彈性，但品牌層級不可失衡：partner brand 在自己的 allocated space，不得干擾 Accoya Green Tab，且 joint branded logo 不得大於 Accoya。"
+    status: extracted
+
+  - id: dp-media-split-typography
+    title: 依媒介分流字體系統（print / digital / body）
+    problem:
+      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+      signals: [print_and_digital, readability, licensing]
+    solution:
+      module: Typography System
+      move: 區分 print font、digital font 與 secondary/body font，並各自規範字級與行距
+      layer: visual_core
+    reason:
+      - 不同媒介的可讀性與授權條件不同
+      - 字體規範應搭配用途說明，而非只列字體名稱
+    applicable_when:
+      industries: [finance, public_sector, education]
+      brand_types: []
+      conditions: [print_and_digital]
+      archetypes: [brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+    evidence:
+      - brand_id: accoya_brand_guidelines_2015
+        chapter: ch-05-01
+        excerpt: "Print Typeface 規範 Neo Sans Light 用於大寫 headline、Neo Sans Regular 用於 sentence case 內文，字體權重應對應資訊層級。"
+      - brand_id: accoya_brand_guidelines_2015
+        chapter: ch-05-02
+        excerpt: "Web Typeface 處理網頁與 email live text 的技術限制，允許 Arial 作為 Neo Sans 不可用時的 fallback，品牌字體需兼顧可用性與技術限制。"
+    status: extracted

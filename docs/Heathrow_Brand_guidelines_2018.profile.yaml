@@ -1,0 +1,276 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Heathrow_Brand_guidelines_2018
+index_ref: docs/Heathrow_Brand_guidelines_2018.index.yaml
+note_ref: docs/Heathrow_Brand_guidelines_2018.note.md
+archetype: brand_experience_guide
+industry: consumer_retail_hospitality
+modules:
+- Brand Strategy
+- Visual Identity
+- Governance
+- Layout System
+- Brand Architecture
+- Color System
+- Design Tokens
+- Illustration System
+- Photography System
+- Iconography System
+- Visual Language
+- Information Design
+- Typography System
+- Motion Identity
+- Operations
+- Content Design
+- Voice and Tone
+- AI-Checkable Rules
+- Localization
+- Accessibility
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 8
+  section_count: 4
+chapter_sequence:
+- id: ch-01
+  title: Vision, Values and Logo System
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Our Vision and Values
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Logo and Signature Rules
+  order: 2
+  level: 2
+- id: ch-02
+  title: Service Lock-ups
+  order: 2
+  level: 1
+- id: ch-03
+  title: Colour
+  order: 3
+  level: 1
+- id: ch-04
+  title: Visual Language and Imagery
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Core and Premium Styling
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Imagery and Visual Assets
+  order: 2
+  level: 2
+- id: ch-05
+  title: Typography, Merchandising and Motion
+  order: 5
+  level: 1
+- id: ch-06
+  title: Tone of Voice
+  order: 6
+  level: 1
+- id: ch-07
+  title: 'Appendix: Presentational and Typographic Rules'
+  order: 7
+  level: 1
+- id: ch-08
+  title: Contacts
+  order: 8
+  level: 1
+frameworks:
+- name: brand foundation -> logo asset -> context-specific signature
+  chapter: ch-01
+  chapter_title: Vision, Values and Logo System
+- name: vision/purpose/values hierarchy
+  chapter: ch-01-01
+  chapter_title: Our Vision and Values
+- name: contextual logo selection + partner grid framework
+  chapter: ch-01-02
+  chapter_title: Logo and Signature Rules
+- name: endorsed brand architecture framework
+  chapter: ch-02
+  chapter_title: Service Lock-ups
+- name: communication type -> color weighting -> gradient treatment
+  chapter: ch-03
+  chapter_title: Colour
+- name: visual treatment by communication purpose
+  chapter: ch-04
+  chapter_title: Visual Language and Imagery
+- name: purpose-based visual tiering
+  chapter: ch-04-01
+  chapter_title: Core and Premium Styling
+- name: image story checklist
+  chapter: ch-04-02
+  chapter_title: Imagery and Visual Assets
+- name: media-specific brand reproduction framework
+  chapter: ch-05
+  chapter_title: Typography, Merchandising and Motion
+- name: passenger-first communication framework
+  chapter: ch-06
+  chapter_title: Tone of Voice
+- name: editorial rulebook + inclusive language framework
+  chapter: ch-07
+  chapter_title: 'Appendix: Presentational and Typographic Rules'
+- name: role-based escalation framework
+  chapter: ch-08
+  chapter_title: Contacts
+patterns:
+- name: 以單一字母高度作為跨資產 layout token。
+  chapter: ch-01
+  chapter_title: Vision, Values and Logo System
+- name: journey
+  chapter: ch-01-01
+  chapter_title: Our Vision and Values
+- name: partner identity 依 7x3、8x5、4x4、4x5、16x3 grid 校準。
+  chapter: ch-01-02
+  chapter_title: Logo and Signature Rules
+- name: 一般服務用 general lock-up，premium/high-end 用 enhanced 與黑色/銀色語彙。
+  chapter: ch-02
+  chapter_title: Service Lock-ups
+- name: factual 用白，influential 用紫/粉，premium 用黑。
+  chapter: ch-03
+  chapter_title: Colour
+- name: magic moments 攝影 + 系統化 pictograms + clean vector illustration。
+  chapter: ch-04
+  chapter_title: Visual Language and Imagery
+- name: 以 dominant colour 建立 tier identity。
+  chapter: ch-04-01
+  chapter_title: Core and Premium Styling
+- name: Planes and places 可表達規模；cut-outs 解決預算/時間限制。
+  chapter: ch-04-02
+  chapter_title: Imagery and Visual Assets
+- name: write for one person、use you/us、avoid airport-centric boasting。
+  chapter: ch-06
+  chapter_title: Tone of Voice
+- name: 把品牌偏好與一般英語規則分開標註。
+  chapter: ch-07
+  chapter_title: 'Appendix: Presentational and Typographic Rules'
+- name: 品牌團隊 + approved suppliers。
+  chapter: ch-08
+  chapter_title: Contacts
+rules_ai_checkable:
+- module: Visual Identity
+  criterion: AI 可檢查：internal signature 不得用於 external passenger-facing 或 ATL；排除區由 H 高度決定；email signature 必須用 primary Heathrow
+    logo，不得用 service/division lock-up。
+  chapter: ch-01
+  chapter_title: Vision, Values and Logo System
+- module: ''
+  criterion: AI 可檢查：任何 brand claim 需能對應乘客旅程改善、安全、尊重或服務品質；不得只描述 Heathrow 規模。
+  chapter: ch-01-01
+  chapter_title: Our Vision and Values
+- module: Visual Identity
+  criterion: AI 可檢查：A4/A5 logo H-height = 7mm；A6/DL = 6mm；A7 minimum = 5mm；不得 altering/distorting logo 或置於文字內；email 不得包含 personal
+    social handles。
+  chapter: ch-01-02
+  chapter_title: Logo and Signature Rules
+- module: ''
+  criterion: AI 可檢查：不得自行建立或修改 lock-up；新 lock-up 僅 Brand team 可授權；general lock-up online minimum width 70px，padding ideal 10px/min
+    5px。
+  chapter: ch-02
+  chapter_title: Service Lock-ups
+- module: ''
+  criterion: AI 可檢查：Core factual 應 predominately white；Core influential 可用 purple gradients；Premium 黑色可 dominant；大面積黑色不得用在
+    Core materials。
+  chapter: ch-03
+  chapter_title: Colour
+- module: Photography System
+  criterion: AI 可檢查：full-bleed image 必須保留 uncluttered area 或使用 white/purple fade；pictograms 不得重製或未經許可新設計；avoid clip art、cartoon、水彩、鉛筆、過度寫實插畫。
+  chapter: ch-04
+  chapter_title: Visual Language and Imagery
+- module: Photography System
+  criterion: AI 可檢查：影像需 tell a story of making every journey better；不得顯得 posed/staged；full-length cut-outs 需加 shadow grounding。
+  chapter: ch-04-02
+  chapter_title: Imagery and Visual Assets
+- module: Typography System
+  criterion: AI 可檢查：print 除 ATL 外用 Frutiger；PowerPoint/electronic 用 Arial；內部 initiatives 不得放上 merchandise；刺繡需使用 embroidery-only
+    logo，供應商約 7,000 stitch count。
+  chapter: ch-05
+  chapter_title: Typography, Merchandising and Motion
+- module: Voice and Tone
+  criterion: AI 可檢查：避免 satellite piers、hub airports、codeshares 等 jargon；bad news 必須包含事實、乘客可做什麼、簡短原因與更多資訊來源；避免 sustainability
+    一詞，改用具體行動與數據。
+  chapter: ch-06
+  chapter_title: Tone of Voice
+- module: ''
+  criterion: AI 可檢查：passenger-facing 不用 eg/ie/etc；日期為 `3 April 2017`；時間用 24 小時 `06:45`；Headlines 用 sentence case；Heathrow
+    不寫 Heathrow Airport/HAL/LHR；使用 …ise；電話用空格分組。
+  chapter: ch-07
+  chapter_title: 'Appendix: Presentational and Typographic Rules'
+- module: ''
+  criterion: AI 可檢查：若無法 100% 確認品牌應用，應聯絡 Brand team。
+  chapter: ch-08
+  chapter_title: Contacts
+chapters:
+- id: ch-01
+  title: Vision, Values and Logo System
+  modules:
+  - Brand Strategy
+  - Visual Identity
+  - Governance
+- id: ch-01-01
+  title: Our Vision and Values
+  modules:
+  - Brand Strategy
+- id: ch-01-02
+  title: Logo and Signature Rules
+  modules:
+  - Layout System
+  - Visual Identity
+- id: ch-02
+  title: Service Lock-ups
+  modules:
+  - Visual Identity
+  - Governance
+- id: ch-03
+  title: Colour
+  modules:
+  - Brand Architecture
+  - Color System
+  - Design Tokens
+- id: ch-04
+  title: Visual Language and Imagery
+  modules:
+  - Illustration System
+  - Photography System
+  - Iconography System
+  - Visual Language
+- id: ch-04-01
+  title: Core and Premium Styling
+  modules:
+  - Brand Architecture
+  - Layout System
+- id: ch-04-02
+  title: Imagery and Visual Assets
+  modules:
+  - Photography System
+  - Information Design
+- id: ch-05
+  title: Typography, Merchandising and Motion
+  modules:
+  - Typography System
+  - Motion Identity
+  - Operations
+- id: ch-06
+  title: Tone of Voice
+  modules:
+  - Content Design
+  - Voice and Tone
+- id: ch-07
+  title: 'Appendix: Presentational and Typographic Rules'
+  modules:
+  - AI-Checkable Rules
+  - Localization
+  - Content Design
+  - Accessibility
+- id: ch-08
+  title: Contacts
+  modules:
+  - Operations
+  - Governance

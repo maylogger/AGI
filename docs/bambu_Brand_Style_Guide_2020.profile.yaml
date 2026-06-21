@@ -1,0 +1,160 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: bambu_Brand_Style_Guide_2020
+index_ref: docs/bambu_Brand_Style_Guide_2020.index.yaml
+note_ref: docs/bambu_Brand_Style_Guide_2020.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- Iconography System
+- Typography System
+- Color System
+- Operations
+- Visual Identity
+- Product Language
+- Brand Strategy
+- Messaging
+- Knowledge Architecture
+- Examples
+- Governance
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 3
+  section_count: 10
+chapter_sequence:
+- id: ch-01
+  title: Visuals Section
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Our Logo and Icon System
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Lockups and Logo Usage
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Typography, Pictograms and Color
+  order: 3
+  level: 2
+- id: ch-01-04
+  title: Brand Application
+  order: 4
+  level: 2
+- id: ch-02
+  title: Communications Section
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Bambu Official
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: BambuGO
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: BambuBUILD
+  order: 3
+  level: 2
+- id: ch-03
+  title: Applications and Governance
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Stationery Identity
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Marketing Identity
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Contact
+  order: 3
+  level: 2
+frameworks:
+- name: Brand Element Kit：logo/icon -> lockup -> typography -> pictogram -> color -> applications
+  chapter: ch-01
+  chapter_title: Visuals Section
+- name: Brand/Product Identity Card：info -> personality -> archetype -> values -> visual elements -> text hierarchy
+  chapter: ch-02
+  chapter_title: Communications Section
+- name: Rule -> Example -> Contact Loop，用案例降低理解成本，用聯絡方式處理例外
+  chapter: ch-03
+  chapter_title: Applications and Governance
+patterns:
+- name: icon construction
+  chapter: ch-01
+  chapter_title: Visuals Section
+- name: watermark/vector/decorative 分流
+  chapter: ch-01
+  chapter_title: Visuals Section
+- name: clear space
+  chapter: ch-01
+  chapter_title: Visuals Section
+- name: product mark hierarchy
+  chapter: ch-01
+  chapter_title: Visuals Section
+- name: do-not examples
+  chapter: ch-01
+  chapter_title: Visuals Section
+- name: 品牌資料卡
+  chapter: ch-02
+  chapter_title: Communications Section
+- name: 產品人格分流
+  chapter: ch-02
+  chapter_title: Communications Section
+- name: 同一字體階層跨品牌使用
+  chapter: ch-02
+  chapter_title: Communications Section
+- name: icon concept 語意化
+  chapter: ch-02
+  chapter_title: Communications Section
+- name: 名片/信紙/行銷海報示例
+  chapter: ch-03
+  chapter_title: Applications and Governance
+- name: 社會證明訊息
+  chapter: ch-03
+  chapter_title: Applications and Governance
+- name: 聯絡頁收尾
+  chapter: ch-03
+  chapter_title: Applications and Governance
+rules_ai_checkable:
+- module: ''
+  criterion: 可檢查規則：產品 mark 必須次於主 logo；clear space/exclusion zone 不得被侵入；2-tone vector 通常用於黑白背景，其他背景使用 monochrome；不得加陰影、旋轉、重製或以圖形包圍
+    logo；字體需使用 Gilroy/Lato 指定階層。
+  chapter: ch-01
+  chapter_title: Visuals Section
+- module: Governance
+  criterion: 可檢查規則：應用素材需使用核准 logo、色彩與字體；聯絡資訊格式需完整；行銷素材不可讓產品 logo 高於主品牌；需要提供品牌查詢信箱或網站。
+  chapter: ch-03
+  chapter_title: Applications and Governance
+chapters:
+- id: ch-01
+  title: Visuals Section
+  modules:
+  - Iconography System
+  - Typography System
+  - Color System
+  - Operations
+  - Visual Identity
+- id: ch-02
+  title: Communications Section
+  modules:
+  - Product Language
+  - Brand Strategy
+  - Messaging
+  - Knowledge Architecture
+- id: ch-03
+  title: Applications and Governance
+  modules:
+  - Examples
+  - Operations
+  - Governance

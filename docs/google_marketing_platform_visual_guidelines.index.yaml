@@ -1,0 +1,86 @@
+title: 'Google Marketing Platform Visual Guidelines'
+source: 'sources/google_marketing_platform_visual_guidelines.pdf'
+language: 'en'
+summary: 'Google Marketing Platform 視覺指南，整合品牌承諾、logo lockup、色彩、影像、插畫、圖示、動畫、字體與相關指南引用。'
+chapters:
+  - id: 'ch-01'
+    title: 'Brand Guidelines'
+    level: 1
+    order: 1
+    pages: '3-5'
+    summary: '建立視覺指南存在理由、品牌承諾與 visual direction。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Why a Visual Guide'
+        level: 2
+        order: 1
+        pages: '3'
+        summary: '說明品牌一致性對所有溝通材料的重要性。'
+      - id: 'ch-01-02'
+        title: 'Brand Promise and Visual Direction'
+        level: 2
+        order: 2
+        pages: '4-5'
+        summary: '以 smarter tools, better results 與可信、專業、可及的影像語言定位品牌。'
+  - id: 'ch-02'
+    title: 'Brand Logo Lockups and Color Applications'
+    level: 1
+    order: 2
+    pages: '6-16'
+    summary: '規範 Google Marketing Platform 與產品 lockup 的變體、背景、配對、場景矩陣與禁用行為。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Logo Variants and Usage'
+        level: 2
+        order: 1
+        pages: '7-12'
+        summary: '區分 marketing、product、vertical lockup、reverse 版本與 partner pairing。'
+      - id: 'ch-02-02'
+        title: 'Usage Matrix and Product Rules'
+        level: 2
+        order: 2
+        pages: '13-16'
+        summary: '以產品/行銷場景矩陣限制 enterprise 與 free product 的可用 lockup。'
+  - id: 'ch-03'
+    title: 'Color'
+    level: 1
+    order: 3
+    pages: '17-23'
+    summary: '定義 Google core colors、白色、次要色、neutral 與可近用/焦點/深度原則。'
+  - id: 'ch-04'
+    title: 'Imagery'
+    level: 1
+    order: 4
+    pages: '24-52'
+    summary: '以攝影、插畫、圖示、動畫與影片規範，把資料平台的抽象價值轉成可理解的視覺敘事。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Photography'
+        level: 2
+        order: 1
+        pages: '25-40'
+        summary: '要求真實、多元、以使用者為焦點、解析度足夠且避免競品或外部品牌露出。'
+      - id: 'ch-04-02'
+        title: 'Illustration and Iconography'
+        level: 2
+        order: 2
+        pages: '41-49'
+        summary: '要求插畫簡化抽象資訊、使用白色與 Google 色彩、保持包容與跨文化清晰。'
+      - id: 'ch-04-03'
+        title: 'Animation and Video'
+        level: 2
+        order: 3
+        pages: '50-52'
+        summary: '以故事性、包容性、產品正確性、易懂性與頻寬考量檢查動態內容。'
+  - id: 'ch-05'
+    title: 'Typography'
+    level: 1
+    order: 5
+    pages: '53-63'
+    summary: '規範 Google Sans Display、Google Sans、Roboto、Noto 與 Product Sans 的場景分工。'
+  - id: 'ch-06'
+    title: 'Related Guidelines'
+    level: 1
+    order: 6
+    pages: '64-66'
+    summary: '導向 editorial guide、Google Standards 與品牌背景材料，維持跨 Google 系統一致。'

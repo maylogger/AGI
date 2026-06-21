@@ -1,0 +1,204 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Nintendo_Corporate_Identity_Graphics_Standards_Manual_2008
+index_ref: docs/Nintendo_Corporate_Identity_Graphics_Standards_Manual_2008.index.yaml
+note_ref: docs/Nintendo_Corporate_Identity_Graphics_Standards_Manual_2008.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Legal and Trademark
+- Governance
+- Brand Strategy
+- AI-Checkable Rules
+- Visual Identity
+- Color System
+- Accessibility
+- Examples
+- Operations
+depth:
+  strategy: low
+  visual: medium
+  governance: high
+  top_level_chapter_count: 6
+  section_count: 3
+chapter_sequence:
+- id: ch-01
+  title: Introduction and Trademark Governance
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Purpose of Manual
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Trademark and Copyright Rules
+  order: 2
+  level: 2
+- id: ch-02
+  title: Logo History and Corporate Name
+  order: 2
+  level: 1
+- id: ch-03
+  title: Proportion and Protective Area
+  order: 3
+  level: 1
+- id: ch-04
+  title: Logo Color and Backgrounds
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Grayscale and Color Backgrounds
+  order: 1
+  level: 2
+- id: ch-05
+  title: Prohibited Use
+  order: 5
+  level: 1
+- id: ch-06
+  title: Applications and Product Graphic Standards
+  order: 6
+  level: 1
+frameworks:
+- name: 法律/品牌雙框架：每個視覺規範同時服務識別與商標保護
+  chapter: ch-01
+  chapter_title: Introduction and Trademark Governance
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-01-01
+  chapter_title: Purpose of Manual
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-01-02
+  chapter_title: Trademark and Copyright Rules
+- name: 版本治理框架：歷史變體 -> 現行標準 -> 正式/非正式名稱使用
+  chapter: ch-02
+  chapter_title: Logo History and Corporate Name
+- name: 幾何約束框架：logo lockup + clear space token + intrusion test
+  chapter: ch-03
+  chapter_title: Proportion and Protective Area
+- name: 色彩 fallback framework：gray first -> white if gray fails -> black only if white fails
+  chapter: ch-04
+  chapter_title: Logo Color and Backgrounds
+- name: 以元素、條件、限制與範例組成小型決策框架：先判斷情境，再選擇允許的形式
+  chapter: ch-04-01
+  chapter_title: Grayscale and Color Backgrounds
+- name: Do/Don't framework：正確資產 + 禁止改動 + 審核對照
+  chapter: ch-05
+  chapter_title: Prohibited Use
+- name: Application example framework：每種 touchpoint 以核准樣張作為製作起點
+  chapter: ch-06
+  chapter_title: Applications and Product Graphic Standards
+patterns:
+- name: 商標治理導入章
+  chapter: ch-01
+  chapter_title: Introduction and Trademark Governance
+- name: 子系統規範頁
+  chapter: ch-01-01
+  chapter_title: Purpose of Manual
+- name: 子系統規範頁
+  chapter: ch-01-02
+  chapter_title: Trademark and Copyright Rules
+- name: logo provenance
+  chapter: ch-02
+  chapter_title: Logo History and Corporate Name
+- name: 可複用為所有 logo guideline 的 clear-space 模式。
+  chapter: ch-03
+  chapter_title: Proportion and Protective Area
+- name: logo color fallback
+  chapter: ch-04
+  chapter_title: Logo Color and Backgrounds
+- name: 子系統規範頁
+  chapter: ch-04-01
+  chapter_title: Grayscale and Color Backgrounds
+- name: 可複用為所有品牌 guideline 的 misuse detection 模組。
+  chapter: ch-05
+  chapter_title: Prohibited Use
+- name: product graphics standards
+  chapter: ch-06
+  chapter_title: Applications and Product Graphic Standards
+rules_ai_checkable:
+- module: Governance
+  criterion: AI-checkable：首次或主要使用需帶 TM/SM/® 等符號；商標不得複數化、所有格化或任意縮寫；包裝與行銷材料需包含正確 copyright notice。
+  chapter: ch-01
+  chapter_title: Introduction and Trademark Governance
+- module: ''
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-01-01
+  chapter_title: Purpose of Manual
+- module: ''
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-01-02
+  chapter_title: Trademark and Copyright Rules
+- module: Visual Identity
+  criterion: AI-checkable：正式法律文件需使用 Nintendo of Europe GmbH；一般或第二次提及可用 Nintendo；必須使用 2008 後最新 corporate logo。
+  chapter: ch-02
+  chapter_title: Logo History and Corporate Name
+- module: ''
+  criterion: AI-checkable：logotype 必須與 racetrack 一起使用；左右保護區各為 logo 寬度 10%；上下保護區各為 logo 高度 35%；保護區內不得放文字、logo 或圖形。
+  chapter: ch-03
+  chapter_title: Proportion and Protective Area
+- module: Visual Identity
+  criterion: AI-checkable：白底優先使用 gray RGB 140/140/140 或 Pantone Cool Gray 8c；彩色背景灰色可見度不足時使用 white；white 可見度不足時才使用 black；不得新增其他
+    logo 顏色。
+  chapter: ch-04
+  chapter_title: Logo Color and Backgrounds
+- module: Color System
+  criterion: AI-checkable：檢查輸入是否使用指定元素、是否符合頁面標示的尺寸/比例/色彩/留白，且不得出現章節列出的禁用組合。
+  chapter: ch-04-01
+  chapter_title: Grayscale and Color Backgrounds
+- module: ''
+  criterion: AI-checkable：不得拉伸、壓縮、旋轉或重繪 logo；不得改變 racetrack/logotype 關係；不得套用未授權陰影、外框、漸層或顏色；不得放在可讀性不足背景。
+  chapter: ch-05
+  chapter_title: Prohibited Use
+- module: ''
+  criterion: AI-checkable：packshot 應使用核准 logo 檔與指定位置；TV/promotional/event 應遵守同一 logo 色彩與留白規則；不得讓產品圖資自行定義替代 logo。
+  chapter: ch-06
+  chapter_title: Applications and Product Graphic Standards
+chapters:
+- id: ch-01
+  title: Introduction and Trademark Governance
+  modules:
+  - Legal and Trademark
+  - Governance
+- id: ch-01-01
+  title: Purpose of Manual
+  modules:
+  - Brand Strategy
+  - Governance
+- id: ch-01-02
+  title: Trademark and Copyright Rules
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+- id: ch-02
+  title: Logo History and Corporate Name
+  modules:
+  - Legal and Trademark
+  - Visual Identity
+  - Governance
+- id: ch-03
+  title: Proportion and Protective Area
+  modules:
+  - AI-Checkable Rules
+- id: ch-04
+  title: Logo Color and Backgrounds
+  modules:
+  - AI-Checkable Rules
+  - Color System
+- id: ch-04-01
+  title: Grayscale and Color Backgrounds
+  modules:
+  - Color System
+  - Accessibility
+- id: ch-05
+  title: Prohibited Use
+  modules:
+  - AI-Checkable Rules
+  - Governance
+- id: ch-06
+  title: Applications and Product Graphic Standards
+  modules:
+  - Examples
+  - Operations
+  - Visual Identity

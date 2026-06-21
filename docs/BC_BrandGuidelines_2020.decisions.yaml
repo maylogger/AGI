@@ -1,0 +1,112 @@
+# L3 決策卡 sidecar — BigCommerce Brand Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: BC_BrandGuidelines_2020
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - B2B SaaS 品牌可用少數動詞建立跨產品、受眾與內容的分類基礎
+      - 平台品牌要把複雜產品能力轉成可記憶的成長語言
+    applicable_when:
+      industries: [tech_software, industrial_materials_science]
+      brand_types: [platform_ecosystem, category_creator, challenger]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Messaging]
+    anti_patterns:
+      - 只描述功能而不說明商家利益
+    evidence:
+      - brand_id: BC_BrandGuidelines_2020
+        chapter: ch-01
+        excerpt: "Build → Innovate → Grow 是 strategy layer，後續 logo、geometry、imagery、video 與 partner ecosystem 都應回應 go B.I.G.；對外訊息應能對應三層之一，否則只是功能描述。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+    evidence:
+      - brand_id: BC_BrandGuidelines_2020
+        chapter: ch-02-02
+        excerpt: "clearspace 至少為各 mark 自身高度的 Y/2；B mark 只在 wordmark 低於 80px / 1in 或避免重複時使用，留白以標誌幾何為單位。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: BC_BrandGuidelines_2020
+        chapter: ch-02-03
+        excerpt: "Branded Partner Lockups 以固定 divider stroke #AFB4BE 1.5px 分隔 BigCommerce 與夥伴標誌，定義合作 lockup 的空間關係。"
+    status: extracted
+
+  - id: dp-system-toolkit-over-template
+    title: 企業視覺系統給「可組合工具箱」而非僵硬模板
+    problem:
+      statement: 要求每個版面長得完全相同會扼殺多元內容；但完全自由又會失去一致性。
+      signals: [many_teams, diverse_content, system_consistency, mass_touchpoints]
+    solution:
+      module: Visual Language
+      move: 把識別定義為可獨立或組合使用的 core elements（tools, not a rigid system），用固定決策順序取代固定模板
+      layer: visual_core
+    reason:
+      - 彈性必須被結構化；用可擴展的幾何 building blocks 兼顧 variety 與 cohesion
+      - 元素可獨立使用也可組合，支援多元內容又維持辨識
+    applicable_when:
+      industries: [tech_software, industrial_materials_science, consumer_retail_hospitality]
+      brand_types: [platform_ecosystem, category_creator]
+      conditions: [system_consistency]
+      archetypes: [full_brand_system, corporate_toolkit, brand_experience_guide]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Layout System, Examples]
+    anti_patterns:
+      - 讓 pattern 與前景 copy 競爭，傷害可讀性
+    evidence:
+      - brand_id: BC_BrandGuidelines_2020
+        chapter: ch-05
+        excerpt: "把 logo 的 90° triangle 擴展為 Shape Palette → Pattern Variants → Legibility Controls，以理性通用幾何形作為可大規模擴展的 building blocks。"
+    status: extracted

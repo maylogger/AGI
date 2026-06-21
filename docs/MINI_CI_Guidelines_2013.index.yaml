@@ -1,0 +1,67 @@
+title: "MINI CI Guidelines"
+source: "sources/MINI_CI_Guidelines_2013.pdf"
+date: "2013"
+language: "en"
+summary: "MINI USA 的品牌識別、文字風格、版面框線、色彩、商務應用與產品命名規範，強調挑戰者品牌個性與高一致性的語言治理。"
+chapters:
+  - id: "ch-01"
+    title: "Typography and Position"
+    level: 1
+    order: 1
+    pages: "1-2"
+    summary: "定義 MINI 字體、左/右齊 ragged 排版、禁止置中與 body copy 色彩限制。"
+  - id: "ch-02"
+    title: "Logo and Wordmark"
+    level: 1
+    order: 2
+    pages: "3-5"
+    summary: "規範 2-D、3-D、1-color logo 的使用、清除空間、品牌字標大小寫與 logo placement。"
+    children:
+      - id: "ch-02-01"
+        title: "Clear Space and Logo Versions"
+        level: 2
+        order: 1
+        pages: "3"
+        summary: "要求 logo 周圍保留定義空間，且不同媒介使用不同 logo 版本。"
+      - id: "ch-02-02"
+        title: "Wordmark and Placement"
+        level: 2
+        order: 2
+        pages: "4-5"
+        summary: "規範 MINI 全大寫、不得斜體、不得置中、不得任意組合 logo 與 copy。"
+  - id: "ch-03"
+    title: "MINI Style Guide and Brand Quick Hits"
+    level: 1
+    order: 3
+    pages: "6-7"
+    summary: "整理 MINI 語言、品牌個性、歷史、產品描述與 URL、商標、用詞規則。"
+  - id: "ch-04"
+    title: "Frames"
+    level: 1
+    order: 4
+    pages: "8-9"
+    summary: "定義 MINI frame 作為核心設計元素，規範數量、接觸、出血、顏色、寬度與用途。"
+  - id: "ch-05"
+    title: "Colors and Images"
+    level: 1
+    order: 5
+    pages: "10-15"
+    summary: "規範車色、品牌色、設計色、communication colors 與影像語氣，並列出大量 CMYK/RGB/HEX/PMS 值。"
+  - id: "ch-06"
+    title: "Email Communications and Business Cards"
+    level: 1
+    order: 6
+    pages: "16-17"
+    summary: "定義 email body、簽名格式、簽名圖檔與名片訂購及版面規範。"
+  - id: "ch-07"
+    title: "Resources"
+    level: 1
+    order: 7
+    pages: "18"
+    summary: "列出影像、logo 與行銷素材取得管道；其中部分為需登入的外部資源。"
+  - id: "ch-08"
+    title: "MINI Nomenclature"
+    level: 1
+    order: 8
+    pages: "19-32"
+    summary: "以字母排序治理產品、技術、車型、商標與常見用語，避免拼寫、大小寫與命名順序錯誤。"

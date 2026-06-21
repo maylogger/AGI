@@ -1,0 +1,199 @@
+title: "Accoya Brand Guidelines"
+source: "sources/accoya_brand_guidelines_2015.pdf"
+version: "V08"
+date: "2015"
+language: "en"
+summary: "Accoya 品牌規範以商標保護與授權推廣為核心，定義 Accoya 木材品牌、Green Tab logo、色彩、聯名、認證、產品 benefit icons、字體、strapline、影像、網站、email、toolkit、Made With、licensee 與 affiliate marks。"
+chapters:
+  - id: "ch-01"
+    title: "Background"
+    level: 1
+    order: 1
+    pages: "3-4"
+    summary: "說明 Accoya 商標、專利、營業秘密、授權使用與品牌推廣規則，建立品牌與智慧財產權保護基礎。"
+    children:
+      - id: "ch-01-01"
+        title: "Brand Protection and Intellectual Property"
+        level: 2
+        order: 1
+        pages: "3"
+        summary: "定義 Accoya words、logos、slogans、packaging、labelling、copyright、trade secrets 與 patents 的保護範圍，並保留 Accsys Technologies 檢查與採取行動的權利。"
+      - id: "ch-01-02"
+        title: "Rules of Promotion"
+        level: 2
+        order: 2
+        pages: "4"
+        summary: "要求客戶在展示、零售與說明 Accoya wood 時保持一致、事實、清楚且自信，避免矛盾宣稱與混淆。"
+  - id: "ch-02"
+    title: "Introduction"
+    level: 1
+    order: 2
+    pages: "6-8"
+    summary: "定義 Accoya 品牌價值、品牌人格、名稱來源與 Trimarque device 的象徵意義。"
+    children:
+      - id: "ch-02-01"
+        title: "The Accoya Brand"
+        level: 2
+        order: 1
+        pages: "6"
+        summary: "說明 Accoya 作為首個成功商業化的改質木材品牌，需要透過一致品牌訊號提供品質、可靠性與 genuine product 的保證。"
+      - id: "ch-02-02"
+        title: "Our Brand Personality"
+        level: 2
+        order: 2
+        pages: "7"
+        summary: "定義 essence、vision、mission、core competencies 與 key attributes，包括 90 年研究、acetylation、耐久、穩定、永續、可靠。"
+      - id: "ch-02-03"
+        title: "The Accoya Name and Trimarque Device"
+        level: 2
+        order: 3
+        pages: "8"
+        summary: "說明 Accoya 名稱與 sequoia 的聯想、acetylation 與 Accsys 的關係，以及 Trimarque device 對 sustainability、environmental compatibility、life cycle、stability、durability、reliability 的象徵。"
+  - id: "ch-03"
+    title: "The Accoya Identity"
+    level: 1
+    order: 3
+    pages: "10-17"
+    summary: "規範 Green Tab logo、色彩、商標與 copyright 保護、聯名、認證與 accreditations。"
+    children:
+      - id: "ch-03-01"
+        title: "Identity Introduction"
+        level: 2
+        order: 1
+        pages: "10"
+        summary: "定義 Accoya logo 為 self-contained Green Tab，必須用在設計邊緣且不可 free standing，並需搭配 registration mark。"
+      - id: "ch-03-02"
+        title: "Colour Palette"
+        level: 2
+        order: 2
+        pages: "11"
+        summary: "定義 Eden green、Pitch grey、Lime green、Dark grey、Metallic dark grey、Light grey、Mid grey 與 Accoya gradient 的使用方式與色值。"
+      - id: "ch-03-03"
+        title: "Protecting the Trademarks and Copyright"
+        level: 2
+        order: 3
+        pages: "12"
+        summary: "要求使用 trademark ownership statement、Accoya® 註冊符號、copyright footnote、Neo Sans URL，並禁止重繪、分離或修改標誌。"
+      - id: "ch-03-04"
+        title: "The Green Tab Logo"
+        level: 2
+        order: 4
+        pages: "13"
+        summary: "規範 Green Tab 必須 bleed off top or bottom edge、清除空間至少一個 a 寬且不少於 5mm、最小 27mm 或 80px。"
+      - id: "ch-03-05"
+        title: "Joint Branding"
+        level: 2
+        order: 5
+        pages: "15"
+        summary: "規範 Accoya Green Tab 與 partner brand 並列時，partner brand 不得干擾 Accoya brand，且 joint branded logo 不得大於 Accoya Green Tab。"
+      - id: "ch-03-06"
+        title: "Accoya Accreditations"
+        level: 2
+        order: 6
+        pages: "16-17"
+        summary: "定義 Accoya sustainability 與品質認證的使用，包括 FSC/PEFC、Cradle to Cradle、BREEAM/LEED、Svanen、KOMO、RAL、FCBA 等，並要求依各認證機構規範使用。"
+  - id: "ch-04"
+    title: "The Accoya Icons"
+    level: 1
+    order: 4
+    pages: "19-27"
+    summary: "提供 12 個產品 benefit icons 的英、荷、法、德版本、詳細說明與展示規則，用於 POS 與品牌文宣快速傳達性能優勢。"
+    children:
+      - id: "ch-04-01"
+        title: "Multilingual Accoya Icons"
+        level: 2
+        order: 1
+        pages: "19-22"
+        summary: "提供 English、Dutch、French、German icon layouts，並強調固定 reading order 與三個主打 feature 的視覺強調。"
+      - id: "ch-04-02"
+        title: "Icons Explained"
+        level: 2
+        order: 2
+        pages: "23-26"
+        summary: "逐項解釋 outstanding durability、perfect for coating、dimensionally stable、UV resistant、insulating、machinability、insect barrier、consistent quality、beautiful wood、sustainable sources、strength/hardness、non-toxic/recyclable 等利益。"
+      - id: "ch-04-03"
+        title: "Displaying the Accoya Icons"
+        level: 2
+        order: 3
+        pages: "27"
+        summary: "要求 Dimensionally Stable、Outstanding Durability、Perfect for Coating 三個 key features 置於上方並依固定順序展示，其餘 icons 置於 light grey box。"
+  - id: "ch-05"
+    title: "Type and Straplines"
+    level: 1
+    order: 5
+    pages: "29-34"
+    summary: "定義 Neo Sans print/web 字體、Arial live text fallback、headline 角線規則、web typography 與 primary strapline Innovation in wood。"
+    children:
+      - id: "ch-05-01"
+        title: "Print Typeface"
+        level: 2
+        order: 1
+        pages: "29"
+        summary: "規範 Neo Sans Light 用於大寫 headline，Neo Sans Regular 用於 sentence case 內文，並禁止 italic、underline 等特殊效果。"
+      - id: "ch-05-02"
+        title: "Web Typeface"
+        level: 2
+        order: 2
+        pages: "30"
+        summary: "規範 web 中 Neo Sans 的使用與 Arial live text fallback。"
+      - id: "ch-05-03"
+        title: "Typography"
+        level: 2
+        order: 3
+        pages: "31-33"
+        summary: "定義 headline 0.5pt 斜線、約 28 度角、線距 headline 約最近字元一半，並提供 print 與 web typography 範例。"
+      - id: "ch-05-04"
+        title: "Primary Strapline"
+        level: 2
+        order: 4
+        pages: "34"
+        summary: "定義 Innovation in wood 及法、荷、德翻譯，規範 sentence case、無標點、最小 6pt 或 web 12pt，primary position 時可用 Neo Sans Light 大寫。"
+  - id: "ch-06"
+    title: "Other Elements"
+    level: 1
+    order: 6
+    pages: "36-43"
+    summary: "規範影像、網站、email marketing、toolkit、Made With logo、licensee branding、affiliate marks 與聯絡資訊。"
+    children:
+      - id: "ch-06-01"
+        title: "Imagery"
+        level: 2
+        order: 1
+        pages: "36"
+        summary: "規定 Accsys Technologies 圖像需事先書面同意且用於 Accoya wood 推廣，並附 copyright credit。"
+      - id: "ch-06-02"
+        title: "Website"
+        level: 2
+        order: 2
+        pages: "37"
+        summary: "禁止使用 accoya + country code 或產品網站作為第三方推廣網站，允許在自家公司網站 umbrella 下或公司名領頭的 Accoya 網站推廣，且需標示商標所有權。"
+      - id: "ch-06-03"
+        title: "Accoya Email Marketing and Toolkit"
+        level: 2
+        order: 3
+        pages: "38-39"
+        summary: "說明 Accoya email 可用於共同品牌利益與產品方案推廣，toolkit 則支援全球客戶與 distributors 的銷售與行銷。"
+      - id: "ch-06-04"
+        title: "Made With"
+        level: 2
+        order: 4
+        pages: "40"
+        summary: "規範 Made With logo 僅能在 Accsys Technologies 書面核准後使用，用於由 Accoya 製成的 final exposed product，最小 20mm 或 76px 並置於底部邊緣。"
+      - id: "ch-06-05"
+        title: "Licensee Branding"
+        level: 2
+        order: 5
+        pages: "41"
+        summary: "規範 Accoya logo 與 licensee brand 並列，Green Tab 可從設計頂部或底部 bleed。"
+      - id: "ch-06-06"
+        title: "Affiliate Marks"
+        level: 2
+        order: 6
+        pages: "42"
+        summary: "定義 approved merchants、joineries、manufacturers 使用的 affiliate endorsement marks，需 written permission，且 affiliate title 與 dark grey area 尺寸不可改變。"
+      - id: "ch-06-07"
+        title: "Contact Us"
+        level: 2
+        order: 7
+        pages: "43"
+        summary: "提供 Accoya Marketing Team 聯絡方式與 toolkit 存取資訊。"

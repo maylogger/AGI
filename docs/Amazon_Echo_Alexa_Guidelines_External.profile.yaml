@@ -1,0 +1,359 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Amazon_Echo_Alexa_Guidelines_External
+index_ref: docs/Amazon_Echo_Alexa_Guidelines_External.index.yaml
+note_ref: docs/Amazon_Echo_Alexa_Guidelines_External.note.md
+archetype: brand_experience_guide
+industry: tech_software
+modules:
+- Legal and Trademark
+- Operations
+- Governance
+- Knowledge Architecture
+- Compliance
+- AI-Checkable Rules
+- Product Language
+- Visual Identity
+- Layout System
+- Typography System
+- Color System
+- Iconography System
+- Voice and Tone
+- Content Safety
+- Interaction Design
+- Messaging
+- UI Components
+- Photography System
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 3
+  section_count: 13
+chapter_sequence:
+- id: ch-01
+  title: Guide Purpose and Review Process
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: What Is This Guide
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Review Process
+  order: 2
+  level: 2
+- id: ch-02
+  title: Amazon Echo Guidelines
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Echo Devices and Product Lineup
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Echo Logo System
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Echo Color and Typography
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Echo Iconography, Light Ring and Wraps
+  order: 4
+  level: 2
+- id: ch-03
+  title: Alexa Guidelines
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Alexa Definition and Personality
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Products and Services That Work With Alexa
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Alexa Logo and Color
+  order: 3
+  level: 2
+- id: ch-03-04
+  title: Alexa Badging and Co-Branding
+  order: 4
+  level: 2
+- id: ch-03-05
+  title: Speech Bubble and Alexa Skills
+  order: 5
+  level: 2
+- id: ch-03-06
+  title: Marketing Representation and Interaction
+  order: 6
+  level: 2
+- id: ch-03-07
+  title: Film, Photography, SAG and Trademark
+  order: 7
+  level: 2
+frameworks:
+- name: Collateral type → Risk category → Submit to correct Amazon contact → Allow up to 10 business days
+  chapter: ch-01
+  chapter_title: Guide Purpose and Review Process
+- name: Understand brand → Create collateral → Review before/during approval stage
+  chapter: ch-01-01
+  chapter_title: What Is This Guide
+- name: Asset category → Review alias，例如 AVS、WWA、Alexa Auto
+  chapter: ch-01-02
+  chapter_title: Review Process
+- name: Product naming → Logo use → Visual system → Functional depiction → Physical modification approval
+  chapter: ch-02
+  chapter_title: Amazon Echo Guidelines
+- name: Device role → endpoint/companion/gadget；product copy → full product name
+  chapter: ch-02-01
+  chapter_title: Echo Devices and Product Lineup
+- name: Use logo → include attribution unless space constrained → check hardware approval → apply clearspace/min size → avoid...
+  chapter: ch-02-02
+  chapter_title: Echo Logo System
+- name: Message hierarchy → Ember Display/Light/Bold；copy density → 15 words per line；spacing → cap-height units
+  chapter: ch-02-03
+  chapter_title: Echo Color and Typography
+- name: Marketing depiction → choose correct listening/thinking/responding state；wrap design → review, no Amazon trademark
+    mi...
+  chapter: ch-02-04
+  chapter_title: Echo Iconography, Light Ring and Wraps
+- name: Voice service identity → Partner integration language → Visual/badge system → Interaction depiction → Production/lega...
+  chapter: ch-03
+  chapter_title: Alexa Guidelines
+- name: Trait → allowed adjectives → disallowed adjectives → content review
+  chapter: ch-03-01
+  chapter_title: Alexa Definition and Personality
+- name: Integration type → approved phrase → feature description → confirm functionality
+  chapter: ch-03-02
+  chapter_title: Products and Services That Work With Alexa
+- name: Logo type → allowed context → color preference → clearspace/min size
+  chapter: ch-03-03
+  chapter_title: Alexa Logo and Color
+- name: Developer type → Certification/terms/qualification → Badge type → Marketing approval
+  chapter: ch-03-04
+  chapter_title: Alexa Badging and Co-Branding
+- name: Utterance length → bubble height/width；speaker direction → flag position；role → white/customer or blue/Alexa bubble
+  chapter: ch-03-05
+  chapter_title: Speech Bubble and Alexa Skills
+- name: Scene idea → hands-free benefit → exact tested utterance → wakeword placement → rights/claims check
+  chapter: ch-03-06
+  chapter_title: Marketing Representation and Interaction
+- name: Pre-production → approved device/image/utterance → shoot setup → post-production light ring/response → legal/trademar...
+  chapter: ch-03-07
+  chapter_title: Film, Photography, SAG and Trademark
+patterns:
+- name: 高敏感品牌 guideline 應在規格前放審核流程，避免 partner 先做完再修改。
+  chapter: ch-01
+  chapter_title: Guide Purpose and Review Process
+- name: 用途說明應同時回答 scope、importance、trigger event。
+  chapter: ch-01-01
+  chapter_title: What Is This Guide
+- name: 依產品/合作類型分流審核信箱，是大型平台 governance 的操作模式。
+  chapter: ch-01-02
+  chapter_title: Review Process
+- name: 產品品牌 guideline 應同時管理 artifact（裝置）、interface state（light ring）與 packaging/marketing overlays（wraps）。
+  chapter: ch-02
+  chapter_title: Amazon Echo Guidelines
+- name: 產品家族 guideline 應提供 taxonomy，以免合作方用市場俗稱。
+  chapter: ch-02-01
+  chapter_title: Echo Devices and Product Lineup
+- name: 在 logo 規格中加入 product callout（price、all-new、copy）可防止 marketing layout 誤用。
+  chapter: ch-02-02
+  chapter_title: Echo Logo System
+- name: 字體 guideline 不只列字體，還要規範語氣、層級和可讀性 metrics。
+  chapter: ch-02-03
+  chapter_title: Echo Color and Typography
+- name: 對 IoT/AI device guideline 而言，state visualization 是品牌識別的一部分。
+  chapter: ch-02-04
+  chapter_title: Echo Iconography, Light Ring and Wraps
+- name: AI personality guideline 最有用的形式是正負詞庫對照。
+  chapter: ch-03-01
+  chapter_title: Alexa Definition and Personality
+- name: 提供 modular approved copy 能降低 partner 誤用商標與誇大功能。
+  chapter: ch-03-02
+  chapter_title: Products and Services That Work With Alexa
+- name: 同品牌多 logo 時，需明確說明 first instance/second instance 與 selective mass advertising 權限。
+  chapter: ch-03-03
+  chapter_title: Alexa Logo and Color
+- name: badge system 應把 eligibility、visual specs、legal prohibitions 與 co-branding spacing 合併管理。
+  chapter: ch-03-04
+  chapter_title: Alexa Badging and Co-Branding
+- name: conversation UI 在品牌 guideline 中可被設計成可重複元件，而非每次自由排版。
+  chapter: ch-03-05
+  chapter_title: Speech Bubble and Alexa Skills
+- name: AI 產品廣告需要同時檢查語句、聲音時序、使用者姿態與禁止概念。
+  chapter: ch-03-06
+  chapter_title: Marketing Representation and Interaction
+- name: production checklist
+  chapter: ch-03-07
+  chapter_title: Film, Photography, SAG and Trademark
+- name: 不只設計資產
+  chapter: ch-03-07
+  chapter_title: Film, Photography, SAG and Trademark
+rules_ai_checkable:
+- module: ''
+  criterion: review lead time 至少 10 business days；deviation from brand guidelines 一律送審。
+  chapter: ch-01-02
+  chapter_title: Review Process
+- module: ''
+  criterion: Echo product names 應使用完整名稱；logo 最小 baseline-to-ascender 高度 0.1875 inch/14px；Amazon Ember Bold 不超過 10 consecutive
+    words。
+  chapter: ch-02
+  chapter_title: Amazon Echo Guidelines
+- module: ''
+  criterion: 不得說 `Dot` 或 `Show`，應說 `Echo Dot` 或 `Echo Show` 等完整名稱。
+  chapter: ch-02-01
+  chapter_title: Echo Devices and Product Lineup
+- module: Visual Identity
+  criterion: logo clear space 以字母 `e` x-height 量測；不得低於 0.1875 inch/14px；不得改色、加文字、重排、特效、擠壓或放在 running text。
+  chapter: ch-02-02
+  chapter_title: Echo Logo System
+- module: Color System
+  criterion: Amazon Ember Bold 連續不超過 10 words；body copy 不超過 15 words per line；leading 約 1.33x type size；copy 至少距 border 2
+    cap-height、距 foreground object 1.5 cap-height。
+  chapter: ch-02-03
+  chapter_title: Echo Color and Typography
+- module: Iconography System
+  criterion: wrap 不得遮擋 light ring、microphones、screens、buttons、required notices；不得直接或間接販售 wrapped devices；不得用 Amazon trademarks
+    作裝飾。
+  chapter: ch-02-04
+  chapter_title: Echo Iconography, Light Ring and Wraps
+- module: ''
+  criterion: utterance 必須包含 wake word `Alexa` 且在開頭；不得使用 `Hey Alexa`；不得稱 Alexa 為 platform、ecosystem、personal assistant、virtual
+    assistant 或 robot。
+  chapter: ch-03
+  chapter_title: Alexa Guidelines
+- module: Visual Identity
+  criterion: horizontal Amazon Alexa logo 不小於 150px/0.75 inch；stacked 不小於 125px/0.625 inch；clear space 分別以 `a` 或 `l` 高度量測。
+  chapter: ch-03-03
+  chapter_title: Alexa Logo and Color
+- module: Brand Strategy
+  criterion: Alexa badge 不小於 190px 或 1 inch；不得在 marketing collateral 使用多個 badges；co-branding 時兩 logo 視覺大小相同，水平距離為兩個 Echo `O`，垂直距離為一個半
+    `O`。
+  chapter: ch-03-04
+  chapter_title: Alexa Badging and Co-Branding
+- module: ''
+  criterion: bubble flag 有 6 個位置且必須朝向 speaker；utterance 以 smart quotes 開始結束並用 sentence case；co-branded utterance 超過 60 characters
+    應避免。
+  chapter: ch-03-05
+  chapter_title: Speech Bubble and Alexa Skills
+- module: ''
+  criterion: utterance 需測試 3 次；wake word 必須在 utterance 開頭；TV/radio 若使用 wakeword，前 3 秒需有相近音量且可區分的 audio content；不得說 `always
+    listening`。
+  chapter: ch-03-06
+  chapter_title: Marketing Representation and Interaction
+- module: ''
+  criterion: 使用最新一代裝置；Amazon logo 面向 camera；不要 shouting/leaning in；不要展示未核准 light ring color；trademark 不得縮短、作動詞、作 pun、所有格、複數或直接與
+    3P trademark 結合。
+  chapter: ch-03-07
+  chapter_title: Film, Photography, SAG and Trademark
+chapters:
+- id: ch-01
+  title: Guide Purpose and Review Process
+  modules:
+  - Legal and Trademark
+  - Operations
+  - Governance
+- id: ch-01-01
+  title: What Is This Guide
+  modules:
+  - Operations
+  - Knowledge Architecture
+- id: ch-01-02
+  title: Review Process
+  modules:
+  - Compliance
+  - Operations
+  - Governance
+- id: ch-02
+  title: Amazon Echo Guidelines
+  modules:
+  - AI-Checkable Rules
+  - Product Language
+  - Visual Identity
+  - Governance
+- id: ch-02-01
+  title: Echo Devices and Product Lineup
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Product Language
+- id: ch-02-02
+  title: Echo Logo System
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Identity
+- id: ch-02-03
+  title: Echo Color and Typography
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Typography System
+  - Color System
+- id: ch-02-04
+  title: Echo Iconography, Light Ring and Wraps
+  modules:
+  - AI-Checkable Rules
+  - Iconography System
+  - Product Language
+  - Governance
+- id: ch-03
+  title: Alexa Guidelines
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Voice and Tone
+  - Content Safety
+  - Interaction Design
+- id: ch-03-01
+  title: Alexa Definition and Personality
+  modules:
+  - Voice and Tone
+  - Content Safety
+- id: ch-03-02
+  title: Products and Services That Work With Alexa
+  modules:
+  - AI-Checkable Rules
+  - Product Language
+  - Messaging
+- id: ch-03-03
+  title: Alexa Logo and Color
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Visual Identity
+- id: ch-03-04
+  title: Alexa Badging and Co-Branding
+  modules:
+  - AI-Checkable Rules
+  - Governance
+- id: ch-03-05
+  title: Speech Bubble and Alexa Skills
+  modules:
+  - AI-Checkable Rules
+  - UI Components
+  - Voice and Tone
+  - Interaction Design
+- id: ch-03-06
+  title: Marketing Representation and Interaction
+  modules:
+  - AI-Checkable Rules
+  - Content Safety
+  - Interaction Design
+  - Governance
+- id: ch-03-07
+  title: Film, Photography, SAG and Trademark
+  modules:
+  - Legal and Trademark
+  - Photography System
+  - AI-Checkable Rules
+  - Operations

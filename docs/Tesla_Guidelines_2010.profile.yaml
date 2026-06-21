@@ -1,0 +1,250 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Tesla_Guidelines_2010
+index_ref: docs/Tesla_Guidelines_2010.index.yaml
+note_ref: docs/Tesla_Guidelines_2010.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Brand Strategy
+- Knowledge Architecture
+- AI-Checkable Rules
+- Visual Identity
+- Governance
+- Legal and Trademark
+- Brand Architecture
+- Typography System
+- Color System
+- Design Tokens
+- Operations
+- UI Components
+- Content Design
+- Voice and Tone
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 8
+  section_count: 3
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-02
+  title: Visual Identity
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Tesla Wordmark
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Tesla Flag and Tesla T
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Product Wordmarks and Misuse
+  order: 3
+  level: 2
+- id: ch-03
+  title: Typography
+  order: 3
+  level: 1
+- id: ch-04
+  title: Colors
+  order: 4
+  level: 1
+- id: ch-05
+  title: Business Papers
+  order: 5
+  level: 1
+- id: ch-06
+  title: Electronic Applications
+  order: 6
+  level: 1
+- id: ch-07
+  title: Other Applications
+  order: 7
+  level: 1
+- id: ch-08
+  title: Editorial Guidelines
+  order: 8
+  level: 1
+frameworks:
+- name: mission-to-identity framework：company story、technology purpose、global consistency、application rules
+  chapter: ch-01
+  chapter_title: Introduction
+- name: permission-tiered identity system：public wordmark、restricted flag/T、product marks、misuse blacklist
+  chapter: ch-02
+  chapter_title: Visual Identity
+- name: third-party-safe logo framework
+  chapter: ch-02-01
+  chapter_title: Tesla Wordmark
+- name: restricted-symbol governance
+  chapter: ch-02-02
+  chapter_title: Tesla Flag and Tesla T
+- name: product identity extension framework
+  chapter: ch-02-03
+  chapter_title: Product Wordmarks and Misuse
+- name: primary-secondary-fallback typography system
+  chapter: ch-03
+  chapter_title: Typography
+- name: proportional color governance
+  chapter: ch-04
+  chapter_title: Colors
+- name: business stationery localization framework
+  chapter: ch-05
+  chapter_title: Business Papers
+- name: digital template governance
+  chapter: ch-06
+  chapter_title: Electronic Applications
+- name: lifestyle exception framework
+  chapter: ch-07
+  chapter_title: Other Applications
+- name: mission-led voice framework
+  chapter: ch-08
+  chapter_title: Editorial Guidelines
+patterns:
+- name: 以創辦使命先行，再導入視覺工具箱。
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 主 wordmark 可廣泛使用，symbolic marks 需審批；產品 wordmark 可給第三方但受規則限制。
+  chapter: ch-02
+  chapter_title: Visual Identity
+- name: 允許第三方使用但限制背景、色彩、clearspace、inline use。
+  chapter: ch-02-01
+  chapter_title: Tesla Wordmark
+- name: restricted mark + explicit approval + layout-specific constraints。
+  chapter: ch-02-02
+  chapter_title: Tesla Flag and Tesla T
+- name: 產品 wordmark 可第三方使用，但以色彩、背景、standalone、clearspace 控制。
+  chapter: ch-02-03
+  chapter_title: Product Wordmarks and Misuse
+- name: print/design 使用品牌字體，electronic applications 使用系統字體替代。
+  chapter: ch-03
+  chapter_title: Typography
+- name: 以白灰建立背景系統，用紅色作精準品牌 signal。
+  chapter: ch-04
+  chapter_title: Colors
+- name: 允許 local adaptation，但不允許改變圖形元素與高寬比例。
+  chapter: ch-05
+  chapter_title: Business Papers
+- name: approved template、PDF conversion for third parties、restricted email identity。
+  chapter: ch-06
+  chapter_title: Electronic Applications
+- name: corporate items strict、fashion items flexible but identity-required。
+  chapter: ch-07
+  chapter_title: Other Applications
+- name: premium technology voice：direct、efficient、confident、anti-cute、anti-sarcastic。
+  chapter: ch-08
+  chapter_title: Editorial Guidelines
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：介紹 Tesla 時不可只使用環保敘事，必須同時呈現 electric vehicle、technology、performance 或 automotive innovation。
+  chapter: ch-01
+  chapter_title: Introduction
+- module: ''
+  criterion: AI 可檢查：Tesla Flag 與 Tesla T 不得提供第三方；使用 Flag/T 需 Corporate Marketing 與 Chief Designer/Creative Director 明確核准；任何識別不可改字、改比例、加陰影、加底線或
+    inline 進文字。
+  chapter: ch-02
+  chapter_title: Visual Identity
+- module: ''
+  criterion: AI 可檢查：wordmark 不得置於 highly-patterned background 或照片上；clearspace 至少等於 wordmark 高度；不得 inline 作為 headline/copy
+    的一部分；不得改字體、加 drop shadow 或 underline。
+  chapter: ch-02-01
+  chapter_title: Tesla Wordmark
+- module: ''
+  criterion: AI 可檢查：Flag 的 T 與 Wordmark 只能為白色並置於 Tesla Red、Black 或 Gray；Flag 不得 float，頂部或底部必須 bleed；T 不得放在 pattern/photo 或未核准背景色；T
+    四周 clearspace 為其寬度 0.5 倍；T 必須與 Wordmark 同平面或同物件接近。
+  chapter: ch-02-02
+  chapter_title: Tesla Flag and Tesla T
+- module: ''
+  criterion: AI 可檢查：Roadster/Roadster Sport 不得置於 pattern/photo 或非指定背景；Model S 不得使用 Tesla Red；所有產品 wordmark 不得 inline；不得使用
+    wrong proportions、wrong spatial relationships、floating Flag、cropped T 或 old Tesla Shield。
+  chapter: ch-02-03
+  chapter_title: Product Wordmarks and Misuse
+- module: Color System
+  criterion: AI 可檢查：Tesla Red 使用 WEB `E31937` / RGB 227 25 55 / PMS 186；白約 75%、灰約 20%、紅約 5%；RGB printouts 不得作為色彩比對標準。
+  chapter: ch-04
+  chapter_title: Colors
+- module: ''
+  criterion: AI 可檢查：business card 高寬比例不得改；重大在地調整需 Corporate Marketing 與 Chief Designer/Creative Director 核准；printed letterhead
+    使用 Tesla Flag 且不得由電腦列印；信封地址文字用 PMS Cool Gray 7，內側用 PMS Cool Gray 4。
+  chapter: ch-05
+  chapter_title: Business Papers
+- module: ''
+  criterion: AI 可檢查：PowerPoint 必須使用 approved template；外發給第三方時建議先轉 PDF；email signature 只能用 Tesla Wordmark，絕不可用 Flag 或 T；email
+    signature 不得加入未列明圖片。
+  chapter: ch-06
+  chapter_title: Electronic Applications
+- module: ''
+  criterion: AI 可檢查：公司或產品代表性物件必須完全遵守 guideline；fashion items 可拆解 logo 元素但不得嚴重 distortion 或改 typography；物件上某處必須出現 Tesla Motors
+    identity；任何設計投產前需 Corporate Marketing 與 Chief Designer/Creative Director 核准。
+  chapter: ch-07
+  chapter_title: Other Applications
+- module: ''
+  criterion: AI 可檢查：使用第三人稱；句子應短而直接；優先談 technology，其次 performance/design；不得用 `luxury` 描述 Tesla；除車色外不得使用 `green`；不得使用縮寫；不得將
+    logo inline 進文字。
+  chapter: ch-08
+  chapter_title: Editorial Guidelines
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - Brand Strategy
+  - Knowledge Architecture
+- id: ch-02
+  title: Visual Identity
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-02-01
+  title: Tesla Wordmark
+  modules:
+  - Legal and Trademark
+  - Visual Identity
+- id: ch-02-02
+  title: Tesla Flag and Tesla T
+  modules:
+  - Visual Identity
+  - Governance
+- id: ch-02-03
+  title: Product Wordmarks and Misuse
+  modules:
+  - Brand Architecture
+  - AI-Checkable Rules
+- id: ch-03
+  title: Typography
+  modules:
+  - Typography System
+- id: ch-04
+  title: Colors
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-05
+  title: Business Papers
+  modules:
+  - Operations
+  - Governance
+- id: ch-06
+  title: Electronic Applications
+  modules:
+  - UI Components
+  - Operations
+- id: ch-07
+  title: Other Applications
+  modules:
+  - Brand Strategy
+  - Governance
+- id: ch-08
+  title: Editorial Guidelines
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone

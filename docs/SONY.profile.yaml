@@ -1,0 +1,231 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: SONY
+index_ref: docs/SONY.index.yaml
+note_ref: docs/SONY.note.md
+archetype: brand_experience_guide
+industry: media_entertainment
+modules:
+- Brand Strategy
+- Visual Identity
+- Layout System
+- Color System
+- Messaging
+- Photography System
+- Typography System
+- Accessibility
+- Visual Language
+- AI-Checkable Rules
+- Motion Identity
+- Operations
+- Interaction Design
+- Governance
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 5
+  section_count: 8
+chapter_sequence:
+- id: ch-01
+  title: Building a Foundation
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Sony Logo
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Open Frame, Sony Black and Taglines
+  order: 2
+  level: 2
+- id: ch-02
+  title: Building Tools
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Typography
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Color
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Photography
+  order: 3
+  level: 2
+- id: ch-03
+  title: Building Guidelines for Advertisements
+  order: 3
+  level: 1
+- id: ch-04
+  title: Environments
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Retail
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Online
+  order: 2
+  level: 2
+- id: ch-04-03
+  title: TV/Film
+  order: 3
+  level: 2
+- id: ch-05
+  title: Closing Principle
+  order: 5
+  level: 1
+frameworks:
+- name: foundation framework：name story → fixed elements → behavior consistency → consumer trust
+  chapter: ch-01
+  chapter_title: Building a Foundation
+- name: logo placement framework：isolation zone → open frame relation → print formula → online constraints
+  chapter: ch-01-01
+  chapter_title: Sony Logo
+- name: frame system framework：logo anchor → black frame → content window → tagline position
+  chapter: ch-01-02
+  chapter_title: Open Frame, Sony Black and Taglines
+- name: toolkit framework：typographic clarity → color emotion → photographic amazement
+  chapter: ch-02
+  chapter_title: Building Tools
+- name: typography framework：clarity → hierarchy → copy placement → legal readability
+  chapter: ch-02-01
+  chapter_title: Typography
+- name: color emotion framework：Sony black base → controlled color impact → product emotion
+  chapter: ch-02-02
+  chapter_title: Color
+- name: photography framework：unique perspective → rich color/emotion → product/lifestyle amazement
+  chapter: ch-02-03
+  chapter_title: Photography
+- name: ad execution framework：format → frame formula → content zone → copy/legal constraints → product logo hierarchy
+  chapter: ch-03
+  chapter_title: Building Guidelines for Advertisements
+- name: environment framework：retail clarity → online dialogue → screen closing identity
+  chapter: ch-04
+  chapter_title: Environments
+- name: principle framework：fixed identity → disciplined tools → courageous creativity
+  chapter: ch-05
+  chapter_title: Closing Principle
+patterns:
+- name: 把歷史敘事嵌入規格章節，是提高遵循動機的模式。
+  chapter: ch-01
+  chapter_title: Building a Foundation
+- name: 把 logo 放在固定角落並讓 frame 圍繞它，是高辨識 layout pattern。
+  chapter: ch-01-01
+  chapter_title: Sony Logo
+- name: 用 open frame 創造產品發現感，是可複用的 layout identity pattern。
+  chapter: ch-01-02
+  chapter_title: Open Frame, Sony Black and Taglines
+- name: 將工具章放在應用章前，是設計系統知識架構的標準模式。
+  chapter: ch-02
+  chapter_title: Building Tools
+- name: 在 newspaper/special formats 中調整字級與 leading，是媒介約束模式。
+  chapter: ch-02-01
+  chapter_title: Typography
+- name: 用品牌歷史支撐色彩選擇，可複用於 legacy brand systems。
+  chapter: ch-02-02
+  chapter_title: Color
+- name: 用視覺情緒描述取代過度技術規格，是 consumer electronics 品牌模式。
+  chapter: ch-02-03
+  chapter_title: Photography
+- name: 把 reference guide 當作彈性邊界，而非單一模板，是成熟版面系統模式。
+  chapter: ch-03
+  chapter_title: Building Guidelines for Advertisements
+- name: 用場域任務定義品牌應用，是 omni-channel guideline 模式。
+  chapter: ch-04
+  chapter_title: Environments
+- name: 用創辦人語錄收束 guideline，是 legacy brand 的文化治理模式。
+  chapter: ch-05
+  chapter_title: Closing Principle
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：communications 應保留 Sony logo、open frame、Sony black、tagline 的必要關係；不可讓其他元素凌駕 Sony master brand。
+  chapter: ch-01
+  chapter_title: Building a Foundation
+- module: ''
+  criterion: AI 可檢查：open frame 使用 Sony black；top/right/logo 關係固定；tagline 置於規定位置；不得用 full-bleed 破壞 frame identity；不得讓框內內容越界干擾
+    logo/tagline。
+  chapter: ch-01-02
+  chapter_title: Open Frame, Sony Black and Taglines
+- module: Typography System
+  criterion: AI 可檢查：小字不得低於指定 minimum；newspaper legal/copy 應白字反白於黑色且保持可讀 leading；不得使用破壞 open frame 的任意排版。
+  chapter: ch-02-01
+  chapter_title: Typography
+- module: Color System
+  criterion: AI 可檢查：open frame 與主要品牌區域使用 Sony black；色彩應在框內或圖像中服務情緒，不得用雜色削弱 premium black identity。
+  chapter: ch-02-02
+  chapter_title: Color
+- module: ''
+  criterion: AI 可檢查：h = 0.022 x format height；top/left/bottom bars 依 4.35h/5h 等公式；double-page 只延展中段；product logo 小於 Sony logo，且不得比
+    Sony master brand 更突出；newspaper 用 100% black frame。
+  chapter: ch-03
+  chapter_title: Building Guidelines for Advertisements
+- module: ''
+  criterion: AI 可檢查：retail 應簡潔聚焦；online 應回答問題並鼓勵探索；tv/film 結尾需在 solid Sony black 中置中顯示單色 Sony logotype 數秒，且不得加入其他元素。
+  chapter: ch-04
+  chapter_title: Environments
+- module: ''
+  criterion: AI 可檢查：此章不產生量化規格，但可作為 review prompt：設計是否在遵守 foundation 下展現清楚、克制與勇氣。
+  chapter: ch-05
+  chapter_title: Closing Principle
+chapters:
+- id: ch-01
+  title: Building a Foundation
+  modules:
+  - Brand Strategy
+  - Visual Identity
+- id: ch-01-01
+  title: Sony Logo
+  modules:
+  - Layout System
+  - Visual Identity
+- id: ch-01-02
+  title: Open Frame, Sony Black and Taglines
+  modules:
+  - Layout System
+  - Color System
+  - Messaging
+- id: ch-02
+  title: Building Tools
+  modules:
+  - Photography System
+  - Typography System
+  - Color System
+- id: ch-02-01
+  title: Typography
+  modules:
+  - Typography System
+  - Accessibility
+- id: ch-02-02
+  title: Color
+  modules:
+  - Brand Strategy
+  - Color System
+- id: ch-02-03
+  title: Photography
+  modules:
+  - Photography System
+  - Visual Language
+- id: ch-03
+  title: Building Guidelines for Advertisements
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+- id: ch-04
+  title: Environments
+  modules:
+  - Motion Identity
+  - Operations
+  - Interaction Design
+- id: ch-05
+  title: Closing Principle
+  modules:
+  - Brand Strategy
+  - Governance

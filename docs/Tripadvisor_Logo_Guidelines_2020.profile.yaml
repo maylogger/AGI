@@ -1,0 +1,225 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Tripadvisor_Logo_Guidelines_2020
+index_ref: docs/Tripadvisor_Logo_Guidelines_2020.index.yaml
+note_ref: docs/Tripadvisor_Logo_Guidelines_2020.note.md
+archetype: logo_asset_guidelines
+industry: null
+modules:
+- Operations
+- Governance
+- AI-Checkable Rules
+- Visual Identity
+- Design Tokens
+- Accessibility
+depth:
+  strategy: low
+  visual: medium
+  governance: medium
+  top_level_chapter_count: 4
+  section_count: 7
+chapter_sequence:
+- id: ch-01
+  title: Download
+  order: 1
+  level: 1
+- id: ch-02
+  title: Primary Logo
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Primary Horizontal Lockup
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Primary Vertical Lockup
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Small Space Vertical Lockup
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Primary Logo Suite and Minimum Scale
+  order: 4
+  level: 2
+- id: ch-03
+  title: Secondary Logos
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Secondary Logo Rationale
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Secondary Horizontal and Vertical Lockups
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Secondary Logo Suite and Minimum Scale
+  order: 3
+  level: 2
+- id: ch-04
+  title: Logo Usage
+  order: 4
+  level: 1
+frameworks:
+- name: 採用「核准資產 + 使用規範」雙層治理：檔案來源控制形狀，指南控制情境
+  chapter: ch-01
+  chapter_title: Download
+- name: 以「logo form selection」框架運作：預設 horizontal，需要垂直版面時用 vertical，空間極小時使用 small-space vertical
+  chapter: ch-02
+  chapter_title: Primary Logo
+- name: 決策邏輯是「若水平寬度足夠，優先使用 horizontal lockup」
+  chapter: ch-02-01
+  chapter_title: Primary Horizontal Lockup
+- name: 使用「容器方向」作為 lockup 選擇依據
+  chapter: ch-02-02
+  chapter_title: Primary Vertical Lockup
+- name: 以 available space 作為變體選擇門檻
+  chapter: ch-02-03
+  chapter_title: Small Space Vertical Lockup
+- name: 版本選擇 + 尺寸驗證雙階段框架
+  chapter: ch-02-04
+  chapter_title: Primary Logo Suite and Minimum Scale
+- name: 情境式 fallback framework：背景困難、clear space 不足或需要深色背景時，改用 secondary suite
+  chapter: ch-03
+  chapter_title: Secondary Logos
+- name: 條件式啟用模型：若標準背景與留白不可行，才進入 secondary
+  chapter: ch-03-01
+  chapter_title: Secondary Logo Rationale
+- name: 與 primary 相同的 orientation selection，但套用於 contained mark
+  chapter: ch-03-02
+  chapter_title: Secondary Horizontal and Vertical Lockups
+- name: Background Compatibility Matrix：light background 與 dark background 對應不同資產
+  chapter: ch-03-03
+  chapter_title: Secondary Logo Suite and Minimum Scale
+- name: Preferred Usage Rule：先嘗試 black logo on light/clear background，若不可行才回到 secondary suite
+  chapter: ch-04
+  chapter_title: Logo Usage
+patterns:
+- name: 可重用為任何品牌 guideline 的 Asset Access Gate 模組。
+  chapter: ch-01
+  chapter_title: Download
+- name: 常見模式是 Logo Suite Matrix，將標誌拆成圖示、水平 lockup、垂直 lockup與受限空間版本。
+  chapter: ch-02
+  chapter_title: Primary Logo
+- name: 圖示加 wordmark 的水平簽名模式，可跨品牌複用。
+  chapter: ch-02-01
+  chapter_title: Primary Horizontal Lockup
+- name: Vertical Signature Pattern，適用於 avatar、窄幅廣告、置中落款。
+  chapter: ch-02-02
+  chapter_title: Primary Vertical Lockup
+- name: Responsive Logo Variant，可跨品牌用於 favicon、badge、窄欄與小卡片。
+  chapter: ch-02-03
+  chapter_title: Small Space Vertical Lockup
+- name: Minimum Size Table 是 logo guideline 的核心 pattern。
+  chapter: ch-02-04
+  chapter_title: Primary Logo Suite and Minimum Scale
+- name: Contained Mark Pattern、Background-Specific Logo Variant。
+  chapter: ch-03
+  chapter_title: Secondary Logos
+- name: Rationale Before Variants，是防止濫用變體的文件模式。
+  chapter: ch-03-01
+  chapter_title: Secondary Logo Rationale
+- name: Secondary Suite Matrix，可用於任何需要容器標誌的品牌。
+  chapter: ch-03-02
+  chapter_title: Secondary Horizontal and Vertical Lockups
+- name: 背景分組資產表與 minimum scale table。
+  chapter: ch-03-03
+  chapter_title: Secondary Logo Suite and Minimum Scale
+- name: Usage Summary Module，適合作為設計交付前的最後檢查。
+  chapter: ch-04
+  chapter_title: Logo Usage
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查條件包括：使用素材必須來自核准下載包；輸出品不得引用未授權或未知來源 logo；若素材來源缺失，標記為需品牌審核。
+  chapter: ch-01
+  chapter_title: Download
+- module: Visual Identity
+  criterion: Ollie 最小高度 20px；horizontal lockup 最小高度 20px；vertical lockup 最小高度 37px；另一垂直 lockup 最小高度 50px；低於門檻時應拒絕或改用適當小空間版本。
+  chapter: ch-02
+  chapter_title: Primary Logo
+- module: ''
+  criterion: AI 可檢查：horizontal lockup 高度不得低於 20px；不得拉伸、拆解或替換 lockup 內部比例；容器不足時不可壓縮，應改選其他核准版本。
+  chapter: ch-02-01
+  chapter_title: Primary Horizontal Lockup
+- module: ''
+  criterion: AI 可檢查：vertical lockup 高度不得低於 37px；若採用另一垂直版本，最小高度不得低於 50px；不得任意調整圖示與字標距離。
+  chapter: ch-02-02
+  chapter_title: Primary Vertical Lockup
+- module: ''
+  criterion: AI 可檢查：若容器無法滿足標準 vertical lockup 最小尺寸，必須使用核准小空間版本；不得自行裁切 Ollie 或 wordmark。
+  chapter: ch-02-03
+  chapter_title: Small Space Vertical Lockup
+- module: Visual Identity
+  criterion: AI 可檢查：Ollie >= 20px high；horizontal lockup >= 20px high；vertical lockup >= 37px high；alternate vertical lockup
+    >= 50px high；低於最小尺寸即不符合規定。
+  chapter: ch-02-04
+  chapter_title: Primary Logo Suite and Minimum Scale
+- module: Visual Identity
+  criterion: AI 可檢查：描邊圓形版本不得與 Tripadvisor wordmark lockup；次要 logo 高度 >= 35px；secondary horizontal lockup >= 35px；secondary
+    vertical lockup >= 52px；small-space secondary vertical lockup >= 69px。
+  chapter: ch-03
+  chapter_title: Secondary Logos
+- module: Visual Identity
+  criterion: AI 可檢查：只有在無法建立清楚背景或留白時使用 secondary；stroked circle version 不得與 wordmark lockup；glyph 用途限於 body copy 附近的符號化使用。
+  chapter: ch-03-01
+  chapter_title: Secondary Logo Rationale
+- module: ''
+  criterion: AI 可檢查：secondary horizontal lockup 高度不得低於 35px；secondary vertical lockup 高度不得低於 52px；small-space secondary vertical
+    lockup 高度不得低於 69px；不得混用 primary wordmark 與非核准 secondary mark。
+  chapter: ch-03-02
+  chapter_title: Secondary Horizontal and Vertical Lockups
+- module: Visual Identity
+  criterion: AI 可檢查：在 dark background 上必須使用核准深色背景版本；在 light background 上使用核准淺色背景版本；secondary logo >= 35px high；secondary horizontal
+    >= 35px high；secondary vertical >= 52px high；small-space secondary vertical >= 69px high。
+  chapter: ch-03-03
+  chapter_title: Secondary Logo Suite and Minimum Scale
+- module: Visual Identity
+  criterion: AI 可檢查：logo 背景應為淺色品牌色或清楚背景；若背景複雜或深色，不得直接使用主要黑色版本；應改用相容的 secondary/dark-background 版本。
+  chapter: ch-04
+  chapter_title: Logo Usage
+chapters:
+- id: ch-01
+  title: Download
+  modules:
+  - Operations
+  - Governance
+- id: ch-02
+  title: Primary Logo
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02-02
+  title: Primary Vertical Lockup
+  modules:
+  - Visual Identity
+- id: ch-02-04
+  title: Primary Logo Suite and Minimum Scale
+  modules:
+  - AI-Checkable Rules
+  - Design Tokens
+- id: ch-03
+  title: Secondary Logos
+  modules:
+  - Visual Identity
+  - Governance
+- id: ch-03-01
+  title: Secondary Logo Rationale
+  modules:
+  - Governance
+- id: ch-03-03
+  title: Secondary Logo Suite and Minimum Scale
+  modules:
+  - Design Tokens
+  - Accessibility
+  - Governance
+- id: ch-04
+  title: Logo Usage
+  modules:
+  - AI-Checkable Rules
+  - Governance

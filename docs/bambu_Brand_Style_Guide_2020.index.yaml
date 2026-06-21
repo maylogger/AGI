@@ -1,0 +1,88 @@
+title: "Bambu Brand Style Guide"
+source: "sources/bambu_Brand_Style_Guide_2020.pdf"
+version: "Vol 1"
+date: "2020"
+language: "en"
+summary: "Bambu 品牌風格指南以 21 頁短版工具包定義標誌、圖示、字體、色彩、應用與 Bambu/BambuGO/BambuBUILD 的溝通識別。"
+chapters:
+  - id: "ch-01"
+    title: "Visuals Section"
+    level: 1
+    order: 1
+    pages: "1-16"
+    summary: "建立 Bambu 的 logo、icon grid、lockups、typography、pictograms、color palette 與品牌應用。"
+    children:
+      - id: "ch-01-01"
+        title: "Our Logo and Icon System"
+        level: 2
+        order: 1
+        pages: "3-6"
+        summary: "說明小寫 b、golden ratio、icon meaning 與 watermark/vector/decorative 版本。"
+      - id: "ch-01-02"
+        title: "Lockups and Logo Usage"
+        level: 2
+        order: 2
+        pages: "7-10"
+        summary: "規範 exclusion zone、40px clear space、product marks 與 logo misuse。"
+      - id: "ch-01-03"
+        title: "Typography, Pictograms and Color"
+        level: 2
+        order: 3
+        pages: "11-13"
+        summary: "定義 Gilroy/Lato 字體階層、跨文化 pictograms 與 Pantone/HEX/CMYK/RGB 色彩。"
+      - id: "ch-01-04"
+        title: "Brand Application"
+        level: 2
+        order: 4
+        pages: "14-16"
+        summary: "展示 stationery 與 marketing identity 的落地版型。"
+  - id: "ch-02"
+    title: "Communications Section"
+    level: 1
+    order: 2
+    pages: "17-20"
+    summary: "以 Editorial Style Guide 方式定義 Bambu official、BambuGO、BambuBUILD 的資訊、人格、archetype、價值與文字階層。"
+    children:
+      - id: "ch-02-01"
+        title: "Bambu Official"
+        level: 2
+        order: 1
+        pages: "18"
+        summary: "定義 Bambu 為 global robo-advisory technology provider，品牌 archetype 為 Hero。"
+      - id: "ch-02-02"
+        title: "BambuGO"
+        level: 2
+        order: 2
+        pages: "19"
+        summary: "定義 ready-to-go robo solution，archetype 為 Caregiver。"
+      - id: "ch-02-03"
+        title: "BambuBUILD"
+        level: 2
+        order: 3
+        pages: "20"
+        summary: "定義 product identity，沿用產品價值與 text hierarchy。"
+  - id: "ch-03"
+    title: "Applications and Governance"
+    level: 1
+    order: 3
+    pages: "14-21"
+    summary: "展示名片、行銷海報、newsletter 等素材，並以 thank-you/contact 頁收尾。"
+    children:
+      - id: "ch-03-01"
+        title: "Stationery Identity"
+        level: 2
+        order: 1
+        pages: "15"
+        summary: "呈現地址、聯絡資訊與個人名片版型。"
+      - id: "ch-03-02"
+        title: "Marketing Identity"
+        level: 2
+        order: 2
+        pages: "16"
+        summary: "呈現獎項、網站、newsletter 與信任訊息的行銷版型。"
+      - id: "ch-03-03"
+        title: "Contact"
+        level: 2
+        order: 3
+        pages: "21"
+        summary: "提供 info@bambu.life 與網站資訊。"

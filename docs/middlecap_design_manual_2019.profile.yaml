@@ -1,0 +1,250 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: middlecap_design_manual_2019
+index_ref: docs/middlecap_design_manual_2019.index.yaml
+note_ref: docs/middlecap_design_manual_2019.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- Brand Strategy
+- Visual Identity
+- Governance
+- AI-Checkable Rules
+- Operations
+- Layout System
+- Color System
+- Design Tokens
+- Typography System
+- Visual Language
+- Brand Architecture
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 5
+  section_count: 7
+chapter_sequence:
+- id: ch-01
+  title: Welcome and Mood
+  order: 1
+  level: 1
+- id: ch-02
+  title: Logotype
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Primary Logotype Version
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Protection Zone
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Monochromic Versions and Icon
+  order: 3
+  level: 2
+- id: ch-03
+  title: Color Scale
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Primary Colors
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Secondary Colors
+  order: 2
+  level: 2
+- id: ch-04
+  title: Typography
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Primary Font
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Secondary Font
+  order: 2
+  level: 2
+- id: ch-05
+  title: Divisions Logos
+  order: 5
+  level: 1
+frameworks:
+- name: 可視為 `Brand Evolution -> Visual Tone -> Asset Rules` 的三段式框架
+  chapter: ch-01
+  chapter_title: Welcome and Mood
+- name: '`標準版本 -> 空間保護 -> 尺寸限制 -> 背景/色彩替代 -> 小尺寸 icon`'
+  chapter: ch-02
+  chapter_title: Logotype
+- name: '`approved asset source` 作為治理框架'
+  chapter: ch-02-01
+  chapter_title: Primary Logotype Version
+- name: '`clear space + minimum size` 的 logo safety framework'
+  chapter: ch-02-02
+  chapter_title: Protection Zone
+- name: '`background condition -> approved variant`'
+  chapter: ch-02-03
+  chapter_title: Monochromic Versions and Icon
+- name: '`primary neutral base + energetic accent pair`'
+  chapter: ch-03
+  chapter_title: Color Scale
+- name: '`dominant colors for seriousness`'
+  chapter: ch-03-01
+  chapter_title: Primary Colors
+- name: '`accent hierarchy: broad accent vs narrow highlight`'
+  chapter: ch-03-02
+  chapter_title: Secondary Colors
+- name: '`primary brand font + accessible fallback font`'
+  chapter: ch-04
+  chapter_title: Typography
+- name: '`font personality -> approved weights -> layout samples`'
+  chapter: ch-04-01
+  chapter_title: Primary Font
+- name: '`availability fallback with style similarity`'
+  chapter: ch-04-02
+  chapter_title: Secondary Font
+- name: '`master brand logo + descriptor slot`'
+  chapter: ch-05
+  chapter_title: Divisions Logos
+patterns:
+- name: 以情緒章節先約束後續設計 token，是短版 guideline 中常見的策略型開場模式。
+  chapter: ch-01
+  chapter_title: Welcome and Mood
+- name: Logo chapter 以 positive use 與 fallback use 並列，讓設計者在不同媒介中仍能維持同一識別。
+  chapter: ch-02
+  chapter_title: Logotype
+- name: 在 guideline 中直接放置下載入口是輕量 asset governance 模式。
+  chapter: ch-02-01
+  chapter_title: Primary Logotype Version
+- name: 用最小尺寸保護可讀性，用保護區保護識別優先權。
+  chapter: ch-02-02
+  chapter_title: Protection Zone
+- name: 對小尺寸改用 symbol/icon，是 logo scalability pattern。
+  chapter: ch-02-03
+  chapter_title: Monochromic Versions and Icon
+- name: 深色企業基底搭配兩個高辨識輔色，是專業服務品牌常見延展模式。
+  chapter: ch-03
+  chapter_title: Color Scale
+- name: 以雙深灰取代單一黑色，保留層次與材料感。
+  chapter: ch-03-01
+  chapter_title: Primary Colors
+- name: 同為 secondary color，但以用途差異建立層級。
+  chapter: ch-03-02
+  chapter_title: Secondary Colors
+- name: 商業字體搭配 Google Fonts 替代，是跨裝置品牌治理常見模式。
+  chapter: ch-04
+  chapter_title: Typography
+- name: 用 specimen page 作為字體選型與使用證據。
+  chapter: ch-04-01
+  chapter_title: Primary Font
+- name: 以開源字體做 brand-compatible fallback。
+  chapter: ch-04-02
+  chapter_title: Secondary Font
+- name: endorsed/sub-brand lockup pattern。
+  chapter: ch-05
+  chapter_title: Divisions Logos
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：新素材應優先使用深色、材質或低彩度語氣；避免讓 cyan 成為大面積主導色；視覺不得與「成熟跨國企業」語氣衝突。
+  chapter: ch-01
+  chapter_title: Welcome and Mood
+- module: Visual Identity
+  criterion: AI 可檢查：標誌寬度不得小於 20 mm；標誌周圍不得有其他圖形侵入保護區；深灰或全白版本只用於互補/反白情境；favicon 應使用 icon 而非完整長標。
+  chapter: ch-02
+  chapter_title: Logotype
+- module: Visual Identity
+  criterion: AI 可檢查：素材應引用核准標誌檔；不得從截圖或低解析圖重建標誌。
+  chapter: ch-02-01
+  chapter_title: Primary Logotype Version
+- module: ''
+  criterion: AI 可檢查：logo bounding box 外需保留指定保護區；任何文字、圖形、裁切邊不得進入；輸出寬度不得低於 20 mm。
+  chapter: ch-02-02
+  chapter_title: Protection Zone
+- module: Color System
+  criterion: 'AI 可檢查：主色應優先使用 #29313e、#616466；藍可用於較大色塊；橘限於文字或圖形重點；不得用截圖取樣替代指定 RGB/CMYK/Pantone。'
+  chapter: ch-03
+  chapter_title: Color Scale
+- module: Color System
+  criterion: AI 可檢查：主視覺底色與主要標題區優先使用指定深灰；不得以任意近似灰替換。
+  chapter: ch-03-01
+  chapter_title: Primary Colors
+- module: Color System
+  criterion: AI 可檢查：橘色不得作為大面積背景；藍色可用於較大彩色區塊；輔色應搭配主色而非取代主色。
+  chapter: ch-03-02
+  chapter_title: Secondary Colors
+- module: Typography System
+  criterion: AI 可檢查：正式品牌材料優先 Soho Gothic Pro；若設備沒有主字體，使用 Exo 2；大型標題可使用 thin cut；正文不得混入非核准字體。
+  chapter: ch-04
+  chapter_title: Typography
+- module: ''
+  criterion: AI 可檢查：主要品牌版面使用 Soho Gothic Pro；大型標題才可使用 thin；正文與標題不得使用裝飾性襯線字體替代。
+  chapter: ch-04-01
+  chapter_title: Primary Font
+- module: ''
+  criterion: AI 可檢查：若主字體不可用，使用 Exo 2；不得選用與幾何語氣差異過大的 fallback；替代字體仍需使用核准字重。
+  chapter: ch-04-02
+  chapter_title: Secondary Font
+- module: Visual Identity
+  criterion: AI 可檢查：division name 必須附加在基本標誌下方；不得改變主標誌比例；不得為 division 建立獨立標誌語言；division lockup 應使用核准下載資產。
+  chapter: ch-05
+  chapter_title: Divisions Logos
+chapters:
+- id: ch-01
+  title: Welcome and Mood
+  modules:
+  - Brand Strategy
+  - Visual Identity
+  - Governance
+- id: ch-02
+  title: Logotype
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02-01
+  title: Primary Logotype Version
+  modules:
+  - Operations
+  - Visual Identity
+- id: ch-02-02
+  title: Protection Zone
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+- id: ch-03
+  title: Color Scale
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-03-01
+  title: Primary Colors
+  modules:
+  - Color System
+- id: ch-03-02
+  title: Secondary Colors
+  modules:
+  - AI-Checkable Rules
+  - Color System
+- id: ch-04
+  title: Typography
+  modules:
+  - Typography System
+- id: ch-04-01
+  title: Primary Font
+  modules:
+  - Typography System
+  - Visual Language
+- id: ch-04-02
+  title: Secondary Font
+  modules:
+  - Typography System
+  - Operations
+- id: ch-05
+  title: Divisions Logos
+  modules:
+  - Brand Architecture

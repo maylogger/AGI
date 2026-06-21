@@ -1,0 +1,187 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: EYR_Visual_Identity_Guidelines
+index_ref: docs/EYR_Visual_Identity_Guidelines.index.yaml
+note_ref: docs/EYR_Visual_Identity_Guidelines.note.md
+archetype: brand_experience_guide
+industry: public_sector
+modules:
+- AI-Checkable Rules
+- Typography System
+- Color System
+- Visual Identity
+- Brand Strategy
+- Accessibility
+- Photography System
+- Layout System
+- Visual Language
+- Localization
+- Content Safety
+- Content Design
+- Information Design
+- Operations
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 4
+  section_count: 6
+chapter_sequence:
+- id: ch-01
+  title: Basic elements
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: EU emblem and campaign name
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Typography and colours
+  order: 2
+  level: 2
+- id: ch-02
+  title: Visual concept and pictures
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Green frame and motif
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: How to use pictures
+  order: 2
+  level: 2
+- id: ch-03
+  title: Online materials
+  order: 3
+  level: 1
+- id: ch-04
+  title: Offline materials
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Posters
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Banners
+  order: 2
+  level: 2
+frameworks:
+- name: 此章形成「sender logo + campaign name + typography + palette」的活動識別最小系統
+  chapter: ch-01
+  chapter_title: Basic elements
+- name: 採用「不可變 sender + 可換行 descriptor」框架
+  chapter: ch-01-01
+  chapter_title: EU emblem and campaign name
+- name: 字體以 boldness 控制可讀性；色彩以主色、輔色、EU 色分類
+  chapter: ch-01-02
+  chapter_title: Typography and colours
+- name: 此章採用「subject zone / content zone」的空間治理框架
+  chapter: ch-02
+  chapter_title: Visual concept and pictures
+- name: 使用「audience fit + emotional tone + representation + perspective」四項檢查
+  chapter: ch-02-02
+  chapter_title: How to use pictures
+- name: 採「visual first / caption second」資訊架構
+  chapter: ch-03
+  chapter_title: Online materials
+- name: 採「visibility + action + partner containment」框架
+  chapter: ch-04
+  chapter_title: Offline materials
+patterns:
+- name: 可複用模式是把活動名稱視為可排版的文字鎖定，而不是另造複雜 logo。
+  chapter: ch-01
+  chapter_title: Basic elements
+- name: campaign 名稱不做圖形化變形，只透過位置與框線建立一致性。
+  chapter: ch-01-01
+  chapter_title: EU emblem and campaign name
+- name: 用輔色建立豐富感，但明確禁止外部顏色。
+  chapter: ch-01-02
+  chapter_title: Typography and colours
+- name: 可複用模式是用固定 frame 包住可替換圖片，讓地方素材仍保有 campaign look。
+  chapter: ch-02
+  chapter_title: Visual concept and pictures
+- name: 先提供 pre-approved images，再允許自有圖片，形成保守但可擴充的素材模式。
+  chapter: ch-02-02
+  chapter_title: How to use pictures
+- name: 固定尺寸 + 少字 + 中央視覺，是 campaign 社群資產的可複用模式。
+  chapter: ch-03
+  chapter_title: Online materials
+- name: 白框 partner logo 是常見聯名治理模式，避免合作標誌破壞主識別。
+  chapter: ch-04
+  chapter_title: Offline materials
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：所有素材必須含官方 EU emblem；emblem 疊在圖片上時白邊厚度為旗長的 1/25；campaign name 必須在白框內並鄰近或位於 emblem 下方；視覺材料只能使用指定色票與白色；影像/overlay
+    文字至少使用 Noto Sans Bold。
+  chapter: ch-01
+  chapter_title: Basic elements
+- module: ''
+  criterion: AI 可檢查：不得使用非官方 EU emblem；campaign name 不得缺席；名稱可一、二或三行但文字內容不可改寫；白框需緊鄰 emblem 或置於其下。
+  chapter: ch-01-01
+  chapter_title: EU emblem and campaign name
+- module: Typography System
+  criterion: AI 可檢查：字體需屬 Noto Sans family；圖片或 overlay 文字厚度不得低於 Bold；視覺素材不得出現指定 palette 與白色以外的顏色。
+  chapter: ch-01-02
+  chapter_title: Typography and colours
+- module: ''
+  criterion: AI 可檢查：frame 邊緣必須完全在版面內；文字不得完全置於 frame 內；人物、火車或車站應位於 frame 內；綠色 overlay 是文字與 logo 區；圖片需呈現正向情緒且視角合理。
+  chapter: ch-02
+  chapter_title: Visual concept and pictures
+- module: ''
+  criterion: AI 可檢查：人物需對應訊息受眾；場景不得負面或不清楚；圖片需避免不自然透視；車門後場景需清晰可見；人物呈現需避免明顯單一性別或族群偏差。
+  chapter: ch-02-02
+  chapter_title: How to use pictures
+- module: ''
+  criterion: AI 可檢查：社群圖尺寸應符合 1080 x 1080 或 1200 x 628；文字不得過量遮蔽中央視覺；slogan 需服務視覺而非取代 caption。
+  chapter: ch-03
+  chapter_title: Online materials
+- module: ''
+  criterion: AI 可檢查：poster 文字不得放在 door image 上；CTA 必須存在；partner logo 必須置於與 EU emblem 等高的白框內且鄰近 EU emblem；banner 應保留 campaign
+    name、slogan 或 hashtag。
+  chapter: ch-04
+  chapter_title: Offline materials
+chapters:
+- id: ch-01
+  title: Basic elements
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Color System
+  - Visual Identity
+- id: ch-01-01
+  title: EU emblem and campaign name
+  modules:
+  - Brand Strategy
+- id: ch-01-02
+  title: Typography and colours
+  modules:
+  - Typography System
+  - Color System
+  - Accessibility
+- id: ch-02
+  title: Visual concept and pictures
+  modules:
+  - Photography System
+  - Layout System
+  - Visual Language
+- id: ch-02-02
+  title: How to use pictures
+  modules:
+  - Photography System
+  - Localization
+  - Content Safety
+- id: ch-03
+  title: Online materials
+  modules:
+  - Content Design
+  - Information Design
+- id: ch-04
+  title: Offline materials
+  modules:
+  - Layout System
+  - Operations

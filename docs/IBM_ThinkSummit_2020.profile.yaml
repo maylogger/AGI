@@ -1,0 +1,374 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: IBM_ThinkSummit_2020
+index_ref: docs/IBM_ThinkSummit_2020.index.yaml
+note_ref: docs/IBM_ThinkSummit_2020.note.md
+archetype: product_design_system
+industry: tech_software
+modules:
+- Brand Strategy
+- Operations
+- Design Process
+- Legal and Trademark
+- AI-Checkable Rules
+- Typography System
+- Visual Identity
+- Knowledge Architecture
+- Compliance
+- Examples
+- Visual Language
+- Motion Identity
+- Color System
+- Design Tokens
+- Photography System
+- Information Design
+- Messaging
+- UI Components
+- Content Design
+- Layout System
+- Product Language
+- Governance
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 8
+  section_count: 10
+chapter_sequence:
+- id: ch-01
+  title: Objective and Goals
+  order: 1
+  level: 1
+- id: ch-02
+  title: Brand Elements
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: IBM Logo Usage and Typography
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Think Identity and Lockups
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Logo Misuse
+  order: 3
+  level: 2
+- id: ch-03
+  title: 2020 Think Brand System
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Color Palette and Campaign Graphics
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Conference Architecture and Photography
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Gallery and Merchandise
+  order: 3
+  level: 2
+- id: ch-04
+  title: 2020 Think Summits
+  order: 4
+  level: 1
+- id: ch-05
+  title: Event Elements and Applications
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Communications
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Signage, Wayfinding and Registration
+  order: 2
+  level: 2
+- id: ch-05-03
+  title: General Session and Staging
+  order: 3
+  level: 2
+- id: ch-05-04
+  title: Think Topics and Zones
+  order: 4
+  level: 2
+- id: ch-06
+  title: Environmental Enhancements
+  order: 6
+  level: 1
+- id: ch-07
+  title: Digital Events
+  order: 7
+  level: 1
+- id: ch-08
+  title: Sponsors, Content and Approvals
+  order: 8
+  level: 1
+frameworks:
+- name: global narrative -> localized summit -> proof of transformation
+  chapter: ch-01
+  chapter_title: Objective and Goals
+- name: master brand -> event brand -> sub-event/program lockups -> misuse constraints
+  chapter: ch-02
+  chapter_title: Brand Elements
+- name: logo scale + typography + layout grid
+  chapter: ch-02-01
+  chapter_title: IBM Logo Usage and Typography
+- name: tagline -> Think identity -> event lockup -> program lockup
+  chapter: ch-02-02
+  chapter_title: Think Identity and Lockups
+- name: approved artwork vs
+  chapter: ch-02-03
+  chapter_title: Logo Misuse
+- name: constant wordmark + annual artwork + touchpoint application
+  chapter: ch-03
+  chapter_title: 2020 Think Brand System
+- name: sonic identity -> data visualization -> graphic assets -> applications
+  chapter: ch-03-01
+  chapter_title: Color Palette and Campaign Graphics
+- name: topic taxonomy + spatial system + photographic tone
+  chapter: ch-03-02
+  chapter_title: Conference Architecture and Photography
+- name: asset gallery -> merchandise proof -> production guidance
+  chapter: ch-03-03
+  chapter_title: Gallery and Merchandise
+- name: objective -> audience -> messaging -> moments
+  chapter: ch-04
+  chapter_title: 2020 Think Summits
+- name: communication assets -> onsite navigation -> attendee identity -> staging -> topic zones
+  chapter: ch-05
+  chapter_title: Event Elements and Applications
+- name: web module、social module、email module、paid module
+  chapter: ch-05-01
+  chapter_title: Communications
+- name: arrival -> registration -> identification -> navigation -> collateral
+  chapter: ch-05-02
+  chapter_title: Signage, Wayfinding and Registration
+- name: small/medium/large staging + presentation templates
+  chapter: ch-05-03
+  chapter_title: General Session and Staging
+- name: topic identity + environment + lead capture + tabletop collateral
+  chapter: ch-05-04
+  chapter_title: Think Topics and Zones
+- name: brand hierarchy -> hero moments -> supporting moments
+  chapter: ch-06
+  chapter_title: Environmental Enhancements
+- name: reason for digital -> central support -> platform templates
+  chapter: ch-07
+  chapter_title: Digital Events
+- name: sponsor rules + activation guidance + approval workflow + contacts
+  chapter: ch-08
+  chapter_title: Sponsors, Content and Approvals
+patterns:
+- name: 先描述活動在企業敘事中的角色，再規範視覺與 touchpoints。
+  chapter: ch-01
+  chapter_title: Objective and Goals
+- name: 合法組合庫
+  chapter: ch-02
+  chapter_title: Brand Elements
+- name: 在事件子品牌前先設定企業識別底線。
+  chapter: ch-02-01
+  chapter_title: IBM Logo Usage and Typography
+- name: 用 lockup family 管理全球活動 portfolio。
+  chapter: ch-02-02
+  chapter_title: Think Identity and Lockups
+- name: 每個識別系統都需要 misuse section。
+  chapter: ch-02-03
+  chapter_title: Logo Misuse
+- name: 把聲音資料轉成視覺圖形，建立跨感官 identity。
+  chapter: ch-03
+  chapter_title: 2020 Think Brand System
+- name: 跨感官品牌轉譯模式。
+  chapter: ch-03-01
+  chapter_title: Color Palette and Campaign Graphics
+- name: 活動區域應有可對應的內容名稱、視覺元素與導視語言。
+  chapter: ch-03-02
+  chapter_title: Conference Architecture and Photography
+- name: 先提供視覺庫，再示範物件化應用。
+  chapter: ch-03-03
+  chapter_title: Gallery and Merchandise
+- name: 地方活動 toolkit 需含策略與素材兩層。
+  chapter: ch-04
+  chapter_title: 2020 Think Summits
+- name: 為活動生命週期建立 asset matrix。
+  chapter: ch-05
+  chapter_title: Event Elements and Applications
+- name: 將 campaign graphics token 化後套入各通路模板。
+  chapter: ch-05-01
+  chapter_title: Communications
+- name: 同一視覺語言在入口、名牌與資料夾反覆出現。
+  chapter: ch-05-02
+  chapter_title: Signage, Wayfinding and Registration
+- name: 根據 audience capacity 選擇舞台模組。
+  chapter: ch-05-03
+  chapter_title: General Session and Staging
+- name: 為每個內容垂直建立同構資產包。
+  chapter: ch-05-04
+  chapter_title: Think Topics and Zones
+- name: 使用可拍照、可定位、可重複部署的 3D brand objects。
+  chapter: ch-06
+  chapter_title: Environmental Enhancements
+- name: 數位轉換章節
+  chapter: ch-07
+  chapter_title: Digital Events
+- name: 在 toolkit 末尾加入 escalation and approval module。
+  chapter: ch-08
+  chapter_title: Sponsors, Content and Approvals
+rules_ai_checkable:
+- module: ''
+  criterion: 所有 Think Summit 應呈現單一且連接的 IBM narrative；地方化內容不得破壞 IBM Design Philosophy 與 Think brand。
+  chapter: ch-01
+  chapter_title: Objective and Goals
+- module: Brand Strategy
+  criterion: 不得建立未核准 Think lockup 或 logotype；不得扭曲、操控 Think wordmark；IBM logo 尺寸、字體與 grid 必須依規格。
+  chapter: ch-02
+  chapter_title: Brand Elements
+- module: Visual Identity
+  criterion: 輸出物需使用核准 IBM logo artwork；尺寸不得低於指定最小值；字體不得以非 IBM 指定字體取代。
+  chapter: ch-02-01
+  chapter_title: IBM Logo Usage and Typography
+- module: ''
+  criterion: 不得自行建立 Think Summit 或 PartnerWorld lockup；tagline 使用需與指定活動情境一致。
+  chapter: ch-02-02
+  chapter_title: Think Identity and Lockups
+- module: Brand Strategy
+  criterion: 2020 資產應使用指定 color palette、campaign graphics 與年度 artwork；不得把不同年度視覺混用。
+  chapter: ch-03
+  chapter_title: 2020 Think Brand System
+- module: ''
+  criterion: 商品應使用核准年度圖形、logo 與色彩；不得在低可讀材質上放置複雜 lockup。
+  chapter: ch-03-03
+  chapter_title: Gallery and Merchandise
+- module: ''
+  criterion: Summit 應使用核准 tagline；signature moments 應與 Think narrative 而非地方臨時主題對齊。
+  chapter: ch-04
+  chapter_title: 2020 Think Summits
+- module: ''
+  criterion: 每類素材應使用指定 E3 asset link、核准 logo、button、grid、color；registration、banner、stage 與 topic zone 不得自創視覺。
+  chapter: ch-05
+  chapter_title: Event Elements and Applications
+- module: ''
+  criterion: Drupal、social、email 與 paid media 應遵守指定 grid、color 與 logo；CTA button 不得自行改色或改比例。
+  chapter: ch-05-01
+  chapter_title: Communications
+- module: ''
+  criterion: 小型舞台適合空間或預算有限情境；中型舞台適合 200 人以下；大型舞台可支援 panel 與多種 session styles；模板應使用核准檔案。
+  chapter: ch-05-03
+  chapter_title: General Session and Staging
+- module: ''
+  criterion: 各 topic zone 應包含核准 creative assets、環境元素、區域 branding、lead capture form 與 table tent card。
+  chapter: ch-05-04
+  chapter_title: Think Topics and Zones
+- module: ''
+  criterion: 大型環境物應依 brand hierarchy 放置；IBM Rebus、Be Equal、Diversity 8-Bar 等資產不得任意混排或脫離核准情境。
+  chapter: ch-06
+  chapter_title: Environmental Enhancements
+- module: ''
+  criterion: 數位平台應使用指定 Think branding、topic taxonomy 與 CHQ 支援流程；不得在平台上使用非核准 logo 或過期活動素材。
+  chapter: ch-07
+  chapter_title: Digital Events
+chapters:
+- id: ch-01
+  title: Objective and Goals
+  modules:
+  - Brand Strategy
+  - Operations
+  - Design Process
+- id: ch-02
+  title: Brand Elements
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Typography System
+  - Visual Identity
+- id: ch-02-01
+  title: IBM Logo Usage and Typography
+  modules:
+  - Typography System
+  - Visual Identity
+- id: ch-02-02
+  title: Think Identity and Lockups
+  modules:
+  - Knowledge Architecture
+  - Visual Identity
+- id: ch-02-03
+  title: Logo Misuse
+  modules:
+  - AI-Checkable Rules
+  - Compliance
+- id: ch-03
+  title: 2020 Think Brand System
+  modules:
+  - Examples
+  - Visual Language
+  - Motion Identity
+  - Color System
+- id: ch-03-01
+  title: Color Palette and Campaign Graphics
+  modules:
+  - Visual Language
+  - Color System
+  - Design Tokens
+- id: ch-03-02
+  title: Conference Architecture and Photography
+  modules:
+  - Photography System
+  - Information Design
+- id: ch-03-03
+  title: Gallery and Merchandise
+  modules:
+  - Examples
+  - Operations
+- id: ch-04
+  title: 2020 Think Summits
+  modules:
+  - Messaging
+  - Operations
+- id: ch-05
+  title: Event Elements and Applications
+  modules:
+  - Examples
+  - UI Components
+  - Operations
+- id: ch-05-01
+  title: Communications
+  modules:
+  - UI Components
+  - Content Design
+- id: ch-05-02
+  title: Signage, Wayfinding and Registration
+  modules:
+  - Operations
+  - Information Design
+- id: ch-05-03
+  title: General Session and Staging
+  modules:
+  - Layout System
+  - Operations
+- id: ch-05-04
+  title: Think Topics and Zones
+  modules:
+  - Examples
+  - Operations
+  - Information Design
+- id: ch-06
+  title: Environmental Enhancements
+  modules:
+  - Examples
+- id: ch-07
+  title: Digital Events
+  modules:
+  - Product Language
+  - Operations
+- id: ch-08
+  title: Sponsors, Content and Approvals
+  modules:
+  - Legal and Trademark
+  - Operations
+  - Governance

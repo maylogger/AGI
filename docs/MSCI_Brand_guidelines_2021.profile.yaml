@@ -1,0 +1,272 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: MSCI_Brand_guidelines_2021
+index_ref: docs/MSCI_Brand_guidelines_2021.index.yaml
+note_ref: docs/MSCI_Brand_guidelines_2021.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- Visual Identity
+- Legal and Trademark
+- AI-Checkable Rules
+- Governance
+- Brand Architecture
+- Localization
+- Typography System
+- Color System
+- Design Tokens
+- Accessibility
+- Visual Language
+- Iconography System
+- Information Design
+- Content Design
+- Motion Identity
+- Operations
+- Measurement
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 8
+  section_count: 4
+chapter_sequence:
+- id: ch-01
+  title: The Logo
+  order: 1
+  level: 1
+- id: ch-02
+  title: Logo Usage
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Clear Space and Misuse
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Third Party and Partner Logo
+  order: 2
+  level: 2
+- id: ch-03
+  title: Typography
+  order: 3
+  level: 1
+- id: ch-04
+  title: Color
+  order: 4
+  level: 1
+- id: ch-05
+  title: Graphic Accents
+  order: 5
+  level: 1
+- id: ch-06
+  title: Iconography
+  order: 6
+  level: 1
+- id: ch-07
+  title: Best Practices for User Experience (UX)
+  order: 7
+  level: 1
+- id: ch-08
+  title: Videography
+  order: 8
+  level: 1
+- id: ch-08-01
+  title: Corporate Video Production
+  order: 1
+  level: 2
+- id: ch-08-02
+  title: Animation and Motion Graphics
+  order: 2
+  level: 2
+frameworks:
+- name: '`brand attributes -> mark construction -> approved colorways`'
+  chapter: ch-01
+  chapter_title: The Logo
+- name: '`clear space -> misuse prevention -> co-branding equality -> approval workflow`'
+  chapter: ch-02
+  chapter_title: Logo Usage
+- name: '`spatial exclusion + asset integrity + exception handling`'
+  chapter: ch-02-01
+  chapter_title: Clear Space and Misuse
+- name: '`equal relationship -> equal visual weight -> separator -> exclusion zone -> approval`'
+  chapter: ch-02-02
+  chapter_title: Third Party and Partner Logo
+- name: '`primary sans + long-form serif + system fallback + language fallback`'
+  chapter: ch-03
+  chapter_title: Typography
+- name: '`brand colors -> tint scales -> contrast tables -> logo background suitability`'
+  chapter: ch-04
+  chapter_title: Color
+- name: '`brand attribute -> symbolic pattern -> material texture`'
+  chapter: ch-05
+  chapter_title: Graphic Accents
+- name: '`fixed meaning -> library governance -> dual style -> geometry specs -> digital simplification`'
+  chapter: ch-06
+  chapter_title: Iconography
+- name: '`findability + readability + accessibility + performance + conversion clarity`'
+  chapter: ch-07
+  chapter_title: Best Practices for User Experience (UX)
+- name: '`objective -> audience -> script/storyboard -> production -> post-production -> accessibility -> consistency`'
+  chapter: ch-08
+  chapter_title: Videography
+- name: '`pre-production clarity + production redundancy + post-production accessibility`'
+  chapter: ch-08-01
+  chapter_title: Corporate Video Production
+- name: '`objective + audience + channel + journey stage -> animation type + length`'
+  chapter: ch-08-02
+  chapter_title: Animation and Motion Graphics
+patterns:
+- name: 以品牌屬性詞先框定 logo 感知，再進入技術規格。
+  chapter: ch-01
+  chapter_title: The Logo
+- name: logo usage 同時治理幾何、誤用與流程，是 enterprise brand governance pattern。
+  chapter: ch-02
+  chapter_title: Logo Usage
+- name: logo misuse checklist。
+  chapter: ch-02-01
+  chapter_title: Clear Space and Misuse
+- name: partner lockup pattern。
+  chapter: ch-02-02
+  chapter_title: Third Party and Partner Logo
+- name: multi-context typography stack。
+  chapter: ch-03
+  chapter_title: Typography
+- name: 色票系統兼具 design token 與 accessibility matrix。
+  chapter: ch-04
+  chapter_title: Color
+- name: connectivity pattern 作為 B2B data brand visual motif。
+  chapter: ch-05
+  chapter_title: Graphic Accents
+- name: icon library governance pattern。
+  chapter: ch-06
+  chapter_title: Iconography
+- name: brand guideline 內嵌 digital quality checklist。
+  chapter: ch-07
+  chapter_title: Best Practices for User Experience (UX)
+- name: full video production governance pattern。
+  chapter: ch-08
+  chapter_title: Videography
+- name: corporate interview production checklist。
+  chapter: ch-08-01
+  chapter_title: Corporate Video Production
+- name: journey-based motion content matrix。
+  chapter: ch-08-02
+  chapter_title: Animation and Motion Graphics
+rules_ai_checkable:
+- module: Visual Identity
+  criterion: AI 可檢查：logo 應使用核准 full-color、one-color reversed 或 one-color black 版本；不得擅自從 logo 萃取 Nexus 作為獨立圖形裝置。
+  chapter: ch-01
+  chapter_title: The Logo
+- module: Visual Identity
+  criterion: AI 可檢查：不得改色、扭曲、加效果、縮放內部元素、使用非核准色、改變 logo arrangement；co-branding 必須 logo 等重、保留 exclusion zones；所有第三方 co-branding
+    需 MSCI Marketing 核准。
+  chapter: ch-02
+  chapter_title: Logo Usage
+- module: ''
+  criterion: AI 可檢查：logo 周圍需保留 inner square 尺寸 clear space；不得使用 Nexus 作 diagram graphic device，favicon 例外；若需新版本應聯絡 Brand &
+    Design Team。
+  chapter: ch-02-01
+  chapter_title: Clear Space and Misuse
+- module: Visual Identity
+  criterion: AI 可檢查：MSCI 與 partner logo 需視覺等重；兩者間距不得小於指定 exclusion zone；需使用 partner logo 版本；所有第三方 co-branding 須核准。
+  chapter: ch-02-02
+  chapter_title: Third Party and Partner Logo
+- module: Color System
+  criterion: AI 可檢查：使用色彩應引用指定 HEX/RGB/CMYK/Pantone；非大字文字需符合暗底/亮底建議色組；logo 背景應依表格選擇 full-color 或 white version；不得用未列色值替代。
+  chapter: ch-04
+  chapter_title: Color
+- module: ''
+  criterion: AI 可檢查：pattern 應用應維持全球連結語義；不得把 Nexus 獨立作 diagram device；pattern 不應干擾可讀性或 logo clear space。
+  chapter: ch-05
+  chapter_title: Graphic Accents
+- module: Iconography System
+  criterion: AI 可檢查：不得自行創建 icon 或使用網路 icon；新 icon 需 solid 與 outline 版；wide icon 最大寬 91 px、高 73 px；digital platform icon 使用
+    16 x 16 px artboard；16 px icon 不含文字；outline stroke 1.3 pt 並 convert to path。
+  chapter: ch-06
+  chapter_title: Iconography
+- module: ''
+  criterion: AI 可檢查：page title 50-55 字元且 title case、無特殊字元；meta description 最多 250 字元；每頁僅一個 H1；body line length 40-55 characters；hero
+    image 約 200KB、body image 約 100KB；decorative image alt 為空；所有 video 有 captions 與 transcript；不得使用 animated GIFs。
+  chapter: ch-07
+  chapter_title: Best Practices for User Experience (UX)
+- module: ''
+  criterion: AI 可檢查：teaser/sizzle/preview 不超過 30 秒；promos/demos/marketing material 通常不超過 3 分鐘且更接近 1 分鐘；影片需 captions 且不可 burn-in；web
+    影片需 transcript；背景音樂需 licensed/royalty-free；系列影片需一致 intro/outro、長度與語氣。
+  chapter: ch-08
+  chapter_title: Videography
+- module: ''
+  criterion: AI 可檢查：拍攝受訪者時建議兩機位；key light 約在攝影機 45 度；lapel mic 應隱藏；請受訪者帶額外服裝避免 moire 或背景融合；corporate video 偏好 diffuse light；voiceover
+    應清晰且考慮多元代表性。
+  chapter: ch-08-01
+  chapter_title: Corporate Video Production
+- module: Motion Identity
+  criterion: AI 可檢查：60 秒動畫腳本約 140 words；Attract 內容約 10 秒，thought-leadership 約 30 秒，explainer/tutorial/case study 約 60 秒，close
+    階段 tutorial/culture/testimonial 可 2 分鐘以上；社群動畫需短且視覺獨特。
+  chapter: ch-08-02
+  chapter_title: Animation and Motion Graphics
+chapters:
+- id: ch-01
+  title: The Logo
+  modules:
+  - Visual Identity
+- id: ch-02
+  title: Logo Usage
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Governance
+- id: ch-02-01
+  title: Clear Space and Misuse
+  modules:
+  - AI-Checkable Rules
+- id: ch-02-02
+  title: Third Party and Partner Logo
+  modules:
+  - Brand Architecture
+  - Governance
+- id: ch-03
+  title: Typography
+  modules:
+  - Localization
+  - Typography System
+- id: ch-04
+  title: Color
+  modules:
+  - Color System
+  - Design Tokens
+  - Accessibility
+- id: ch-05
+  title: Graphic Accents
+  modules:
+  - Visual Language
+- id: ch-06
+  title: Iconography
+  modules:
+  - AI-Checkable Rules
+  - Iconography System
+  - Information Design
+- id: ch-07
+  title: Best Practices for User Experience (UX)
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Accessibility
+- id: ch-08
+  title: Videography
+  modules:
+  - Motion Identity
+  - Content Design
+  - Operations
+  - Accessibility
+- id: ch-08-01
+  title: Corporate Video Production
+  modules:
+  - Operations
+- id: ch-08-02
+  title: Animation and Motion Graphics
+  modules:
+  - Measurement
+  - Motion Identity

@@ -1,0 +1,30 @@
+title: "Microsoft Bing Logo and Icon Guidance"
+source: "sources/Microsoft_Bing_Logo_icon_2020.pdf"
+date: "2020-10"
+language: "en"
+summary: "Microsoft Bing logo and icon guidance 以商標授權為起點，說明何時需要 license、如何使用 Microsoft Bing logo、product icon、最小尺寸、標籤與縮放比例。"
+chapters:
+  - id: "ch-01"
+    title: "Usage Requirements"
+    level: 1
+    order: 1
+    pages: "1-2"
+    summary: "說明使用 Microsoft Bing trademark、表示贊助背書或 compatibility endorsement 時需要 trademark use license，並指向既有協議、Microsoft Trademark Guidelines 與 brand team。"
+  - id: "ch-02"
+    title: "Our Elements"
+    level: 1
+    order: 2
+    pages: "3"
+    summary: "展示 Microsoft Bing 可用的基本元素與 Results from Microsoft Bing 語境。"
+  - id: "ch-03"
+    title: "Logo and Logo Usage"
+    level: 1
+    order: 3
+    pages: "4-5"
+    summary: "規範 light background 使用 positive version，dark background 使用 knock-out version，並以 logo usage 頁呈現使用方式。"
+  - id: "ch-04"
+    title: "Product Icon"
+    level: 1
+    order: 4
+    pages: "6-7"
+    summary: "規範 product icon、最小寬度 0.16 in / 4.23 mm / 16 px，以及 Microsoft Bing 標籤與 X、1/2X、1/8X 的比例關係。"

@@ -1,0 +1,92 @@
+# L3 決策卡 sidecar — UCL Signage Guide Manual 2021
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: ucl_signage_manual_2021
+decisions:
+  - id: dp-accessible-contrast-pairs
+    title: 把可近用性前置成核准對比配色，而非設計者自行判斷
+    problem:
+      statement: 公共資訊面向全體市民與輔助科技，若放任設計者自由配色，容易產生不符合無障礙標準、身心障礙者無法閱讀的組合。
+      signals: [accessibility, public_trust, inclusive_audience, regulatory_compliance]
+    solution:
+      module: Accessibility
+      move: 把 LRV 對比目標（差值至少 70）與 BS8300 x-height/tactile 標準直接寫進 signage token 與 templates，而非交由現場判斷
+      layer: visual_core
+    reason:
+      - 公共機構不應把可近用性視為加分項，而是最低標準
+      - 用 approved contrast pairs 降低設計者自行判斷錯誤
+      - 可近用性應被寫成數值標準與觸發條件，而非附加建議
+    applicable_when:
+      industries: [public_sector, education]
+      brand_types: [institutional_public_trust]
+      conditions: [accessibility, inclusive_audience]
+      archetypes: [brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Color System]
+      enables: [Governance]
+    anti_patterns:
+      - 把無障礙規範放在附錄，當成可選加分項
+      - 使用未列出的 accessible colour combinations
+    evidence:
+      - brand_id: ucl_signage_manual_2021
+        chapter: ch-01-02
+        excerpt: "背景/文字 LRV difference 目標至少 70；定義 accessible colour token 與 six-colour range 以支撐可讀性。"
+      - brand_id: ucl_signage_manual_2021
+        chapter: ch-06
+        excerpt: "摘錄 BS8300：letter/symbol-to-signboard 與 signboard-to-background LRV difference 70、依 viewing distance 訂 x-height、tactile lettering 幾何；accessibility 應寫成數值標準而非附加建議。"
+    status: extracted
+
+  - id: dp-approval-gate-for-exceptions
+    title: 例外不是漏洞，用審核閘門把差異收進可治理的模組
+    problem:
+      statement: 規則無法窮舉所有情境，現實組織總會有例外；若放任各單位自行決定，例外會逐步擴張成破壞系統的破口。
+      signals: [exception_handling, multi_unit_consistency, governance, scaling_risk]
+    solution:
+      module: Governance
+      move: 將需求按複雜度分為 Type A/B/C，並要求 non-standard signage 概念需 CAM、Estates、Accessibility stakeholder approval、Type C 須有 route analysis
+      layer: governance
+    reason:
+      - 例外章節應寫出「為何例外」「何時可用」「不可擴張到哪裡」
+      - 品牌一致性不是取消差異，而是把差異收進可治理的模組
+    applicable_when:
+      industries: [public_sector, finance, education]
+      brand_types: [institutional_public_trust, platform_ecosystem, heritage_legacy]
+      conditions: [multi_unit_consistency, exception_handling]
+      archetypes: [multi_brand_architecture, corporate_toolkit]
+    dependencies:
+      requires: [Governance]
+      enables: []
+    anti_patterns:
+      - 例外只寫「可以這樣做」卻不寫適用邊界與審核者
+    evidence:
+      - brand_id: ucl_signage_manual_2021
+        chapter: ch-02
+        excerpt: "Complexity-based Procurement Framework：A direct order、B simple project、C consultant-led；non-standard signage 概念需 CAM、Estates、Accessibility stakeholder approval，Type C 必須有 wayfinding/route analysis。"
+    status: extracted
+
+  - id: dp-contact-before-appendix
+    title: 在技術資料前先給治理窗口，讓 guideline 成為可改善系統
+    problem:
+      statement: 規則無法涵蓋所有情境，缺乏權威決策入口時，例外用法無人裁決。
+      signals: [exceptions_expected, governance]
+    solution:
+      module: Governance
+      move: 規定 internal signage 只能由 UCL approved suppliers 製造安裝，並列出 CAM、Estates、Digital Signage、Accessibility 責任窗口
+      layer: governance
+    reason:
+      - 規則無法涵蓋所有情境，必須提供權威決策入口
+      - Guideline 若涉及實體製造，必須把 approved companies 與責任窗口納入
+    applicable_when:
+      industries: [finance, public_sector, education]
+      brand_types: [institutional_public_trust]
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit, logo_asset_guidelines]
+    dependencies:
+      requires: [Governance]
+      enables: [Operations]
+    evidence:
+      - brand_id: ucl_signage_manual_2021
+        chapter: ch-08
+        excerpt: "MSS 是 UCL internal signage 唯一系統，只能使用 UCL approved suppliers；列出 CAM、Estates、Digital Signage、Accessibility 聯絡窗口（Supplier Gate + Responsibility Contacts）。"
+    status: extracted

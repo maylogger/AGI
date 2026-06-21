@@ -1,0 +1,95 @@
+title: 'ARTE Social Media Style Guide'
+source: 'sources/Arte_ Social_Media_Style_Guide_2017.pdf'
+date: 'July 2017'
+language: 'en'
+summary: 'ARTE 將「Europe’s Culture Magnet」品牌概念轉換為社群平台頭圖、avatar、色彩、影像、字體、動態 jingle、promo 與 third-party bug 的社群視覺系統。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction and Brand Idea'
+    level: 1
+    order: 1
+    pages: '1-4'
+    summary: '說明社群指南用途、Europe’s Culture Magnet 概念與 broadcast identity 如何延伸到社群。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Europe’s Culture Magnet'
+        level: 2
+        order: 1
+        pages: '3-4'
+        summary: '將 ARTE 定位為文化聚合者，logo 在執行中成為 magnet，吸引各種內容與視覺元素。'
+  - id: 'ch-02'
+    title: 'Basic Elements'
+    level: 1
+    order: 2
+    pages: '5-15'
+    summary: '定義 logo、avatar、digital colour、movement、imagery categories 與 Barna typography。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Logo, Avatar and Digital Colour'
+        level: 2
+        order: 1
+        pages: '6-8'
+        summary: '規範社群 avatar 以白色 logo 置於 ARTE orange，並列出社群用 flat digital colours。'
+      - id: 'ch-02-02'
+        title: 'Movement, Imagery and Typography'
+        level: 2
+        order: 2
+        pages: '9-15'
+        summary: '定義右至左磁性動勢、brand/sting/programme/content imagery 分類與 Barna Stencil/Regular 字體角色。'
+  - id: 'ch-03'
+    title: 'Design Principles'
+    level: 1
+    order: 3
+    pages: '16-25'
+    summary: '將平台限制轉成 positioning、safe area、type sizing、straight typography 與 magnetic typography 的版面原則。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Positioning and Safe Areas'
+        level: 2
+        order: 1
+        pages: '17-22'
+        summary: '要求圖像與文字向左靠近 avatar 的磁性方向，並依 Facebook/Twitter/YouTube 尺寸管理安全區。'
+      - id: 'ch-03-02'
+        title: 'Typography Styles'
+        level: 2
+        order: 2
+        pages: '23-25'
+        summary: '提供 straight typography 與 magnetic typography，後者透過拉開末端字元表現磁力。'
+  - id: 'ch-04'
+    title: 'Social Media Channels'
+    level: 1
+    order: 4
+    pages: '26-54'
+    summary: '提供 avatar matrix 與 Facebook、Twitter、YouTube、Creative、Magazine、Tracks 等桌面/行動 header 模板。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Platform Safe Area Templates'
+        level: 2
+        order: 1
+        pages: '27-39'
+        summary: '針對各平台與行動裁切提供安全區與 header 應用範例，尤其 YouTube 多尺寸頭圖。'
+      - id: 'ch-04-02'
+        title: 'Channel Variants'
+        level: 2
+        order: 2
+        pages: '40-54'
+        summary: '將同一磁性視覺語言套用到 Creative、Magazine、Tracks 等子品牌與內容類型。'
+  - id: 'ch-05'
+    title: 'Social Jingles, Promos and Bugs'
+    level: 1
+    order: 5
+    pages: '55-83'
+    summary: '定義社群影片 jingle、URL intro/outro、promo 色彩與文字風格、like/comment/share CTA、square trailer 與第三方 bug。'
+    children:
+      - id: 'ch-05-01'
+        title: 'Jingles and Motion Outros'
+        level: 2
+        order: 1
+        pages: '56-66'
+        summary: '以 logo、URL 與右至左逐字吸附動態建立社群片頭片尾。'
+      - id: 'ch-05-02'
+        title: 'Promos, CTA and Third-Party Bugs'
+        level: 2
+        order: 2
+        pages: '67-83'
+        summary: '規範 promo 文字、色彩 coding、CTA、square trailer 與第三方白色左上角 watermark。'

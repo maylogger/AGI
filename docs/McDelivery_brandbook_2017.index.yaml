@@ -1,0 +1,87 @@
+title: 'McDelivery Logo Usage Guidelines'
+source: 'sources/McDelivery_brandbook_2017.pdf'
+version: '1.9'
+date: 'December 2017'
+language: 'en'
+summary: '這份文件規範 McDelivery logo、變體、Uber Eats co-branding、色彩、字體、應用範例與法律使用條件。'
+chapters:
+  - id: 'ch-01'
+    title: 'Version History'
+    level: 1
+    order: 1
+    pages: '3'
+    summary: '記錄 Uber Eats branding、logo 與亞洲市場相關更新。'
+  - id: 'ch-02'
+    title: 'McDelivery Logo'
+    level: 1
+    order: 2
+    pages: '4-12'
+    summary: '定義 primary logo、clear space、顏色、green alternate、minimum size、background 與 violations。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Primary Logo and Clear Space'
+        level: 2
+        order: 1
+        pages: '5-6'
+        summary: '說明 emblem/wordmark 的象徵來源與以 white dot diameter 計算 clear space。'
+      - id: 'ch-02-02'
+        title: 'Colors, Size and Backgrounds'
+        level: 2
+        order: 2
+        pages: '7-11'
+        summary: '規範四個 logo 顏色、green market exception、最小尺寸、簡化 emblem 與底色/照片對比。'
+      - id: 'ch-02-03'
+        title: 'Violations'
+        level: 2
+        order: 3
+        pages: '12'
+        summary: '列出不得改色、扭曲、重繪、加效果、改關係或放在低對比背景等禁用情境。'
+  - id: 'ch-03'
+    title: 'Logo Variants'
+    level: 1
+    order: 3
+    pages: '13-16'
+    summary: '說明水平 lockup 與 one-colour logos 僅在標準 logo 不可用時、且需市場行銷負責人核准。'
+  - id: 'ch-04'
+    title: 'Co-Branding'
+    level: 1
+    order: 4
+    pages: '17-26'
+    summary: '規範 McDelivery 與 partner/Uber Eats 的 keyline、比例、clear space、亞洲版本與背景對比。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Primary and Secondary Co-Branding Lockups'
+        level: 2
+        order: 1
+        pages: '18-20'
+        summary: '定義 partner logo 與 keyline 的位置、距離、寬度與水平/垂直 lockup。'
+      - id: 'ch-04-02'
+        title: 'Uber Eats Co-Branding'
+        level: 2
+        order: 2
+        pages: '21-26'
+        summary: '規範 Uber Eats co-brand lockups、clear space、亞洲紫色版本與色彩/照片背景。'
+  - id: 'ch-05'
+    title: 'Color Palette'
+    level: 1
+    order: 5
+    pages: '27-28'
+    summary: '提供 McDonald’s Yellow、Red、Green 的 PMS、CMYK、RGB、Hex，並說明 substrate matching。'
+  - id: 'ch-06'
+    title: 'Typography'
+    level: 1
+    order: 6
+    pages: '29-30'
+    summary: '規範 Lovin’ Sans 使用，禁止用字體重打修改過的 McDelivery wordmark。'
+  - id: 'ch-07'
+    title: 'In Use Examples'
+    level: 1
+    order: 7
+    pages: '31-36'
+    summary: '展示 digital banners、website landing page、print ads 與 social post 的應用範例。'
+  - id: 'ch-08'
+    title: 'Legal'
+    level: 1
+    order: 8
+    pages: '37-39'
+    summary: '規範 trademark symbol、confidentiality、advertising clearance、local legal activation 與 Golden Arches Code。'

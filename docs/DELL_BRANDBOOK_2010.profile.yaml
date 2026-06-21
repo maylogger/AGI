@@ -1,0 +1,376 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: DELL_BRANDBOOK_2010
+index_ref: docs/DELL_BRANDBOOK_2010.index.yaml
+note_ref: docs/DELL_BRANDBOOK_2010.note.md
+archetype: brand_experience_guide
+industry: tech_software
+modules:
+- Brand Strategy
+- Governance
+- AI-Checkable Rules
+- Visual Identity
+- Brand Architecture
+- Color System
+- Design Tokens
+- Localization
+- Typography System
+- Layout System
+- Visual Language
+- Photography System
+- Content Safety
+- Knowledge Architecture
+- Operations
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 9
+  section_count: 9
+chapter_sequence:
+- id: ch-01
+  title: A message from Michael
+  order: 1
+  level: 1
+- id: ch-02
+  title: Logo
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo overview
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Clear space and minimum size
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Alternate logos and backgrounds
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Incorrect usage and lockups
+  order: 4
+  level: 2
+- id: ch-02-05
+  title: Discontinued treatments
+  order: 5
+  level: 2
+- id: ch-03
+  title: Color
+  order: 3
+  level: 1
+- id: ch-04
+  title: Typography
+  order: 4
+  level: 1
+- id: ch-05
+  title: Graphic elements
+  order: 5
+  level: 1
+- id: ch-06
+  title: Imagery
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Lifestyle imagery
+  order: 1
+  level: 2
+- id: ch-06-02
+  title: Product imagery
+  order: 2
+  level: 2
+- id: ch-06-03
+  title: Supporting imagery
+  order: 3
+  level: 2
+- id: ch-06-04
+  title: Imagery style and cropping
+  order: 4
+  level: 2
+- id: ch-07
+  title: Voice
+  order: 7
+  level: 1
+- id: ch-08
+  title: How to find/request assets
+  order: 8
+  level: 1
+- id: ch-09
+  title: Contact
+  order: 9
+  level: 1
+frameworks:
+- name: purpose/customer needs -> brand value -> visual identity responsibility
+  chapter: ch-01
+  chapter_title: A message from Michael
+- name: primary mark -> spacing/size -> variants -> background contexts -> misuse prevention -> co-branding।
+  chapter: ch-02
+  chapter_title: Logo
+- name: brand personality -> mark rationale -> artwork governance
+  chapter: ch-02-01
+  chapter_title: Logo overview
+- name: logo-derived unit + medium-specific minimum
+  chapter: ch-02-02
+  chapter_title: Clear space and minimum size
+- name: primary first impression -> secondary variants after introduction
+  chapter: ch-02-03
+  chapter_title: Alternate logos and backgrounds
+- name: logo integrity + partner separation + hierarchy preservation
+  chapter: ch-02-04
+  chapter_title: Incorrect usage and lockups
+- name: identify old treatments -> discontinue -> replace
+  chapter: ch-02-05
+  chapter_title: Discontinued treatments
+- name: ownable primary hue + supporting accent/neutral palette + technical values
+  chapter: ch-03
+  chapter_title: Color
+- name: primary typeface -> small-type companion -> fallback/localization -> style rules -> deprecated fonts
+  chapter: ch-04
+  chapter_title: Typography
+- name: emphasis shape -> size/radius standard -> usage limits -> application examples
+  chapter: ch-05
+  chapter_title: Graphic elements
+- name: brand purpose -> imagery types -> style traits -> cropping rules
+  chapter: ch-06
+  chapter_title: Imagery
+- name: people pursuing goals + natural environment + technology in service
+  chapter: ch-06-01
+  chapter_title: Lifestyle imagery
+- name: clean product proof + controlled styling + feature emphasis
+  chapter: ch-06-02
+  chapter_title: Product imagery
+- name: concept -> supporting image -> style consistency
+  chapter: ch-06-03
+  chapter_title: Supporting imagery
+- name: lighting + movement + focus + accent color + crop intent
+  chapter: ch-06-04
+  chapter_title: Imagery style and cropping
+- name: visual identity standards + separate voice standards
+  chapter: ch-07
+  chapter_title: Voice
+- name: access DAM -> request access -> select brand assets -> retrieve approved files
+  chapter: ch-08
+  chapter_title: How to find/request assets
+- name: standards -> assets -> contact owner
+  chapter: ch-09
+  chapter_title: Contact
+patterns:
+- name: 領導者 opening message 作為 brand compliance 的文化授權。
+  chapter: ch-01
+  chapter_title: A message from Michael
+- name: 先定義 first impression，再定義 secondarily acceptable logo variants。
+  chapter: ch-02
+  chapter_title: Logo
+- name: 把 logo 視覺特徵解釋為品牌人格的物化。
+  chapter: ch-02-01
+  chapter_title: Logo overview
+- name: 單一比例單位可跨尺寸維持一致。
+  chapter: ch-02-02
+  chapter_title: Clear space and minimum size
+- name: 先出現 primary logo，再依場景切換 secondary logo。
+  chapter: ch-02-03
+  chapter_title: Alternate logos and backgrounds
+- name: 共同品牌使用 keyline separator 是可複用治理模式。
+  chapter: ch-02-04
+  chapter_title: Incorrect usage and lockups
+- name: guideline 應含 deprecated assets 章節。
+  chapter: ch-02-05
+  chapter_title: Discontinued treatments
+- name: custom brand color 需要固態油墨公式與 brand contact。
+  chapter: ch-03
+  chapter_title: Color
+- name: discontinued typefaces
+  chapter: ch-04
+  chapter_title: Typography
+- name: 否則舊視覺會延續
+  chapter: ch-04
+  chapter_title: Typography
+- name: 單一圖形語彙用於跨媒體建立記憶。
+  chapter: ch-05
+  chapter_title: Graphic elements
+- name: 分成 lifestyle/product/supporting 三層影像，用不同證據支撐同一品牌主題。
+  chapter: ch-06
+  chapter_title: Imagery
+- name: 產品可以在場但不能壓過人的目的。
+  chapter: ch-06-01
+  chapter_title: Lifestyle imagery
+- name: 產品攝影可裁切以突顯 feature 或 engineering。
+  chapter: ch-06-02
+  chapter_title: Product imagery
+- name: supporting imagery 可作背景 pattern 或 detail crop。
+  chapter: ch-06-03
+  chapter_title: Supporting imagery
+- name: 裁切可用於 intimacy、context、feature callout 或 abstract pattern。
+  chapter: ch-06-04
+  chapter_title: Imagery style and cropping
+- name: 用 availability note 管理跨文件依賴。
+  chapter: ch-07
+  chapter_title: Voice
+- name: guideline 末端放 asset acquisition workflow。
+  chapter: ch-08
+  chapter_title: How to find/request assets
+- name: 將 brand email 作為 governance endpoint。
+  chapter: ch-09
+  chapter_title: Contact
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：品牌說明需連結 customer needs、competitive advantage、all touchpoints；不得把 visual identity 寫成單純美術風格。
+  chapter: ch-01
+  chapter_title: A message from Michael
+- module: Visual Identity
+  criterion: AI 可檢查：Dell Blue logo 是 primary；logo 不得 alter、modify、recreate；clear space = Dell word 中 D 高度；minimum offline
+    0.5 inch diameter / digital 40px；Dell Blue logo 只能用於 solid white background。
+  chapter: ch-02
+  chapter_title: Logo
+- module: Visual Identity
+  criterion: AI 可檢查：不得修改或重繪 logo；approved artwork 需從 DAM 取得。
+  chapter: ch-02-01
+  chapter_title: Logo overview
+- module: ''
+  criterion: AI 可檢查：clear space 內不得有 headline、text、graphic elements 或 material edge；offline diameter 不小於 0.5 inch/12.7mm；digital
+    diameter 不小於 40px。
+  chapter: ch-02-02
+  chapter_title: Clear space and minimum size
+- module: Visual Identity
+  criterion: AI 可檢查：light gray/white logo 只能在 primary impression 已出現後使用；dark gray 僅限 one/two-color applications；Dell Blue
+    logo 不得置於非白底或圖片上；light/dark gray logo 不得置於 colored backgrounds。
+  chapter: ch-02-03
+  chapter_title: Alternate logos and backgrounds
+- module: ''
+  criterion: AI 可檢查：partner lockup 必須有 vertical rule 與 proper spacing；separator 不得傾斜；不得 overlay 或 stack partner lockup；department
+    lockup copy 使用 Museo for Dell 300，距 logo 1x cap height，色彩 85%K。
+  chapter: ch-02-04
+  chapter_title: Incorrect usage and lockups
+- module: Color System
+  criterion: 'AI 可檢查：Dell Blue 使用 #0085C3 / RGB 0-133-195 / C92 M34 Y0 K0；不得使用任何 palette tint；Dell Periwinkle 與 Dell Aqua
+    不得與 Dell Blue 在同一 surface 使用。'
+  chapter: ch-03
+  chapter_title: Color
+- module: Typography System
+  criterion: AI 可檢查：使用 approved Dell typefaces；body copy flush left/rag right；headline over 20pt tracking 10；sentence case；default
+    type color 85%K；不得 all caps、justify body、open letter spacing、drop shadows、distort letterforms、使用 Gotham/Interstate/Univers。
+  chapter: ch-04
+  chapter_title: Typography
+- module: ''
+  criterion: AI 可檢查：rounded corner shape 不得小於 1" x 1"；理想上每頁只使用一個；不得混合 round and sharp corners、改變 corner ratio、放 body copy
+    進 rounded corners、在 rounded corners 中使用多張 image。
+  chapter: ch-05
+  chapter_title: Graphic elements
+- module: Photography System
+  criterion: AI 可檢查：所有 photography 必須 deliver on thriving，具備 open/bright/active/authentic；不得 staged、overly conceptual、cluttered、cliche、photo-montaged、digitally
+    enhanced。
+  chapter: ch-06
+  chapter_title: Imagery
+- module: Photography System
+  criterion: AI 可檢查：需 show real product interaction、natural environments、bright natural light、thriving situations；不得 staged
+    poses、exaggerated effects、disconnect from Dell usage 或讓使用者失焦只突出產品。
+  chapter: ch-06-01
+  chapter_title: Lifestyle imagery
+- module: Photography System
+  criterion: AI 可檢查：不得讓環境 overwhelming；不得 float 或 unnaturally pose products；不得用 dark/cluttered imagery 作 primary photograph。
+  chapter: ch-06-02
+  chapter_title: Product imagery
+- module: Photography System
+  criterion: AI 可檢查：可使用 growth/thrive、beneficial technology、clear concept imagery；不得使用 cliched imagery、embellished scientific
+    renderings、photo-montaged 或 digitally enhanced imagery。
+  chapter: ch-06-03
+  chapter_title: Supporting imagery
+- module: Photography System
+  criterion: AI 可檢查：不得 blow out background to white；照片邊緣需在白頁可見，除非 cut-out/silhouetted；不得裁切人的臉或眼睛；不得聚焦 blurred/unattractive
+    elements；不得只 focus on product 而忽略 people。
+  chapter: ch-06-04
+  chapter_title: Imagery style and cropping
+- module: Voice and Tone
+  criterion: AI 可檢查：不得從本 PDF 推論 Dell voice 具體規則；需查找 voice standards 文件。
+  chapter: ch-07
+  chapter_title: Voice
+chapters:
+- id: ch-01
+  title: A message from Michael
+  modules:
+  - Brand Strategy
+  - Governance
+- id: ch-02
+  title: Logo
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02-01
+  title: Logo overview
+  modules:
+  - Visual Identity
+- id: ch-02-02
+  title: Clear space and minimum size
+  modules:
+  - AI-Checkable Rules
+- id: ch-02-03
+  title: Alternate logos and backgrounds
+  modules:
+  - Governance
+- id: ch-02-04
+  title: Incorrect usage and lockups
+  modules:
+  - Brand Architecture
+  - AI-Checkable Rules
+- id: ch-02-05
+  title: Discontinued treatments
+  modules:
+  - Governance
+- id: ch-03
+  title: Color
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Design Tokens
+- id: ch-04
+  title: Typography
+  modules:
+  - AI-Checkable Rules
+  - Localization
+  - Typography System
+- id: ch-05
+  title: Graphic elements
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Language
+- id: ch-06
+  title: Imagery
+  modules:
+  - Photography System
+  - Visual Language
+  - Content Safety
+- id: ch-06-01
+  title: Lifestyle imagery
+  modules:
+  - Photography System
+- id: ch-06-02
+  title: Product imagery
+  modules:
+  - Visual Language
+- id: ch-06-03
+  title: Supporting imagery
+  modules:
+  - Photography System
+- id: ch-06-04
+  title: Imagery style and cropping
+  modules:
+  - Photography System
+- id: ch-07
+  title: Voice
+  modules:
+  - Knowledge Architecture
+  - Governance
+- id: ch-08
+  title: How to find/request assets
+  modules:
+  - Operations
+- id: ch-09
+  title: Contact
+  modules:
+  - Operations
+  - Governance

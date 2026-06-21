@@ -1,0 +1,73 @@
+title: 'Caribbean Development Bank Brand Identity Guidelines'
+source: 'sources/CDB_BrandIdentityManual.pdf'
+date: '2008-08'
+language: 'en'
+summary: 'Caribbean Development Bank 的品牌識別手冊，涵蓋基本識別、stationery、advertising、co-branding、corporate communications、special applications 與 multimedia。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction and About These Guidelines'
+    level: 1
+    order: 1
+    pages: '4-5'
+    summary: '說明品牌識別作為 CDB 對外溝通 shorthand，並要求所有授權製作者嚴格遵守以保護品牌完整性。'
+  - id: 'ch-02'
+    title: 'Basic Elements'
+    level: 1
+    order: 2
+    pages: '7-16'
+    summary: '規範 CDB logo、clear space、logo versions、colour specifications、minimum size、unacceptable use 與 corporate typefaces。'
+    children:
+      - id: 'ch-02-01'
+        title: 'CDB Logo and Minimum Clear Space'
+        level: 2
+        order: 1
+        pages: '9-10'
+        summary: '定義 CDB mark、signature、medallion、Caribbean map 以及以 logo type 中 E 高度計算的 clear space。'
+      - id: 'ch-02-02'
+        title: 'Logo Versions, Colour and Size'
+        level: 2
+        order: 2
+        pages: '11-13'
+        summary: '列出 5 種 logo versions、Pantone/CMYK/RGB 色彩規格，以及 print advertising 最小 25mm 尺寸。'
+      - id: 'ch-02-03'
+        title: 'Unacceptable Logo Use and Typefaces'
+        level: 2
+        order: 3
+        pages: '14-16'
+        summary: '列出不可改變位置、顏色、比例、效果或字體等禁用項，並定義 external/internal communications 字體。'
+  - id: 'ch-03'
+    title: 'Stationery'
+    level: 1
+    order: 3
+    pages: '17-27'
+    summary: '規範 letterhead、fax、memorandum、business card、compliment slip、envelopes、folder 的紙材、尺寸、logo 與文字位置。'
+  - id: 'ch-04'
+    title: 'Advertising'
+    level: 1
+    order: 4
+    pages: '29-36'
+    summary: '定義 CDB advertising philosophy、colour palettes、corporate/mass audience strategy、A4 advertising、posters 與 promotional items。'
+  - id: 'ch-05'
+    title: 'Co-Branding'
+    level: 1
+    order: 5
+    pages: '39-50'
+    summary: '規範 strategic partner 使用 CDB logo 的授權、官方呈現、禁用、比例、print/web/stationery/signage/banner/promotional use。'
+  - id: 'ch-06'
+    title: 'Corporate Communications'
+    level: 1
+    order: 6
+    pages: '51-58'
+    summary: '規範 press releases、corporate booklets、newsletters、annual reports 的 logo placement、typography 與版面。'
+  - id: 'ch-07'
+    title: 'Special Applications'
+    level: 1
+    order: 7
+    pages: '59-64'
+    summary: '規範 corporate signage、banners、uniforms 等環境與實體應用。'
+  - id: 'ch-08'
+    title: 'Multimedia'
+    level: 1
+    order: 8
+    pages: '65-71'
+    summary: '規範 website、email signature、PowerPoint templates、e-newsletters 的尺寸、字體、色彩與簡報使用建議。'

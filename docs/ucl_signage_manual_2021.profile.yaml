@@ -1,0 +1,278 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: ucl_signage_manual_2021
+index_ref: docs/ucl_signage_manual_2021.index.yaml
+note_ref: docs/ucl_signage_manual_2021.note.md
+archetype: brand_experience_guide
+industry: education
+modules:
+- Governance
+- Design Tokens
+- Visual Identity
+- Operations
+- Design Process
+- AI-Checkable Rules
+- Compliance
+- Accessibility
+depth:
+  strategy: low
+  visual: medium
+  governance: high
+  top_level_chapter_count: 10
+  section_count: 13
+chapter_sequence:
+- id: ch-00
+  title: Introduction
+  order: 0
+  level: 1
+- id: ch-01
+  title: Brand
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Logo
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Colours
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Icons
+  order: 3
+  level: 2
+- id: ch-01-04
+  title: Typeface
+  order: 4
+  level: 2
+- id: ch-02
+  title: Process for Wayfinding Signage
+  order: 2
+  level: 1
+- id: ch-03
+  title: General Rules
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Naming
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Floor Levels
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Arrows and Alignment
+  order: 3
+  level: 2
+- id: ch-03-04
+  title: Third Party Logos
+  order: 4
+  level: 2
+- id: ch-04
+  title: Sign Types
+  order: 4
+  level: 1
+- id: ch-05
+  title: Sign Templates
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Internal Sign Family
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Special Variations
+  order: 2
+  level: 2
+- id: ch-05-03
+  title: External Sign Family
+  order: 3
+  level: 2
+- id: ch-06
+  title: Accessibility
+  order: 6
+  level: 1
+- id: ch-07
+  title: Recycling & Sustainability
+  order: 7
+  level: 1
+- id: ch-08
+  title: Approved Companies & Contacts
+  order: 8
+  level: 1
+- id: ch-09
+  title: Sign Specification
+  order: 9
+  level: 1
+- id: ch-09-01
+  title: Internal Signs
+  order: 1
+  level: 2
+- id: ch-09-02
+  title: External Signs
+  order: 2
+  level: 2
+frameworks:
+- name: Estate-wide Standardization：appearance、content、building type compatibility、implementation over refurb/new builds
+  chapter: ch-00
+  chapter_title: Introduction
+- name: Physical Brand Application Stack：logo strip、surface colour、legibility contrast、icons、type size
+  chapter: ch-01
+  chapter_title: Brand
+- name: Complexity-based Procurement Framework：A direct order；B simple project；C consultant-led route hierarchy
+  chapter: ch-02
+  chapter_title: Process for Wayfinding Signage
+- name: Wayfinding Information Hierarchy：general first, specific later；route does not go cold；accessible route always clear
+  chapter: ch-03
+  chapter_title: General Rules
+- name: Sign Family Taxonomy：orientation signs、directional signs、room signs、temporary signs、environmental graphics、statutory/...
+  chapter: ch-04
+  chapter_title: Sign Types
+- name: Template Specification Model：geometry、typography、content limits、component purpose、colour tokens
+  chapter: ch-05
+  chapter_title: Sign Templates
+- name: Accessible Signage Compliance：viewing distance -> x-height；contrast -> LRV; tactile -> raised letter geometry; hearin...
+  chapter: ch-06
+  chapter_title: Accessibility
+- name: Sustainable Signage Procurement：reuse first、minimum recycled content、responsible timber certification、modular updatea...
+  chapter: ch-07
+  chapter_title: Recycling & Sustainability
+- name: Approved Vendor Governance
+  chapter: ch-08
+  chapter_title: Approved Companies & Contacts
+- name: Physical Design System Spec：modular hardware、colour approval、survey, install, maintenance, external illumination/fixing
+  chapter: ch-09
+  chapter_title: Sign Specification
+patterns:
+- name: Institutional Signage Standard for distributed campuses。
+  chapter: ch-00
+  chapter_title: Introduction
+- name: Brand Strip System、Icon Family、Typeface Legibility Spec。
+  chapter: ch-01
+  chapter_title: Brand
+- name: Project Type Triage、Non-standard Approval Gate。
+  chapter: ch-02
+  chapter_title: Process for Wayfinding Signage
+- name: Destination Editing、Progressive Disclosure in Physical Space。
+  chapter: ch-03
+  chapter_title: General Rules
+- name: Sign Type Catalog。
+  chapter: ch-04
+  chapter_title: Sign Types
+- name: Manufacturable Template Sheet。
+  chapter: ch-05
+  chapter_title: Sign Templates
+- name: Standards Extract Embedded in Brand Manual。
+  chapter: ch-06
+  chapter_title: Accessibility
+- name: Material Compliance Checklist。
+  chapter: ch-07
+  chapter_title: Recycling & Sustainability
+- name: Supplier Gate + Responsibility Contacts。
+  chapter: ch-08
+  chapter_title: Approved Companies & Contacts
+- name: Modular Sign System、Replaceable Slat Architecture、Survey-before-manufacture。
+  chapter: ch-09
+  chapter_title: Sign Specification
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：非 residential estate 的 signage brief 必須引用 UCL Signage Manual；不得以單一部門風格取代 estate-wide standard；sign type、content、material、template、specification
+    必須能追溯到本手冊。
+  chapter: ch-00
+  chapter_title: Introduction
+- module: Brand Strategy
+  criterion: AI 可檢查：UCL branding strip 一般為 Pantone Cool Grey 3；Library Services 使用 Pantone Blue 632；building pictogram 必須
+    white；branding element 尺寸不得脫離 artwork templates；text 使用 Arial MT；templates 中字級不得縮小。
+  chapter: ch-01
+  chapter_title: Brand
+- module: ''
+  criterion: AI 可檢查：Type C 必須有 wayfinding/route analysis；non-standard signage 概念需 CAM、Estates、Accessibility stakeholder approval；exclusions
+    仍需 meet BS8300；與 Estates project 相關時需由 PM 介入。
+  chapter: ch-02
+  chapter_title: Process for Wayfinding Signage
+- module: ''
+  criterion: AI 可檢查：accessible routes 必須始終清楚標示；已從入口標示的 destination 在每個轉折節點不得消失；樓層預設 G/1/2/-1/-2；floor reference 變更需 Estates
+    CAD Manager；不得使用 down 或 right angled arrows。
+  chapter: ch-03
+  chapter_title: General Rules
+- module: Typography System
+  criterion: AI 可檢查：reception signs 背景/字色 LRV difference >= 70；vinyl graphics 不得干擾標準 UCL signs/statutory signs/appliances；hoardings
+    每第六片 board 需 UCL logo；manifestations 應置於 850-1000mm 與 1400-1600mm 高度範圍並維持 LRV contrast >= 70。
+  chapter: ch-04
+  chapter_title: Sign Types
+- module: ''
+  criterion: AI 可檢查：A1 artwork 1050mm x 1470mm；A1 legend single max 28 characters、double max 55 characters、icons 20mm x 20mm
+    且距 legend end 8mm；所有 visual guides 不可直接 copy，需使用 sign templates；new signs raised lettering；若 existing sign 超過 50% 更新，需改
+    raised lettering。
+  chapter: ch-05
+  chapter_title: Sign Templates
+- module: ''
+  criterion: AI 可檢查：long distance x-height >= 150mm；directional signs x-height 50-100mm；room signs x-height 15-25mm；letter/symbol-to-signboard
+    和 signboard-to-background LRV difference 70；tactile letters depth 1.25mm ±0.25mm、stroke 1.75mm ±0.25mm；Braille marker
+    at left edge；directories 不得混用 raised 與 flat lettering；induction loop 安裝處必須設標示。
+  chapter: ch-06
+  chapter_title: Accessibility
+- module: ''
+  criterion: AI 可檢查：可用且狀況合適的既有 signage 應優先 reuse；新 timber 需 FSC 或 PEFC CoC；aluminium extrusion recycled content >= 44%；aluminium
+    sheet >= 73%；steel/stainless/copper 等需符合列出最低 RC；modular signs 可用於頻繁更新資訊情境。
+  chapter: ch-07
+  chapter_title: Recycling & Sustainability
+- module: ''
+  criterion: AI 可檢查：internal signage 必須使用 MSS；manufacture/installation 需 UCL approved supplier；building signage changes 需先經
+    building manager；wayfinding consultants 需 approved。
+  chapter: ch-08
+  chapter_title: Approved Companies & Contacts
+- module: ''
+  criterion: AI 可檢查：internal signs 需 MSS；profiles 6mm thick dovetailed aluminium extrusions；colour samples 需 approval；mapping
+    為 CMYK print on aluminium backing plate with anti-graffiti coating；new slats fitting existing signs 前需 measured survey；sample
+    sign with all colours/finishes 需 client approval；all signs wall mounted except specified；spacer 至少比 sign edge 小 25mm；sign
+    placement 一般 1700mm from floor，最大/最小依圖示；external illumination maximum light levels 需符合圖紙。
+  chapter: ch-09
+  chapter_title: Sign Specification
+chapters:
+- id: ch-00
+  title: Introduction
+  modules:
+  - Governance
+- id: ch-01
+  title: Brand
+  modules:
+  - Design Tokens
+  - Visual Identity
+- id: ch-02
+  title: Process for Wayfinding Signage
+  modules:
+  - Operations
+  - Design Process
+  - Governance
+- id: ch-03
+  title: General Rules
+  modules:
+  - AI-Checkable Rules
+- id: ch-05
+  title: Sign Templates
+  modules:
+  - Design Tokens
+- id: ch-06
+  title: Accessibility
+  modules:
+  - AI-Checkable Rules
+  - Compliance
+  - Accessibility
+- id: ch-07
+  title: Recycling & Sustainability
+  modules:
+  - Operations
+- id: ch-08
+  title: Approved Companies & Contacts
+  modules:
+  - Operations
+  - Governance
+- id: ch-09
+  title: Sign Specification
+  modules:
+  - Operations

@@ -1,0 +1,118 @@
+# L3 決策卡 sidecar — Twitter
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: twitter_brand_guidelines_2020
+decisions:
+  - id: dp-contact-before-appendix
+    title: 在技術資料前先給治理窗口，讓 guideline 成為可改善系統
+    problem:
+      statement: 規則無法涵蓋所有情境，缺乏權威決策入口時，例外用法無人裁決。
+      signals: [exceptions_expected, governance]
+    solution:
+      module: Governance
+      move: 在指南開頭即說明 scope，並提供 trademark 聯絡窗口處理未涵蓋情境
+      layer: governance
+    reason:
+      - 規則無法涵蓋所有情境，必須提供權威決策入口
+      - 簡短指南也需要 escalation path；品牌開放使用必須同時保留審核通道
+    applicable_when:
+      industries: [finance]
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit, logo_asset_guidelines]
+    dependencies:
+      requires: [Governance]
+      enables: [Operations]
+    evidence:
+      - brand_id: twitter_brand_guidelines_2020
+        chapter: ch-01
+        excerpt: "簡短指南也需要 escalation path；未涵蓋情境需聯絡 trademarks@twitter.com，不得自行推定許可。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌寬度的比例（150% logo width）作為相對留白基準，並訂最小渲染尺寸
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - 比例型 clearspace 易於跨尺寸自動計算
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - clearspace >= 1.5 x logo width，rendered width >= 16px
+    evidence:
+      - brand_id: twitter_brand_guidelines_2020
+        chapter: ch-02-02
+        excerpt: "logo 四周空白至少為 logo width 的 150%，最小寬度 16px；比例型 clearspace 易於跨尺寸自動計算。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗與影像情境決定標誌顏色，限定 blue／white 兩種，並對淺色影像加 tint 維持對比
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - Logo 顏色規範應基於對比與背景風險，而非只列色票
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: twitter_brand_guidelines_2020
+        chapter: ch-02-03
+        excerpt: "Twitter logo 永遠為 blue 或 white；image background 上必須使用 white，淺色圖片加 10-20% black tint 以維持 white logo 可讀。"
+    status: extracted
+
+  - id: dp-trademark-permission-flow
+    title: 用授權閘門治理第三方商標使用，先處理混淆與背書風險
+    problem:
+      statement: 平台品牌被大量第三方使用商標與資產，若無授權流程，會造成商標混淆與誤導性背書風險。
+      signals: [trademark_protection, partner_governance, endorsement_risk, third_party_usage]
+    solution:
+      module: Legal and Trademark
+      move: 以受保護 marks 清單 + 使用情境分類 + 禁止命名／商品化 + 必附 trademark statement 的可撤銷授權治理
+      layer: governance
+    reason:
+      - 平台品牌 guideline 應把「可提及」與「可命名／可商品化」分開
+      - 商標使用不是設計建議，而是有限、可撤銷、必須嚴格遵守的授權
+      - permission section 將品牌治理流程化，降低設計師自行判斷法律風險
+    applicable_when:
+      industries: [tech_software]
+      brand_types: [platform_ecosystem]
+      conditions: [third_party_usage, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Legal and Trademark]
+      enables: [Governance]
+    anti_patterns:
+      - 放任第三方自行判斷法律與背書風險
+    evidence:
+      - brand_id: twitter_brand_guidelines_2020
+        chapter: ch-05
+        excerpt: "不得把 Twitter marks 納入公司、產品、服務、網站、application 名稱；除 hashtag/handle lockup 或 social icons 外不得製作販售帶 Twitter name/logo 的商品。"
+      - brand_id: twitter_brand_guidelines_2020
+        chapter: ch-06
+        excerpt: "商標使用是有限、可撤銷、必須嚴格遵守的授權；含 marks 的 materials 必須顯示 trademark statement，不得暗示 sponsorship/endorsement。"
+    status: extracted

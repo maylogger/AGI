@@ -1,0 +1,105 @@
+title: 'Clayton Homes Brand Guidelines'
+source: 'sources/Clayton_Homes_BrandGuideline_2021.pdf'
+date: 'May 2021'
+language: 'en'
+summary: 'Clayton Homes 的品牌規範，將品牌承諾、口吻、視覺識別、行銷活動、子品牌與買方人物誌整合為可執行的品牌系統。'
+chapters:
+  - id: 'ch-01'
+    title: 'The Big Stuff'
+    level: 1
+    order: 1
+    pages: '3-20'
+    summary: '建立品牌背景、目的、承諾、人格、語言、核心信念與品牌架構。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Introduction'
+        level: 2
+        order: 1
+        pages: '5-9'
+        summary: '說明 Clayton 的歷史、企業使命、價值觀與 Building Happyness 品牌主張。'
+      - id: 'ch-01-02'
+        title: 'Brand Personality'
+        level: 2
+        order: 2
+        pages: '10-17'
+        summary: '定義 Smart、Modern、Affordable、Have it made、語言、口吻、核心信念與 off-brand 用語。'
+      - id: 'ch-01-03'
+        title: 'Brand Architecture'
+        level: 2
+        order: 3
+        pages: '18-20'
+        summary: '說明 Clayton 家族品牌如何支撐整體品牌定位與購屋體驗。'
+  - id: 'ch-02'
+    title: 'The Technical Stuff'
+    level: 1
+    order: 2
+    pages: '21-53'
+    summary: '規範 logo、字體、色彩與攝影，將品牌人格轉為視覺執行規則。'
+    children:
+      - id: 'ch-02-01'
+        title: 'The Clayton Logotype'
+        level: 2
+        order: 1
+        pages: '23-28'
+        summary: '規定 logo clear space、最小尺寸、色彩版本、禁用情境與特殊 initiative/facility logo。'
+      - id: 'ch-02-02'
+        title: 'Typography'
+        level: 2
+        order: 2
+        pages: '29-37'
+        summary: '指定 Helvetica Neue LT Std 與 Acumin Pro，規範標題、字距、行距、段落與階層比例。'
+      - id: 'ch-02-03'
+        title: 'Color Palette'
+        level: 2
+        order: 3
+        pages: '38-47'
+        summary: '定義主要色、次要色、灰階、中性色、web safe colors、漸層與家族品牌色彩參考。'
+      - id: 'ch-02-04'
+        title: 'Photography'
+        level: 2
+        order: 4
+        pages: '48-53'
+        summary: '規範顧客、外觀、室內與製造場景攝影需乾淨、現代、友善並聚焦產品特色。'
+  - id: 'ch-03'
+    title: 'The Nitty Gritty'
+    level: 1
+    order: 3
+    pages: '54-88'
+    summary: '把品牌規範延伸到行銷活動、零售、車隊、子品牌、人物誌與品牌治理。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Brand Campaign Guidelines'
+        level: 2
+        order: 1
+        pages: '56-63'
+        summary: '規範 Have it made tagline、品牌口吻與 OOH、TV、digital banner、social carousel 範例。'
+      - id: 'ch-03-02'
+        title: 'Retail Campaign Guidelines'
+        level: 2
+        order: 2
+        pages: '64-68'
+        summary: '定義零售活動的幽默、premium look、POP、FOB 與 Clayton work 差異。'
+      - id: 'ch-03-03'
+        title: 'Vehicle Fleet'
+        level: 2
+        order: 3
+        pages: '69-73'
+        summary: '展示 supply、home transport、home building 與 retail fleet 的車輛識別應用。'
+      - id: 'ch-03-04'
+        title: 'Individual Sub-brand Guidelines'
+        level: 2
+        order: 4
+        pages: '74-80'
+        summary: '摘要 Clayton Built、Cavalier、Marlette、Schult、SE Homes 的色彩、字體與定位。'
+      - id: 'ch-03-05'
+        title: 'Buyer Personas'
+        level: 2
+        order: 5
+        pages: '81-87'
+        summary: '定義 Mary、Steve、Sofia、Robert、Nicole 等客群與 identify-engage-convert-upsell 旅程。'
+      - id: 'ch-03-06'
+        title: 'Brand Summary'
+        level: 2
+        order: 6
+        pages: '88'
+        summary: '以品牌支援與聯絡方式收束，強調尊重品牌完整性。'

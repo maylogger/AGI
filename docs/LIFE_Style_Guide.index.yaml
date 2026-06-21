@@ -1,0 +1,85 @@
+title: 'LIFE Style Guide'
+source: 'sources/LIFE_Style_Guide.pdf'
+language: 'en'
+summary: '這份文件將 LIFE 的歷史影像資產轉譯為授權商品、包裝、攝影選圖與品牌識別的操作規範。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction'
+    level: 1
+    order: 1
+    pages: '1-4'
+    summary: '介紹 LIFE 品牌歷史、影像典藏規模與「以影像見證世界」的品牌來源。'
+  - id: 'ch-02'
+    title: 'Branding'
+    level: 1
+    order: 2
+    pages: '5-9'
+    summary: '規範 LIFE logo、保護區、放置方式、色彩、字體與商標書寫。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Logo Guidelines'
+        level: 2
+        order: 1
+        pages: '6-7'
+        summary: '定義 LIFE 紅、logo 安全距離、placement、禁用情境與商標大寫規則。'
+      - id: 'ch-02-02'
+        title: 'Typography and Color Palette'
+        level: 2
+        order: 2
+        pages: '8-9'
+        summary: '指定 Folio 字體家族用途與支撐 lifestyle 商品化的色彩組合。'
+  - id: 'ch-03'
+    title: 'Legal and Approval Information'
+    level: 1
+    order: 3
+    pages: '11'
+    summary: '說明人物、插畫、雕塑、地標與繪畫影像使用的權利風險與法律標示。'
+  - id: 'ch-04'
+    title: 'Packaging'
+    level: 1
+    order: 4
+    pages: '12-21'
+    summary: '把 LIFE 雜誌風格轉成包裝模板，包含 window box、swing ticket、header card 與 backing card。'
+  - id: 'ch-05'
+    title: 'Creative Direction'
+    level: 1
+    order: 5
+    pages: '22-53'
+    summary: '以主題式影像方向示範如何從 LIFE Picture Collection 中建立可授權的商品圖像語彙。'
+    children:
+      - id: 'ch-05-01'
+        title: 'The Covers'
+        level: 2
+        order: 1
+        pages: '23-29'
+        summary: '運用封面語彙、版面感與歷史刊物記憶作為商品圖案方向。'
+      - id: 'ch-05-02'
+        title: 'Architecture and Travel'
+        level: 2
+        order: 2
+        pages: '30-35'
+        summary: '以建築、城市與旅行影像建立具空間感的授權圖像方向。'
+      - id: 'ch-05-03'
+        title: 'Emotion'
+        level: 2
+        order: 3
+        pages: '36-43'
+        summary: '以情緒、人物互動與人文瞬間強化商品敘事。'
+      - id: 'ch-05-04'
+        title: 'Moments in History'
+        level: 2
+        order: 4
+        pages: '44-53'
+        summary: '以歷史事件與時代記憶作為高辨識度的影像主題。'
+  - id: 'ch-06'
+    title: 'Photography'
+    level: 1
+    order: 6
+    pages: '54-69'
+    summary: '提供可被挑選或引用的影像檔名索引，依封面、歷史、情緒、建築與旅行分類。'
+  - id: 'ch-07'
+    title: 'Product Visuals'
+    level: 1
+    order: 7
+    pages: '70-77'
+    summary: '示範品牌資產在文具、禮品、居家、盥洗、服飾與配件上的應用。'

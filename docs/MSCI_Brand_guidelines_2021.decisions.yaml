@@ -1,0 +1,123 @@
+# L3 決策卡 sidecar — MSCI（金融資料企業品牌規範）
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: MSCI_Brand_guidelines_2021
+decisions:
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（mark inner square）作為相對留白基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - 相對單位可建立 scalable spacing token，不被固定像素綁死
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - clear space 為 mark inner square 尺寸
+    evidence:
+      - brand_id: MSCI_Brand_guidelines_2021
+        chapter: ch-02-01
+        excerpt: "logo 周圍需保留 inner square 尺寸 clear space；用 mark inner square 作 clear space，不得縮放內部元素或自行創建版本。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以等重關係 + vertical rule 分隔 + exclusion zone + 核准流程定義 partner lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - 聯名不應犧牲任一方識別，也不應暗示錯誤層級
+      - co-branding guideline 應定義關係語義（equal relationship），再對應到視覺規則
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: MSCI_Brand_guidelines_2021
+        chapter: ch-02-02
+        excerpt: "MSCI 與 partner logo 需視覺等重、以 vertical rule 分隔，兩者間距不得小於指定 exclusion zone，所有第三方 co-branding 須 MSCI Marketing 核准。"
+    status: extracted
+
+  - id: dp-media-split-typography
+    title: 依媒介分流字體系統（print / digital / body）
+    problem:
+      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+      signals: [print_and_digital, readability, licensing]
+    solution:
+      module: Typography System
+      move: 依 use-case 分配字體（Roboto 數位/印刷、Merriweather 長文、Arial email），並加上語系 fallback architecture
+      layer: visual_core
+    reason:
+      - 不同媒介的可讀性與授權條件不同
+      - 企業字體系統不是單一品牌字體，而是依媒介、內容量與語言建立 fallback architecture
+      - Typography guideline 應把「語系」納入字體治理，尤其是全球 B2B 品牌
+    applicable_when:
+      industries: [finance, public_sector, education]
+      brand_types: []
+      conditions: [print_and_digital]
+      archetypes: [brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: []
+    examples:
+      - digital/print artwork 使用 Roboto，大段專業設計文字用 Merriweather，email 用 Arial
+    evidence:
+      - brand_id: MSCI_Brand_guidelines_2021
+        chapter: ch-03
+        excerpt: "Roboto 用於 digital/print artwork；Merriweather 用於專業設計且大量文字；Arial 用於 email；另指定日韓中阿系統字體做 language fallback。"
+    status: extracted
+
+  - id: dp-accessible-contrast-pairs
+    title: 把可近用性前置成核准對比配色，而非設計者自行判斷
+    problem:
+      statement: 公共資訊面向全體市民與輔助科技，若放任設計者自由配色，容易產生不符合無障礙標準、身心障礙者無法閱讀的組合。
+      signals: [accessibility, regulatory_compliance]
+    solution:
+      module: Accessibility
+      move: 把色彩系統做成 tint ladder + contrast tables，明訂非大字文字需符合暗底/亮底建議色組，並提供 alt text、caption 等數位無障礙規格
+      layer: visual_core
+    reason:
+      - 用 approved contrast pairs 降低設計者自行判斷錯誤
+      - 成熟色彩 guideline 應包含 tint ladder 與 contrast suitability，而不只是 palette
+      - 品牌信任感來自使用者能找到、讀懂、快速載入並無障礙使用內容
+    applicable_when:
+      industries: [public_sector, education]
+      brand_types: [institutional_public_trust]
+      conditions: [accessibility, inclusive_audience]
+      archetypes: [brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Color System]
+      enables: [Governance]
+    anti_patterns:
+      - 把無障礙規範放在附錄，當成可選加分項
+      - 使用未列出的對比色組
+    evidence:
+      - brand_id: MSCI_Brand_guidelines_2021
+        chapter: ch-04
+        excerpt: "非大字文字需符合暗底/亮底建議色組，logo 背景應依表格選擇 full-color 或 white version；色票系統兼具 design token 與 accessibility matrix。"
+      - brand_id: MSCI_Brand_guidelines_2021
+        chapter: ch-07
+        excerpt: "decorative image alt 為空、所有 video 有 captions 與 transcript；品牌信任感來自使用者能找到、讀懂、快速載入並無障礙使用內容。"
+    status: extracted

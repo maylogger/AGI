@@ -1,0 +1,182 @@
+title: "BC Hydro Brand Guidelines"
+source: "sources/BCHydro_brand_guidelines_2019.pdf"
+date: "2019-08"
+language: "en"
+summary: "BC Hydro 品牌指南以 power smart 為品牌本質，規範 tone of voice、logo、typography、colours、design elements、illustration 與 photography。"
+chapters:
+  - id: "ch-01"
+    title: "Brand Overview"
+    level: 1
+    order: 1
+    pages: "1-7"
+    summary: "介紹 power smart 從節能計畫轉為公司整體目的與 tagline，並列出品牌工具包。"
+    children:
+      - id: "ch-01-01"
+        title: "Who We Are"
+        level: 2
+        order: 1
+        pages: "6"
+        summary: "說明 power smart 作為公司目的與承諾。"
+      - id: "ch-01-02"
+        title: "Brand Toolkit"
+        level: 2
+        order: 2
+        pages: "7"
+        summary: "列出 tone、typography、logo、colours、photography、illustration。"
+  - id: "ch-02"
+    title: "Tone of Voice"
+    level: 1
+    order: 2
+    pages: "8-10"
+    summary: "定義 Smart、Authentic、Relatable，並提供 humanize tone 的寫作技巧。"
+    children:
+      - id: "ch-02-01"
+        title: "Brand Tone"
+        level: 2
+        order: 1
+        pages: "9"
+        summary: "說明 tone 需要 humanize brand、build trust、maintain consistency。"
+      - id: "ch-02-02"
+        title: "Tips to Humanize Our Tone"
+        level: 2
+        order: 2
+        pages: "10"
+        summary: "要求 audience first、first person、避免 jargon、concise/scannable/helpful 等。"
+  - id: "ch-03"
+    title: "Our Logo"
+    level: 1
+    order: 3
+    pages: "11-18"
+    summary: "規範 BC Hydro logo、clear space、minimum size、variations、symbol、misuse 與 partner lockups。"
+    children:
+      - id: "ch-03-01"
+        title: "BC Hydro Logo"
+        level: 2
+        order: 1
+        pages: "12"
+        summary: "說明 1960s logo 的 energy/nature 意義與 2015 更新。"
+      - id: "ch-03-02"
+        title: "Clear Space and Variations"
+        level: 2
+        order: 2
+        pages: "13-15"
+        summary: "使用 symbol 作留白 guide，數位 SVG 96px 可讀。"
+      - id: "ch-03-03"
+        title: "Misuse and Lock-ups"
+        level: 2
+        order: 3
+        pages: "16-18"
+        summary: "禁止變形、改字體、改色、陰影；partner logo 65%/BC Hydro 100%。"
+  - id: "ch-04"
+    title: "Typography"
+    level: 1
+    order: 4
+    pages: "19-28"
+    summary: "規範 GT Haptik/Arial、字級、leading、letter spacing、minimum font size、editorial details 與 typesetting details。"
+    children:
+      - id: "ch-04-01"
+        title: "Primary and Alternative Typography"
+        level: 2
+        order: 1
+        pages: "21-23"
+        summary: "GT Haptik 為主字體，Arial 用於 Outlook/Word 等相容限制。"
+      - id: "ch-04-02"
+        title: "Editorial Details"
+        level: 2
+        order: 2
+        pages: "24-25"
+        summary: "規範 BC Hydro、telephone、power smart、URL 與標點。"
+      - id: "ch-04-03"
+        title: "Typesetting Details"
+        level: 2
+        order: 3
+        pages: "26-28"
+        summary: "說明 spacing、kerning、ligatures 與最小字級。"
+  - id: "ch-05"
+    title: "Our Colours"
+    level: 1
+    order: 5
+    pages: "29-42"
+    summary: "規範色彩概念、palette、安全色、tints、print/digital 用色、pairing、短/長文件與 copy/photography。"
+    children:
+      - id: "ch-05-01"
+        title: "Palette and Safety Colours"
+        level: 2
+        order: 1
+        pages: "29-33"
+        summary: "定義品牌 palette、安全色與 tints。"
+      - id: "ch-05-02"
+        title: "Using Colours"
+        level: 2
+        order: 2
+        pages: "34-38"
+        summary: "說明 print、digital、pairing 的使用。"
+      - id: "ch-05-03"
+        title: "Documents and Photography"
+        level: 2
+        order: 3
+        pages: "39-42"
+        summary: "依短/長文件、copy 與 photography 調整用色。"
+  - id: "ch-06"
+    title: "Design Elements"
+    level: 1
+    order: 6
+    pages: "45-46"
+    summary: "定義 coloured bars 與 call-outs 作為版面輔助元素。"
+    children:
+      - id: "ch-06-01"
+        title: "Coloured Bars"
+        level: 2
+        order: 1
+        pages: "45"
+        summary: "以色條建立版面辨識與分隔。"
+      - id: "ch-06-02"
+        title: "Call-outs"
+        level: 2
+        order: 2
+        pages: "46"
+        summary: "使用 call-outs 強調重要資訊。"
+  - id: "ch-07"
+    title: "Illustration"
+    level: 1
+    order: 7
+    pages: "48-55"
+    summary: "規範 line illustration、full-colour vector、people illustration 與 safety illustration。"
+    children:
+      - id: "ch-07-01"
+        title: "Line and Full-colour Illustration"
+        level: 2
+        order: 1
+        pages: "49-50"
+        summary: "定義一般插畫風格。"
+      - id: "ch-07-02"
+        title: "People and Safety Illustration"
+        level: 2
+        order: 2
+        pages: "51-55"
+        summary: "規範人物與安全情境插畫。"
+  - id: "ch-08"
+    title: "Photography"
+    level: 1
+    order: 8
+    pages: "57-61"
+    summary: "規範 universal photography、online、stock、product 與 misuse。"
+    children:
+      - id: "ch-08-01"
+        title: "Universal and Online Photography"
+        level: 2
+        order: 1
+        pages: "57-58"
+        summary: "定義整體攝影風格與線上使用。"
+      - id: "ch-08-02"
+        title: "Stock and Product Photography"
+        level: 2
+        order: 2
+        pages: "59-60"
+        summary: "規範 stock/product 圖像。"
+      - id: "ch-08-03"
+        title: "Photo Misuse"
+        level: 2
+        order: 3
+        pages: "61"
+        summary: "列出錯誤影像使用。"

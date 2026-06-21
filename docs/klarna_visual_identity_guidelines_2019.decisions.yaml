@@ -1,0 +1,153 @@
+# L3 決策卡 sidecar — Klarna（支付品牌視覺識別）
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: klarna_visual_identity_guidelines_2019
+decisions:
+  - id: dp-story-framework-category-education
+    title: 用漸進式 Story Framework 解決新品類的市場教育成本
+    problem:
+      statement: 產品屬於新品類（智慧電動機車／可交換電能），用戶沒有既有心智模型，一次塞滿資訊會造成認知過載。
+      signals: [new_category, high_education_cost, complex_tech, long_consideration_cycle]
+    solution:
+      module: Messaging
+      move: 以旅程階段漸進揭露（Disrupt → Attract → Engage → Join），依注意力狀態控制訊息深度與品牌強度
+      layer: language
+    reason:
+      - 資訊依注意力狀態逐步揭露，避免一次塞滿細節
+      - 不同接觸點該說多少、說多深要有共同標準，否則廣告與產品頁混用同一訊息密度
+      - 越接近轉換越需要 clarity，越遠離轉換越能使用情緒與怪奇感
+    applicable_when:
+      industries: [new_energy_mobility, tech_software]
+      brand_types: [category_creator, challenger]
+      conditions: [audience_unfamiliar, long_consideration_cycle]
+      archetypes: [full_brand_system]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Content Design]
+    anti_patterns:
+      - 在所有觸點用同一訊息密度
+      - 直接以 spec-sheet 溝通，假設用戶已理解品類
+    evidence:
+      - brand_id: klarna_visual_identity_guidelines_2019
+        chapter: ch-01
+        excerpt: "Social coherence model：Disrupt=brand awareness、Attract=product awareness、Engage=product understanding、Join=product sign-up；讓不同渠道依溝通目的調整品牌強度，而非平均使用所有資產。"
+      - brand_id: klarna_visual_identity_guidelines_2019
+        chapter: ch-01-02
+        excerpt: "越接近轉換越需要 clarity，越遠離轉換越能使用情緒與怪奇感；Join 階段不得使用 emotional stills，Engage 以 feature illustrations 為主。"
+    status: extracted
+
+  - id: dp-bold-contrast-for-challenger
+    title: 用單一高彩度主色建立 equity，並以可用／禁用配色維持張力
+    problem:
+      statement: 挑戰者品牌需要在飽和市場中快速被認出並表達鮮明個性，溫和保守的配色會被淹沒。
+      signals: [differentiation, breakthrough_attention, personality_expression]
+    solution:
+      module: Color System
+      move: 以單一高彩度品牌主色（Klarna Pink）建立辨識 equity，並明確列出「可用組合／禁用組合」維持張力與一致
+      layer: visual_core
+    reason:
+      - 品牌色比節慶色更重要；不應為 tactical themes 犧牲辨識
+      - 色彩規範可明確列出「可用組合」與「禁用組合」，便於審稿與可讀性檢查
+      - 色彩 guideline 可包含「拒絕節慶色」規則，保護 brand distinctiveness
+    applicable_when:
+      industries: [tech_software]
+      brand_types: [challenger]
+      conditions: [saturated_market, personality_expression]
+      archetypes: [brand_experience_guide, full_brand_system]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Color System, Accessibility]
+    anti_patterns:
+      - 開放任意配色稀釋主色 equity
+      - 為節慶主題使用非品牌 tactical colours
+    evidence:
+      - brand_id: klarna_visual_identity_guidelines_2019
+        chapter: ch-04
+        excerpt: "把 Klarna Pink 建立為品牌記憶；不得為 Valentine's/Halloween 等使用非品牌 tactical colours；secondary colours 不得彼此混合或與 Klarna Pink 混合，除非是有黑色 outline 的資訊圖。"
+    status: extracted
+
+  - id: dp-custom-typeface-as-identity-asset
+    title: 用專屬字體當識別資產，擺脫系統預設字並統一語氣
+    problem:
+      statement: 仰賴系統預設字體的品牌缺乏獨特性與一致語氣，跨媒介又常因字體缺失而失控；但又需要在無法安裝字型的環境保有 fallback。
+      signals: [identity_distinctiveness, system_consistency, brand_recognition, multi_media]
+    solution:
+      module: Typography System
+      move: 建立專屬企業字體（Klarna Headline）作為核心識別資產，並以 Klarna Text 承擔數位可讀性與字級／leading 規則
+      layer: visual_core
+    reason:
+      - 專屬字體系統讓品牌不再依賴 default fonts，並讓文字有共同語氣
+      - typography 是 brand recognition 的 foundational pillar
+      - 字體規範可轉成 design-token schema，包含 role、font、size range、leading、max lines
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger]
+      conditions: [identity_distinctiveness, multi_media]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: [Design Tokens]
+    anti_patterns:
+      - 直接沿用系統字當品牌字體，缺乏 fallback 規範
+    evidence:
+      - brand_id: klarna_visual_identity_guidelines_2019
+        chapter: ch-03
+        excerpt: "Klarna Headline 承擔身份，Klarna Text 承擔數位可讀性；typography 是 brand recognition 的 foundational pillar，字體規範可轉成 role/size/leading 的 design-token schema。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo K-height）作為相對留白與 margin 基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - 相對單位可建立 scalable spacing token，使 print/digital 共用規則
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - 以 logo K-height 作為 margin 單位，banner margin 通常 30px
+    evidence:
+      - brand_id: klarna_visual_identity_guidelines_2019
+        chapter: ch-06
+        excerpt: "以 K-height 作為 margin 單位，用 logo 字母高度轉換為空間 token，使 print/digital 共用規則。"
+    status: extracted
+
+  - id: dp-logo-vs-lockup-distinction
+    title: 區分 public-facing lockup 與 corporate logo 的使用場景
+    problem:
+      statement: 單一標誌資產被套用到所有情境，混淆對外溝通與企業署名，且難以同時治理法律與一致性。
+      signals: [multiple_logo_contexts, trademark, legal_governance]
+    solution:
+      module: Visual Identity
+      move: 明確區分 logotype、lockup、symbol、partner lockup、badge、avatar 的使用情境，並以「使用目的 + 尺寸 + clearspace + 禁止自行創建」統一治理
+      layer: visual_core
+    reason:
+      - 標誌資產不可重建、不可任意改比例
+      - trademark 與 tagline 須由法律與品牌一致性共同治理
+      - 商標 guideline 應把 asset use case 明確分層，避免單一 logo 被迫承擔所有任務
+    applicable_when:
+      industries: [industrial_materials_science, finance, tech_software]
+      brand_types: [heritage_legacy, platform_ecosystem]
+      conditions: [trademark]
+      archetypes: [brand_experience_guide, corporate_toolkit, multi_brand_architecture]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Legal and Trademark, Governance]
+    evidence:
+      - brand_id: klarna_visual_identity_guidelines_2019
+        chapter: ch-02
+        excerpt: "trademark hierarchy：wordmark → lockup/tagline → symbol → partner → badge → avatar；不得用 Klarna Headline 自行打出 logotype，lockup 只能使用 Smoooth payments tagline，partner lockup 中 Klarna 應視覺等重。"
+    status: extracted

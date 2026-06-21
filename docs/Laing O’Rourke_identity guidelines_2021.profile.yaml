@@ -1,0 +1,260 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Laing O’Rourke_identity guidelines_2021
+index_ref: docs/Laing O’Rourke_identity guidelines_2021.index.yaml
+note_ref: docs/Laing O’Rourke_identity guidelines_2021.note.md
+archetype: brand_experience_guide
+industry: industrial_materials_science
+modules:
+- Brand Strategy
+- Design Process
+- Measurement
+- Governance
+- Visual Language
+- Operations
+- Visual Identity
+- Legal and Trademark
+- AI-Checkable Rules
+- Compliance
+- Typography System
+- Color System
+- Layout System
+- UI Components
+- Photography System
+- Examples
+- Knowledge Architecture
+depth:
+  strategy: low
+  visual: high
+  governance: high
+  top_level_chapter_count: 5
+  section_count: 7
+chapter_sequence:
+- id: ch-01
+  title: Who We Are
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Our Global Mission
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Our Guiding Principles
+  order: 2
+  level: 2
+- id: ch-02
+  title: How We Look
+  order: 2
+  level: 1
+- id: ch-03
+  title: Our Toolkit
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Logo and Motif
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Colours and Fonts
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Document Grids and Graphic Elements
+  order: 3
+  level: 2
+- id: ch-03-04
+  title: Tagline, Web Address, and Icons
+  order: 4
+  level: 2
+- id: ch-03-05
+  title: Photography and Video
+  order: 5
+  level: 2
+- id: ch-04
+  title: In Practice
+  order: 4
+  level: 1
+- id: ch-05
+  title: Download Centre
+  order: 5
+  level: 1
+frameworks:
+- name: mission-to-identity framework：business model -> engineering approach -> visual principle
+  chapter: ch-01
+  chapter_title: Who We Are
+- name: numeric mission framework：vision + operational metrics
+  chapter: ch-01-01
+  chapter_title: Our Global Mission
+- name: principle-to-design QA framework
+  chapter: ch-01-02
+  chapter_title: Our Guiding Principles
+- name: engineering clarity -> visual clarity mapping
+  chapter: ch-02
+  chapter_title: How We Look
+- name: identity toolkit framework：core logo -> secondary motif -> tokens -> layout -> media -> application
+  chapter: ch-03
+  chapter_title: Our Toolkit
+- name: logo component integrity + exception-controlled motif framework
+  chapter: ch-03-01
+  chapter_title: Logo and Motif
+- name: access-controlled typography system
+  chapter: ch-03-02
+  chapter_title: Colours and Fonts
+- name: production-aware layout system
+  chapter: ch-03-03
+  chapter_title: Document Grids and Graphic Elements
+- name: closing-signature system
+  chapter: ch-03-04
+  chapter_title: Tagline, Web Address, and Icons
+- name: evidence-based industrial photography framework
+  chapter: ch-03-05
+  chapter_title: Photography and Video
+- name: application proof framework
+  chapter: ch-04
+  chapter_title: In Practice
+- name: asset distribution governance
+  chapter: ch-05
+  chapter_title: Download Centre
+patterns:
+- name: 以三個 guiding principles 建立後續規範的評估語言。
+  chapter: ch-01
+  chapter_title: Who We Are
+- name: 用明確數字將品牌承諾轉成可溝通證據。
+  chapter: ch-01-01
+  chapter_title: Our Global Mission
+- name: 用少數原則取代冗長價值列表。
+  chapter: ch-01-02
+  chapter_title: Our Guiding Principles
+- name: 用企業方法論轉譯 visual tone，而不是從任意美學開始。
+  chapter: ch-02
+  chapter_title: How We Look
+- name: 每個工具都區分 default、exception、permission/contact。
+  chapter: ch-03
+  chapter_title: Our Toolkit
+- name: 先要求 primary logo，只有 reproduction constraint 才依序 secondary、reversed。
+  chapter: ch-03-01
+  chapter_title: Logo and Motif
+- name: office-safe font + specialist display font。
+  chapter: ch-03-02
+  chapter_title: Colours and Fonts
+- name: external full bleed 與 internal margin grid 分流。
+  chapter: ch-03-03
+  chapter_title: Document Grids and Graphic Elements
+- name: tagline + web address + social icons 形成文件末端固定模組。
+  chapter: ch-03-04
+  chapter_title: Tagline, Web Address, and Icons
+- name: 將多個工具組合為完整 touchpoints。
+  chapter: ch-04
+  chapter_title: In Practice
+- name: 將主要資產類別集中成單一下載中心。
+  chapter: ch-05
+  chapter_title: Download Centre
+rules_ai_checkable:
+- module: ''
+  criterion: 提及 DfMA 時應保留 70:60:30 與其三個解釋；不得把它簡化為一般 productivity claim。
+  chapter: ch-01-01
+  chapter_title: Our Global Mission
+- module: ''
+  criterion: 設計若使資訊更複雜、不可讀或缺少整體關係，違反 sophisticated simplicity 或 complete thinking。
+  chapter: ch-01-02
+  chapter_title: Our Guiding Principles
+- module: ''
+  criterion: 涉及例外或 motif 使用時應聯絡 Corporate Affairs；未授權員工不得自行使用 motif 或 Ginger。
+  chapter: ch-03
+  chapter_title: Our Toolkit
+- module: Visual Identity
+  criterion: 不得改色、移除元素、改比例、旋轉、壓縮、加文字/圖形、貼齊黑盒邊界；minimum size 20mm/75px；clear space 為 logo lettering 中 `K` 高度的 3 倍；primary logo
+    不得放 100% black background。
+  chapter: ch-03-01
+  chapter_title: Logo and Motif
+- module: ''
+  criterion: Century Gothic 用於所有 communications；Ginger 不得由員工未經許可使用；Ginger Thin 小尺寸需避免，20pt 以上較適合；tints 建議使用 25%、55%、80% 以保持對比。
+  chapter: ch-03-02
+  chapter_title: Colours and Fonts
+- module: ''
+  criterion: A4 grids 使用 12mm margins 與 4mm gutters；A3 margin 使用 20mm；intro paragraphs 可比 body 大 2pt 且 leading 再加 2pt；quote
+    panel 可用 0.5mm/2px rules 分隔。
+  chapter: ch-03-03
+  chapter_title: Document Grids and Graphic Elements
+- module: Iconography System
+  criterion: tagline 只能用於文件結尾、back cover、final slide、video closing；不得右對齊；只可用黑或白；motif 不得省略、改色或變形；online social icons 應設 hyperlink。
+  chapter: ch-03-04
+  chapter_title: Tagline, Web Address, and Icons
+- module: ''
+  criterion: 同一文件不得混合彩色與黑白影像；施工照應避免或裁切凌亂工地；現場設備若有明顯他牌應替換；人員需穿戴至少 gloves、protective eyewear、appropriate footwear、hi-visibility
+    clothing。
+  chapter: ch-03-05
+  chapter_title: Photography and Video
+- module: ''
+  criterion: 使用者應下載正式 logo、palette、video、motif/tagline、icons，不得自行重建或截圖使用。
+  chapter: ch-05
+  chapter_title: Download Centre
+chapters:
+- id: ch-01
+  title: Who We Are
+  modules:
+  - Brand Strategy
+  - Design Process
+- id: ch-01-01
+  title: Our Global Mission
+  modules:
+  - Measurement
+  - Brand Strategy
+- id: ch-01-02
+  title: Our Guiding Principles
+  modules:
+  - Design Process
+  - Governance
+- id: ch-02
+  title: How We Look
+  modules:
+  - Brand Strategy
+  - Visual Language
+- id: ch-03
+  title: Our Toolkit
+  modules:
+  - Operations
+  - Visual Identity
+  - Governance
+- id: ch-03-01
+  title: Logo and Motif
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-03-02
+  title: Colours and Fonts
+  modules:
+  - Compliance
+  - Typography System
+  - Color System
+- id: ch-03-03
+  title: Document Grids and Graphic Elements
+  modules:
+  - Layout System
+  - Operations
+- id: ch-03-04
+  title: Tagline, Web Address, and Icons
+  modules:
+  - UI Components
+  - Operations
+  - Visual Identity
+- id: ch-03-05
+  title: Photography and Video
+  modules:
+  - Photography System
+  - AI-Checkable Rules
+  - Compliance
+- id: ch-04
+  title: In Practice
+  modules:
+  - Examples
+  - Operations
+- id: ch-05
+  title: Download Centre
+  modules:
+  - Operations
+  - Knowledge Architecture

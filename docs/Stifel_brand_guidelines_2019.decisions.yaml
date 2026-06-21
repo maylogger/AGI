@@ -1,0 +1,116 @@
+# L3 決策卡 sidecar — Stifel
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Stifel_brand_guidelines_2019
+decisions:
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 以 sub-brand containment 把 division／department／group／individual name 設計成從屬於 corporate logo 的「允許可變欄位」，而非開放式客製
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - 分支或顧問團隊需要可見性，但不得高於主品牌
+      - 企業品牌延伸應設計「允許的可變欄位」而非開放式客製
+    applicable_when:
+      industries: [public_sector, education, finance]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [multi_unit_consistency, multi_entity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 各單位自行創造分支品牌與專屬 tagline
+      - group name 比主品牌 logo 更顯著
+    evidence:
+      - brand_id: Stifel_brand_guidelines_2019
+        chapter: ch-01-02
+        excerpt: "sub-brand containment：department name、group name、individual name 都從屬於 corporate logo；group name 不得比 Stifel logo 更 prominent，未列明名稱需特別許可。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以輸出方式與背景條件決定 logo 顏色（blue preferred、white reversed、black grayscale fallback），而非開放自由配色
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - logo 色彩規範應明確連到輸出方式與背景品質
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: Stifel_brand_guidelines_2019
+        chapter: ch-01-01
+        excerpt: "數位與彩色印刷優先使用 Stifel Blue 或 white，黑版只用於黑白印刷或單色 imprints，影像背景不得干擾 logo（output-aware logo color selection）。"
+    status: extracted
+
+  - id: dp-restrained-palette-for-trust
+    title: 用克制的配色與權威主色傳達信任
+    problem:
+      statement: 受規範、以信任為核心的機構，若用高彩度或隨意配色會削弱權威與可信度。
+      signals: [trust, regulatory_compliance, public_trust, consistency_across_partners]
+    solution:
+      module: Color System
+      move: 以深色權威主色（Stifel Blue / Pantone 540）為錨，再用分層補充色與資訊圖表色受控擴充
+      layer: visual_core
+    reason:
+      - 信任型品牌的色彩應強調穩定與權威而非情緒刺激
+      - 金融資訊需要一組受控但足夠分類的色彩語言
+      - 限定主色與比例可在多市場維持一致辨識
+    applicable_when:
+      industries: [finance, public_sector]
+      brand_types: [institutional_public_trust, heritage_legacy]
+      conditions: [trust, regulatory_compliance]
+      archetypes: [brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Color System]
+      enables: [Accessibility, Design Tokens]
+    evidence:
+      - brand_id: Stifel_brand_guidelines_2019
+        chapter: ch-02
+        excerpt: "tiered palette：Level I 核心品牌色（Stifel Blue 必為 Pantone 540 / HEX #003057），Level II 有限補充色，Level III 限資訊圖表，Level IV 綁定資產類別。"
+    status: extracted
+
+  - id: dp-media-split-typography
+    title: 依媒介分流字體系統（print / digital / body）
+    problem:
+      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+      signals: [print_and_digital, readability, licensing]
+    solution:
+      module: Typography System
+      move: 區分 print 主字體與 digital web-safe 字體，並把最小字級與披露字級寫成可審核規則
+      layer: visual_core
+    reason:
+      - 不同媒介的可讀性與授權條件不同
+      - 金融 guideline 應把排版規則與法規披露連接
+    applicable_when:
+      industries: [finance, public_sector, education]
+      brand_types: []
+      conditions: [print_and_digital]
+      archetypes: [brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: []
+    examples:
+      - print 用 Meta Office、digital 用 Arial、disclosure 8pt、digital type 不低於 10pt
+    evidence:
+      - brand_id: Stifel_brand_guidelines_2019
+        chapter: ch-03
+        excerpt: "print communication 使用 Meta Office、digital formatting 使用 Arial；disclosure 通常 8pt，任何 type 不得低於 8pt、digital type 不低於 10pt。"
+    status: extracted

@@ -1,0 +1,91 @@
+# L3 決策卡 sidecar — The Economist Group
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: The_Economist_Group_2017
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先用 editorial worldview（獨立、嚴謹、好奇）與歷史傳統定錨，再讓字體、logo、色彩規則承接其意義
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 設計系統的可信度來自清楚的 editorial worldview；品牌不是風格集合，而是判斷世界的方式
+      - 知識型媒體品牌常先建立思想傳統，再進入視覺規則
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, media_entertainment]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: The_Economist_Group_2017
+        chapter: ch-01
+        excerpt: "用長篇歷史敘事與編輯立場建立品牌權威，而非直接從 logo 開始；所有視覺決策都應表現 rigour、independence、curiosity。"
+    status: extracted
+
+  - id: dp-editorial-typography-for-premium
+    title: 用具傳承感的編輯級襯線字體承載高端與精緻
+    problem:
+      statement: 高端品牌需要字體本身就傳達傳承、工藝與精緻，而不只是中性的資訊載體；錯用通用字體會讓品牌失去高級語感。
+      signals: [premium_perception, heritage, craftsmanship, editorial_feel]
+    solution:
+      module: Typography System
+      move: 以 heritage serif（Milo Serif）承載閱讀與傳承感、sans（Econ Sans）負責導覽與操作，並明訂字級、leading 與 old style figures
+      layer: visual_core
+    reason:
+      - 新聞品牌的視覺權威很大程度來自文字節奏與數字處理
+      - 字體 guideline 應明確描述數字樣式與 leading，而不只列字型名稱
+      - serif 負責閱讀/傳承、sans 負責導覽/操作的雙軸系統
+    applicable_when:
+      industries: [luxury_premium, media_entertainment]
+      brand_types: [premium_luxury, heritage_legacy]
+      conditions: [premium_perception, editorial_feel]
+      archetypes: [brand_experience_guide, full_brand_system]
+    dependencies:
+      requires: [Typography System]
+      enables: [Content Design]
+    examples:
+      - body copy 11pt 以下用 Milo Serif Text、headline 18pt 以上用 Milo Serif Medium、leading 為 font size 120%
+    evidence:
+      - brand_id: The_Economist_Group_2017
+        chapter: ch-02
+        excerpt: "editorial typography framework：serif for reading/heritage、sans for navigation/action；Milo Serif 用於 body copy 與 headline，Econ Sans 用於 subheadings/navigation/metadata。"
+    status: extracted
+
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 以 portfolio identity system 把 group、editorial、media business、EIU 等子品牌依用途分類，並共享核心 logo 的比例與留白規則
+      layer: governance
+    reason:
+      - 品牌家族需要一致的識別語法，但不同產品可保留名稱與媒介差異
+      - 多品牌系統應把 logo 家族依用途分類，而不是把所有資產平鋪
+    applicable_when:
+      industries: [public_sector, education, media_entertainment]
+      brand_types: [institutional_public_trust, platform_ecosystem, heritage_legacy]
+      conditions: [multi_unit_consistency, multi_entity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 把所有 logo 資產平鋪而不依用途分類
+    evidence:
+      - brand_id: The_Economist_Group_2017
+        chapter: ch-03-02
+        excerpt: "portfolio identity system：sub-brand logos grouped by editorial、media business、intelligence unit、apps/social icons；group logo clear space 與 core logo 一致。"
+    status: extracted

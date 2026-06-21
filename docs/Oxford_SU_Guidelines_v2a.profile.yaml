@@ -1,0 +1,177 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Oxford_SU_Guidelines_v2a
+index_ref: docs/Oxford_SU_Guidelines_v2a.index.yaml
+note_ref: docs/Oxford_SU_Guidelines_v2a.note.md
+archetype: brand_experience_guide
+industry: education
+modules:
+- Governance
+- Brand Architecture
+- AI-Checkable Rules
+- Color System
+- Typography System
+- Photography System
+- Content Design
+- Iconography System
+- Layout System
+- Examples
+- Operations
+- Voice and Tone
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 7
+  section_count: 6
+chapter_sequence:
+- id: ch-01
+  title: The Logo
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Versions
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Colour
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Clear space, sizes and placement
+  order: 3
+  level: 2
+- id: ch-01-04
+  title: Misuse, sub-brands, co-branding and pattern
+  order: 4
+  level: 2
+- id: ch-02
+  title: Colour
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: The palette
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Tints and combinations
+  order: 2
+  level: 2
+- id: ch-03
+  title: Typefaces and Typography
+  order: 3
+  level: 1
+- id: ch-04
+  title: Image Style
+  order: 4
+  level: 1
+- id: ch-05
+  title: Icons
+  order: 5
+  level: 1
+- id: ch-06
+  title: Applications
+  order: 6
+  level: 1
+- id: ch-07
+  title: Tone of Voice
+  order: 7
+  level: 1
+frameworks:
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-01
+  chapter_title: The Logo
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-01-01
+  chapter_title: Versions
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-01-04
+  chapter_title: Misuse, sub-brands, co-branding and pattern
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-02
+  chapter_title: Colour
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-03
+  chapter_title: Typefaces and Typography
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-04
+  chapter_title: Image Style
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-05
+  chapter_title: Icons
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-06
+  chapter_title: Applications
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-07
+  chapter_title: Tone of Voice
+patterns:
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-01
+  chapter_title: The Logo
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-01-01
+  chapter_title: Versions
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-01-04
+  chapter_title: Misuse, sub-brands, co-branding and pattern
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-02
+  chapter_title: Colour
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-03
+  chapter_title: Typefaces and Typography
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-04
+  chapter_title: Image Style
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-05
+  chapter_title: Icons
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-06
+  chapter_title: Applications
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-07
+  chapter_title: Tone of Voice
+rules_ai_checkable: []
+chapters:
+- id: ch-01
+  title: The Logo
+  modules:
+  - Governance
+- id: ch-01-04
+  title: Misuse, sub-brands, co-branding and pattern
+  modules:
+  - Brand Architecture
+  - AI-Checkable Rules
+- id: ch-02
+  title: Colour
+  modules:
+  - Color System
+- id: ch-03
+  title: Typefaces and Typography
+  modules:
+  - Typography System
+- id: ch-04
+  title: Image Style
+  modules:
+  - Photography System
+  - Content Design
+- id: ch-05
+  title: Icons
+  modules:
+  - Iconography System
+- id: ch-06
+  title: Applications
+  modules:
+  - Layout System
+  - Examples
+  - Operations
+- id: ch-07
+  title: Tone of Voice
+  modules:
+  - Content Design
+  - Voice and Tone

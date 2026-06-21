@@ -1,0 +1,93 @@
+title: "USA TODAY Corporate Brand Guidelines"
+source: "sources/USAToday_Online_Brand_guidelines_2014.pdf"
+version: "1.0"
+date: "2014-02-13"
+language: "en"
+summary: "USA TODAY 的 condensed corporate brand guidelines，涵蓋品牌原則、標誌、子品牌、色彩、字體、brand behaviors、語氣與治理聯絡方式。"
+chapters:
+  - id: "ch-01"
+    title: "Introduction"
+    level: 1
+    order: 1
+    pages: "3-5"
+    summary: "定義 USA TODAY 的使命、體驗原則與 manifesto，將品牌定位為全美共同理解與實用資訊平台。"
+    children:
+      - id: "ch-01-01"
+        title: "Who and What"
+        level: 2
+        order: 1
+        pages: "4"
+        summary: "提出 everywhere、useful、easily understood、unbiased、inventive 五項體驗原則。"
+      - id: "ch-01-02"
+        title: "Manifesto Story"
+        level: 2
+        order: 2
+        pages: "5"
+        summary: "以 USA now: The pulse of the nation 闡明廣泛、實用、視覺化與不偏不倚的品牌敘事。"
+  - id: "ch-02"
+    title: "Brand Rules"
+    level: 1
+    order: 2
+    pages: "6"
+    summary: "要求所有資產與 property 必須遵循 Masterbrand 規則，避免品牌碎裂。"
+  - id: "ch-03"
+    title: "The Logo"
+    level: 1
+    order: 3
+    pages: "7-24"
+    summary: "規範 USA TODAY Masterbrand logo 的許可、版本、留白、尺寸、應用、合作排列與禁用方式。"
+    children:
+      - id: "ch-03-01"
+        title: "Guidelines and Master Logo"
+        level: 2
+        order: 1
+        pages: "8-10"
+        summary: "說明標誌批准、指定 artwork、註冊符號、使用色彩與 master logo 構成。"
+      - id: "ch-03-02"
+        title: "Clearspace and Alternate Usage"
+        level: 2
+        order: 2
+        pages: "11-16"
+        summary: "以 U 字高度定義 clearspace，並對印刷、數位、小尺寸與 app icon 提供版本切換規則。"
+      - id: "ch-03-03"
+        title: "Reverse, Masthead, Partnership and Do Nots"
+        level: 2
+        order: 3
+        pages: "17-24"
+        summary: "定義背景反白優先序、新聞紙與線上 masthead 專用場景、合作排列與 12 項禁用情境。"
+  - id: "ch-04"
+    title: "The Sub-brands"
+    level: 1
+    order: 4
+    pages: "25-28"
+    summary: "定義 News、Money、Sports、Life、Travel、Tech 等垂直品牌的色彩分化與替代用法。"
+  - id: "ch-05"
+    title: "Color"
+    level: 1
+    order: 5
+    pages: "29-30"
+    summary: "建立 bright and modern core palette，以色彩協助讀者導航與辨識垂直內容。"
+  - id: "ch-06"
+    title: "Typography"
+    level: 1
+    order: 6
+    pages: "31-35"
+    summary: "介紹客製 Futura Today 字體、家族權重與螢幕字體替代規則。"
+  - id: "ch-07"
+    title: "Master Behaviors"
+    level: 1
+    order: 7
+    pages: "36-37"
+    summary: "把 logo 變成 editorial storytelling platform，透過攝影、向量、字體與手繪行為增加動態性。"
+  - id: "ch-08"
+    title: "Tone of Voice"
+    level: 1
+    order: 8
+    pages: "38-42"
+    summary: "定義 USA Now. The Pulse of the Nation 的品牌語言、受眾、溝通與 copy 規則。"
+  - id: "ch-09"
+    title: "Appendix"
+    level: 1
+    order: 9
+    pages: "43-44"
+    summary: "說明 guideline 會更新，並提供 brand team 聯絡與審核支援。"

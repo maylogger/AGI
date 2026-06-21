@@ -1,0 +1,337 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Coldwell_Banker_2020
+index_ref: docs/Coldwell_Banker_2020.index.yaml
+note_ref: docs/Coldwell_Banker_2020.note.md
+archetype: full_brand_system
+industry: luxury_premium
+modules:
+- Brand Strategy
+- Messaging
+- AI-Checkable Rules
+- Voice and Tone
+- Visual Identity
+- Legal and Trademark
+- Iconography System
+- Content Design
+- Typography System
+- Color System
+- Design Tokens
+- Photography System
+- Visual Language
+- Compliance
+- Operations
+- Brand Architecture
+- Governance
+depth:
+  strategy: high
+  visual: high
+  governance: high
+  top_level_chapter_count: 8
+  section_count: 9
+chapter_sequence:
+- id: ch-01
+  title: Core Values
+  order: 1
+  level: 1
+- id: ch-02
+  title: Logo, Logomark and Voice
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Logomark
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Voice
+  order: 3
+  level: 2
+- id: ch-03
+  title: Color and Typography
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Color Palette
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Typography
+  order: 2
+  level: 2
+- id: ch-04
+  title: Photography
+  order: 4
+  level: 1
+- id: ch-05
+  title: Applications
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Stationery
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Advertising and Collateral
+  order: 2
+  level: 2
+- id: ch-05-03
+  title: Social, Email and Event Materials
+  order: 3
+  level: 2
+- id: ch-05-04
+  title: Signage
+  order: 4
+  level: 2
+- id: ch-06
+  title: Identity Requirements
+  order: 6
+  level: 1
+- id: ch-07
+  title: Logo with DBA
+  order: 7
+  level: 1
+- id: ch-08
+  title: Closing
+  order: 8
+  level: 1
+frameworks:
+- name: brand values -> expression standards -> application governance
+  chapter: ch-01
+  chapter_title: Core Values
+- name: mark variants -> constraints -> accent usage -> voice behavior
+  chapter: ch-02
+  chapter_title: Logo, Logomark and Voice
+- name: format fit model：vertical/square materials 用 stacked，horizontal/limited space 用 horizontal
+  chapter: ch-02-01
+  chapter_title: Logo
+- name: primary identifier vs accent identifier
+  chapter: ch-02-02
+  chapter_title: Logomark
+- name: thoughtful imagery copy + informative credibility copy + clear headline
+  chapter: ch-02-03
+  chapter_title: Voice
+- name: neutral surface -> photographic color -> sparse specialty accents；serif elegance + sans clarity + geometric emphasis
+  chapter: ch-03
+  chapter_title: Color and Typography
+- name: primary surfaces + specialty functional accents
+  chapter: ch-03-01
+  chapter_title: Color Palette
+- name: font family -> emotional role -> channel fallback
+  chapter: ch-03-02
+  chapter_title: Typography
+- name: architecture context -> lived interior -> sensory detail
+  chapter: ch-04
+  chapter_title: Photography
+- name: asset type -> template options -> legal copy -> production source
+  chapter: ch-05
+  chapter_title: Applications
+- name: front/back options + contact hierarchy + legal ownership line
+  chapter: ch-05-01
+  chapter_title: Stationery
+- name: brand message -> property facts -> agent attribution -> legal protection
+  chapter: ch-05-02
+  chapter_title: Advertising and Collateral
+- name: channel dimensions -> typographic fallback -> disclaimer inclusion
+  chapter: ch-05-03
+  chapter_title: Social, Email and Event Materials
+- name: brand zone + contact zone + local compliance responsibility
+  chapter: ch-05-04
+  chapter_title: Signage
+- name: mark ownership -> approved DBA -> required disclaimer -> copy notation
+  chapter: ch-06
+  chapter_title: Identity Requirements
+- name: orientation -> character count -> line count -> scale/alignment rules
+  chapter: ch-07
+  chapter_title: Logo with DBA
+- name: brand line + legal close
+  chapter: ch-08
+  chapter_title: Closing
+patterns:
+- name: 高端品牌先定義 service belief，再定義 visual refinement。
+  chapter: ch-01
+  chapter_title: Core Values
+- name: 把主 logo 與可獨立使用的 logomark 分工，兼顧正式識別與媒介彈性。
+  chapter: ch-02
+  chapter_title: Logo, Logomark and Voice
+- name: 依版面方向選擇 logo 版本，而非任意縮放。
+  chapter: ch-02-01
+  chapter_title: Logo
+- name: seal-like monogram 可作為 luxury brand 的 social avatar pattern。
+  chapter: ch-02-02
+  chapter_title: Logomark
+- name: 用不同文案長度承擔不同功能：氛圍、證據、記憶。
+  chapter: ch-02-03
+  chapter_title: Voice
+- name: 讓色彩退居背景，把物件與人物變成真正的色彩來源。
+  chapter: ch-03
+  chapter_title: Color and Typography
+- name: digital palette 另列，避免 print palette 直接誤用到 UI。
+  chapter: ch-03-01
+  chapter_title: Color Palette
+- name: 同時規定 brand fonts 與 channel-safe substitutes。
+  chapter: ch-03-02
+  chapter_title: Typography
+- name: 三層攝影系統：大場景、室內體驗、細節證據。
+  chapter: ch-04
+  chapter_title: Photography
+- name: 同一版型提供 option 1/2，兼顧一致性與微彈性。
+  chapter: ch-05
+  chapter_title: Applications
+- name: 模板化個人化欄位。
+  chapter: ch-05-01
+  chapter_title: Stationery
+- name: 同一房源資料可轉譯到單頁、跨頁與 postcard。
+  chapter: ch-05-02
+  chapter_title: Advertising and Collateral
+- name: 數位素材規範需給出 pixel-level constraints。
+  chapter: ch-05-03
+  chapter_title: Social, Email and Event Materials
+- name: 用固定比例區塊管理 signage 資訊優先級。
+  chapter: ch-05-04
+  chapter_title: Signage
+- name: legal rule chapter 應提供 examples of inappropriate trade names。
+  chapter: ch-06
+  chapter_title: Identity Requirements
+- name: 以 character threshold 選擇 lockup template。
+  chapter: ch-07
+  chapter_title: Logo with DBA
+- name: 用一句品牌語作為記憶錨點。
+  chapter: ch-08
+  chapter_title: Closing
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：品牌敘事需包含 home joy、expertise、opportunity、exceptional delivery；不得只使用財富或排他性語彙定義 luxury。
+  chapter: ch-01
+  chapter_title: Core Values
+- module: Visual Identity
+  criterion: AI 可檢查：logo 不得小於 circular seal .375 inch；safety distance 至少等於 logomark 高度的 1/2；不得更改色彩、反白內部 star、替換字體、拉伸、傾斜、疊圖、作為文中元素；agent
+    logo 不得大於 Global Luxury logo 且需在 safety distance 外。
+  chapter: ch-02
+  chapter_title: Logo, Logomark and Voice
+- module: Visual Identity
+  criterion: AI 可檢查：logo 必須使用核准黑白版本；黑 box 周圍不得放 copy/graphics；不得用其他配色或字體。
+  chapter: ch-02-01
+  chapter_title: Logo
+- module: Visual Identity
+  criterion: AI 可檢查：logomark 不得 negative 使用；star 不得改成非白色；例外僅 blind emboss。
+  chapter: ch-02-02
+  chapter_title: Logomark
+- module: Voice and Tone
+  criterion: AI 可檢查：copy 應清楚、禮貌、資訊充分；不得過度誇張、粗俗、硬銷或不必要地複雜。
+  chapter: ch-02-03
+  chapter_title: Voice
+- module: ''
+  criterion: AI 可檢查：姓名、職稱、地址、電話、email、URL、license、independently owned line 需依模板存在；不得任意改變字距風格。
+  chapter: ch-05-01
+  chapter_title: Stationery
+- module: ''
+  criterion: AI 可檢查：價格、bed/bath、MLS/search line、COLDWELLBANKERLUXURY.COM、property disclaimer 不可缺；所有資訊需避免未驗證承諾。
+  chapter: ch-05-02
+  chapter_title: Advertising and Collateral
+- module: ''
+  criterion: AI 可檢查：email 使用 web safe fonts Times Italic/Arial Regular；layout 基於 600px x 900px；margins 40px；活動物料需保留 Each office
+    is independently owned and operated。
+  chapter: ch-05-03
+  chapter_title: Social, Email and Event Materials
+- module: ''
+  criterion: AI 可檢查：上方 2/3 保留公司品牌，下方 1/3 為聯絡資訊；variation 必須遵守 black/platinum design；使用者需確認地方 real estate regulations。
+  chapter: ch-05-04
+  chapter_title: Signage
+- module: ''
+  criterion: AI 可檢查：disclaimer 必須完整不可改；Coldwell Banker Global Luxury® 首次出現需加 ®；不得縮寫為 CB Global Luxury、CBGL 或複數化；COLDWELLBANKERLUXURY.COM
+    standalone 需 uppercase/no spaces。
+  chapter: ch-06
+  chapter_title: Identity Requirements
+- module: Visual Identity
+  criterion: AI 可檢查：vertical single-line DBA <=12 characters；vertical stacked single-line <=10 characters；horizontal single-line
+    <=10 characters；水平 stacked single-line <=12 characters；double-line preferred line length 約 12-15 或 13-15 characters；long
+    names 需 scale to guide box 並依規則對齊。
+  chapter: ch-07
+  chapter_title: Logo with DBA
+- module: ''
+  criterion: AI 可檢查：使用 closing legal copy 時不得刪改 trademark、ownership 與 Fair Housing/Equal Opportunity statement。
+  chapter: ch-08
+  chapter_title: Closing
+chapters:
+- id: ch-01
+  title: Core Values
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-02
+  title: Logo, Logomark and Voice
+  modules:
+  - AI-Checkable Rules
+  - Voice and Tone
+  - Visual Identity
+- id: ch-02-01
+  title: Logo
+  modules:
+  - Legal and Trademark
+  - Visual Identity
+- id: ch-02-02
+  title: Logomark
+  modules:
+  - Iconography System
+  - Visual Identity
+- id: ch-02-03
+  title: Voice
+  modules:
+  - Content Design
+  - Voice and Tone
+- id: ch-03
+  title: Color and Typography
+  modules:
+  - Typography System
+  - Color System
+  - Design Tokens
+- id: ch-03-01
+  title: Color Palette
+  modules:
+  - Color System
+- id: ch-03-02
+  title: Typography
+  modules:
+  - Typography System
+  - Voice and Tone
+- id: ch-04
+  title: Photography
+  modules:
+  - Photography System
+  - Visual Language
+- id: ch-05
+  title: Applications
+  modules:
+  - Compliance
+  - Operations
+- id: ch-05-02
+  title: Advertising and Collateral
+  modules:
+  - Compliance
+- id: ch-05-04
+  title: Signage
+  modules:
+  - Compliance
+- id: ch-06
+  title: Identity Requirements
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Compliance
+- id: ch-07
+  title: Logo with DBA
+  modules:
+  - Brand Architecture
+  - AI-Checkable Rules
+- id: ch-08
+  title: Closing
+  modules:
+  - Legal and Trademark
+  - Governance

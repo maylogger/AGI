@@ -1,0 +1,244 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: SAS_brand_creative_guide_2021
+index_ref: docs/SAS_brand_creative_guide_2021.index.yaml
+note_ref: docs/SAS_brand_creative_guide_2021.note.md
+archetype: brand_experience_guide
+industry: tech_software
+modules:
+- Brand Strategy
+- Knowledge Architecture
+- Content Design
+- Voice and Tone
+- Legal and Trademark
+- Visual Identity
+- UI Components
+- Color System
+- Accessibility
+- Typography System
+- Operations
+- Photography System
+- Data Visualization
+- Visual Language
+- Illustration System
+- Iconography System
+- Motion Identity
+- Examples
+- Governance
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 11
+  section_count: 0
+chapter_sequence:
+- id: ch-01
+  title: SAS Brand Identity
+  order: 1
+  level: 1
+- id: ch-02
+  title: SAS Voice
+  order: 2
+  level: 1
+- id: ch-03
+  title: SAS Logo
+  order: 3
+  level: 1
+- id: ch-04
+  title: SAS Colors
+  order: 4
+  level: 1
+- id: ch-05
+  title: SAS Typography
+  order: 5
+  level: 1
+- id: ch-06
+  title: SAS Imagery
+  order: 6
+  level: 1
+- id: ch-07
+  title: SAS Photography
+  order: 7
+  level: 1
+- id: ch-08
+  title: SAS Illustrations
+  order: 8
+  level: 1
+- id: ch-09
+  title: SAS Video
+  order: 9
+  level: 1
+- id: ch-10
+  title: Creative Application
+  order: 10
+  level: 1
+- id: ch-11
+  title: More to Come and Legal
+  order: 11
+  level: 1
+frameworks:
+- name: brand narrative framework：curiosity → progress → analytics authority → personality traits → expression consistency
+  chapter: ch-01
+  chapter_title: SAS Brand Identity
+- name: voice attribute framework：purpose → curiosity → wit → confidence → action
+  chapter: ch-02
+  chapter_title: SAS Voice
+- name: logo governance framework：identifier → S-Mark → spacing/size → approved applications → misuse library
+  chapter: ch-03
+  chapter_title: SAS Logo
+- name: color decision framework：palette → combination mood → proportion → contrast → ADA/UI/web variants
+  chapter: ch-04
+  chapter_title: SAS Colors
+- name: typography framework：brand font → acceptable fallback → hierarchy → layout orientation
+  chapter: ch-05
+  chapter_title: SAS Typography
+- name: layered image framework：human foreground → data midground → context background
+  chapter: ch-06
+  chapter_title: SAS Imagery
+- name: photography content framework：people → devices → environments → objects
+  chapter: ch-07
+  chapter_title: SAS Photography
+- name: illustration choice framework：message gap → flat/isometric/icon → brand emotion
+  chapter: ch-08
+  chapter_title: SAS Illustrations
+- name: video component framework：identity bug → accessibility captions → information lower third → audio mood
+  chapter: ch-09
+  chapter_title: SAS Video
+- name: application framework：channel → template → required assets → exception review
+  chapter: ch-10
+  chapter_title: Creative Application
+- name: rollout framework：current rules → upcoming templates → source of truth → legal footer
+  chapter: ch-11
+  chapter_title: More to Come and Legal
+patterns:
+- name: 先說 why/what，再說 how-to，是 creative guide 的基礎模式。
+  chapter: ch-01
+  chapter_title: SAS Brand Identity
+- name: 用人格形容詞約束句子風格，是內容設計可複用模式。
+  chapter: ch-02
+  chapter_title: SAS Voice
+- name: 把 logo 說成 endorsement 可提升遵循動機。
+  chapter: ch-03
+  chapter_title: SAS Logo
+- name: 把品牌色與產品 UI 色分層，是 SaaS 品牌常見成熟模式。
+  chapter: ch-04
+  chapter_title: SAS Colors
+- name: 用同一 fallback 支援 software/web/Office，是跨組織落地模式。
+  chapter: ch-05
+  chapter_title: SAS Typography
+- name: 用透明資料層搭配真實人與產業背景，是 B2B analytics 可複用模式。
+  chapter: ch-06
+  chapter_title: SAS Imagery
+- name: 以情緒與 subject taxonomy 控制素材庫，是品牌 DAM 可複用模式。
+  chapter: ch-07
+  chapter_title: SAS Photography
+- name: 先判斷照片是否足夠，再選插畫，是可複用決策模式。
+  chapter: ch-08
+  chapter_title: SAS Illustrations
+- name: 把影片拆成可審核元件，是跨團隊影片治理模式。
+  chapter: ch-09
+  chapter_title: SAS Video
+- name: 活動或 campaign 可有 word mark，但不得脫離 SAS 主品牌，是 campaign governance 模式。
+  chapter: ch-10
+  chapter_title: Creative Application
+- name: 把 upcoming assets 列出可降低使用者自行創建模板的機率。
+  chapter: ch-11
+  chapter_title: More to Come and Legal
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI 可檢查：品牌內容應能對應 smart、caring、bold、trustworthy 至少一項；不應只賣產品功能而完全缺少人類進步或 curiosity 語境。
+  chapter: ch-01
+  chapter_title: SAS Brand Identity
+- module: Voice and Tone
+  criterion: AI 可檢查：文案需直接、有意圖、避免空泛產品術語；可加入 curiosity 或 possibility；不得以過度冷硬、恐嚇或自我中心語氣表達。
+  chapter: ch-02
+  chapter_title: SAS Voice
+- module: Visual Identity
+  criterion: AI 可檢查：logo 應使用官方檔；需符合 clear space/minimum size；不得重繪、扭曲、改色或與 campaign mark 融合成單一 logo。
+  chapter: ch-03
+  chapter_title: SAS Logo
+- module: Color System
+  criterion: AI 可檢查：文字/背景需通過指定 contrast；UI/web 應使用對應 palette；色彩組合需屬 warm/cool/neutral 系統；不得任意新增非品牌色。
+  chapter: ch-04
+  chapter_title: SAS Colors
+- module: Typography System
+  criterion: AI 可檢查：品牌輸出優先 Avenir Next W1G；software/web/Office 可用 Inter；版面需遵循 hierarchy 與 horizontal/vertical layout，不得混用未授權字體。
+  chapter: ch-05
+  chapter_title: SAS Typography
+- module: ''
+  criterion: AI 可檢查：插畫應服務明確訊息；需符合 flat/isometric/icon 類型之一；不得使用與 SAS palette、texture 或 positivity 衝突的風格。
+  chapter: ch-08
+  chapter_title: SAS Illustrations
+- module: ''
+  criterion: AI 可檢查：影片需有規定 corner logo；字幕/closed captioning 可讀；lower thirds 使用正確字體/位置；music 不得蓋過訊息或違背品牌語氣。
+  chapter: ch-09
+  chapter_title: SAS Video
+- module: ''
+  criterion: AI 可檢查：event/campaign word mark 不得單獨出現；SAS logo 需近距離但不可整合進 word mark；mark 應以 Avenir Next 為主；需依 reach/audience/frequency
+    判斷是否需要獨立 mark。
+  chapter: ch-10
+  chapter_title: Creative Application
+chapters:
+- id: ch-01
+  title: SAS Brand Identity
+  modules:
+  - Brand Strategy
+  - Knowledge Architecture
+- id: ch-02
+  title: SAS Voice
+  modules:
+  - Content Design
+  - Voice and Tone
+- id: ch-03
+  title: SAS Logo
+  modules:
+  - Legal and Trademark
+  - Visual Identity
+- id: ch-04
+  title: SAS Colors
+  modules:
+  - UI Components
+  - Color System
+  - Accessibility
+- id: ch-05
+  title: SAS Typography
+  modules:
+  - Typography System
+  - Operations
+- id: ch-06
+  title: SAS Imagery
+  modules:
+  - Photography System
+  - Data Visualization
+  - Visual Language
+- id: ch-07
+  title: SAS Photography
+  modules:
+  - Photography System
+  - Brand Strategy
+- id: ch-08
+  title: SAS Illustrations
+  modules:
+  - Illustration System
+  - Iconography System
+- id: ch-09
+  title: SAS Video
+  modules:
+  - Motion Identity
+  - Content Design
+  - Accessibility
+- id: ch-10
+  title: Creative Application
+  modules:
+  - Examples
+  - Operations
+  - Governance
+- id: ch-11
+  title: More to Come and Legal
+  modules:
+  - Legal and Trademark
+  - Operations
+  - Governance

@@ -1,0 +1,139 @@
+# L4 情境知識 — 品牌定位類型 → 商業問題 / 強調模組 / 推薦決策卡
+# schema：research/schemas/context.schema.yaml
+#
+# 品牌類型是「定位視角」，與產業正交：同產業可有不同類型（如金融中既有 heritage
+# 大行，也有 challenger fintech）。推理引擎同時吃 industry + brand_type。
+
+kind: brand_type
+version: 1
+updated: "2026-06-21"
+
+entries:
+  - id: challenger
+    label: 挑戰者品牌
+    aliases: [challenger, 顛覆者, 新創挑戰, disruptor]
+    description: 以鮮明個性與差異化挑戰既有領導者，語言與視覺敢於對比。
+    business_problems: [differentiation, personality_expression, breakthrough_attention]
+    emphasize_modules: [Brand Strategy, Voice and Tone, Visual Language, Color System]
+    recommended_patterns:
+      - dp-personality-words-as-evaluation-criteria
+      - dp-bold-contrast-for-challenger
+    typical_archetypes: [full_brand_system, brand_experience_guide]
+    evidence_brands:
+      - MINI_CI_Guidelines_2013
+      - LucidMotors
+      - Discord_BrandGuideline_2021
+      - bambu_Brand_Style_Guide_2020
+
+  - id: category_creator
+    label: 品類創造者
+    aliases: [category creator, 開創者, 新品類, pioneer]
+    description: 創造或定義新品類，需投入市場教育並建立未來敘事。
+    business_problems: [category_education, high_education_cost, future_narrative, trust_in_new_tech]
+    emphasize_modules: [Brand Strategy, Messaging, Photography System, Visual Language]
+    recommended_patterns:
+      - dp-story-framework-category-education
+    typical_archetypes: [full_brand_system]
+    evidence_brands:
+      - Tesla_Guidelines_2010
+      - LucidMotors
+      - 3M_Visual_Identity_Guidelines_2015
+
+  - id: heritage_legacy
+    label: 傳承／歷史品牌
+    aliases: [heritage, legacy, 老牌, 歷史, 傳承]
+    description: 以歷史、信譽與延續性為資產，強調識別保護與一致性。
+    business_problems: [consistency_over_time, asset_protection, modernization_without_losing_equity]
+    emphasize_modules: [Visual Identity, Legal and Trademark, Governance, Typography System]
+    recommended_patterns:
+      - dp-asset-protection-for-legacy
+    typical_archetypes: [brand_experience_guide, corporate_toolkit]
+    evidence_brands:
+      - British_airways_brand_guidelines_2007
+      - DELL_BRANDBOOK_2010
+      - Nintendo_Corporate_Identity_Graphics_Standards_Manual_2008
+      - SONY
+
+  - id: premium_luxury
+    label: 高端／奢華品牌
+    aliases: [luxury, premium, 精品, 奢華, 高端]
+    description: 以工藝、稀缺與克制為訊號，少即是多。
+    business_problems: [craftsmanship, exclusivity, restraint, heritage]
+    emphasize_modules: [Visual Identity, Typography System, Photography System]
+    recommended_patterns:
+      - dp-restraint-as-luxury-signal
+      - dp-editorial-typography-for-premium
+      - dp-name-usage-governance
+      - dp-palette-roles-and-usage-limits
+    typical_archetypes: [brand_experience_guide, full_brand_system]
+    evidence_brands:
+      - Harrods_Brand_Guidelines
+      - Coldwell_Banker_2020
+      - CalvinKlein_Logo&GraphicGuidelines_2017
+
+  - id: institutional_public_trust
+    label: 機構／公共信任品牌
+    aliases: [institutional, public trust, 機構, 公共信任, 受規範]
+    description: 政府、金融、機構型品牌，以權威、可近用與治理效力為核心。
+    business_problems: [public_trust, regulatory_compliance, accessibility, multi_unit_consistency]
+    emphasize_modules: [Governance, Compliance, Accessibility, Brand Architecture]
+    recommended_patterns:
+      - dp-restrained-palette-for-trust
+      - dp-accessible-contrast-pairs
+      - dp-modular-manual-for-public-units
+      - dp-bilingual-identity-system
+      - dp-compliance-copy-as-layout-system
+    typical_archetypes: [brand_experience_guide, multi_brand_architecture]
+    evidence_brands:
+      - DFPI_BrandGuidelines
+      - Santander_EN
+      - Bern_Stadt_2021
+      - European_Committee_of_the_Regions_visual_identity_EN_2019
+
+  - id: platform_ecosystem
+    label: 平台／生態系品牌
+    aliases: [platform, ecosystem, 平台, 生態系, marketplace]
+    description: 有合作夥伴、商戶或第三方使用品牌的生態系，治理與授權是重心。
+    business_problems: [partner_governance, trademark_protection, ecosystem_consistency, cobranding]
+    emphasize_modules: [Legal and Trademark, Governance, Visual Identity, Operations]
+    recommended_patterns:
+      - dp-trademark-permission-flow
+      - dp-one-brand-one-voice-governance
+      - dp-responsible-framing-for-regulated-category
+    typical_archetypes: [multi_brand_architecture, brand_experience_guide, product_design_system]
+    evidence_brands:
+      - Paypal_Corporate_master_brand_guidelines_2013
+      - ZOOM_2022
+      - Tripadvisor_partners_2020
+      - Amazon_Echo_Alexa_Guidelines_External
+      - WouldBankGroup_Branding_Visual_Identity_Guidelines_2016
+
+  - id: mission_driven
+    label: 使命驅動品牌
+    aliases: [mission-driven, 使命驅動, 公益, 社會影響]
+    description: 以社會使命凝聚認同，常用 origin story 與參與感。
+    business_problems: [mission_communication, participation, equity_inclusion]
+    emphasize_modules: [Brand Strategy, Messaging, Photography System]
+    recommended_patterns:
+      - dp-origin-story-before-rules
+      - dp-inclusive-language-governance
+    typical_archetypes: [full_brand_system, brand_experience_guide]
+    evidence_brands:
+      - KABOOM_Brand Book_2020
+      - 2022_Special_Olympics_USA_Games_Brand_Guidelines_2020
+      - Brickline_Greenway_Brand_Guidlines_2020
+
+  - id: mass_consumer
+    label: 大眾消費品牌
+    aliases: [mass consumer, 大眾, 消費品, mainstream]
+    description: 面向廣大受眾、高頻觸點，需降低非設計者的執行門檻。
+    business_problems: [touchpoint_consistency, mass_recognition, ease_of_execution]
+    emphasize_modules: [Visual Identity, Operations, Layout System, Examples]
+    recommended_patterns:
+      - dp-cheatsheet-for-mass-touchpoints
+      - dp-system-toolkit-over-template
+    typical_archetypes: [brand_experience_guide, corporate_toolkit]
+    evidence_brands:
+      - McDonalds_Feel_Good_Design_Cheatsheets_2019
+      - accor_hotels_2015_compressed
+      - Heathrow_Brand_guidelines_2018

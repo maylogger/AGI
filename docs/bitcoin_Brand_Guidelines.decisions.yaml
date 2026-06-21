@@ -1,0 +1,90 @@
+# L3 決策卡 sidecar — Bitcoin.com Brand Style Guide
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: bitcoin_Brand_Guidelines
+decisions:
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗與照片複雜度建立對比決策樹，限定白／深色兩種標誌
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - 背景規則應以「允許背景集合」而非「無限自由」描述，複雜背景預設視為高風險
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: bitcoin_Brand_Guidelines
+        chapter: ch-03
+        excerpt: "背景決策框架：背景亮度／複雜度 → asset version → contrast check → forbidden effects；白底用標準、深灰/黑底用深色版、複雜背景視為高風險，並禁止 stretch、shadow、gradient、transparency。"
+    status: extracted
+
+  - id: dp-restrained-palette-for-trust
+    title: 用克制的配色與權威主色傳達信任
+    problem:
+      statement: 受規範、以信任為核心的機構，若用高彩度或隨意配色會削弱權威與可信度。
+      signals: [trust, public_trust, consistency_across_partners]
+    solution:
+      module: Color System
+      move: 以少量核准色值為主、點綴色克制，並把色彩限定為列出的核准值
+      layer: visual_core
+    reason:
+      - 信任型品牌的色彩應強調穩定與權威而非情緒刺激
+      - 加密品牌需要同時降低投機感與保留價值感；穩定性比刺激性更重要
+      - 用少量核心色維持品牌辨識，不擴張過多 secondary palette
+    applicable_when:
+      industries: [finance, tech_software, public_sector]
+      brand_types: [institutional_public_trust, challenger]
+      conditions: [trust]
+      archetypes: [brand_experience_guide, full_brand_system]
+    dependencies:
+      requires: [Color System]
+      enables: [Accessibility, Design Tokens]
+    anti_patterns:
+      - 自行新增色彩或使用未列出的色值
+      - 用過於刺激的配色暗示投機
+    evidence:
+      - brand_id: bitcoin_Brand_Guidelines
+        chapter: ch-01-01
+        excerpt: "以非斜體、較穩定字重、金色黃與鋼灰色把穩定、透明、產業感轉成視覺決策；灰色不得深到產生威脅或沉重感，穩定性比刺激性更重要。"
+      - brand_id: bitcoin_Brand_Guidelines
+        chapter: ch-04
+        excerpt: "只定義品牌黃 #FAB915 與品牌灰 #8B8B8B（含 RGB/CMYK），用少量核心色維持辨識，不擴張過多 secondary palette。"
+    status: extracted
+
+  - id: dp-contact-before-appendix
+    title: 在技術資料前先給治理窗口，讓 guideline 成為可改善系統
+    problem:
+      statement: 規則無法涵蓋所有情境，缺乏權威決策入口時，例外用法無人裁決。
+      signals: [exceptions_expected, governance]
+    solution:
+      module: Governance
+      move: 在主內容收尾處放置聯絡窗口與核准／回饋入口（escalation path）
+      layer: governance
+    reason:
+      - 規則無法涵蓋所有情境，必須提供權威決策入口
+      - guideline 應包含 owner 與 feedback channel，而非靜態文件
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [challenger]
+      conditions: [exceptions_expected]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Governance]
+      enables: [Operations]
+    evidence:
+      - brand_id: bitcoin_Brand_Guidelines
+        chapter: ch-07
+        excerpt: "結尾提供 press 與 art direction/branding 聯絡窗口作為 escalation path；素材若遇到未定義背景、版本或商標問題，應標記為需聯絡品牌窗口。"
+    status: extracted

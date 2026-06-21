@@ -1,0 +1,49 @@
+# L2 固定知識 — Accessibility
+# schema：research/schemas/module_knowledge.schema.yaml
+# 註：corpus 出現率僅 30.5%，但屬「應為固定但常被遺漏」的模組；
+# 對公共部門、金融、產品 UI 為實質必備。
+
+module: Accessibility
+slug: accessibility
+foundational: true
+layer: governance
+purpose: 確保色彩對比、文字可讀性、互動可及性符合無障礙標準，讓品牌對所有使用者可用。
+problem_when_absent: 對比不足、字級過小、互動無焦點狀態，排除部分使用者並可能違反無障礙法規。
+corpus_frequency:
+  doc_count: 39
+  pct: 30.5
+
+driven_by:
+  - input: compliance_needs
+    affects: accessibility_rigor
+    mapping:
+      - when: [accessibility, public_sector]
+        tend_to: [明確 WCAG 對比門檻, 可用文字色組合表, 替代文字與焦點規範]
+        evidence:
+          - { brand_id: MayorOfLondon_LOOK BOOK_2021 }
+          - { brand_id: Consistent_communications_Brand_Guidelines_2018 }
+  - input: primary_media
+    affects: accessibility_scope
+    mapping:
+      - when: [product_ui, digital]
+        tend_to: [互動焦點/狀態, 鍵盤可操作, 元件層級對比約束]
+        evidence:
+          - { brand_id: MSCI_Brand_guidelines_2021 }
+
+spec_dimensions:
+  - 色彩對比門檻（文字/背景）
+  - 可用文字色組合
+  - 最小字級與行高
+  - 替代文字 / 圖說
+  - 互動焦點與狀態（產品）
+
+related_decision_patterns:
+  - dp-accessible-contrast-pairs
+
+dependencies:
+  requires: [Color System]
+  recommends: [Typography System, UI Components]
+
+reference_brands:
+  - MayorOfLondon_LOOK BOOK_2021
+  - Consistent_communications_Brand_Guidelines_2018

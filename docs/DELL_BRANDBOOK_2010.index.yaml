@@ -1,0 +1,117 @@
+title: 'Dell Brand Identity Standards'
+source: 'sources/DELL_BRANDBOOK_2010.pdf'
+version: '2.0'
+date: 'February 2010'
+language: 'en'
+summary: 'Dell 的品牌識別標準，從 CEO 訊息開始，規範 logo、color、typography、graphic elements、imagery、voice availability 與資產取得方式。'
+chapters:
+  - id: 'ch-01'
+    title: 'A message from Michael'
+    level: 1
+    order: 1
+    pages: '1'
+    summary: '說明 Dell 品牌與視覺識別是競爭優勢、顧客感知與所有員工共同責任。'
+  - id: 'ch-02'
+    title: 'Logo'
+    level: 1
+    order: 2
+    pages: '1.1-1.9'
+    summary: '定義 Dell logo 的角色、clear space、minimum size、alternate logos、背景、禁用、partner/other lockups 與停用處理。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Logo overview'
+        level: 2
+        order: 1
+        pages: '1.1'
+        summary: '說明 Dell logo 作為 primary visual symbol 與 Dell Blue primary logo。'
+      - id: 'ch-02-02'
+        title: 'Clear space and minimum size'
+        level: 2
+        order: 2
+        pages: '1.2'
+        summary: '以 Dell 字樣 D 高度定義 clear space，最小尺寸為 0.5 inch 或 40px。'
+      - id: 'ch-02-03'
+        title: 'Alternate logos and backgrounds'
+        level: 2
+        order: 3
+        pages: '1.3-1.5'
+        summary: '規範 light gray、white、dark gray logo 與 primary/secondary impression、背景使用限制。'
+      - id: 'ch-02-04'
+        title: 'Incorrect usage and lockups'
+        level: 2
+        order: 4
+        pages: '1.6-1.8'
+        summary: '列出 logo 禁用、partner lockup、department/group lockup 的 spacing、rule 與 typography。'
+      - id: 'ch-02-05'
+        title: 'Discontinued treatments'
+        level: 2
+        order: 5
+        pages: '1.9'
+        summary: '要求停用舊 brand assets 並替換為新 logo。'
+  - id: 'ch-03'
+    title: 'Color'
+    level: 1
+    order: 3
+    pages: '2.1-2.4'
+    summary: '以 Dell Blue 為主軸，規範 primary/secondary colors、色值、不可使用 tint 與應用範例。'
+  - id: 'ch-04'
+    title: 'Typography'
+    level: 1
+    order: 4
+    pages: '3.1-3.6'
+    summary: '規範 Museo for Dell、Museo Sans for Dell、Trebuchet fallback、localized typefaces、typographic style 與停用字體。'
+  - id: 'ch-05'
+    title: 'Graphic elements'
+    level: 1
+    order: 5
+    pages: '4.1-4.3'
+    summary: '定義 rounded corners 作為強調資訊的圖形元素，規範尺寸、半徑、使用限制與範例。'
+  - id: 'ch-06'
+    title: 'Imagery'
+    level: 1
+    order: 6
+    pages: '5.1-5.7'
+    summary: '規範 lifestyle、product、supporting imagery、style、scaling/cropping 與 application examples，以 open、bright、active、authentic 表達 thriving。'
+    children:
+      - id: 'ch-06-01'
+        title: 'Lifestyle imagery'
+        level: 2
+        order: 1
+        pages: '5.2'
+        summary: '聚焦人們與組織透過 Dell 技術追求重要目標的真實場景。'
+      - id: 'ch-06-02'
+        title: 'Product imagery'
+        level: 2
+        order: 2
+        pages: '5.3'
+        summary: '以 straightforward、clean、uncluttered 方式呈現產品與使用價值。'
+      - id: 'ch-06-03'
+        title: 'Supporting imagery'
+        level: 2
+        order: 3
+        pages: '5.4'
+        summary: '用於敘事或抽象概念，需與 primary imagery 風格一致。'
+      - id: 'ch-06-04'
+        title: 'Imagery style and cropping'
+        level: 2
+        order: 4
+        pages: '5.5-5.6'
+        summary: '規範 natural lighting、motion、depth of field、color accents、scaling 與 cropping。'
+  - id: 'ch-07'
+    title: 'Voice'
+    level: 1
+    order: 7
+    pages: '6.1'
+    summary: '聲音標準預告於 2010-02-22 提供，未在此 PDF 展開。'
+  - id: 'ch-08'
+    title: 'How to find/request assets'
+    level: 1
+    order: 8
+    pages: '7.1'
+    summary: '說明透過 DAM 取得 logo、fonts 與 campaign creative，並提供 brand@dell.com。'
+  - id: 'ch-09'
+    title: 'Contact'
+    level: 1
+    order: 9
+    pages: '35'
+    summary: '提供 Dell Global Creative 地址與 brand@dell.com。'

@@ -1,0 +1,254 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: klarna_visual_identity_guidelines_2019
+index_ref: docs/klarna_visual_identity_guidelines_2019.index.yaml
+note_ref: docs/klarna_visual_identity_guidelines_2019.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- AI-Checkable Rules
+- Brand Strategy
+- Visual Language
+- Content Design
+- Design Process
+- Information Design
+- Legal and Trademark
+- Visual Identity
+- Governance
+- Typography System
+- Design Tokens
+- Color System
+- Photography System
+- Layout System
+- Voice and Tone
+- Localization
+- Operations
+- Knowledge Architecture
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 8
+  section_count: 4
+chapter_sequence:
+- id: ch-01
+  title: Introduction and Social Coherence Model
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Who We Are and Design Principles
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Disrupt, Attract, Engage, Join
+  order: 2
+  level: 2
+- id: ch-02
+  title: Trademarks
+  order: 2
+  level: 1
+- id: ch-03
+  title: Typography
+  order: 3
+  level: 1
+- id: ch-04
+  title: Colours
+  order: 4
+  level: 1
+- id: ch-05
+  title: Visuals
+  order: 5
+  level: 1
+- id: ch-06
+  title: Layout
+  order: 6
+  level: 1
+- id: ch-07
+  title: Tonality
+  order: 7
+  level: 1
+- id: ch-07-01
+  title: Tone of Voice and Smoooth
+  order: 1
+  level: 2
+- id: ch-07-02
+  title: Customer-Centric Writing
+  order: 2
+  level: 2
+- id: ch-08
+  title: Assets
+  order: 8
+  level: 1
+frameworks:
+- name: Social coherence model：Disrupt = brand awareness；Attract = product awareness；Engage = product understanding；Join =
+    pr...
+  chapter: ch-01
+  chapter_title: Introduction and Social Coherence Model
+- name: contrast-control framework：bold contrast 必須被 social coherence 和 simplicity 約束
+  chapter: ch-01-01
+  chapter_title: Who We Are and Design Principles
+- name: funnel-to-identity framework
+  chapter: ch-01-02
+  chapter_title: Disrupt, Attract, Engage, Join
+- name: trademark hierarchy framework：wordmark -> lockup/tagline -> symbol -> partner -> badge -> avatar -> initiative
+  chapter: ch-02
+  chapter_title: Trademarks
+- name: typographic hierarchy framework：Mega title、Mega section title、Title、Subheader、Paragraph、Mega paragraph、Numbers
+  chapter: ch-03
+  chapter_title: Typography
+- name: signature-colour dominance framework
+  chapter: ch-04
+  chapter_title: Colours
+- name: imagery-detail hierarchy：Campaigns/Situations -> Emotional/Simplified/Textures
+  chapter: ch-05
+  chapter_title: Visuals
+- name: logo-derived spacing system
+  chapter: ch-06
+  chapter_title: Layout
+- name: contextual tone framework：audience state + channel + journey stage -> formality, clarity, playfulness
+  chapter: ch-07
+  chapter_title: Tonality
+- name: plain-language + brand-term decision tree
+  chapter: ch-07-01
+  chapter_title: Tone of Voice and Smoooth
+- name: channel-tone matrix
+  chapter: ch-07-02
+  chapter_title: Customer-Centric Writing
+- name: DAM-backed guideline framework
+  chapter: ch-08
+  chapter_title: Assets
+patterns:
+- name: 目的 + 觀眾 take-out + 視覺強度 + 允許資產
+  chapter: ch-01
+  chapter_title: Introduction and Social Coherence Model
+- name: shout/whisper
+  chapter: ch-01-01
+  chapter_title: Who We Are and Design Principles
+- name: 使用目的 + 尺寸 + clearspace + 禁止自行創建
+  chapter: ch-02
+  chapter_title: Trademarks
+- name: Klarna Headline 承擔身份，Klarna Text 承擔數位可讀性。
+  chapter: ch-03
+  chapter_title: Typography
+- name: secondary colours 作支持，不與 Klarna Pink 混搭；Ming 被指定為 secondary CTA。
+  chapter: ch-04
+  chapter_title: Colours
+- name: 用 logo 字母高度轉換為空間 token，使 print/digital 共用規則。
+  chapter: ch-06
+  chapter_title: Layout
+- name: 用 decision tree 管理 `Smoooth` 是否可用，避免品牌詞過度泛化。
+  chapter: ch-07
+  chapter_title: Tonality
+- name: 每個 feature 應找到一個 clear benefit，而不是堆疊多個利益點。
+  chapter: ch-07-01
+  chapter_title: Tone of Voice and Smoooth
+- name: 同一品牌聲音在 Instagram 可偏 showroom，在 Facebook 可連結產品與客服，在 LinkedIn 偏 thought leadership。
+  chapter: ch-07-02
+  chapter_title: Customer-Centric Writing
+- name: 每個 trademark 以 Pink/Black/White 和 SVG/PNG/EPS 分發；字體以 OTF/Woff/Woff2/TTF/EOT 分發。
+  chapter: ch-08
+  chapter_title: Assets
+rules_ai_checkable:
+- module: ''
+  criterion: 若目標是 Join，不得使用 photography 或 emotional assets；若目標是 Engage，語氣需 human/simple 並以 feature illustrations 為主；Disrupt
+    可使用 campaign imagery 與較高 smoooth volume。
+  chapter: ch-01
+  chapter_title: Introduction and Social Coherence Model
+- module: ''
+  criterion: 設計不得在同一空間放入過多元素；若不確定，優先使用簡化構圖、bold headline 與單一色塊。
+  chapter: ch-01-01
+  chapter_title: Who We Are and Design Principles
+- module: ''
+  criterion: 不得用 Klarna Headline 自行打出 logotype；lockup 只能使用 `Smoooth payments` tagline；badge 不得放入 checkout；partner lockup 中
+    Klarna 應置右且視覺等重。
+  chapter: ch-02
+  chapter_title: Trademarks
+- module: Typography System
+  criterion: Mega title 最多 30 characters；所有文字應 left aligned；logo 不應 left aligned；paragraph 應使用指定 Klarna Text sizes/leading。
+  chapter: ch-03
+  chapter_title: Typography
+- module: ''
+  criterion: 不得為 Valentine's/Halloween 等使用非品牌 tactical colours；secondary colours 不得彼此混合或與 Klarna Pink 混合，除非是資訊圖且有黑色 outline。
+  chapter: ch-04
+  chapter_title: Colours
+- module: ''
+  criterion: 不得用 stock images 模仿 emotional visual world；simplified imagery 上只可放 typography 或 CTA buttons；texture 不得裝飾非 campaign
+    的 engage material。
+  chapter: ch-05
+  chapter_title: Visuals
+- module: Layout System
+  criterion: headline 最多四行且 preferably less；logo 通常置於 lower right margin；text always left aligned；banner margin 通常 30px，極小長條可例外縮小。
+  chapter: ch-06
+  chapter_title: Layout
+- module: ''
+  criterion: 靠近購買決策時文案需更清楚；不得寫 `hellooo`、`shooopping`、`invoooice`；`Smoooth` 不可描述單一 feature/product/process/company。
+  chapter: ch-07
+  chapter_title: Tonality
+chapters:
+- id: ch-01
+  title: Introduction and Social Coherence Model
+  modules:
+  - AI-Checkable Rules
+  - Brand Strategy
+  - Visual Language
+  - Content Design
+- id: ch-01-01
+  title: Who We Are and Design Principles
+  modules:
+  - Visual Language
+  - Design Process
+- id: ch-01-02
+  title: Disrupt, Attract, Engage, Join
+  modules:
+  - Information Design
+- id: ch-02
+  title: Trademarks
+  modules:
+  - Legal and Trademark
+  - Visual Identity
+  - Governance
+- id: ch-03
+  title: Typography
+  modules:
+  - Typography System
+  - Design Tokens
+- id: ch-04
+  title: Colours
+  modules:
+  - AI-Checkable Rules
+  - Color System
+- id: ch-05
+  title: Visuals
+  modules:
+  - Photography System
+  - Visual Language
+- id: ch-06
+  title: Layout
+  modules:
+  - Layout System
+  - Design Tokens
+- id: ch-07
+  title: Tonality
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+- id: ch-07-01
+  title: Tone of Voice and Smoooth
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+- id: ch-07-02
+  title: Customer-Centric Writing
+  modules:
+  - Localization
+  - Content Design
+  - Voice and Tone
+- id: ch-08
+  title: Assets
+  modules:
+  - Operations
+  - Knowledge Architecture

@@ -1,0 +1,73 @@
+title: "SAS Brand Creative Guide"
+source: "sources/SAS_brand_creative_guide_2021.pdf"
+version: "2021"
+date: "2021"
+language: "en"
+summary: "SAS Brand Creative Guide 以 curiosity 與 analytics 品牌定位為核心，統一 voice、logo、color、typography、imagery、photography、illustration、video 與 creative application。"
+chapters:
+  - id: "ch-01"
+    title: "SAS Brand Identity"
+    level: 1
+    order: 1
+    pages: "4-6"
+    summary: "說明品牌指南目的、master brand creative 與 smart/caring/bold/trustworthy personality。"
+  - id: "ch-02"
+    title: "SAS Voice"
+    level: 1
+    order: 2
+    pages: "7-10"
+    summary: "定義 purpose-driven、curiosity-led、charmingly witty 的語氣與應用。"
+  - id: "ch-03"
+    title: "SAS Logo"
+    level: 1
+    order: 3
+    pages: "11-16"
+    summary: "規範 SAS logo、S-Mark、clear space、minimum size、application 與 incorrect application。"
+  - id: "ch-04"
+    title: "SAS Colors"
+    level: 1
+    order: 4
+    pages: "17-26"
+    summary: "建立 palette、warm/cool/neutral combinations、proportion、contrast、ADA、UI 與 web color palette。"
+  - id: "ch-05"
+    title: "SAS Typography"
+    level: 1
+    order: 5
+    pages: "27-31"
+    summary: "指定 Avenir Next W1G 與 Inter fallback，並規範 hierarchy、horizontal/vertical layout。"
+  - id: "ch-06"
+    title: "SAS Imagery"
+    level: 1
+    order: 6
+    pages: "32-42"
+    summary: "以 visual idea、portrait/industry/at-work/object photo illustrations 與 abstract data illustration 建立混合影像語言。"
+  - id: "ch-07"
+    title: "SAS Photography"
+    level: 1
+    order: 7
+    pages: "43-47"
+    summary: "定義 portraits、people using devices、environments、objects，強調 empathy、innovation、optimism。"
+  - id: "ch-08"
+    title: "SAS Illustrations"
+    level: 1
+    order: 8
+    pages: "48-51"
+    summary: "規範 flat/isometric illustrations 與 icons，用色彩、texture、shape 表達 curiosity 與 positivity。"
+  - id: "ch-09"
+    title: "SAS Video"
+    level: 1
+    order: 9
+    pages: "52-56"
+    summary: "規定 corner logos、closed captioning、lower thirds 與 music，維持品牌品質與可近用性。"
+  - id: "ch-10"
+    title: "Creative Application"
+    level: 1
+    order: 10
+    pages: "57-67"
+    summary: "涵蓋 social media、email marketing、email signatures、outdoor、event and campaign marks。"
+  - id: "ch-11"
+    title: "More to Come and Legal"
+    level: 1
+    order: 11
+    pages: "68-70"
+    summary: "說明後續 template rollout 與商標/著作權聲明。"

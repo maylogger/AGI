@@ -1,0 +1,191 @@
+# L3 決策卡 sidecar — Formula 1 Master Brand Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: F1_Master_Brand_Guidelines_2017
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌不是單一標誌，而是組織如何行動與如何溝通
+      - 品牌故事章可作為後續視覺規則的語義 lint，不只是品牌宣言
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, media_entertainment]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: F1_Master_Brand_Guidelines_2017
+        chapter: ch-01
+        excerpt: "Our Story 先重寫 F1 品牌定位（media and entertainment brand with the soul of a racecar driver），讓後面的 aggressive typography、limited palette、tight layout 與 dramatic voice 有策略理由；品牌故事章可作為後續視覺規則的語義 lint。"
+    status: extracted
+
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 用人格詞集（Curious/Sharing/Free Thinking/Caring/Optimistic）當每個產出的檢查軸
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - voice attribute matrix：desired quality 對應 prohibited drift
+    applicable_when:
+      industries: [industrial_materials_science, nonprofit_social, media_entertainment]
+      brand_types: [challenger, category_creator, mission_driven]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Visual Language, Content Design]
+    evidence:
+      - brand_id: F1_Master_Brand_Guidelines_2017
+        chapter: ch-01
+        excerpt: "F1 必須 intense、commanding、charismatic、audacious；文案應避免 safe/familiar/generic words，設計表現需同時含 human/fan emotion 與 technical/racing cues，把人格詞轉成可檢查的創意準則。"
+    status: extracted
+
+  - id: dp-logo-vs-lockup-distinction
+    title: 區分 public-facing lockup 與 corporate logo 的使用場景
+    problem:
+      statement: 單一標誌資產被套用到所有情境，混淆對外溝通與企業署名，且難以同時治理法律與一致性。
+      signals: [multiple_logo_contexts, trademark, legal_governance]
+    solution:
+      module: Visual Identity
+      move: 明確區分 lockup 與 logo 的使用情境，並用 asset state + usage context + spatial/color/legal control 統一治理
+      layer: visual_core
+    reason:
+      - 標誌資產不可重建、不可任意改比例
+      - logo 選擇規則應由 audience context 與 legal/official context 驅動
+    applicable_when:
+      industries: [industrial_materials_science, finance, tech_software, media_entertainment]
+      brand_types: [heritage_legacy, platform_ecosystem]
+      conditions: [trademark]
+      archetypes: [brand_experience_guide, corporate_toolkit, multi_brand_architecture]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Legal and Trademark, Governance]
+    evidence:
+      - brand_id: F1_Master_Brand_Guidelines_2017
+        chapter: ch-02-01
+        excerpt: "F1 symbol 為 own channels default；需文字說明的 OOH/third-party communications 用 F1 Formula 1 logo；官方 sporting/accreditation 用 F1 Championship logo；越靠近第三方或官方賽事越需要 descriptor。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - logo guideline 應區分 artwork variant 的 optical purpose，避免只寫單一最小尺寸
+    applicable_when:
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+    evidence:
+      - brand_id: F1_Master_Brand_Guidelines_2017
+        chapter: ch-03
+        excerpt: "Standard logo clear space = logo 高度 50%、Display logo clear space = logo 高度 10%；以標誌高度作為留白量測基準，並依 display/standard/micro 建立 optical masters。"
+    status: extracted
+
+  - id: dp-bold-contrast-for-challenger
+    title: 用單一高彩度主色建立 equity，並以可用／禁用配色維持張力
+    problem:
+      statement: 挑戰者品牌需要在飽和市場中快速被認出並表達鮮明個性，溫和保守的配色會被淹沒。
+      signals: [differentiation, breakthrough_attention, personality_expression]
+    solution:
+      module: Color System
+      move: 以單一高彩度品牌主色（Blurple）建立辨識 equity，並明確列出「可用組合／禁用組合」維持張力與一致
+      layer: visual_core
+    reason:
+      - 品牌主色不一定大量使用，反而可透過少量高對比建立權威
+      - 色彩比例規範可把「少用主色」轉成實際審核標準
+    applicable_when:
+      industries: [tech_software, media_entertainment]
+      brand_types: [challenger]
+      conditions: [saturated_market, personality_expression]
+      archetypes: [brand_experience_guide, full_brand_system]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Color System, Accessibility]
+    anti_patterns:
+      - 開放任意配色稀釋主色 equity
+      - 在同一動態溝通中混用多套配色方案
+    evidence:
+      - brand_id: F1_Master_Brand_Guidelines_2017
+        chapter: ch-04-01
+        excerpt: "Warm Red #FF1E00 作 hero colour，僅作 highlight 或 impact background，不得使用 Warm Red tint，Carbon Black tints 只可 90/70/50/30%；紅色要保留力量，透過少量高對比建立權威。"
+    status: extracted
+
+  - id: dp-custom-typeface-as-identity-asset
+    title: 用專屬字體當識別資產，擺脫系統預設字並統一語氣
+    problem:
+      statement: 仰賴系統預設字體的品牌缺乏獨特性與一致語氣，跨媒介又常因字體缺失而失控；但又需要在無法安裝字型的環境保有 fallback。
+      signals: [identity_distinctiveness, system_consistency, brand_recognition, multi_media]
+    solution:
+      module: Typography System
+      move: 建立專屬企業字體（3M Circular）作為核心識別資產，並指定 web/system fallback 與字重、leading、kerning、字色規則
+      layer: visual_core
+    reason:
+      - 專屬字體系統讓品牌不再依賴 default fonts，並讓文字有共同語氣
+      - 字體規則可被轉為排版 lint，包括 font role、case、line length、leading 與 colour
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, media_entertainment]
+      brand_types: [category_creator, heritage_legacy, challenger]
+      conditions: [identity_distinctiveness, multi_media]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: [Design Tokens]
+    anti_patterns:
+      - 直接沿用系統字當品牌字體，缺乏 fallback 規範
+    evidence:
+      - brand_id: F1_Master_Brand_Guidelines_2017
+        chapter: ch-04-02
+        excerpt: "建立 F1 bespoke typeface family（Wide/Black 作 impact、Bold/Regular 作 inform、Titillium 作 long-read）；一次溝通只用一種 display headline font，字體本身就是品牌聲音。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - co-branding guideline 應提供 flexible container 與 optical balancing rules，而非只給靜態範例
+    applicable_when:
+      industries: [finance, tech_software, media_entertainment]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: F1_Master_Brand_Guidelines_2017
+        chapter: ch-06-02
+        excerpt: "horizontal bucket height 固定為 F1 logo height、clear space = partner logo 最大高度的 1/5、partner logo 最大高度為 bucket device 高度 2 倍且不得明顯壓過 F1；用可伸縮 holding device 解決不同 partner logo 比例的聯名問題。"
+    status: extracted

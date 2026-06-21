@@ -1,0 +1,94 @@
+title: 'Calvin Klein Logo & Graphic Guidelines'
+source: 'sources/CalvinKlein_Logo&GraphicGuidelines_2017.pdf'
+version: 'v01'
+date: '2017-06-16'
+language: 'en'
+summary: 'Calvin Klein 2017 rebranding 的 logo、品牌架構與 Klein 字體技術規範，重點在跨產品線標誌治理、比例、禁用規則與資產交付。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction'
+    level: 1
+    order: 1
+    pages: '1-8'
+    summary: '說明指南用途、品牌演化脈絡、Peter Saville 對 2017 識別的設計論述，以及產品線 logo 架構。'
+    children:
+      - id: 'ch-01-01'
+        title: 'How To Use These Guidelines'
+        level: 2
+        order: 1
+        pages: '5'
+        summary: '定義本文件是 Calvin Klein 2017 rebranding 的技術實作指南，涵蓋 logo、font、限制、尺寸、位置與檔名。'
+      - id: 'ch-01-02'
+        title: 'Brand Ethos and Historical Continuum'
+        level: 2
+        order: 2
+        pages: '6'
+        summary: '把新識別定位為從 1975、1992-2016 到 2017 的演化，透過大寫化與 Klein 字體維持歷史 DNA。'
+      - id: 'ch-01-03'
+        title: 'Logo Architecture Chart'
+        level: 2
+        order: 3
+        pages: '7-8'
+        summary: '把 Master Brand、By Appointment、205、Contemporary、Jeans、Underwear、Swimwear、Performance、Golf、Home、Watches & Jewelry、Outlet、Fragrance 對應到不同 logo 層級。'
+  - id: 'ch-02'
+    title: 'Logo Usage Guidelines'
+    level: 1
+    order: 2
+    pages: '9-158'
+    summary: '逐一規範 Calvin Klein 各業務線 logo 的用途、可用情境、clear space、scale、positioning、violations 與 artwork assets。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Master Brand and Corporate Logo'
+        level: 2
+        order: 1
+        pages: '10-16'
+        summary: '主品牌 logo 作為企業與多品牌生活方式通路的主要標誌，規範清距、位置、尺寸、違規使用與輸出檔。'
+      - id: 'ch-02-02'
+        title: 'Business Line Logos'
+        level: 2
+        order: 2
+        pages: '17-54'
+        summary: 'By Appointment、205、CK Calvin Klein、Better Sportswear & Classification 等業務線 logo 依產品層級與市場角色分流。'
+      - id: 'ch-02-03'
+        title: 'Category and Tier Logos'
+        level: 2
+        order: 3
+        pages: '55-111'
+        summary: 'Jeans、Underwear、Swimwear、Performance 以 premium、master、mainline、off-price 等層級管理 logo 版本與通路使用。'
+      - id: 'ch-02-04'
+        title: 'Specialized Category Logos'
+        level: 2
+        order: 4
+        pages: '112-158'
+        summary: 'Golf、Home、Watches & Jewelry、Fragrance、Outlet 依產品本身可否承載品牌語境，決定使用 master brand 或 205／專屬 logo。'
+      - id: 'ch-02-05'
+        title: 'Reusable Logo Rules Pattern'
+        level: 2
+        order: 5
+        pages: '13-158'
+        summary: '各 logo 章節重複使用 usage chart、clear space、scale & positioning、violations、artwork assets 的治理模板。'
+  - id: 'ch-03'
+    title: 'Klein Font Family Guidelines'
+    level: 1
+    order: 3
+    pages: '159-165'
+    summary: '介紹專屬 Klein 字體的品牌角色、字重資產、Roman／Italic／Condensed styles、使用條件、tracking 與 glyph chart。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Font Assets and Files'
+        level: 2
+        order: 1
+        pages: '160-163'
+        summary: '列出 Klein 45/55/65/75、Italic 與 Condensed 字體樣本與 OTF 檔名，形成可交付資產清單。'
+      - id: 'ch-03-02'
+        title: 'Font Usage Guidelines'
+        level: 2
+        order: 2
+        pages: '164'
+        summary: '依 text、display、small text 場景設定字重、tracking、leading 與使用限制，例如 display 不使用 Klein 75 Bold。'
+      - id: 'ch-03-03'
+        title: 'Glyph Chart'
+        level: 2
+        order: 3
+        pages: '165'
+        summary: '以完整字元集確認專屬字體可支援品牌所需的文字系統。'

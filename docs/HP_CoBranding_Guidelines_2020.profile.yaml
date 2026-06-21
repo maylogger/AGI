@@ -1,0 +1,210 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: HP_CoBranding_Guidelines_2020
+index_ref: docs/HP_CoBranding_Guidelines_2020.index.yaml
+note_ref: docs/HP_CoBranding_Guidelines_2020.note.md
+archetype: brand_experience_guide
+industry: tech_software
+modules:
+- Brand Strategy
+- Governance
+- Layout System
+- Examples
+- AI-Checkable Rules
+- Visual Identity
+- Legal and Trademark
+- Compliance
+- Operations
+- Content Safety
+depth:
+  strategy: low
+  visual: medium
+  governance: high
+  top_level_chapter_count: 7
+  section_count: 9
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Overview
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Branded Relationships
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Types of Co-branding
+  order: 3
+  level: 2
+- id: ch-02
+  title: Application
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Before We Dive
+  order: 1
+  level: 2
+- id: ch-03
+  title: Logo Treatment
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Spatial Configuration
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Lockup Configuration and Specs
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Multiple Logos
+  order: 3
+  level: 2
+- id: ch-04
+  title: HP-Led
+  order: 4
+  level: 1
+- id: ch-05
+  title: Partner-Led
+  order: 5
+  level: 1
+- id: ch-06
+  title: 50-50 Partnerships
+  order: 6
+  level: 1
+- id: ch-07
+  title: Terms and Resources
+  order: 7
+  level: 1
+- id: ch-07-01
+  title: Legal Information
+  order: 1
+  level: 2
+- id: ch-07-02
+  title: Morality Clause and Resources
+  order: 2
+  level: 2
+frameworks:
+- name: 判斷流程可從 relationship modality → lead brand → execution owner → visual configuration 逐步決定
+  chapter: ch-01
+  chapter_title: Introduction
+- name: application 判斷可分為 asset owner、look & feel、logo relationship、CTA/partner logo placeholder
+  chapter: ch-02
+  chapter_title: Application
+- name: 選擇 spatial 或 lockup 時需判斷是否 50-50、是否多品牌、誰主導、是否有 partner 特殊要求
+  chapter: ch-03
+  chapter_title: Logo Treatment
+- name: HP-led 資產可用 logo prominence、HP identity elements、partner placeholder proximity、口號使用限制檢查
+  chapter: ch-04
+  chapter_title: HP-Led
+- name: partner-led 檢查可分為 partner guideline compatibility、HP logo size、graphic clearance、spatial vs lockup choice
+  chapter: ch-05
+  chapter_title: Partner-Led
+- name: 50-50 決策框架為 communicator/CTA owner → audience ownership → market relevance → governing identity → optional neutral
+    lo...
+  chapter: ch-06
+  chapter_title: 50-50 Partnerships
+- name: 審核可分為 trademark use、trade name use、copyright/URL exclusion、mandatory disclaimer、morality fit、resource source
+  chapter: ch-07
+  chapter_title: Terms and Resources
+patterns:
+- name: 先分類合作關係，再指定視覺權重，是 co-branding guideline 的核心 pattern。
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 用低保真範例標記主導品牌，可避免將具體設計誤解為模板。
+  chapter: ch-02
+  chapter_title: Application
+- name: 用 X-based measurement 管理分隔線、留白與最小尺寸，是跨品牌 lockup 常見模式。
+  chapter: ch-03
+  chapter_title: Logo Treatment
+- name: 主品牌在 primary spot，合作品牌與 CTA 相近且較小，是 lead-brand asset pattern。
+  chapter: ch-04
+  chapter_title: HP-Led
+- name: 在外部 identity system 中嵌入自家 logo 規則，是跨品牌保護 pattern。
+  chapter: ch-05
+  chapter_title: Partner-Led
+- name: 在平等合作中加入 neutral branding，是避免品牌偏向影響受眾判斷的例外 pattern。
+  chapter: ch-06
+  chapter_title: 50-50 Partnerships
+- name: 在 guideline 尾段放 legal + resources，可讓執行者完成設計後進行發布前檢查。
+  chapter: ch-07
+  chapter_title: Terms and Resources
+rules_ai_checkable:
+- module: ''
+  criterion: 若合作只是短期 campaign、promotion 或 sales event，應視為 co-marketing；若沒有共同創造新產品或服務，不應宣稱為 co-branding；每份資產需明確判定 HP-led、Partner-led
+    或 50-50。
+  chapter: ch-01
+  chapter_title: Introduction
+- module: ''
+  criterion: 範例不得被當作 HP branded assets 的固定 template；資產需標明是 spatial 還是 lockup configuration；HP-led 資產應使用 HP identity elements，partner-led
+    資產應遵守 partner identity。
+  chapter: ch-02
+  chapter_title: Application
+- module: Visual Identity
+  criterion: spatial configuration 中 logo 不得堆疊、過近、重疊、放在對角或散落；lockup 最小留白建議 0.5x；lockup 最小尺寸不得低於 0.25 inch 或螢幕 20px；divider
+    line 為黑色 1pt；多 logo 使用需滿足參與投資、創意需要 logo、版面有足夠空間三項條件。
+  chapter: ch-03
+  chapter_title: Logo Treatment
+- module: ''
+  criterion: HP logo 必須大於 partner logo；若使用 lockup，HP logo 必須在 prime spot；Keep Reinventing 原則上不應用於 co-marketing，且不得出現在 lockup；partner
+    logo 與 CTA placeholder 應彼此接近且小於 HP logo。
+  chapter: ch-04
+  chapter_title: HP-Led
+- module: ''
+  criterion: HP logo 不得大於或比 partner logo 更 prominent；HP logo 需避開其他 graphic elements；partner-led lockup 只在雙方等量貢獻時使用；若 partner
+    guideline 不允許 lockup，需洽 Brand Central。
+  chapter: ch-05
+  chapter_title: Partner-Led
+- module: ''
+  criterion: 50-50 partnership always uses lockup configuration；若 HP-led，HP logo 在 lockup 左側；若 Partner-led，HP logo 在 lockup
+    右側；neutral branding 不得使用任一品牌的 typography、colors、icons、photography。
+  chapter: ch-06
+  chapter_title: 50-50 Partnerships
+- module: ''
+  criterion: HP 作為產品或服務修飾語時需大寫且與正文同字體；不得在溝通中加入 `©Copyright HP Development Company, L.P.`；不得加入導向 HP 網站、support center 或 HP
+    entity 的 URL；product-descriptive communications 需加入指定 warranty disclaimer；暴力、武器、歧視或性不當活動可被拒絕共同品牌或資助。
+  chapter: ch-07
+  chapter_title: Terms and Resources
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - Brand Strategy
+  - Governance
+- id: ch-02
+  title: Application
+  modules:
+  - Layout System
+  - Examples
+- id: ch-03
+  title: Logo Treatment
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Identity
+- id: ch-04
+  title: HP-Led
+  modules:
+  - Layout System
+  - Governance
+- id: ch-05
+  title: Partner-Led
+  modules:
+  - Governance
+- id: ch-06
+  title: 50-50 Partnerships
+  modules:
+  - Governance
+- id: ch-07
+  title: Terms and Resources
+  modules:
+  - Legal and Trademark
+  - Compliance
+  - Operations
+  - Content Safety

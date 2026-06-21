@@ -1,0 +1,236 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Quaint_Oak_Bank_Brand_Guidelines_2013
+index_ref: docs/Quaint_Oak_Bank_Brand_Guidelines_2013.index.yaml
+note_ref: docs/Quaint_Oak_Bank_Brand_Guidelines_2013.note.md
+archetype: full_brand_system
+industry: finance
+modules:
+- Brand Strategy
+- Voice and Tone
+- Messaging
+- AI-Checkable Rules
+- Visual Identity
+- Compliance
+- Layout System
+- Brand Architecture
+- Governance
+- Photography System
+- Typography System
+- Color System
+- Content Design
+- Operations
+depth:
+  strategy: high
+  visual: high
+  governance: high
+  top_level_chapter_count: 6
+  section_count: 5
+chapter_sequence:
+- id: ch-01
+  title: Mission, Essence, Promise, Values and Story
+  order: 1
+  level: 1
+- id: ch-02
+  title: Identity, Logo and Tagline
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo Usage
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Tagline
+  order: 2
+  level: 2
+- id: ch-03
+  title: Divisions and Master Brand Connection
+  order: 3
+  level: 1
+- id: ch-04
+  title: Visual and Advertising System
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Color and Signature Bar
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Necessary Copy
+  order: 2
+  level: 2
+- id: ch-04-03
+  title: Typography and Imagery
+  order: 3
+  level: 2
+- id: ch-05
+  title: Verbal Identity and Tone of Voice
+  order: 5
+  level: 1
+- id: ch-06
+  title: Contact
+  order: 6
+  level: 1
+frameworks:
+- name: 可抽象為「使命 -> 本質 -> 承諾 -> 價值 -> 故事」的品牌基礎堆疊
+  chapter: ch-01
+  chapter_title: Mission, Essence, Promise, Values and Story
+- name: Logo 使用框架包含組成完整性、色彩合法性、對齊、留白、標語位置與禁止變形
+  chapter: ch-02
+  chapter_title: Identity, Logo and Tagline
+- name: 完整性 -> 色彩 -> 對齊 -> 留白 -> 禁止項目
+  chapter: ch-02-01
+  chapter_title: Logo Usage
+- name: 使用情境分為 Logo lock-up、極橫式應用、headline/body/salutation
+  chapter: ch-02-02
+  chapter_title: Tagline
+- name: Master brand -> division identity -> endorsement line -> tagline compatibility
+  chapter: ch-03
+  chapter_title: Divisions and Master Brand Connection
+- name: 色彩系統 -> 版面容器 -> 法規資訊 -> 字體階層 -> 影像語氣
+  chapter: ch-04
+  chapter_title: Visual and Advertising System
+- name: 主色 -> 輔色 -> tint -> headline/background 搭配
+  chapter: ch-04-01
+  chapter_title: Color and Signature Bar
+- name: 依 division 類型決定 necessary copy set
+  chapter: ch-04-02
+  chapter_title: Necessary Copy
+- name: 字體階層 + 影像性格 + headline 簡潔度
+  chapter: ch-04-03
+  chapter_title: Typography and Imagery
+- name: Voice rules -> headline energy -> image-copy complementarity -> style mechanics
+  chapter: ch-05
+  chapter_title: Verbal Identity and Tone of Voice
+- name: 問題 -> 聯絡品牌團隊 -> 查詢最新版 -> 下載官方素材
+  chapter: ch-06
+  chapter_title: Contact
+patterns:
+- name: 先以組織信念定義品牌，再進入視覺規範，是適合服務業與金融業的 guideline pattern。
+  chapter: ch-01
+  chapter_title: Mission, Essence, Promise, Values and Story
+- name: 使用字母寬度作為 clearspace unit，是品牌 guideline 中常見的內生比例方法。
+  chapter: ch-02
+  chapter_title: Identity, Logo and Tagline
+- name: 銀行品牌透過 established year 強化穩定與傳承。
+  chapter: ch-02-01
+  chapter_title: Logo Usage
+- name: 服務品牌可讓 tagline 同時作為視覺元件與語氣樣本。
+  chapter: ch-02-02
+  chapter_title: Tagline
+- name: 母品牌背書型架構適合金融集團與地方服務組合。
+  chapter: ch-03
+  chapter_title: Divisions and Master Brand Connection
+- name: 將 compliance copy 設計成固定區塊，是受監管產業非常可重用的 pattern。
+  chapter: ch-04
+  chapter_title: Visual and Advertising System
+- name: 金融廣告可透過固定底部或邊界區整合識別與必要資訊。
+  chapter: ch-04-01
+  chapter_title: Color and Signature Bar
+- name: 必填欄位
+  chapter: ch-04-02
+  chapter_title: Necessary Copy
+- name: 社群銀行常用人物直視鏡頭、自然力量與地方象徵建立信任。
+  chapter: ch-04-03
+  chapter_title: Typography and Imagery
+- name: 把 tone adjectives 後接可檢查寫作規則，是 voice guideline 的高品質做法。
+  chapter: ch-05
+  chapter_title: Verbal Identity and Tone of Voice
+- name: Guideline 結尾的 contact page 是 governance safeguard。
+  chapter: ch-06
+  chapter_title: Contact
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查準則：品牌文案應包含 customer service、community、integrity 或 equivalent trust cue；不得以冷漠、誇張或純促銷語氣取代服務承諾。
+  chapter: ch-01
+  chapter_title: Mission, Essence, Promise, Values and Story
+- module: Visual Identity
+  criterion: AI 可檢查準則：Logo 不得拆分 symbol 與 wordmark；不得改變比例、排列、字體、外框、陰影或特效；clearspace 至少等於 Quaint Oak wordmark 中 U 的寬度；文字中標語使用
+    sentence capitalization「In your best interest.」。
+  chapter: ch-02
+  chapter_title: Identity, Logo and Tagline
+- module: Visual Identity
+  criterion: AI 可檢查準則：可用色彩限 Quaint Oak Red + PMS Black 7m、solid black、solid white；baseline 必須與 symbol ground level 對齊；不得移除
+    symbol、改字體或加效果。
+  chapter: ch-02-01
+  chapter_title: Logo Usage
+- module: Brand Strategy
+  criterion: AI 可檢查準則：division logo 必須包含「A Quaint Oak Bank Company」；該文字寬度等於 wordmark 中 Quaint 的寬度；距 wordmark baseline 的距離為
+    endorsement 自身高度的兩倍；與 tagline 共用時需遵守 page 7 標語規則。
+  chapter: ch-03
+  chapter_title: Divisions and Master Brand Connection
+- module: Color System
+  criterion: AI 可檢查準則：不得使用 50% tint 作為反白標題色；signature bar 應保留 Logo clear space；色彩需使用列出的 Pantone/CMYK/RGB/HEX 對應值。
+  chapter: ch-04-01
+  chapter_title: Color and Signature Bar
+- module: ''
+  criterion: AI 可檢查準則：Bank 版本需含 Member FDIC、Equal Housing Lender、QuaintOak.com、NMLS 815841；Mortgage 版本需含 Equal Housing Lender
+    與 NMLS 211466；Abstract 投資/保險聲明需包含 NOT A DEPOSIT、NOT FDIC-INSURED、NOT GUARANTEED、MAY GO DOWN IN VALUE。
+  chapter: ch-04-02
+  chapter_title: Necessary Copy
+- module: Voice and Tone
+  criterion: AI 可檢查準則：句子應短而清楚；優先主動語態；headline 優先使用 strong verb；圖片已表達的內容不得被文案重複；headline 使用 sentence case；contractions 僅在非正式情境謹慎使用。
+  chapter: ch-05
+  chapter_title: Verbal Identity and Tone of Voice
+chapters:
+- id: ch-01
+  title: Mission, Essence, Promise, Values and Story
+  modules:
+  - Brand Strategy
+  - Voice and Tone
+  - Messaging
+- id: ch-02
+  title: Identity, Logo and Tagline
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02-01
+  title: Logo Usage
+  modules:
+  - Compliance
+- id: ch-02-02
+  title: Tagline
+  modules:
+  - Layout System
+  - Messaging
+- id: ch-03
+  title: Divisions and Master Brand Connection
+  modules:
+  - Brand Architecture
+  - Governance
+- id: ch-04
+  title: Visual and Advertising System
+  modules:
+  - Photography System
+  - Layout System
+  - Compliance
+  - Typography System
+- id: ch-04-01
+  title: Color and Signature Bar
+  modules:
+  - Layout System
+  - Color System
+- id: ch-04-02
+  title: Necessary Copy
+  modules:
+  - AI-Checkable Rules
+  - Compliance
+- id: ch-04-03
+  title: Typography and Imagery
+  modules:
+  - Photography System
+  - Typography System
+- id: ch-05
+  title: Verbal Identity and Tone of Voice
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+- id: ch-06
+  title: Contact
+  modules:
+  - Operations
+  - Governance

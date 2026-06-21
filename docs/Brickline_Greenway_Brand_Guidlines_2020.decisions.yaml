@@ -1,0 +1,115 @@
+# L3 決策卡 sidecar — Brickline Greenway Brand Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Brickline_Greenway_Brand_Guidlines_2020
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先用 Big Idea → Commitment → Tone → Attributes → Principles 定義 civic role，再進入視覺系統
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 公共品牌 guideline 應先定義 civic role，再定義視覺系統，否則容易變成施工專案識別
+    applicable_when:
+      industries: [public_sector, nonprofit_social, education]
+      brand_types: [institutional_public_trust, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Voice and Tone, Messaging]
+    anti_patterns:
+      - 只談建設本身而忽略人、地方與共同參與
+    evidence:
+      - brand_id: Brickline_Greenway_Brand_Guidlines_2020
+        chapter: ch-01
+        excerpt: "platform framework：Big Idea → Commitment → Tone → Attributes → Principles，把 Greenway 從基礎設施專案提升為城市共同體品牌；對外訊息應可連回 opening up the city 或 bringing us together。"
+    status: extracted
+
+  - id: dp-one-brand-one-voice-governance
+    title: 以「one brand, one voice」治理目標收束跨產品跨夥伴的一致性
+    problem:
+      statement: 跨地區、跨產品、跨商戶的大型品牌，若缺乏統一治理目標，每個團隊各自詮釋會讓品牌在不同媒介中碎裂。
+      signals: [consistency_across_partners, ecosystem_consistency, brand_fragmentation_risk]
+    solution:
+      module: Governance
+      move: 提供 messaging toolkit（story、principles、audience、tone vocabulary、sample messages、do/don'ts、compliance checks），讓非品牌團隊也能產生一致內容
+      layer: governance
+    reason:
+      - 將品牌規範拆成可被非品牌團隊使用、可檢查的知識結構管理一致性
+      - 多利害關係人的設計系統需要 messaging toolkit，而不是只交付 logo files
+    applicable_when:
+      industries: [public_sector, nonprofit_social, finance]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [consistency_across_partners]
+      archetypes: [corporate_toolkit, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Governance]
+    anti_patterns:
+      - 只交付 logo files 而無 messaging toolkit
+    evidence:
+      - brand_id: Brickline_Greenway_Brand_Guidlines_2020
+        chapter: ch-02
+        excerpt: "Messaging Toolkit 以 brand story、principles、audience、tone/vocabulary、sample messages 與 do/don'ts 降低多方協作中的語氣漂移，讓不同夥伴、社群與機構用一致語言說明 Greenway。"
+    status: extracted
+
+  - id: dp-accessible-contrast-pairs
+    title: 把可近用性前置成核准對比配色，而非設計者自行判斷
+    problem:
+      statement: 公共資訊面向全體市民與輔助科技，若放任設計者自由配色，容易產生不符合無障礙標準、身心障礙者無法閱讀的組合。
+      signals: [accessibility, public_trust, inclusive_audience]
+    solution:
+      module: Accessibility
+      move: 把色彩與對比合併，明訂 contrast ratios 與核准色彩搭配，作為公共材料前提
+      layer: visual_core
+    reason:
+      - 公共機構不應把可近用性視為加分項，而是最低標準
+      - 在公共空間 guideline 中，color chapter 應明確包含 contrast，因它直接影響可近性與法規風險
+    applicable_when:
+      industries: [public_sector, education]
+      brand_types: [institutional_public_trust]
+      conditions: [accessibility, inclusive_audience]
+      archetypes: [brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Color System]
+      enables: [Governance]
+    anti_patterns:
+      - 使用未核准色或不符指定 contrast ratios 的色彩組合
+    evidence:
+      - brand_id: Brickline_Greenway_Brand_Guidlines_2020
+        chapter: ch-04-01
+        excerpt: "color system 包含 color palette、contrast ratios 與 usage：色彩組合需符合指定 contrast ratios，不得使用未核准色，並以對比比率治理色彩。"
+    status: extracted
+
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 用 endorsement hierarchy → lockup rules 處理母組織與子專案的背書關係，應用物須保留子品牌主體識別
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - 公共品牌常需在倡議、施工、社群與營運中轉換身份，因此必須規範背書與應用層級
+    applicable_when:
+      industries: [public_sector, education]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [multi_unit_consistency, multi_entity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: Brickline_Greenway_Brand_Guidlines_2020
+        chapter: ch-06
+        excerpt: "governance-to-application framework：endorsement hierarchy → lockup rules → templates → spatial translation；GRG lockup 需核准比例，應用物需保留 Brickline Greenway 主體識別。"
+    status: extracted

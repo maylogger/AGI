@@ -1,0 +1,74 @@
+title: 'Starling Bank Brand Guidelines'
+source: 'sources/starling_bank_brand_guidelines.pdf'
+version: '2.1'
+language: 'en'
+summary: '這份文件是 Starling Bank 針對線上使用情境的精簡品牌規範，聚焦於標誌套件、清除空間、色彩版本與核心色盤。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction and Scope'
+    level: 1
+    order: 1
+    pages: '1'
+    summary: '說明文件用途限於 logo suite、brand colours 與 online use，並提供下載標誌資產的入口。'
+  - id: 'ch-02'
+    title: 'Horizontal Logo System'
+    level: 1
+    order: 2
+    pages: '2-4'
+    summary: '定義水平標誌的構造、最小高度、清除空間與在不同背景上的色彩版本選擇。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Construction and Minimum Size'
+        level: 2
+        order: 1
+        pages: '2'
+        summary: '標誌基於簡單形狀構成，線上高度不得小於 20px。'
+      - id: 'ch-02-02'
+        title: 'Clearspace'
+        level: 2
+        order: 2
+        pages: '3'
+        summary: '水平標誌周圍清除空間等於 S mark 的一半。'
+      - id: 'ch-02-03'
+        title: 'Colourways'
+        level: 2
+        order: 3
+        pages: '4'
+        summary: '白底與淺色背景優先使用 primary colourway，深色背景使用 light colourway，亮色背景使用 white colourway。'
+  - id: 'ch-03'
+    title: 'Vertical Logo System'
+    level: 1
+    order: 3
+    pages: '5-7'
+    summary: '定義垂直標誌的使用條件、最小高度、清除空間與背景色彩版本。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Use Case and Minimum Size'
+        level: 2
+        order: 1
+        pages: '5'
+        summary: '垂直標誌適合置中、獨立與大量留白的情境，高度不得小於 60px。'
+      - id: 'ch-03-02'
+        title: 'Clearspace'
+        level: 2
+        order: 2
+        pages: '6'
+        summary: '垂直標誌周圍清除空間同樣等於 S mark 的一半。'
+      - id: 'ch-03-03'
+        title: 'Colourways'
+        level: 2
+        order: 3
+        pages: '7'
+        summary: '垂直標誌沿用水平標誌的背景與色彩版本邏輯。'
+  - id: 'ch-04'
+    title: 'Colour Palette'
+    level: 1
+    order: 4
+    pages: '8'
+    summary: '列出 core、neutral、accent 色彩與 RGB、HEX、CMYK 數值，形成線上品牌色彩基礎。'
+  - id: 'ch-05'
+    title: 'Contact'
+    level: 1
+    order: 5
+    pages: '9'
+    summary: '提供品牌使用問題的聯絡信箱。'

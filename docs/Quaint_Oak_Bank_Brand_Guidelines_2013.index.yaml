@@ -1,0 +1,75 @@
+title: "The Quaint Oak Bank Brand Guidelines"
+source: "sources/Quaint_Oak_Bank_Brand_Guidelines_2013.pdf"
+version: "v1.2"
+date: "2012-07-10"
+language: "en"
+summary: "Quaint Oak Bank 的品牌指南，結合使命、Logo、分支品牌、色彩、廣告必要資訊、字體、影像與語氣規範。"
+chapters:
+  - id: "ch-01"
+    title: "Mission, Essence, Promise, Values and Story"
+    level: 1
+    order: 1
+    pages: "2-3"
+    summary: "定義品牌的人本服務承諾、社群根基、四個價值支柱與故事基礎。"
+  - id: "ch-02"
+    title: "Identity, Logo and Tagline"
+    level: 1
+    order: 2
+    pages: "4-8"
+    summary: "規範 Logo 組成、色彩、對齊、留白、錯誤用法與 In your best interest 標語位置。"
+    children:
+      - id: "ch-02-01"
+        title: "Logo Usage"
+        level: 2
+        order: 1
+        pages: "4-6"
+        summary: "定義 symbol、wordmark、1926、色彩、對齊、clearspace 與禁止使用方式。"
+      - id: "ch-02-02"
+        title: "Tagline"
+        level: 2
+        order: 2
+        pages: "7-8"
+        summary: "定義標語含義、偏好 lock-up、替代位置與文案中的大小寫使用。"
+  - id: "ch-03"
+    title: "Divisions and Master Brand Connection"
+    level: 1
+    order: 3
+    pages: "9-11"
+    summary: "定義 Banking、Real Estate、Mortgage、Insurance/Abstract 等分支與母品牌連結方式。"
+  - id: "ch-04"
+    title: "Visual and Advertising System"
+    level: 1
+    order: 4
+    pages: "12-19"
+    summary: "規範色彩、tint、signature bar、必要法規資訊、Typography、Imagery 與象徵用法。"
+    children:
+      - id: "ch-04-01"
+        title: "Color and Signature Bar"
+        level: 2
+        order: 1
+        pages: "12-14"
+        summary: "提供 Pantone、CMYK、RGB、HEX 色彩與廣告底部 signature bar。"
+      - id: "ch-04-02"
+        title: "Necessary Copy"
+        level: 2
+        order: 2
+        pages: "15-16"
+        summary: "定義 URL、FDIC、EHL、Equal Housing Lender、copyright 與 NMLS 等必要資訊。"
+      - id: "ch-04-03"
+        title: "Typography and Imagery"
+        level: 2
+        order: 3
+        pages: "17-19"
+        summary: "定義 Myriad Pro 字體、字級行距準則、影像性格與簡潔廣告語。"
+  - id: "ch-05"
+    title: "Verbal Identity and Tone of Voice"
+    level: 1
+    order: 5
+    pages: "20-22"
+    summary: "定義品牌聲音、短句、主動語態、真實故事、溫暖友善自信語氣與 headline 寫作。"
+  - id: "ch-06"
+    title: "Contact"
+    level: 1
+    order: 6
+    pages: "23"
+    summary: "提供品牌問題聯絡方式、版本更新與素材下載資訊。"

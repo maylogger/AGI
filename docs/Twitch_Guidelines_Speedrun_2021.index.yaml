@@ -1,0 +1,74 @@
+title: "Twitch Identity Guidelines (Speedrun Edition)"
+source: "sources/Twitch_Guidelines_Speedrun_2021.pdf"
+version: "2.0"
+date: "2021-01-07"
+language: "en"
+summary: "Twitch speedrun 版品牌識別規範，涵蓋品牌敘事、logo、lockup、色彩、字體、版面、voice 與使用授權提醒。"
+chapters:
+  - id: "ch-01"
+    title: "Brand Narrative"
+    level: 1
+    order: 1
+    pages: "1-4"
+    summary: "以 multiplayer、collective cast、community energy 建立 Twitch 品牌世界觀。"
+  - id: "ch-02"
+    title: "Logos"
+    level: 1
+    order: 2
+    pages: "5"
+    summary: "定義 wordmark、extruded wordmark、Glitch 與 clearspace 的角色。"
+  - id: "ch-03"
+    title: "Logo Lockups"
+    level: 1
+    order: 3
+    pages: "6-7"
+    summary: "定義內部與合作 lockup 的對齊、cap height、x-height 與 spacing。"
+  - id: "ch-04"
+    title: "Color"
+    level: 1
+    order: 4
+    pages: "8-11"
+    summary: "定義 core palette、secondary palette 與 core communications 的 logo color pairings。"
+    children:
+      - id: "ch-04-01"
+        title: "Core Palette"
+        level: 2
+        order: 1
+        pages: "8"
+        summary: "定義 Twitch Purple、Black Ops、Ice 與 RGB/PMS/CMYK 使用情境。"
+      - id: "ch-04-02"
+        title: "Secondary Palette"
+        level: 2
+        order: 2
+        pages: "9-10"
+        summary: "列出多組 secondary colors 與 gradients，用於更高能量的表現。"
+      - id: "ch-04-03"
+        title: "Logo Color Pairings"
+        level: 2
+        order: 3
+        pages: "11"
+        summary: "限定 core communications 中使用的四種核心色彩搭配。"
+  - id: "ch-05"
+    title: "Typography"
+    level: 1
+    order: 5
+    pages: "12-14"
+    summary: "定義 Twitch Roobert、常用字重、特殊字重與文字樣式範例。"
+  - id: "ch-06"
+    title: "Layout"
+    level: 1
+    order: 6
+    pages: "15-17"
+    summary: "鼓勵簡潔、有力且組織良好的文字排版，限制不超過三種 type styles，並展示 crop/repetition streaming effect。"
+  - id: "ch-07"
+    title: "The Twitch Voice"
+    level: 1
+    order: 7
+    pages: "18"
+    summary: "定義 mischievous、purposeful、iterative、revolutionary 的 voice principles，並用 functional/emotional tonal scales 調整語氣。"
+  - id: "ch-08"
+    title: "Usage and Copyright Notes"
+    level: 1
+    order: 8
+    pages: "19"
+    summary: "要求不確定時聯絡 Twitch design team，並提醒 guideline 內照片僅供示範、不可直接公開使用。"

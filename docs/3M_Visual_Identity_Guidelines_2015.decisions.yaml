@@ -1,0 +1,249 @@
+# L3 決策卡 sidecar — 3M
+# schema：research/schemas/decision_pattern.schema.yaml
+
+brand_id: 3M_Visual_Identity_Guidelines_2015
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌不是單一標誌，而是組織如何行動與如何溝通
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    evidence:
+      - brand_id: 3M_Visual_Identity_Guidelines_2015
+        chapter: ch-01
+        excerpt: "此章先把 3M 從 logo 重新定義為願景、策略、價值、語氣與視覺語言的整體系統；若沒有它，Trifecta 視覺系統會變成單純新風格。"
+    status: seed
+
+  - id: dp-from-to-voice-translation
+    title: 技術品牌語氣指南要給「轉譯規則」，不只是列形容詞
+    problem:
+      statement: 科學與技術公司容易陷入術語化，受眾停在「所以呢？」而非「原來如此」。
+      signals: [technical_jargon_risk, expert_audience, b2b]
+    solution:
+      module: Voice and Tone
+      move: 用 from/to 對照把語氣轉型具體化（術語→可親近、數據→人性利益）
+      layer: language
+    reason:
+      - 科學溝通應讓人理解「所以呢」，而不是只展示知識量
+      - 提供轉譯規則比列 tone adjectives 更可執行
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, finance]
+      conditions: [expert_audience, technical_translation]
+      archetypes: [full_brand_system, brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Messaging]
+      enables: [Content Design]
+    examples:
+      - "from technical jargon → to personal and accessible"
+      - "from facts and figures → to human stories with benefits"
+    anti_patterns:
+      - 只列 tone adjectives 卻沒有轉譯方法
+    evidence:
+      - brand_id: 3M_Visual_Identity_Guidelines_2015
+        chapter: ch-01-03
+        excerpt: "Voice Transformation Framework：smart→accessible、facts→benefits、so what→ah-ha；用 from/to 對照把語氣轉型具體化。"
+    status: seed
+
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria]
+    solution:
+      module: Brand Strategy
+      move: 用人格詞集（Curious/Sharing/Free Thinking/Caring/Optimistic）當每個產出的檢查軸
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - 技術品牌不應冷硬；科學可以是好奇、慷慨且樂觀的
+    applicable_when:
+      industries: [industrial_materials_science]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone]
+    evidence:
+      - brand_id: 3M_Visual_Identity_Guidelines_2015
+        chapter: ch-01-02
+        excerpt: "Personality Filter：每個溝通產出需通過五個人格軸的檢查；人格詞應成為產出評估標準。"
+    status: seed
+
+  - id: dp-system-toolkit-over-template
+    title: 企業視覺系統給「可組合工具箱」而非僵硬模板
+    problem:
+      statement: 要求每個版面長得完全相同會扼殺多元內容；但完全自由又會失去一致性。
+      signals: [many_teams, many_agencies, diverse_content, system_consistency]
+    solution:
+      module: Visual Language
+      move: 把識別定義為可獨立或組合使用的 core elements（tools, not a rigid system），用固定決策順序取代固定模板
+      layer: visual_core
+    reason:
+      - 彈性必須被結構化；系統不靠固定模板，而靠固定決策順序
+      - 元素可獨立使用也可組合，支援多元內容又維持辨識
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, consumer_retail_hospitality]
+      brand_types: [mass_consumer, category_creator]
+      archetypes: [full_brand_system, corporate_toolkit, brand_experience_guide]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Layout System, Examples]
+    examples:
+      - "高階溝通配方：先套 grid → 用主字體 → 選一個視覺策略 → 用一組色彩"
+    anti_patterns:
+      - 一次使用所有元素造成過載
+      - 只提供單一固定版型，使用者只會複製貼上
+    evidence:
+      - brand_id: 3M_Visual_Identity_Guidelines_2015
+        chapter: ch-02-01
+        excerpt: "視覺識別描述為 tools, not a rigid system；先教使用者有哪些工具，再教如何使用。"
+      - brand_id: 3M_Visual_Identity_Guidelines_2015
+        chapter: ch-03-01
+        excerpt: "Four-Step Assembly：apply grid、use Circular、選 shape 或 mesh、選一組 color set；少數選項比無限自由更能提升一致性。"
+    status: seed
+
+  - id: dp-logo-vs-lockup-distinction
+    title: 區分 public-facing lockup 與 corporate logo 的使用場景
+    problem:
+      statement: 單一標誌資產被套用到所有情境，混淆對外溝通與企業署名，且難以同時治理法律與一致性。
+      signals: [multiple_logo_contexts, trademark, legal_governance]
+    solution:
+      module: Visual Identity
+      move: 明確區分 lockup 與 logo 的使用情境，並用 asset state + usage context + spatial/color/legal control 統一治理
+      layer: visual_core
+    reason:
+      - 標誌資產不可重建、不可任意改比例
+      - trademark 與 tagline 須由法律與品牌一致性共同治理
+    applicable_when:
+      industries: [industrial_materials_science, finance, tech_software]
+      brand_types: [heritage_legacy, platform_ecosystem]
+      conditions: [trademark]
+      archetypes: [brand_experience_guide, corporate_toolkit, multi_brand_architecture]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Legal and Trademark, Governance]
+    evidence:
+      - brand_id: 3M_Visual_Identity_Guidelines_2015
+        chapter: ch-02-02
+        excerpt: "區分 public-facing lockup 與 corporate logo；Logo Governance Framework：asset state、usage context、spatial control、color control、legal control。"
+    status: seed
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+    applicable_when:
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system]
+    dependencies:
+      requires: [Visual Identity]
+    evidence:
+      - brand_id: 3M_Visual_Identity_Guidelines_2015
+        chapter: ch-02-02
+        excerpt: "clearspace based on logo height；標準格式 logo height equals margin。"
+    status: seed
+
+  - id: dp-color-set-over-single-pickers
+    title: 用「色組」而非單色清單管理豐富色彩的自由度
+    problem:
+      statement: 多彩品牌若只給單色清單，配色會失控，跨媒介色差難以驗證。
+      signals: [rich_palette, color_governance, multi_media]
+    solution:
+      module: Color System
+      move: 定義相鄰三色 color sets，每個應用只用一組，並提供 source files 與 token appendix
+      layer: visual_core
+    reason:
+      - 多彩系統需要約束；色彩組合應可預先測試並提供 source files
+      - 把「策略章」與「色值 appendix」分離，利於生產與機器讀取
+    applicable_when:
+      industries: [industrial_materials_science, media_entertainment]
+      conditions: [rich_palette]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Color System]
+      enables: [Design Tokens]
+    anti_patterns:
+      - 讓設計者從單色任意組合
+      - 用軟體自動轉換色彩而非使用核准色值
+    evidence:
+      - brand_id: 3M_Visual_Identity_Guidelines_2015
+        chapter: ch-02-03
+        excerpt: "Adjacent Color Set Framework：18 sets、one set per application、approved RGB/CMYK gradients；不得用軟體自動轉換色彩。"
+      - brand_id: 3M_Visual_Identity_Guidelines_2015
+        chapter: ch-05
+        excerpt: "Color Appendix 作為 token database，逐組列出色值與漸層、媒介可用性，並要求不要修改或重建檔案。"
+    status: seed
+
+  - id: dp-contact-before-appendix
+    title: 在技術資料前先給治理窗口，讓 guideline 成為可改善系統
+    problem:
+      statement: 規則無法涵蓋所有情境，缺乏權威決策入口時，例外用法無人裁決。
+      signals: [exceptions_expected, governance]
+    solution:
+      module: Governance
+      move: 在主內容與 appendix 之間放置聯絡窗口與核准／回饋入口
+      layer: governance
+    reason:
+      - 規則無法涵蓋所有情境，必須提供權威決策入口
+      - guideline 應包含 owner 與 feedback channel，而非靜態文件
+    applicable_when:
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit]
+    dependencies:
+      requires: [Governance]
+      enables: [Operations]
+    evidence:
+      - brand_id: 3M_Visual_Identity_Guidelines_2015
+        chapter: ch-04
+        excerpt: "把聯絡資訊放在主內容與 appendix 之間，讓使用者在進入技術資料前知道治理窗口；Approval and Feedback Loop。"
+    status: seed
+
+  - id: dp-custom-typeface-as-identity-asset
+    title: 用專屬字體當識別資產，擺脫系統預設字並統一語氣
+    problem:
+      statement: 仰賴系統預設字體的品牌缺乏獨特性與一致語氣，跨媒介又常因字體缺失而失控；但又需要在無法安裝字型的環境保有 fallback。
+      signals: [identity_distinctiveness, system_consistency, brand_recognition, multi_media]
+    solution:
+      module: Typography System
+      move: 建立專屬企業字體（3M Circular）作為核心識別資產，並指定 web/system fallback 與字重、leading、kerning、字色規則
+      layer: visual_core
+    reason:
+      - 專屬字體系統讓品牌不再依賴 default fonts，並讓文字有精準、現代、可讀的共同語氣
+      - 字體系統要以 utility 為核心；可讀性與一致性優先於裝飾
+      - 搭配 system fallback，可在無法安裝字型的環境維持一致
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger]
+      conditions: [identity_distinctiveness, multi_media]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: [Design Tokens]
+    examples:
+      - headline leading 約 1:1.1、body leading 約 1:1.25，文字只用黑或白
+    anti_patterns:
+      - 直接沿用系統字當品牌字體，缺乏 fallback 規範
+    evidence:
+      - brand_id: 3M_Visual_Identity_Guidelines_2015
+        chapter: ch-02-04
+        excerpt: "此節建立 3M 專屬字體系統，讓品牌不再依賴 default fonts；可複用模式包含 custom corporate typeface、system fallback、black-or-white text rule。"
+    status: extracted

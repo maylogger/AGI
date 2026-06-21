@@ -1,0 +1,155 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: British_airways_brand_guidelines_2007
+index_ref: docs/British_airways_brand_guidelines_2007.index.yaml
+note_ref: docs/British_airways_brand_guidelines_2007.note.md
+archetype: brand_experience_guide
+industry: consumer_retail_hospitality
+modules:
+- Measurement
+- Brand Strategy
+- AI-Checkable Rules
+- Layout System
+- Typography System
+- Color System
+- Visual Identity
+- Operations
+- Governance
+- Knowledge Architecture
+- Content Design
+- Voice and Tone
+- Examples
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 6
+  section_count: 2
+chapter_sequence:
+- id: ch-01
+  title: Summary
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Brand strategy, values and heritage
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Identity presentation and brand prefix
+  order: 2
+  level: 2
+- id: ch-02
+  title: Toolkit
+  order: 2
+  level: 1
+- id: ch-03
+  title: Application
+  order: 3
+  level: 1
+- id: ch-04
+  title: Library
+  order: 4
+  level: 1
+- id: ch-05
+  title: 'Appendix A: Tone of voice'
+  order: 5
+  level: 1
+- id: ch-06
+  title: 'Appendix B: Examples'
+  order: 6
+  level: 1
+frameworks:
+- name: Basics/Brilliance framework 可作為服務品牌的 prioritization model
+  chapter: ch-01-01
+  chapter_title: Brand strategy, values and heritage
+- name: kit-of-parts framework：symbol、wordmark、color、type、image、layout relationship、conversation line
+  chapter: ch-02
+  chapter_title: Toolkit
+- name: customer journey application framework：pre-trip、airport、in-flight、post-trip 與 brand communications
+  chapter: ch-03
+  chapter_title: Application
+- name: asset governance framework：approved library、version control、usage permissions、support contact
+  chapter: ch-04
+  chapter_title: Library
+- name: voice framework 可由 values、audience need、clarity、warmth、professional confidence 組成
+  chapter: ch-05
+  chapter_title: 'Appendix A: Tone of voice'
+- name: example library framework：approved examples、edge cases、do/don'ts、context notes
+  chapter: ch-06
+  chapter_title: 'Appendix B: Examples'
+patterns:
+- name: 可複用模式是把 heritage 當成 contemporary refresh 的可信來源，而非懷舊裝飾。
+  chapter: ch-01-01
+  chapter_title: Brand strategy, values and heritage
+- name: 可複用模式包括 simplified mark、extended palette、fixed relationship 與 flexible line-of-thought 溝通。
+  chapter: ch-02
+  chapter_title: Toolkit
+- name: 可複用模式是以旅程節點作為 guideline 組織方式，確保 design system 對營運有用。
+  chapter: ch-03
+  chapter_title: Application
+- name: 可複用模式是將 guideline 與資產庫連動，讓使用者在閱讀後可直接取得素材。
+  chapter: ch-04
+  chapter_title: Library
+- name: 可複用模式是將 service values 轉成 writing principles，再用例句訓練一致語氣。
+  chapter: ch-05
+  chapter_title: 'Appendix A: Tone of voice'
+- name: 可複用模式是使用案例庫承接複雜情境，尤其適合多地區、多供應商品牌。
+  chapter: ch-06
+  chapter_title: 'Appendix B: Examples'
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI-checkable：素材應至少明確支持一項 BA value，且不得與任何 value 矛盾；premium 訊息需連到顧客體驗利益。
+  chapter: ch-01-01
+  chapter_title: Brand strategy, values and heritage
+- module: ''
+  criterion: AI-checkable：Speedmarque 不得被重繪或扭曲；元件關係需符合 toolkit；色彩與字體需使用核准版本；不得讓任一元素單獨造成不一致。
+  chapter: ch-02
+  chapter_title: Toolkit
+- module: ''
+  criterion: AI-checkable：素材應來自核准 library；不得從舊檔截圖、重繪或自行仿製；版本需符合當前 guideline。
+  chapter: ch-04
+  chapter_title: Library
+- module: Voice and Tone
+  criterion: AI-checkable：文案應清楚、溫暖、主動預期需求；不得冷漠、官僚、過度行銷或犧牲安全清晰度。
+  chapter: ch-05
+  chapter_title: 'Appendix A: Tone of voice'
+chapters:
+- id: ch-01-01
+  title: Brand strategy, values and heritage
+  modules:
+  - Measurement
+  - Brand Strategy
+- id: ch-02
+  title: Toolkit
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Typography System
+  - Color System
+  - Visual Identity
+- id: ch-03
+  title: Application
+  modules:
+  - Operations
+  - Governance
+- id: ch-04
+  title: Library
+  modules:
+  - Operations
+  - Knowledge Architecture
+  - Governance
+- id: ch-05
+  title: 'Appendix A: Tone of voice'
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+- id: ch-06
+  title: 'Appendix B: Examples'
+  modules:
+  - Examples
+  - Knowledge Architecture
+  - Governance

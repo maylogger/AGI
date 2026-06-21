@@ -1,0 +1,87 @@
+title: 'Harrods Brand Guidelines'
+source: 'sources/Harrods_Brand_Guidelines.pdf'
+language: 'en'
+summary: 'Harrods 品牌指南，從核心識別、字體、語氣、House Style A-Z、co-branding 與審核流程治理高端零售品牌一致性。'
+chapters:
+  - id: 'ch-01'
+    title: 'Core Branding'
+    level: 1
+    order: 1
+    pages: '1-4'
+    summary: '定義 Harrods 標誌選項、置中邏輯、最小尺寸、清除空間、核心與補充色。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Logo Options and Rules'
+        level: 2
+        order: 1
+        pages: '2-3'
+        summary: '規範不同 logo 的使用情境、光學置中、最小尺寸與 H 單位清除區。'
+      - id: 'ch-01-02'
+        title: 'Colour Palette'
+        level: 2
+        order: 2
+        pages: '4'
+        summary: '定義 Harrods green、black、metallic、foil 與 sale red，並要求以 Pantone/CMYK 準確匹配。'
+  - id: 'ch-02'
+    title: 'Typography'
+    level: 1
+    order: 2
+    pages: '5-11'
+    summary: '規範 Adobe Caslon Pro、Caslon Egyptian、Big Caslon、PC 與 digital 字體的用途與限制。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Primary and Migration Fonts'
+        level: 2
+        order: 1
+        pages: '6-8'
+        summary: '描述 Caslon 系列與從 Gill 過渡到 Caslon Egyptian 的遷移規則。'
+      - id: 'ch-02-02'
+        title: 'PC and Digital Fonts'
+        level: 2
+        order: 2
+        pages: '9-11'
+        summary: '指定 PC 使用 Arial/Times New Roman，digital 使用 Apercu 與 Miller Headline。'
+  - id: 'ch-03'
+    title: 'Harrods Style Guide'
+    level: 1
+    order: 3
+    pages: '12-23'
+    summary: '建立 Harrods 語氣人格、禁用語氣與大量可檢查的文字、標點、命名、日期、數字規則。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Tone of Voice'
+        level: 2
+        order: 1
+        pages: '13-14'
+        summary: '以英式、自信、機智、當代、可信、奢華但不炫耀的品牌人格管理文案。'
+      - id: 'ch-03-02'
+        title: 'House Style A-Z'
+        level: 2
+        order: 2
+        pages: '15-23'
+        summary: '以 A-Z 條目規範拼字、數字、日期、Harrods 名稱、hashtags、電話、網站與 terms。'
+  - id: 'ch-04'
+    title: 'Co-branding'
+    level: 1
+    order: 4
+    pages: '24-32'
+    summary: '規範 Harrods 與外部品牌合作時的 brand band、廣告、邀請、mailer、email、審核與聯絡流程。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Essentials and Brand Band'
+        level: 2
+        order: 1
+        pages: '25-27'
+        summary: '要求遵守 tone、style、terms、第三方網址限制與黑白 brand band 使用。'
+      - id: 'ch-04-02'
+        title: 'Applications and Approval'
+        level: 2
+        order: 2
+        pages: '28-32'
+        summary: '規範 advertorials、invitations、brand mailers、emails 與 Brand Guardians 審核時程。'
+  - id: 'ch-05'
+    title: 'Contacts and Communication'
+    level: 1
+    order: 5
+    pages: '32-33'
+    summary: '提供品牌守門人與素材下載/上傳聯絡方式。'

@@ -1,0 +1,77 @@
+# L3 決策卡 sidecar — I amsterdam Brand Manual
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: I_amsterdam_Brand_Manual_EN_2019
+decisions:
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+    evidence:
+      - brand_id: I_amsterdam_Brand_Manual_EN_2019
+        chapter: ch-07
+        excerpt: "pure motto 左右最小 margin 為字母 I 的高度，右側以 m 為基準量測；wordmark 的 clear space 可從內部字母尺度取得，比任意 px 更具伸縮性。"
+    status: extracted
+
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 用人格詞集（Curious/Sharing/Free Thinking/Caring/Optimistic）當每個產出的檢查軸
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - 品牌價值若要可執行，需附上語義括號與證據來源
+    applicable_when:
+      industries: [industrial_materials_science, nonprofit_social, public_sector]
+      brand_types: [challenger, category_creator, mission_driven, institutional_public_trust]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Visual Language, Content Design]
+    evidence:
+      - brand_id: I_amsterdam_Brand_Manual_EN_2019
+        chapter: ch-03
+        excerpt: "使用 I amsterdam 的內容應至少能對應 creativity、innovation、entrepreneurship 之一；若素材無法連結城市價值，應避免使用 label，讓核心價值成為內容評估準則。"
+    status: extracted
+
+  - id: dp-contact-before-appendix
+    title: 在技術資料前先給治理窗口，讓 guideline 成為可改善系統
+    problem:
+      statement: 規則無法涵蓋所有情境，缺乏權威決策入口時，例外用法無人裁決。
+      signals: [exceptions_expected, governance]
+    solution:
+      module: Governance
+      move: 在主內容與 appendix 之間放置聯絡窗口與核准／回饋入口
+      layer: governance
+    reason:
+      - 規則無法涵蓋所有情境，必須提供權威決策入口
+      - guideline 若有審批流程，應明確列出 contact、response time 與 production impact
+    applicable_when:
+      industries: [finance, public_sector]
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit, logo_asset_guidelines]
+    dependencies:
+      requires: [Governance]
+      enables: [Operations]
+    evidence:
+      - brand_id: I_amsterdam_Brand_Manual_EN_2019
+        chapter: ch-10
+        excerpt: "使用 label 或 pure motto 需與 amsterdam&partners 諮詢並取得 approval，廣告製作前需寄設計至 brand@iamsterdam.com，排程應預留通常 3 個工作日回覆與可能修改時間。"
+    status: extracted

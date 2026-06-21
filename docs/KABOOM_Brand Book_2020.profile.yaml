@@ -1,0 +1,186 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: KABOOM_Brand Book_2020
+index_ref: docs/KABOOM_Brand Book_2020.index.yaml
+note_ref: docs/KABOOM_Brand Book_2020.note.md
+archetype: brand_experience_guide
+industry: nonprofit_social
+modules:
+- AI-Checkable Rules
+- Brand Strategy
+- Voice and Tone
+- Messaging
+- Governance
+- Content Design
+- Photography System
+- Typography System
+- Color System
+- Visual Identity
+- Legal and Trademark
+- Examples
+- Operations
+depth:
+  strategy: medium
+  visual: medium
+  governance: high
+  top_level_chapter_count: 3
+  section_count: 8
+chapter_sequence:
+- id: ch-01
+  title: Verbal Identity
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Voice & Tone
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Mission, Tagline, What We Do, Why We Do It, About Us
+  order: 2
+  level: 2
+- id: ch-02
+  title: Visual Identity
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo, Mark, and Co-Branding
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Color Palette and Color Use
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Typography
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Photography
+  order: 4
+  level: 2
+- id: ch-02-05
+  title: Graphic Elements and Equity in Visuals
+  order: 5
+  level: 2
+- id: ch-03
+  title: Brand in Use
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Collateral Applications
+  order: 1
+  level: 2
+frameworks:
+- name: 隱含一個 verbal ladder：attribute -> mission -> tagline -> short description -> rationale -> long organizational bio
+  chapter: ch-01
+  chapter_title: Verbal Identity
+- name: voice attribute matrix：desired quality 對應 prohibited drift
+  chapter: ch-01-01
+  chapter_title: Voice & Tone
+- name: problem -> community action -> playspace -> equity opportunity 的因果框架
+  chapter: ch-01-02
+  chapter_title: Mission, Tagline, What We Do, Why We Do It, About Us
+- name: identity toolkit framework：core mark -> color/type -> image behavior -> graphic extension -> equity governance
+  chapter: ch-02
+  chapter_title: Visual Identity
+- name: logo governance framework：asset integrity、space、scale、background、partnership balance
+  chapter: ch-02-01
+  chapter_title: Logo, Mark, and Co-Branding
+- name: application proof framework：identity token -> layout -> real-world collateral
+  chapter: ch-03
+  chapter_title: Brand in Use
+- name: touchpoint template framework
+  chapter: ch-03-01
+  chapter_title: Collateral Applications
+patterns:
+- name: 我們是 X，但不是 Y
+  chapter: ch-01
+  chapter_title: Verbal Identity
+- name: 每個屬性都不是單純形容詞，而是有行為描述，例如 empathetic 表示 listening and taking perspectives into account。
+  chapter: ch-01-01
+  chapter_title: Voice & Tone
+- name: 短句、重複與節奏化標語讓公益訊息既急迫又易記。
+  chapter: ch-01-02
+  chapter_title: Mission, Tagline, What We Do, Why We Do It, About Us
+- name: 每個視覺模組都有 approval examples 與 misuse examples，形成可訓練的判斷資料。
+  chapter: ch-02
+  chapter_title: Visual Identity
+- name: 用同一個品牌字母作量測基準，使規則能隨 logo 縮放。
+  chapter: ch-02-01
+  chapter_title: Logo, Mark, and Co-Branding
+- name: 先定義核心 token，再展示少量高頻 touchpoints。
+  chapter: ch-03
+  chapter_title: Brand in Use
+- name: 事件工具、標示與名片皆使用核心品牌 token 保持一致。
+  chapter: ch-03-01
+  chapter_title: Collateral Applications
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查文案是否包含 playspace equity、community、kids、collaboration 等核心概念；語氣不得顯得 showy、overwhelming、zany、rigid、arrogant、sappy、frantic
+    或 flippant；正式提及品牌時應使用全大寫 `KABOOM!`。
+  chapter: ch-01
+  chapter_title: Verbal Identity
+- module: Voice and Tone
+  criterion: 文案應使用主動、邀請式、社群導向語句；若語句只凸顯組織英雄主義、缺少 community agency，應標記為風險。
+  chapter: ch-01-01
+  chapter_title: Voice & Tone
+- module: ''
+  criterion: 外部簡介應明確包含 national nonprofit、playspace equity、communities、every kid；不得只把 KABOOM! 描述為 playground builder。
+  chapter: ch-01-02
+  chapter_title: Mission, Tagline, What We Do, Why We Do It, About Us
+- module: ''
+  criterion: logo 不得扭曲、換字體、加特效、改非指定色、放在低對比或混亂背景上；色彩、字體與攝影需符合指定清單與比例。
+  chapter: ch-02
+  chapter_title: Visual Identity
+- module: Visual Identity
+  criterion: co-branding 時雙方 logo 應視覺等重；每個 logo 至少保留其 clearspace；社群 avatar 切換到 mark 時需同步更新所有渠道。
+  chapter: ch-02-01
+  chapter_title: Logo, Mark, and Co-Branding
+- module: Brand Strategy
+  criterion: 應用物不得引入未定義色彩、任意 logo 位置或不符合攝影公平規則的素材。
+  chapter: ch-03
+  chapter_title: Brand in Use
+chapters:
+- id: ch-01
+  title: Verbal Identity
+  modules:
+  - AI-Checkable Rules
+  - Brand Strategy
+  - Voice and Tone
+  - Messaging
+- id: ch-01-01
+  title: Voice & Tone
+  modules:
+  - Voice and Tone
+  - Governance
+- id: ch-01-02
+  title: Mission, Tagline, What We Do, Why We Do It, About Us
+  modules:
+  - Content Design
+  - Messaging
+- id: ch-02
+  title: Visual Identity
+  modules:
+  - Photography System
+  - Typography System
+  - Color System
+  - Visual Identity
+  - Governance
+- id: ch-02-01
+  title: Logo, Mark, and Co-Branding
+  modules:
+  - Legal and Trademark
+  - Visual Identity
+- id: ch-03
+  title: Brand in Use
+  modules:
+  - Examples
+  - Operations
+- id: ch-03-01
+  title: Collateral Applications
+  modules:
+  - Examples
+  - Operations

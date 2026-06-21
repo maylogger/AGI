@@ -1,0 +1,261 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Invest_Lithuania_Brandbook_2020
+index_ref: docs/Invest_Lithuania_Brandbook_2020.index.yaml
+note_ref: docs/Invest_Lithuania_Brandbook_2020.note.md
+archetype: brand_experience_guide
+industry: public_sector
+modules:
+- Brand Strategy
+- Content Design
+- Messaging
+- Voice and Tone
+- Knowledge Architecture
+- Visual Identity
+- AI-Checkable Rules
+- Layout System
+- Color System
+- Design Tokens
+- Typography System
+- Photography System
+- Illustration System
+- Iconography System
+- Data Visualization
+- Information Design
+- Operations
+- Motion Identity
+- Governance
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 12
+  section_count: 0
+chapter_sequence:
+- id: ch-01
+  title: Our Brand
+  order: 1
+  level: 1
+- id: ch-02
+  title: Identity Elements
+  order: 2
+  level: 1
+- id: ch-03
+  title: Logo
+  order: 3
+  level: 1
+- id: ch-04
+  title: Colours
+  order: 4
+  level: 1
+- id: ch-05
+  title: Typography
+  order: 5
+  level: 1
+- id: ch-06
+  title: Photography
+  order: 6
+  level: 1
+- id: ch-07
+  title: Icons
+  order: 7
+  level: 1
+- id: ch-08
+  title: Infographics and Maps
+  order: 8
+  level: 1
+- id: ch-09
+  title: Stationery
+  order: 9
+  level: 1
+- id: ch-10
+  title: Social Media
+  order: 10
+  level: 1
+- id: ch-11
+  title: Animation
+  order: 11
+  level: 1
+- id: ch-12
+  title: Contact
+  order: 12
+  level: 1
+frameworks:
+- name: promise -> positioning -> personality pillars：goal driven、investor oriented、determined to innovate
+  chapter: ch-01
+  chapter_title: Our Brand
+- name: five-element identity toolkit + tone keys：clear、professional、dynamic、tonal values
+  chapter: ch-02
+  chapter_title: Identity Elements
+- name: master logo -> language variants -> secondary forms -> scale/clearspace/layout -> color modes
+  chapter: ch-03
+  chapter_title: Logo
+- name: palette -> usage categories：backgrounds、image duotoning、typography、graphic elements
+  chapter: ch-04
+  chapter_title: Colours
+- name: typeface + fallback + hierarchy proportions + composition rules
+  chapter: ch-05
+  chapter_title: Typography
+- name: photo categories + style keywords + duotone fallback/use case
+  chapter: ch-06
+  chapter_title: Photography
+- name: icon drawing rules + colour-counting system + text integration rules
+  chapter: ch-07
+  chapter_title: Icons
+- name: make appealing、make big、place images inside、be clear
+  chapter: ch-08
+  chapter_title: Infographics and Maps
+- name: office templates + print collateral + publication system
+  chapter: ch-09
+  chapter_title: Stationery
+- name: square 1080x1080、horizontal 1200x628、event image、photo frame
+  chapter: ch-10
+  chapter_title: Social Media
+- name: static identity rules -> animated applications
+  chapter: ch-11
+  chapter_title: Animation
+- name: question -> marketing contact
+  chapter: ch-12
+  chapter_title: Contact
+patterns:
+- name: 將國家形象轉譯為 B2B value proposition。
+  chapter: ch-01
+  chapter_title: Our Brand
+- name: 先給 toolkit map，再逐章細化。
+  chapter: ch-02
+  chapter_title: Identity Elements
+- name: 針對大型輸出提供 optically adjusted logo。
+  chapter: ch-03
+  chapter_title: Logo
+- name: 同一 palette 同時服務品牌情緒與功能分類。
+  chapter: ch-04
+  chapter_title: Colours
+- name: headline 可左上或置中，但置中只在 icon 內使用。
+  chapter: ch-05
+  chapter_title: Typography
+- name: 低品質或色彩不合照片可轉為 duotone，以維持品牌一致。
+  chapter: ch-06
+  chapter_title: Photography
+- name: 將照片或 duotone image 放進 icon，結合資訊圖示與真實影像。
+  chapter: ch-07
+  chapter_title: Icons
+- name: 依需求選 informational map、visual map 或 infographic map。
+  chapter: ch-08
+  chapter_title: Infographics and Maps
+- name: cover 可使用 image inside pattern/icon、年度 rectangle、topic/quote composition 或多矩形分區。
+  chapter: ch-09
+  chapter_title: Stationery
+- name: 數字或 icon 固定右下，headline 固定左上，source/extra information 固定左下。
+  chapter: ch-10
+  chapter_title: Social Media
+- name: 用 logo/name card 作為最小動態示例。
+  chapter: ch-11
+  chapter_title: Animation
+- name: 文件末尾提供 governance contact。
+  chapter: ch-12
+  chapter_title: Contact
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: 品牌文案應優先表達 investor value、targets、expectations、support network；不得只用抽象國家美感或觀光式描述。
+  chapter: ch-01
+  chapter_title: Our Brand
+- module: ''
+  criterion: 背景優先使用明亮色；文字只能 black/white，說明小字可用 Dark Grey；icons/illustrations 不可用 Black、Dark Grey、Dark Blue；只能使用品牌色；不可使用 gradients、noise、textures
+    或 effects；避免大面積 Dark Green。
+  chapter: ch-04
+  chapter_title: Colours
+- module: Typography System
+  criterion: Email/PowerPoint/Word 使用 Arial；tracking 0、leading auto；建議 12 欄 vertical grid；body text 不得右對齊；文字不得上色或加 effects；Demi
+    Bold 或更寬字重不得用於 headers/body。
+  chapter: ch-05
+  chapter_title: Typography
+- module: ''
+  criterion: 避免 cliché、posed shots、studio background、snapshot quality、tight portrait crop、black and white；建築攝影需保持垂直線；同一 layout
+    不可混用 regular 與 duotone images；duotone 用 Gradient Map，不用 Photoshop Duotone mode。
+  chapter: ch-06
+  chapter_title: Photography
+- module: Iconography System
+  criterion: 圖示盡量單色；必要時最多三色，白色不算；四色以上禁止；不得圓角、加細節、加線點圖樣、陰影、筆刷或 isometric；三色 icon 內不得寫文字；長標題不得置中於 icon 內。
+  chapter: ch-07
+  chapter_title: Icons
+- module: ''
+  criterion: 不要用非品牌色；不要用 gradients；不要用 3D charts 或 shadows/effects；始終保持 readable。
+  chapter: ch-08
+  chapter_title: Infographics and Maps
+- module: ''
+  criterion: business card 尺寸 90 x 50mm；document/Word/presentation font 使用 Arial；Word cover 應包含 image inside icon/pattern/illustration，不用
+    plain icon；publication cover 的每個 rectangle 應承載不同資訊。
+  chapter: ch-09
+  chapter_title: Stationery
+- module: ''
+  criterion: 動畫應使用同一 logo、color、typography、composition 與 iconography 規則；不得新增非品牌色或 effects。
+  chapter: ch-11
+  chapter_title: Animation
+chapters:
+- id: ch-01
+  title: Our Brand
+  modules:
+  - Brand Strategy
+  - Content Design
+  - Messaging
+- id: ch-02
+  title: Identity Elements
+  modules:
+  - Voice and Tone
+  - Knowledge Architecture
+  - Visual Identity
+- id: ch-03
+  title: Logo
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Identity
+- id: ch-04
+  title: Colours
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Design Tokens
+- id: ch-05
+  title: Typography
+  modules:
+  - Layout System
+  - Typography System
+- id: ch-06
+  title: Photography
+  modules:
+  - Photography System
+  - Color System
+- id: ch-07
+  title: Icons
+  modules:
+  - Illustration System
+  - AI-Checkable Rules
+  - Iconography System
+- id: ch-08
+  title: Infographics and Maps
+  modules:
+  - Data Visualization
+  - Information Design
+- id: ch-09
+  title: Stationery
+  modules:
+  - Layout System
+  - Operations
+- id: ch-10
+  title: Social Media
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+- id: ch-11
+  title: Animation
+  modules:
+  - Motion Identity
+- id: ch-12
+  title: Contact
+  modules:
+  - Operations
+  - Governance

@@ -1,0 +1,106 @@
+title: 'Communication Standards for Institutional Brand Identity'
+source: 'sources/NIU_Brand_Identity_2022.pdf'
+date: 'January 2022'
+language: 'en'
+summary: '這份 NIU 品牌識別標準將招生導向的品牌策略、聲音、視覺元素、行銷範例與校內治理資源整合為可審核的 institutional brand system。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction and Contacts'
+    level: 1
+    order: 1
+    pages: '3-4'
+    summary: '說明品牌一致性、Clearinghouse Review 與各類支援窗口。'
+  - id: 'ch-02'
+    title: 'Brand Basics'
+    level: 1
+    order: 2
+    pages: '5-8'
+    summary: '定義 value proposition、brand personality、brand narrative、key strengths、benefits 與 tagline。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Value Proposition'
+        level: 2
+        order: 1
+        pages: '5'
+        summary: '定義學生為何選擇 NIU 的核心承諾。'
+      - id: 'ch-02-02'
+        title: 'Brand Personality and Narrative'
+        level: 2
+        order: 2
+        pages: '6-7'
+        summary: '將 personalized、inviting、charged 與 strengths/benefits 組成品牌故事。'
+      - id: 'ch-02-03'
+        title: 'Tagline'
+        level: 2
+        order: 3
+        pages: '8'
+        summary: '規範 tagline 的字句、標點與不可替代性。'
+  - id: 'ch-03'
+    title: 'Brand Voice'
+    level: 1
+    order: 3
+    pages: '10-14'
+    summary: '定義 NIU 的聲音、tone、content、style guides 與寫作例句。'
+    children:
+      - id: 'ch-03-01'
+        title: 'How We Sound'
+        level: 2
+        order: 1
+        pages: '10'
+        summary: '用 voice/content/personality/tone 公式定義聲音系統。'
+      - id: 'ch-03-02'
+        title: 'Voice in Practice'
+        level: 2
+        order: 2
+        pages: '11-14'
+        summary: '用範例展示個性與敘事如何轉成實際句子。'
+  - id: 'ch-04'
+    title: 'Visual Elements'
+    level: 1
+    order: 4
+    pages: '16-38'
+    summary: '定義 institutional identity、university logo、brand colors、typography、graphic elements 與 photography。'
+    children:
+      - id: 'ch-04-01'
+        title: 'University Logo'
+        level: 2
+        order: 1
+        pages: '16-25'
+        summary: '規範 umbrella identity、tagline lockup、配置、顏色、留白、尺寸與禁用。'
+      - id: 'ch-04-02'
+        title: 'Brand Colors and Typography'
+        level: 2
+        order: 2
+        pages: '26-31'
+        summary: '規範 NIU 主色、色彩使用與 Gotham/Arial 字體系統。'
+      - id: 'ch-04-03'
+        title: 'Graphic Elements and Photography'
+        level: 2
+        order: 3
+        pages: '32-38'
+        summary: '規範 shield pattern、containment devices、影像庫、原創攝影、選圖、修色與裁切。'
+  - id: 'ch-05'
+    title: 'Marketing Examples'
+    level: 1
+    order: 5
+    pages: '39-64'
+    summary: '提供 postcard、brochure、flyer、poster、PowerPoint、business papers、email、motion、social、website 等範例。'
+    children:
+      - id: 'ch-05-01'
+        title: 'Print and Business Papers'
+        level: 2
+        order: 1
+        pages: '39-56'
+        summary: '規範 postcards、brochures、flyers、posters、letterhead、business cards 等紙本輸出。'
+      - id: 'ch-05-02'
+        title: 'Digital, Motion, Social and Websites'
+        level: 2
+        order: 2
+        pages: '57-64'
+        summary: '規範 email、signature、motion/video、social media 與網站品牌要求。'
+  - id: 'ch-06'
+    title: 'Resources'
+    level: 1
+    order: 6
+    pages: '65-69'
+    summary: '說明 Clearinghouse review、marketing/web resources 與法規聲明。'

@@ -1,0 +1,232 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: FirstBank_Corporate_Identity_Guidelines
+index_ref: docs/FirstBank_Corporate_Identity_Guidelines.index.yaml
+note_ref: docs/FirstBank_Corporate_Identity_Guidelines.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- Brand Architecture
+- AI-Checkable Rules
+- Visual Identity
+- Localization
+- Governance
+- Content Design
+- Voice and Tone
+- Color System
+- Design Tokens
+- Layout System
+- Examples
+- Illustration System
+- Photography System
+- Operations
+- UI Components
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 10
+  section_count: 0
+chapter_sequence:
+- id: ch-01
+  title: FirstBank Logo System
+  order: 1
+  level: 1
+- id: ch-02
+  title: SSA Market and Social Media Logo Usage
+  order: 2
+  level: 1
+- id: ch-03
+  title: Product and Service Brand Architecture
+  order: 3
+  level: 1
+- id: ch-04
+  title: Tone of Voice
+  order: 4
+  level: 1
+- id: ch-05
+  title: Colour Wheel and Endorser
+  order: 5
+  level: 1
+- id: ch-06
+  title: Press Advert and Editorial Templates
+  order: 6
+  level: 1
+- id: ch-07
+  title: Photography and Illustration Style
+  order: 7
+  level: 1
+- id: ch-08
+  title: Printed and Merchandise Applications
+  order: 8
+  level: 1
+- id: ch-09
+  title: Digital Applications
+  order: 9
+  level: 1
+- id: ch-10
+  title: Signage and Mobile Truck
+  order: 10
+  level: 1
+frameworks:
+- name: logo 系統框架是「core mark -> dynamic shape metric -> logotype alignment -> clear zone -> minimum size -> color system ->
+    m...
+  chapter: ch-01
+  chapter_title: FirstBank Logo System
+- name: 市場識別框架是「market -> language/tagline -> icon presence -> social media identification rule」
+  chapter: ch-02
+  chapter_title: SSA Market and Social Media Logo Usage
+- name: 產品品牌框架是「existing names preserved -> future naming rule -> corporate font for FIRST -> descriptor flexibility -> blue/...
+  chapter: ch-03
+  chapter_title: Product and Service Brand Architecture
+- name: 語氣框架是「one voice -> brand personality -> communication type -> customer benefit headline -> plain direct copy」
+  chapter: ch-04
+  chapter_title: Tone of Voice
+- name: 色彩框架是「logo colours -> primary swatch -> secondary swatch -> tint percentages -> external application」
+  chapter: ch-05
+  chapter_title: Colour Wheel and Endorser
+- name: 版面框架是「format -> border -> grid -> reserved zones -> image modules -> text placement」
+  chapter: ch-06
+  chapter_title: Press Advert and Editorial Templates
+- name: 影像框架是「subject focus -> background/segment color -> expression -> composition -> business reflection」
+  chapter: ch-07
+  chapter_title: Photography and Illustration Style
+- name: 應用框架是「asset type -> physical spec -> color/material -> logo/text placement -> example」
+  chapter: ch-08
+  chapter_title: Printed and Merchandise Applications
+- name: 數位框架是「platform -> canvas size -> safe/rendered area -> brand element placement -> example」
+  chapter: ch-09
+  chapter_title: Digital Applications
+- name: signage 框架是「sign type -> viewing context -> logo/color placement -> directional information」
+  chapter: ch-10
+  chapter_title: Signage and Mobile Truck
+patterns:
+- name: 以 logo 內部幾何元素作為所有比例量測基準，是可跨尺寸複用的 identity pattern。
+  chapter: ch-01
+  chapter_title: FirstBank Logo System
+- name: 跨市場 guideline 應以例外表管理 localization，而不是讓在地團隊自行詮釋。
+  chapter: ch-02
+  chapter_title: SSA Market and Social Media Logo Usage
+- name: 以 transition governance 管理品牌債務：不改既有名稱，但統一未來規則與 logo 視覺。
+  chapter: ch-03
+  chapter_title: Product and Service Brand Architecture
+- name: 把語氣拆成內部態度與外部文案規則，可支援文案審核。
+  chapter: ch-04
+  chapter_title: Tone of Voice
+- name: tint ladder 讓同一色彩可在資訊層級與背景深淺中延展。
+  chapter: ch-05
+  chapter_title: Colour Wheel and Endorser
+- name: 將廣告版面轉成 modular grid 是跨媒體可複用的 layout governance。
+  chapter: ch-06
+  chapter_title: Press Advert and Editorial Templates
+- name: 用形容詞 cue 加上技術性構圖規則，讓影像審核兼具情緒與可操作性。
+  chapter: ch-07
+  chapter_title: Photography and Illustration Style
+- name: 把品牌規範寫成生產規格，是 design system 從畫面延伸到 supply chain 的模式。
+  chapter: ch-08
+  chapter_title: Printed and Merchandise Applications
+- name: safe area 與 rendered area 是所有 digital guideline 可複用的基礎模式。
+  chapter: ch-09
+  chapter_title: Digital Applications
+- name: 把 signage 依場景分類，比單一 master template 更能處理尺度差異。
+  chapter: ch-10
+  chapter_title: Signage and Mobile Truck
+rules_ai_checkable:
+- module: Visual Identity
+  criterion: AI 可檢查：clear zone 必須以 Dynamic Square 高度/矩形量測；horizontal lockup dynamic square 不得低於 4 mm，stacked 不得低於 6 mm；不得
+    redraw、recreate、translate、recolor、drop shadow、改字體、壓縮、伸展或改變 dynamic shape。
+  chapter: ch-01
+  chapter_title: FirstBank Logo System
+- module: Visual Identity
+  criterion: AI 可檢查：DRC Congo 只用 Dynamic Shape 與 Vous d’abord lockup；English speaking countries 使用 You First and FBNBank lockup
+    except Ghana；社群 profile 可使用 name appellations 以利識別。
+  chapter: ch-02
+  chapter_title: SSA Market and Social Media Logo Usage
+- module: Brand Strategy
+  criterion: AI 可檢查：未來產品名稱應為 DESCRIPTOR + FIRST；FIRST 必須使用 corporate identity font；產品 logo 應採 Blue PMS 295C 與 Gold PMS 124C；agency
+    應追求約 70/30 balance；divider 不得整組拉伸，應分別調整 bar 長度。
+  chapter: ch-03
+  chapter_title: Product and Service Brand Architecture
+- module: ''
+  criterion: AI 可檢查：tabloid splash 應有 8mm blue border；頁面應分成 4 high x 2 wide 的 8 格；格間距 1mm；top left 與 bottom two rectangles
+    不應放圖片，應保留給品牌與文字元素。
+  chapter: ch-06
+  chapter_title: Press Advert and Editorial Templates
+- module: ''
+  criterion: AI 可檢查：人物照片主焦點應為 face/shoulders/chest；不可像 passport photograph；影像應 natural、uncluttered、real、simple、aspirational、honest、accessible、warm；構圖應
+    simple, clean, straight talking, not posed。
+  chapter: ch-07
+  chapter_title: Photography and Illustration Style
+- module: ''
+  criterion: AI 可檢查：cap color 應為 Pantone 295 C；cap 正面應為 raised embroidered logo；特定品牌語句需維持順序與大小寫；印刷素材需使用指定 Pantone/CMYK。
+  chapter: ch-08
+  chapter_title: Printed and Merchandise Applications
+- module: ''
+  criterion: AI 可檢查：web banner 應依指定 1200 x 400px canvas 與 871 x 299px rendered area；資訊應置於可渲染範圍內；email signature/HTML template
+    不得任意改變 logo 與聯絡資訊層級。
+  chapter: ch-09
+  chapter_title: Digital Applications
+- module: ''
+  criterion: AI 可檢查：ATM directional sign 應清楚表達方向；branch signage 必須保持 logo clear zone 與主色；mobile truck 不得使用與品牌無關的大面積圖形。
+  chapter: ch-10
+  chapter_title: Signage and Mobile Truck
+chapters:
+- id: ch-01
+  title: FirstBank Logo System
+  modules:
+  - Brand Architecture
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02
+  title: SSA Market and Social Media Logo Usage
+  modules:
+  - Brand Architecture
+  - Localization
+  - Governance
+- id: ch-03
+  title: Product and Service Brand Architecture
+  modules:
+  - Brand Architecture
+  - Visual Identity
+  - Governance
+- id: ch-04
+  title: Tone of Voice
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Voice and Tone
+- id: ch-05
+  title: Colour Wheel and Endorser
+  modules:
+  - Brand Architecture
+  - Color System
+  - Design Tokens
+- id: ch-06
+  title: Press Advert and Editorial Templates
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Examples
+- id: ch-07
+  title: Photography and Illustration Style
+  modules:
+  - Illustration System
+  - Photography System
+  - AI-Checkable Rules
+- id: ch-08
+  title: Printed and Merchandise Applications
+  modules:
+  - Operations
+- id: ch-09
+  title: Digital Applications
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - UI Components
+- id: ch-10
+  title: Signage and Mobile Truck
+  modules:
+  - Operations

@@ -1,0 +1,98 @@
+title: 'Huawei Visual Identity Guidelines'
+source: 'sources/Huawei_Visual_Identity_Guidelines.pdf'
+version: 'V 2.0'
+language: 'en'
+summary: '這份文件更新 Huawei 企業視覺識別，涵蓋品牌使命、logo、色彩、Huawei Line、插畫、影像、字體與多種實體、數位、展覽、標識應用。'
+chapters:
+  - id: 'ch-01'
+    title: 'Huawei Brand'
+    level: 1
+    order: 1
+    pages: '3-4'
+    summary: '定義 Huawei 的願景使命與 customer-centric、innovative、global、dedicated、open、trusted 等品牌屬性。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Vision and Mission'
+        level: 2
+        order: 1
+        pages: '3'
+        summary: '提出 bring digital to every person, home and organization 的品牌使命。'
+      - id: 'ch-01-02'
+        title: 'Brand Attributes'
+        level: 2
+        order: 2
+        pages: '4'
+        summary: '列出用以支撐企業識別的六項品牌屬性。'
+  - id: 'ch-02'
+    title: 'Visual Identity System'
+    level: 1
+    order: 2
+    pages: '5-94'
+    summary: '建立 corporate logo、brand color、Huawei Line、illustrations、imagery style 與 typography 的完整識別系統。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Basic Elements and Logo'
+        level: 2
+        order: 1
+        pages: '6-25'
+        summary: '規範 logo rationale、版本、比例、留白、尺寸、色彩、背景、禁用、社群 profile、共同品牌與產品使用。'
+      - id: 'ch-02-02'
+        title: 'Corporate Color'
+        level: 2
+        order: 2
+        pages: '26-38'
+        summary: '規範 Huawei Red、secondary colors、色值、飽和度延伸、優先順序與組合原則。'
+      - id: 'ch-02-03'
+        title: 'Secondary Graphic Huawei Line'
+        level: 2
+        order: 3
+        pages: '39-54'
+        summary: '規範 Huawei Line A/B 的使用、產品與環境應用、錯誤用法、彈性與線寬。'
+      - id: 'ch-02-04'
+        title: 'Illustrations'
+        level: 2
+        order: 4
+        pages: '55-64'
+        summary: '規範 Huawei Cloud、Carrier、Enterprise、General Use 插畫、留白、色彩、背景與錯誤用法。'
+      - id: 'ch-02-05'
+        title: 'Brand Imagery Style and Typography'
+        level: 2
+        order: 5
+        pages: '65-94'
+        summary: '規範 corporate、culture、technology、people imagery 與 Huawei Sans、FounderType、system font。'
+  - id: 'ch-03'
+    title: 'Stationery Application'
+    level: 1
+    order: 3
+    pages: '95-112'
+    summary: '將識別套用到名片、信紙、信封、傳真、email signature、識別證、邀請卡與辦公用品。'
+  - id: 'ch-04'
+    title: 'Advertising Application'
+    level: 1
+    order: 4
+    pages: '113-120'
+    summary: '規範廣告版面原則、延伸、滿版影像、平面廣告、共同品牌、billboard、poster、online 與 social media advertising。'
+  - id: 'ch-05'
+    title: 'Digital Multi-media'
+    level: 1
+    order: 5
+    pages: '121-129'
+    summary: '規範 logo animation、website loading、企業網站首頁 logo、social profile、EDM 與 PowerPoint 模板。'
+  - id: 'ch-06'
+    title: 'Print Application'
+    level: 1
+    order: 6
+    pages: '130-141'
+    summary: '規範封面封底、內頁 grid、annual report、leaflet、manual、white paper、tender、publication 與 brochure。'
+  - id: 'ch-07'
+    title: 'Exhibition and Display Application'
+    level: 1
+    order: 7
+    pages: '142-149'
+    summary: '規範 pull up banner、outdoor flag、backdrop、podium、equipment plate、booth red element 與 exhibition vehicle。'
+  - id: 'ch-08'
+    title: 'Signage and Wayfinding Application'
+    level: 1
+    order: 8
+    pages: '130-134'
+    summary: '規範 external wayfinding signage、corporate reception 與 building facade sign 等空間導視應用。'

@@ -1,0 +1,298 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: MG_investments_identity guidelines_2014
+index_ref: docs/MG_investments_identity guidelines_2014.index.yaml
+note_ref: docs/MG_investments_identity guidelines_2014.note.md
+archetype: full_brand_system
+industry: finance
+modules:
+- Brand Strategy
+- Operations
+- Governance
+- Voice and Tone
+- Messaging
+- Knowledge Architecture
+- Visual Identity
+- Legal and Trademark
+- AI-Checkable Rules
+- Typography System
+- Visual Language
+- Color System
+- Information Design
+- Design Tokens
+- Data Visualization
+- Iconography System
+- Illustration System
+- Photography System
+- Layout System
+- Examples
+- Brand Architecture
+- Content Design
+depth:
+  strategy: high
+  visual: high
+  governance: high
+  top_level_chapter_count: 9
+  section_count: 4
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Bringing the Brand to Life
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Brand Overview and Structure
+  order: 2
+  level: 2
+- id: ch-02
+  title: Logos
+  order: 2
+  level: 1
+- id: ch-03
+  title: Core Elements
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Typography and Colour
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Graphic Devices and Data
+  order: 2
+  level: 2
+- id: ch-04
+  title: Illustration and Photography
+  order: 4
+  level: 1
+- id: ch-05
+  title: Stationery
+  order: 5
+  level: 1
+- id: ch-06
+  title: Key Applications
+  order: 6
+  level: 1
+- id: ch-07
+  title: Institutional - Fixed Income
+  order: 7
+  level: 1
+- id: ch-08
+  title: M&G Real Estate
+  order: 8
+  level: 1
+- id: ch-09
+  title: Contacts and Appendix
+  order: 9
+  level: 1
+frameworks:
+- name: brand model：positioning → attributes → visual style → tone of voice → applications
+  chapter: ch-01
+  chapter_title: Introduction
+- name: inside-out identity：business truth → market differentiation → communication behavior
+  chapter: ch-01-01
+  chapter_title: Bringing the Brand to Life
+- name: masterbrand-led architecture：shared core → business-specific adaptations → approval control
+  chapter: ch-01-02
+  chapter_title: Brand Overview and Structure
+- name: logo governance：variant selection → clear space → background/context → endorsement → application
+  chapter: ch-02
+  chapter_title: Logos
+- name: identity toolkit：signature asset → typography → colour → graphic device → information design → iconography
+  chapter: ch-03
+  chapter_title: Core Elements
+- name: token hierarchy：core colours → supporting colours → typography roles → application usage
+  chapter: ch-03-01
+  chapter_title: Typography and Colour
+- name: information branding：data structure → chart style → colour assignment → icon support
+  chapter: ch-03-02
+  chapter_title: Graphic Devices and Data
+- name: imagery system：subject matter → treatment → colour/contrast → layout role → business context
+  chapter: ch-04
+  chapter_title: Illustration and Photography
+- name: stationery template：page size → logo zone → address/contact block → continuation rules → print constraints
+  chapter: ch-05
+  chapter_title: Stationery
+- name: application pattern：format → grid → cover/spread/back role → brand elements → content hierarchy
+  chapter: ch-06
+  chapter_title: Key Applications
+- name: sub-brand adaptation：shared M&G identity → audience-specific imagery → format-specific templates
+  chapter: ch-07
+  chapter_title: Institutional - Fixed Income
+- name: sector variant system：logo variant → photography treatment → report/brochure layout → site signage
+  chapter: ch-08
+  chapter_title: M&G Real Estate
+- name: support system：question type → contact → approval → writing style check
+  chapter: ch-09
+  chapter_title: Contacts and Appendix
+patterns:
+- name: 穩健實力 + 獨立個性
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 將 abstract positioning 轉成 later visual cues，是品牌手冊常見的開場架構。
+  chapter: ch-01-01
+  chapter_title: Bringing the Brand to Life
+- name: 使用一套核心元素，再為業務線建立有限變體。
+  chapter: ch-01-02
+  chapter_title: Brand Overview and Structure
+- name: 金融品牌常以 endorsement mark 建立信任，但必須防止其干擾主品牌。
+  chapter: ch-02
+  chapter_title: Logos
+- name: 把資料圖表納入 core elements，顯示金融品牌的識別必須覆蓋資訊呈現，而不只行銷封面。
+  chapter: ch-03
+  chapter_title: Core Elements
+- name: 核心色與輔助色分層，可避免所有素材過度使用主色。
+  chapter: ch-03-01
+  chapter_title: Typography and Colour
+- name: 將 chart style 納入 guideline 是 B2B/financial brand 的重要模式。
+  chapter: ch-03-02
+  chapter_title: Graphic Devices and Data
+- name: 為不同業務線準備影像變體，可讓 masterbrand 保持一致但不僵硬。
+  chapter: ch-04
+  chapter_title: Illustration and Photography
+- name: 用固定模板降低行政素材變異。
+  chapter: ch-05
+  chapter_title: Stationery
+- name: 以 brochure / magazine / sales aid 為高頻情境建立模板族。
+  chapter: ch-06
+  chapter_title: Key Applications
+- name: 為 B2B/Institutional 建立降低色彩刺激的變體。
+  chapter: ch-07
+  chapter_title: Institutional - Fixed Income
+- name: 將 site boards 納入 guideline，表示品牌從文宣延伸到實體環境。
+  chapter: ch-08
+  chapter_title: M&G Real Estate
+- name: appendix 放 tone of voice 可補齊視覺手冊常缺失的語言治理。
+  chapter: ch-09
+  chapter_title: Contacts and Appendix
+rules_ai_checkable:
+- module: ''
+  criterion: 新 artwork、design element、template、supplier 或 agency 必須經 Global Marketing Director / Design & Print team 核准；所有尺寸以
+    mm 為準；不得直接從螢幕或列印稿量測。
+  chapter: ch-01
+  chapter_title: Introduction
+- module: Brand Strategy
+  criterion: 所有素材應能回扣 heavyweight investment 與 independent spirit；語氣不可只呈現保守金融機構，也不可失去專業可信度。
+  chapter: ch-01-01
+  chapter_title: Bringing the Brand to Life
+- module: Brand Strategy
+  criterion: 子業務不得自行發明與核心品牌無關的識別；Prudential endorsement 的留白與位置需符規定範。
+  chapter: ch-01-02
+  chapter_title: Brand Overview and Structure
+- module: Visual Identity
+  criterion: 不得扭曲、重畫、改色或縮放破壞 logo；exclusion area 不得放置其他圖文；Prudential endorsement 需依指定留白呈現。
+  chapter: ch-02
+  chapter_title: Logos
+- module: ''
+  criterion: ampersand、brush stroke、色彩與 icons 應使用核准版本；表格、圖表不得使用未核准色彩或破壞可讀性；iView / recycling logo 需遵守留白與尺寸。
+  chapter: ch-03
+  chapter_title: Core Elements
+- module: Typography System
+  criterion: 未核准字體不得替代品牌字體；色彩應從 core/supporting palette 選取；不得用螢幕色差自行估值。
+  chapter: ch-03-01
+  chapter_title: Typography and Colour
+- module: ''
+  criterion: 圖表色彩應來自核准色盤；圖示不得混用不同風格；brush stroke 不應被拉伸或當成任意背景紋理。
+  chapter: ch-03-02
+  chapter_title: Graphic Devices and Data
+- module: ''
+  criterion: 不可使用與品牌調性不符、低品質或過度通用的影像；插畫樣式需符合指定筆觸與色彩；攝影需依章節指定 full colour 或 monotone。
+  chapter: ch-04
+  chapter_title: Illustration and Photography
+- module: ''
+  criterion: 所有測量以 mm 為準；letterhead、continuation、compliment slip 與 business card 必須使用核准模板；不得從螢幕或列印樣張反推尺寸。
+  chapter: ch-05
+  chapter_title: Stationery
+- module: ''
+  criterion: Institutional materials 應使用核准 stationery、monotone photography 與指定版面；joint materials 不得破壞 M&G 層級。
+  chapter: ch-07
+  chapter_title: Institutional - Fixed Income
+- module: ''
+  criterion: Real Estate logo 不得與主品牌規格混用；endorsement strapline 需依規範呈現；site boards 與 photography 應使用核准版型與影像風格。
+  chapter: ch-08
+  chapter_title: M&G Real Estate
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - Brand Strategy
+  - Operations
+  - Governance
+- id: ch-01-01
+  title: Bringing the Brand to Life
+  modules:
+  - Brand Strategy
+  - Voice and Tone
+  - Messaging
+- id: ch-01-02
+  title: Brand Overview and Structure
+  modules:
+  - Knowledge Architecture
+  - Visual Identity
+  - Governance
+- id: ch-02
+  title: Logos
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-03
+  title: Core Elements
+  modules:
+  - Typography System
+  - Visual Language
+  - Color System
+  - Information Design
+- id: ch-03-01
+  title: Typography and Colour
+  modules:
+  - Typography System
+  - Color System
+  - Design Tokens
+- id: ch-03-02
+  title: Graphic Devices and Data
+  modules:
+  - Data Visualization
+  - Iconography System
+  - Visual Language
+- id: ch-04
+  title: Illustration and Photography
+  modules:
+  - Illustration System
+  - Photography System
+  - Visual Language
+- id: ch-05
+  title: Stationery
+  modules:
+  - Layout System
+  - Operations
+- id: ch-06
+  title: Key Applications
+  modules:
+  - Layout System
+  - Examples
+  - Knowledge Architecture
+- id: ch-07
+  title: Institutional - Fixed Income
+  modules:
+  - Brand Architecture
+  - Photography System
+  - Layout System
+- id: ch-08
+  title: M&G Real Estate
+  modules:
+  - Brand Architecture
+  - Photography System
+  - Layout System
+- id: ch-09
+  title: Contacts and Appendix
+  modules:
+  - Content Design
+  - Voice and Tone
+  - Operations
+  - Governance

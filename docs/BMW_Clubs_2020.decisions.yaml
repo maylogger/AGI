@@ -1,0 +1,118 @@
+# L3 決策卡 sidecar — BMW Clubs CI Guideline No. 5
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: BMW_Clubs_2020
+decisions:
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 以「母品牌固定 + 單位 signet 可差異」治理全球社群，先定義誰有權使用品牌資產與義務範圍
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - 品牌社群可有地方個性，但不能犧牲母品牌價值與官方可辨識性
+    applicable_when:
+      industries: [luxury_premium, public_sector, education]
+      brand_types: [heritage_legacy, institutional_public_trust, platform_ecosystem]
+      conditions: [multi_unit_consistency, sub_unit_identity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 地方社群自創與母品牌脫節的識別
+    evidence:
+      - brand_id: BMW_Clubs_2020
+        chapter: ch-02-01
+        excerpt: "以全球 logo 系統讓 official BMW Clubs 可被辨識為 sender，同時保留 club signet 差異；母品牌固定 + club signet 可差異，解決全球社群的一致與個性衝突。"
+    status: extracted
+
+  - id: dp-asset-protection-for-legacy
+    title: 把歷史品牌的核心識別當成不可妥協的資產來保護
+    problem:
+      statement: 歷史悠久的品牌，其 logo、色彩與材質是長期累積的資產；任何外部合作或內部輸出都可能在不經意間稀釋它。
+      signals: [heritage, asset_protection, consistency_over_time, brand_dilution_risk]
+    solution:
+      module: Visual Identity
+      move: 把 symbol/wordmark 定為不可妥協資產，明訂 official file、allowed context、prohibited modification 與過渡期限
+      layer: visual_core
+    reason:
+      - premium brand 的一致性是一種品質承諾；商標資產不得變成功能圖示或裝飾素材
+      - 保護核心識別，讓所有合作與輸出不削弱品牌資產
+    applicable_when:
+      industries: [luxury_premium]
+      brand_types: [heritage_legacy, premium_luxury]
+      conditions: [heritage, asset_protection]
+      archetypes: [brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 把 BMW symbol 當裝飾或功能元素
+      - 在正文以 symbol 替代 BMW 名稱
+    evidence:
+      - brand_id: BMW_Clubs_2020
+        chapter: ch-02-02
+        excerpt: "Brand Asset Protection Framework：BMW symbol 只能在 club logo 內使用，不得改 form/color、不得當裝飾/功能元素，並設 2022-01-01 過渡期限。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（BMW symbol diameter x）作為單一變數推導整套尺寸與留白
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 以一個核心變數 x 管理整套 logo 尺寸，是可納入 design token / rule engine 的高價值模式
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+    evidence:
+      - brand_id: BMW_Clubs_2020
+        chapter: ch-03-02
+        excerpt: "以 BMW symbol diameter x 推導 font size、line pitch、line thickness、spacing 與 clear space（至少 1.5 symbol diameters）；signet 為 5x × 2x。"
+      - brand_id: BMW_Clubs_2020
+        chapter: ch-06-01
+        excerpt: "把實體 logo 規則延伸到圓形與矩形 avatar：profile logo 與邊界至少 1/2x 或 1x，定義數位 safe area。"
+    status: extracted
+
+  - id: dp-approval-gate-for-exceptions
+    title: 例外不是漏洞，用審核閘門把差異收進可治理的模組
+    problem:
+      statement: 規則無法窮舉所有情境，現實組織總會有例外；若放任各單位自行決定，例外會逐步擴張成破壞系統的破口。
+      signals: [exception_handling, multi_unit_consistency, governance, scaling_risk]
+    solution:
+      module: Governance
+      move: 把例外（如 paired logos、特殊 symbol 使用）交由中央品牌管理單位個案審核
+      layer: governance
+    reason:
+      - 例外應回到品牌團隊，而不是由地方社群自行解釋
+      - 嚴格 guideline 必須搭配明確支援通道，否則地方社群會自行解釋
+    applicable_when:
+      industries: [luxury_premium, public_sector, finance]
+      brand_types: [heritage_legacy, institutional_public_trust, platform_ecosystem]
+      conditions: [multi_unit_consistency, exception_handling]
+      archetypes: [multi_brand_architecture, corporate_toolkit]
+    dependencies:
+      requires: [Governance]
+      enables: []
+    anti_patterns:
+      - 地方社群把一次性例外當成通用替代方案沿用
+    evidence:
+      - brand_id: BMW_Clubs_2020
+        chapter: ch-10-01
+        excerpt: "BMW Club & Community Management（BCCM）作為單一治理入口，未覆蓋的 pairing、symbol 使用、domain 例外與 reproduction 技術問題需回到 BCCM 審核；paired logos 需 BCCM 個案許可。"
+    status: extracted

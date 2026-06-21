@@ -1,0 +1,72 @@
+title: 'Falcon User’s Guide'
+source: 'sources/falcon_users_guide_2020.pdf'
+version: 'April 2020'
+language: 'en'
+summary: 'SpaceX Falcon launch service planning guide, defining vehicle capabilities, payload environments, interfaces, facilities, mission integration, operations, safety, and quick reference material for pre-contract customers.'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction'
+    level: 1
+    order: 1
+    pages: '1-4'
+    summary: 'Defines the guide purpose, SpaceX company context, Falcon program overview, launch vehicle safety, reliability architecture, and pricing scope.'
+  - id: 'ch-02'
+    title: 'Vehicles'
+    level: 1
+    order: 2
+    pages: '5-9'
+    summary: 'Describes Falcon 9 and Falcon Heavy vehicle configuration, propulsion, structures, separation systems, avionics, and coordinate frame.'
+  - id: 'ch-03'
+    title: 'Performance'
+    level: 1
+    order: 3
+    pages: '10-13'
+    summary: 'Outlines available injection orbits, mass-to-orbit planning, mass properties, launch windows, attitude control, separation accuracy, and multiple or secondary payload options.'
+  - id: 'ch-04'
+    title: 'Environments'
+    level: 1
+    order: 4
+    pages: '14-35'
+    summary: 'Specifies transportation, cleanliness, flight, load, vibration, acoustic, shock, random vibration, electromagnetic, pressure, thermal, heating, and compatibility verification environments.'
+  - id: 'ch-05'
+    title: 'Interfaces'
+    level: 1
+    order: 5
+    pages: '36-40'
+    summary: 'Documents mechanical payload adapters, fairing dimensions, electrical connectivity, command interfaces, timing services, and interface compatibility verification.'
+  - id: 'ch-06'
+    title: 'Facilities'
+    level: 1
+    order: 6
+    pages: '41-47'
+    summary: 'Summarizes SpaceX launch and support facilities across the Eastern Range, Vandenberg, Hawthorne, McGregor, and Washington, DC.'
+  - id: 'ch-07'
+    title: 'Mission Integration and Services'
+    level: 1
+    order: 7
+    pages: '48-51'
+    summary: 'Explains contracting, mission management, standard services, schedules, and customer deliverables.'
+  - id: 'ch-08'
+    title: 'Operations'
+    level: 1
+    order: 8
+    pages: '52-62'
+    summary: 'Describes spacecraft delivery, processing, joint integration, launch operations, countdown, flight operations, and sample mission profile.'
+  - id: 'ch-09'
+    title: 'Safety'
+    level: 1
+    order: 9
+    pages: '63'
+    summary: 'Defines customer safety requirements, hazardous systems and operations, and waiver handling.'
+  - id: 'ch-10'
+    title: 'Contact Information'
+    level: 1
+    order: 10
+    pages: '64'
+    summary: 'Provides customer contact channels for Falcon launch services.'
+  - id: 'ch-11'
+    title: 'Quick Reference'
+    level: 1
+    order: 11
+    pages: '65-68'
+    summary: 'Collects figures, tables, acronyms, and change log references for navigation and operational lookup.'

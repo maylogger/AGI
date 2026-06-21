@@ -1,0 +1,85 @@
+title: 'I amsterdam Brand Manual'
+source: 'sources/I_amsterdam_Brand_Manual_EN_2019.pdf'
+date: '2019-07'
+language: 'en'
+summary: '這份品牌手冊定義 I amsterdam motto/label 的品牌意義、核心價值、色彩、位置、尺寸公式、線上與純 motto 使用、字體、應用範例與審批方式。'
+chapters:
+  - id: 'ch-01'
+    title: 'I amsterdam'
+    level: 1
+    order: 1
+    pages: '3'
+    summary: '說明 I amsterdam 作為行銷 Amsterdam 的 motto、註冊品牌與授權關係。'
+  - id: 'ch-02'
+    title: 'amsterdam&partners'
+    level: 1
+    order: 2
+    pages: '4'
+    summary: '說明 amsterdam&partners 的城市行銷角色與使命。'
+  - id: 'ch-03'
+    title: 'Core Values'
+    level: 1
+    order: 3
+    pages: '5'
+    summary: '定義 creativity、innovation、entrepreneurship 三個城市核心價值。'
+  - id: 'ch-04'
+    title: 'The Label'
+    level: 1
+    order: 4
+    pages: '6-10'
+    summary: '規範 label 的動態使用、色彩變體、位置、尺寸計算與 sponsor logo 關係。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Colour Variations'
+        level: 2
+        order: 1
+        pages: '7'
+        summary: '定義 red label、white label 與 grey label 的使用與色值。'
+      - id: 'ch-04-02'
+        title: 'Label Placement and Format Calculation'
+        level: 2
+        order: 2
+        pages: '8-9'
+        summary: '定義 label 可置於左、右、上方，並依短長邊比計算尺寸。'
+      - id: 'ch-04-03'
+        title: 'Label Placement with Logos'
+        level: 2
+        order: 3
+        pages: '10'
+        summary: '規範 label 不得與 sponsor logos 形成視覺整體，並需留出 1/4 label height。'
+  - id: 'ch-05'
+    title: 'Examples of Advertisement Formats'
+    level: 1
+    order: 5
+    pages: '11-13'
+    summary: '示範 portrait、landscape、square 廣告中 label 尺寸比例的計算方式。'
+  - id: 'ch-06'
+    title: 'Online Use'
+    level: 1
+    order: 6
+    pages: '14'
+    summary: '規範 label 在線上應與相關內容、header/footer、背景圖或 moving image 連結。'
+  - id: 'ch-07'
+    title: 'Pure Motto Use'
+    level: 1
+    order: 7
+    pages: '15'
+    summary: '規範不帶 label 的 motto 置中使用、左右 margin 與最低螢幕高度。'
+  - id: 'ch-08'
+    title: 'Font'
+    level: 1
+    order: 8
+    pages: '16'
+    summary: '指定 Avenir 作為 I amsterdam 的定義字體與可用字重。'
+  - id: 'ch-09'
+    title: 'Examples of Use'
+    level: 1
+    order: 9
+    pages: '17-25'
+    summary: '以 magazines、billboards、guide、folder、banner 等展示 label 實際應用。'
+  - id: 'ch-10'
+    title: 'Contact'
+    level: 1
+    order: 10
+    pages: '26'
+    summary: '規範使用 label 或 pure motto 前需洽 amsterdam&partners 並送設計審批。'

@@ -1,0 +1,143 @@
+# L3 決策卡 sidecar — Sartorius Brand Style Guide
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: sartorius_Brand_Style_Guide_2020
+decisions:
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以 logo 中 S 高度作為 clear space 量尺，並訂 15 mm / 120 px 最小寬度，讓版面、claim 與 signet 共用同一套量測邏輯
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 用 logo 作為尺寸 token，可讓版面、claim 與 signet 共用同一套量測邏輯
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    evidence:
+      - brand_id: sartorius_Brand_Style_Guide_2020
+        chapter: ch-01-01
+        excerpt: "clear space >= S height；logo width >= 15 mm 或 120 px；用 logo 作為尺寸 token，讓版面、claim 與 signet 共用同一套量測邏輯。"
+    status: extracted
+
+  - id: dp-approval-gate-for-exceptions
+    title: 例外不是漏洞，用審核閘門把差異收進可治理的模組
+    problem:
+      statement: 規則無法窮舉所有情境，現實組織總會有例外；若放任各單位自行決定，例外會逐步擴張成破壞系統的破口。
+      signals: [exception_handling, multi_unit_consistency, governance, scaling_risk]
+    solution:
+      module: Governance
+      move: 把 signet 定義為空間不足時的例外資產（非 alternative），需 Corporate Branding & Design 核准，並訂可量測使用規則
+      layer: governance
+    reason:
+      - 例外章節應寫出「為何例外」「何時可用」「不可擴張到哪裡」
+      - 越簡化的品牌符號越需要更高審批門檻；把簡化資產視為 exception 而非 alternative 可降低品牌漂移
+    applicable_when:
+      industries: [public_sector, finance, industrial_materials_science]
+      brand_types: [institutional_public_trust, platform_ecosystem, heritage_legacy]
+      conditions: [multi_unit_consistency, exception_handling]
+      archetypes: [multi_brand_architecture, corporate_toolkit]
+    dependencies:
+      requires: [Governance]
+      enables: []
+    anti_patterns:
+      - 各單位把一次性例外當成通用替代方案沿用
+    evidence:
+      - brand_id: sartorius_Brand_Style_Guide_2020
+        chapter: ch-02
+        excerpt: "signet 是例外資產，需要 Corporate Branding & Design 核准、不取代標準 logo；exception framework：space constraint → approval → approved version → measurable use。"
+    status: extracted
+
+  - id: dp-system-toolkit-over-template
+    title: 企業視覺系統給「可組合工具箱」而非僵硬模板
+    problem:
+      statement: 要求每個版面長得完全相同會扼殺多元內容；但完全自由又會失去一致性。
+      signals: [many_teams, many_agencies, diverse_content, system_consistency, mass_touchpoints]
+    solution:
+      module: Layout System
+      move: 用 1/4、1/3、1/2、full-format 分割建立 flexible grid，claim 寬度由 logo 衍生，靠少量比例規則創造可辨識性而非硬鎖每個元素位置
+      layer: visual_core
+    reason:
+      - 彈性必須被結構化；品牌版面應靠少量比例規則創造可辨識性，而非硬鎖每個元素位置
+      - 口號可被抽象為可量測的 lockup / tile system，而不是文案附屬品
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, consumer_retail_hospitality]
+      brand_types: [mass_consumer, category_creator]
+      conditions: []
+      archetypes: [full_brand_system, corporate_toolkit, brand_experience_guide]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Layout System, Examples]
+    anti_patterns:
+      - 只提供單一固定版型，使用者只會複製貼上
+    evidence:
+      - brand_id: sartorius_Brand_Style_Guide_2020
+        chapter: ch-03
+        excerpt: "grid-to-asset framework：format division → logo size → claim tile → content area；以 1/4、1/3、1/2、full format 建立 flexible grid，品牌版面靠少量比例規則創造可辨識性。"
+    status: extracted
+
+  - id: dp-custom-typeface-as-identity-asset
+    title: 用專屬字體當識別資產，擺脫系統預設字並統一語氣
+    problem:
+      statement: 仰賴系統預設字體的品牌缺乏獨特性與一致語氣，跨媒介又常因字體缺失而失控；但又需要在無法安裝字型的環境保有 fallback。
+      signals: [identity_distinctiveness, system_consistency, brand_recognition, multi_media]
+    solution:
+      module: Typography System
+      move: 以 TT Norms Pro 作品牌字體、Noto Sans 與 Arial 作 fallback，並定義字重角色、字色與 typographic tokens
+      layer: visual_core
+    reason:
+      - 專屬字體系統讓品牌不再依賴 default fonts，並讓文字有一致語氣
+      - 搭配 system fallback，可在無法安裝字型的環境維持一致
+      - 字體規範應同時處理視覺、語言、授權與工具限制
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger]
+      conditions: [identity_distinctiveness, multi_media]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: [Design Tokens]
+    anti_patterns:
+      - 直接沿用系統字當品牌字體，缺乏 fallback 規範
+    evidence:
+      - brand_id: sartorius_Brand_Style_Guide_2020
+        chapter: ch-05-01
+        excerpt: "licensed brand font → fallback → usage roles：TT Norms Pro 為品牌字體，Noto Sans 與 Arial 為 fallback，並定義字重角色與字色。"
+    status: extracted
+
+  - id: dp-contact-before-appendix
+    title: 在技術資料前先給治理窗口，讓 guideline 成為可改善系統
+    problem:
+      statement: 規則無法涵蓋所有情境，缺乏權威決策入口時，例外用法無人裁決。
+      signals: [exceptions_expected, governance]
+    solution:
+      module: Governance
+      move: 在文件結尾把疑問、下載與供應商使用導回 Brand Platform 與 branding contact，並界定 internal / vendor 使用邊界
+      layer: governance
+    reason:
+      - 規則無法涵蓋所有情境，必須提供權威決策入口
+      - 可執行 guideline 必須提供例外處理路徑
+      - Design knowledge base 應記錄規則，也要記錄誰有權解釋規則
+    applicable_when:
+      industries: [finance, industrial_materials_science]
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit, logo_asset_guidelines]
+    dependencies:
+      requires: [Governance]
+      enables: [Operations]
+    evidence:
+      - brand_id: sartorius_Brand_Style_Guide_2020
+        chapter: ch-09
+        excerpt: "在文件結尾提供 Brand Platform 與 branding contact，限制 internal / vendor 使用邊界；若使用未列資產或例外，需標記為需 Corporate Branding & Design review。"
+    status: extracted

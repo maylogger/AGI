@@ -1,0 +1,219 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: I_amsterdam_Brand_Manual_EN_2019
+index_ref: docs/I_amsterdam_Brand_Manual_EN_2019.index.yaml
+note_ref: docs/I_amsterdam_Brand_Manual_EN_2019.note.md
+archetype: brand_experience_guide
+industry: public_sector
+modules:
+- Legal and Trademark
+- Brand Strategy
+- Operations
+- Governance
+- Content Design
+- Messaging
+- AI-Checkable Rules
+- Layout System
+- Measurement
+- Typography System
+- Examples
+depth:
+  strategy: medium
+  visual: medium
+  governance: high
+  top_level_chapter_count: 10
+  section_count: 3
+chapter_sequence:
+- id: ch-01
+  title: I amsterdam
+  order: 1
+  level: 1
+- id: ch-02
+  title: amsterdam&partners
+  order: 2
+  level: 1
+- id: ch-03
+  title: Core Values
+  order: 3
+  level: 1
+- id: ch-04
+  title: The Label
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Colour Variations
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Label Placement and Format Calculation
+  order: 2
+  level: 2
+- id: ch-04-03
+  title: Label Placement with Logos
+  order: 3
+  level: 2
+- id: ch-05
+  title: Examples of Advertisement Formats
+  order: 5
+  level: 1
+- id: ch-06
+  title: Online Use
+  order: 6
+  level: 1
+- id: ch-07
+  title: Pure Motto Use
+  order: 7
+  level: 1
+- id: ch-08
+  title: Font
+  order: 8
+  level: 1
+- id: ch-09
+  title: Examples of Use
+  order: 9
+  level: 1
+- id: ch-10
+  title: Contact
+  order: 10
+  level: 1
+frameworks:
+- name: motto 的意義框架為 diversity、connectedness、individuality、Metropolitan Area
+  chapter: ch-01
+  chapter_title: I amsterdam
+- name: 城市行銷框架包含 residents、visitors、companies 與 economic/cultural/scientific knowledge centre
+  chapter: ch-02
+  chapter_title: amsterdam&partners
+- name: 三值框架為 creativity = original & surprising、innovation = trend-setting & innovative、entrepreneurship = active & enterpri...
+  chapter: ch-03
+  chapter_title: Core Values
+- name: label system 由 color variant、placement axis、reading direction、format ratio、clear space、logo relationship 組成
+  chapter: ch-04
+  chapter_title: The Label
+- name: 計算流程為 long side / short side = X → 查表 → label size = short side percentage
+  chapter: ch-05
+  chapter_title: Examples of Advertisement Formats
+- name: online use 可用 content relevance、linked area proportion、placement context、approval/contact 檢查
+  chapter: ch-06
+  chapter_title: Online Use
+- name: 判斷 pure motto 可用性需看 sender uniqueness、medium type、center alignment、margin、screen minimum size
+  chapter: ch-07
+  chapter_title: Pure Motto Use
+- name: typography 可用 font family、weights、italic usage、availability/licensing 檢查
+  chapter: ch-08
+  chapter_title: Font
+- name: 範例可按 medium type、size、content density、label placement、motto role 分析
+  chapter: ch-09
+  chapter_title: Examples of Use
+- name: approval workflow 為 consult → submit design → review within normal response window → adjust layout if needed → produc...
+  chapter: ch-10
+  chapter_title: Contact
+patterns:
+- name: 城市品牌可把一句 motto 作為可授權的關係標記，連接不同活動與故事。
+  chapter: ch-01
+  chapter_title: I amsterdam
+- name: 品牌持有者與品牌管理者分離時，guideline 需明示 ownership/license 關係。
+  chapter: ch-02
+  chapter_title: amsterdam&partners
+- name: 可轉移性
+  chapter: ch-03
+  chapter_title: Core Values
+- name: 以媒介短長邊比例決定 label 尺寸，是 responsive brand mark 的高價值 pattern。
+  chapter: ch-04
+  chapter_title: The Label
+- name: 以多版型 examples 驗證同一公式，是 design rule education pattern。
+  chapter: ch-05
+  chapter_title: Examples of Advertisement Formats
+- name: 將品牌標記連到內容相關頁，而非只作裝飾，是 digital brand governance pattern。
+  chapter: ch-06
+  chapter_title: Online Use
+- name: 用字母本身定義 clear space，是 wordmark governance 的可複用模式。
+  chapter: ch-07
+  chapter_title: Pure Motto Use
+- name: 指定一個主字體與常用 2-3 個字重，是保持彈性又避免混亂的 typography pattern。
+  chapter: ch-08
+  chapter_title: Font
+- name: 大量展示跨媒介案例，是讓外部合作方理解規則彈性的方式。
+  chapter: ch-09
+  chapter_title: Examples of Use
+- name: 在手冊最後放明確審批時間，是品牌治理與專案管理的交會 pattern。
+  chapter: ch-10
+  chapter_title: Contact
+rules_ai_checkable:
+- module: ''
+  criterion: 使用 I amsterdam 時應連結到與 Amsterdam Metropolitan Area 相關的人、故事、事件、活動或象徵；不得假設 motto 可自由商業使用，因其為註冊品牌。
+  chapter: ch-01
+  chapter_title: I amsterdam
+- module: ''
+  criterion: 使用 I amsterdam 的內容應至少能對應 creativity、innovation、entrepreneurship 之一；若素材無法連結城市價值，應避免使用 label。
+  chapter: ch-03
+  chapter_title: Core Values
+- module: ''
+  criterion: standard form 為黑白 motto 置於 red label；white label 僅用於紅底；grey label 用於黑白廣告；motto 不得放在其他 label；label 只能放左、右或上方，不得放底部或角落；左右放置時閱讀方向需由上至下，上方放置時由左至右；與文字或影像至少保留
+    1/4 label height；不得放在 sponsor logos 中間或與 sponsor logos 形成視覺整體；最低 label size 為 L 20mm、H 5.702mm。
+  chapter: ch-04
+  chapter_title: The Label
+- module: ''
+  criterion: X 為 1-1.99 時 label 為短邊 30%；2-2.49 為 40%；2.5-2.99 為 50%；3-3.49 為 60%；3.5-3.99 為 70%；4-4.49 為 80%；4.5-4.99 為 90%；5-5.49
+    為 100%；5.5-5.99 為 110%；6-6.49 為 120%；6.5-6.99 為 130%；7-7.49 為 140%；7.5 以上固定為 150%，不再同比增加。
+  chapter: ch-05
+  chapter_title: Examples of Advertisement Formats
+- module: ''
+  criterion: pure motto 必須置中；左右最小 margin 為字母 I 的高度；右側測量以 m 為基準，不包含 ®；僅用於 film、online banners、flags，且當 I amsterdam 是 unique
+    sender 或被如此呈現；螢幕使用最小 motto height 為 20px。
+  chapter: ch-07
+  chapter_title: Pure Motto Use
+- module: ''
+  criterion: 使用 label 或 pure motto 需與 amsterdam&partners 諮詢並取得 approval；廣告製作前需將設計寄至 `brand@iamsterdam.com`；排程應預留通常 3 個工作日回覆與可能修改時間。
+  chapter: ch-10
+  chapter_title: Contact
+chapters:
+- id: ch-01
+  title: I amsterdam
+  modules:
+  - Legal and Trademark
+  - Brand Strategy
+- id: ch-02
+  title: amsterdam&partners
+  modules:
+  - Operations
+  - Governance
+- id: ch-03
+  title: Core Values
+  modules:
+  - Brand Strategy
+  - Content Design
+  - Messaging
+- id: ch-04
+  title: The Label
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+- id: ch-05
+  title: Examples of Advertisement Formats
+  modules:
+  - Measurement
+- id: ch-06
+  title: Online Use
+  modules:
+  - Content Design
+  - Governance
+- id: ch-07
+  title: Pure Motto Use
+  modules:
+  - AI-Checkable Rules
+- id: ch-08
+  title: Font
+  modules:
+  - Typography System
+- id: ch-09
+  title: Examples of Use
+  modules:
+  - Examples
+- id: ch-10
+  title: Contact
+  modules:
+  - Operations
+  - Governance

@@ -1,0 +1,82 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Huawei_Visual_Identity_Guidelines
+index_ref: docs/Huawei_Visual_Identity_Guidelines.index.yaml
+note_ref: docs/Huawei_Visual_Identity_Guidelines.note.md
+archetype: brand_experience_guide
+industry: tech_software
+modules: []
+depth:
+  strategy: low
+  visual: low
+  governance: low
+  top_level_chapter_count: 8
+  section_count: 7
+chapter_sequence:
+- id: ch-01
+  title: Huawei Brand
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Vision and Mission
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Brand Attributes
+  order: 2
+  level: 2
+- id: ch-02
+  title: Visual Identity System
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Basic Elements and Logo
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Corporate Color
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Secondary Graphic Huawei Line
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Illustrations
+  order: 4
+  level: 2
+- id: ch-02-05
+  title: Brand Imagery Style and Typography
+  order: 5
+  level: 2
+- id: ch-03
+  title: Stationery Application
+  order: 3
+  level: 1
+- id: ch-04
+  title: Advertising Application
+  order: 4
+  level: 1
+- id: ch-05
+  title: Digital Multi-media
+  order: 5
+  level: 1
+- id: ch-06
+  title: Print Application
+  order: 6
+  level: 1
+- id: ch-07
+  title: Exhibition and Display Application
+  order: 7
+  level: 1
+- id: ch-08
+  title: Signage and Wayfinding Application
+  order: 8
+  level: 1
+frameworks: []
+patterns: []
+rules_ai_checkable: []
+chapters: []

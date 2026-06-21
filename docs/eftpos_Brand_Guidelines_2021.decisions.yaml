@@ -1,0 +1,237 @@
+# L3 決策卡 sidecar — eftpos Brand Guidelines 2021
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: eftpos_Brand_Guidelines_2021
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌不是單一標誌，而是組織如何行動與如何溝通
+      - 品牌是決策系統，不是美術風格；每個視覺與文案選擇都應能回推到品牌支柱
+      - 先建立判斷標準，後續視覺與語氣才有可回溯的語義來源
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: eftpos_Brand_Guidelines_2021
+        chapter: ch-01
+        excerpt: "先把 eftpos 定位為 Australia’s original fintech，以 business / what we do / purpose → personality → values → manifesto 讓後續支付、卡片與商戶情境都有品牌人格支撐。"
+    status: extracted
+
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 用人格詞集（Curious/Sharing/Free Thinking/Caring/Optimistic）當每個產出的檢查軸
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - 品牌價值可寫成內部工作方式，而不只是對外形容詞
+      - 可複用為 brand voice QA rubric，用正向特質與負向偏差共同審核
+    applicable_when:
+      industries: [industrial_materials_science, nonprofit_social]
+      brand_types: [challenger, category_creator, mission_driven]
+      conditions: []
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Visual Language, Content Design]
+    evidence:
+      - brand_id: eftpos_Brand_Guidelines_2021
+        chapter: ch-01
+        excerpt: "以「Humble Australian Innovator」連結 down to earth、practical、bold、problem solver、family oriented；溝通應支持 do good for Australia、test and learn、bold leadership，並避免過度矽谷式抽象創新語言。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - 相對單位可建立 scalable spacing token，不被固定像素綁死
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - minimum clear space = 1x o，optimal = 2x o
+    evidence:
+      - brand_id: eftpos_Brand_Guidelines_2021
+        chapter: ch-02-01
+        excerpt: "clear space 等於 eftpos wordmark 的 x-height，並依 vertical / horizontal / small use 切換 composition；小尺寸需專門優化版本而非縮小同一圖檔。"
+    status: extracted
+
+  - id: dp-custom-typeface-as-identity-asset
+    title: 用專屬字體當識別資產，擺脫系統預設字並統一語氣
+    problem:
+      statement: 仰賴系統預設字體的品牌缺乏獨特性與一致語氣，跨媒介又常因字體缺失而失控；但又需要在無法安裝字型的環境保有 fallback。
+      signals: [identity_distinctiveness, system_consistency, brand_recognition, multi_media]
+    solution:
+      module: Typography System
+      move: 建立專屬企業字體（3M Circular）作為核心識別資產，並指定 web/system fallback 與字重、leading、kerning、字色規則
+      layer: visual_core
+    reason:
+      - 專屬字體系統讓品牌不再依賴 default fonts，並讓文字有共同語氣
+      - 字體系統要以 utility 為核心；可讀性與一致性優先於裝飾
+      - 搭配 system fallback，可在無法安裝字型的環境維持一致
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger]
+      conditions: [identity_distinctiveness, multi_media]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: [Design Tokens]
+    anti_patterns:
+      - 直接沿用系統字當品牌字體，缺乏 fallback 規範
+    evidence:
+      - brand_id: eftpos_Brand_Guidelines_2021
+        chapter: ch-02-02
+        excerpt: "Sharp Grotesk Semibold 23 為 headline、Manrope 為 longform，Arial 為 Office fallback，承載 bold innovator 語氣並兼顧無法安裝字型的環境。"
+    status: extracted
+
+  - id: dp-palette-roles-and-usage-limits
+    title: 用色彩角色與用途限制治理調色盤，而非只給色票清單
+    problem:
+      statement: 只提供一串色票時，設計者會把任何顏色當成可自由使用，導致主色被稀釋、輔助色被誤用為大面積背景，跨應用失去一致性。
+      signals: [color_governance, palette_misuse, brand_color_equity, multi_application]
+    solution:
+      module: Color System
+      move: 為每個顏色指定角色（主色／背景／文字／功能／輔助），並明訂「可作背景／不可作背景」與少量使用門檻
+      layer: visual_core
+    reason:
+      - 主色承擔品牌記憶，輔助／功能色承擔資訊與插圖，角色混用會稀釋品牌資產
+      - color token 需附用途限制，才能被審稿與自動檢查
+      - 把識別色與功能色分離並對後者加治理門檻，可避免資料視覺化隨意擴色
+    applicable_when:
+      industries: [finance, consumer_retail_hospitality, luxury_premium, nonprofit_social]
+      brand_types: [mass_consumer, institutional_public_trust, premium_luxury]
+      conditions: [color_governance, multi_application]
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit]
+    dependencies:
+      requires: [Color System]
+      enables: [Design Tokens, Accessibility]
+    anti_patterns:
+      - 只給一串色票，未說明每色角色與可否作背景
+      - 讓輔助／功能色被當成大面積品牌背景
+    evidence:
+      - brand_id: eftpos_Brand_Guidelines_2021
+        chapter: ch-02-02
+        excerpt: "色彩分成 identity colour（Waratah、Jacaranda、Eucalypt Flower、Midnight Purple）與 functional colour；functional colours 僅在 primary palette 不足時少量使用，外部溝通需 approval。"
+    status: extracted
+
+  - id: dp-accessible-contrast-pairs
+    title: 把可近用性前置成核准對比配色，而非設計者自行判斷
+    problem:
+      statement: 公共資訊面向全體市民與輔助科技，若放任設計者自由配色，容易產生不符合無障礙標準、身心障礙者無法閱讀的組合。
+      signals: [accessibility, public_trust, inclusive_audience, regulatory_compliance]
+    solution:
+      module: Accessibility
+      move: 把可近用性放在視覺工具區（而非附錄），明訂至少符合 WCAG 2.1 AA，並只允許清單內的核准對比配色
+      layer: visual_core
+    reason:
+      - 機構不應把可近用性視為加分項，而是最低標準
+      - 用 approved contrast pairs 降低設計者自行判斷錯誤
+      - 鮮明色彩不能犧牲對比與可用性
+    applicable_when:
+      industries: [public_sector, education, finance]
+      brand_types: [institutional_public_trust]
+      conditions: [accessibility, inclusive_audience]
+      archetypes: [brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Color System]
+      enables: [Governance]
+    anti_patterns:
+      - 把無障礙規範放在附錄，當成可選加分項
+      - 使用未列出的 accessible colour combinations
+    evidence:
+      - brand_id: eftpos_Brand_Guidelines_2021
+        chapter: ch-02-02
+        excerpt: "以 vivid Australian palette 搭配 AA web accessibility for large text / graphic devices 作設計理由；金融品牌色彩要鮮明但不能犧牲對比與可用性。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - 支付網路品牌的權益常在 co-branding 中流失，需要 parity 規則
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance, Legal and Trademark]
+    evidence:
+      - brand_id: eftpos_Brand_Guidelines_2021
+        chapter: ch-02-04
+        excerpt: "eftpos logo 寬度至少等於其他 network logos、divider 與各 logo 間距為 2X、divider 延伸超過 logo edge 的高度為 X，以 logo parity + clear space + divider keyline 維持權益。"
+    status: extracted
+
+  - id: dp-trademark-permission-flow
+    title: 用授權閘門治理第三方商標使用，先處理混淆與背書風險
+    problem:
+      statement: 平台品牌被大量第三方使用商標與資產，若無授權流程，會造成商標混淆與誤導性背書風險。
+      signals: [trademark_protection, partner_governance, endorsement_risk, third_party_usage]
+    solution:
+      module: Legal and Trademark
+      move: 以「核准來源 + 允許情境 + 禁止改作 + permission gate」治理，高風險情境須送審並附最終版本、描述與 script
+      layer: governance
+    reason:
+      - 平台品牌 guideline 應優先處理 trademark confusion 與 endorsement risk，再處理美學一致
+      - 授權鏈越長，越需要明確寫出誰提交、誰批准、誰能終止
+      - permission section 將品牌治理流程化，降低設計師自行判斷法律風險
+    applicable_when:
+      industries: [tech_software, finance]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [third_party_usage, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Legal and Trademark]
+      enables: [Governance]
+    anti_patterns:
+      - 只給視覺規格而無使用情境風險表與審核材料清單
+      - 放任第三方自行判斷法律與背書風險
+    evidence:
+      - brand_id: eftpos_Brand_Guidelines_2021
+        chapter: ch-04-01
+        excerpt: "所有 card designs 與 brandmark 使用必須先取得 eftpos approval、經 Service Now Member Portal 提交 finished scale colour sample；contactless mark 為 EMVCo sublicence，使用須含 attribution 並遵守 EMVCo guidelines。"
+    status: extracted

@@ -1,0 +1,73 @@
+title: 'Tesla Brand Manual 2010'
+source: 'sources/Tesla_Guidelines_2010.pdf'
+date: '2010'
+language: 'en'
+summary: '這份 Tesla 2010 品牌手冊定義早期 Tesla Motors 的品牌定位、視覺識別、字體、色彩、商務文件、電子應用、商品與 editorial voice。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction'
+    level: 1
+    order: 1
+    pages: '1-3'
+    summary: '說明一致使用 guideline 對品牌資產與長期價值的重要性，並以 Tesla 創立故事與電動車使命建立品牌定位。'
+  - id: 'ch-02'
+    title: 'Visual Identity'
+    level: 1
+    order: 2
+    pages: '4-11'
+    summary: '定義 Tesla Wordmark、Tesla Flag、Tesla T、Roadster、Roadster Sport、Model S 與不可接受用法。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Tesla Wordmark'
+        level: 2
+        order: 1
+        pages: '5'
+        summary: 'Wordmark 是最常見且可提供第三方使用的識別形式，需遵守色彩、背景、clearspace 與 standalone 規則。'
+      - id: 'ch-02-02'
+        title: 'Tesla Flag and Tesla T'
+        level: 2
+        order: 2
+        pages: '6-7'
+        summary: 'Flag 與 T 需 Corporate Marketing 與 Chief Designer/Creative Director 明確核准，並有更嚴格的背景、出血、clearspace 與 proximity 規則。'
+      - id: 'ch-02-03'
+        title: 'Product Wordmarks and Misuse'
+        level: 2
+        order: 3
+        pages: '8-11'
+        summary: 'Roadster、Roadster Sport、Model S wordmarks 有各自色彩與 clearspace 規則，並以反例禁止錯誤比例、背景、inline use 與舊盾牌。'
+  - id: 'ch-03'
+    title: 'Typography'
+    level: 1
+    order: 3
+    pages: '12'
+    summary: '定義 Helvetica 為主要字體、Gotham 為標題輔助字體、Arial 為電子應用替代字體。'
+  - id: 'ch-04'
+    title: 'Colors'
+    level: 1
+    order: 4
+    pages: '13'
+    summary: '定義 Tesla Red、灰階、白與黑的 Pantone、CMYK、RGB、web values，並指定色彩比例白 75%、灰 20%、紅 5%。'
+  - id: 'ch-05'
+    title: 'Business Papers'
+    level: 1
+    order: 5
+    pages: '14-16'
+    summary: '規範 business card、electronic/printed letterhead 與 envelope 的比例、紙張、在地調整與核准條件。'
+  - id: 'ch-06'
+    title: 'Electronic Applications'
+    level: 1
+    order: 6
+    pages: '17-18'
+    summary: '規範 PowerPoint template 與 e-mail signature，包含可用 logo、字體、轉 PDF 建議與禁止使用 Flag/T。'
+  - id: 'ch-07'
+    title: 'Other Applications'
+    level: 1
+    order: 7
+    pages: '19-20'
+    summary: '規範 merchandise 與 apparel 在 lifestyle 情境中可較彈性，但仍需品牌身份出現、不得扭曲或損害品牌，且需核准。'
+  - id: 'ch-08'
+    title: 'Editorial Guidelines'
+    level: 1
+    order: 8
+    pages: '21'
+    summary: '定義 Tesla voice 為 confident、spirited、premium、technology-first，並列出寫作 do/don’t。'

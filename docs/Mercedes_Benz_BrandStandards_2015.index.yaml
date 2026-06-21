@@ -1,0 +1,106 @@
+title: "Mercedes-Benz Brand Communication Standards"
+source: "sources/Mercedes_Benz_BrandStandards_2015.pdf"
+version: "Rev. 10"
+date: "2015-08"
+language: "en"
+summary: "Mercedes-Benz USA 針對授權經銷商 Tier 3 新車與服務行銷所制定的品牌溝通標準，結合語言、價格、AOI、品牌識別、版面、商標與違規政策，以維持高端品牌形象與獎金計畫規定。"
+chapters:
+  - id: "ch-01"
+    title: "Introduction and Legal Summary"
+    level: 1
+    order: 1
+    pages: "1-2"
+    summary: "說明標準適用範圍、Tier 3 Bonus Program 關係、品牌風險、法律責任與 MBCCS 諮詢流程。"
+    children:
+      - id: "ch-01-01"
+        title: "Program Scope"
+        level: 2
+        order: 1
+        pages: "1"
+        summary: "界定傳統廣告、數位廣告、網站、搜尋、社群、郵件、活動與 AOI 等 Tier 3 行銷皆須遵循。"
+      - id: "ch-01-02"
+        title: "Legal and Consultation"
+        level: 2
+        order: 2
+        pages: "2"
+        summary: "要求經銷商自行遵守法律，並提供 MBCCS 預審、監測與有效期間規則。"
+  - id: "ch-02"
+    title: "Section I: Category I Infractions"
+    level: 1
+    order: 2
+    pages: "4-28"
+    summary: "列出會直接傷害品牌高端定位與 Tier 3 Bonus eligibility 的嚴重違規，包括折扣語言、銷售方案、Fleet、AOI、策略相容性與服務行銷。"
+    children:
+      - id: "ch-02-01"
+        title: "Language Usage"
+        level: 2
+        order: 1
+        pages: "4-8"
+        summary: "禁止折扣、清倉、誤導、無佐證與低價化語言，並提供可接受的高端替代表述。"
+      - id: "ch-02-02"
+        title: "Monthly Sales Program Guide Compliance"
+        level: 2
+        order: 2
+        pages: "9-12"
+        summary: "規範 Lease/APR、月度方案、期限、揭露與 disclaimer 必須與 MBUSA 官方銷售指南一致。"
+      - id: "ch-02-03"
+        title: "Fleet and AOI"
+        level: 2
+        order: 3
+        pages: "13-17"
+        summary: "處理 Fleet/USAA 方案與經銷商在 Area of Influence 外行銷的限制。"
+      - id: "ch-02-04"
+        title: "Strategy Compatibility and Service Marketing"
+        level: 2
+        order: 4
+        pages: "18-27"
+        summary: "要求媒體、行銷素材與服務溝通符合 Mercedes-Benz 品牌策略、目標與哲學。"
+      - id: "ch-02-05"
+        title: "Category I Strike Policy"
+        level: 2
+        order: 5
+        pages: "28"
+        summary: "說明 Category I 違規的 strike 政策與對獎金資格的影響。"
+  - id: "ch-03"
+    title: "Section II: Category II Brand Standards"
+    level: 1
+    order: 3
+    pages: "30-67"
+    summary: "規範品牌分離、Mercedes-Benz Star、word mark、typography、Panorama layout、applications、co-branding、corporate typeface、命名、素材與 Premier Express logo。"
+    children:
+      - id: "ch-03-01"
+        title: "Brand Separation and Marks"
+        level: 2
+        order: 1
+        pages: "30-36"
+        summary: "處理品牌、合作夥伴、pre-owned 分離，以及 Star、word mark 與 claim 的使用方式。"
+      - id: "ch-03-02"
+        title: "Typography and Panorama Layout"
+        level: 2
+        order: 2
+        pages: "37-55"
+        summary: "定義 subheadline principle、Panorama layout principle 與多種版面應用。"
+      - id: "ch-03-03"
+        title: "Co-Branding and Corporate Typeface"
+        level: 2
+        order: 3
+        pages: "56-58"
+        summary: "規範共同品牌呈現、合作關係與 Mercedes-Benz Corporate Typeface。"
+      - id: "ch-03-04"
+        title: "Names, Nomenclature and Assets"
+        level: 2
+        order: 4
+        pages: "59-62"
+        summary: "規範 trade name dealer application、product nomenclature、art、photography、video footage 與 Premier Express logo。"
+      - id: "ch-03-05"
+        title: "Category II Infraction Policy"
+        level: 2
+        order: 5
+        pages: "67"
+        summary: "說明品牌最佳實務類違規的政策與處理方式。"
+  - id: "ch-04"
+    title: "Legal Disclaimer Language"
+    level: 1
+    order: 4
+    pages: "69-70"
+    summary: "列出 airbag、radio、print 與 prepaid maintenance 等特定法律 disclaimer 語句。"

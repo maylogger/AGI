@@ -1,0 +1,79 @@
+title: 'Herman Miller Brand Guidelines'
+source: 'sources/Herman_Miller_Brand_Guidelines.pdf'
+date: 'August 2010'
+language: 'en'
+summary: 'Herman Miller 品牌指南，將品牌承諾、logomark 演進、商務溝通、視覺/文字使用、作者性、決策 guideposts、範例與資源串成品牌治理系統。'
+chapters:
+  - id: 'ch-01'
+    title: 'Advocating for the Herman Miller Brand'
+    level: 1
+    order: 1
+    pages: '2'
+    summary: '說明品牌是重要資產，要求所有使用者一致表達 logomark 與 brand promise。'
+  - id: 'ch-02'
+    title: 'Brand Introduction'
+    level: 1
+    order: 2
+    pages: '3-4'
+    summary: '定義品牌、logomark、logotype，以及「for a better world around you」品牌承諾。'
+  - id: 'ch-03'
+    title: 'Logomark Evolution'
+    level: 1
+    order: 3
+    pages: '5-6'
+    summary: '說明 stylized M 從 logotype 解鎖的策略，以及過渡期如何與 Herman Miller 名稱建立關聯。'
+  - id: 'ch-04'
+    title: 'Business Communications'
+    level: 1
+    order: 4
+    pages: '7'
+    summary: '規範標準通信系統與可用模板，包含信紙、名片、信封與簡報。'
+  - id: 'ch-05'
+    title: 'The Visual Use of the Brand'
+    level: 1
+    order: 5
+    pages: '8-13'
+    summary: '規範 logomark 空間、比例、最小尺寸、媒體規格、色彩、字體、輸出版本與 trademark。'
+    children:
+      - id: 'ch-05-01'
+        title: 'Space, Scale and Color'
+        level: 2
+        order: 1
+        pages: '8-10'
+        summary: '以 50% mark size、capital H、高階層比例、紅黑白與媒體色彩規格控制識別。'
+      - id: 'ch-05-02'
+        title: 'Type, Media and Trademarks'
+        level: 2
+        order: 2
+        pages: '11-13'
+        summary: '指定 Meta/Verdana、Micro/Normal/Display 版本、商標首次使用與 copyright line。'
+  - id: 'ch-06'
+    title: 'The Written Use of the Brand'
+    level: 1
+    order: 6
+    pages: '14-19'
+    summary: '定義誠實、友善、有人味且 purposeful 的語氣，以及 brand promise 的使用/禁用與 boilerplate。'
+  - id: 'ch-07'
+    title: 'Authorship of the Brand'
+    level: 1
+    order: 7
+    pages: '20'
+    summary: '要求第一次提及產品、服務或方案時把 Herman Miller 放在作者位置。'
+  - id: 'ch-08'
+    title: 'Making Brand Decisions'
+    level: 1
+    order: 8
+    pages: '21-30'
+    summary: '以 simplify、tell a story、be human、inspire、think big、be spirited 六個 guideposts 與範例檢查品牌決策。'
+  - id: 'ch-09'
+    title: 'Resources'
+    level: 1
+    order: 9
+    pages: '31-32'
+    summary: '指向 Brand Marketing 支援。'
+  - id: 'ch-10'
+    title: 'Bibliography'
+    level: 1
+    order: 10
+    pages: '33'
+    summary: '列出品牌、設計與商業設計知識參考書目與網站。'

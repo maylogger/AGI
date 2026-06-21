@@ -1,0 +1,260 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: google_ads_visual_guidelines
+index_ref: docs/google_ads_visual_guidelines.index.yaml
+note_ref: docs/google_ads_visual_guidelines.note.md
+archetype: brand_experience_guide
+industry: tech_software
+modules:
+- Brand Strategy
+- Visual Identity
+- Governance
+- Product Language
+- Brand Architecture
+- AI-Checkable Rules
+- Color System
+- Design Tokens
+- Accessibility
+- Illustration System
+- Photography System
+- Iconography System
+- Content Safety
+- Localization
+- UI Components
+- Operations
+- Motion Identity
+- Typography System
+- Knowledge Architecture
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 6
+  section_count: 5
+chapter_sequence:
+- id: ch-01
+  title: Brand Guidelines
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Brand Promise and Visual Direction
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Logo Lockups and Usage
+  order: 2
+  level: 2
+- id: ch-02
+  title: Color
+  order: 2
+  level: 1
+- id: ch-03
+  title: Imagery
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Photography
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Illustration
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Iconography
+  order: 3
+  level: 2
+- id: ch-04
+  title: Animation and Video
+  order: 4
+  level: 1
+- id: ch-05
+  title: Typography
+  order: 5
+  level: 1
+- id: ch-06
+  title: Related Guidelines
+  order: 6
+  level: 1
+frameworks:
+- name: 品牌框架是「brand promise -> emotional attributes -> logo system -> usage matrix」
+  chapter: ch-01
+  chapter_title: Brand Guidelines
+- name: 方向框架是「product complexity -> simplified interface -> customer empowerment -> friendly visual tone」
+  chapter: ch-01-01
+  chapter_title: Brand Promise and Visual Direction
+- name: logo 決策框架是「context -> variant -> background contrast -> spacing/divider -> usage permission」
+  chapter: ch-01-02
+  chapter_title: Logo Lockups and Usage
+- name: 色彩框架是「core colors -> neutrals -> white dominance -> accessibility contrast -> focus/depth use cases」
+  chapter: ch-02
+  chapter_title: Color
+- name: imagery 框架是「media type -> user value -> inclusivity -> simplicity/white -> brand palette -> usage constraints」
+  chapter: ch-03
+  chapter_title: Imagery
+- name: 攝影框架是「story -> casting/setting -> focus -> device/product role -> resolution -> brand reference cleanup」
+  chapter: ch-03-01
+  chapter_title: Photography
+- name: 插畫框架是「problem to explain -> simple metaphor -> white field -> palette balance -> inclusive people/symbols -> one-seco...
+  chapter: ch-03-02
+  chapter_title: Illustration
+- name: icon 框架是「common action/object -> essential form -> small-size readability -> repository access」
+  chapter: ch-03-03
+  chapter_title: Iconography
+- name: 動態框架是「delivery specs -> story clarity -> bandwidth -> brand fit -> inclusion/product/currentness/readability review」
+  chapter: ch-04
+  chapter_title: Animation and Video
+- name: 字體框架是「use case/size -> typeface -> color -> hierarchy -> line height/length -> emphasis -> language coverage」
+  chapter: ch-05
+  chapter_title: Typography
+- name: 關聯框架是「visual guide -> editorial/brand overview -> Google standards -> product/web/material references」
+  chapter: ch-06
+  chapter_title: Related Guidelines
+patterns:
+- name: 先建立情緒與產品價值，再建立資產使用表，是大型產品品牌 guideline 的可複用架構。
+  chapter: ch-01
+  chapter_title: Brand Guidelines
+- name: 把軟體產品的功能價值轉譯為情緒詞，是品牌系統設計前的必要層。
+  chapter: ch-01-01
+  chapter_title: Brand Promise and Visual Direction
+- name: usage matrix 是大型組織控制資產濫用的強力模式。
+  chapter: ch-01-02
+  chapter_title: Logo Lockups and Usage
+- name: 以白色作為主色而非空白，是 Google 系統的關鍵設計模式。
+  chapter: ch-02
+  chapter_title: Color
+- name: 將不同影像媒介統一到同一三原則，可減少跨團隊判斷分裂。
+  chapter: ch-03
+  chapter_title: Imagery
+- name: 以 narrative、interaction、visual focus 三個 situational notes 管理主觀照片品質。
+  chapter: ch-03-01
+  chapter_title: Photography
+- name: one-second comprehension 是可複用的插畫複雜度判準。
+  chapter: ch-03-02
+  chapter_title: Illustration
+- name: 用單一 repository 管理圖示資產，是大組織 icon governance 的核心模式。
+  chapter: ch-03-03
+  chapter_title: Iconography
+- name: 把 technical delivery specs 與 creative checklist 放在同章，可避免創意與工程各自脫節。
+  chapter: ch-04
+  chapter_title: Animation and Video
+- name: 以 size threshold 決定 typeface 是可機器檢查的 typography pattern。
+  chapter: ch-05
+  chapter_title: Typography
+- name: 大型 design system 應以 related guidelines 建立知識圖譜，而不是讓每份文件孤島化。
+  chapter: ch-06
+  chapter_title: Related Guidelines
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI 可檢查：Google Ads 素材應支持 simple、trustworthy、approachable、welcoming；logo 應依 product/marketing context 選擇；不得讓 logo
+    pair 彼此競爭。
+  chapter: ch-01
+  chapter_title: Brand Guidelines
+- module: Visual Identity
+  criterion: AI 可檢查：product lockup 使用 Grey 700；不得增加或縮小 icon size；不得用 full-color Google logo 建構 icon lockup；兩個 logo 並列時需用 neutral
+    gray vertical divider 與適當 spacing；vertical logo 只在特定情境如 video attribution 較適合。
+  chapter: ch-01-02
+  chapter_title: Logo Lockups and Usage
+- module: Color System
+  criterion: AI 可檢查：white 應為最主要顏色並佔最多空間；Grey 700 headline contrast 6.5:1 可通過 AA；yellow headline contrast 1.7:1 不可作 headline；避免大面積彩色造成
+    white space 風險；links 應使用 700/800/900 values；light 50/100 適合 shading、data visualization 或 UI focus。
+  chapter: ch-02
+  chapter_title: Color
+- module: ''
+  criterion: AI 可檢查：照片應有 single primary center of attention；背景不應 cluttered；casting 不得限於單一性別、種族或群體；slides online 應至少 72 dpi，可能印刷
+    PDF 應至少 300 dpi；含科技產品時只可出現 Google-based products，且不可出現 competitor products；外部品牌需移除或遮蓋。
+  chapter: ch-03-01
+  chapter_title: Photography
+- module: ''
+  criterion: AI 可檢查：插畫若超過一秒才看懂則過於複雜；不得使用 palette 外色彩；不需在單張插畫強迫使用四個核心色；同一組物件應有一致光源；符號不得依賴地方性節日或文化參照；人物應反映多文化、年齡與族群。
+  chapter: ch-03-02
+  chapter_title: Illustration
+- module: Iconography System
+  criterion: AI 可檢查：icon 應簡單到小尺寸仍可讀；不得用過度細節削弱辨識；應從官方 icons repository 取得。
+  chapter: ch-03-03
+  chapter_title: Iconography
+- module: ''
+  criterion: AI 可檢查：低頻寬 h.264 應為 1280 x 720、1 pass VBR、3 Mbps max、1.5 Mbps average、128 kbps audio、23.98 progressive、16:9；不得使用
+    QuickTime h.264；影片需檢查是否 Google Ads、是否有 relatable believable story、是否 inclusive、產品是否 up-to-date、標題/字幕是否 readable。
+  chapter: ch-04
+  chapter_title: Animation and Video
+- module: Typography System
+  criterion: 'AI 可檢查：Roboto、Google Sans、Google Sans Display 是 Google Ads brand 內使用的字體；36pt+ 大標使用 Google Sans Display，18-35pt
+    headline 使用 Google Sans，16pt 以下 body/smaller text 使用 Roboto；Google Slides 字級需除以二；Google Sans/Display 不得 all caps；title
+    應 sentence case；body text 使用 Google Material 700 Grey #5F6368；headline 使用 Google Material 800 Grey #3C4043；bold 只可 sparingly
+    用於 emphasis；Product Sans 只可用於 product logo lockups；Noto 用於 non-Latin languages。'
+  chapter: ch-05
+  chapter_title: Typography
+chapters:
+- id: ch-01
+  title: Brand Guidelines
+  modules:
+  - Brand Strategy
+  - Visual Identity
+  - Governance
+- id: ch-01-01
+  title: Brand Promise and Visual Direction
+  modules:
+  - Product Language
+  - Brand Strategy
+- id: ch-01-02
+  title: Logo Lockups and Usage
+  modules:
+  - Brand Architecture
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02
+  title: Color
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Design Tokens
+  - Accessibility
+- id: ch-03
+  title: Imagery
+  modules:
+  - Illustration System
+  - Photography System
+  - Iconography System
+  - Content Safety
+- id: ch-03-01
+  title: Photography
+  modules:
+  - Photography System
+  - AI-Checkable Rules
+  - Content Safety
+  - Accessibility
+- id: ch-03-02
+  title: Illustration
+  modules:
+  - Illustration System
+  - AI-Checkable Rules
+  - Localization
+  - Accessibility
+- id: ch-03-03
+  title: Iconography
+  modules:
+  - Iconography System
+  - UI Components
+  - Operations
+- id: ch-04
+  title: Animation and Video
+  modules:
+  - AI-Checkable Rules
+  - Motion Identity
+  - Accessibility
+- id: ch-05
+  title: Typography
+  modules:
+  - AI-Checkable Rules
+  - Localization
+  - Typography System
+  - Accessibility
+- id: ch-06
+  title: Related Guidelines
+  modules:
+  - Knowledge Architecture
+  - Governance

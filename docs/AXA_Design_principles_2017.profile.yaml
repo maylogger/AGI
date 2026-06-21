@@ -1,0 +1,484 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: AXA_Design_principles_2017
+index_ref: docs/AXA_Design_principles_2017.index.yaml
+note_ref: docs/AXA_Design_principles_2017.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- AI-Checkable Rules
+- Brand Strategy
+- Knowledge Architecture
+- Visual Identity
+- Governance
+- Layout System
+- Visual Language
+- Color System
+- Design Tokens
+- Accessibility
+- Typography System
+- Content Design
+- Voice and Tone
+- Photography System
+- Illustration System
+- Operations
+- Motion Identity
+- Legal and Trademark
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 11
+  section_count: 32
+chapter_sequence:
+- id: ch-01
+  title: A New Direction
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Welcome
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Being More Iconic
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Kit of Parts
+  order: 3
+  level: 2
+- id: ch-02
+  title: The Logo
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Three Key Principles
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Logo Versions
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: What Does Not Work
+  order: 3
+  level: 2
+- id: ch-03
+  title: The Switch
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Hero
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: List
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Cropped and Outline
+  order: 3
+  level: 2
+- id: ch-04
+  title: Colour
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Specifications
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Combination Table
+  order: 2
+  level: 2
+- id: ch-05
+  title: Typography
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Typefaces
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: How to Use It
+  order: 2
+  level: 2
+- id: ch-06
+  title: Tone of Voice
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Three Key Principles
+  order: 1
+  level: 2
+- id: ch-06-02
+  title: Looking at the Bigger Picture
+  order: 2
+  level: 2
+- id: ch-06-03
+  title: Dealing with the Now
+  order: 3
+  level: 2
+- id: ch-06-04
+  title: Showing Progression
+  order: 4
+  level: 2
+- id: ch-07
+  title: Photography
+  order: 7
+  level: 1
+- id: ch-07-01
+  title: Forward-Moving People
+  order: 1
+  level: 2
+- id: ch-07-02
+  title: Forward-Looking People
+  order: 2
+  level: 2
+- id: ch-07-03
+  title: Products
+  order: 3
+  level: 2
+- id: ch-08
+  title: Illustration
+  order: 8
+  level: 1
+- id: ch-08-01
+  title: Storytelling
+  order: 1
+  level: 2
+- id: ch-08-02
+  title: Style Principles
+  order: 2
+  level: 2
+- id: ch-08-03
+  title: Themes and Usage
+  order: 3
+  level: 2
+- id: ch-09
+  title: Grid and Layout
+  order: 9
+  level: 1
+- id: ch-09-01
+  title: Introduction and Overview
+  order: 1
+  level: 2
+- id: ch-09-02
+  title: Hero Formats
+  order: 2
+  level: 2
+- id: ch-09-03
+  title: List and Cropped Formats
+  order: 3
+  level: 2
+- id: ch-09-04
+  title: Body Copy and Spreads
+  order: 4
+  level: 2
+- id: ch-10
+  title: Animation
+  order: 10
+  level: 1
+- id: ch-10-01
+  title: Three Key Principles
+  order: 1
+  level: 2
+- id: ch-10-02
+  title: How to Use It
+  order: 2
+  level: 2
+- id: ch-11
+  title: Brand Partnership
+  order: 11
+  level: 1
+- id: ch-11-01
+  title: AXA-led
+  order: 1
+  level: 2
+- id: ch-11-02
+  title: Equal
+  order: 2
+  level: 2
+- id: ch-11-03
+  title: Partner-led
+  order: 3
+  level: 2
+frameworks:
+- name: Purpose -> Customer Experience -> Creative Platform -> Kit of Parts，從戰略目的推導到視覺零件
+  chapter: ch-01
+  chapter_title: A New Direction
+- name: Asset Version Matrix：solid / open blue / open white 對應背景、媒介與可見性條件
+  chapter: ch-02
+  chapter_title: The Logo
+- name: Switch Usage System：impact storytelling、progression list、non-people communications、premium outline
+  chapter: ch-03
+  chapter_title: The Switch
+- name: Brand Palette + Compatibility Matrix，色彩既有數值也有搭配關係
+  chapter: ch-04
+  chapter_title: Colour
+- name: Message Hierarchy：headline、body copy、supporting information 各有視覺強度與位置
+  chapter: ch-05
+  chapter_title: Typography
+- name: Bigger Picture / Now / Progression，讓每段訊息同時處理長期意義、即時需求與前進感
+  chapter: ch-06
+  chapter_title: Tone of Voice
+- name: Subject Role Matrix：forward-moving people、forward-looking people、products 對應不同敘事目的
+  chapter: ch-07
+  chapter_title: Photography
+- name: Story + Style + Theme + Usage，先定義為何畫，再定義怎麼畫與何時用
+  chapter: ch-08
+  chapter_title: Illustration
+- name: Format -> Grid -> Element Placement -> Usage Mode，逐層控制版面
+  chapter: ch-09
+  chapter_title: Grid and Layout
+- name: Static Identity -> Motion Behavior -> Final Brand State
+  chapter: ch-10
+  chapter_title: Animation
+- name: Partnership Leadership Matrix：AXA-led / Equal / Partner-led
+  chapter: ch-11
+  chapter_title: Brand Partnership
+patterns:
+- name: 品牌轉型開場
+  chapter: ch-01
+  chapter_title: A New Direction
+- name: 符號意義校準
+  chapter: ch-01
+  chapter_title: A New Direction
+- name: 三原則定位
+  chapter: ch-01
+  chapter_title: A New Direction
+- name: 以及先列出系統零件再展開規範
+  chapter: ch-01
+  chapter_title: A New Direction
+- name: 標誌版本矩陣
+  chapter: ch-02
+  chapter_title: The Logo
+- name: 背景適配規則
+  chapter: ch-02
+  chapter_title: The Logo
+- name: 禁止修改 stroke
+  chapter: ch-02
+  chapter_title: The Logo
+- name: 禁止不當 lock-up
+  chapter: ch-02
+  chapter_title: The Logo
+- name: 主視覺裝置
+  chapter: ch-03
+  chapter_title: The Switch
+- name: 故事主角 + 品牌符號
+  chapter: ch-03
+  chapter_title: The Switch
+- name: 可見性閾值
+  chapter: ch-03
+  chapter_title: The Switch
+- name: 四角/半面可見
+  chapter: ch-03
+  chapter_title: The Switch
+- name: 單次只用一個主符號
+  chapter: ch-03
+  chapter_title: The Switch
+- name: 色票
+  chapter: ch-04
+  chapter_title: Colour
+- name: 跨媒介色值
+  chapter: ch-04
+  chapter_title: Colour
+- name: 色彩組合表
+  chapter: ch-04
+  chapter_title: Colour
+- name: 以及錯誤搭配示例
+  chapter: ch-04
+  chapter_title: Colour
+- name: 字體角色分層
+  chapter: ch-05
+  chapter_title: Typography
+- name: 標題與品牌裝置互動
+  chapter: ch-05
+  chapter_title: Typography
+- name: 禁止右對齊與過度置入
+  chapter: ch-05
+  chapter_title: Typography
+- name: 語氣三角
+  chapter: ch-06
+  chapter_title: Tone of Voice
+- name: 顧客故事
+  chapter: ch-06
+  chapter_title: Tone of Voice
+- name: 不要只講品牌成就
+  chapter: ch-06
+  chapter_title: Tone of Voice
+- name: 把功能轉成生活結果
+  chapter: ch-06
+  chapter_title: Tone of Voice
+- name: 人物作為 protagonist
+  chapter: ch-07
+  chapter_title: Photography
+- name: 產品作為生活助力
+  chapter: ch-07
+  chapter_title: Photography
+- name: 影像與品牌符號分層互動
+  chapter: ch-07
+  chapter_title: Photography
+- name: 插畫作為攝影替代
+  chapter: ch-08
+  chapter_title: Illustration
+- name: 支援色盤
+  chapter: ch-08
+  chapter_title: Illustration
+- name: 人物與符號分層
+  chapter: ch-08
+  chapter_title: Illustration
+- name: 主題化 asset family
+  chapter: ch-08
+  chapter_title: Illustration
+- name: portrait/landscape 模板
+  chapter: ch-09
+  chapter_title: Grid and Layout
+- name: identifier 區
+  chapter: ch-09
+  chapter_title: Grid and Layout
+- name: body copy 區
+  chapter: ch-09
+  chapter_title: Grid and Layout
+- name: 跨頁規則
+  chapter: ch-09
+  chapter_title: Grid and Layout
+- name: 錯誤版型對照
+  chapter: ch-09
+  chapter_title: Grid and Layout
+- name: 符號進場
+  chapter: ch-10
+  chapter_title: Animation
+- name: 文字節奏
+  chapter: ch-10
+  chapter_title: Animation
+- name: 品牌結尾狀態
+  chapter: ch-10
+  chapter_title: Animation
+- name: 避免過度裝飾動畫
+  chapter: ch-10
+  chapter_title: Animation
+- name: 多品牌層級分類
+  chapter: ch-11
+  chapter_title: Brand Partnership
+- name: 比例與位置規則
+  chapter: ch-11
+  chapter_title: Brand Partnership
+- name: 合作禁例
+  chapter: ch-11
+  chapter_title: Brand Partnership
+- name: 例外治理
+  chapter: ch-11
+  chapter_title: Brand Partnership
+rules_ai_checkable:
+- module: Visual Identity
+  criterion: 可檢查規則：logo 必須使用正確 artwork；不得修改 stroke weights；open logo 不可用於 AXA's world；tagline 不可與 logo 自行 lock up；logo 在所有背景上必須保持
+    legible。
+  chapter: ch-02
+  chapter_title: The Logo
+- module: ''
+  criterion: 可檢查規則：同一版面只使用一個 Switch；hero Switch 通常完整且紅色；至少半個 Switch 表面可見，最佳三到四角可見；headline 左對齊且至少為 Switch 寬度 50%；不可把 hero
+    Switch 當 pattern 或導航元素。
+  chapter: ch-03
+  chapter_title: The Switch
+- module: ''
+  criterion: 可檢查規則：使用核准色值；文字與背景需符合清晰對比；Switch 色彩不得與背景混淆；不得使用未核准品牌色組合。
+  chapter: ch-04
+  chapter_title: Colour
+- module: Typography System
+  criterion: 可檢查規則：headline 應左對齊；hero headline 不得完全置於 Switch 內；headline 不應在 Switch 上投影；標題色彩需為 blue 或 white；不得使用未核准字體。
+  chapter: ch-05
+  chapter_title: Typography
+- module: Voice and Tone
+  criterion: 可檢查規則：文案應以顧客為主詞或受益者；需避免過度戲劇化；應表達 forward-looking 或 by your side；不可只列 AXA achievements 而不連到顧客生活。
+  chapter: ch-06
+  chapter_title: Tone of Voice
+- module: ''
+  criterion: 可檢查規則：插畫背景色需與 AXA red 相容；人物與 Switch 應有層次互動；不得使用不符合 style principles 的異質插畫；不得讓圖形搶過核心故事。
+  chapter: ch-08
+  chapter_title: Illustration
+- module: Layout System
+  criterion: 可檢查規則：元素需對齊 grid；hero Switch 在各格式需維持指定尺寸；identifier 不可任意移位；body copy 不應破壞閱讀順序；不得自行裁切出未授權 Switch 形態。
+  chapter: ch-09
+  chapter_title: Grid and Layout
+- module: ''
+  criterion: 可檢查規則：動畫中 logo 不可變形；Switch motion 應保持可辨識；最終畫面需回到清楚品牌狀態；動態不可成為純裝飾 pattern。
+  chapter: ch-10
+  chapter_title: Animation
+- module: Brand Strategy
+  criterion: 可檢查規則：素材需先判定合作主導權；logo 比例與位置需符合該模式；不得自創 lock-up；不得把 tagline 任意加入 logo lock-up。
+  chapter: ch-11
+  chapter_title: Brand Partnership
+chapters:
+- id: ch-01
+  title: A New Direction
+  modules:
+  - AI-Checkable Rules
+  - Brand Strategy
+  - Knowledge Architecture
+  - Visual Identity
+- id: ch-02
+  title: The Logo
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-03
+  title: The Switch
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Language
+- id: ch-04
+  title: Colour
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Design Tokens
+  - Accessibility
+- id: ch-05
+  title: Typography
+  modules:
+  - Layout System
+  - Typography System
+  - Visual Language
+- id: ch-06
+  title: Tone of Voice
+  modules:
+  - AI-Checkable Rules
+  - Brand Strategy
+  - Content Design
+  - Voice and Tone
+- id: ch-07
+  title: Photography
+  modules:
+  - Photography System
+  - Content Design
+- id: ch-08
+  title: Illustration
+  modules:
+  - Illustration System
+  - Visual Language
+- id: ch-09
+  title: Grid and Layout
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Operations
+  - Visual Identity
+- id: ch-10
+  title: Animation
+  modules:
+  - AI-Checkable Rules
+  - Motion Identity
+  - Visual Identity
+- id: ch-11
+  title: Brand Partnership
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance

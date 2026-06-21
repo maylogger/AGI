@@ -1,0 +1,292 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Amazon_Brand_Usage_Guidelines
+index_ref: docs/Amazon_Brand_Usage_Guidelines.index.yaml
+note_ref: docs/Amazon_Brand_Usage_Guidelines.note.md
+archetype: brand_experience_guide
+industry: tech_software
+modules:
+- Legal and Trademark
+- Knowledge Architecture
+- Governance
+- AI-Checkable Rules
+- Compliance
+- Content Design
+- Interaction Design
+- Typography System
+- UI Components
+- Content Safety
+- Messaging
+- Photography System
+- Visual Identity
+- Layout System
+- Iconography System
+- Color System
+- Operations
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 6
+  section_count: 8
+chapter_sequence:
+- id: ch-01
+  title: Overview
+  order: 1
+  level: 1
+- id: ch-02
+  title: Call To Action and Messaging
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: CTA Overview and Recommended CTAs
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Amazon Text Link CTAs
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Amazon Branded Button CTAs
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Capitalization, Brand Phrases and Offers
+  order: 4
+  level: 2
+- id: ch-02-05
+  title: Restricted and Unacceptable Ad Content
+  order: 5
+  level: 2
+- id: ch-03
+  title: Logos and Imagery
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Amazon.com Logo Guidelines
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Additional Logos, Icons and Product Imagery
+  order: 2
+  level: 2
+- id: ch-04
+  title: Colors
+  order: 4
+  level: 1
+- id: ch-05
+  title: Technical Specs and More
+  order: 5
+  level: 1
+- id: ch-06
+  title: Co-Branding
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Branding On and Off Amazon
+  order: 1
+  level: 2
+frameworks:
+- name: 使用 Amazon brand → 依 guideline 製作 → 事前提交 → 依 advertising policies 審核
+  chapter: ch-01
+  chapter_title: Overview
+- name: Action intent → Allowed CTA → Visual treatment → Legal/brand review
+  chapter: ch-02
+  chapter_title: Call To Action and Messaging
+- name: CTA selection = customer action + destination + allowed visual treatment
+  chapter: ch-02-01
+  chapter_title: CTA Overview and Recommended CTAs
+- name: ad unit size → CTA type size；base color → arrow/underline 70% opacity
+  chapter: ch-02-02
+  chapter_title: Amazon Text Link CTAs
+- name: 若按鈕會被誤認為 Amazon site functionality，則禁止；若是核准 eCommerce action，才可例外
+  chapter: ch-02-03
+  chapter_title: Amazon Branded Button CTAs
+- name: Term appears → Is proprietary/function-related? → Is context approved? → Legal review if offer/discount/price
+  chapter: ch-02-04
+  chapter_title: Capitalization, Brand Phrases and Offers
+- name: Content safety gate 先於 creative evaluation
+  chapter: ch-02-05
+  chapter_title: Restricted and Unacceptable Ad Content
+- name: Asset type → ownership/approval → visual spec → placement review
+  chapter: ch-03
+  chapter_title: Logos and Imagery
+- name: 背景明暗 → 選擇 color/reversed/one-color；尺寸 → ≥ 1 inch/72px；周邊元素 → `o` clear space
+  chapter: ch-03-01
+  chapter_title: Amazon.com Logo Guidelines
+- name: Asset source → Is Amazon family/site element? → Express approval required；Product image → Rights owner clearance
+  chapter: ch-03-02
+  chapter_title: Additional Logos, Icons and Product Imagery
+- name: 使用 Amazon-like colors → evaluate if emulating Amazon brand/page → require separation treatment
+  chapter: ch-04
+  chapter_title: Colors
+- name: Brand rules in current document；technical specs in linked spec repository
+  chapter: ch-05
+  chapter_title: Technical Specs and More
+- name: Placement context → On Amazon or off Amazon → Logo discouraged or required/appropriate → CTA placement rule
+  chapter: ch-06
+  chapter_title: Co-Branding
+- name: If on Amazon → minimize Amazon branding；if off Amazon → make destination to Amazon explicit
+  chapter: ch-06-01
+  chapter_title: Branding On and Off Amazon
+patterns:
+- name: 核心品牌規則 + 外部 technical spec link
+  chapter: ch-01
+  chapter_title: Overview
+- name: 將 CTA 分為 text link 與 button，並依 placement/interaction 定義允許與禁止，是廣告平台可複用模式。
+  chapter: ch-02
+  chapter_title: Call To Action and Messaging
+- name: 把 CTA 文案綁定 landing page 類型，可被任何平台型廣告規範複用。
+  chapter: ch-02-01
+  chapter_title: CTA Overview and Recommended CTAs
+- name: 文字連結可作為品牌化互動元件，需要 design-token 級規範。
+  chapter: ch-02-02
+  chapter_title: Amazon Text Link CTAs
+- name: 平台應保護 native UI affordance，避免廣告借用後降低使用者信任。
+  chapter: ch-02-03
+  chapter_title: Amazon Branded Button CTAs
+- name: 近似語
+  chapter: ch-02-04
+  chapter_title: Capitalization, Brand Phrases and Offers
+- name: 短文件可保留 restricted content baseline，並連到完整政策文件。
+  chapter: ch-02-05
+  chapter_title: Restricted and Unacceptable Ad Content
+- name: 平台式品牌應同時管理 logo integrity 與 third-party imagery rights。
+  chapter: ch-03
+  chapter_title: Logos and Imagery
+- name: logo 的 internal letterform 可成為 spacing token，適合跨媒介應用。
+  chapter: ch-03-01
+  chapter_title: Amazon.com Logo Guidelines
+- name: 專有 UI/icon 清單應與 trademark/feature term 清單互相對照。
+  chapter: ch-03-02
+  chapter_title: Additional Logos, Icons and Product Imagery
+- name: contextual confusion
+  chapter: ch-04
+  chapter_title: Colors
+- name: 大型平台 guideline 可使用 modular documentation，不把所有規格塞進單一 PDF。
+  chapter: ch-05
+  chapter_title: Technical Specs and More
+- name: co-branding guideline 應先判斷媒介位置，再判斷視覺資產。
+  chapter: ch-06
+  chapter_title: Co-Branding
+- name: 依環境反轉 logo 使用原則，是平台品牌常見但容易被忽略的治理模式。
+  chapter: ch-06-01
+  chapter_title: Branding On and Off Amazon
+rules_ai_checkable:
+- module: ''
+  criterion: CTA 不應超過 30 characters；不得換行；建議 action verb 開頭、sentence case、無結尾標點；Amazon 必須 title case。
+  chapter: ch-02
+  chapter_title: Call To Action and Messaging
+- module: ''
+  criterion: CTA 長度不得超過 30 characters；必須單行；text、arrow、underline 使用同一 base color；underline/arrow opacity 為文字色 70%。
+  chapter: ch-02-02
+  chapter_title: Amazon Text Link CTAs
+- module: Brand Strategy
+  criterion: 非 eCommerce ads 不得使用 Amazon branded button；non-specific 或 inaccurate CTAs 不允許。
+  chapter: ch-02-03
+  chapter_title: Amazon Branded Button CTAs
+- module: Brand Strategy
+  criterion: Amazon 不得全大寫或全小寫；價格顯示 strongly discouraged 且需 approval；free goods/services 必須標示 terms and conditions apply。
+  chapter: ch-02-04
+  chapter_title: Capitalization, Brand Phrases and Offers
+- module: Visual Identity
+  criterion: Amazon logo 最小 1 inch 或 72px；clear space 以 bold letter `o` 計算；商品圖不得從 Google 或搜尋引擎下載。
+  chapter: ch-03
+  chapter_title: Logos and Imagery
+- module: Visual Identity
+  criterion: 不得改比例或顏色、不得把 logo 放入句子、不得 outline、不得無 smile、不得放在 patterned background、不得加 drop shadow。
+  chapter: ch-03-01
+  chapter_title: Amazon.com Logo Guidelines
+- module: Visual Identity
+  criterion: 未經明確要求與批准不得使用 Amazon family logos、icons、site elements；商品圖需 owned 或 cleared for use。
+  chapter: ch-03-02
+  chapter_title: Additional Logos, Icons and Product Imagery
+chapters:
+- id: ch-01
+  title: Overview
+  modules:
+  - Legal and Trademark
+  - Knowledge Architecture
+  - Governance
+- id: ch-02
+  title: Call To Action and Messaging
+  modules:
+  - AI-Checkable Rules
+  - Compliance
+  - Content Design
+  - Interaction Design
+- id: ch-02-01
+  title: CTA Overview and Recommended CTAs
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Interaction Design
+- id: ch-02-02
+  title: Amazon Text Link CTAs
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - UI Components
+- id: ch-02-03
+  title: Amazon Branded Button CTAs
+  modules:
+  - UI Components
+  - Content Safety
+  - Governance
+- id: ch-02-04
+  title: Capitalization, Brand Phrases and Offers
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Compliance
+  - Messaging
+- id: ch-02-05
+  title: Restricted and Unacceptable Ad Content
+  modules:
+  - Compliance
+  - Content Safety
+  - Governance
+- id: ch-03
+  title: Logos and Imagery
+  modules:
+  - Legal and Trademark
+  - Photography System
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-03-01
+  title: Amazon.com Logo Guidelines
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Identity
+- id: ch-03-02
+  title: Additional Logos, Icons and Product Imagery
+  modules:
+  - Legal and Trademark
+  - Iconography System
+  - Governance
+- id: ch-04
+  title: Colors
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Governance
+- id: ch-05
+  title: Technical Specs and More
+  modules:
+  - Operations
+  - Knowledge Architecture
+- id: ch-06
+  title: Co-Branding
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Governance
+- id: ch-06-01
+  title: Branding On and Off Amazon
+  modules:
+  - Interaction Design
+  - Governance

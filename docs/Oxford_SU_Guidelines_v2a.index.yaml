@@ -1,0 +1,85 @@
+title: 'Oxford SU Guidelines'
+source: 'sources/Oxford_SU_Guidelines_v2a.pdf'
+language: 'en'
+summary: '這份 guideline 把 Oxford SU 的標誌、色彩、字體、圖像、圖示、應用與語氣整合成一套能支援創意但仍維持一致性的品牌系統。'
+chapters:
+  - id: 'ch-01'
+    title: 'The Logo'
+    level: 1
+    order: 1
+    pages: '6-27'
+    summary: '規範 logo 版本、顏色、留白、尺寸、位置、誤用、子品牌、聯名與 pattern。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Versions'
+        level: 2
+        order: 1
+        pages: '8-9'
+        summary: '提供 energetic 與 quieter 兩種 logo 版本。'
+      - id: 'ch-01-02'
+        title: 'Colour'
+        level: 2
+        order: 2
+        pages: '10-11'
+        summary: '限定 logo 色彩與背景對比。'
+      - id: 'ch-01-03'
+        title: 'Clear space, sizes and placement'
+        level: 2
+        order: 3
+        pages: '12-17'
+        summary: '以 x 寬度、最小尺寸與角落位置維持可讀性。'
+      - id: 'ch-01-04'
+        title: 'Misuse, sub-brands, co-branding and pattern'
+        level: 2
+        order: 4
+        pages: '18-27'
+        summary: '治理錯誤使用、子品牌模板、聯名關係與 logo pattern。'
+  - id: 'ch-02'
+    title: 'Colour'
+    level: 1
+    order: 2
+    pages: '28-35'
+    summary: '建立主色、次色、色階與組合規則。'
+    children:
+      - id: 'ch-02-01'
+        title: 'The palette'
+        level: 2
+        order: 1
+        pages: '30-31'
+        summary: '列出 Pantone、CMYK、RGB 與 Hex 值。'
+      - id: 'ch-02-02'
+        title: 'Tints and combinations'
+        level: 2
+        order: 2
+        pages: '32-35'
+        summary: '用色階與搭配示範擴展色彩彈性。'
+  - id: 'ch-03'
+    title: 'Typefaces and Typography'
+    level: 1
+    order: 3
+    pages: '36-47'
+    summary: '定義 headline/body 字體、系統例外與標題排版。'
+  - id: 'ch-04'
+    title: 'Image Style'
+    level: 1
+    order: 4
+    pages: '48-59'
+    summary: '用關鍵字與正反例定義攝影敘事、人物、活動與裁切。'
+  - id: 'ch-05'
+    title: 'Icons'
+    level: 1
+    order: 5
+    pages: '60-63'
+    summary: '規範供應圖示與新圖示需遵循既有風格。'
+  - id: 'ch-06'
+    title: 'Applications'
+    level: 1
+    order: 6
+    pages: '64-93'
+    summary: '以 stationery、poster、flyer、cover、merchandise、wall graphic、web banner 與 email signature 示範系統落地。'
+  - id: 'ch-07'
+    title: 'Tone of Voice'
+    level: 1
+    order: 7
+    pages: '94-103'
+    summary: '定義 Oxford SU 的描述文字、日常語言、語氣指針與 before/after。'

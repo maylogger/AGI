@@ -1,0 +1,81 @@
+title: 'Laing O’Rourke Brand: Our Visual Identity Guidelines'
+source: 'sources/Laing O’Rourke_identity guidelines_2021.pdf'
+version: 'version four'
+date: '2021'
+language: 'en'
+summary: 'Laing O’Rourke 2021 視覺識別規範，將工程、創新、DfMA 70:60:30 與 sophisticated simplicity 轉化為 logo、motif、色彩、字體、grid、圖像、icons、實作與下載中心。'
+chapters:
+  - id: 'ch-01'
+    title: 'Who We Are'
+    level: 1
+    order: 1
+    pages: '3-5'
+    summary: '介紹公司定位、Deliver 2025 全球使命與三個 guiding principles。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Our Global Mission'
+        level: 2
+        order: 1
+        pages: '4'
+        summary: '以 Deliver 2025 與 DfMA 70:60:30 定義創新與卓越的工程使命。'
+      - id: 'ch-01-02'
+        title: 'Our Guiding Principles'
+        level: 2
+        order: 2
+        pages: '5'
+        summary: '定義 Absolute alignment、Complete thinking、Sophisticated simplicity。'
+  - id: 'ch-02'
+    title: 'How We Look'
+    level: 1
+    order: 2
+    pages: '7'
+    summary: '說明簡潔、精密、可讀且高辨識的視覺識別如何反映工程方法。'
+  - id: 'ch-03'
+    title: 'Our Toolkit'
+    level: 1
+    order: 3
+    pages: '8-33'
+    summary: '規範 logo、motif、colours、fonts、document grids、graphic elements、tagline、icons、photography/video 與 online graphics。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Logo and Motif'
+        level: 2
+        order: 1
+        pages: '9-16'
+        summary: '說明 logo 歷史、primary/secondary/reversed logo、clear space、背景、尺寸位置與 motif 使用限制。'
+      - id: 'ch-03-02'
+        title: 'Colours and Fonts'
+        level: 2
+        order: 2
+        pages: '17-19'
+        summary: '定義 primary logo colours、secondary palette、tints、Century Gothic 與 Ginger 使用權限。'
+      - id: 'ch-03-03'
+        title: 'Document Grids and Graphic Elements'
+        level: 2
+        order: 3
+        pages: '20-22'
+        summary: '定義 A4/A3 internal/external grids、columns、gutters、intro paragraphs、pull quotes、underlines、tint panels。'
+      - id: 'ch-03-04'
+        title: 'Tagline, Web Address, and Icons'
+        level: 2
+        order: 4
+        pages: '23-25'
+        summary: '規範 THE POWER OF EXPERIENCE、web address、social icons、corporate icons 與 hyperlink。'
+      - id: 'ch-03-05'
+        title: 'Photography and Video'
+        level: 2
+        order: 5
+        pages: '26-32'
+        summary: '定義 projects、people、innovation/engineering 影像主題、黑白/彩色策略、施工現場 checklist 與圖像品質。'
+  - id: 'ch-04'
+    title: 'In Practice'
+    level: 1
+    order: 4
+    pages: '34-40'
+    summary: '以實際應用展示 visual identity 如何落地於各類文件與渠道。'
+  - id: 'ch-05'
+    title: 'Download Centre'
+    level: 1
+    order: 5
+    pages: '41'
+    summary: '指向 logo、colour palette、video pack、motif/tagline、social and corporate icons 等資產下載。'

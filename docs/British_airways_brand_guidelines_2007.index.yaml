@@ -1,0 +1,61 @@
+title: 'The BA Way: British Airways Brand Guidelines'
+source: 'sources/British_airways_brand_guidelines_2007.pdf'
+version: 'Version 1'
+date: 'September 2007'
+language: 'en'
+summary: 'British Airways 的 2007 品牌規範，將 premium airline proposition、Speedmarque、品牌前綴、色彩、字體、攝影、版面與客旅程應用整合成全球一致的航空品牌系統。'
+chapters:
+  - id: 'ch-01'
+    title: 'Summary'
+    level: 1
+    order: 1
+    pages: '1.0-1.9'
+    summary: '說明品牌策略、品牌摘要、 heritage、identity presentation、corporate identity、refreshed identity、brand prefix 與 customer journey。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Brand strategy, values and heritage'
+        level: 2
+        order: 1
+        pages: '1.1-1.3'
+        summary: '定義 premium proposition、BA Basics & Brilliance、brand values 與 heritage。'
+      - id: 'ch-01-02'
+        title: 'Identity presentation and brand prefix'
+        level: 2
+        order: 2
+        pages: '1.4-1.9'
+        summary: '說明三種 identity presentation、corporate identity refresh 與 customer journey prefix。'
+  - id: 'ch-02'
+    title: 'Toolkit'
+    level: 1
+    order: 2
+    pages: '2.0'
+    summary: '定義 Speedmarque、logotype、palette、type、photography、graphic system 與基本組合規則。'
+    children: []
+  - id: 'ch-03'
+    title: 'Application'
+    level: 1
+    order: 3
+    pages: '3.0'
+    summary: '展示品牌如何在 customer journey、advertising、digital、print、environment 與營運素材中使用。'
+    children: []
+  - id: 'ch-04'
+    title: 'Library'
+    level: 1
+    order: 4
+    pages: '4.0'
+    summary: '提供資產庫與實作資源以維護全球部署一致性。'
+    children: []
+  - id: 'ch-05'
+    title: 'Appendix A: Tone of voice'
+    level: 1
+    order: 5
+    pages: 'Appendix A'
+    summary: '補充品牌語氣規範，讓文字與視覺同樣反映 BA values。'
+    children: []
+  - id: 'ch-06'
+    title: 'Appendix B: Examples'
+    level: 1
+    order: 6
+    pages: 'Appendix B'
+    summary: '提供額外案例，協助使用者理解規範落地方式。'
+    children: []

@@ -1,0 +1,215 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: European_Committee_of_the_Regions_visual_identity_EN_2019
+index_ref: docs/European_Committee_of_the_Regions_visual_identity_EN_2019.index.yaml
+note_ref: docs/European_Committee_of_the_Regions_visual_identity_EN_2019.note.md
+archetype: brand_experience_guide
+industry: public_sector
+modules:
+- Layout System
+- Visual Identity
+- Governance
+- Legal and Trademark
+- Localization
+- Typography System
+- Design Tokens
+- Operations
+- Information Design
+- Examples
+- Content Design
+- Brand Architecture
+- Color System
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 4
+  section_count: 8
+chapter_sequence:
+- id: ch-01
+  title: Visual elements
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Logo
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Graphic Line
+  order: 2
+  level: 2
+- id: ch-02
+  title: Printed media
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Stationery
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: CoR Publications
+  order: 2
+  level: 2
+- id: ch-03
+  title: Electronic media
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Website
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Social media and press
+  order: 2
+  level: 2
+- id: ch-04
+  title: Commissions of the CoR
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Visual identity of CoR commissions
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Commission applications
+  order: 2
+  level: 2
+frameworks:
+- name: 此章建立「symbol concept + multilingual wordmark + proportional grid + application constraints」框架
+  chapter: ch-01
+  chapter_title: Visual elements
+- name: 採用標準 logo、水平替代 logo、小尺寸水平 logo、mute logo 的情境化資產框架
+  chapter: ch-01-01
+  chapter_title: Logo
+- name: 採「typography pair + title scale ratio + diamond geometry + format grid」框架
+  chapter: ch-01-02
+  chapter_title: Graphic Line
+- name: 此章形成「format-specific grid + fixed contact/footer + component-level specs」框架
+  chapter: ch-02
+  chapter_title: Printed media
+- name: 採「document type + fixed information zones + typography specs」框架
+  chapter: ch-02-01
+  chapter_title: Stationery
+- name: 採「grid first + content variant + co-branding condition」框架
+  chapter: ch-02-02
+  chapter_title: CoR Publications
+- name: 採「web layout grid + platform template + communication document」框架
+  chapter: ch-03
+  chapter_title: Electronic media
+- name: 採「masterbrand anchor + commission colour + scaled diamond system + application templates」框架
+  chapter: ch-04
+  chapter_title: Commissions of the CoR
+- name: 採「general publication / external conference」雙情境框架
+  chapter: ch-04-02
+  chapter_title: Commission applications
+patterns:
+- name: 可複用模式是用 logo 內部元素作為量尺，讓 clear space、diamond、grid 與 co-branding 都有同一基準。
+  chapter: ch-01
+  chapter_title: Visual elements
+- name: 為多語機構設計時，先定義語言排序與例外使用情境，再定義版面。
+  chapter: ch-01-01
+  chapter_title: Logo
+- name: 用固定幾何裝置承接 logo，同時作為版面裝飾與 co-branding 容器。
+  chapter: ch-01-02
+  chapter_title: Graphic Line
+- name: 每個媒體先給 grid system，再給 examples，使規則與感性判斷同時存在。
+  chapter: ch-02
+  chapter_title: Printed media
+- name: 同一 contact/footer 模組跨 stationery 重複使用。
+  chapter: ch-02-01
+  chapter_title: Stationery
+- name: 針對共同製作、CoR 自編、hosted event 等情境提供不同版型。
+  chapter: ch-02-02
+  chapter_title: CoR Publications
+- name: 社群圖分 quote-visuals 與 image-visuals，根據文字或影像焦點選擇 logo 位置。
+  chapter: ch-03
+  chapter_title: Electronic media
+- name: 用顏色與大 diamond 區分 commissions，用 CoR logo 與固定結構保持連結。
+  chapter: ch-04
+  chapter_title: Commissions of the CoR
+- name: 會議物料以地點照片建立情境感，publication 以 commission image 建立議題識別。
+  chapter: ch-04-02
+  chapter_title: Commission applications
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：logo 不得變形、改色、換字體、改文字位置、加效果或 outline；negative logo 在 EU flag 周圍需有白線；clear space 等於 4X，X 為 EU flag 高度的 1/8；最小尺寸依
+    EU flag 寬或水平 logo 高度為 10 mm。
+  chapter: ch-01
+  chapter_title: Visual elements
+- module: Visual Identity
+  criterion: AI 可檢查：24 語版本需依 ISO 639-1 原文標題排序；雙語版文字上下排列且依正式標題字母順序；Brussels 外牆法規例外不可用於其他情境；聯名 logo 間距至少等於 EU flag 寬。
+  chapter: ch-01-01
+  chapter_title: Logo
+- module: ''
+  criterion: AI 可檢查：headline/subtitle 對比遵守 2:1；Office 場景可用 Arial/Times 替代；white diamond 由 100 x 100 mm 方形旋轉 45°、調整為 120 x
+    100 mm 並設定角半徑；logo 尺寸需按格式表比例。
+  chapter: ch-01-02
+  chapter_title: Graphic Line
+- module: ''
+  criterion: AI 可檢查：co-branded publication 需依三種聯名方式配置；signpost host/co-organised 版型不得混用；badge 應按 signpost 比例縮放；infographic
+    應有 title header、text area 與 footer area。
+  chapter: ch-02-02
+  chapter_title: CoR Publications
+- module: ''
+  criterion: AI 可檢查：desktop home 內容容器 max-width 1170 px 且 3 columns；tablet 2 columns、smartphone 1 column；quote visuals logo
+    在 top left diamond；image visuals logo 可作 bottom signature；Facebook 1024 x 1024、Twitter 1024 x 611。
+  chapter: ch-03
+  chapter_title: Electronic media
+- module: ''
+  criterion: AI 可檢查：CIVEX、ENVE、COTER、NAT、ECON、SEDEC 必須使用指定 HEX；commission diamond layout 需依 62%、480%、0 mm corner 等步驟；所有 commission
+    social visuals 必須含 CoR logo 與 commission name。
+  chapter: ch-04
+  chapter_title: Commissions of the CoR
+- module: ''
+  criterion: AI 可檢查：external conference image 應聚焦 host city/region；general commission publication 應使用 commission visual identity；partner
+    logo 應位於 co-branding area；programme cover/content pages 應使用各自 grid。
+  chapter: ch-04-02
+  chapter_title: Commission applications
+chapters:
+- id: ch-01
+  title: Visual elements
+  modules:
+  - Layout System
+  - Visual Identity
+  - Governance
+- id: ch-01-01
+  title: Logo
+  modules:
+  - Legal and Trademark
+  - Localization
+- id: ch-01-02
+  title: Graphic Line
+  modules:
+  - Layout System
+  - Typography System
+  - Design Tokens
+- id: ch-02
+  title: Printed media
+  modules:
+  - Layout System
+  - Operations
+- id: ch-02-01
+  title: Stationery
+  modules:
+  - Operations
+  - Information Design
+- id: ch-02-02
+  title: CoR Publications
+  modules:
+  - Examples
+- id: ch-03
+  title: Electronic media
+  modules:
+  - Content Design
+- id: ch-04
+  title: Commissions of the CoR
+  modules:
+  - Brand Architecture
+  - Color System
+- id: ch-04-02
+  title: Commission applications
+  modules:
+  - Governance

@@ -1,0 +1,90 @@
+# L3 決策卡 sidecar — Kinokuniya（書店視覺再品牌）
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: kinokuniya_brand_guidelines
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 先建立判斷標準，後續視覺與語氣才有可回溯的語義來源
+      - 品牌是決策系統，不是美術風格；每個視覺與文案選擇都應能回推到品牌策略
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: kinokuniya_brand_guidelines
+        chapter: ch-01
+        excerpt: "建立視覺再品牌前的策略基準，避免 Kinokuniya 只被理解為書店標誌更新；再品牌 guideline 可先用兩頁策略限制視覺自由度，避免 identity assets 變成獨立風格拼貼。"
+    status: extracted
+
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 用人格詞集當每個產出的檢查軸，讓視覺元素都可回扣到品牌人格
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - 文化型品牌可用 purpose 作為內容篩選器，避免把文化只當裝飾
+    applicable_when:
+      industries: [industrial_materials_science, nonprofit_social]
+      brand_types: [challenger, category_creator, mission_driven]
+      conditions: []
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Visual Language, Content Design]
+    evidence:
+      - brand_id: kinokuniya_brand_guidelines
+        chapter: ch-01-01
+        excerpt: "以簡短人格詞建立 creative brief，讓後續每個視覺元素都可回扣到 open-minded、curious、adventurous；素材至少應連結閱讀、學習、交流或探索其中一種目的。"
+    status: extracted
+
+  - id: dp-custom-typeface-as-identity-asset
+    title: 用專屬字體當識別資產，擺脫系統預設字並統一語氣
+    problem:
+      statement: 仰賴系統預設字體的品牌缺乏獨特性與一致語氣，跨媒介又常因字體缺失而失控；但又需要在無法安裝字型的環境保有 fallback。
+      signals: [identity_distinctiveness, system_consistency, brand_recognition, multi_media]
+    solution:
+      module: Typography System
+      move: 建立專屬 display 字體（Kino typeface）作為核心識別資產，並指定可讀的 body fallback（Roboto）與使用情境
+      layer: visual_core
+    reason:
+      - 專屬字體系統讓品牌不再依賴 default fonts
+      - 自製 display 字體需要明確限制字數與情境，否則可讀性會受損
+      - 字體系統要以 utility 為核心；可讀性與一致性優先於裝飾
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger]
+      conditions: [identity_distinctiveness, multi_media]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: [Design Tokens]
+    anti_patterns:
+      - 直接沿用系統字當品牌字體，缺乏 fallback 規範
+      - 把 display 字體用於長文，犧牲可讀性
+    evidence:
+      - brand_id: kinokuniya_brand_guidelines
+        chapter: ch-02-02
+        excerpt: "Kino typeface 應只用於短字、標籤或店內提示；正文應使用 Roboto；display/body 分工讓品牌字體負責記憶，Roboto 負責閱讀。"
+    status: extracted

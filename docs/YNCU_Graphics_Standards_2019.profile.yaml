@@ -1,0 +1,245 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: YNCU_Graphics_Standards_2019
+index_ref: docs/YNCU_Graphics_Standards_2019.index.yaml
+note_ref: docs/YNCU_Graphics_Standards_2019.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Knowledge Architecture
+- Visual Identity
+- Governance
+- Design Tokens
+- AI-Checkable Rules
+- Color System
+- Brand Architecture
+- Layout System
+- Typography System
+- Operations
+depth:
+  strategy: low
+  visual: high
+  governance: medium
+  top_level_chapter_count: 5
+  section_count: 12
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: About Graphics Standards
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Terminology and Glossary
+  order: 2
+  level: 2
+- id: ch-02
+  title: YNCU Logo
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Primary and Secondary Colours
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Minimum Size and Scaling
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Area of Isolation
+  order: 3
+  level: 2
+- id: ch-03
+  title: Community First Logo
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Primary and Secondary Colours
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Minimum Size and Scaling
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Area of Isolation
+  order: 3
+  level: 2
+- id: ch-04
+  title: Brand Specifications
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Colour Specifications and Contrast
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Font Use
+  order: 2
+  level: 2
+- id: ch-04-03
+  title: Signage and CityScape Graphic
+  order: 3
+  level: 2
+- id: ch-04-04
+  title: Event, Social and Poster Materials
+  order: 4
+  level: 2
+- id: ch-05
+  title: File Directory
+  order: 5
+  level: 1
+frameworks:
+- name: Knowledge onboarding framework：why standards matter → component terminology → glossary → usage rules
+  chapter: ch-01
+  chapter_title: Introduction
+- name: Term taxonomy：brand concepts、logo components、color reproduction、layout geometry、paper/print conditions
+  chapter: ch-01-02
+  chapter_title: Terminology and Glossary
+- name: Logo usage framework：version selection → minimum size → proportional scaling → isolation area
+  chapter: ch-02
+  chapter_title: YNCU Logo
+- name: Version decision matrix：full color、black/white、reversed、on green、on grey
+  chapter: ch-03-01
+  chapter_title: Primary and Secondary Colours
+- name: Parallel brand module：same rule categories, brand-specific tokens
+  chapter: ch-03
+  chapter_title: Community First Logo
+- name: Geometric clear-space framework：extract unit from logo → apply around all sides → prohibit intrusion
+  chapter: ch-03-03
+  chapter_title: Area of Isolation
+- name: Application system：color tokens → contrast rules → typography roles → environmental graphics → campaign templates
+  chapter: ch-04
+  chapter_title: Brand Specifications
+- name: Environmental application framework：branch space → allowed treatment → placement/lighting → non-recreation boundary
+  chapter: ch-04-03
+  chapter_title: Signage and CityScape Graphic
+- name: Template framework：brand marker + cityscape/tagline + URL + contrast-aware type treatment + photography
+  chapter: ch-04-04
+  chapter_title: Event, Social and Poster Materials
+- name: Asset directory framework：brand → mark type → version → format
+  chapter: ch-05
+  chapter_title: File Directory
+patterns:
+- name: 小型品牌 guideline 可用簡短 introduction + glossary 快速校準非設計使用者。
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 術語表可獨立成通用 guideline module。
+  chapter: ch-01-02
+  chapter_title: Terminology and Glossary
+- name: primary/full/emblem 分拆；background condition 對應 logo 版本；用 icon 內部幾何作為 clear space 單位。
+  chapter: ch-02
+  chapter_title: YNCU Logo
+- name: 背景專用 logo asset 能避免使用者自行反白或改色。
+  chapter: ch-03-01
+  chapter_title: Primary and Secondary Colours
+- name: 把不同品牌的 logo rules 做成同構章節，是多品牌指南可複用模式。
+  chapter: ch-03
+  chapter_title: Community First Logo
+- name: 用 logo 自身幾何作為清除區單位，跨尺寸穩定。
+  chapter: ch-03-03
+  chapter_title: Area of Isolation
+- name: signage-only variant、location-based graphic motif、tagline optionality。
+  chapter: ch-04-03
+  chapter_title: Signage and CityScape Graphic
+- name: 社群文字放在 cityscape 對角、Montserrat ExtraBold、in-branch poster 固定 emblem in top right。
+  chapter: ch-04-04
+  chapter_title: Event, Social and Poster Materials
+- name: brand
+  chapter: ch-05
+  chapter_title: File Directory
+- name: logo type
+  chapter: ch-05
+  chapter_title: File Directory
+- name: colour/background condition
+  chapter: ch-05
+  chapter_title: File Directory
+- name: format
+  chapter: ch-05
+  chapter_title: File Directory
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：logo files 不得被任何方式改動；任何 stationery、business card、publication、newsletter、ad、website、flyer 或 sign 都應被視為品牌應用物。
+  chapter: ch-01
+  chapter_title: Introduction
+- module: Visual Identity
+  criterion: AI 可檢查：standard logo 寬度不得低於 1.125 inch；full version 寬度不得低於 2.625 inch；emblem 寬度不得低於 0.3 inch；logo 與 emblem 必須等比縮放，不得改變個別元件比例、尺寸或位置。
+  chapter: ch-02
+  chapter_title: YNCU Logo
+- module: ''
+  criterion: AI 可檢查：在綠色品牌色底應使用專用 green background 版本；灰底版本不得泛用於所有深色背景；全彩可行時優先使用 primary colour version。
+  chapter: ch-03-01
+  chapter_title: Primary and Secondary Colours
+- module: Visual Identity
+  criterion: AI 可檢查：Community First standard logo 寬度不得低於 1.6875 inch；emblem 不得低於 0.3 inch；logo 必須作為單一單位等比縮放；周圍不得有 artwork、type
+    或 panel edges 侵入 clear space。
+  chapter: ch-03
+  chapter_title: Community First Logo
+- module: ''
+  criterion: AI 可檢查：任何文字、圖像、panel edge 不得落入指定 bounding area；clearance distance 應與 logo 尺寸同步縮放。
+  chapter: ch-03-03
+  chapter_title: Area of Isolation
+- module: Brand Strategy
+  criterion: 'AI 可檢查：green 應為 RGB 40/182/122、HEX #28B67A、CMYK 75/0/71/0；dark grey 應為 RGB 67/67/69、HEX #434345、CMYK 68/61/57/43；10%
+    black 或更淺背景使用 full colour；30% black 背景使用 100% black；50% black 或更深背景使用 reverse；textured background 需人工確認 legibility。'
+  chapter: ch-04
+  chapter_title: Brand Specifications
+- module: ''
+  criterion: AI 可檢查：stacked 與 justified logo treatments 僅可用於 signage；Community First branch unique applications 不得在其他處重新建立；CityScape
+    line 或文字不得改動；URL 可與 line graphic 一起使用。
+  chapter: ch-04-03
+  chapter_title: Signage and CityScape Graphic
+- module: ''
+  criterion: AI 可檢查：輸出物若使用 YNCU 或 CF logo，檔名應對應 directory 中列出的官方資產；不得使用拼錯或未列出的派生檔作為正式品牌檔。
+  chapter: ch-05
+  chapter_title: File Directory
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - Knowledge Architecture
+  - Visual Identity
+  - Governance
+- id: ch-01-02
+  title: Terminology and Glossary
+  modules:
+  - Design Tokens
+  - Knowledge Architecture
+- id: ch-02
+  title: YNCU Logo
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-03-01
+  title: Primary and Secondary Colours
+  modules:
+  - Color System
+- id: ch-03
+  title: Community First Logo
+  modules:
+  - Brand Architecture
+  - AI-Checkable Rules
+- id: ch-03-03
+  title: Area of Isolation
+  modules:
+  - Layout System
+- id: ch-04
+  title: Brand Specifications
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Color System
+- id: ch-04-03
+  title: Signage and CityScape Graphic
+  modules:
+  - Governance
+- id: ch-05
+  title: File Directory
+  modules:
+  - Operations
+  - Governance

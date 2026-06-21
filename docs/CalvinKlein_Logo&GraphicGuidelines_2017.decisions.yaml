@@ -1,0 +1,161 @@
+# L3 決策卡 sidecar — Calvin Klein Logo & Graphic Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: CalvinKlein_Logo&GraphicGuidelines_2017
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌不是單一標誌，而是組織如何行動與如何溝通
+      - 品牌是決策系統，不是美術風格；每個視覺與文案選擇都應能回推到品牌支柱
+      - 先建立判斷標準，後續視覺與語氣才有可回溯的語義來源
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: CalvinKlein_Logo&GraphicGuidelines_2017
+        chapter: ch-01
+        excerpt: "先給策略敘事，再給架構圖，最後進入逐 logo 規格；大型品牌可先建立 identity rationale 與 architecture map，讓後續所有視覺規範都有決策來源。"
+    status: extracted
+
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 先建立「誰在說話」的判斷層，再以 umbrella → member → VPU/GP → lockup → special case 的層級把組織結構視覺化
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - 大型系統可用「可辨識但不獨立」的 secondary line 管理內部單位
+      - 任何多實體品牌系統都需要先建立「誰在說話」的判斷層，再談 logo 放置
+    applicable_when:
+      industries: [public_sector, education]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [multi_unit_consistency, multi_entity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 各單位自行創造分支品牌與專屬 tagline
+      - 只列 logo 圖檔卻不給「何時用 umbrella、何時用單一機構」的判斷規則
+    evidence:
+      - brand_id: CalvinKlein_Logo&GraphicGuidelines_2017
+        chapter: ch-01-03
+        excerpt: "用 logo architecture chart 把 Master Brand、業務線與品類對應到 logo 層級；任一應用需先標記 business line，logo architecture 是品牌治理的 decision table。"
+      - brand_id: CalvinKlein_Logo&GraphicGuidelines_2017
+        chapter: ch-02-03
+        excerpt: "同一品類中不同 tier（premium/mainline/off-price）不能共用模糊標誌；tier 是 logo 選擇的屬性，應成為資料欄位。"
+    status: extracted
+
+  - id: dp-custom-typeface-as-identity-asset
+    title: 用專屬字體當識別資產，擺脫系統預設字並統一語氣
+    problem:
+      statement: 仰賴系統預設字體的品牌缺乏獨特性與一致語氣，跨媒介又常因字體缺失而失控；但又需要在無法安裝字型的環境保有 fallback。
+      signals: [identity_distinctiveness, system_consistency, brand_recognition, multi_media]
+    solution:
+      module: Typography System
+      move: 建立專屬企業字體（3M Circular）作為核心識別資產，並指定 web/system fallback 與字重、leading、kerning、字色規則
+      layer: visual_core
+    reason:
+      - 專屬字體系統讓品牌不再依賴 default fonts，並讓文字有精準、現代、可讀的共同語氣
+      - 字體系統要以 utility 為核心；可讀性與一致性優先於裝飾
+      - 搭配 system fallback，可在無法安裝字型的環境維持一致
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger]
+      conditions: [identity_distinctiveness, multi_media]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: [Design Tokens]
+    anti_patterns:
+      - 直接沿用系統字當品牌字體，缺乏 fallback 規範
+    evidence:
+      - brand_id: CalvinKlein_Logo&GraphicGuidelines_2017
+        chapter: ch-03
+        excerpt: "建立專屬 Klein sans serif 字體，把字重轉成 usage roles；字體是品牌聲音與 channel coherence 的核心，不只是排版選項。"
+    status: extracted
+
+  - id: dp-asset-protection-for-legacy
+    title: 把歷史品牌的核心識別當成不可妥協的資產來保護
+    problem:
+      statement: 歷史悠久的品牌，其 logo、色彩與材質是長期累積的資產；任何外部合作或內部輸出都可能在不經意間稀釋它。
+      signals: [heritage, asset_protection, consistency_over_time, brand_dilution_risk]
+    solution:
+      module: Visual Identity
+      move: 把 logo 版本、光學幾何、最小尺寸、清除區與色彩重製定為不可妥協的資產規則，並要求以 Pantone/CMYK 準確匹配
+      layer: visual_core
+    reason:
+      - 保護歷史奢華零售品牌的核心識別，讓所有合作與內部輸出不削弱品牌資產
+      - 奢侈品牌的顏色是資產，不是裝飾選項
+      - 高端品牌規範應明確處理光學校正與印刷材質
+    applicable_when:
+      industries: [luxury_premium]
+      brand_types: [heritage_legacy, premium_luxury]
+      conditions: [heritage, asset_protection]
+      archetypes: [brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 以螢幕或列印稿視覺匹配色彩，造成跨媒介色差
+      - 允許合作方任意替換金屬色／foil 與核心色
+    evidence:
+      - brand_id: CalvinKlein_Logo&GraphicGuidelines_2017
+        chapter: ch-01-02
+        excerpt: "2017 識別定位為從 1975、1992-2016 演化而非斷裂式換標，歷史熟悉感是全球品牌 scale 的資產。"
+      - brand_id: CalvinKlein_Logo&GraphicGuidelines_2017
+        chapter: ch-02-05
+        excerpt: "所有 logo 不得改字體、改粗細、拆分元件、用 Klein font 重建 logo；應使用官方 EPS/PNG/JPEG master file，不可重畫。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - 留白是識別權重與可讀性的保護機制，需隨標誌縮放
+      - 相對單位可建立 scalable spacing token，不被固定像素綁死
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - minimum clear space = 1x o，optimal = 2x o
+    evidence:
+      - brand_id: CalvinKlein_Logo&GraphicGuidelines_2017
+        chapter: ch-02-05
+        excerpt: "clear space 以 cap height C 的倍數表示，讓清距規則隨 logo 尺寸縮放而非用固定像素。"
+    status: extracted

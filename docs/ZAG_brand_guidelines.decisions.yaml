@@ -1,0 +1,86 @@
+# L3 決策卡 sidecar — Zagreb Airport Brand Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: ZAG_brand_guidelines
+decisions:
+  - id: dp-system-toolkit-over-template
+    title: 企業視覺系統給「可組合工具箱」而非僵硬模板
+    problem:
+      statement: 要求每個版面長得完全相同會扼殺多元內容；但完全自由又會失去一致性。
+      signals: [many_teams, many_agencies, diverse_content, system_consistency, mass_touchpoints]
+    solution:
+      module: Visual Language
+      move: 用 core/flexible 雙層治理：核心識別元素（logo/logotype/colour/typography）必須系統實施，其他溝通可在 triangle/grid 邏輯內自由創作
+      layer: visual_core
+    reason:
+      - 彈性必須被結構化；品牌指南需要定義哪些是不可變核心、哪些是可變表現空間
+      - Guideline 可以用「核心嚴格、應用彈性」避免過度規範
+      - 輔助圖形應有生成規則，而不是一次性插圖集合
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, consumer_retail_hospitality, public_sector]
+      brand_types: [mass_consumer, category_creator, institutional_public_trust]
+      conditions: []
+      archetypes: [full_brand_system, corporate_toolkit, brand_experience_guide]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Layout System, Examples]
+    anti_patterns:
+      - 只提供單一固定版型，使用者只會複製貼上
+    evidence:
+      - brand_id: ZAG_brand_guidelines
+        chapter: ch-01
+        excerpt: "Core/flexible framework：core identity elements must be systematic；communication executions may vary within logic；用『核心嚴格、應用彈性』避免過度規範。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以 logo 抽出的 triangle dimension 決定 clear space，並訂各版本最小高度
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    evidence:
+      - brand_id: ZAG_brand_guidelines
+        chapter: ch-03
+        excerpt: "clear space 以 logo 抽出的 triangle dimension 決定；positive logo 最小高 5 mm、negative logo 最小高 6 mm。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性；異質背景更易失去可讀性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 用 achromatic/chromatic/discontinuous 背景分類驅動版本選擇：light→positive、blue/dark→negative、monochrome 工藝→black-white
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - 背景表面分類可作為任何 logo guideline 的通用檢查框架
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: ZAG_brand_guidelines
+        chapter: ch-03-01
+        excerpt: "positive on light、negative on blue/dark、black-white for monochrome reproduction；過於異質而導致不可讀的背景不得放置 logo/logotype。"
+    status: extracted

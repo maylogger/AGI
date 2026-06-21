@@ -1,0 +1,180 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: DFPI_BrandGuidelines
+index_ref: docs/DFPI_BrandGuidelines.index.yaml
+note_ref: docs/DFPI_BrandGuidelines.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Compliance
+- Brand Strategy
+- Governance
+- Legal and Trademark
+- AI-Checkable Rules
+- Visual Identity
+- Typography System
+- Content Design
+- Color System
+- Design Tokens
+- Photography System
+- Information Design
+- Layout System
+- Operations
+- Design Process
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 7
+  section_count: 4
+chapter_sequence:
+- id: ch-01
+  title: Brand Introduction
+  order: 1
+  level: 1
+- id: ch-02
+  title: Brand Logo Design
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo Clear Space
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Logo Misuse
+  order: 2
+  level: 2
+- id: ch-03
+  title: Brand Typography
+  order: 3
+  level: 1
+- id: ch-04
+  title: Brand Color System
+  order: 4
+  level: 1
+- id: ch-05
+  title: Brand Visuals
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Photography Categories
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Brand Imagery
+  order: 2
+  level: 2
+- id: ch-06
+  title: Brand Grid System
+  order: 6
+  level: 1
+- id: ch-07
+  title: Brand Summary and Glossary
+  order: 7
+  level: 1
+frameworks:
+- name: 機構職能 → mission → vision 的公共品牌定位框架
+  chapter: ch-01
+  chapter_title: Brand Introduction
+- name: 可用版本 → 空間保護 → 禁止變更 → 色彩變體的標誌治理流程
+  chapter: ch-02
+  chapter_title: Brand Logo Design
+- name: 媒介分流字體系統：print font、digital font、secondary / body font
+  chapter: ch-03
+  chapter_title: Brand Typography
+- name: Primary for identity，secondary for flexibility
+  chapter: ch-04
+  chapter_title: Brand Color System
+- name: Audience / function-based image taxonomy
+  chapter: ch-05
+  chapter_title: Brand Visuals
+- name: Article layout → stationery / card / letterhead applications
+  chapter: ch-06
+  chapter_title: Brand Grid System
+- name: Asset value reminder + production glossary
+  chapter: ch-07
+  chapter_title: Brand Summary and Glossary
+patterns:
+- name: 適用於政府 guideline 的開場模式：先說明服務對象、權責與風險治理。
+  chapter: ch-01
+  chapter_title: Brand Introduction
+- name: Do not
+  chapter: ch-02
+  chapter_title: Brand Logo Design
+- name: 字體規範搭配用途說明，而非只列字體名稱。
+  chapter: ch-03
+  chapter_title: Brand Typography
+- name: 色彩 token 清單可直接轉成設計系統或 AI 檢查表。
+  chapter: ch-04
+  chapter_title: Brand Color System
+- name: 用分類素材庫降低各部門自行找圖造成的不一致。
+  chapter: ch-05
+  chapter_title: Brand Visuals
+- name: 以模板示例降低非設計人員的版面決策負擔。
+  chapter: ch-06
+  chapter_title: Brand Grid System
+- name: 在手冊結尾加入檔案詞彙，適合給跨部門與外包協作者使用。
+  chapter: ch-07
+  chapter_title: Brand Summary and Glossary
+rules_ai_checkable:
+- module: Visual Identity
+  criterion: 不得套用效果、漸層、旋轉、扭曲、skew、置入形狀或放在同色背景；clear margin 應等於 logo icon 的 X。
+  chapter: ch-02
+  chapter_title: Brand Logo Design
+- module: Typography System
+  criterion: headline 應 sparingly 使用；body copy 使用 Segoe UI Regular 10pt / 14pt leading；heading 用於多頁文件或網站新段落。
+  chapter: ch-03
+  chapter_title: Brand Typography
+- module: Color System
+  criterion: 僅使用列出的 Hex / RGB；主色包含 `#AA8A00` 與 `#002D72`；新增色彩需被視為不符合規定。
+  chapter: ch-04
+  chapter_title: Brand Color System
+- module: Brand Strategy
+  criterion: 行銷材料使用的照片應屬於核准範圍；影像應能說明 diversity、equity、inclusion；不得使用與金融保護任務無關的通用 stock image。
+  chapter: ch-05
+  chapter_title: Brand Visuals
+- module: Brand Strategy
+  criterion: 輸出前應確認使用正確檔案格式；不得以壓縮失真或錯誤格式交付需印刷或向量的品牌資產。
+  chapter: ch-07
+  chapter_title: Brand Summary and Glossary
+chapters:
+- id: ch-01
+  title: Brand Introduction
+  modules:
+  - Compliance
+  - Brand Strategy
+  - Governance
+- id: ch-02
+  title: Brand Logo Design
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-03
+  title: Brand Typography
+  modules:
+  - Typography System
+  - Content Design
+- id: ch-04
+  title: Brand Color System
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-05
+  title: Brand Visuals
+  modules:
+  - Photography System
+  - Information Design
+- id: ch-06
+  title: Brand Grid System
+  modules:
+  - Layout System
+  - Operations
+- id: ch-07
+  title: Brand Summary and Glossary
+  modules:
+  - Operations
+  - Design Process

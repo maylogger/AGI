@@ -1,0 +1,186 @@
+# Client Intake Schema — 客戶 brief → Guideline 原型
+# Coach Agent Discovery 階段使用；映射為啟發式建議，非硬性規則
+
+version: 1
+updated: "2026-06-18"
+
+fields:
+  - id: org_type
+    label: 組織類型
+    type: enum
+    required: true
+    options:
+      - id: startup
+        label: 初創 / 新品牌
+      - id: enterprise
+        label: 成熟企業
+      - id: agency_client
+        label: 代理商協助的客戶品牌
+      - id: nonprofit
+        label: 非營利 / 公共機構
+
+  - id: brand_architecture
+    label: 品牌架構
+    type: enum
+    required: true
+    options:
+      - id: single_brand
+        label: 單一品牌
+      - id: parent_child
+        label: 母子品牌
+      - id: multi_brand
+        label: 多品牌集合 / 品牌家族
+      - id: cobrand_heavy
+        label: 高頻合作 / 聯名
+
+  - id: primary_media
+    label: 主要媒介
+    type: enum_list
+    required: true
+    options:
+      - id: digital
+        label: 數位 / 網站 / 社交
+      - id: print
+        label: 印刷 / 出版
+      - id: product_ui
+        label: 產品 UI / App
+      - id: physical_product
+        label: 實體產品 / 包裝
+      - id: video_motion
+        label: 影片 / 動態媒體
+      - id: omnichannel
+        label: 全通路
+
+  - id: audience
+    label: 主要受眾
+    type: text
+    required: true
+    hint: B2B / B2C / 內部員工 / 合作夥伴 / 混合
+
+  - id: governance_maturity
+    label: 治理成熟度
+    type: enum
+    required: true
+    options:
+      - id: none
+        label: 尚無 brand team，靠設計師與代理商
+      - id: emerging
+        label: 有品牌負責人，流程仍在建立
+      - id: mature
+        label: 有品牌團隊、審核與資產庫
+
+  - id: compliance_needs
+    label: 規定 / 法規需求
+    type: enum_list
+    required: false
+    options:
+      - id: trademark
+        label: 商標與 logo 法律
+      - id: industry_regulation
+        label: 產業法規（金融、醫療等）
+      - id: content_safety
+        label: 內容安全（遊戲、兒童、社群）
+      - id: accessibility
+        label: 無障礙法規
+      - id: none
+        label: 無特殊規定
+
+  - id: has_design_system
+    label: 是否需含 product / design system
+    type: boolean
+    required: true
+
+  - id: guideline_scope
+    label: 本次 guideline 範圍
+    type: enum
+    required: true
+    options:
+      - id: full_manual
+        label: 完整品牌手冊
+      - id: logo_assets
+        label: 以 logo 與資產下載為主
+      - id: campaign
+        label: 單一活動 / 產品線
+      - id: channel
+        label: 單一通路（如合作夥伴、內部模板）
+
+  - id: brand_maturity
+    label: 品牌敘事成熟度
+    type: enum
+    required: true
+    options:
+      - id: new_identity
+        label: 新識別 / 剛完成 rebranding
+      - id: established
+        label: 既有識別，需整理成 guideline
+      - id: strategy_refresh
+        label: 識別不變，策略與語氣需升級
+
+# 映射規則：依序匹配，第一個符合的建議為主（Coach 可綜合多條說明理由）
+archetype_mappings:
+  - archetype: logo_asset_guidelines
+    when:
+      guideline_scope: logo_assets
+    confidence: high
+
+  - archetype: campaign_touchpoint
+    when:
+      guideline_scope: campaign
+    confidence: high
+
+  - archetype: multi_brand_architecture
+    when_any:
+      - brand_architecture: multi_brand
+      - brand_architecture: cobrand_heavy
+    confidence: high
+
+  - archetype: product_design_system
+    when_all:
+      - has_design_system: true
+    when_any:
+      - primary_media_contains: product_ui
+    confidence: high
+
+  - archetype: corporate_toolkit
+    when_all:
+      - org_type: enterprise
+      - brand_maturity: established
+    when_any:
+      - audience_contains: B2B
+    when_not:
+      guideline_scope: full_manual
+    confidence: medium
+    note: 若同時需要完整策略章，可能升級為 brand_experience_guide
+
+  - archetype: full_brand_system
+    when_all:
+      - brand_maturity: new_identity
+    when_any:
+      - audience_contains: B2C
+      - guideline_scope: full_manual
+    confidence: medium
+    note: 消費者品牌且需完整敘事時優先考慮
+
+  - archetype: brand_experience_guide
+    when:
+      default: true
+    confidence: medium
+    note: 無其他規則強匹配時的預設原型
+
+# 各原型應追問的補充問題
+follow_up_by_archetype:
+  full_brand_system:
+    - 品牌三大支柱或個性形容詞是否已定？
+    - 受眾旅程是否有 Attract / Engage / Connect 或類似階段？
+  multi_brand_architecture:
+    - 母品牌與子品牌各自能否獨立對外？
+    - 合作品牌分幾種模型（endorsed / co-branded / powered by）？
+  product_design_system:
+    - 是否已有 Figma / token 工具鏈？
+    - 品牌識別與產品 UI 的邊界在哪？
+  corporate_toolkit:
+    - 代理商數量與主要交付媒介？
+    - 是否需要遊戲、影片等特殊應用章？
+  logo_asset_guidelines:
+    - 誰是主要使用者（媒體、合作夥伴、內部）？
+    - 是否需要 co-brand lockup？

@@ -1,0 +1,159 @@
+# L3 決策卡 sidecar — Quaint Oak Bank
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: Quaint_Oak_Bank_Brand_Guidelines_2013
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌不是單一標誌，而是組織如何行動與如何溝通
+      - 品牌是決策系統，不是美術風格；每個視覺與文案選擇都應能回推到品牌支柱
+      - 先建立判斷標準，後續視覺與語氣才有可回溯的語義來源
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: Quaint_Oak_Bank_Brand_Guidelines_2013
+        chapter: ch-01
+        excerpt: "先以組織信念（mission、essence、promise、values、story）定義品牌，再進入視覺規範；金融品牌 guideline 應先定義信任來源，否則視覺系統會缺少判斷標準。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+      - 留白是識別權重與可讀性的保護機制，需隨標誌縮放
+      - 相對單位可建立 scalable spacing token，不被固定像素綁死
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    examples:
+      - minimum clear space = 1x o，optimal = 2x o
+    evidence:
+      - brand_id: Quaint_Oak_Bank_Brand_Guidelines_2013
+        chapter: ch-02
+        excerpt: "以字母 U 寬度與 wordmark baseline 作為比例單位；Logo 規範應用品牌自身形體建立比例單位，讓規則不依賴外部尺寸。"
+      - brand_id: Quaint_Oak_Bank_Brand_Guidelines_2013
+        chapter: ch-02-01
+        excerpt: "clearspace 至少等於 Quaint Oak wordmark 中字母 U 的寬度。"
+    status: extracted
+
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 先建立「誰在說話」的判斷層，再以 umbrella → member → VPU/GP → lockup → special case 的層級把組織結構視覺化
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - 大型系統可用「可辨識但不獨立」的 secondary line 管理內部單位
+      - 任何多實體品牌系統都需要先建立「誰在說話」的判斷層，再談 logo 放置
+    applicable_when:
+      industries: [public_sector, education]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [multi_unit_consistency, multi_entity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 各單位自行創造分支品牌與專屬 tagline
+      - 只列 logo 圖檔卻不給「何時用 umbrella、何時用單一機構」的判斷規則
+    evidence:
+      - brand_id: Quaint_Oak_Bank_Brand_Guidelines_2013
+        chapter: ch-03
+        excerpt: "管理多業務線品牌關係，讓各 division 能獨立運作但不脫離母品牌信任；分支可具差異，但信任背書必須一致，並以可測量 endorsement 規則避免子品牌失聯。"
+    status: extracted
+
+  - id: dp-contact-before-appendix
+    title: 在技術資料前先給治理窗口，讓 guideline 成為可改善系統
+    problem:
+      statement: 規則無法涵蓋所有情境，缺乏權威決策入口時，例外用法無人裁決。
+      signals: [exceptions_expected, governance]
+    solution:
+      module: Governance
+      move: 在主內容與 appendix 之間放置聯絡窗口與核准／回饋入口
+      layer: governance
+    reason:
+      - 規則無法涵蓋所有情境，必須提供權威決策入口
+      - guideline 應包含 owner 與 feedback channel，而非靜態文件
+      - guideline 需要 owner 與 feedback channel
+    applicable_when:
+      industries: [finance]
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit, logo_asset_guidelines]
+    dependencies:
+      requires: [Governance]
+      enables: [Operations]
+    evidence:
+      - brand_id: Quaint_Oak_Bank_Brand_Guidelines_2013
+        chapter: ch-06
+        excerpt: "提供治理出口，讓不確定的使用情境有品牌團隊可確認；guideline 應保留例外與最新版查詢路徑作為 governance safeguard。"
+    status: extracted
+
+  - id: dp-compliance-copy-as-layout-system
+    title: 把法規必填資訊設計成固定版面元件，而非事後附註
+    problem:
+      statement: 受規範產業（金融、保險）的廣告與素材必須帶上法律、監管與揭露資訊，若交由製作者事後手動補上，容易遺漏或破壞版面，造成合規風險與視覺混亂。
+      signals: [regulatory_compliance, required_disclosure, layout_consistency, mass_touchpoints]
+    solution:
+      module: Compliance
+      move: 把 necessary／compliance copy 設計成固定容器（如 signature bar）與依 division／產品分類的 required-fields 清單，讓法規資訊成為版面系統的一部分
+      layer: governance
+    reason:
+      - 規定資訊若被設計成系統元件，就能降低遺漏與版面混亂
+      - 法規文字可依 division 類型轉成 required fields，確保每種素材帶齊對應聲明
+      - 規定資訊不應是最後加上的註腳，而是品牌版面的一部分
+    applicable_when:
+      industries: [finance]
+      brand_types: [institutional_public_trust, heritage_legacy]
+      conditions: [regulatory_compliance, required_disclosure]
+      archetypes: [brand_experience_guide, corporate_toolkit, full_brand_system]
+    dependencies:
+      requires: [Compliance, Layout System]
+      enables: [Governance]
+    anti_patterns:
+      - 把法規聲明當成版面完成後再補的小字註腳
+      - 各素材自行決定要不要放揭露資訊，導致遺漏
+    evidence:
+      - brand_id: Quaint_Oak_Bank_Brand_Guidelines_2013
+        chapter: ch-04-02
+        excerpt: "避免金融廣告漏掉法律、監管與聯絡資訊；規定資訊不應是最後加上的註腳，而是品牌版面的一部分，並可轉成 division-specific required fields。"
+      - brand_id: Quaint_Oak_Bank_Brand_Guidelines_2013
+        chapter: ch-04
+        excerpt: "用 signature bar 容納 Logo 與必要資訊，避免規定文字破壞版面；規定資訊若被設計成系統元件，就能降低遺漏與版面混亂。"
+    status: extracted

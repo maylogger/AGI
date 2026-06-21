@@ -1,0 +1,142 @@
+# L3 決策卡 sidecar — Olympic Games Tokyo 2020 Emblem Usage Guidelines (NOC)
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Tokyo_2020_NOC_Olympic_emblem_2018
+decisions:
+  - id: dp-trademark-permission-flow
+    title: 用授權閘門治理第三方商標使用，先處理混淆與背書風險
+    problem:
+      statement: 高價值賽事 IP 被 NOC、贊助商與第三方使用，若無權利邊界，emblem 會被誤用為商業背書。
+      signals: [trademark_protection, partner_governance, endorsement_risk, third_party_usage]
+    solution:
+      module: Legal and Trademark
+      move: 用 rights-first guideline（user role → purpose → allowed assets → association limits → approval/access path）先設 permission scope，再談視覺一致
+      layer: governance
+    reason:
+      - 奧運品牌治理優先處理權利與關聯風險，再處理視覺一致性
+      - 對高價值 IP，guideline 應先設 permission scope，而非直接展示 logo artwork
+      - Examples 不只是美術示範，而是權利邊界的場景化解釋
+    applicable_when:
+      industries: [tech_software, media_entertainment, public_sector]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [third_party_usage, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Legal and Trademark]
+      enables: [Governance]
+    anti_patterns:
+      - 放任第三方自行判斷法律與背書風險
+    evidence:
+      - brand_id: Tokyo_2020_NOC_Olympic_emblem_2018
+        chapter: ch-01
+        excerpt: "rights-first guideline：user role → purpose → allowed assets → association limits → approval/access path；NOC 使用限非商業目的，不得用於 licensed/replica merchandise。"
+      - brand_id: Tokyo_2020_NOC_Olympic_emblem_2018
+        chapter: ch-05
+        excerpt: "printed materials 不得用於 commercial or promotional purposes；website 上 emblem 必須與 commercial contents 明確分離，僅 Worldwide Olympic Partners 可作商業例外。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以 emblem 抽出的 X 值定義 0.7X clear space，並訂 print 12mm / digital 35px 最小尺寸
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    evidence:
+      - brand_id: Tokyo_2020_NOC_Olympic_emblem_2018
+        chapter: ch-02-02
+        excerpt: "clear space 應至少 0.7X；print 最小 12mm、digital 最小 35px。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性；複雜或色底更易失去可讀性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 用 background decision tree：白底→full colour、photo/coloured/complex→boxed/white/black per contrast，不得在色底直接放 full-colour emblem
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - 背景複雜度是 logo version selection 的關鍵，不應只靠設計者目測
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: Tokyo_2020_NOC_Olympic_emblem_2018
+        chapter: ch-02-02
+        excerpt: "background decision tree：white background → full colour；photographic/coloured/complex background → boxed/white/black variant per contrast；不得在色底上直接使用 full-colour emblem。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 服裝上多個權利標誌並置時，若無關聯與階層規則，emblem 會被製造商品牌借位。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 用 apparel association model（item type → allowed mark → prohibited adjacency → hierarchy → approval）規範 wordmark 與 manufacturer / NOC emblem 的距離與上下階層
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - wordmark 可提升 Olympic identity，但不可被商業品牌借位
+    applicable_when:
+      industries: [finance, tech_software, media_entertainment]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: Tokyo_2020_NOC_Olympic_emblem_2018
+        chapter: ch-03
+        excerpt: "非競賽服可用 wordmark 但不得直接與 manufacturer logo 關聯；與 NOC emblem 一起使用時 wordmark 必須在 NOC emblem 下方且有清楚 separation，需送 IOC approval。"
+    status: extracted
+
+  - id: dp-contact-before-appendix
+    title: 在技術資料前先給治理窗口，讓 guideline 成為可改善系統
+    problem:
+      statement: 規則無法涵蓋所有情境，缺乏權威決策入口時，例外用法無人裁決。
+      signals: [exceptions_expected, governance]
+    solution:
+      module: Governance
+      move: 以 living guideline + contact owner 收束：聲明 guideline 會修訂，並提供 NOC Services Relations 作為諮詢與例外窗口
+      layer: governance
+    reason:
+      - 規則無法涵蓋所有情境，必須提供權威決策入口
+      - 大型活動 IP 規範必須可更新，因 sponsor、權利與營運條件會變動
+      - Knowledge Base 應紀錄版本與日期，避免舊規則被錯用
+    applicable_when:
+      industries: [finance, media_entertainment, public_sector]
+      brand_types: [institutional_public_trust]
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit, logo_asset_guidelines]
+    dependencies:
+      requires: [Governance]
+      enables: [Operations]
+    evidence:
+      - brand_id: Tokyo_2020_NOC_Olympic_emblem_2018
+        chapter: ch-06
+        excerpt: "若 guideline 有修訂，使用者應以最新版本為準；任何疑問應聯繫 NOC Services Relations（living guideline + contact owner）。"
+    status: extracted

@@ -1,0 +1,113 @@
+title: 'YNCU + Community First Graphics Standards'
+source: 'sources/YNCU_Graphics_Standards_2019.pdf'
+version: 'YNCU + CF Logo Guide 2018'
+date: '2018'
+language: 'en'
+summary: '這份 graphics standards 為 YNCU 與 Community First 的雙品牌識別建立 logo、色彩、最小尺寸、隔離空間、字體、招牌、活動與社群素材規則。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction'
+    level: 1
+    order: 1
+    pages: '2-4'
+    summary: '說明 graphics standards 的目的、品牌一致性價值、基礎術語與名詞表。'
+    children:
+      - id: 'ch-01-01'
+        title: 'About Graphics Standards'
+        level: 2
+        order: 1
+        pages: '2'
+        summary: '把手冊定位為內部員工、夥伴與供應商建立一致品牌溝通的資源。'
+      - id: 'ch-01-02'
+        title: 'Terminology and Glossary'
+        level: 2
+        order: 2
+        pages: '3-4'
+        summary: '定義 corporate symbol、emblem、logotype、clear space、PMS、RGB、white space 等術語。'
+  - id: 'ch-02'
+    title: 'YNCU Logo'
+    level: 1
+    order: 2
+    pages: '5-8'
+    summary: '定義 YNCU logo 的主要與次要顏色版本、最小尺寸、比例縮放與隔離空間。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Primary and Secondary Colours'
+        level: 2
+        order: 1
+        pages: '5-6'
+        summary: '規範彩色、黑白、反白、綠底與灰底版本的使用情境。'
+      - id: 'ch-02-02'
+        title: 'Minimum Size and Scaling'
+        level: 2
+        order: 2
+        pages: '7'
+        summary: '標準 logo 最小寬 1.125 inch，full version 最小寬 2.625 inch，emblem 最小寬 0.3 inch。'
+      - id: 'ch-02-03'
+        title: 'Area of Isolation'
+        level: 2
+        order: 3
+        pages: '8'
+        summary: '用 house half-circle mouth 的寬度作為 clear space 測量基準。'
+  - id: 'ch-03'
+    title: 'Community First Logo'
+    level: 1
+    order: 3
+    pages: '9-12'
+    summary: '定義 Community First logo 的彩色與黑白版本、最小尺寸、比例縮放與隔離空間。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Primary and Secondary Colours'
+        level: 2
+        order: 1
+        pages: '9-10'
+        summary: '規範標準、division tag、黑白、反白、綠底與灰底版本。'
+      - id: 'ch-03-02'
+        title: 'Minimum Size and Scaling'
+        level: 2
+        order: 2
+        pages: '11'
+        summary: 'Community First 標準 logo 最小寬 1.6875 inch，emblem 最小寬 0.3 inch。'
+      - id: 'ch-03-03'
+        title: 'Area of Isolation'
+        level: 2
+        order: 3
+        pages: '12'
+        summary: '要求 logo 周圍不得被文字、圖形或邊界擠壓。'
+  - id: 'ch-04'
+    title: 'Brand Specifications'
+    level: 1
+    order: 4
+    pages: '13-21'
+    summary: '提供顏色數值、對比指南、字體、外部招牌、CityScape graphic、活動素材、社群與海報應用規則。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Colour Specifications and Contrast'
+        level: 2
+        order: 1
+        pages: '13-14'
+        summary: '定義 green、dark grey 的 RGB/CMYK/Pantone，並用背景黑度判斷 logo 版本。'
+      - id: 'ch-04-02'
+        title: 'Font Use'
+        level: 2
+        order: 2
+        pages: '15'
+        summary: '指定 Montserrat ExtraBold、Bold、Regular 作為 headline、heading 與 body copy。'
+      - id: 'ch-04-03'
+        title: 'Signage and CityScape Graphic'
+        level: 2
+        order: 3
+        pages: '16-18'
+        summary: '規範分行招牌、Community First 特殊應用與 CityScape graphic 的位置與不可改動元素。'
+      - id: 'ch-04-04'
+        title: 'Event, Social and Poster Materials'
+        level: 2
+        order: 4
+        pages: '19-21'
+        summary: '描述活動物料、社群貼文結構與 in-branch posters/screenscapes 的一致元素。'
+  - id: 'ch-05'
+    title: 'File Directory'
+    level: 1
+    order: 5
+    pages: '22'
+    summary: '列出 YNCU、Community First 與 emblem 的 EPS/PNG 檔名與各版本資產。'

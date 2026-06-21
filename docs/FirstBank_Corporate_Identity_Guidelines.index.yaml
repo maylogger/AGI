@@ -1,0 +1,66 @@
+title: 'FirstBank Corporate Identity Guidelines'
+source: 'sources/FirstBank_Corporate_Identity_Guidelines.pdf'
+version: 'Abridged Version'
+language: 'en'
+summary: 'An abridged FirstBank corporate identity manual covering logo construction, clear zones, product naming, product logo creation, tone of voice, color systems, advertising templates, photography, illustration, merchandise, digital placements, signage, and mobile assets.'
+chapters:
+  - id: 'ch-01'
+    title: 'FirstBank Logo System'
+    level: 1
+    order: 1
+    pages: '1-8'
+    summary: 'Defines primary, reversed, mono, and secondary logos, internal spacing, clear zone, minimum size, misuse, color breakdowns, and You First proposition lockup.'
+  - id: 'ch-02'
+    title: 'SSA Market and Social Media Logo Usage'
+    level: 1
+    order: 2
+    pages: '9-11'
+    summary: 'Specifies market-specific FBNBank, UK, DRC, language, tagline, and social media logo usage.'
+  - id: 'ch-03'
+    title: 'Product and Service Brand Architecture'
+    level: 1
+    order: 3
+    pages: '12-18'
+    summary: 'Defines naming convention, product logo creation rules, product logo examples, divider ratio, and header/divider usage.'
+  - id: 'ch-04'
+    title: 'Tone of Voice'
+    level: 1
+    order: 4
+    pages: '19-20'
+    summary: 'Defines one voice, brand personality attributes, and guidance for ATL brand advertising and product/service copy.'
+  - id: 'ch-05'
+    title: 'Colour Wheel and Endorser'
+    level: 1
+    order: 5
+    pages: '21-22'
+    summary: 'Defines primary and secondary color wheels, external application swatches, and FirstBank endorser usage.'
+  - id: 'ch-06'
+    title: 'Press Advert and Editorial Templates'
+    level: 1
+    order: 6
+    pages: '23-26'
+    summary: 'Provides logo/endorser positioning, press advert templates, bottom strip templates, and modular newspaper splash grid rules.'
+  - id: 'ch-07'
+    title: 'Photography and Illustration Style'
+    level: 1
+    order: 7
+    pages: '27-32'
+    summary: 'Defines people photography principles, photographic/illustration relationship, Mass Retail photographic style, object photography, and illustration style.'
+  - id: 'ch-08'
+    title: 'Printed and Merchandise Applications'
+    level: 1
+    order: 8
+    pages: '33-43'
+    summary: 'Shows cheque book, annual report, flyer, branded merchandise, banners, event elements, and vehicle branding applications.'
+  - id: 'ch-09'
+    title: 'Digital Applications'
+    level: 1
+    order: 9
+    pages: '44-51'
+    summary: 'Covers website dimensions, social media, mobile/apps, e-flyer, portal banner, email signature, and HTML template applications.'
+  - id: 'ch-10'
+    title: 'Signage and Mobile Truck'
+    level: 1
+    order: 10
+    pages: '52-54'
+    summary: 'Defines pylon, bulk head, QSP, ATM directional, department door, in-branch, unit signage, and mobile truck applications.'

@@ -1,0 +1,111 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Paypal_Corporate_master_brand_guidelines_2013
+index_ref: docs/Paypal_Corporate_master_brand_guidelines_2013.index.yaml
+note_ref: docs/Paypal_Corporate_master_brand_guidelines_2013.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- Brand Strategy
+- Voice and Tone
+- Legal and Trademark
+- Brand Architecture
+- Photography System
+- Typography System
+- Color System
+- UI Components
+- Operations
+- Measurement
+- AI-Checkable Rules
+- Governance
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 5
+  section_count: 0
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-02
+  title: Logo Assets
+  order: 2
+  level: 1
+- id: ch-03
+  title: Visual Assets
+  order: 3
+  level: 1
+- id: ch-04
+  title: Branded Assets
+  order: 4
+  level: 1
+- id: ch-05
+  title: Governance and Appendix
+  order: 5
+  level: 1
+frameworks:
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-02
+  chapter_title: Logo Assets
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-03
+  chapter_title: Visual Assets
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-04
+  chapter_title: Branded Assets
+- name: 可抽象為「核心資產 -> 使用條件 -> 例外處理 -> 錯誤排除 -> 應用驗證」框架，讓設計者能先判斷情境，再選擇正確規則
+  chapter: ch-05
+  chapter_title: Governance and Appendix
+patterns:
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-02
+  chapter_title: Logo Assets
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-03
+  chapter_title: Visual Assets
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-04
+  chapter_title: Branded Assets
+- name: 可重複使用的模式包括最小尺寸、留白單位、色彩角色、字體層級、背景相容性、範本化應用與 do/don’t 對照。
+  chapter: ch-05
+  chapter_title: Governance and Appendix
+rules_ai_checkable: []
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - Brand Strategy
+  - Voice and Tone
+- id: ch-02
+  title: Logo Assets
+  modules:
+  - Legal and Trademark
+  - Brand Architecture
+- id: ch-03
+  title: Visual Assets
+  modules:
+  - Photography System
+  - Typography System
+  - Color System
+- id: ch-04
+  title: Branded Assets
+  modules:
+  - UI Components
+  - Operations
+- id: ch-05
+  title: Governance and Appendix
+  modules:
+  - Measurement
+  - AI-Checkable Rules
+  - Governance

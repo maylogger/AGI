@@ -1,0 +1,348 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: arte_2008_compressed
+index_ref: docs/arte_2008_compressed.index.yaml
+note_ref: docs/arte_2008_compressed.note.md
+archetype: brand_experience_guide
+industry: media_entertainment
+modules:
+- Brand Strategy
+- Visual Language
+- Knowledge Architecture
+- Layout System
+- Design Tokens
+- AI-Checkable Rules
+- Color System
+- Visual Identity
+- Brand Architecture
+- Governance
+- Operations
+- Typography System
+- Content Design
+- Messaging
+- Examples
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 12
+  section_count: 4
+chapter_sequence:
+- id: ch-01
+  title: Philosophie
+  order: 1
+  level: 1
+- id: ch-02
+  title: Composition Graphique Generale / Grafische Grundlagen
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Three Fundamental Elements
+  order: 1
+  level: 2
+- id: ch-03
+  title: Le Logo ARTE / Das ARTE-Logo
+  order: 3
+  level: 1
+- id: ch-04
+  title: Marque ARTE - Marques Derivees / Sublogos
+  order: 4
+  level: 1
+- id: ch-05
+  title: Cartouche / ARTE-Logo-Podest
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Position and Colour Palettes
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Special Cases
+  order: 2
+  level: 2
+- id: ch-06
+  title: Typographie
+  order: 6
+  level: 1
+- id: ch-07
+  title: Mise en Page / Layout
+  order: 7
+  level: 1
+- id: ch-08
+  title: Cartouche - Utilisations / Podest Anwendungen
+  order: 8
+  level: 1
+- id: ch-09
+  title: La Signature / Der Claim
+  order: 9
+  level: 1
+- id: ch-10
+  title: Exemples / Beispiele
+  order: 10
+  level: 1
+- id: ch-11
+  title: A Eviter / Don’ts
+  order: 11
+  level: 1
+- id: ch-11-01
+  title: Logo and Cartouche Don’ts
+  order: 1
+  level: 2
+- id: ch-12
+  title: Elements sur Serveur / Elemente auf Server
+  order: 12
+  level: 1
+frameworks:
+- name: Value-to-grammar framework：humanist values -> formal constants -> flexible applications
+  chapter: ch-01
+  chapter_title: Philosophie
+- name: Three-element grammar：anchor device + expressive type + structural plane
+  chapter: ch-02
+  chapter_title: Composition Graphique Generale / Grafische Grundlagen
+- name: Element role matrix：attention, communication, organization
+  chapter: ch-02-01
+  chapter_title: Three Fundamental Elements
+- name: Logo context framework：in design context -> -4° tilted; impossible/contextual listing -> upright allowed; orange-like...
+  chapter: ch-03
+  chapter_title: Le Logo ARTE / Das ARTE-Logo
+- name: Sublogo architecture framework：masterbrand + descriptor, programme title with ARTE, programme title without ARTE,
+    exc...
+  chapter: ch-04
+  chapter_title: Marque ARTE - Marques Derivees / Sublogos
+- name: Podium device framework：carrier, perspective, gradient, edge placement, logo-based spacing, special-case removal
+  chapter: ch-05
+  chapter_title: Cartouche / ARTE-Logo-Podest
+- name: Gradient token framework：name, start CMYK, end CMYK, logo association permission
+  chapter: ch-05-01
+  chapter_title: Position and Colour Palettes
+- name: Production feasibility framework：gradient possible? monochrome? frame available?
+  chapter: ch-05-02
+  chapter_title: Special Cases
+- name: Type hierarchy framework：headline/subheadline expressive, copy compact/readable, internal correspondence fallback
+  chapter: ch-06
+  chapter_title: Typographie
+- name: Page composition framework：carrier, type position, inclined plane, image/white-space proportion
+  chapter: ch-07
+  chapter_title: Mise en Page / Layout
+- name: Device role framework：identity carrier, information carrier, background, free fragment
+  chapter: ch-08
+  chapter_title: Cartouche - Utilisations / Podest Anwendungen
+- name: Claim placement framework：inside cartouche for compact use, beside cartouche for claim priority, add inclined band
+    fo...
+  chapter: ch-09
+  chapter_title: La Signature / Der Claim
+- name: Example taxonomy：institutional brochure, press dossier title, press dossier interior, press invitation
+  chapter: ch-10
+  chapter_title: Exemples / Beispiele
+- name: Error taxonomy framework：logo form, colour, angle, transparency, outline, clearspace, cartouche geometry, gradient,
+    d...
+  chapter: ch-11
+  chapter_title: A Eviter / Don’ts
+- name: Validation checklist framework
+  chapter: ch-11-01
+  chapter_title: Logo and Cartouche Don’ts
+- name: Asset distribution framework：server location, file formats, variants, editing notes, production risks
+  chapter: ch-12
+  chapter_title: Elements sur Serveur / Elemente auf Server
+patterns:
+- name: 可複用模式是先寫品牌價值的視覺翻譯，再導入具體資產規則。
+  chapter: ch-01
+  chapter_title: Philosophie
+- name: 少量核心構件生成多種版面
+  chapter: ch-02
+  chapter_title: Composition Graphique Generale / Grafische Grundlagen
+- name: 可複用為 design grammar minimum viable set。
+  chapter: ch-02-01
+  chapter_title: Three Fundamental Elements
+- name: 可複用為 angle-based identity system 與 background contrast exception。
+  chapter: ch-03
+  chapter_title: Le Logo ARTE / Das ARTE-Logo
+- name: 可複用於 media brand 的節目/子品牌標誌治理。
+  chapter: ch-04
+  chapter_title: Marque ARTE - Marques Derivees / Sublogos
+- name: 可複用為 brand container / logo stage system。
+  chapter: ch-05
+  chapter_title: Cartouche / ARTE-Logo-Podest
+- name: 可複用為 gradient design token schema。
+  chapter: ch-05-01
+  chapter_title: Position and Colour Palettes
+- name: 可複用於所有依賴特殊印刷效果的品牌資產。
+  chapter: ch-05-02
+  chapter_title: Special Cases
+- name: 可複用於以同一字族建立外部/內部、標題/正文的字體治理。
+  chapter: ch-06
+  chapter_title: Typographie
+- name: 可複用為 visual layout grammar，讓同一品牌可生成多種出版品。
+  chapter: ch-07
+  chapter_title: Mise en Page / Layout
+- name: 可複用於品牌容器元件的多用途治理。
+  chapter: ch-08
+  chapter_title: Cartouche - Utilisations / Podest Anwendungen
+- name: 可複用為 slogan lockup variants。
+  chapter: ch-09
+  chapter_title: La Signature / Der Claim
+- name: 可複用為 application gallery，將每個範例標記為 which rules are demonstrated。
+  chapter: ch-10
+  chapter_title: Exemples / Beispiele
+- name: 可複用為 do-not rule dataset，用於視覺 QA 或訓練 AI 審稿。
+  chapter: ch-11
+  chapter_title: A Eviter / Don’ts
+- name: 適合轉成 visual linter。
+  chapter: ch-11-01
+  chapter_title: Logo and Cartouche Don’ts
+- name: 可複用為 design asset registry。
+  chapter: ch-12
+  chapter_title: Elements sur Serveur / Elemente auf Server
+rules_ai_checkable:
+- module: ''
+  criterion: 所有承載 ARTE brand 的媒介都需遵守基本圖形規則；logo 與 -4° angle 是不變常數；三大設計元素為彩色 cartouche、強勢彩色 typography、-4° horizontal band。
+  chapter: ch-01
+  chapter_title: Philosophie
+- module: ''
+  criterion: cartouche 是 logo 的主要載體；typography 應強勢、大面積、常用大寫並與 cartouche 色彩呼應；-4° band 必須協助圖像與文字空間劃分。
+  chapter: ch-02
+  chapter_title: Composition Graphique Generale / Grafische Grundlagen
+- module: ''
+  criterion: 任何完整 ARTE graphic composition 應至少能辨識出三元素之一，重要品牌溝通應使用三元素的組合。
+  chapter: ch-02-01
+  chapter_title: Three Fundamental Elements
+- module: Visual Identity
+  criterion: logo 不可變形、重繪、改字距；基本 orange 為 Pantone 1505 / CMYK 0,65,100,0 / RGB 255,95,29；黑白印刷用 50% black 或 white，不用 black；設計情境中
+    logo 需 -4°，但 logo 列舉、共同製作、外部製作與 merch 可直立或傾斜。
+  chapter: ch-03
+  chapter_title: Le Logo ARTE / Das ARTE-Logo
+- module: Visual Identity
+  criterion: 衍生 wordmark 一般為 Helvetica Neue Heavy、capitals；設計情境中 sublogos 傾斜 -4°；含 ARTE 的節目 title 跟隨 ARTE logo，可搭配特定色碼；照片上
+    title 可用 white；無 ARTE 字樣的 programme/case logo 可自成一體也可與 ARTE logo 組合。
+  chapter: ch-04
+  chapter_title: Marque ARTE - Marques Derivees / Sublogos
+- module: Visual Identity
+  criterion: cartouche 與其中 logo 一律 -4°；cartouche 永遠位於版面邊緣；水平間距用 1x ARTE logo 長度，垂直間距用 2x ARTE logo 高度；可從任何邊進入版面且有上/下方向；主色需使用純色構成漸層；無法確保平滑漸層、單色印刷或無框可定位時，不使用
+    cartouche。
+  chapter: ch-05
+  chapter_title: Cartouche / ARTE-Logo-Podest
+- module: ''
+  criterion: 外部 print communication 使用 Helvetica Neue；correspondence/internal notes 使用 Arial；headline/subheadline 顏色匹配 cartouche，可
+    -4°，右對齊；headline 用 capitals，subheadline 用大小寫；正文 always upper/lowercase、justified、prefer compact and non-tilted；避免過長行與過多字體。
+  chapter: ch-06
+  chapter_title: Typographie
+- module: ''
+  criterion: logo+information 情境文字不可過長；以 logo 的 t 測量元素間距；資訊載體只適用於內頁/封底且 logo 不在 cartouche；每頁不超過一個 cartouche；背景使用不得與另一 cartouche
+    同頁混用；背景/資訊兩種自由用法不可合併。
+  chapter: ch-08
+  chapter_title: Cartouche - Utilisations / Podest Anwendungen
+- module: ''
+  criterion: press dossier 標題頁與孤立 headline 建議使用 -4° typography；內頁可依嚴格 grid 決定是否傾斜；三大元素應在範例中保持可辨識。
+  chapter: ch-10
+  chapter_title: Exemples / Beispiele
+- module: ''
+  criterion: logo 不得裁切、改色、加框、改構成、非 -4° 傾斜、透明、outline、改比例、加輪廓、用黑色、被外來形狀干擾留白；cartouche 不得變形、改比例、任意放置、非 -4°、階梯狀漸層、自由放置 logo、過度裁切、窄邊進入畫面、同頁出現兩次、透明、單色、漸層轉白/黑/灰或互補色。
+  chapter: ch-11
+  chapter_title: A Eviter / Don’ts
+- module: Visual Identity
+  criterion: 同上，並可拆為 `angle == -4deg`、`opacity == 100%`、`logo count per page <= 1 when in cartouche context`、`cartouche count
+    per page <= 1`、`aspect ratio unchanged`、`no black logo`、`no monochrome podium` 等條件。
+  chapter: ch-11-01
+  chapter_title: Logo and Cartouche Don’ts
+- module: ''
+  criterion: cartouche assets 應使用提供的 Illustrator .eps 或 .jpg；放大 cartouche 時必須檢查 Illustrator blend settings，避免印刷色階；可在 Illustrator
+    移除 ARTE logo 以單獨使用 Podest。
+  chapter: ch-12
+  chapter_title: Elements sur Serveur / Elemente auf Server
+chapters:
+- id: ch-01
+  title: Philosophie
+  modules:
+  - Brand Strategy
+  - Visual Language
+  - Knowledge Architecture
+- id: ch-02
+  title: Composition Graphique Generale / Grafische Grundlagen
+  modules:
+  - Layout System
+  - Visual Language
+  - Design Tokens
+- id: ch-02-01
+  title: Three Fundamental Elements
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Language
+- id: ch-03
+  title: Le Logo ARTE / Das ARTE-Logo
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Visual Identity
+- id: ch-04
+  title: Marque ARTE - Marques Derivees / Sublogos
+  modules:
+  - Brand Architecture
+  - Visual Identity
+  - Governance
+- id: ch-05
+  title: Cartouche / ARTE-Logo-Podest
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Language
+  - Color System
+- id: ch-05-01
+  title: Position and Colour Palettes
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Design Tokens
+- id: ch-05-02
+  title: Special Cases
+  modules:
+  - AI-Checkable Rules
+  - Operations
+- id: ch-06
+  title: Typographie
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Content Design
+- id: ch-07
+  title: Mise en Page / Layout
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Language
+- id: ch-08
+  title: Cartouche - Utilisations / Podest Anwendungen
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Language
+- id: ch-09
+  title: La Signature / Der Claim
+  modules:
+  - Layout System
+  - Messaging
+  - Visual Identity
+- id: ch-10
+  title: Exemples / Beispiele
+  modules:
+  - Layout System
+  - Examples
+  - Governance
+- id: ch-11
+  title: A Eviter / Don’ts
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-11-01
+  title: Logo and Cartouche Don’ts
+  modules:
+  - AI-Checkable Rules
+- id: ch-12
+  title: Elements sur Serveur / Elemente auf Server
+  modules:
+  - Operations
+  - Governance

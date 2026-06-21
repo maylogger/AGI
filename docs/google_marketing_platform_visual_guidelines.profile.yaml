@@ -1,0 +1,275 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: google_marketing_platform_visual_guidelines
+index_ref: docs/google_marketing_platform_visual_guidelines.index.yaml
+note_ref: docs/google_marketing_platform_visual_guidelines.note.md
+archetype: brand_experience_guide
+industry: tech_software
+modules:
+- Brand Strategy
+- Knowledge Architecture
+- Operations
+- Governance
+- Visual Language
+- AI-Checkable Rules
+- Visual Identity
+- Product Language
+- Color System
+- Design Tokens
+- Accessibility
+- Illustration System
+- Photography System
+- Iconography System
+- Motion Identity
+- Content Safety
+- Localization
+- Typography System
+depth:
+  strategy: low
+  visual: high
+  governance: high
+  top_level_chapter_count: 6
+  section_count: 7
+chapter_sequence:
+- id: ch-01
+  title: Brand Guidelines
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Why a Visual Guide
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Brand Promise and Visual Direction
+  order: 2
+  level: 2
+- id: ch-02
+  title: Brand Logo Lockups and Color Applications
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo Variants and Usage
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Usage Matrix and Product Rules
+  order: 2
+  level: 2
+- id: ch-03
+  title: Color
+  order: 3
+  level: 1
+- id: ch-04
+  title: Imagery
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Photography
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Illustration and Iconography
+  order: 2
+  level: 2
+- id: ch-04-03
+  title: Animation and Video
+  order: 3
+  level: 2
+- id: ch-05
+  title: Typography
+  order: 5
+  level: 1
+- id: ch-06
+  title: Related Guidelines
+  order: 6
+  level: 1
+frameworks:
+- name: 從公司識別到每一個使用場景的 cohesion framework
+  chapter: ch-01
+  chapter_title: Brand Guidelines
+- name: touchpoint normalization framework
+  chapter: ch-01-01
+  chapter_title: Why a Visual Guide
+- name: functional promise -> emotional visual direction
+  chapter: ch-01-02
+  chapter_title: Brand Promise and Visual Direction
+- name: contextual logo governance：asset variant -> surface -> approval/ban
+  chapter: ch-02
+  chapter_title: Brand Logo Lockups and Color Applications
+- name: background contrast decision tree
+  chapter: ch-02-01
+  chapter_title: Logo Variants and Usage
+- name: surface-by-surface permission matrix
+  chapter: ch-02-02
+  chapter_title: Usage Matrix and Product Rules
+- name: 色彩原則框架：accessibility -> pacing -> focus -> tonal depth
+  chapter: ch-03
+  chapter_title: Color
+- name: image purpose framework：story、product fit、diversity、UX value
+  chapter: ch-04
+  chapter_title: Imagery
+- name: photo evaluation：story -> focal point -> diversity -> product correctness -> resolution
+  chapter: ch-04-01
+  chapter_title: Photography
+- name: illustration clarity framework：one-second decipher test
+  chapter: ch-04-02
+  chapter_title: Illustration and Iconography
+- name: motion review checklist
+  chapter: ch-04-03
+  chapter_title: Animation and Video
+- name: type selection framework：Display >= 36pt；Google Sans 18-35pt；Roboto <= 16pt body/supporting
+  chapter: ch-05
+  chapter_title: Typography
+- name: guideline dependency map
+  chapter: ch-06
+  chapter_title: Related Guidelines
+patterns:
+- name: 先定義指南存在理由，再定義品牌 promise，使後續規格有共同目的。
+  chapter: ch-01
+  chapter_title: Brand Guidelines
+- name: 把日常小素材納入品牌治理。
+  chapter: ch-01-01
+  chapter_title: Why a Visual Guide
+- name: 把 enterprise data platform 轉成 aspirational imagery。
+  chapter: ch-01-02
+  chapter_title: Brand Promise and Visual Direction
+- name: 可用/不可用
+  chapter: ch-02
+  chapter_title: Brand Logo Lockups and Color Applications
+- name: preferred/default + rare exception pattern。
+  chapter: ch-02-01
+  chapter_title: Logo Variants and Usage
+- name: free product 需同時使用 Google 與 product lockup，建立 Google association。
+  chapter: ch-02-02
+  chapter_title: Usage Matrix and Product Rules
+- name: 白底為主、核心色作識別、neutral 作資訊。
+  chapter: ch-03
+  chapter_title: Color
+- name: 真實生活場景 + 抽象資料隱喻 + Google 色彩的混合視覺語言。
+  chapter: ch-04
+  chapter_title: Imagery
+- name: 用不精準對應文案的照片保持驚喜但不失熟悉。
+  chapter: ch-04-01
+  chapter_title: Photography
+- name: 核心色不必全用，但整體 set 要平衡分布。
+  chapter: ch-04-02
+  chapter_title: Illustration and Iconography
+- name: 以故事弧補強靜態圖難以表達的變化。
+  chapter: ch-04-03
+  chapter_title: Animation and Video
+- name: 以字體家族角色分工管理跨媒體一致性。
+  chapter: ch-05
+  chapter_title: Typography
+- name: 在文件尾端建立 extension points。
+  chapter: ch-06
+  chapter_title: Related Guidelines
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI 可檢查：任何素材需能說明其如何支持 cohesive brand presentation；不得與 trustworthy、professional、reliable 的方向衝突。
+  chapter: ch-01
+  chapter_title: Brand Guidelines
+- module: Brand Strategy
+  criterion: AI 可檢查：視覺素材應避免廉價、混亂或不可信；需呈現智慧、洞察或行動可能性。
+  chapter: ch-01-02
+  chapter_title: Brand Promise and Visual Direction
+- module: Visual Identity
+  criterion: AI 可檢查：不得 recolor、drop shadow、重建 logotype、改比例、加 subproduct name、放在降低可讀性的背景；partner logo 需用 neutral divider 分隔。
+  chapter: ch-02
+  chapter_title: Brand Logo Lockups and Color Applications
+- module: Visual Identity
+  criterion: AI 可檢查：若背景太暗，使用 reverse；若背景降低可讀性，需改背景或 logo 版本；不得手動打字重建 signature。
+  chapter: ch-02-01
+  chapter_title: Logo Variants and Usage
+- module: ''
+  criterion: AI 可檢查：free product marketing assets 必須同一 canvas 同時出現 Google(A) 與 product lockup(F)；禁止使用表格中標示 do not use 的組合。
+  chapter: ch-02-02
+  chapter_title: Usage Matrix and Product Rules
+- module: Photography System
+  criterion: AI 可檢查：影像需有單一焦點、背景少雜訊、呈現多元使用者；不得出現競品產品或不可移除的外部品牌。
+  chapter: ch-04
+  chapter_title: Imagery
+- module: ''
+  criterion: AI 可檢查：online slide 解析度至少 72 dpi；可能印刷的長 PDF 至少 300 dpi；不得 pixelated/blurred；不得包含 competitor products。
+  chapter: ch-04-01
+  chapter_title: Photography
+- module: Iconography System
+  criterion: AI 可檢查：插畫若超過一秒才可理解即過度複雜；符號不得依賴地方節日或文化梗；同組插畫光源需一致。
+  chapter: ch-04-02
+  chapter_title: Illustration and Iconography
+- module: Typography System
+  criterion: AI 可檢查：Google Sans/Display 不得用於 all caps；Google Sans 不得用於 body 或超過一句的 callout；bold sparingly；Product Sans 不得用於非
+    lockup。
+  chapter: ch-05
+  chapter_title: Typography
+chapters:
+- id: ch-01
+  title: Brand Guidelines
+  modules:
+  - Brand Strategy
+  - Knowledge Architecture
+- id: ch-01-01
+  title: Why a Visual Guide
+  modules:
+  - Operations
+  - Governance
+- id: ch-01-02
+  title: Brand Promise and Visual Direction
+  modules:
+  - Brand Strategy
+  - Visual Language
+- id: ch-02
+  title: Brand Logo Lockups and Color Applications
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-02-01
+  title: Logo Variants and Usage
+  modules:
+  - Visual Identity
+- id: ch-02-02
+  title: Usage Matrix and Product Rules
+  modules:
+  - Product Language
+  - Governance
+- id: ch-03
+  title: Color
+  modules:
+  - Color System
+  - Design Tokens
+  - Accessibility
+- id: ch-04
+  title: Imagery
+  modules:
+  - Illustration System
+  - Photography System
+  - Iconography System
+  - Motion Identity
+- id: ch-04-01
+  title: Photography
+  modules:
+  - Photography System
+  - Content Safety
+- id: ch-04-02
+  title: Illustration and Iconography
+  modules:
+  - Illustration System
+  - Iconography System
+  - Accessibility
+- id: ch-04-03
+  title: Animation and Video
+  modules:
+  - Motion Identity
+- id: ch-05
+  title: Typography
+  modules:
+  - Localization
+  - Typography System
+- id: ch-06
+  title: Related Guidelines
+  modules:
+  - Operations
+  - Knowledge Architecture

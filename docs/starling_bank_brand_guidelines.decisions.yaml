@@ -1,0 +1,85 @@
+# L3 決策卡 sidecar — Starling Bank
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: starling_bank_brand_guidelines
+decisions:
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌自身元素（S mark 的一半）作為四周清除區量尺，使規則可隨尺寸縮放
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 清除空間應與品牌資產內在比例相連，而非固定任意距離
+      - 可縮放的 clearspace 規則比固定像素更適用於多尺寸場景
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    evidence:
+      - brand_id: starling_bank_brand_guidelines
+        chapter: ch-02-02
+        excerpt: "水平 logo 周圍保留 S mark 一半的空間（logo-derived spacing system），以標誌自身元素作為量尺，讓規則可隨尺寸縮放。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 依背景明度與彩度分類選擇 primary／light／white colourway，把 logo 色彩規則寫成背景分類決策樹
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - 可讀性優先於單一色彩執著；背景越複雜越需要更高對比
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: starling_bank_brand_guidelines
+        chapter: ch-02-03
+        excerpt: "白底與淺色背景使用 primary colourway，深色背景使用 light colourway，高彩度亮色背景使用 white colourway；不得在低對比背景使用 primary logo。"
+    status: extracted
+
+  - id: dp-contact-before-appendix
+    title: 在技術資料前先給治理窗口，讓 guideline 成為可改善系統
+    problem:
+      statement: 規則無法涵蓋所有情境，缺乏權威決策入口時，例外用法無人裁決。
+      signals: [exceptions_expected, governance]
+    solution:
+      module: Governance
+      move: 以 scope statement 限定文件責任，並提供品牌聯絡窗口作為 human review fallback
+      layer: governance
+    reason:
+      - 規則無法涵蓋所有情境，必須提供權威決策入口
+      - 精簡 guideline 需要明確 escalation path
+      - 每份 guideline 都應設計例外處理機制
+    applicable_when:
+      industries: [finance]
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit, logo_asset_guidelines]
+    dependencies:
+      requires: [Governance]
+      enables: [Operations]
+    evidence:
+      - brand_id: starling_bank_brand_guidelines
+        chapter: ch-05
+        excerpt: "精簡 guideline 需要明確 escalation path；當使用情境超出本文件或背景分類不明確時，應標記為需品牌審核並聯絡品牌窗口。"
+    status: extracted

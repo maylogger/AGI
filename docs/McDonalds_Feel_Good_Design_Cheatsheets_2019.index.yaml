@@ -1,0 +1,61 @@
+title: 'McDonald’s Feel-Good Design Cheatsheets'
+source: 'sources/McDonalds_Feel_Good_Design_Cheatsheets_2019.pdf'
+version: '1.2'
+date: 'September 2019'
+language: 'en'
+summary: '這份 cheatsheet 以高密度方式總結 McDonald’s Feel-Good Design 系統，涵蓋 Golden Arches、Archery、色彩、字體、攝影、圖案、插畫與餐廳設計。'
+chapters:
+  - id: 'ch-01'
+    title: 'Feel-Good Design Overview'
+    level: 1
+    order: 1
+    pages: '1-2'
+    summary: '定義品牌目標、品牌承諾、人格、視覺資產與設計原則。'
+  - id: 'ch-02'
+    title: 'The Golden Arches Cheatsheet'
+    level: 1
+    order: 2
+    pages: '3'
+    summary: '規範 Golden Arches、wordmark、tagline、Token 的使用、clearspace、minimum size 與禁用。'
+  - id: 'ch-03'
+    title: 'Archery Cheatsheet'
+    level: 1
+    order: 3
+    pages: '4'
+    summary: '說明如何將 Golden Arches 轉為 creative/dynamic Archery 技法，包含 cropping、motion、staging、angled、repetition。'
+  - id: 'ch-04'
+    title: 'Brand Color Cheatsheet'
+    level: 1
+    order: 4
+    pages: '5'
+    summary: '定義 Golden Brand with Red accents 的比例、色彩值、功能色與材料色限制。'
+  - id: 'ch-05'
+    title: 'Typography Cheatsheet'
+    level: 1
+    order: 5
+    pages: '6'
+    summary: '規範 Speedee 字體、字重、condensed、line spacing、highlighting、語言支援與可讀性。'
+  - id: 'ch-06'
+    title: 'Food Photography Cheatsheet'
+    level: 1
+    order: 6
+    pages: '7'
+    summary: '定義 food photography 的真實材質、Perfect Serve、flawesome details、自然光、景深與動態。'
+  - id: 'ch-07'
+    title: 'Lifestyle Photography Cheatsheet'
+    level: 1
+    order: 7
+    pages: '8'
+    summary: '規範 casting、composition、scenario、colour、lighting、product、emotion、setting。'
+  - id: 'ch-08'
+    title: 'Playful Patterns and Product Illustrations Cheatsheet'
+    level: 1
+    order: 8
+    pages: '9'
+    summary: '定義 playful patterns、product illustrations、使用情境、red accents、常見錯誤與 Global Brand approval。'
+  - id: 'ch-09'
+    title: 'Restaurant Design Cheatsheet'
+    level: 1
+    order: 9
+    pages: '10'
+    summary: '將 Feel-Good Design 延伸到餐廳材質、空間、科技、互動與 Golden Arches 的空間化。'

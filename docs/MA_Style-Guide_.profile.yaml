@@ -1,0 +1,271 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: MA_Style-Guide_
+index_ref: docs/MA_Style-Guide_.index.yaml
+note_ref: docs/MA_Style-Guide_.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Brand Strategy
+- Operations
+- Governance
+- Photography System
+- Typography System
+- Color System
+- Visual Identity
+- AI-Checkable Rules
+- Information Design
+- Layout System
+- UI Components
+- Content Design
+- Compliance
+- Accessibility
+- Brand Architecture
+- Messaging
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 5
+  section_count: 8
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-02
+  title: Brand Identity
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Master Logo
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Colour Palette
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Typography and Photography
+  order: 3
+  level: 2
+- id: ch-03
+  title: Brand Applications
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Stationery and Communications
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Presentation and EDM Templates
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Vision Strip
+  order: 3
+  level: 2
+- id: ch-04
+  title: Melbourne Airport Aviation
+  order: 4
+  level: 1
+- id: ch-05
+  title: Melbourne Airport Retail
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Retail Identity
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Retail Photography and Campaign Applications
+  order: 2
+  level: 2
+frameworks:
+- name: Brand-as-system：appearance、language、behaviour、governance contact
+  chapter: ch-01
+  chapter_title: Introduction
+- name: Core identity stack：logo control、palette hierarchy、typographic hierarchy、photographic tone
+  chapter: ch-02
+  chapter_title: Brand Identity
+- name: Logo flexibility framework：primary first、secondary only for constraints、position by contrast/alignment、size floor
+  chapter: ch-02-01
+  chapter_title: Master Logo
+- name: Palette hierarchy：foundation、highlight、secondary accents、half-tone data palette
+  chapter: ch-02-02
+  chapter_title: Colour Palette
+- name: Typographic role map + photographic subject map
+  chapter: ch-02-03
+  chapter_title: Typography and Photography
+- name: Application kit：static stationery、communication template、digital module、environmental extension
+  chapter: ch-03
+  chapter_title: Brand Applications
+- name: Corporate collateral template framework
+  chapter: ch-03-01
+  chapter_title: Stationery and Communications
+- name: Content module library：header、image、copy+CTA、flight deal、section heading、article left/right、columns、footer
+  chapter: ch-03-02
+  chapter_title: Presentation and EDM Templates
+- name: Environmental branding with compliance gate
+  chapter: ch-03-03
+  chapter_title: Vision Strip
+- name: Sub-brand modulation：same palette、different type emphasis、domain-specific photography、application examples
+  chapter: ch-04
+  chapter_title: Melbourne Airport Aviation
+- name: Retail messaging stack：base background、message hierarchy、CTA locator、retailer endorsement、candid product photography
+  chapter: ch-05
+  chapter_title: Melbourne Airport Retail
+- name: Retail identity control points
+  chapter: ch-05-01
+  chapter_title: Retail Identity
+- name: Retail photography checklist：subject、composition、colour, saturation, product prominence, campaign format
+  chapter: ch-05-02
+  chapter_title: Retail Photography and Campaign Applications
+patterns:
+- name: 在開場明確指定何時使用 guideline、何時詢問團隊。
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 先定義 corporate master identity，再在後段建立 business-line adaptations。
+  chapter: ch-02
+  chapter_title: Brand Identity
+- name: 用字母 M 的高度定義 clear space，並用 do/do not 對照降低誤用。
+  chapter: ch-02-01
+  chapter_title: Master Logo
+- name: 為圖表建立 40/60/80/100% half-tone，是資訊設計友善的品牌色彩模式。
+  chapter: ch-02-02
+  chapter_title: Colour Palette
+- name: 提供 fallback typography，讓 office document 與 template 不因缺字體而破壞系統。
+  chapter: ch-02-03
+  chapter_title: Typography and Photography
+- name: 用範例頁加規格頁，讓設計者同時理解外觀與可檢查參數。
+  chapter: ch-03
+  chapter_title: Brand Applications
+- name: 依地區與團隊差異提供名片變體，如 Asia version 與 property team。
+  chapter: ch-03-01
+  chapter_title: Stationery and Communications
+- name: 以 character limit 與 pixel spacing 將視覺品質轉成可檢查規則。
+  chapter: ch-03-02
+  chapter_title: Presentation and EDM Templates
+- name: 用最小高度與環境對比作為空間應用的可驗證條件。
+  chapter: ch-03-03
+  chapter_title: Vision Strip
+- name: 用 Light weight 表現 sophisticated sector benchmark。
+  chapter: ch-04
+  chapter_title: Melbourne Airport Aviation
+- name: 從圖片抽取輔助色，但要求低飽和、精緻、與 charcoal 有足夠對比。
+  chapter: ch-05
+  chapter_title: Melbourne Airport Retail
+- name: 同一 CTA device 可承載網址、社群與方向資訊。
+  chapter: ch-05-01
+  chapter_title: Retail Identity
+- name: 用 gallery composition 的多尺寸圖片創造 movement。
+  chapter: ch-05-02
+  chapter_title: Retail Photography and Campaign Applications
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: Primary logo 是主要識別；logo 可在任一角落但需有足夠對比並最好與其他元素對齊；水平 logo 不得小於 35mm，堆疊版不得小於 20mm；不得自行建立 logo 或使用非 master artwork。
+  chapter: ch-02
+  chapter_title: Brand Identity
+- module: Visual Identity
+  criterion: clear space 不得小於 Melbourne Airport mark 中 M 高度；不得改色、拉伸、扭曲、加濾鏡或置於低解析與低對比背景；深底可反白，淺底用 charcoal/black。
+  chapter: ch-02-01
+  chapter_title: Master Logo
+- module: Typography System
+  criterion: Main headlines 使用 Avenir Heavy sentence case；large statement 使用 Avenir Medium；body copy 使用 Avenir Book；Avenir
+    不可用時使用 Arial；攝影需支持品牌且呈現 dynamic、contemporary、sophisticated。
+  chapter: ch-02-03
+  chapter_title: Typography and Photography
+- module: Brand Strategy
+  criterion: 企業信紙 logo 通常置左上；contact information 置頁底左對齊；body copy 通常 10pt/13pt；簡報應使用提供模板；EDM CTA 有固定尺寸、色彩與字級；vision strip
+    色彩需與環境至少 30% contrast。
+  chapter: ch-03
+  chapter_title: Brand Applications
+- module: ''
+  criterion: EDM hero CTA 230x50px，standard CTA 160x45px；header panel 600x80px；single-column image 600px wide；copy modules
+    character limit 400、flight deal 340、article modules 280、three-column 100、two-column 160、centre CTA 20。
+  chapter: ch-03-02
+  chapter_title: Presentation and EDM Templates
+- module: ''
+  criterion: vision strip 最小高度 100mm；色彩應與環境或 built-form 至少 30% contrast；當時 compliance/access requirements 尚待確認，設計僅代表 layout。
+  chapter: ch-03-03
+  chapter_title: Vision Strip
+- module: ''
+  criterion: aviation typography lead-in 使用 Avenir Medium all caps、tracking 100；headings/large statements 使用 Avenir Light
+    30/35、tracking -15；body 使用 Avenir Light 10/13；gold 作為 preferred highlight。
+  chapter: ch-04
+  chapter_title: Melbourne Airport Aviation
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - Brand Strategy
+  - Operations
+  - Governance
+- id: ch-02
+  title: Brand Identity
+  modules:
+  - Photography System
+  - Typography System
+  - Color System
+  - Visual Identity
+- id: ch-02-01
+  title: Master Logo
+  modules:
+  - AI-Checkable Rules
+  - Governance
+- id: ch-02-02
+  title: Colour Palette
+  modules:
+  - Color System
+  - Information Design
+- id: ch-02-03
+  title: Typography and Photography
+  modules:
+  - Photography System
+  - Typography System
+- id: ch-03
+  title: Brand Applications
+  modules:
+  - Layout System
+  - UI Components
+  - Operations
+  - Information Design
+- id: ch-03-01
+  title: Stationery and Communications
+  modules:
+  - Operations
+- id: ch-03-02
+  title: Presentation and EDM Templates
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - UI Components
+  - Content Design
+- id: ch-03-03
+  title: Vision Strip
+  modules:
+  - Compliance
+  - Accessibility
+- id: ch-04
+  title: Melbourne Airport Aviation
+  modules:
+  - Brand Architecture
+  - Typography System
+  - Information Design
+- id: ch-05
+  title: Melbourne Airport Retail
+  modules:
+  - Brand Architecture
+- id: ch-05-01
+  title: Retail Identity
+  modules:
+  - Typography System
+  - UI Components
+  - Messaging
+- id: ch-05-02
+  title: Retail Photography and Campaign Applications
+  modules:
+  - Photography System

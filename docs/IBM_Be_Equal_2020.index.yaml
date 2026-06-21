@@ -1,0 +1,94 @@
+title: 'Be Equal Brand Guide'
+source: 'sources/IBM_Be_Equal_2020.pdf'
+version: '2.0'
+date: '2020-10-01'
+language: 'en'
+summary: 'IBM Be Equal 的品牌指南，將多元平等倡議轉譯為可擴展的視覺、語言、社群與應用系統。'
+chapters:
+  - id: 'ch-01'
+    title: 'Ambition'
+    level: 1
+    order: 1
+    pages: '4-18'
+    summary: '定義 Be Equal 的脈絡、承諾、支柱、行為、社群、盟友、夥伴與社群節奏。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Context and Brand Promise'
+        level: 2
+        order: 1
+        pages: '5-8'
+        summary: '說明 IBM 多元共融歷史、Be Equal 平台轉型與 expand/enable/ensure 品牌承諾。'
+      - id: 'ch-01-02'
+        title: 'Pillars, Behaviors and Communities'
+        level: 2
+        order: 2
+        pages: '9-12'
+        summary: '將平等理念拆為接受、盟友、問責及可辨識的社群身份。'
+      - id: 'ch-01-03'
+        title: 'Allies, Partner Program and Social Strategy'
+        level: 2
+        order: 3
+        pages: '12-18'
+        summary: '定義盟友資格、夥伴擴散模型與年度傳播節奏。'
+  - id: 'ch-02'
+    title: 'Expression'
+    level: 1
+    order: 2
+    pages: '19-41'
+    summary: '規範 Be Equal 的標誌、色彩、圖樣、字體、語氣、構圖、肖像與照片覆層。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Logo, Logotype and Community IDs'
+        level: 2
+        order: 1
+        pages: '20-23'
+        summary: '定義 Be Equal 標誌來源、比例、文字標誌與社群識別。'
+      - id: 'ch-02-02'
+        title: 'Color and Patterns'
+        level: 2
+        order: 2
+        pages: '24-30'
+        summary: '以 IBM Design Language 色票、可及性與 2x Grid 建立代表交織性的色彩與圖樣系統。'
+      - id: 'ch-02-03'
+        title: 'Typography, Translations and Voice'
+        level: 2
+        order: 3
+        pages: '31-36'
+        summary: '以 Plex 字體、翻譯與 Be... statements 建立跨語言、可控的語言識別。'
+      - id: 'ch-02-04'
+        title: 'Composition, Portraiture and Photo Overlays'
+        level: 2
+        order: 4
+        pages: '37-41'
+        summary: '使用 IBM 2x Grid、民主化肖像方法與社群覆層管理版面與人物呈現。'
+  - id: 'ch-03'
+    title: 'Digital'
+    level: 1
+    order: 3
+    pages: '42-56'
+    summary: '規範網站、社群素材、Podcast、動態聲音與 B.E. Community 子系統。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Website, Online Presence and Podcast'
+        level: 2
+        order: 1
+        pages: '42-44'
+        summary: '將 beequal.com、社群素材與聲音內容定位為可公開分享的數位入口。'
+      - id: 'ch-03-02'
+        title: 'Motion and B.E. Communities'
+        level: 2
+        order: 2
+        pages: '45-56'
+        summary: '以向上動態語彙與社群專屬資產延展子品牌。'
+  - id: 'ch-04'
+    title: 'Physical'
+    level: 1
+    order: 4
+    pages: '57-61'
+    summary: '展示事件環境、海報、商品與未來品牌合作等實體應用。'
+  - id: 'ch-05'
+    title: 'Advice and Resources'
+    level: 1
+    order: 5
+    pages: '62-63'
+    summary: '提供審核窗口、協作管道與品牌資源位置。'

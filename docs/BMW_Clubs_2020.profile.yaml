@@ -1,0 +1,265 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: BMW_Clubs_2020
+index_ref: docs/BMW_Clubs_2020.index.yaml
+note_ref: docs/BMW_Clubs_2020.note.md
+archetype: brand_experience_guide
+industry: luxury_premium
+modules:
+- Legal and Trademark
+- Brand Strategy
+- Governance
+- AI-Checkable Rules
+- Visual Identity
+- Design Tokens
+- Photography System
+- Content Safety
+- Operations
+- Examples
+- Layout System
+depth:
+  strategy: low
+  visual: high
+  governance: high
+  top_level_chapter_count: 10
+  section_count: 13
+chapter_sequence:
+- id: ch-01
+  title: What You Will Learn
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Purpose and At a Glance
+  order: 1
+  level: 2
+- id: ch-02
+  title: Basics
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Consistent Appearance
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: New BMW Symbol and Protection
+  order: 2
+  level: 2
+- id: ch-03
+  title: Guideline
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Naming and Signet
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: BMW Club Logo Construction
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Application Size, Position and Identifier
+  order: 3
+  level: 2
+- id: ch-04
+  title: Visual World
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Imagery Quality and Content Boundaries
+  order: 1
+  level: 2
+- id: ch-05
+  title: Merchandising Articles
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Merchandise Reproduction
+  order: 1
+  level: 2
+- id: ch-06
+  title: Digital Media
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Domains, UI and Social Media
+  order: 1
+  level: 2
+- id: ch-07
+  title: Print Media
+  order: 7
+  level: 1
+- id: ch-07-01
+  title: Printed Material
+  order: 1
+  level: 2
+- id: ch-08
+  title: Correspondence
+  order: 8
+  level: 1
+- id: ch-08-01
+  title: Stationery Templates
+  order: 1
+  level: 2
+- id: ch-09
+  title: Badges, Pins and Membership Card
+  order: 9
+  level: 1
+- id: ch-09-01
+  title: Small Identity Objects
+  order: 1
+  level: 2
+- id: ch-10
+  title: Contact & Support
+  order: 10
+  level: 1
+- id: ch-10-01
+  title: Support Channels
+  order: 1
+  level: 2
+frameworks:
+- name: Ambassador Governance Framework：身份資格、品牌責任、共同規則、個別差異
+  chapter: ch-01
+  chapter_title: What You Will Learn
+- name: Brand Asset Protection Framework：official file、allowed context、prohibited modification、transition deadline
+  chapter: ch-02
+  chapter_title: Basics
+- name: Logo Construction System：name syntax → signet eligibility → fixed logo ratio → x-based spacing → media size table
+    → i...
+  chapter: ch-03
+  chapter_title: Guideline
+- name: Image Risk Filter：quality、tone、negative association、content safety
+  chapter: ch-04
+  chapter_title: Visual World
+- name: Merch QA：size appropriateness、finish quality、background compatibility、fallback choice
+  chapter: ch-05
+  chapter_title: Merchandising Articles
+- name: Digital Identity Framework：name consistency、domain syntax、UI palette、social profile geometry
+  chapter: ch-06
+  chapter_title: Digital Media
+- name: Application Example Framework
+  chapter: ch-07
+  chapter_title: Print Media
+- name: Stationery System：fixed brand zones、postal variables、type styles、template availability
+  chapter: ch-08
+  chapter_title: Correspondence
+- name: Small Object Identity Framework：edge safety、stitching safety、background adaptation、proof-of-membership layout
+  chapter: ch-09
+  chapter_title: Badges, Pins and Membership Card
+- name: Escalation and Approval Path
+  chapter: ch-10
+  chapter_title: Contact & Support
+patterns:
+- name: 先界定適用對象與強制性，避免 guideline 被視為 optional inspiration。
+  chapter: ch-01
+  chapter_title: What You Will Learn
+- name: 母品牌固定 + club signet 可差異
+  chapter: ch-02
+  chapter_title: Basics
+- name: 將多語命名問題轉換為第一行必含 BMW Club/BMW Clubs/BMW [xyz] Club 的結構。
+  chapter: ch-03
+  chapter_title: Guideline
+- name: 好看
+  chapter: ch-04
+  chapter_title: Visual World
+- name: 在多種複製技術可選時，優先選擇最高品質而非最低成本或最大尺寸。
+  chapter: ch-05
+  chapter_title: Merchandising Articles
+- name: 將實體 logo 規則延伸到圓形與矩形 avatar，明確定義 safe area。
+  chapter: ch-06
+  chapter_title: Digital Media
+- name: 先用 design suggestions 引導，必要時再提供模板。
+  chapter: ch-07
+  chapter_title: Print Media
+- name: 把可變郵政限制獨立成 `1a/2a` 類參數，而非硬編所有國家版本。
+  chapter: ch-08
+  chapter_title: Correspondence
+- name: 把 stitching 視為新的有效邊界，而非使用物件外緣量測。
+  chapter: ch-09
+  chapter_title: Badges, Pins and Membership Card
+- name: 在文件結尾放入治理者資訊，讓例外處理具備制度性。
+  chapter: ch-10
+  chapter_title: Contact & Support
+rules_ai_checkable:
+- module: ''
+  criterion: 只有 official BMW Clubs 可使用本指南；文件規則 mandatory worldwide；club 必須可被辨識為 sender。
+  chapter: ch-01
+  chapter_title: What You Will Learn
+- module: ''
+  criterion: 2022-01-01 起只允許新 BMW Club logo；BMW symbol 只能在 club logo 內使用；不得改 form/color、不得當裝飾/功能元素、不得在正文替代 BMW 名稱；BMW 一律大寫。
+  chapter: ch-02
+  chapter_title: Basics
+- module: ''
+  criterion: logo signet 固定 10:4；signet 大小 5x × 2x；line thickness 0.05x；elements spacing 1/2x；clear space 至少 1.5 symbol diameters；fallback
+    white box 四邊外擴 1/2x；paired logos 需 BCCM 個案許可；identifier 不用於 merchandise、give-aways、badges/pins、flags。
+  chapter: ch-03
+  chapter_title: Guideline
+- module: ''
+  criterion: domain 必須包含 `bmw-club` 或等價詞；空格以 dash 替代；不得用 subdomain/domain 組合或 subdirectory 替代；profile logo 與邊界至少 1/2x 或 1x；title
+    image 不得 restless 且須與 logo 有足夠對比。
+  chapter: ch-06
+  chapter_title: Digital Media
+- module: ''
+  criterion: letterhead 右/下/上邊至少 3x；business card 邊界至少一個 BMW symbol diameter；名片尺寸 85 × 55 mm；字距 0；指定 Arial 字級與行距。
+  chapter: ch-08
+  chapter_title: Correspondence
+- module: ''
+  criterion: badge logo full picture 需至少 1/2x wraparound edge；visible stitching 時從縫線量測；有色背景使用 fallback logo；會員卡需清楚顯示 club
+    name、member data 與 official identity。
+  chapter: ch-09
+  chapter_title: Badges, Pins and Membership Card
+chapters:
+- id: ch-01
+  title: What You Will Learn
+  modules:
+  - Legal and Trademark
+  - Brand Strategy
+  - Governance
+- id: ch-02
+  title: Basics
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-03
+  title: Guideline
+  modules:
+  - AI-Checkable Rules
+  - Design Tokens
+  - Governance
+- id: ch-04
+  title: Visual World
+  modules:
+  - Photography System
+  - Content Safety
+- id: ch-05
+  title: Merchandising Articles
+  modules:
+  - AI-Checkable Rules
+  - Operations
+- id: ch-06
+  title: Digital Media
+  modules:
+  - AI-Checkable Rules
+  - Design Tokens
+- id: ch-07
+  title: Print Media
+  modules:
+  - Examples
+- id: ch-08
+  title: Correspondence
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Operations
+- id: ch-09
+  title: Badges, Pins and Membership Card
+  modules:
+  - AI-Checkable Rules
+- id: ch-10
+  title: Contact & Support
+  modules:
+  - Operations
+  - Governance

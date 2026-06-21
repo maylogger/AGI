@@ -1,0 +1,62 @@
+title: 'Olympic Games Tokyo 2020 Emblem Usage Guidelines for National Olympic Committees'
+source: 'sources/Tokyo_2020_NOC_Olympic_emblem_2018.pdf'
+version: '2.0'
+date: 'April 2018'
+language: 'en'
+summary: 'Tokyo 2020 提供給 National Olympic Committees 的 emblem 使用規範，聚焦非商業授權、標誌組成、色彩、背景、錯誤使用、wordmark、字體與特定媒介範例。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction and NOC Usage Conditions'
+    level: 1
+    order: 1
+    pages: '1'
+    summary: '說明 Tokyo 2020 IP 管理、NOC 非商業使用權、服裝使用條件、尺寸上限、製造商識別隔離與素材取得流程。'
+  - id: 'ch-02'
+    title: 'Emblem System'
+    level: 1
+    order: 2
+    pages: '3-7'
+    summary: '定義 Tokyo 2020 emblem 組成、clear space、最小尺寸、顯示色彩、背景協調與 incorrect usage。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Emblem Components'
+        level: 2
+        order: 1
+        pages: '3'
+        summary: '說明 Games Distinctive Element、wordmark、Olympic symbol 與 trademark 必須組合使用，30mm 以下可省略 TM。'
+      - id: 'ch-02-02'
+        title: 'Clear Space, Size, Colour and Background'
+        level: 2
+        order: 2
+        pages: '4-6'
+        summary: '規範 0.7X clear space、12mm / 35px 最小尺寸、Olympic 色值與在白底、複雜底、色底上的版本選擇。'
+      - id: 'ch-02-03'
+        title: 'Incorrect Usage'
+        level: 2
+        order: 3
+        pages: '7'
+        summary: '列出不可描邊、金銀燙、改色、變形、旋轉、換字體、改順序、3D、陰影、翻轉、獨立使用元素或與其他元素組合。'
+  - id: 'ch-03'
+    title: 'Tokyo 2020 Wordmark'
+    level: 1
+    order: 3
+    pages: '8'
+    summary: '規範 NOC 可在非競賽服、競賽服與訓練服使用 wordmark，但需與製造商或 NOC emblem 清楚分離並送審。'
+  - id: 'ch-04'
+    title: 'Text Fonts'
+    level: 1
+    order: 4
+    pages: '9'
+    summary: '指定 DIN family 作為 Tokyo 2020 相關溝通材料的優先字體，並允許在特殊情境使用其他合適字體。'
+  - id: 'ch-05'
+    title: 'Application Examples'
+    level: 1
+    order: 5
+    pages: '10-12'
+    summary: '展示 news release、handbook、letterhead、business card 與 website 範例，並列出商業內容、第三方品牌與職務資格限制。'
+  - id: 'ch-06'
+    title: 'Revision and Contact'
+    level: 1
+    order: 6
+    pages: '13'
+    summary: '說明 guidelines 可能修訂，並提供 NOC Services Relations 聯絡方式。'

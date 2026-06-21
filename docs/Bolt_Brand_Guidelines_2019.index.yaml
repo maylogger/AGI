@@ -1,0 +1,73 @@
+title: 'Bolt Brand Guidelines'
+source: 'sources/Bolt_Brand_Guidelines_2019.pdf'
+version: 'Version 1.0'
+date: 'March 31, 2019'
+language: 'en'
+summary: 'Bolt 的品牌規範，將即時、一致、可信的商務定位轉成 messaging、visual identity、brand architecture、usage、color/typography 與應用規則。'
+chapters:
+  - id: 'ch-01'
+    title: 'Messaging'
+    level: 1
+    order: 1
+    pages: '1.1-1.5'
+    summary: '定義概覽、人格、品牌表達、產品表達與 taglines。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Overview and Personality Tenets'
+        level: 2
+        order: 1
+        pages: '1.1-1.2'
+        summary: '以 Instant、Consistent、Trusted 與人格光譜描述品牌語氣。'
+      - id: 'ch-01-02'
+        title: 'Expressing Brand, Product and Taglines'
+        level: 2
+        order: 2
+        pages: '1.3-1.5'
+        summary: '規範品牌與產品訊息如何表達，並提供標語方向。'
+  - id: 'ch-02'
+    title: 'Visual Identity'
+    level: 1
+    order: 2
+    pages: '2.1-2.4'
+    summary: '規範 logomark、inverse、primary logo 與反白版本。'
+    children: []
+  - id: 'ch-03'
+    title: 'Brand Architecture'
+    level: 1
+    order: 3
+    pages: '3.1-3.5'
+    summary: '定義 sub-brand system、horizontal/vertical lockup 與 construction。'
+    children: []
+  - id: 'ch-04'
+    title: 'Usage Parameters'
+    level: 1
+    order: 4
+    pages: '4.1-4.3'
+    summary: '規範 clear space、pairing 與 do nots。'
+    children: []
+  - id: 'ch-05'
+    title: 'Color & Typography'
+    level: 1
+    order: 5
+    pages: '5.1-5.7'
+    summary: '定義 core、neutral、accent palette、typography、font sheet、type hierarchy 與禁忌。'
+    children:
+      - id: 'ch-05-01'
+        title: 'Palettes'
+        level: 2
+        order: 1
+        pages: '5.1-5.3'
+        summary: '建立核心、中性色與強調色的角色。'
+      - id: 'ch-05-02'
+        title: 'Typography and Hierarchy'
+        level: 2
+        order: 2
+        pages: '5.4-5.7'
+        summary: '建立字體、字級層級與錯誤使用規則。'
+  - id: 'ch-06'
+    title: 'Applications'
+    level: 1
+    order: 6
+    pages: '6.1-6.2'
+    summary: '示範 wearables 與 swag 應用。'
+    children: []

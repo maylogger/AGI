@@ -1,0 +1,279 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: airasia_brand_guidelines_2017
+index_ref: docs/airasia_brand_guidelines_2017.index.yaml
+note_ref: docs/airasia_brand_guidelines_2017.note.md
+archetype: product_design_system
+industry: consumer_retail_hospitality
+modules:
+- Knowledge Architecture
+- Visual Identity
+- AI-Checkable Rules
+- Layout System
+- Governance
+- Operations
+- Design Tokens
+- Messaging
+- UI Components
+- Interaction Design
+- Color System
+depth:
+  strategy: low
+  visual: high
+  governance: medium
+  top_level_chapter_count: 4
+  section_count: 8
+chapter_sequence:
+- id: ch-01
+  title: Visual Elements Overview
+  order: 1
+  level: 1
+- id: ch-02
+  title: Logo System
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo Construction and Minimum Size
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Wordmark Usage and Extreme Formats
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Clear Space
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Logo Don’ts
+  order: 4
+  level: 2
+- id: ch-03
+  title: Logo and Tagline
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Tagline Usage
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: CTA and Tagline Clear Space
+  order: 2
+  level: 2
+- id: ch-04
+  title: Colour System
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Primary Colour Palette
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Secondary Colour Palette
+  order: 2
+  level: 2
+frameworks:
+- name: 視覺元素可分為 identity mark、verbal mark、image style、color、type、signature asset
+  chapter: ch-01
+  chapter_title: Visual Elements Overview
+- name: 使用情境 → 完整 logo 或 wordmark；背景 → white/black/red 應用；空間 → 最小尺寸與留白判斷
+  chapter: ch-02
+  chapter_title: Logo System
+- name: 資產完整性框架：不可 alter、modify、recreate
+  chapter: ch-02-01
+  chapter_title: Logo Construction and Minimum Size
+- name: 空間受限 → 檢查 badge 是否不可讀 → 使用 wordmark → 套用 1/8 比例
+  chapter: ch-02-02
+  chapter_title: Wordmark Usage and Extreme Formats
+- name: logo geometry → derive spacing unit → apply across layouts
+  chapter: ch-02-03
+  chapter_title: Clear Space
+- name: 錯誤類型可分為 transform、addition、proportion、typeface、color、effects、crop
+  chapter: ch-02-04
+  chapter_title: Logo Don’ts
+- name: Tagline → CTA → logo spacing，用 grid system 1/2 管理不同版面
+  chapter: ch-03
+  chapter_title: Logo and Tagline
+- name: 背景複雜度 → 選黑/白；尺寸 → 不低於 40mm；用途 → 必須有 URL
+  chapter: ch-03-01
+  chapter_title: Tagline Usage
+- name: 不同 grid system 對應不同 spacing token，但核心都是避免元素互相侵入
+  chapter: ch-03-02
+  chapter_title: CTA and Tagline Clear Space
+- name: Primary palette → baseline identity；secondary palette → variety under cap；special launches → exception path
+  chapter: ch-04
+  chapter_title: Colour System
+- name: print 用 Pantone/CMYK；screen 用 RGB
+  chapter: ch-04-01
+  chapter_title: Primary Colour Palette
+- name: 一般材料：secondary ≤ 50%；特殊 product/service/route launch：可作主 palette
+  chapter: ch-04-02
+  chapter_title: Secondary Colour Palette
+patterns:
+- name: 短版 guideline 可先建立元素 inventory，再選擇最易誤用的元素深入規範。
+  chapter: ch-01
+  chapter_title: Visual Elements Overview
+- name: logo governance 常由 construction、minimum size、clear space、exception、misuse 五件組構成。
+  chapter: ch-02
+  chapter_title: Logo System
+- name: 最小尺寸把可讀性從主觀判斷轉為可量測規範。
+  chapter: ch-02-01
+  chapter_title: Logo Construction and Minimum Size
+- name: 在 guideline 中明確寫出例外情境，是比單純禁止更可執行的治理方式。
+  chapter: ch-02-02
+  chapter_title: Wordmark Usage and Extreme Formats
+- name: 用資產自身幾何產生 spacing token，是跨尺寸可延展的規範模式。
+  chapter: ch-02-03
+  chapter_title: Clear Space
+- name: don’ts 應與可檢查的視覺變形類別對應。
+  chapter: ch-02-04
+  chapter_title: Logo Don’ts
+- name: 口號與 URL 綁定是航空與服務品牌常見的 awareness-to-action 模式。
+  chapter: ch-03
+  chapter_title: Logo and Tagline
+- name: tagline lockup 是 verbal identity 與 digital destination 的結合。
+  chapter: ch-03-01
+  chapter_title: Tagline Usage
+- name: 用版面比例而非固定數值描述 CTA spacing，可適應多尺寸廣告。
+  chapter: ch-03-02
+  chapter_title: CTA and Tagline Clear Space
+- name: 色彩 guideline 應同時定義數值、角色、比例限制與例外情境。
+  chapter: ch-04
+  chapter_title: Colour System
+- name: name
+  chapter: ch-04-01
+  chapter_title: Primary Colour Palette
+- name: role
+  chapter: ch-04-01
+  chapter_title: Primary Colour Palette
+- name: print value
+  chapter: ch-04-01
+  chapter_title: Primary Colour Palette
+- name: screen value
+  chapter: ch-04-01
+  chapter_title: Primary Colour Palette
+- name: secondary palette 的例外需綁定特殊商業事件。
+  chapter: ch-04-02
+  chapter_title: Secondary Colour Palette
+rules_ai_checkable:
+- module: ''
+  criterion: 若文件聲稱管理 visual elements，至少應標示受控元素清單；AI 可檢查輸出素材是否使用清單內元素。
+  chapter: ch-01
+  chapter_title: Visual Elements Overview
+- module: Visual Identity
+  criterion: logo 最小尺寸 20mm；clear space 至少為 logo 半徑 1/2；不得旋轉、加 .com、分別縮放元素、換字體、改色、拉伸、加特效或裁切角落。
+  chapter: ch-02
+  chapter_title: Logo System
+- module: Visual Identity
+  criterion: 輸出 logo 任一方向不得低於 20mm 指示基準；不得修改 wordmark 或 red circle/red X 的關係。
+  chapter: ch-02-01
+  chapter_title: Logo Construction and Minimum Size
+- module: ''
+  criterion: 極端水平格式 clear/crop 參考垂直長度的 1/8；極端垂直格式參考水平長度的 1/8。
+  chapter: ch-02-02
+  chapter_title: Wordmark Usage and Extreme Formats
+- module: ''
+  criterion: 任何外部元素不得進入 logo 半徑 1/2 的 clear space；AI 可用 bounding boxes 檢查碰撞。
+  chapter: ch-02-03
+  chapter_title: Clear Space
+- module: Visual Identity
+  criterion: logo 不得旋轉角度非 0、不得出現 `.com` 附加、不得非等比縮放、不得套用陰影或效果、不得被版面邊界裁切。
+  chapter: ch-02-04
+  chapter_title: Logo Don’ts
+- module: Visual Identity
+  criterion: tagline 使用時必須 partnered with `airasia.com`；最小尺寸 40mm；文字應用黑或白以確保對比。
+  chapter: ch-03
+  chapter_title: Logo and Tagline
+- module: ''
+  criterion: 不得單獨在 advertising materials 使用 tagline；不得低於 40mm；不得使用低對比色。
+  chapter: ch-03-01
+  chapter_title: Tagline Usage
+- module: ''
+  criterion: CTA 周圍需保留 guideline 圖示的 1/2 或 1x clear space；不得讓其他元素侵入。
+  chapter: ch-03-02
+  chapter_title: CTA and Tagline Clear Space
+- module: ''
+  criterion: 搭配主色時 secondary colours 不應超過 layout 50%；AirAsia Red 使用 Pantone 485C、RGB 255/0/0。
+  chapter: ch-04
+  chapter_title: Colour System
+- module: ''
+  criterion: AirAsia Red = Pantone 485C、C0 M95 Y100 K0、R255 G0 B0；Black = C0 M0 Y0 K100、R0 G0 B0；White = R255 G255 B255。
+  chapter: ch-04-01
+  chapter_title: Primary Colour Palette
+- module: ''
+  criterion: 若非特殊 launch，secondary colours 面積不應超過版面 50%；特殊 launch 使用需有情境理由。
+  chapter: ch-04-02
+  chapter_title: Secondary Colour Palette
+chapters:
+- id: ch-01
+  title: Visual Elements Overview
+  modules:
+  - Knowledge Architecture
+  - Visual Identity
+- id: ch-02
+  title: Logo System
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Visual Identity
+  - Governance
+- id: ch-02-01
+  title: Logo Construction and Minimum Size
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02-02
+  title: Wordmark Usage and Extreme Formats
+  modules:
+  - Layout System
+  - Operations
+  - Governance
+- id: ch-02-03
+  title: Clear Space
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Design Tokens
+- id: ch-02-04
+  title: Logo Don’ts
+  modules:
+  - AI-Checkable Rules
+  - Governance
+- id: ch-03
+  title: Logo and Tagline
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Messaging
+- id: ch-03-01
+  title: Tagline Usage
+  modules:
+  - UI Components
+  - Messaging
+  - Governance
+- id: ch-03-02
+  title: CTA and Tagline Clear Space
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Interaction Design
+- id: ch-04
+  title: Colour System
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Design Tokens
+- id: ch-04-01
+  title: Primary Colour Palette
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-04-02
+  title: Secondary Colour Palette
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Governance

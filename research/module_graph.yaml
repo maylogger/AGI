@@ -1,0 +1,152 @@
+# Module Dependency Graph — AGI
+# Coach 用於章節順序推理與「挑戰」客戶跳步
+# 邊類型：requires（前置必要）| recommends（建議順序）| co_occurs（語料共現，見 corpus_report）
+
+version: 1
+updated: "2026-06-18"
+
+layers:
+  strategy: [Brand Strategy, Brand Architecture, Messaging, Evaluation Framework, Communication Framework]
+  language: [Voice and Tone, Content Design, Product Language]
+  visual_core: [Visual Identity, Visual Language, Color System, Typography System]
+  visual_extended: [Photography System, Illustration System, Iconography System, Motion Identity, Layout System]
+  product: [Design Tokens, UI Components, Interaction Design, Accessibility]
+  governance: [Governance, Operations, Compliance, Legal and Trademark, Content Safety, AI-Checkable Rules]
+
+edges:
+  # 策略層
+  - from: Brand Strategy
+    to: Messaging
+    type: requires
+    rationale: 訊息架構需回應品牌為何存在；沒有策略，語氣與文案會變成風格偏好。
+
+  - from: Brand Strategy
+    to: Visual Identity
+    type: recommends
+    rationale: 視覺識別應能回溯到品牌支柱或平台；消費者品牌尤其需要先鎖策略再定資產。
+
+  - from: Brand Architecture
+    to: Visual Identity
+    type: requires
+    rationale: 多品牌情境需先定義「誰在說話」，再規範 logo 與色彩如何使用。
+
+  - from: Brand Architecture
+    to: Governance
+    type: requires
+    rationale: 品牌架構必須搭配核准流程與例外治理，否則子品牌會各自發展。
+
+  - from: Messaging
+    to: Voice and Tone
+    type: requires
+    rationale: 語氣是訊息策略的執行層；需先有訊息階層或故事框架。
+
+  - from: Messaging
+    to: Content Design
+    type: recommends
+    rationale: 內容版型與文案密度應服務訊息階層（如 Attract / Engage / Connect）。
+
+  # 視覺核心
+  - from: Visual Identity
+    to: Color System
+    type: recommends
+    rationale: Logo 單色策略與色彩系統需一致；色彩常延續 logo 對比邏輯。
+
+  - from: Visual Identity
+    to: Typography System
+    type: recommends
+    rationale: 字標與排版系統在尺度、對比與 lockup 上需協調。
+
+  - from: Color System
+    to: Typography System
+    type: recommends
+    rationale: 字色、背景對比與色盤角色需在色彩章之後定義清楚。
+
+  - from: Visual Identity
+    to: Photography System
+    type: recommends
+    rationale: 影像風格需與識別資產在對比、能量與品牌性格上一致。
+
+  - from: Visual Identity
+    to: Motion Identity
+    type: recommends
+    rationale: 動態識別（片尾、動態 logo）需遵守靜態 logo 的版本與比例規則。
+
+  # 產品 / design system
+  - from: Design Tokens
+    to: UI Components
+    type: requires
+    rationale: 元件樣式應引用 token，而非各自定義色值與間距。
+
+  - from: Color System
+    to: Design Tokens
+    type: recommends
+    rationale: 品牌色盤應先語意化，再轉為跨平台 token。
+
+  - from: Typography System
+    to: Design Tokens
+    type: recommends
+    rationale: 字體角色（display / body）應進入 token 層供產品引用。
+
+  - from: UI Components
+    to: Interaction Design
+    type: recommends
+    rationale: 互動模式建立在元件與版面系統之上。
+
+  - from: Accessibility
+    to: UI Components
+    type: recommends
+    rationale: 對比、焦點與可讀性應約束元件規格，而非事後補救。
+
+  # 治理
+  - from: Governance
+    to: Operations
+    type: recommends
+    rationale: 治理流程需落地到日常觸點（email 簽名、模板下載、審核）。
+
+  - from: Compliance
+    to: Content Safety
+    type: recommends
+    rationale: 法規與內容安全常出現在同一審核鏈。
+
+  - from: Legal and Trademark
+    to: Visual Identity
+    type: recommends
+    rationale: 商標與 logo 使用權通常與識別章節並列或緊接其後。
+
+# 高頻共現（128 份語料，≥90 份同時出現）— 供 Coach 解釋「為何常一起出現」
+co_occurrence_notes:
+  - modules: [Governance, Operations]
+    count: 108
+    note: 幾乎所有 guideline 在規則尾端都有聯絡窗口與營運觸點治理。
+  - modules: [Governance, Visual Identity]
+    count: 104
+    note: 識別資產與使用治理不可分割。
+  - modules: [Color System, Typography System]
+    count: 94
+    note: 色彩與字體章節在結構上常相鄰。
+
+# Coach 挑戰規則：客戶想跳過前置模組時觸發
+challenge_rules:
+  - skip_module: Brand Strategy
+    before_module: Color System
+    message: 尚未定義品牌平台或支柱時，色彩容易變成主觀偏好。建議先完成策略章，或明確記錄「策略待客戶確認」。
+
+  - skip_module: Brand Strategy
+    before_module: Voice and Tone
+    message: 語氣需服務品牌立場與訊息策略；建議先鎖定 Platform / Pillars 或至少一句品牌承諾。
+
+  - skip_module: Brand Architecture
+    before_module: Visual Identity
+    message: 多品牌客戶需先定義母品牌與子品牌關係，再規範 logo 矩陣與 co-branding。
+
+  - skip_module: Visual Identity
+    before_module: UI Components
+    message: 產品 UI 應引用已定的識別與 token；直接寫元件會與品牌脫節。
+
+  - skip_module: Design Tokens
+    before_module: UI Components
+    message: 請先定義色票、字體與間距 token，再展開元件規格。
+
+  - skip_module: Messaging
+    before_module: Content Design
+    message: 內容版型需對應訊息階層；建議先確認 Attract / Engage / Connect 或同等框架。

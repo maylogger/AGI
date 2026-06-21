@@ -1,0 +1,37 @@
+# L3 決策卡 sidecar — PayPal
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Paypal_Corporate_master_brand_guidelines_2013
+decisions:
+  - id: dp-one-brand-one-voice-governance
+    title: 以「one brand, one voice」治理目標收束跨產品跨夥伴的一致性
+    problem:
+      statement: 跨地區、跨產品、跨商戶的大型品牌，若缺乏統一治理目標，每個團隊各自詮釋會讓品牌在不同媒介中碎裂。
+      signals: [consistency_across_partners, ecosystem_consistency, multi_market, brand_fragmentation_risk]
+    solution:
+      module: Governance
+      move: 以 one brand, one voice 為治理目標，把規範拆成「資產／條件／度量／禁用／範例／審核」六類，並提供交付前自我審核 checklist
+      layer: governance
+    reason:
+      - 清晰優先、一致優先、可辨識優先；創意被允許，但必須在不破壞全球品牌一致性的前提下發生
+      - 將品牌規範拆成六類資料，讓不同團隊用同一種知識結構管理一致性
+      - 以品牌四問與 checklist 形成設計交付前的自我審核機制
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [consistency_across_partners, multi_market]
+      archetypes: [corporate_toolkit, brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Governance]
+    anti_patterns:
+      - 只給視覺風格而無交付前審核點，讓使用者憑審美直覺操作
+    evidence:
+      - brand_id: Paypal_Corporate_master_brand_guidelines_2013
+        chapter: ch-01
+        excerpt: "以 one brand, one voice 為治理目標，連結品牌承諾、視覺識別、商戶資產與審核清單。"
+      - brand_id: Paypal_Corporate_master_brand_guidelines_2013
+        chapter: ch-05
+        excerpt: "以品牌四問、brand checklist 與術語表形成設計交付前的自我審核機制。"
+    status: extracted

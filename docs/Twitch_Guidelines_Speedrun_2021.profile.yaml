@@ -1,0 +1,248 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Twitch_Guidelines_Speedrun_2021
+index_ref: docs/Twitch_Guidelines_Speedrun_2021.index.yaml
+note_ref: docs/Twitch_Guidelines_Speedrun_2021.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Brand Strategy
+- Messaging
+- Visual Identity
+- Layout System
+- Color System
+- Design Tokens
+- Visual Language
+- AI-Checkable Rules
+- Typography System
+- Content Design
+- Voice and Tone
+- Legal and Trademark
+- Operations
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 8
+  section_count: 3
+chapter_sequence:
+- id: ch-01
+  title: Brand Narrative
+  order: 1
+  level: 1
+- id: ch-02
+  title: Logos
+  order: 2
+  level: 1
+- id: ch-03
+  title: Logo Lockups
+  order: 3
+  level: 1
+- id: ch-04
+  title: Color
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Core Palette
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Secondary Palette
+  order: 2
+  level: 2
+- id: ch-04-03
+  title: Logo Color Pairings
+  order: 3
+  level: 2
+- id: ch-05
+  title: Typography
+  order: 5
+  level: 1
+- id: ch-06
+  title: Layout
+  order: 6
+  level: 1
+- id: ch-07
+  title: The Twitch Voice
+  order: 7
+  level: 1
+- id: ch-08
+  title: Usage and Copyright Notes
+  order: 8
+  level: 1
+frameworks:
+- name: Community-first Brand Frame：place to stream -> collective participation -> making Twitch together
+  chapter: ch-01
+  chapter_title: Brand Narrative
+- name: Logo Role Framework：representational、expressive primary、symbolic shorthand
+  chapter: ch-02
+  chapter_title: Logos
+- name: Lockup Alignment Framework：logo、copy/partner mark、cap height、x-height、center line
+  chapter: ch-03
+  chapter_title: Logo Lockups
+- name: Color Energy Model：Core = direct Twitch expression；Secondary = turbo activation
+  chapter: ch-04
+  chapter_title: Color
+- name: Minimum Viable Brand Palette
+  chapter: ch-04-01
+  chapter_title: Core Palette
+- name: Expressive Color Expansion
+  chapter: ch-04-02
+  chapter_title: Secondary Palette
+- name: Approved Pairing Matrix
+  chapter: ch-04-03
+  chapter_title: Logo Color Pairings
+- name: Typeface Usage Ladder：common weights、special weights、style examples
+  chapter: ch-05
+  chapter_title: Typography
+- name: Simple Punchy Layout：limited styles、clear hierarchy、intentional repetition
+  chapter: ch-06
+  chapter_title: Layout
+- name: Voice Principle + Tone Scale Matrix
+  chapter: ch-07
+  chapter_title: The Twitch Voice
+- name: Asset Rights Governance：brand package、design team contact、copyright owner approval
+  chapter: ch-08
+  chapter_title: Usage and Copyright Notes
+patterns:
+- name: Narrative Before Identity，把品牌行為原則放在視覺規格之前。
+  chapter: ch-01
+  chapter_title: Brand Narrative
+- name: Multi-mark Identity System。
+  chapter: ch-02
+  chapter_title: Logos
+- name: Cap-height Lockup System。
+  chapter: ch-03
+  chapter_title: Logo Lockups
+- name: Core/Secondary Palette Split、Approved Pairing Matrix。
+  chapter: ch-04
+  chapter_title: Color
+- name: Primary Color Token Trio。
+  chapter: ch-04-01
+  chapter_title: Core Palette
+- name: Named Accent Token Library。
+  chapter: ch-04-02
+  chapter_title: Secondary Palette
+- name: Logo/Background Pair Lock。
+  chapter: ch-04-03
+  chapter_title: Logo Color Pairings
+- name: Type Specimen + Usage Token。
+  chapter: ch-05
+  chapter_title: Typography
+- name: Headline Anchor Patterns、Crop & Repetition Streaming Effect。
+  chapter: ch-06
+  chapter_title: Layout
+- name: 人格原則搭配情境語氣刻度。
+  chapter: ch-07
+  chapter_title: The Twitch Voice
+- name: Example Use Disclaimer。
+  chapter: ch-08
+  chapter_title: Usage and Copyright Notes
+rules_ai_checkable:
+- module: Brand Strategy
+  criterion: AI 可檢查：品牌文案應避免只描述被動觀看；應出現共同參與、chat、streamers、community、moments 或 equivalent concepts；不得把 Twitch 語氣寫成過度正式、孤立或
+    broadcast-only。
+  chapter: ch-01
+  chapter_title: Brand Narrative
+- module: Visual Identity
+  criterion: AI 可檢查：owned/internal 或 partnership context 優先 wordmark；outbound comms 且需最高表現力時使用 extruded wordmark；短距離或 icon-like
+    reference 使用 Glitch；每種 logo 必須保留 clearspace，不得省略。
+  chapter: ch-02
+  chapter_title: Logos
+- module: Visual Identity
+  criterion: AI 可檢查：內部與合作 lockup 必須使用指定 spacing；文字高度應依 cap height/x-height 對齊；partner logo 不得侵入 Twitch logo clearspace；不得任意貼齊或不對齊中心線。
+  chapter: ch-03
+  chapter_title: Logo Lockups
+- module: Color System
+  criterion: AI 可檢查：digital 使用 RGB/HEX；IRL 優先 PMS；CMYK 為最後選項；core communications 僅使用核准色彩搭配。
+  chapter: ch-04
+  chapter_title: Color
+- module: ''
+  criterion: AI 可檢查：Twitch Purple HEX `#9146FF`；Black Ops HEX `#000000`；Ice HEX `#F0F0FF`；digital output 應使用 RGB/HEX 值。
+  chapter: ch-04-01
+  chapter_title: Core Palette
+- module: ''
+  criterion: AI 可檢查：secondary color 必須使用 guideline 中命名 token 與指定 HEX；不得自行新增未命名 accent；需避免讓 secondary color 取代 Twitch Purple
+    的核心識別角色。
+  chapter: ch-04-02
+  chapter_title: Secondary Palette
+- module: Visual Identity
+  criterion: AI 可檢查：core communications 的 logo color pairing 必須屬於核准清單；不得任意將 logo 套用 secondary accent；solid background pairings
+    需符合列出的 logo/background 組合。
+  chapter: ch-04-03
+  chapter_title: Logo Color Pairings
+- module: Typography System
+  criterion: AI 可檢查：主要字體應為 Roobert；常規內容優先 Regular/Medium/Bold/Semibold；Light/Heavy 只能用於 special instances；headline 範例為 Roobert
+    SemiBold 80/80/-20，body 為 Roobert Medium 16/20/-10。
+  chapter: ch-05
+  chapter_title: Typography
+- module: Layout System
+  criterion: AI 可檢查：單一版面不得使用超過 3 種 type styles；headline/body placement 應維持清楚層級；repetition/crop 必須形成有意圖的 streaming effect，不得造成內容不可讀。
+  chapter: ch-06
+  chapter_title: Layout
+- module: Voice and Tone
+  criterion: AI 可檢查：社群與行銷內容可偏 Casual/Reassuring/Encouraging/Celebratory；產品指示應偏 Neutral；政策與道歉可偏 Firm 但不得 aggressive；幽默應 good-natured，不得攻擊使用者。
+  chapter: ch-07
+  chapter_title: The Twitch Voice
+- module: ''
+  criterion: AI 可檢查：不得使用 guideline 中示範照片於 public-facing communications；缺少 brand elements 或不確定規定時需聯絡 Twitch design team；使用照片前需確認
+    copyright owner approval。
+  chapter: ch-08
+  chapter_title: Usage and Copyright Notes
+chapters:
+- id: ch-01
+  title: Brand Narrative
+  modules:
+  - Brand Strategy
+  - Messaging
+- id: ch-02
+  title: Logos
+  modules:
+  - Visual Identity
+- id: ch-03
+  title: Logo Lockups
+  modules:
+  - Layout System
+- id: ch-04
+  title: Color
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-04-01
+  title: Core Palette
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-04-02
+  title: Secondary Palette
+  modules:
+  - Visual Language
+  - Color System
+- id: ch-04-03
+  title: Logo Color Pairings
+  modules:
+  - AI-Checkable Rules
+  - Color System
+- id: ch-05
+  title: Typography
+  modules:
+  - Typography System
+  - Design Tokens
+- id: ch-06
+  title: Layout
+  modules:
+  - Layout System
+  - Visual Language
+- id: ch-07
+  title: The Twitch Voice
+  modules:
+  - Content Design
+  - Voice and Tone
+- id: ch-08
+  title: Usage and Copyright Notes
+  modules:
+  - Legal and Trademark
+  - Operations

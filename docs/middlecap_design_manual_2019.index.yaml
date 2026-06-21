@@ -1,0 +1,81 @@
+title: "MiddleCap Design Manual"
+source: "sources/middlecap_design_manual_2019.pdf"
+version: "5/2019"
+language: "en"
+summary: "MiddleCap 的簡短視覺識別手冊，將企業成熟化後的品牌調性轉為標誌、色彩、字體與分支標誌使用規範。"
+chapters:
+  - id: "ch-01"
+    title: "Welcome and Mood"
+    level: 1
+    order: 1
+    pages: "3-4, 15"
+    summary: "說明 MiddleCap 由強烈青色識別轉向更深色、材質感與成熟企業形象的視覺演進。"
+  - id: "ch-02"
+    title: "Logotype"
+    level: 1
+    order: 2
+    pages: "5-9"
+    summary: "定義主要標誌、保護區、最小尺寸、單色版本與 favicon/icon 使用情境。"
+    children:
+      - id: "ch-02-01"
+        title: "Primary Logotype Version"
+        level: 2
+        order: 1
+        pages: "6"
+        summary: "提供主要標誌下載與標準版本使用基準。"
+      - id: "ch-02-02"
+        title: "Protection Zone"
+        level: 2
+        order: 2
+        pages: "7"
+        summary: "要求標誌周圍保留不可侵入的空間，並設定 20 mm 最小尺寸。"
+      - id: "ch-02-03"
+        title: "Monochromic Versions and Icon"
+        level: 2
+        order: 3
+        pages: "8-9"
+        summary: "規範深灰、反白與小尺寸 icon/favicon 的使用。"
+  - id: "ch-03"
+    title: "Color Scale"
+    level: 1
+    order: 3
+    pages: "11-14"
+    summary: "建立以兩個深灰為主、藍色與橘色為輔的色彩階層，並提供 RGB、CMYK、Pantone 值。"
+    children:
+      - id: "ch-03-01"
+        title: "Primary Colors"
+        level: 2
+        order: 1
+        pages: "12-13"
+        summary: "以 #29313e 與 #616466 建立穩重、專業的主色基礎。"
+      - id: "ch-03-02"
+        title: "Secondary Colors"
+        level: 2
+        order: 2
+        pages: "14"
+        summary: "以 Pantone 299 C 藍與 Pantone 7625 C 橘補足活力與重點標示。"
+  - id: "ch-04"
+    title: "Typography"
+    level: 1
+    order: 4
+    pages: "17-21"
+    summary: "指定 Soho Gothic Pro 為主要字體，Exo 2 為替代與較易取得的次要字體。"
+    children:
+      - id: "ch-04-01"
+        title: "Primary Font"
+        level: 2
+        order: 1
+        pages: "18-19"
+        summary: "以幾何、無裝飾的 Soho Gothic Pro 支撐品牌現代感。"
+      - id: "ch-04-02"
+        title: "Secondary Font"
+        level: 2
+        order: 2
+        pages: "20-21"
+        summary: "以 Google Fonts 可取得的 Exo 2 作為跨裝置替代方案。"
+  - id: "ch-05"
+    title: "Divisions Logos"
+    level: 1
+    order: 5
+    pages: "23-25"
+    summary: "為不同事業部建立在主標誌下方加註 division name 的延展標誌系統。"

@@ -1,0 +1,245 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: falcon_users_guide_2020
+index_ref: docs/falcon_users_guide_2020.index.yaml
+note_ref: docs/falcon_users_guide_2020.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- AI-Checkable Rules
+- Compliance
+- Knowledge Architecture
+- Governance
+- Product Language
+- Information Design
+- Measurement
+- Operations
+depth:
+  strategy: low
+  visual: medium
+  governance: high
+  top_level_chapter_count: 11
+  section_count: 0
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-02
+  title: Vehicles
+  order: 2
+  level: 1
+- id: ch-03
+  title: Performance
+  order: 3
+  level: 1
+- id: ch-04
+  title: Environments
+  order: 4
+  level: 1
+- id: ch-05
+  title: Interfaces
+  order: 5
+  level: 1
+- id: ch-06
+  title: Facilities
+  order: 6
+  level: 1
+- id: ch-07
+  title: Mission Integration and Services
+  order: 7
+  level: 1
+- id: ch-08
+  title: Operations
+  order: 8
+  level: 1
+- id: ch-09
+  title: Safety
+  order: 9
+  level: 1
+- id: ch-10
+  title: Contact Information
+  order: 10
+  level: 1
+- id: ch-11
+  title: Quick Reference
+  order: 11
+  level: 1
+frameworks:
+- name: 以「目的與限制 -> 能力與安全 -> 可靠性證據 -> 商務入口」建立客戶 onboarding framework
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 載具描述框架為「configuration -> structure/propulsion -> release/separation -> avionics/GNC -> coordinate reference」
+  chapter: ch-02
+  chapter_title: Vehicles
+- name: 決策框架是「目標軌道 -> launch site -> vehicle -> mass property -> separation service -> nonstandard request」
+  chapter: ch-03
+  chapter_title: Performance
+- name: 環境規範框架是「source environment -> maximum expected level -> safety margin status -> customer verification activity」
+  chapter: ch-04
+  chapter_title: Environments
+- name: 介面治理框架是「standard interface -> optional standard accommodation -> nonstandard service -> verification requirement」
+  chapter: ch-05
+  chapter_title: Interfaces
+- name: 場域框架是「launch capability -> payload processing -> personnel access -> support facility」
+  chapter: ch-06
+  chapter_title: Facilities
+- name: 任務整合框架是「contract -> mission manager -> standard/nonstandard service -> schedule -> deliverables」
+  chapter: ch-07
+  chapter_title: Mission Integration and Services
+- name: 操作框架是「arrival -> processing -> encapsulation -> integration -> rollout -> countdown -> flight -> report」
+  chapter: ch-08
+  chapter_title: Operations
+- name: 安全框架是「requirement -> hazard identification -> operational control -> waiver」
+  chapter: ch-09
+  chapter_title: Safety
+- name: 聯絡框架是「公開 guide -> 客戶疑問 -> official contact -> mission-specific exchange」
+  chapter: ch-10
+  chapter_title: Contact Information
+- name: 參照框架是「figures -> tables -> acronyms -> change log」
+  chapter: ch-11
+  chapter_title: Quick Reference
+patterns:
+- name: 高風險服務 guideline 先聲明適用範圍，再列出可被驗證的可靠性設計原因。
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 將硬體系統轉成表格化 characteristics，並用標準座標系消除跨團隊語義差異。
+  chapter: ch-02
+  chapter_title: Vehicles
+- name: 以表格列通用選項，以文字標示性能懲罰或需洽詢項目。
+  chapter: ch-03
+  chapter_title: Performance
+- name: 每類環境用圖表建立 envelope，再用文字說明是否含 margin 與何時需專案調整。
+  chapter: ch-04
+  chapter_title: Environments
+- name: 用 phase table 表示 electrical availability，讓不同時間點的責任與連線狀態可被檢查。
+  chapter: ch-05
+  chapter_title: Interfaces
+- name: 每個設施以功能、地點與可用服務描述，形成可重複的 facility profile。
+  chapter: ch-06
+  chapter_title: Facilities
+- name: 以 deliverable table 治理雙方文件交換，避免只用會議溝通。
+  chapter: ch-07
+  chapter_title: Mission Integration and Services
+- name: 用 sample mission profile 將抽象作業轉為可預期時間序列。
+  chapter: ch-08
+  chapter_title: Operations
+- name: 將 waiver 作為例外治理模組，而不是隱性協商。
+  chapter: ch-09
+  chapter_title: Safety
+- name: 在 guideline 中所有未公開數據都應導向官方聯絡節點。
+  chapter: ch-10
+  chapter_title: Contact Information
+- name: 技術 guideline 應提供獨立 quick reference，讓使用者不用全文搜尋。
+  chapter: ch-11
+  chapter_title: Quick Reference
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：文件用途必須標示為 pre-contract planning；詳細設計資料必須透過 mission manager 交換；價格需引用官方 capabilities 頁；可靠性論述需連回 engine、avionics、stage
+    separation 三類失效風險。
+  chapter: ch-01
+  chapter_title: Introduction
+- module: ''
+  criterion: AI 可檢查：Falcon 9 fairing configuration 應標示 LOX/RP-1 two-stage；Falcon Heavy 應標示 three first-stage cores；payload
+    coordinate reference 必須含 X/Y/Z 軸定義；separation system 應描述 pneumatic, low-shock, testable。
+  chapter: ch-02
+  chapter_title: Vehicles
+- module: ''
+  criterion: AI 可檢查：每個 orbit row 必須包含 inclination range、vehicle、launch site；GTO/GSO/Earth escape 需標示可用基地；payload mass properties
+    超出圖示限制時必須標示 mission-unique coordination。
+  chapter: ch-03
+  chapter_title: Performance
+- module: ''
+  criterion: AI 可檢查：EMI safety margin 須為 6 dB；fairing pressure decay rate 須不大於 0.40 psi/sec，短時段例外不大於 0.65 psi/sec 且不超過 5 秒；verification
+    table 必須對每類環境列出 customer responsibility。
+  chapter: ch-04
+  chapter_title: Environments
+- module: ''
+  criterion: AI 可檢查：standard mechanical interface 必須為 1575 mm / 62.01 in；fairing maximum dynamic envelope 必須標示 4.6 m diameter
+    與 11 m height；flight phase 不提供 payload command/telemetry access as standard service；至少一個 loopback circuit 需用於 separation
+    indication。
+  chapter: ch-05
+  chapter_title: Interfaces
+- module: ''
+  criterion: AI 可檢查：每個 launch site 應標示 location、range、payload processing relation；personnel accommodation 需分別列於 CCAFS/KSC
+    與 VAFB。
+  chapter: ch-06
+  chapter_title: Facilities
+- module: ''
+  criterion: AI 可檢查：所有 nonstandard service 必須標示需協調；customer deliverables 必須對應 schedule milestone；mission manager 是技術資料交換角色。
+  chapter: ch-07
+  chapter_title: Mission Integration and Services
+- module: ''
+  criterion: AI 可檢查：encapsulation 後 payload access 受限；rollout 與 launch pad operations 必須連到 electrical interface availability；scrub/recycle
+    需有流程說明；post-launch reports 必須列入 flight operations。
+  chapter: ch-08
+  chapter_title: Operations
+- module: ''
+  criterion: AI 可檢查：所有 hazardous operations 必須在 mission integration 中揭露；不符合安全要求的項目需以 waiver 形式處理；waiver 不應省略風險與批准路徑。
+  chapter: ch-09
+  chapter_title: Safety
+- module: ''
+  criterion: AI 可檢查：文件若出現 mission-unique、upon request、contact 等描述，必須能在 contact section 找到後續路徑。
+  chapter: ch-10
+  chapter_title: Contact Information
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - AI-Checkable Rules
+  - Compliance
+  - Knowledge Architecture
+  - Governance
+- id: ch-02
+  title: Vehicles
+  modules:
+  - Product Language
+  - Information Design
+- id: ch-03
+  title: Performance
+  modules:
+  - Measurement
+  - Operations
+- id: ch-04
+  title: Environments
+  modules:
+  - Measurement
+  - AI-Checkable Rules
+  - Compliance
+  - Governance
+- id: ch-05
+  title: Interfaces
+  modules:
+  - Operations
+  - Governance
+- id: ch-06
+  title: Facilities
+  modules:
+  - Operations
+- id: ch-07
+  title: Mission Integration and Services
+  modules:
+  - Operations
+  - Governance
+- id: ch-08
+  title: Operations
+  modules:
+  - Operations
+  - Governance
+- id: ch-09
+  title: Safety
+  modules:
+  - Compliance
+  - Governance
+- id: ch-10
+  title: Contact Information
+  modules:
+  - Operations
+  - Governance
+- id: ch-11
+  title: Quick Reference
+  modules:
+  - Knowledge Architecture

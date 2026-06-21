@@ -1,0 +1,304 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: sartorius_Brand_Style_Guide_2020
+index_ref: docs/sartorius_Brand_Style_Guide_2020.index.yaml
+note_ref: docs/sartorius_Brand_Style_Guide_2020.note.md
+archetype: brand_experience_guide
+industry: industrial_materials_science
+modules:
+- AI-Checkable Rules
+- Design Tokens
+- Visual Identity
+- Compliance
+- Governance
+- Layout System
+- Messaging
+- Color System
+- Information Design
+- Typography System
+- Content Design
+- Operations
+- Photography System
+- Iconography System
+- Illustration System
+- Visual Language
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 9
+  section_count: 21
+chapter_sequence:
+- id: ch-01
+  title: Logo
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Clear Space, Size, Orientation and Variants
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Logo Don’ts
+  order: 2
+  level: 2
+- id: ch-02
+  title: Signet
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Signet Rules
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Signet Don’ts
+  order: 2
+  level: 2
+- id: ch-03
+  title: Claim & Layout System
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Grid and Logo Placement
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Claim Basics and Proportion
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Applications and Don’ts
+  order: 3
+  level: 2
+- id: ch-04
+  title: Colors
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Primary, Secondary and Highlight Colors
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Tertiary and Traffic Light Colors
+  order: 2
+  level: 2
+- id: ch-04-03
+  title: Color Don’ts
+  order: 3
+  level: 2
+- id: ch-05
+  title: Typography
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Typeface and Font Usage
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Typesetting and Writing Rules
+  order: 2
+  level: 2
+- id: ch-05-03
+  title: Typography Don’ts
+  order: 3
+  level: 2
+- id: ch-06
+  title: Imagery
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Products
+  order: 1
+  level: 2
+- id: ch-06-02
+  title: People
+  order: 2
+  level: 2
+- id: ch-06-03
+  title: Architecture and Scientific
+  order: 3
+  level: 2
+- id: ch-07
+  title: Icons
+  order: 7
+  level: 1
+- id: ch-07-01
+  title: Icon Mechanics
+  order: 1
+  level: 2
+- id: ch-07-02
+  title: Icon Library and Don’ts
+  order: 2
+  level: 2
+- id: ch-08
+  title: Illustration
+  order: 8
+  level: 1
+- id: ch-08-01
+  title: Color and Rebrush
+  order: 1
+  level: 2
+- id: ch-08-02
+  title: Characters and Scenarios
+  order: 2
+  level: 2
+- id: ch-08-03
+  title: Technical Illustrations
+  order: 3
+  level: 2
+- id: ch-09
+  title: Governance
+  order: 9
+  level: 1
+frameworks:
+- name: asset governance + measurement rules：approved download → measurable spacing → size threshold → misuse detection
+  chapter: ch-01
+  chapter_title: Logo
+- name: exception framework：space constraint → approval → approved version → measurable use
+  chapter: ch-02
+  chapter_title: Signet
+- name: grid-to-asset framework：format division → logo size → claim tile → content area → application variant
+  chapter: ch-03
+  chapter_title: Claim & Layout System
+- name: color hierarchy framework：brand colors → neutral data colors → highlight → tertiary differentiation → status colors
+  chapter: ch-04
+  chapter_title: Colors
+- name: typography operations framework：licensed brand font → fallback → usage roles → language conventions → typographic
+    tokens
+  chapter: ch-05
+  chapter_title: Typography
+- name: content-type image framework：object clarity → human context → built environment → scientific integrity
+  chapter: ch-06
+  chapter_title: Imagery
+- name: icon construction framework：grid → line edge → anchor angle → gap token → library governance
+  chapter: ch-07
+  chapter_title: Icons
+- name: illustration system framework：palette hierarchy → character mechanics → scene composition → technical isometric drawing
+  chapter: ch-08
+  chapter_title: Illustration
+- name: governance loop：rule → asset platform → approval/contact → vendor boundary
+  chapter: ch-09
+  chapter_title: Governance
+patterns:
+- name: 先給可用版本，再列不可用變形，是品牌資產 guideline 的高效模式。
+  chapter: ch-01
+  chapter_title: Logo
+- name: 把簡化資產視為 exception 而非 alternative，可降低品牌漂移。
+  chapter: ch-02
+  chapter_title: Signet
+- name: 使用 tile、比例、固定位置與禁用示例建立跨格式版面模式。
+  chapter: ch-03
+  chapter_title: Claim & Layout System
+- name: 以用途授權色彩，而非只列 palette，是可複用模式。
+  chapter: ch-04
+  chapter_title: Colors
+- name: 在 guideline 中加入 dictionary、headline checker 與鍵盤輸入方式，是內容治理模式。
+  chapter: ch-05
+  chapter_title: Typography
+- name: 以 subject category 設定不同審核規則，可複用於 B2B 與科技品牌。
+  chapter: ch-06
+  chapter_title: Imagery
+- name: 用幾何 construction rules 控制大型 icon library 是高複用模式。
+  chapter: ch-07
+  chapter_title: Icons
+- name: 把 existing illustration rebrush 納入規範，是品牌轉換期間維持一致的治理模式。
+  chapter: ch-08
+  chapter_title: Illustration
+- name: 把 download links 與 approval contact 嵌入各章，是品牌營運模式。
+  chapter: ch-09
+  chapter_title: Governance
+rules_ai_checkable:
+- module: Visual Identity
+  criterion: AI 可檢查：logo width >= 15 mm 或 120 px；clear space >= S height；優先使用黃色背景；不得旋轉、改色、加效果、裁切、使用舊 logo、在黃色底上放白 logo。
+  chapter: ch-01
+  chapter_title: Logo
+- module: ''
+  criterion: AI 可檢查：若版面可容納 full logo 不應使用 signet；signet width >= 2.7 mm 或 14 px；不得改色、旋轉、當 pattern、與 logo 任意合成或加效果。
+  chapter: ch-02
+  chapter_title: Signet
+- module: Layout System
+  criterion: AI 可檢查：claim 必須白字置於黑 tile；claim tile 不得大於 yellow logo tile；claim 最小 30 mm / 180 px；含 claim 時同頁不得另用黑 tile；logo
+    位置限 top left、bottom right、centered 或 letterhead top right。
+  chapter: ch-03
+  chapter_title: Claim & Layout System
+- module: Color System
+  criterion: 'AI 可檢查：primary yellow #FFED00、black #000000；traffic-light red/yellow/green 僅用於狀態；tertiary 不得做 layout tile；不得使用透明、overlay、gradient
+    或錯誤 yellow shade。'
+  chapter: ch-04
+  chapter_title: Colors
+- module: Typography System
+  criterion: AI 可檢查：標準字色只允許 black/white；不得使用 yellow text；headline 依 APA title case；正文左對齊 default tracking；bullet 為 square；不得
+    underline。
+  chapter: ch-05
+  chapter_title: Typography
+- module: Photography System
+  criterion: AI 可檢查：產品應全焦、無硬陰影、背景為 yellow/white/black；人物須與產品互動且穿著符合場域；scientific images 不得 retouch；避免 lens flare、tint、gradient、busy
+    composition。
+  chapter: ch-06
+  chapter_title: Imagery
+- module: Iconography System
+  criterion: AI 可檢查：icon 必須對齊 16x16 grid；線條直邊；gap 僅 1、1.5、2 squares；不得使用舊式、handmade、圓角、實心色或不同透視。
+  chapter: ch-07
+  chapter_title: Icons
+- module: ''
+  criterion: AI 可檢查：灰階為主、黃色先於 tertiary；secondary characters 不用臉；物件為幾何形；scenario 以置中構圖優先；technical drawings 使用等角 grid 與統一線寬；不得
+    gradient/drop shadow/blend mode。
+  chapter: ch-08
+  chapter_title: Illustration
+chapters:
+- id: ch-01
+  title: Logo
+  modules:
+  - AI-Checkable Rules
+  - Design Tokens
+  - Visual Identity
+- id: ch-02
+  title: Signet
+  modules:
+  - Compliance
+  - Visual Identity
+  - Governance
+- id: ch-03
+  title: Claim & Layout System
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+  - Design Tokens
+  - Messaging
+- id: ch-04
+  title: Colors
+  modules:
+  - AI-Checkable Rules
+  - Color System
+  - Information Design
+- id: ch-05
+  title: Typography
+  modules:
+  - Typography System
+  - Content Design
+  - Operations
+- id: ch-06
+  title: Imagery
+  modules:
+  - Photography System
+  - AI-Checkable Rules
+  - Compliance
+- id: ch-07
+  title: Icons
+  modules:
+  - Iconography System
+  - Design Tokens
+  - Governance
+- id: ch-08
+  title: Illustration
+  modules:
+  - Illustration System
+  - Visual Language
+  - Design Tokens
+- id: ch-09
+  title: Governance
+  modules:
+  - Operations
+  - Governance

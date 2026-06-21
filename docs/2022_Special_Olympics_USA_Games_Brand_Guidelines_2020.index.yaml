@@ -1,0 +1,149 @@
+title: "2022 Special Olympics USA Games Brand Guidelines"
+source: "sources/2022_Special_Olympics_USA_Games_Brand_Guidelines_2020.pdf"
+date: "2020-01"
+language: "en"
+summary: "2022 Special Olympics USA Games 品牌規範定義賽會品牌故事、United O 標誌系統、核准流程、色彩、字體與身心障礙語言原則，用以維持賽會識別一致性、合作夥伴治理與包容性溝通。"
+chapters:
+  - id: "ch-01"
+    title: "History & Mission"
+    level: 1
+    order: 1
+    pages: "3-5"
+    summary: "說明 Special Olympics 的歷史起源、全球運動發展，以及 2022 USA Games 的使命與包容性目標。"
+    children:
+      - id: "ch-01-01"
+        title: "Our History"
+        level: 2
+        order: 1
+        pages: "4"
+        summary: "介紹 Eunice Kennedy Shriver 如何從日營活動開啟 Special Olympics，並將其發展成全球運動。"
+      - id: "ch-01-02"
+        title: "Our Mission"
+        level: 2
+        order: 2
+        pages: "5"
+        summary: "列出 Special Olympics International 與 2022 USA Games 的使命，強調運動訓練、競賽、勇氣、喜悅、合作與社會接納。"
+  - id: "ch-02"
+    title: "Our Story"
+    level: 1
+    order: 2
+    pages: "6-8"
+    summary: "說明 2022 USA Games 標誌如何由九位 Special Olympics 運動員共同創作，並被整合為象徵團結與 Florida 精神的 United O。"
+    children:
+      - id: "ch-02-01"
+        title: "Our Story"
+        level: 2
+        order: 1
+        pages: "7"
+        summary: "描述九位運動員與 Publicis Seattle 共同參與的 unified workshop，以及最終標誌從九個個人作品整合而來。"
+      - id: "ch-02-02"
+        title: "Our Logo"
+        level: 2
+        order: 2
+        pages: "8"
+        summary: "定義 United O 作為主標誌，並說明 athlete logos 只限特殊用途且須經 2022 USA Games 核准。"
+  - id: "ch-03"
+    title: "Logo Usage"
+    level: 1
+    order: 3
+    pages: "9-24"
+    summary: "規範標誌核准流程、正確用法、主標誌版本、替代色彩、留白、合作夥伴 lockup、最小尺寸、分離元素、禁止用法與社群媒體使用。"
+    children:
+      - id: "ch-03-01"
+        title: "Approval Process"
+        level: 2
+        order: 1
+        pages: "10"
+        summary: "所有使用 2022 USA Games marks 的行銷、廣告、數位、社群與促銷素材，以及合作夥伴 campaign concepts，都需先取得 GOC 書面核准。"
+      - id: "ch-03-02"
+        title: "Proper Logo Usage"
+        level: 2
+        order: 2
+        pages: "11"
+        summary: "說明 full color、spot color、single color white、Lagoon Blue 與 black 標誌版本的使用情境。"
+      - id: "ch-03-03"
+        title: "Primary Logos"
+        level: 2
+        order: 3
+        pages: "12"
+        summary: "定義 vertical logo 為主要標誌，horizontal logo 為水平空間中的次要版本。"
+      - id: "ch-03-04"
+        title: "Alternate Logo Colorways"
+        level: 2
+        order: 4
+        pages: "13-15"
+        summary: "規範 spot color 與 single color logo 用於受限印刷、刺繡與單色再製情境，並列出 Lagoon Blue、Florida Orange、Sunset Red、Palm Green 等色值。"
+      - id: "ch-03-05"
+        title: "Logo Spacing"
+        level: 2
+        order: 5
+        pages: "16-17"
+        summary: "以中央 Special Olympics symbol 的 X-height 定義 vertical 與 horizontal logo 四周最小留白。"
+      - id: "ch-03-06"
+        title: "Partner Logos"
+        level: 2
+        order: 6
+        pages: "18-19"
+        summary: "規範與合作夥伴標誌並列時的水平分隔線、X-height 間距、贊助等級文字與灰色或藍色呈現方式。"
+      - id: "ch-03-07"
+        title: "Logo Scale"
+        level: 2
+        order: 7
+        pages: "20"
+        summary: "要求 vertical logo 高度與 horizontal logo 寬度原則上不得小於 1 inch 或 72 px，並提醒依製程與材質調整。"
+      - id: "ch-03-08"
+        title: "Separated Elements"
+        level: 2
+        order: 8
+        pages: "21"
+        summary: "說明何時可將 United O 與 wordmark 分開使用，例如品牌已建立的社群 icon、favicon、書冊或票券識別。"
+      - id: "ch-03-09"
+        title: "Logo Misuse"
+        level: 2
+        order: 9
+        pages: "22"
+        summary: "禁止拉伸、傾斜、放入容器、任意縮放、重著色、改字、加陰影、移除部分或其他未核准變形。"
+      - id: "ch-03-10"
+        title: "Social Media"
+        level: 2
+        order: 10
+        pages: "23-24"
+        summary: "說明 2022 USA Games 社群帳號不得與其他 Special Olympics 組織混淆，社群活動須預先核准，並鼓勵使用 #ShineAsOne。"
+  - id: "ch-04"
+    title: "Color Palette"
+    level: 1
+    order: 4
+    pages: "25-28"
+    summary: "定義以 Florida 自然景觀為靈感的主色、輔助色與漸層系統，並規範漸層上僅使用白色單色標誌。"
+    children:
+      - id: "ch-04-01"
+        title: "Colors"
+        level: 2
+        order: 1
+        pages: "26"
+        summary: "列出 Ocean Blue、Lagoon Blue、Florida Orange、Sunset Red、Palm Green 的 HEX、Pantone 與 CMYK 色值。"
+      - id: "ch-04-02"
+        title: "Gradients"
+        level: 2
+        order: 2
+        pages: "27"
+        summary: "使用 Sunset、Lagoon、Palm 等漸層來延展標誌色彩，並要求漸層背景上只使用白色單色標誌。"
+  - id: "ch-05"
+    title: "Typography & Language"
+    level: 1
+    order: 5
+    pages: "29-34"
+    summary: "定義 Gotham 與 Helvetica 的字體使用規則，以及描述 intellectual disabilities 與 Special Olympics athletes 時的尊重性語言準則。"
+    children:
+      - id: "ch-05-01"
+        title: "Typography"
+        level: 2
+        order: 1
+        pages: "30"
+        summary: "規定 Gotham 為主要字體且只使用 Bold 與 Ultra，無法使用時以 Helvetica 替代；標題與副標使用全大寫，內文與 partner designations 使用 sentence case。"
+      - id: "ch-05-02"
+        title: "Disability Language Guidelines"
+        level: 2
+        order: 2
+        pages: "31-34"
+        summary: "定義 intellectual disabilities 的背景資訊、盛行率、合適術語與應避免用語，要求以 person-first、尊重且不誇飾的方式書寫。"

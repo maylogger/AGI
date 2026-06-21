@@ -1,0 +1,93 @@
+# L3 決策卡 sidecar — Barbican Identity Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Barbican_Centre_brand_guidelines_2017
+decisions:
+  - id: dp-system-toolkit-over-template
+    title: 企業視覺系統給「可組合工具箱」而非僵硬模板
+    problem:
+      statement: 要求每個版面長得完全相同會扼殺多元內容；但完全自由又會失去一致性。
+      signals: [many_teams, diverse_content, system_consistency, mass_touchpoints]
+    solution:
+      module: Visual Language
+      move: 把識別定義為可獨立或組合使用的 core elements（tools, not a rigid system），用固定決策順序取代固定模板
+      layer: visual_core
+    reason:
+      - 彈性必須被結構化；系統不靠固定模板，而靠共同核心元素
+      - 多品類文化品牌可用同一設計基礎支援多節目，而非為每節目建立子品牌
+      - 品牌可辨識度來自元素之間的持續關係
+    applicable_when:
+      industries: [media_entertainment, industrial_materials_science, tech_software]
+      brand_types: [institutional_public_trust, category_creator]
+      conditions: [diverse_content, system_consistency]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Layout System, Examples]
+    anti_patterns:
+      - 把單一 logo 使用視為完整 identity
+      - 為每個藝術形式另建與核心無關的獨立視覺
+    evidence:
+      - brand_id: Barbican_Centre_brand_guidelines_2017
+        chapter: ch-01
+        excerpt: "identity is not just a logo：品牌一致性來自 logo、lock-up、grid、typeface、typography 多個核心元素的共同作用，Core Elements → Art Forms → Design Examples。"
+      - brand_id: Barbican_Centre_brand_guidelines_2017
+        chapter: ch-04
+        excerpt: "以 shared measurement units 與 six-column grid 建立跨格式結構；文化品牌的彈性不是無規則，而是建立可跨內容承載的 grid infrastructure。"
+      - brand_id: Barbican_Centre_brand_guidelines_2017
+        chapter: ch-07
+        excerpt: "diversity within system：Theatre、Art、Film、Music 等藝術形式可不同，但底層識別不可斷裂，分支差異主要來自內容、圖像與版面節奏，而非另起品牌。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗與照片複雜度建立對比決策樹，限定白／深色兩種標誌
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - Logo 顏色規範應基於對比與背景風險，而非只列色票
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: Barbican_Centre_brand_guidelines_2017
+        chapter: ch-02-03
+        excerpt: "logo full-circle 必須與背景形成對比，Barbican word 與半圓需形成黑／白或設計色對比；背景對比與可讀性決定 logo 顏色。"
+    status: extracted
+
+  - id: dp-logo-vs-lockup-distinction
+    title: 區分 public-facing lockup 與 corporate logo 的使用場景
+    problem:
+      statement: 單一標誌資產被套用到所有情境，混淆對外溝通與企業署名，且難以同時治理法律與一致性。
+      signals: [multiple_logo_contexts, trademark, legal_governance]
+    solution:
+      module: Visual Identity
+      move: 明確區分 lockup 與 logo 的使用情境，並用 asset state + usage context + spatial/color/legal control 統一治理
+      layer: visual_core
+    reason:
+      - 標誌資產不可重建、不可任意改比例
+      - 品牌 lock-up 不只是 logo 排列，也可承載常用營運資訊，且需治理例外
+    applicable_when:
+      industries: [media_entertainment, industrial_materials_science, finance]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [multiple_logo_contexts]
+      archetypes: [brand_experience_guide, corporate_toolkit, multi_brand_architecture]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: Barbican_Centre_brand_guidelines_2017
+        chapter: ch-03
+        excerpt: "lock-up 是 logo 與 essential information 的固定關係，tracking/leading 不可調整，並以 Fixed Relationship + Format Placement + Special Case Exception 治理合作方共存。"
+    status: extracted

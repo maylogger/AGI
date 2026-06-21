@@ -1,0 +1,212 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Tokyo_2020_NOC_Olympic_emblem_2018
+index_ref: docs/Tokyo_2020_NOC_Olympic_emblem_2018.index.yaml
+note_ref: docs/Tokyo_2020_NOC_Olympic_emblem_2018.note.md
+archetype: brand_experience_guide
+industry: media_entertainment
+modules:
+- Legal and Trademark
+- Compliance
+- Governance
+- AI-Checkable Rules
+- Visual Identity
+- Layout System
+- Color System
+- Accessibility
+- Typography System
+- Operations
+- Examples
+depth:
+  strategy: low
+  visual: high
+  governance: high
+  top_level_chapter_count: 6
+  section_count: 3
+chapter_sequence:
+- id: ch-01
+  title: Introduction and NOC Usage Conditions
+  order: 1
+  level: 1
+- id: ch-02
+  title: Emblem System
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Emblem Components
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Clear Space, Size, Colour and Background
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Incorrect Usage
+  order: 3
+  level: 2
+- id: ch-03
+  title: Tokyo 2020 Wordmark
+  order: 3
+  level: 1
+- id: ch-04
+  title: Text Fonts
+  order: 4
+  level: 1
+- id: ch-05
+  title: Application Examples
+  order: 5
+  level: 1
+- id: ch-06
+  title: Revision and Contact
+  order: 6
+  level: 1
+frameworks:
+- name: rights-first guideline：user role → purpose → allowed assets → association limits → approval/access path
+  chapter: ch-01
+  chapter_title: Introduction and NOC Usage Conditions
+- name: emblem integrity model：component completeness → isolation → size → colour reproduction → background suitability →
+    mis...
+  chapter: ch-02
+  chapter_title: Emblem System
+- name: component dependency：distinctive element + event wordmark + Olympic symbol + trademark
+  chapter: ch-02-01
+  chapter_title: Emblem Components
+- name: background decision tree：white background → full colour；photographic / coloured / complex background → boxed, white,
+    ...
+  chapter: ch-02-02
+  chapter_title: Clear Space, Size, Colour and Background
+- name: misuse taxonomy：appearance effects、geometry changes、component changes、association changes
+  chapter: ch-02-03
+  chapter_title: Incorrect Usage
+- name: apparel association model：item type → allowed mark → prohibited adjacency → hierarchy → approval
+  chapter: ch-03
+  chapter_title: Tokyo 2020 Wordmark
+- name: preferred typeface with contextual exceptions
+  chapter: ch-04
+  chapter_title: Text Fonts
+- name: application governance：medium → user eligibility → commercial separation → third-party brand restrictions
+  chapter: ch-05
+  chapter_title: Application Examples
+- name: living guideline + contact owner
+  chapter: ch-06
+  chapter_title: Revision and Contact
+patterns:
+- name: 對高價值 IP，guideline 應先設 permission scope，而非直接展示 logo artwork。
+  chapter: ch-01
+  chapter_title: Introduction and NOC Usage Conditions
+- name: 多元素 emblem 需同時規範 component、spacing、exception、reproduction medium 與 prohibited manipulation。
+  chapter: ch-02
+  chapter_title: Emblem System
+- name: partner / governing body symbol 的活動品牌
+  chapter: ch-02-01
+  chapter_title: Emblem Components
+- name: 以背景類型驅動版本選擇，可用於自動品牌 asset selection。
+  chapter: ch-02-02
+  chapter_title: Clear Space, Size, Colour and Background
+- name: incorrect usage 應以清楚動詞開頭，讓規則可被直接轉成審核條件。
+  chapter: ch-02-03
+  chapter_title: Incorrect Usage
+- name: 服裝應用章可將 sponsorship / manufacturer / governing body marks 的相對位置寫成規則。
+  chapter: ch-03
+  chapter_title: Tokyo 2020 Wordmark
+- name: preferably
+  chapter: ch-04
+  chapter_title: Text Fonts
+- name: 看似合理但禁止
+  chapter: ch-05
+  chapter_title: Application Examples
+- name: 在 time-bound event brand 中，revision clause 是必要操作元件。
+  chapter: ch-06
+  chapter_title: Revision and Contact
+rules_ai_checkable:
+- module: ''
+  criterion: NOC 使用限非商業目的；Tokyo 2020 Emblem 或 Wordmark 每件 clothing 只能使用一次，最大 30 cm2 或 44mm width；不得用於 licensed / replica merchandise；wordmark
+    不得與 manufacturer identification 關聯；emblem 與其他 authorized identification 不得並置。
+  chapter: ch-01
+  chapter_title: Introduction and NOC Usage Conditions
+- module: ''
+  criterion: Games Distinctive Element、wordmark、Olympic symbol 不得分離，除非特別授權；一般應包含 TM；emblem 寬度小於 30mm 時可省略 TM；full-colour 與
+    monochrome emblem 最小不得低於 12mm / 35px；必須使用原始資料。
+  chapter: ch-02
+  chapter_title: Emblem System
+- module: ''
+  criterion: 不得單獨使用 Games Distinctive Element；wordmark 必須保持官方 city name + year 組成；Olympic symbol 不得與 emblem 拆分；TM 預設應包含。
+  chapter: ch-02-01
+  chapter_title: Emblem Components
+- module: ''
+  criterion: clear space 應至少 0.7X；print 最小 12mm，digital 最小 35px；full-colour emblem 應用白底；photo 或 colour background 應使用 boxed
+    emblem；不得在色底上直接使用 full-colour emblem；不得加邊框。
+  chapter: ch-02-02
+  chapter_title: Clear Space, Size, Colour and Background
+- module: ''
+  criterion: 不得 outline、金銀燙、改色、變形、傾斜、旋轉、替換 wordmark font、改變元件順序、創建 contour area、改比例、3D、陰影、翻轉、與其他元素組合或單獨使用 distinctive element。
+  chapter: ch-02-03
+  chapter_title: Incorrect Usage
+- module: ''
+  criterion: 非競賽服可使用 wordmark，但不得直接與 manufacturer logo 關聯；競賽服與訓練服若與 NOC emblem 一起使用，wordmark 必須在 NOC emblem 下方且有清楚 separation；使用需送
+    IOC approval；minimum size print 12mm、digital 35px；clear space 0.5X。
+  chapter: ch-03
+  chapter_title: Tokyo 2020 Wordmark
+- module: ''
+  criterion: Tokyo 2020 相關溝通材料應優先使用 DIN Light、Regular、Bold 或 Black；若廣告、網站或印刷情境有更適合字體，可在合理情況下使用其他字體。
+  chapter: ch-04
+  chapter_title: Text Fonts
+- module: ''
+  criterion: printed materials / publications 不得用於 commercial or promotional purposes；business card 僅限參與 Tokyo 2020 Games
+    的 NOC management staff，且 Tokyo 2020 emblem 必須小於 NOC emblem；envelopes、postcards 與含第三方品牌材料不得使用；website 上 Tokyo 2020 emblem
+    必須與 commercial contents 明確分離，僅 Worldwide Olympic Partners 可作為商業品牌例外。
+  chapter: ch-05
+  chapter_title: Application Examples
+chapters:
+- id: ch-01
+  title: Introduction and NOC Usage Conditions
+  modules:
+  - Legal and Trademark
+  - Compliance
+  - Governance
+- id: ch-02
+  title: Emblem System
+  modules:
+  - Legal and Trademark
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02-01
+  title: Emblem Components
+  modules:
+  - Legal and Trademark
+  - Visual Identity
+- id: ch-02-02
+  title: Clear Space, Size, Colour and Background
+  modules:
+  - Layout System
+  - Color System
+  - Accessibility
+- id: ch-02-03
+  title: Incorrect Usage
+  modules:
+  - AI-Checkable Rules
+  - Compliance
+- id: ch-03
+  title: Tokyo 2020 Wordmark
+  modules:
+  - Legal and Trademark
+  - Compliance
+- id: ch-04
+  title: Text Fonts
+  modules:
+  - Typography System
+  - Operations
+- id: ch-05
+  title: Application Examples
+  modules:
+  - Legal and Trademark
+  - Examples
+  - Compliance
+- id: ch-06
+  title: Revision and Contact
+  modules:
+  - Operations
+  - Governance

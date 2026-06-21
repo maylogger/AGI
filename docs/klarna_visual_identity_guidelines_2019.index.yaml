@@ -1,0 +1,81 @@
+title: 'Klarna Visual Identity Guidelines'
+source: 'sources/klarna_visual_identity_guidelines_2019.pdf'
+version: '1.0 Standard edition'
+date: '2019-05-02'
+language: 'en'
+summary: 'Klarna 2019 視覺識別規範，以 social coherence model 串接品牌表現、商標、字體、色彩、視覺、版面、語氣與資產管理。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction and Social Coherence Model'
+    level: 1
+    order: 1
+    pages: '4-28'
+    summary: '定義品牌使命、設計原則與 Disrupt/Attract/Engage/Join 的社會一致性模型。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Who We Are and Design Principles'
+        level: 2
+        order: 1
+        pages: '5-10'
+        summary: '說明 Klarna 重塑金融世界的品牌定位，以及 social coherence、opposites attract、high touch、simplicity first。'
+      - id: 'ch-01-02'
+        title: 'Disrupt, Attract, Engage, Join'
+        level: 2
+        order: 2
+        pages: '11-28'
+        summary: '以旅程階段定義目的、語氣、smoooth 程度、視覺資產與允許元素。'
+  - id: 'ch-02'
+    title: 'Trademarks'
+    level: 1
+    order: 2
+    pages: '29-38'
+    summary: '規範 logotype、logo lockup、symbol、partnership lockup、badge、avatar、initiative lockup 與 placement。'
+  - id: 'ch-03'
+    title: 'Typography'
+    level: 1
+    order: 3
+    pages: '39-46'
+    summary: '定義 Klarna Headline、Klarna Text、title/paragraph hierarchy、typographic treatment 與 left alignment。'
+  - id: 'ch-04'
+    title: 'Colours'
+    level: 1
+    order: 4
+    pages: '47-51'
+    summary: '定義 Klarna Pink、primary/secondary colours、CTA 色、色彩組合與 social coherence 階段用色。'
+  - id: 'ch-05'
+    title: 'Visuals'
+    level: 1
+    order: 5
+    pages: '52-58'
+    summary: '定義 main brand imagery、Smoooth visual world、emotional/simplified/textures 與使用限制。'
+  - id: 'ch-06'
+    title: 'Layout'
+    level: 1
+    order: 6
+    pages: '59-63'
+    summary: '規範 headline placement、margins、logo K-height、print/digital layout 與 image treatment。'
+  - id: 'ch-07'
+    title: 'Tonality'
+    level: 1
+    order: 7
+    pages: '64-77'
+    summary: '定義寫作原則、Smoooth 用字決策、merchant/support/social 的 customer-centric writing。'
+    children:
+      - id: 'ch-07-01'
+        title: 'Tone of Voice and Smoooth'
+        level: 2
+        order: 1
+        pages: '66-72'
+        summary: '把清楚、情境、人性、短句、無 jargon 與 Smoooth 使用規則轉為文字治理。'
+      - id: 'ch-07-02'
+        title: 'Customer-Centric Writing'
+        level: 2
+        order: 2
+        pages: '73-77'
+        summary: '依 merchants、customer support 與 social channels 調整語氣與文字規則。'
+  - id: 'ch-08'
+    title: 'Assets'
+    level: 1
+    order: 8
+    pages: '78-80'
+    summary: '說明 Locker DAM、Klarna Brand Package、檔案格式、字體與影像/影片資產取得方式。'

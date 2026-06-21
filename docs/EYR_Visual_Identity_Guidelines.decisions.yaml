@@ -1,0 +1,91 @@
+# L3 決策卡 sidecar — European Year of Rail 2021 Visual Identity Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+# 同一 dp- id 可出現在多份 sidecar，compile_knowledge_graph.py 會合併並累計信心。
+
+brand_id: EYR_Visual_Identity_Guidelines
+decisions:
+  - id: dp-content-forward-flexible-identity
+    title: 讓識別當承載內容的框架，並以可調品牌音量平衡影像與品牌
+    problem:
+      statement: 內容導向品牌（媒體、出版、頻道）若讓識別搶走影像注意力，會削弱真正的內容資產；但完全沒有品牌又失去辨識。
+      signals: [content_forward_identity, multi_platform, motion_behavior, brand_recognition_vs_content]
+    solution:
+      module: Visual Language
+      move: 確立 content-forward 原則（識別是承載影像的框架），並用 Image／Message／Brand 三元素的可調「品牌音量」決定每個輸出的識別顯著度
+      layer: strategy
+    reason:
+      - 品牌應支援內容，而不是遮蔽內容
+      - 一個強識別裝置可以讓分散式團隊替換圖片而不破壞整體系統
+      - 用固定 frame 包住可替換圖片，讓地方素材仍保有 campaign look
+    applicable_when:
+      industries: [media_entertainment, public_sector]
+      brand_types: [category_creator, challenger, institutional_public_trust]
+      conditions: [content_forward_identity, multi_platform]
+      archetypes: [brand_experience_guide, campaign_touchpoint]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Layout System, Motion Identity]
+    anti_patterns:
+      - 影像優先情境仍使用過量遮罩或圖形
+    evidence:
+      - brand_id: EYR_Visual_Identity_Guidelines
+        chapter: ch-02-01
+        excerpt: "用綠色 train-door frame 區分 image subject zone 與 text/logo content zone，文字與 logo 不應侵入主體；固定 frame 包住可替換圖片讓分散式團隊替換影像而不破壞識別。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - 白框 partner logo 是常見聯名治理模式，避免合作標誌破壞主識別
+    applicable_when:
+      industries: [public_sector, finance, tech_software]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [cobranding, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide, campaign_touchpoint]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: EYR_Visual_Identity_Guidelines
+        chapter: ch-04-01
+        excerpt: "partner logo 必須置於與 EU emblem 等高的白框內且鄰近 EU emblem，避免合作標誌破壞主識別。"
+    status: extracted
+
+  - id: dp-accessible-contrast-pairs
+    title: 把可近用性前置成核准對比配色，而非設計者自行判斷
+    problem:
+      statement: 公共資訊面向全體市民與輔助科技，若放任設計者自由配色，容易產生不符合無障礙標準、身心障礙者無法閱讀的組合。
+      signals: [accessibility, public_trust, inclusive_audience, regulatory_compliance]
+    solution:
+      module: Accessibility
+      move: 把可近用性放在視覺工具區（而非附錄），明訂至少符合 WCAG 2.1 AA，並只允許清單內的核准對比配色
+      layer: visual_core
+    reason:
+      - 公共機構不應把可近用性視為加分項，而是最低標準
+      - 可用性優先於裝飾性，色彩限制優先於創意擴張
+      - 把色票寫成封閉集合，方便自動檢查
+    applicable_when:
+      industries: [public_sector, education]
+      brand_types: [institutional_public_trust]
+      conditions: [accessibility, inclusive_audience]
+      archetypes: [brand_experience_guide, multi_brand_architecture, campaign_touchpoint]
+    dependencies:
+      requires: [Color System]
+      enables: [Governance]
+    anti_patterns:
+      - 把無障礙規範放在附錄，當成可選加分項
+      - 使用未列出的 accessible colour combinations
+    evidence:
+      - brand_id: EYR_Visual_Identity_Guidelines
+        chapter: ch-01-02
+        excerpt: "視覺素材不得出現指定 palette 與白色以外的顏色、字體須屬 Noto Sans family、圖片或 overlay 文字厚度不得低於 Bold，把色票寫成封閉集合並以 boldness 控制可讀性。"
+    status: extracted

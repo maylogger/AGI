@@ -1,0 +1,64 @@
+# L2 模組知識 — Brand Strategy（策略前置，驅動其他固定模組的方向）
+# schema：research/schemas/module_knowledge.schema.yaml
+# 註：本身非「視覺固定模組」，但它是 driven_by 鏈的源頭——
+# 字體、色彩、識別的「傾向」都回溯到這裡的決策。
+
+module: Brand Strategy
+slug: brand-strategy
+foundational: false
+layer: strategy
+purpose: 定義品牌為何存在（平台、使命、定位、支柱、人格），作為所有視覺與語言決策的可回溯來源。
+problem_when_absent: 視覺與語氣淪為風格偏好，無法解釋「為什麼長這樣」，跨團隊產出發散。
+corpus_frequency:
+  doc_count: 88
+  pct: 68.8
+
+driven_by:
+  - input: brand_maturity
+    affects: strategy_chapter_depth
+    mapping:
+      - when: [new_identity]
+        tend_to: [完整平台/支柱/人格/故事框架前置, strategy depth = high]
+        evidence:
+          - { brand_id: LucidMotors }
+          - { brand_id: Dubai_BRAND_GUIDELINES_2021 }
+      - when: [established]
+        tend_to: [精簡策略摘要, 重心放在資產與應用]
+        evidence:
+          - { brand_id: AMD_branding_guidelines_2020 }
+      - when: [strategy_refresh]
+        tend_to: [強化定位與語氣章, 視覺維持]
+  - input: market_education_cost
+    affects: narrative_strategy
+    mapping:
+      - when: [new_category, high_education_cost]
+        tend_to: [漸進式 Story Framework, 控制訊息深度, 先建立意義再講規格]
+        evidence:
+          - { brand_id: 3M_Visual_Identity_Guidelines_2015, chapter: ch-01-04 }
+
+# 策略章輸出的關鍵決策，會成為其他模組 driven_by 的 input
+strategy_outputs:
+  - brand_personality # → typography, color, visual identity
+  - brand_positioning # → color, photography, voice
+  - brand_platform_or_pillars
+  - audience_and_journey # → messaging, content design
+
+spec_dimensions:
+  - 品牌平台 / 使命 / 願景
+  - 品牌支柱（pillars）
+  - 品牌人格（personality adjectives）
+  - 定位與差異化
+  - 受眾與旅程（如 Attract/Engage/Connect）
+
+related_decision_patterns:
+  - dp-story-framework-category-education
+  - dp-personality-words-as-evaluation-criteria
+
+dependencies:
+  requires: []
+  recommends: [Messaging, Voice and Tone, Visual Identity]
+
+reference_brands:
+  - 3M_Visual_Identity_Guidelines_2015
+  - LucidMotors
+  - Dubai_BRAND_GUIDELINES_2021

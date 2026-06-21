@@ -1,0 +1,68 @@
+title: "Slack Brand Guidelines"
+source: "sources/Slack-Brand-Guidelines.pdf"
+language: "en"
+summary: "Slack Brand Guidelines 將品牌定義、設計元素與治理條款整合，從 mission、voice、logo、color、typography、brand architecture 到 trademark 與第三方使用限制。"
+chapters:
+  - id: "ch-01"
+    title: "Defining Our Brand"
+    level: 1
+    order: 1
+    pages: "5-15"
+    summary: "說明 Slack 是 where work happens，定義 mission、vision、coordination challenge、values、persona、voice and tone。"
+    children:
+      - id: "ch-01-01"
+        title: "Who We Are and Need for Slack"
+        level: 2
+        order: 1
+        pages: "6-8"
+        summary: "用 challenge/solution/result 說明 Slack 解決組織協調與 alignment 問題。"
+      - id: "ch-01-02"
+        title: "Values, Persona, Voice and Tone"
+        level: 2
+        order: 2
+        pages: "10-15"
+        summary: "定義 empathy、courtesy、craftsmanship、playfulness、solidarity、thriving 與 human conversational voice。"
+  - id: "ch-02"
+    title: "Design Elements"
+    level: 1
+    order: 2
+    pages: "17-50"
+    summary: "規範 octothorpe、logo、colors、typography、brand architecture、illustrations、icons、abstract UI、photography 與 video。"
+    children:
+      - id: "ch-02-01"
+        title: "Logo and Color"
+        level: 2
+        order: 1
+        pages: "18-28"
+        summary: "定義 logo 組成、small-use version、background、one-color、misuse、core/secondary/accessibility colors。"
+      - id: "ch-02-02"
+        title: "Typography and Localization"
+        level: 2
+        order: 2
+        pages: "29-35"
+        summary: "規範 Larsseit、Slack Circular、Gsuite substitute、localized languages 與 type specimens。"
+      - id: "ch-02-03"
+        title: "Architecture and Visual Assets"
+        level: 2
+        order: 3
+        pages: "37-50"
+        summary: "定義 master offerings、partnerships、departments、teams、illustrations、icons、abstract UI、photography、video。"
+  - id: "ch-03"
+    title: "Governance"
+    level: 1
+    order: 3
+    pages: "51-59"
+    summary: "規範 general terms、trademarks、website/application visual design、trade dress、merchandise、use requirements and terms。"
+    children:
+      - id: "ch-03-01"
+        title: "Trademarks and Logo Use"
+        level: 2
+        order: 1
+        pages: "53-54"
+        summary: "定義國際 trademark notice、copyright marking、logo clear space 與不得暗示 Slack endorsement。"
+      - id: "ch-03-02"
+        title: "Third-Party Design Restrictions"
+        level: 2
+        order: 2
+        pages: "55-59"
+        summary: "限制模仿 Slack look and feel、API affiliation ambiguity、trade dress、merchandise 與 use terms。"

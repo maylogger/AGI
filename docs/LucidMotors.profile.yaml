@@ -1,0 +1,1203 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: LucidMotors
+index_ref: docs/LucidMotors.index.yaml
+note_ref: docs/LucidMotors.note.md
+archetype: full_brand_system
+industry: null
+modules:
+- Brand Strategy
+- Messaging
+- Knowledge Architecture
+- Evaluation Framework
+- Communication Framework
+- Product Language
+- Visual Identity
+- Governance
+- Accessibility
+- Visual Language
+- Data Visualization
+- Motion Identity
+- Design Tokens
+- Typography System
+- Content Design
+- Examples
+- Photography System
+- Operations
+- Information Design
+depth:
+  strategy: high
+  visual: high
+  governance: medium
+  top_level_chapter_count: 7
+  section_count: 45
+chapter_sequence:
+- id: ch-01
+  title: Brand
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Our Platform
+  order: 1
+  level: 2
+- id: ch-01-02
+  title: Brand Pillars
+  order: 2
+  level: 2
+- id: ch-01-03
+  title: Story Framework
+  order: 3
+  level: 2
+- id: ch-02
+  title: Logo
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Wordmark
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Wordmark Detail
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Wordmark Clear Space
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Wordmark Color
+  order: 4
+  level: 2
+- id: ch-02-05
+  title: Wordmark Don'ts
+  order: 5
+  level: 2
+- id: ch-02-06
+  title: Power Bar
+  order: 6
+  level: 2
+- id: ch-02-07
+  title: Living Power Bar
+  order: 7
+  level: 2
+- id: ch-02-08
+  title: Power Loop
+  order: 8
+  level: 2
+- id: ch-02-09
+  title: Logos on Product
+  order: 9
+  level: 2
+- id: ch-02-10
+  title: Power Bar Don'ts
+  order: 10
+  level: 2
+- id: ch-03
+  title: Color
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Color Proportions
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Color Palette
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Hero Gradient
+  order: 3
+  level: 2
+- id: ch-03-04
+  title: Gradient Fields
+  order: 4
+  level: 2
+- id: ch-03-05
+  title: Color Don'ts
+  order: 5
+  level: 2
+- id: ch-04
+  title: Type
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Typography Overview
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Headlines
+  order: 2
+  level: 2
+- id: ch-04-03
+  title: Sub Heads and Body Text
+  order: 3
+  level: 2
+- id: ch-04-04
+  title: Type Color
+  order: 4
+  level: 2
+- id: ch-04-05
+  title: Type in Use
+  order: 5
+  level: 2
+- id: ch-04-06
+  title: Type Don'ts
+  order: 6
+  level: 2
+- id: ch-05
+  title: Imagery
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Image Principles
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: Premium Product
+  order: 2
+  level: 2
+- id: ch-05-03
+  title: In The World
+  order: 3
+  level: 2
+- id: ch-05-04
+  title: Riders
+  order: 4
+  level: 2
+- id: ch-05-05
+  title: Merchandising
+  order: 5
+  level: 2
+- id: ch-05-06
+  title: Technology
+  order: 6
+  level: 2
+- id: ch-05-07
+  title: Photos of People
+  order: 7
+  level: 2
+- id: ch-05-08
+  title: Photo Don'ts
+  order: 8
+  level: 2
+- id: ch-06
+  title: Graphics
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Graphic Elements
+  order: 1
+  level: 2
+- id: ch-06-02
+  title: Maps
+  order: 2
+  level: 2
+- id: ch-06-03
+  title: Icon Style
+  order: 3
+  level: 2
+- id: ch-06-04
+  title: Icon Use
+  order: 4
+  level: 2
+- id: ch-06-05
+  title: Badge Style
+  order: 5
+  level: 2
+- id: ch-06-06
+  title: Limited Edition
+  order: 6
+  level: 2
+- id: ch-07
+  title: Voice
+  order: 7
+  level: 1
+- id: ch-07-01
+  title: Our Voice
+  order: 1
+  level: 2
+- id: ch-07-02
+  title: Reflecting Our Brand
+  order: 2
+  level: 2
+- id: ch-07-03
+  title: Our Personality
+  order: 3
+  level: 2
+- id: ch-07-04
+  title: Crafting The Message
+  order: 4
+  level: 2
+- id: ch-07-05
+  title: Messaging Framework
+  order: 5
+  level: 2
+- id: ch-07-06
+  title: Connecting The Story
+  order: 6
+  level: 2
+- id: ch-07-07
+  title: Writing Examples
+  order: 7
+  level: 2
+frameworks:
+- name: Platform -> Pillars -> Story Framework，將品牌意圖、人格與溝通旅程串在一起
+  chapter: ch-01
+  chapter_title: Brand
+- name: Mission/Vision/Position 框架運作方式是：內部行動理由、未來方向、外部市場描述
+  chapter: ch-01-01
+  chapter_title: Our Platform
+- name: 三支柱框架作為所有產出的評估矩陣：是否清楚、是否前瞻、是否有感染力
+  chapter: ch-01-02
+  chapter_title: Brand Pillars
+- name: Attract/Engage/Connect 運作方式是從情緒與大概念，到利益說服，再到具體功能與決策資訊
+  chapter: ch-01-03
+  chapter_title: Story Framework
+- name: Primary Mark + Dynamic Elements + Product Placement + Don'ts，將識別資產依優先級治理
+  chapter: ch-02
+  chapter_title: Logo
+- name: 主資產優先框架：先定義核心資產，再定義環境與限制
+  chapter: ch-02-01
+  chapter_title: Wordmark
+- name: 尺寸驅動資產選擇框架：print/screen + small/medium/large + trademark readability
+  chapter: ch-02-02
+  chapter_title: Wordmark Detail
+- name: 相對單位框架：以標誌內部幾何建立 scalable spacing token
+  chapter: ch-02-03
+  chapter_title: Wordmark Clear Space
+- name: 背景對比框架：dark/color/photo -> White；light/off-white/light photo -> Charcoal
+  chapter: ch-02-04
+  chapter_title: Wordmark Color
+- name: Don'ts 作為 negative pattern library，讓審核可快速辨識違規
+  chapter: ch-02-05
+  chapter_title: Wordmark Don'ts
+- name: Energy-to-Impact 框架，將抽象品牌能量轉成線性方向與漸層進程
+  chapter: ch-02-06
+  chapter_title: Power Bar
+- name: Motion Transformation Framework：bar 可 morph 成 route、chart、transition，但保持共同 weight
+  chapter: ch-02-07
+  chapter_title: Living Power Bar
+- name: Service Symbol Framework：only for energy service stories + secondary hierarchy + no lockup
+  chapter: ch-02-08
+  chapter_title: Power Loop
+- name: Product Placement Framework：wordmark primary、loop secondary、same process hierarchy
+  chapter: ch-02-09
+  chapter_title: Logos on Product
+- name: Negative Controls for Secondary Identity，透過禁例限制彈性元素
+  chapter: ch-02-10
+  chapter_title: Power Bar Don'ts
+- name: Base/Accent/Gradient 框架：中性色建立空間，品牌色建立能量，漸層建立旅程
+  chapter: ch-03
+  chapter_title: Color
+- name: Context-relative Proportion Framework：依媒介與接觸點決定色彩強度
+  chapter: ch-03-01
+  chapter_title: Color Proportions
+- name: Semantic Palette Framework：每個顏色對應 fresh、bold、performance、experience、eco、warning 等語義
+  chapter: ch-03-02
+  chapter_title: Color Palette
+- name: Journey Gradient Framework：用色彩位置映射使用者從 start 到 end 的體驗
+  chapter: ch-03-03
+  chapter_title: Hero Gradient
+- name: Gradient Role Framework：background atmosphere vs color motion
+  chapter: ch-03-04
+  chapter_title: Gradient Fields
+- name: Color Risk Control：色彩越醒目，越要限制面積、語意與使用頻率
+  chapter: ch-03-05
+  chapter_title: Color Don'ts
+- name: Typeface Role Framework：Flama for impact，Graphik for clarity，special italic for callouts
+  chapter: ch-04
+  chapter_title: Type
+- name: Content-first Type Scale：以 body copy 為基準建立比例
+  chapter: ch-04-01
+  chapter_title: Typography Overview
+- name: Headline Intensity Framework：ultralight for large attract statements，bold condensed for attention contrast
+  chapter: ch-04-02
+  chapter_title: Headlines
+- name: Reading Hierarchy Framework：body、subhead、callout 分別承擔閱讀、導覽、強調
+  chapter: ch-04-03
+  chapter_title: Sub Heads and Body Text
+- name: Text Emphasis Framework：neutral for reading、gray for supporting、color/gradient for primary focal message
+  chapter: ch-04-04
+  chapter_title: Type Color
+- name: Example-driven Governance：用可視案例補足規則文字不足
+  chapter: ch-04-05
+  chapter_title: Type in Use
+- name: Typography QA Framework：font, size, alignment, spacing, color, hyphenation
+  chapter: ch-04-06
+  chapter_title: Type Don'ts
+- name: Imagery Role Framework：product hero、real-world action、rider community、merch utility、technology explanation、people
+    sto...
+  chapter: ch-05
+  chapter_title: Imagery
+- name: Three-axis Image Evaluation：authenticity、simplicity、craft
+  chapter: ch-05-01
+  chapter_title: Image Principles
+- name: Hero/Detail Framework：大輪廓吸引注意，細節深化工藝信任
+  chapter: ch-05-02
+  chapter_title: Premium Product
+- name: Context Control Framework：real-world context + simplified locations + product focus
+  chapter: ch-05-03
+  chapter_title: In The World
+- name: Rider-as-Secondary-Context Framework：人物補充產品，不取代產品
+  chapter: ch-05-04
+  chapter_title: Riders
+- name: Utility Image Framework：neutral environment + functional view + digital reuse
+  chapter: ch-05-05
+  chapter_title: Merchandising
+- name: Technical Visualization Framework：identify、isolate、group、warn、explain assembly
+  chapter: ch-05-06
+  chapter_title: Technology
+- name: People Image Framework：portraits for system consistency，lifestyle for authentic experience
+  chapter: ch-05-07
+  chapter_title: Photos of People
+- name: Photo QA Framework：background、product truth、cleanliness、action authenticity、rider portrayal
+  chapter: ch-05-08
+  chapter_title: Photo Don'ts
+- name: Functional Graphic Framework：clarify information + reduce decoration + use color strategically
+  chapter: ch-06
+  chapter_title: Graphics
+- name: Functional Primitive Framework：warning、transparency、container、action shape
+  chapter: ch-06-01
+  chapter_title: Graphic Elements
+- name: Map Simplification Framework：functional accuracy where needed，abstract geometry where expressive
+  chapter: ch-06-02
+  chapter_title: Maps
+- name: Icon Construction Framework：40px bounding circle + limited line weights + geometric simplification
+  chapter: ch-06-03
+  chapter_title: Icon Style
+- name: Responsive Icon Use Framework：standard for small，hero containers for larger/complex contexts
+  chapter: ch-06-04
+  chapter_title: Icon Use
+- name: Reward Graphic Framework：flat brand base + expressive content + screen-native motion
+  chapter: ch-06-05
+  chapter_title: Badge Style
+- name: Controlled Collaboration Framework：local artist input + brand expressive boundary
+  chapter: ch-06-06
+  chapter_title: Limited Edition
+- name: Voice Framework：brand pillars -> personality -> Attract/Engage/Connect -> message hierarchy -> examples
+  chapter: ch-07
+  chapter_title: Voice
+- name: Consistent-but-Adaptive Voice：核心穩定，表現依媒介調整
+  chapter: ch-07-01
+  chapter_title: Our Voice
+- name: Pillar-to-Voice Mapping：每個品牌支柱對應一組寫作行為
+  chapter: ch-07-02
+  chapter_title: Reflecting Our Brand
+- name: Persona Voice Framework：age metaphor + behavioral traits + cultural stance + inclusivity
+  chapter: ch-07-03
+  chapter_title: Our Personality
+- name: Message Depth Framework：attention -> reasons to care -> decision details
+  chapter: ch-07-04
+  chapter_title: Crafting The Message
+- name: Benefit Ladder Framework：promise -> experience -> product/service benefits -> feature details
+  chapter: ch-07-05
+  chapter_title: Messaging Framework
+- name: Story Path Framework：brand promise -> benefit cluster -> design principle -> technical feature
+  chapter: ch-07-06
+  chapter_title: Connecting The Story
+- name: Example Translation Framework：same feature across different depth levels
+  chapter: ch-07-07
+  chapter_title: Writing Examples
+patterns:
+- name: 品牌平台三件組
+  chapter: ch-01
+  chapter_title: Brand
+- name: 三支柱人格模型
+  chapter: ch-01
+  chapter_title: Brand
+- name: 三階段溝通深度模型
+  chapter: ch-01
+  chapter_title: Brand
+- name: 可複用模式是品牌平台卡片化，讓所有後續設計決策可回到同一策略語言。
+  chapter: ch-01-01
+  chapter_title: Our Platform
+- name: 可複用模式是 3-pillar brand personality，適合其他品牌用來約束視覺與語氣。
+  chapter: ch-01-02
+  chapter_title: Brand Pillars
+- name: funnel-based messaging
+  chapter: ch-01-03
+  chapter_title: Story Framework
+- name: progressive disclosure
+  chapter: ch-01-03
+  chapter_title: Story Framework
+- name: touchpoint-to-message mapping
+  chapter: ch-01-03
+  chapter_title: Story Framework
+- name: 核心 wordmark
+  chapter: ch-02
+  chapter_title: Logo
+- name: 輔助動態元素
+  chapter: ch-02
+  chapter_title: Logo
+- name: 服務符號
+  chapter: ch-02
+  chapter_title: Logo
+- name: 產品上標誌規範
+  chapter: ch-02
+  chapter_title: Logo
+- name: 禁止用法頁
+  chapter: ch-02
+  chapter_title: Logo
+- name: 可複用模式是 Logo 章開頭先建立資產重要性，而不是直接進入規格。
+  chapter: ch-02-01
+  chapter_title: Wordmark
+- name: responsive logo assets
+  chapter: ch-02-02
+  chapter_title: Wordmark Detail
+- name: minimum size
+  chapter: ch-02-02
+  chapter_title: Wordmark Detail
+- name: trademark exception rules
+  chapter: ch-02-02
+  chapter_title: Wordmark Detail
+- name: 1x minimum
+  chapter: ch-02-03
+  chapter_title: Wordmark Clear Space
+- name: 2x optimal
+  chapter: ch-02-03
+  chapter_title: Wordmark Clear Space
+- name: internal geometry as measurement
+  chapter: ch-02-03
+  chapter_title: Wordmark Clear Space
+- name: monochrome logo strategy
+  chapter: ch-02-04
+  chapter_title: Wordmark Color
+- name: contrast-based decision tree
+  chapter: ch-02-04
+  chapter_title: Wordmark Color
+- name: photo-background constraints
+  chapter: ch-02-04
+  chapter_title: Wordmark Color
+- name: transform don'ts
+  chapter: ch-02-05
+  chapter_title: Wordmark Don'ts
+- name: effects don'ts
+  chapter: ch-02-05
+  chapter_title: Wordmark Don'ts
+- name: color don'ts
+  chapter: ch-02-05
+  chapter_title: Wordmark Don'ts
+- name: lockup don'ts
+  chapter: ch-02-05
+  chapter_title: Wordmark Don'ts
+- name: background don'ts
+  chapter: ch-02-05
+  chapter_title: Wordmark Don'ts
+- name: flexible graphic bar
+  chapter: ch-02-06
+  chapter_title: Power Bar
+- name: minimum ratio
+  chapter: ch-02-06
+  chapter_title: Power Bar
+- name: relative-to-logo weight
+  chapter: ch-02-06
+  chapter_title: Power Bar
+- name: route-as-brand-element
+  chapter: ch-02-07
+  chapter_title: Living Power Bar
+- name: chart-as-brand-motion
+  chapter: ch-02-07
+  chapter_title: Living Power Bar
+- name: transition-state identity
+  chapter: ch-02-07
+  chapter_title: Living Power Bar
+- name: service-specific mark
+  chapter: ch-02-08
+  chapter_title: Power Loop
+- name: one-color fallback
+  chapter: ch-02-08
+  chapter_title: Power Loop
+- name: full-color preferred use
+  chapter: ch-02-08
+  chapter_title: Power Loop
+- name: product logo hierarchy
+  chapter: ch-02-09
+  chapter_title: Logos on Product
+- name: materialized mark
+  chapter: ch-02-09
+  chapter_title: Logos on Product
+- name: single mark per product
+  chapter: ch-02-09
+  chapter_title: Logos on Product
+- name: no decoration
+  chapter: ch-02-10
+  chapter_title: Power Bar Don'ts
+- name: no lockup
+  chapter: ch-02-10
+  chapter_title: Power Bar Don'ts
+- name: no full bleed
+  chapter: ch-02-10
+  chapter_title: Power Bar Don'ts
+- name: no skew
+  chapter: ch-02-10
+  chapter_title: Power Bar Don'ts
+- name: no low contrast
+  chapter: ch-02-10
+  chapter_title: Power Bar Don'ts
+- name: color proportion
+  chapter: ch-03
+  chapter_title: Color
+- name: semantic palette
+  chapter: ch-03
+  chapter_title: Color
+- name: hero gradient
+  chapter: ch-03
+  chapter_title: Color
+- name: background gradient
+  chapter: ch-03
+  chapter_title: Color
+- name: color don'ts
+  chapter: ch-03
+  chapter_title: Color
+- name: neutral majority
+  chapter: ch-03-01
+  chapter_title: Color Proportions
+- name: single accent wall
+  chapter: ch-03-01
+  chapter_title: Color Proportions
+- name: presentation color interruption
+  chapter: ch-03-01
+  chapter_title: Color Proportions
+- name: color token + production values + semantic meaning
+  chapter: ch-03-02
+  chapter_title: Color Palette
+- name: directional gradient
+  chapter: ch-03-03
+  chapter_title: Hero Gradient
+- name: journey wayfinding
+  chapter: ch-03-03
+  chapter_title: Hero Gradient
+- name: controlled spectrum reveal
+  chapter: ch-03-03
+  chapter_title: Hero Gradient
+- name: light/dark background gradient
+  chapter: ch-03-04
+  chapter_title: Gradient Fields
+- name: gradient overlays
+  chapter: ch-03-04
+  chapter_title: Gradient Fields
+- name: line-work gradients
+  chapter: ch-03-04
+  chapter_title: Gradient Fields
+- name: unauthorized color ban
+  chapter: ch-03-05
+  chapter_title: Color Don'ts
+- name: large-area warning
+  chapter: ch-03-05
+  chapter_title: Color Don'ts
+- name: gradient misuse prevention
+  chapter: ch-03-05
+  chapter_title: Color Don'ts
+- name: type hierarchy
+  chapter: ch-04
+  chapter_title: Type
+- name: role-based fonts
+  chapter: ch-04
+  chapter_title: Type
+- name: scale relative to body copy
+  chapter: ch-04
+  chapter_title: Type
+- name: type don'ts
+  chapter: ch-04
+  chapter_title: Type
+- name: primary/secondary typeface
+  chapter: ch-04-01
+  chapter_title: Typography Overview
+- name: alignment rule
+  chapter: ch-04-01
+  chapter_title: Typography Overview
+- name: minimum size
+  chapter: ch-04-01
+  chapter_title: Typography Overview
+- name: scale ratio
+  chapter: ch-04-01
+  chapter_title: Typography Overview
+- name: all-caps display type
+  chapter: ch-04-02
+  chapter_title: Headlines
+- name: percentage scale relative to body
+  chapter: ch-04-02
+  chapter_title: Headlines
+- name: manual optical adjustment
+  chapter: ch-04-02
+  chapter_title: Headlines
+- name: body type rules
+  chapter: ch-04-03
+  chapter_title: Sub Heads and Body Text
+- name: subhead emphasis
+  chapter: ch-04-03
+  chapter_title: Sub Heads and Body Text
+- name: callout italic
+  chapter: ch-04-03
+  chapter_title: Sub Heads and Body Text
+- name: scale examples
+  chapter: ch-04-03
+  chapter_title: Sub Heads and Body Text
+- name: grayscale hierarchy
+  chapter: ch-04-04
+  chapter_title: Type Color
+- name: single gradient type moment
+  chapter: ch-04-04
+  chapter_title: Type Color
+- name: minimal small-size color
+  chapter: ch-04-04
+  chapter_title: Type Color
+- name: use-case boards
+  chapter: ch-04-05
+  chapter_title: Type in Use
+- name: layout examples
+  chapter: ch-04-05
+  chapter_title: Type in Use
+- name: type hierarchy demonstrations
+  chapter: ch-04-05
+  chapter_title: Type in Use
+- name: don't use display font for body
+  chapter: ch-04-06
+  chapter_title: Type Don'ts
+- name: don't justify
+  chapter: ch-04-06
+  chapter_title: Type Don'ts
+- name: don't right align
+  chapter: ch-04-06
+  chapter_title: Type Don'ts
+- name: don't alter tracking
+  chapter: ch-04-06
+  chapter_title: Type Don'ts
+- name: image principles
+  chapter: ch-05
+  chapter_title: Imagery
+- name: category-specific photography
+  chapter: ch-05
+  chapter_title: Imagery
+- name: photo don'ts
+  chapter: ch-05
+  chapter_title: Imagery
+- name: positive/negative principle pairing
+  chapter: ch-05-01
+  chapter_title: Image Principles
+- name: gallery/lab environment
+  chapter: ch-05-02
+  chapter_title: Premium Product
+- name: low camera drama
+  chapter: ch-05-02
+  chapter_title: Premium Product
+- name: tight detail crops
+  chapter: ch-05-02
+  chapter_title: Premium Product
+- name: action/still split
+  chapter: ch-05-03
+  chapter_title: In The World
+- name: non-specific locations
+  chapter: ch-05-03
+  chapter_title: In The World
+- name: everyday thrill
+  chapter: ch-05-03
+  chapter_title: In The World
+- name: community cast
+  chapter: ch-05-04
+  chapter_title: Riders
+- name: partial crop
+  chapter: ch-05-04
+  chapter_title: Riders
+- name: smart protective gear
+  chapter: ch-05-04
+  chapter_title: Riders
+- name: neutral wardrobe with pops
+  chapter: ch-05-04
+  chapter_title: Riders
+- name: orthographic views
+  chapter: ch-05-05
+  chapter_title: Merchandising
+- name: flat background
+  chapter: ch-05-05
+  chapter_title: Merchandising
+- name: minimal shadows
+  chapter: ch-05-05
+  chapter_title: Merchandising
+- name: x-ray overlay
+  chapter: ch-05-06
+  chapter_title: Technology
+- name: blue outline callout
+  chapter: ch-05-06
+  chapter_title: Technology
+- name: red warning hatch
+  chapter: ch-05-06
+  chapter_title: Technology
+- name: exploded view
+  chapter: ch-05-06
+  chapter_title: Technology
+- name: black-and-white portrait system
+  chapter: ch-05-07
+  chapter_title: Photos of People
+- name: candid lifestyle
+  chapter: ch-05-07
+  chapter_title: Photos of People
+- name: diverse user casting
+  chapter: ch-05-07
+  chapter_title: Photos of People
+- name: photo negative library
+  chapter: ch-05-08
+  chapter_title: Photo Don'ts
+- name: truthfulness checklist
+  chapter: ch-05-08
+  chapter_title: Photo Don'ts
+- name: map style
+  chapter: ch-06
+  chapter_title: Graphics
+- name: icon system
+  chapter: ch-06
+  chapter_title: Graphics
+- name: badge system
+  chapter: ch-06
+  chapter_title: Graphics
+- name: artist edition strategy
+  chapter: ch-06
+  chapter_title: Graphics
+- name: warning crosshatch
+  chapter: ch-06-01
+  chapter_title: Graphic Elements
+- name: transparent overlays
+  chapter: ch-06-01
+  chapter_title: Graphic Elements
+- name: circle containers
+  chapter: ch-06-01
+  chapter_title: Graphic Elements
+- name: pill buttons
+  chapter: ch-06-01
+  chapter_title: Graphic Elements
+- name: neutral context
+  chapter: ch-06-02
+  chapter_title: Maps
+- name: colored route
+  chapter: ch-06-02
+  chapter_title: Maps
+- name: minimal geography
+  chapter: ch-06-02
+  chapter_title: Maps
+- name: grid abstraction
+  chapter: ch-06-02
+  chapter_title: Maps
+- name: circular grid
+  chapter: ch-06-03
+  chapter_title: Icon Style
+- name: square caps
+  chapter: ch-06-03
+  chapter_title: Icon Style
+- name: 45-degree geometry
+  chapter: ch-06-03
+  chapter_title: Icon Style
+- name: two line weights max
+  chapter: ch-06-03
+  chapter_title: Icon Style
+- name: size-tiered icons
+  chapter: ch-06-04
+  chapter_title: Icon Use
+- name: transparent container over image
+  chapter: ch-06-04
+  chapter_title: Icon Use
+- name: color-ring hero icon
+  chapter: ch-06-04
+  chapter_title: Icon Use
+- name: digital badge
+  chapter: ch-06-05
+  chapter_title: Badge Style
+- name: animated reward
+  chapter: ch-06-05
+  chapter_title: Badge Style
+- name: personality layer
+  chapter: ch-06-05
+  chapter_title: Badge Style
+- name: regional artist program
+  chapter: ch-06-06
+  chapter_title: Limited Edition
+- name: rotating local expression
+  chapter: ch-06-06
+  chapter_title: Limited Edition
+- name: limited-edition visual layer
+  chapter: ch-06-06
+  chapter_title: Limited Edition
+- name: 品牌人格年齡化
+  chapter: ch-07
+  chapter_title: Voice
+- name: journey-based messaging
+  chapter: ch-07
+  chapter_title: Voice
+- name: benefit ladder
+  chapter: ch-07
+  chapter_title: Voice
+- name: writing examples
+  chapter: ch-07
+  chapter_title: Voice
+- name: voice as identity
+  chapter: ch-07-01
+  chapter_title: Our Voice
+- name: environmental adjustment
+  chapter: ch-07-01
+  chapter_title: Our Voice
+- name: complexity simplification
+  chapter: ch-07-01
+  chapter_title: Our Voice
+- name: strategy-to-copy translation
+  chapter: ch-07-02
+  chapter_title: Reflecting Our Brand
+- name: three voice imperatives
+  chapter: ch-07-02
+  chapter_title: Reflecting Our Brand
+- name: brand-as-person
+  chapter: ch-07-03
+  chapter_title: Our Personality
+- name: avoid jargon
+  chapter: ch-07-03
+  chapter_title: Our Personality
+- name: inclusive invitation
+  chapter: ch-07-03
+  chapter_title: Our Personality
+- name: feels/looks/when format
+  chapter: ch-07-04
+  chapter_title: Crafting The Message
+- name: touchpoint mapping
+  chapter: ch-07-04
+  chapter_title: Crafting The Message
+- name: copy length guidance
+  chapter: ch-07-04
+  chapter_title: Crafting The Message
+- name: message hierarchy
+  chapter: ch-07-05
+  chapter_title: Messaging Framework
+- name: benefit ladder
+  chapter: ch-07-05
+  chapter_title: Messaging Framework
+- name: conversation path
+  chapter: ch-07-05
+  chapter_title: Messaging Framework
+- name: laddered storytelling
+  chapter: ch-07-06
+  chapter_title: Connecting The Story
+- name: feature-to-benefit translation
+  chapter: ch-07-06
+  chapter_title: Connecting The Story
+- name: progressive specificity
+  chapter: ch-07-06
+  chapter_title: Connecting The Story
+- name: copy before/after
+  chapter: ch-07-07
+  chapter_title: Writing Examples
+- name: short/medium/detailed versions
+  chapter: ch-07-07
+  chapter_title: Writing Examples
+- name: feature bullet expansion
+  chapter: ch-07-07
+  chapter_title: Writing Examples
+rules_ai_checkable:
+- module: Visual Identity
+  criterion: 可驗證規則包含最小尺寸、clear space、單一 wordmark、不可 lockup、不可拉伸、不可改色、不可低對比使用。
+  chapter: ch-02
+  chapter_title: Logo
+- module: ''
+  criterion: 可量化規則包含印刷 20-50 mm 使用 small、51-200 mm 使用 medium、201 mm 以上使用 large；螢幕最低 80 px；文案必須寫 LucidMotors。
+  chapter: ch-02-02
+  chapter_title: Wordmark Detail
+- module: ''
+  criterion: 可量化規則包含 minimum clear space = 1x o，optimal = 2x o，同一表面不超過一個 wordmark。
+  chapter: ch-02-03
+  chapter_title: Wordmark Clear Space
+- module: Color System
+  criterion: 可驗證規則包含不得用黑色而用 Charcoal、照片上必須有強對比、背景太忙時不可放 wordmark。
+  chapter: ch-02-04
+  chapter_title: Wordmark Color
+- module: ''
+  criterion: 可量化規則包含高度與長度至少 1x30，與 wordmark 同時出現時厚度不得弱於字元重量。
+  chapter: ch-02-06
+  chapter_title: Power Bar
+- module: ''
+  criterion: 可驗證規則包含不得與 wordmark lockup、不得大於 wordmark、需在 wordmark 下方或右側、1 色版不可用於 digital/broadcast。
+  chapter: ch-02-08
+  chapter_title: Power Loop
+- module: Color System
+  criterion: 可驗證規則包含紅色只用於警示、hero gradient 不可大面積完整使用、色彩應被中性色分隔。
+  chapter: ch-03
+  chapter_title: Color
+- module: ''
+  criterion: 可量化規則包含 Rich Blue 0%、Blue 20%、Green 70%、Hot Green 100%，只能 linear、不可 radial。
+  chapter: ch-03-03
+  chapter_title: Hero Gradient
+- module: ''
+  criterion: 可檢查規則包含漸層不可用於物件高光或形體塑造；色彩漸層可 linear 或 radial，但 hero gradient 不可 radial。
+  chapter: ch-03-04
+  chapter_title: Gradient Fields
+- module: Typography System
+  criterion: 可量化規則包含內文最小 12 pt、web 14 pt、retail 22 pt，標題比例至少 300% 或 800%。
+  chapter: ch-04
+  chapter_title: Type
+- module: Typography System
+  criterion: 可檢查規則包含主要左對齊、置中只作次要選項、copy 最小 12 pt/web 14 pt/retail 22 pt。
+  chapter: ch-04-01
+  chapter_title: Typography Overview
+- module: ''
+  criterion: 可量化規則包含 tracking -50 或 0、leading 80%、headline 至少 body 300%，大型 Attract 至少 800%。
+  chapter: ch-04-02
+  chapter_title: Headlines
+- module: ''
+  criterion: 可量化規則包含 body leading 150%、header leading 125%、subhead 115%、space after 200% body copy。
+  chapter: ch-04-03
+  chapter_title: Sub Heads and Body Text
+- module: Color System
+  criterion: 可檢查規則包含漸層文字每 topic/layout 只用一次，featured type 必須是頁面主訊息。
+  chapter: ch-04-04
+  chapter_title: Type Color
+- module: Photography System
+  criterion: 可檢查規則包含不可忙亂背景、不可假動作、不可髒產品、不可過度後製、人物不可搶走產品焦點。
+  chapter: ch-05
+  chapter_title: Imagery
+- module: ''
+  criterion: 可檢查規則包含背景不可太忙、人物不可搶焦點、動作不可假。
+  chapter: ch-05-03
+  chapter_title: In The World
+- module: ''
+  criterion: 可檢查規則包含人物不可太主導、穿著需現代實用、避免不適切或無聊形象。
+  chapter: ch-05-04
+  chapter_title: Riders
+- module: ''
+  criterion: 可檢查規則包含警示用紅色與 25 度線、功能說明用藍色輪廓或圓形。
+  chapter: ch-05-06
+  chapter_title: Technology
+- module: ''
+  criterion: 可檢查規則包含圖示 40px 圓、線寬 1.5px/1px、警示 25 度線、紅色只作警示。
+  chapter: ch-06
+  chapter_title: Graphics
+- module: ''
+  criterion: 可檢查規則包含 crosshatch 用 LucidMotors red，線條角度 +25 度；circle 為主要容器。
+  chapter: ch-06-01
+  chapter_title: Graphic Elements
+- module: Iconography System
+  criterion: 可量化規則包含 40px 圓、主要線寬 1.5px、小細節 1px、警示線 +25 度。
+  chapter: ch-06-03
+  chapter_title: Icon Style
+- module: Iconography System
+  criterion: 可量化規則包含 40px minimum、40-99px standard、100-199px hero、200px+ hero with light gradient container。
+  chapter: ch-06-04
+  chapter_title: Icon Use
+- module: ''
+  criterion: 可檢查規則較少，但可要求限定版不得覆寫核心 wordmark、色彩與基本識別階層。
+  chapter: ch-06-06
+  chapter_title: Limited Edition
+- module: Voice and Tone
+  criterion: 可檢查規則包含避免 tech-jargon、Attract 2-4 words、Engage 2-3 short sentences、Connect 提供細節。
+  chapter: ch-07
+  chapter_title: Voice
+- module: ''
+  criterion: 可檢查規則包含避免 tech-jargon、避免 try-too-hard、不得排外、應直接誠實。
+  chapter: ch-07-03
+  chapter_title: Our Personality
+- module: ''
+  criterion: 可量化規則包含 Attract 2-4 words，Engage 2-3 short sentences，Connect 提供產品特徵細節。
+  chapter: ch-07-04
+  chapter_title: Crafting The Message
+chapters:
+- id: ch-01
+  title: Brand
+  modules:
+  - Brand Strategy
+  - Messaging
+  - Knowledge Architecture
+- id: ch-01-01
+  title: Our Platform
+  modules:
+  - Brand Strategy
+- id: ch-01-02
+  title: Brand Pillars
+  modules:
+  - Brand Strategy
+  - Evaluation Framework
+- id: ch-01-03
+  title: Story Framework
+  modules:
+  - Communication Framework
+  - Messaging
+- id: ch-02
+  title: Logo
+  modules:
+  - Product Language
+  - Visual Identity
+  - Governance
+- id: ch-02-01
+  title: Wordmark
+  modules:
+  - Visual Identity
+- id: ch-02-02
+  title: Wordmark Detail
+  modules:
+  - Visual Identity
+  - Governance
+- id: ch-02-03
+  title: Wordmark Clear Space
+  modules:
+  - Visual Identity
+- id: ch-02-04
+  title: Wordmark Color
+  modules:
+  - Accessibility
+  - Visual Identity
+  - Governance
+- id: ch-02-05
+  title: Wordmark Don'ts
+  modules:
+  - Visual Identity
+  - Governance
+- id: ch-02-06
+  title: Power Bar
+  modules:
+  - Visual Language
+- id: ch-02-07
+  title: Living Power Bar
+  modules:
+  - Data Visualization
+  - Motion Identity
+- id: ch-02-08
+  title: Power Loop
+  modules:
+  - Product Language
+  - Governance
+- id: ch-02-09
+  title: Logos on Product
+  modules:
+  - Product Language
+- id: ch-02-10
+  title: Power Bar Don'ts
+  modules:
+  - Visual Identity
+  - Governance
+- id: ch-03
+  title: Color
+  modules:
+  - Visual Language
+  - Design Tokens
+- id: ch-03-01
+  title: Color Proportions
+  modules:
+  - Visual Language
+- id: ch-03-02
+  title: Color Palette
+  modules:
+  - Visual Language
+  - Design Tokens
+- id: ch-03-03
+  title: Hero Gradient
+  modules:
+  - Visual Language
+- id: ch-03-04
+  title: Gradient Fields
+  modules:
+  - Visual Language
+- id: ch-03-05
+  title: Color Don'ts
+  modules:
+  - Governance
+- id: ch-04
+  title: Type
+  modules:
+  - Typography System
+  - Visual Language
+- id: ch-04-01
+  title: Typography Overview
+  modules:
+  - Typography System
+- id: ch-04-02
+  title: Headlines
+  modules:
+  - Typography System
+  - Messaging
+- id: ch-04-03
+  title: Sub Heads and Body Text
+  modules:
+  - Typography System
+  - Content Design
+- id: ch-04-04
+  title: Type Color
+  modules:
+  - Typography System
+- id: ch-04-05
+  title: Type in Use
+  modules:
+  - Examples
+- id: ch-04-06
+  title: Type Don'ts
+  modules:
+  - Governance
+- id: ch-05
+  title: Imagery
+  modules:
+  - Photography System
+  - Visual Language
+- id: ch-05-02
+  title: Premium Product
+  modules:
+  - Photography System
+  - Product Language
+- id: ch-05-03
+  title: In The World
+  modules:
+  - Photography System
+- id: ch-05-05
+  title: Merchandising
+  modules:
+  - Operations
+- id: ch-05-07
+  title: Photos of People
+  modules:
+  - Photography System
+- id: ch-05-08
+  title: Photo Don'ts
+  modules:
+  - Governance
+- id: ch-06
+  title: Graphics
+  modules:
+  - Visual Language
+  - Information Design
+- id: ch-06-01
+  title: Graphic Elements
+  modules:
+  - Information Design
+- id: ch-06-06
+  title: Limited Edition
+  modules:
+  - Governance
+- id: ch-07
+  title: Voice
+  modules:
+  - Content Design
+  - Messaging
+- id: ch-07-01
+  title: Our Voice
+  modules:
+  - Messaging
+- id: ch-07-02
+  title: Reflecting Our Brand
+  modules:
+  - Evaluation Framework
+  - Messaging
+- id: ch-07-03
+  title: Our Personality
+  modules:
+  - Messaging
+- id: ch-07-04
+  title: Crafting The Message
+  modules:
+  - Messaging
+- id: ch-07-05
+  title: Messaging Framework
+  modules:
+  - Messaging
+- id: ch-07-06
+  title: Connecting The Story
+  modules:
+  - Messaging
+- id: ch-07-07
+  title: Writing Examples
+  modules:
+  - Examples
+  - Operations

@@ -1,0 +1,258 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: ZAG_brand_guidelines
+index_ref: docs/ZAG_brand_guidelines.index.yaml
+note_ref: docs/ZAG_brand_guidelines.note.md
+archetype: brand_experience_guide
+industry: public_sector
+modules:
+- Knowledge Architecture
+- Governance
+- Visual Language
+- AI-Checkable Rules
+- Layout System
+- Typography System
+- Color System
+- Messaging
+- Design Tokens
+- Operations
+- Information Design
+depth:
+  strategy: low
+  visual: high
+  governance: medium
+  top_level_chapter_count: 7
+  section_count: 9
+chapter_sequence:
+- id: ch-01
+  title: Intro
+  order: 1
+  level: 1
+- id: ch-02
+  title: Concept
+  order: 2
+  level: 1
+- id: ch-03
+  title: Logo and Logotype Variations
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Logo
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Horizontal Logotype
+  order: 2
+  level: 2
+- id: ch-04
+  title: Typography, Slogan and Colour
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Typography
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: Slogan
+  order: 2
+  level: 2
+- id: ch-04-03
+  title: Colour
+  order: 3
+  level: 2
+- id: ch-05
+  title: Primary Communication Materials
+  order: 5
+  level: 1
+- id: ch-05-01
+  title: Stationery
+  order: 1
+  level: 2
+- id: ch-05-02
+  title: PowerPoint Template
+  order: 2
+  level: 2
+- id: ch-06
+  title: Secondary Communication Materials
+  order: 6
+  level: 1
+- id: ch-06-01
+  title: Merchandise and Wearables
+  order: 1
+  level: 2
+- id: ch-06-02
+  title: Vehicle, Planner and Ads
+  order: 2
+  level: 2
+- id: ch-07
+  title: Author
+  order: 7
+  level: 1
+frameworks:
+- name: Core/flexible framework：core identity elements must be systematic; communication executions may vary within logic
+  chapter: ch-01
+  chapter_title: Intro
+- name: Place-to-identity framework：physical architecture → geometric primitive → logo sign → secondary graphic system → appl...
+  chapter: ch-02
+  chapter_title: Concept
+- name: Logo deployment framework：variant choice → minimum size → proportional increments → clear space → surface compatibility
+  chapter: ch-03
+  chapter_title: Logo and Logotype Variations
+- name: Variant hierarchy：primary negative → secondary positive → tertiary black-white
+  chapter: ch-03-01
+  chapter_title: Logo
+- name: Parallel lockup framework：same rule set, lockup-specific minimum values
+  chapter: ch-03-02
+  chapter_title: Horizontal Logotype
+- name: Expression system：typeface roles + slogan syntax + colour palette
+  chapter: ch-04
+  chapter_title: Typography, Slogan and Colour
+- name: Palette hierarchy：core recognition colors + special occasion metallics
+  chapter: ch-04-03
+  chapter_title: Colour
+- name: Stationery specification framework：material type → dimensions → typography → paper/print → layout coordinates
+  chapter: ch-05
+  chapter_title: Primary Communication Materials
+- name: Presentation template framework：title hierarchy + blue contrast + paragraph limit + diagram system
+  chapter: ch-05-02
+  chapter_title: PowerPoint Template
+- name: Secondary application framework：object type → background colour/material → grid/roof motif → logo/logotype fallback
+  chapter: ch-06
+  chapter_title: Secondary Communication Materials
+- name: Public visibility framework：background condition → grid polarity → visibility distance → area proportion
+  chapter: ch-06-02
+  chapter_title: Vehicle, Planner and Ads
+- name: Document provenance metadata
+  chapter: ch-07
+  chapter_title: Author
+patterns:
+- name: strict follow
+  chapter: ch-01
+  chapter_title: Intro
+- name: creative freedom
+  chapter: ch-01
+  chapter_title: Intro
+- name: 以單一幾何母題統一 logo 與圖形素材；從地方地標建立 secondary graphic language。
+  chapter: ch-02
+  chapter_title: Concept
+- name: 以 reproduction constraint 觸發替代版本。
+  chapter: ch-03-01
+  chapter_title: Logo
+- name: negative primary、positive secondary、black-white tertiary、surface-based application。
+  chapter: ch-03-02
+  chapter_title: Horizontal Logotype
+- name: 藍色作為主品牌背景，紅/淺藍作輔助，銀/金作特殊出版與單色物件。
+  chapter: ch-04-03
+  chapter_title: Colour
+- name: 行政文件使用固定 corporate address、legal text、contact hierarchy；PowerPoint 使用一致頁型傳達品牌訊息。
+  chapter: ch-05
+  chapter_title: Primary Communication Materials
+- name: 藍底提升對比，標題/副標列數限制，copy slide 限制段落數。
+  chapter: ch-05-02
+  chapter_title: PowerPoint Template
+- name: grid as large brand field、slogan + logotype pairing、landmark motif for city-facing context。
+  chapter: ch-06-02
+  chapter_title: Vehicle, Planner and Ads
+- name: 在最後頁標示作者或顧問機構。
+  chapter: ch-07
+  chapter_title: Author
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：任何 ZAG branded material 應至少遵守 logo/logotype/colour/typography 的基本元素；若創作新的應用，仍須維持 triangle/grid application
+    logic。
+  chapter: ch-01
+  chapter_title: Intro
+- module: Visual Identity
+  criterion: AI 可檢查：positive logo 最小高 5 mm；negative logo 最小高 6 mm；horizontal logotype positive 一般最小高 6 mm、特例 4 mm；horizontal
+    logotype negative 一般最小高 7 mm、特例 5 mm；clear space 以 logo 抽出的 triangle dimension 決定；過於異質而導致不可讀的背景不得放置 logo/logotype。
+  chapter: ch-03
+  chapter_title: Logo and Logotype Variations
+- module: Visual Identity
+  criterion: AI 可檢查：設計允許時應優先使用 white on blue negative logo；只有 reproduction 技術不允許 primary 時才用 positive；彩色 reproduction 不可能或單色工藝如
+    engraving/stamp 才用 black-white。
+  chapter: ch-03-01
+  chapter_title: Logo
+- module: Visual Identity
+  criterion: AI 可檢查：logotype clear space 應與尺寸成比例；discontinuous surface 若使 positive/negative 不可讀，應避免放置；特例小尺寸只在 design 或 reproduction
+    format 允許時使用。
+  chapter: ch-03-02
+  chapter_title: Horizontal Logotype
+- module: Typography System
+  criterion: AI 可檢查：一般識別應使用 Typonine Sans Pro；只有非拉丁/不同字母系統或插畫性文字才允許 secondary typography；標語應維持「Choose your path」核心句型；ZAG Blue
+    應為 Pantone 2758 C、RGB 33/44/87、CMYK 100/88/35/30。
+  chapter: ch-04
+  chapter_title: Typography, Slogan and Colour
+- module: ''
+  criterion: AI 可檢查：ZAG Red 應為 Pantone 485 C、RGB 226/33/28、CMYK 2/95/94/1；ZAG Light Blue 應為 Pantone 292 C、RGB 89/178/231、CMYK
+    63/14/0/0；Silver/Gold 不應作為常規品牌主色。
+  chapter: ch-04-03
+  chapter_title: Colour
+- module: ''
+  criterion: AI 可檢查：memo 尺寸為 A4；American envelope 為 230 x 110 mm；B5 envelope 為 250 x 176 mm；B4 envelope 為 353 x 250 mm；business
+    card 為 90 x 50 mm；名片紙材 A 可為 300-350g/m² blue uncoated paper with white printing。
+  chapter: ch-05
+  chapter_title: Primary Communication Materials
+- module: ''
+  criterion: AI 可檢查：gift bag 可用 silver 增加高級感；protective vest 應用 reflective colour 以確保可見度；protective clothes/t-shirt 若可行應套用
+    grid，否則使用指定位置的 logotype/logo；ads 的 grid 應至少填滿 1/4 page height。
+  chapter: ch-06
+  chapter_title: Secondary Communication Materials
+- module: ''
+  criterion: AI 可檢查：廣告若格式允許，grid 應占至少 25% page height；窄版面可依 photography 與 text quantity 調整；vehicle grid polarity 應依車身顏色選擇；車體若常在城市中使用，可採
+    St. Mark’s Church elements 增強城市關聯。
+  chapter: ch-06-02
+  chapter_title: Vehicle, Planner and Ads
+chapters:
+- id: ch-01
+  title: Intro
+  modules:
+  - Knowledge Architecture
+  - Governance
+- id: ch-02
+  title: Concept
+  modules:
+  - Visual Language
+- id: ch-03
+  title: Logo and Logotype Variations
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+- id: ch-03-01
+  title: Logo
+  modules:
+  - Governance
+- id: ch-03-02
+  title: Horizontal Logotype
+  modules:
+  - Layout System
+- id: ch-04
+  title: Typography, Slogan and Colour
+  modules:
+  - Typography System
+  - Color System
+  - Messaging
+- id: ch-04-03
+  title: Colour
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-05
+  title: Primary Communication Materials
+  modules:
+  - AI-Checkable Rules
+  - Operations
+- id: ch-05-02
+  title: PowerPoint Template
+  modules:
+  - Information Design
+- id: ch-06
+  title: Secondary Communication Materials
+  modules:
+  - AI-Checkable Rules
+- id: ch-07
+  title: Author
+  modules:
+  - Operations

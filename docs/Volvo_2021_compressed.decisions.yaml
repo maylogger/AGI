@@ -1,0 +1,118 @@
+# L3 決策卡 sidecar — Volvo Experience and Identity Guideline
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Volvo_2021_compressed
+decisions:
+  - id: dp-one-brand-one-voice-governance
+    title: 以「one brand, one voice」治理目標收束跨產品跨夥伴的一致性
+    problem:
+      statement: 跨地區、跨產品、跨商戶的大型品牌，若缺乏統一治理目標，每個團隊各自詮釋會讓品牌在不同媒介中碎裂。
+      signals: [consistency_across_partners, ecosystem_consistency, multi_market, brand_fragmentation_risk]
+    solution:
+      module: Governance
+      move: 用 core ≈20% / explore ≈80% 模型把品牌拆成 non-negotiable core 與 local activation，創意只能在不破壞核心的前提下發生
+      layer: governance
+    reason:
+      - 創意被允許，但必須在不破壞全球品牌一致性的前提下發生
+      - 強品牌從不妥協 core，但在 customer context 中探索執行
+      - 多市場品牌 guideline 可明確區分 centrally governed identity 與 locally decided activation
+    applicable_when:
+      industries: [finance, tech_software, new_energy_mobility]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [consistency_across_partners, multi_market]
+      archetypes: [corporate_toolkit, brand_experience_guide, multi_brand_architecture]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Governance]
+    anti_patterns:
+      - 只給視覺風格而無交付前審核點，讓使用者憑審美直覺操作
+    evidence:
+      - brand_id: Volvo_2021_compressed
+        chapter: ch-01-01
+        excerpt: "Core ≈20% / Explore ≈80% brand management model：non-negotiable core 與 local activation explore 區分品牌治理與情境執行。"
+    status: extracted
+
+  - id: dp-trademark-permission-flow
+    title: 用授權閘門治理第三方商標使用，先處理混淆與背書風險
+    problem:
+      statement: 平台品牌被大量第三方使用商標與資產，若無授權流程，會造成商標混淆與誤導性背書風險。
+      signals: [trademark_protection, partner_governance, endorsement_risk, third_party_usage]
+    solution:
+      module: Legal and Trademark
+      move: 用 9 條 golden rules 把命名、供應商使用、merchandise、signage 與侵權回報流程化，並要求書面同意與官方來源
+      layer: governance
+    reason:
+      - 商標保護不只是法律，而是讓客戶更容易辨識可靠的 offer
+      - 商標章節應同時處理命名、第三方使用、商品、標牌與侵權流程
+      - permission section 將品牌治理流程化，降低設計師自行判斷法律風險
+    applicable_when:
+      industries: [tech_software, new_energy_mobility]
+      brand_types: [platform_ecosystem]
+      conditions: [third_party_usage, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Legal and Trademark]
+      enables: [Governance]
+    anti_patterns:
+      - 放任第三方自行判斷法律與背書風險
+    evidence:
+      - brand_id: Volvo_2021_compressed
+        chapter: ch-01-02
+        excerpt: "9 條 golden rules：不得自造 Volvo logotype；供應商不得未經書面同意在行銷中提及 Volvo；merchandise 與 signage 必須用官方/核准來源。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以 X-based spacing 定義 clear zone（Volvo 3X、Volvo Penta 4X），並訂各標誌最小 mm/px
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    evidence:
+      - brand_id: Volvo_2021_compressed
+        chapter: ch-02
+        excerpt: "Volvo Spread Word Mark 最小 20mm/42px、clear zone 3X；Volvo Penta Spread Word Mark 最小 45mm/94px、clear zone 4X，以 X-based spacing 控制留白。"
+    status: extracted
+
+  - id: dp-custom-typeface-as-identity-asset
+    title: 用專屬字體當識別資產，擺脫系統預設字並統一語氣
+    problem:
+      statement: 仰賴系統預設字體的品牌缺乏獨特性與一致語氣，跨媒介又常因字體缺失而失控；但又需要在無法安裝字型的環境保有 fallback。
+      signals: [identity_distinctiveness, system_consistency, brand_recognition, multi_media]
+    solution:
+      module: Typography System
+      move: 建立專屬字體並分工（Volvo Novum 負責可讀內文、Volvo Broad 負責品牌衝擊 statement），並提供多語 equivalents fallback
+      layer: visual_core
+    reason:
+      - 專屬字體系統讓品牌不再依賴 default fonts，並讓文字有一致語氣
+      - 品牌字體不是全場使用同一強符號，而是依內容層級分配角色
+      - 字體系統可用「日常可讀字體 + 品牌衝擊字體」分工，並以 fallback/equivalent 支援多語市場
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, new_energy_mobility]
+      brand_types: [category_creator, heritage_legacy, challenger]
+      conditions: [identity_distinctiveness, multi_media]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Typography System]
+      enables: [Design Tokens]
+    anti_patterns:
+      - 把品牌衝擊字體用於 body copy 或長標題
+    evidence:
+      - brand_id: Volvo_2021_compressed
+        chapter: ch-03
+        excerpt: "Volvo Novum 負責大多數文字、Volvo Broad 用於短且強的 statement；Volvo Broad 不得用於 body copy，並提供語言替代字體支援多語市場。"
+    status: extracted

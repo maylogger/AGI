@@ -1,0 +1,114 @@
+title: 'ARTE Charte Graphique / Grafikrichtlinien Habillage/Senderdesign 2008'
+source: 'sources/arte_2008_compressed.pdf'
+date: '2008'
+language: 'fr/de'
+summary: 'ARTE 2008 法德雙語視覺識別規範，從開放、尊重、溫暖與好奇的品牌哲學，建立 logo、-4° 角度、cartouche/Podest、色彩、字體、版面、claim、範例、禁用與伺服器資產治理。'
+chapters:
+  - id: 'ch-01'
+    title: 'Philosophie'
+    level: 1
+    order: 1
+    pages: '4-5'
+    summary: '以開放、尊重、溫暖與好奇定義 ARTE 設計態度，並導入 logo、-4° 角度、彩色 cartouche、強勢字體與傾斜水平帶三大構成。'
+    children: []
+  - id: 'ch-02'
+    title: 'Composition Graphique Generale / Grafische Grundlagen'
+    level: 1
+    order: 2
+    pages: '6-9'
+    summary: '解釋 cartouche、typography 與 -4° horizontal band 共同形成 ARTE 基礎設計語法。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Three Fundamental Elements'
+        level: 2
+        order: 1
+        pages: '6-9'
+        summary: '三大元素分別提供視覺焦點、強勢訊息與圖文空間結構。'
+  - id: 'ch-03'
+    title: 'Le Logo ARTE / Das ARTE-Logo'
+    level: 1
+    order: 3
+    pages: '10-13'
+    summary: '規範 logo 不可重繪、僅可等比縮放、使用 orange/white/50% black，並在設計情境中採 -4° 傾斜。'
+    children: []
+  - id: 'ch-04'
+    title: 'Marque ARTE - Marques Derivees / Sublogos'
+    level: 1
+    order: 4
+    pages: '14-19'
+    summary: '規範 ARTE 衍生品牌、節目標誌與 sublogo 的組合、字體、色彩與例外。'
+    children: []
+  - id: 'ch-05'
+    title: 'Cartouche / ARTE-Logo-Podest'
+    level: 1
+    order: 5
+    pages: '20-26'
+    summary: '定義 cartouche 作為 logo 載體的四種透視、-4° 傾斜、位置、主色與延伸色，以及不能使用漸層或單色印刷時的例外。'
+    children:
+      - id: 'ch-05-01'
+        title: 'Position and Colour Palettes'
+        level: 2
+        order: 1
+        pages: '21-25'
+        summary: '以 logo 本身作為水平與垂直間距單位，並提供 Tequila Sunrise、Purple、Azure、Emerald、Lime、Sunflower 等漸層。'
+      - id: 'ch-05-02'
+        title: 'Special Cases'
+        level: 2
+        order: 2
+        pages: '26'
+        summary: '在無法穩定印漸層、單色印刷或無版面邊界的場合，cartouche 可省略並改用 logo。'
+  - id: 'ch-06'
+    title: 'Typographie'
+    level: 1
+    order: 6
+    pages: '27-32'
+    summary: '規範 Helvetica Neue/Arial、標題與副標的 -4°、右對齊、大小寫與色彩，以及正文排版可讀性。'
+    children: []
+  - id: 'ch-07'
+    title: 'Mise en Page / Layout'
+    level: 1
+    order: 7
+    pages: '33-37'
+    summary: '說明 cartouche、typography 與 -4° band 如何共同建立圖像、文字與留白比例。'
+    children: []
+  - id: 'ch-08'
+    title: 'Cartouche - Utilisations / Podest Anwendungen'
+    level: 1
+    order: 8
+    pages: '38-44'
+    summary: '規範 cartouche 可作為 logo 與資訊載體、純資訊載體、自由圖形元素或企業文具背景，但同頁不可重複或混用衝突。'
+    children: []
+  - id: 'ch-09'
+    title: 'La Signature / Der Claim'
+    level: 1
+    order: 9
+    pages: '45-48'
+    summary: '定義 claim 可在 cartouche 中或右側呈現，使用大寫與 ARTE orange，並依背景複雜度調整 -4° band。'
+    children: []
+  - id: 'ch-10'
+    title: 'Exemples / Beispiele'
+    level: 1
+    order: 10
+    pages: '49-64'
+    summary: '用 institutional brochures、press dossiers 與 press invitations 示範三大元素在實際版面中的組合。'
+    children: []
+  - id: 'ch-11'
+    title: 'A Eviter / Don’ts'
+    level: 1
+    order: 11
+    pages: '65-67'
+    summary: '列出 ARTE logo 與 cartouche 的錯誤用法，如裁切、改色、變形、透明、比例錯誤、非 -4°、同頁重複等。'
+    children:
+      - id: 'ch-11-01'
+        title: 'Logo and Cartouche Don’ts'
+        level: 2
+        order: 1
+        pages: '65-67'
+        summary: '把核心元素禁用情境集中成可檢查錯誤清單。'
+  - id: 'ch-12'
+    title: 'Elements sur Serveur / Elemente auf Server'
+    level: 1
+    order: 12
+    pages: '68-73'
+    summary: '列出伺服器上提供的 cartouche asset 檔名、四種透視、色彩版本與 Illustrator 漸層製作注意事項。'
+    children: []

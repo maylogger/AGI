@@ -1,0 +1,47 @@
+title: 'PUCP Manual de marca medios impresos'
+source: 'sources/PUCP_Manual.pdf'
+language: 'es'
+summary: '這份印刷品牌手冊以問答式與範例式結構，治理 PUCP 的 imagotipo、視覺領域、版面系統、品牌架構、文具與術語。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introducción al manual'
+    level: 1
+    order: 1
+    pages: '2-3'
+    summary: '說明手冊用於協助社群製作印刷 institucional materials，並提供主目錄。'
+  - id: 'ch-02'
+    title: 'Logotipo'
+    level: 1
+    order: 2
+    pages: '4-17'
+    summary: '定義 imagotipo、構成、留白、垂直版本、最小尺寸、黑白/彩色/材質/照片應用與禁止使用。'
+  - id: 'ch-03'
+    title: 'Territorio visual'
+    level: 1
+    order: 3
+    pages: '18-54'
+    summary: '定義字體、色彩、攝影風格與圖形元素，構成 PUCP 的視覺語域。'
+  - id: 'ch-04'
+    title: 'Lineamientos del sistema'
+    level: 1
+    order: 4
+    pages: '55-76'
+    summary: '以 grilla、格式比例、logo 尺寸、layout 與印刷應用建立版面系統。'
+  - id: 'ch-05'
+    title: 'Arquitectura de marca'
+    level: 1
+    order: 5
+    pages: '77-117'
+    summary: '以四個層級、cerramientos、merchandising 與 afiches 管理大型教育機構的品牌層級。'
+  - id: 'ch-06'
+    title: 'Papelería'
+    level: 1
+    order: 6
+    pages: '118-129'
+    summary: '規範名片、信紙、信封與 manila envelope 的版面與字體規格。'
+  - id: 'ch-07'
+    title: 'Glosario'
+    level: 1
+    order: 7
+    pages: '130-132'
+    summary: '定義 diagramación、retícula、tipografía、imagotipo 等核心術語。'

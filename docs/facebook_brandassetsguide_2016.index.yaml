@@ -1,0 +1,63 @@
+title: 'Facebook Brand Assets Guide'
+source: 'sources/facebook_brandassetsguide_2016.pdf'
+version: '1.1'
+date: '2016-06'
+language: 'en'
+summary: '這份 2016 版 Facebook Brand Assets Guide 規範一般商標使用、merchandising、permission、logos/badges、Like Button Icon、Thumb Icon、Reactions、Screens 與 FAQs。'
+chapters:
+  - id: 'ch-01'
+    title: 'Welcome'
+    level: 1
+    order: 1
+    pages: '3-5'
+    summary: '說明 Facebook mission、指南適用對象與品牌資產規則的重要性。'
+  - id: 'ch-02'
+    title: 'General Guidelines'
+    level: 1
+    order: 2
+    pages: '6-9'
+    summary: '定義一般 do/don’t、Facebook 文案提及、merchandising 禁止與 TV/film permission request。'
+    children:
+      - id: 'ch-02-01'
+        title: 'General Do’s / Don’ts and talking about Facebook'
+        level: 2
+        order: 1
+        pages: '7-8'
+        summary: '要求只使用 Brand Resource Center 資產、保留空間、維持比例，並禁止商標混淆、背書暗示與動詞化。'
+      - id: 'ch-02-02'
+        title: 'Merchandizing and requesting permission'
+        level: 2
+        order: 2
+        pages: '8-9'
+        summary: '明確禁止 merchandise 使用，並要求 TV/film 使用需透過 brand permission request。'
+  - id: 'ch-03'
+    title: 'Brand Assets'
+    level: 1
+    order: 3
+    pages: '10-34'
+    summary: '規範 f Logo、Like Button Icon、Thumb Icon、Find Us On Facebook Badge、Reactions 與 Screens。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Logos and Badges'
+        level: 2
+        order: 1
+        pages: '11-22'
+        summary: '定義 f logo、Like Button Icon、Thumb Icon、Find Us On Facebook Badge 的使用情境、clear space、比例、顏色與禁止事項。'
+      - id: 'ch-03-02'
+        title: 'Reactions'
+        level: 2
+        order: 2
+        pages: '23-28'
+        summary: '規範 Reactions 作為完整 collection 與 Facebook UI context 的使用方式。'
+      - id: 'ch-03-03'
+        title: 'Screens'
+        level: 2
+        order: 3
+        pages: '29-34'
+        summary: '規範 Facebook product screen templates 的 device framing、cropping、font 與自訂內容權利。'
+  - id: 'ch-04'
+    title: 'FAQs'
+    level: 1
+    order: 4
+    pages: '35-36'
+    summary: '用問答補充商標保護、permission、merchandise、資產來源、verb usage、TV/film 與 online ads。'

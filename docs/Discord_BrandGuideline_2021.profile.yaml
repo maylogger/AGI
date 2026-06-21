@@ -1,0 +1,172 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Discord_BrandGuideline_2021
+index_ref: docs/Discord_BrandGuideline_2021.index.yaml
+note_ref: docs/Discord_BrandGuideline_2021.note.md
+archetype: product_design_system
+industry: tech_software
+modules:
+- Product Language
+- Brand Strategy
+- Voice and Tone
+- Legal and Trademark
+- Layout System
+- Visual Identity
+- Motion Identity
+- Color System
+- Design Tokens
+- Accessibility
+- Typography System
+- Content Design
+- Examples
+- UI Components
+depth:
+  strategy: medium
+  visual: high
+  governance: low
+  top_level_chapter_count: 5
+  section_count: 3
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-01-01
+  title: Tone of Voice
+  order: 1
+  level: 2
+- id: ch-02
+  title: Logo, Symbol, Wordmark and Tagline
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo System
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Placement and Usage
+  order: 2
+  level: 2
+- id: ch-03
+  title: Brand Colors
+  order: 3
+  level: 1
+- id: ch-04
+  title: Typography
+  order: 4
+  level: 1
+- id: ch-05
+  title: Brand in Use
+  order: 5
+  level: 1
+frameworks:
+- name: product-inspired design system：profile circles → community；user status → focus state；conversation → copy system
+  chapter: ch-01
+  chapter_title: Introduction
+- name: preferred option → fallback option → monochrome exception；placement by format：portrait、landscape、wide、animation
+  chapter: ch-02
+  chapter_title: Logo, Symbol, Wordmark and Tagline
+- name: format → position → lockup orientation → exception
+  chapter: ch-02-02
+  chapter_title: Placement and Usage
+- name: core equity color + product status colors + user-content accents + contrast rules
+  chapter: ch-03
+  chapter_title: Brand Colors
+- name: headline intensity scale：Ultra、Primary、Secondary；paragraph legibility rule：135% line-height、50-75 characters
+  chapter: ch-04
+  chapter_title: Typography
+- name: message source → layout type → brand asset combination
+  chapter: ch-05
+  chapter_title: Brand in Use
+patterns:
+- name: 適合社群產品的 identity pattern：把產品 UI 元件抽象成品牌溝通圖形。
+  chapter: ch-01
+  chapter_title: Introduction
+- name: brandmark
+  chapter: ch-02
+  chapter_title: Logo, Symbol, Wordmark and Tagline
+- name: small logo
+  chapter: ch-02
+  chapter_title: Logo, Symbol, Wordmark and Tagline
+- name: avatar-like symbol
+  chapter: ch-02
+  chapter_title: Logo, Symbol, Wordmark and Tagline
+- name: tagline lockup
+  chapter: ch-02
+  chapter_title: Logo, Symbol, Wordmark and Tagline
+- name: 是 digital-first 品牌常見架構
+  chapter: ch-02
+  chapter_title: Logo, Symbol, Wordmark and Tagline
+- name: 以畫幅比例驅動識別 placement，可用於自動版面生成。
+  chapter: ch-02-02
+  chapter_title: Placement and Usage
+- name: 可複用為 product-led color system：品牌主色負責辨識，產品狀態色負責語義。
+  chapter: ch-03
+  chapter_title: Brand Colors
+- name: 微觀排版規則，例如手動調整逗號 baseline，顯示品牌對字形品質的治理深度。
+  chapter: ch-04
+  chapter_title: Typography
+- name: 可複用為品牌手冊最後的 pattern library，讓抽象規範轉為可模仿範例。
+  chapter: ch-05
+  chapter_title: Brand in Use
+rules_ai_checkable:
+- module: Visual Identity
+  criterion: 小尺寸低於 80px x 15px 使用 small logo；不可修改、扭曲或重畫 logo；partner logos 需以 1px white stroke 分隔；tagline 預設分成兩行。
+  chapter: ch-02
+  chapter_title: Logo, Symbol, Wordmark and Tagline
+- module: ''
+  criterion: 動畫與 masked composition 應置中組合 tagline + logo；extra-wide tagline 可單行；不可 stack logo elements 或使用非核准配色。
+  chapter: ch-02-02
+  chapter_title: Placement and Usage
+- module: Color System
+  criterion: Blurple HEX `5865F2`；避免 White+Yellow、Fuchsia+Red、Blurple+Fuchsia、Fuchsia+Green、Yellow+Green；animated communication
+    不得混用多套色彩方案。
+  chapter: ch-03
+  chapter_title: Brand Colors
+- module: Typography System
+  criterion: headline 一律大寫；paragraph line-height 135%；段落每行約 50-75 字元；不可 warp text、混合句中字體樣式或在 static layout 使用 motion distortion。
+  chapter: ch-04
+  chapter_title: Typography
+- module: Brand Strategy
+  criterion: brand lines 應能承載 Imagine a Place；user quotes 應包含使用者標籤或 avatar 情境；chat dialog 應保持產品感且不可扭曲 UI 語義。
+  chapter: ch-05
+  chapter_title: Brand in Use
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - Product Language
+  - Brand Strategy
+  - Voice and Tone
+- id: ch-02
+  title: Logo, Symbol, Wordmark and Tagline
+  modules:
+  - Legal and Trademark
+  - Layout System
+  - Visual Identity
+- id: ch-02-02
+  title: Placement and Usage
+  modules:
+  - Layout System
+  - Motion Identity
+- id: ch-03
+  title: Brand Colors
+  modules:
+  - Color System
+  - Design Tokens
+  - Accessibility
+- id: ch-04
+  title: Typography
+  modules:
+  - Typography System
+  - Motion Identity
+  - Content Design
+- id: ch-05
+  title: Brand in Use
+  modules:
+  - Examples
+  - Product Language
+  - UI Components

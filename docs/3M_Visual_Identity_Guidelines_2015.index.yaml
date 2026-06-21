@@ -1,0 +1,172 @@
+title: "3M Visual Identity Guidelines"
+source: "sources/3M_Visual_Identity_Guidelines_2015.pdf"
+date: "2015-03-12"
+language: "en"
+summary: "3M 視覺識別規範為品牌平台 3M Science. Applied to Life. 建立 Trifecta 視覺系統，涵蓋品牌策略、lockup 與 logo、色彩、字體、攝影、網格、三角形、mesh、icons、應用組合、檔名與色彩 appendix。"
+chapters:
+  - id: "ch-01"
+    title: "Our Brand"
+    level: 1
+    order: 1
+    pages: "4-9"
+    summary: "定義 3M 品牌不只是 logo，而是公司願景、策略、價值、行動、平台、人格、語氣與視覺語言共同構成的溝通系統。"
+    children:
+      - id: "ch-01-01"
+        title: "The Brand Is Who We Are"
+        level: 2
+        order: 1
+        pages: "5-6"
+        summary: "說明品牌由 Vision、Strategies、Values、Actions 構成，包含 3M 的企業願景、策略重點、價值與行為準則。"
+      - id: "ch-01-02"
+        title: "Personality"
+        level: 2
+        order: 2
+        pages: "7"
+        summary: "以 Curious、Sharing、Free Thinking、Caring、Optimistic 定義 3M 品牌人格。"
+      - id: "ch-01-03"
+        title: "Brand Voice"
+        level: 2
+        order: 3
+        pages: "8"
+        summary: "將語氣定義為 Inspiring Inventor，要求從技術術語轉向個人且可親近的語言，從數據轉向有人性利益的故事。"
+      - id: "ch-01-04"
+        title: "Brand Platform and Headlines"
+        level: 2
+        order: 4
+        pages: "9"
+        summary: "定義 3M Science. Applied to Life. 作為長期品牌平台與 tagline，並要求 headline 連結科學特性與人的生活利益。"
+  - id: "ch-02"
+    title: "Our New Visual Identity"
+    level: 1
+    order: 2
+    pages: "10-36"
+    summary: "介紹名為 Trifecta 的新視覺系統，將 3 的力量、三角形、mesh、色彩、字體、攝影、網格與 iconography 組成靈活但一致的品牌工具箱。"
+    children:
+      - id: "ch-02-01"
+        title: "System Overview"
+        level: 2
+        order: 1
+        pages: "11-12"
+        summary: "說明 Trifecta 以 power of 3、triangle、mesh 與 3M Science. Applied to Life. 連結品牌平台，並把元素視為工具而非僵硬系統。"
+      - id: "ch-02-02"
+        title: "Lockup and Logo"
+        level: 2
+        order: 2
+        pages: "13-18"
+        summary: "規範 3M lockup、logo、tagline、TM、clearspace、minimum size、色彩、位置與禁止用法。"
+      - id: "ch-02-03"
+        title: "Color"
+        level: 2
+        order: 3
+        pages: "19-21"
+        summary: "定義 18 組相鄰三色 color sets、三色漸層、CMYK/RGB/HEX/PMS 色值，以及不得用軟體自動轉換色彩的規則。"
+      - id: "ch-02-04"
+        title: "Typography"
+        level: 2
+        order: 4
+        pages: "22-25"
+        summary: "定義 3M Circular 字體、字重、fallback、headline 與 body copy 的 leading、kerning、callout、黑白文字與禁止用法。"
+      - id: "ch-02-05"
+        title: "Photography"
+        level: 2
+        order: 5
+        pages: "26-32"
+        summary: "將品牌攝影分為 Product、People、Place、Epic 四類，並規範自然光、真實、圖形構圖、清楚焦點與精準感。"
+      - id: "ch-02-06"
+        title: "Grids"
+        level: 2
+        order: 6
+        pages: "33"
+        summary: "以 3x3 grid 作為所有應用基礎，必要時可延展為 6x6、9x9 或 12x12。"
+      - id: "ch-02-07"
+        title: "Shape"
+        level: 2
+        order: 7
+        pages: "34"
+        summary: "定義 triangle 作為核心識別形狀，可使用 single triangle、three triangles 或 triangle as mesh pattern。"
+      - id: "ch-02-08"
+        title: "Mesh"
+        level: 2
+        order: 8
+        pages: "35"
+        summary: "定義 3M mesh 為由三角形構成的流動網絡，象徵 3M 科學工作的微觀結構，可作為紋理、背景與數位體驗靈感。"
+      - id: "ch-02-09"
+        title: "Icons"
+        level: 2
+        order: 9
+        pages: "36"
+        summary: "說明 icon library 正在建立，暫時提供由新識別與基本幾何形狀啟發的 icon 範例，新增 icon 需聯絡 Brand Design team。"
+  - id: "ch-03"
+    title: "Putting It All Together"
+    level: 1
+    order: 3
+    pages: "37-62"
+    summary: "將網格、3M Circular、三角形、mesh、攝影、漸層、檔名與最佳範例整合為可執行的版面組合規則。"
+    children:
+      - id: "ch-03-01"
+        title: "Simple System Options"
+        level: 2
+        order: 1
+        pages: "39"
+        summary: "要求高階溝通先套用 grid、使用 3M Circular，再從 single triangle、three triangles 或 mesh 中選擇，並每份文件只用一組 color set 或 greyscale。"
+      - id: "ch-03-02"
+        title: "Grid-Based Layout Rules"
+        level: 2
+        order: 2
+        pages: "40-44"
+        summary: "規範 logo size、margins、print/digital scaling、typography placement、column grids、gutters 與三種以 3 為倍數的排版層級。"
+      - id: "ch-03-03"
+        title: "Triangle Construction and Use"
+        level: 2
+        order: 3
+        pages: "45-53"
+        summary: "規範 single triangle、three triangles、type over triangle、漸層方向、photography 組合與禁止建立新變體。"
+      - id: "ch-03-04"
+        title: "Mesh Assets and Rules"
+        level: 2
+        order: 4
+        pages: "54-56"
+        summary: "定義六種 mesh formats、可旋轉或鏡射、可放大 5-10% 出血，以及不得改色、拉伸、重建或套用錯誤比例。"
+      - id: "ch-03-05"
+        title: "Best-in-Class Examples"
+        level: 2
+        order: 5
+        pages: "57-60"
+        summary: "展示三角形、mesh、兩色印刷、digital UX、signage 與 brochure spreads 如何在不同媒介中一致使用。"
+      - id: "ch-03-06"
+        title: "Filenaming and Source Files"
+        level: 2
+        order: 6
+        pages: "61-62"
+        summary: "說明 logo、lockup、mesh、ASE 色票與 gradient source files 的檔名結構、資產類型、格式、色彩空間與檔案類型。"
+  - id: "ch-04"
+    title: "Contact"
+    level: 1
+    order: 4
+    pages: "63"
+    summary: "提供 brandcentral@mmm.com 作為問題、核准與 guideline feedback 的聯絡入口。"
+  - id: "ch-05"
+    title: "Color Appendix"
+    level: 1
+    order: 5
+    pages: "64-84"
+    summary: "提供 18 組 color sets 與 greyscale options 的詳細色值、三色漸層、兩色 mesh gradient、媒介可用性與不得修改或重建 source files 的規則。"
+    children:
+      - id: "ch-05-01"
+        title: "Color Sets and Greyscale Options"
+        level: 2
+        order: 1
+        pages: "65"
+        summary: "總覽所有三色 color sets 與 greyscale mesh files，重申每次只使用一組 color set。"
+      - id: "ch-05-02"
+        title: "Individual Color Set Specifications"
+        level: 2
+        order: 2
+        pages: "66-83"
+        summary: "逐組列出色彩 token、三色 triangle gradient、兩色 mesh gradient，以及 print/screen 可用性。"
+      - id: "ch-05-03"
+        title: "Greyscale Color Set"
+        level: 2
+        order: 3
+        pages: "84"
+        summary: "定義 Light Grey、Medium Grey、Dark Grey、Black、White 與 Greyscale Light/Medium/Dark mesh。"

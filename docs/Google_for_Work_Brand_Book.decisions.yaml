@@ -1,0 +1,83 @@
+# L3 決策卡 sidecar — Google for Work Partner Brand Book
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Google_for_Work_Brand_Book
+decisions:
+  - id: dp-platform-before-visual-rules
+    title: 先定義企業策略與語氣，再建立視覺識別工具箱
+    problem:
+      statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
+      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先建立 Who We Are → How We Communicate → Brand Platform，再進入 Visual System
+      layer: strategy
+    reason:
+      - 視覺規則需有可回推的語義來源
+      - 品牌不是單一標誌，而是組織如何行動與如何溝通
+      - B2B 品牌可透過 consumer-like human voice 抵消企業軟體冷感
+    applicable_when:
+      industries: [industrial_materials_science, tech_software]
+      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      conditions: [new_identity, strategy_refresh]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+    anti_patterns:
+      - guideline 從空白直接列章節、先寫 Logo 規格
+    evidence:
+      - brand_id: Google_for_Work_Brand_Book
+        chapter: ch-01
+        excerpt: "先把「工作正在轉變」定義成品牌機會，用願景 → 受眾心態 → 品牌架構 → voice/tone 的策略漏斗，讓 Google for Work 的視覺規則可追溯到 end-user empowerment。"
+    status: extracted
+
+  - id: dp-personality-words-as-evaluation-criteria
+    title: 把人格詞做成創意評估準則
+    problem:
+      statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
+      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+    solution:
+      module: Brand Strategy
+      move: 用人格詞集（Curious/Sharing/Free Thinking/Caring/Optimistic）當每個產出的檢查軸
+      layer: strategy
+    reason:
+      - 人格詞應能成為產出評估標準，而不是僅作品牌牆口號
+      - voice attribute matrix：desired quality 對應 prohibited drift
+      - 正反語氣矩陣可作為 AI 文案 reviewer 的 rule set
+    applicable_when:
+      industries: [industrial_materials_science, nonprofit_social, tech_software]
+      brand_types: [challenger, category_creator, mission_driven]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Voice and Tone, Visual Language, Content Design]
+    evidence:
+      - brand_id: Google_for_Work_Brand_Book
+        chapter: ch-01-03
+        excerpt: "用 Our voice is / Our voice isn't 矩陣定義 voice 是 expert、fun、intelligent、casual、charismatic，不是 egotistical、cheesy、pretentious、IT nerd-speak；正反語氣矩陣可作為文案審核的 rule set。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗與照片複雜度建立對比決策樹，限定白／深色兩種標誌
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - Logo 顏色規範應基於對比與背景風險，而非只列色票
+    applicable_when:
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: Google_for_Work_Brand_Book
+        chapter: ch-02-01
+        excerpt: "logo variant selection 以背景決定：full color preferred，photo/light 背景用 54% black，medium/dark 背景用 reverse，以對比而非自由配色選擇標誌版本。"
+    status: extracted

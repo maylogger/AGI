@@ -1,0 +1,239 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Sterling_Brand_Guidelines
+index_ref: docs/Sterling_Brand_Guidelines.index.yaml
+note_ref: docs/Sterling_Brand_Guidelines.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Brand Strategy
+- Knowledge Architecture
+- AI-Checkable Rules
+- Visual Identity
+- Governance
+- Examples
+- Compliance
+- Layout System
+- Typography System
+- Color System
+- Design Tokens
+- Photography System
+- Visual Language
+- Content Design
+- Operations
+depth:
+  strategy: medium
+  visual: high
+  governance: high
+  top_level_chapter_count: 6
+  section_count: 5
+chapter_sequence:
+- id: ch-01
+  title: Introduction and New Identity
+  order: 1
+  level: 1
+- id: ch-02
+  title: Visual Identity
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Logo Forms and Colour Versions
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Clear Space, Minimum Size and Incorrect Use
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Co-Branding
+  order: 3
+  level: 2
+- id: ch-03
+  title: Colour and Typography
+  order: 3
+  level: 1
+- id: ch-04
+  title: Photography and Brand Elements
+  order: 4
+  level: 1
+- id: ch-04-01
+  title: Photography Directions
+  order: 1
+  level: 2
+- id: ch-04-02
+  title: File Formats and Sterling Metros
+  order: 2
+  level: 2
+- id: ch-05
+  title: Applications
+  order: 5
+  level: 1
+- id: ch-06
+  title: Support
+  order: 6
+  level: 1
+frameworks:
+- name: identity-change narrative：heritage retained、symbol simplified、future positioning、stakeholder impact
+  chapter: ch-01
+  chapter_title: Introduction and New Identity
+- name: logo governance stack：approved forms、approved colour modes、spacing metrics、minimum size、misuse blacklist、partner zone
+  chapter: ch-02
+  chapter_title: Visual Identity
+- name: contextual variant selection
+  chapter: ch-02-01
+  chapter_title: Logo Forms and Colour Versions
+- name: measurable identity QA
+  chapter: ch-02-02
+  chapter_title: Clear Space, Minimum Size and Incorrect Use
+- name: partner-logo containment model
+  chapter: ch-02-03
+  chapter_title: Co-Branding
+- name: media-specific typography framework：logo typeface、advertising typeface、email-safe typeface
+  chapter: ch-03
+  chapter_title: Colour and Typography
+- name: audience-segment photography matrix
+  chapter: ch-04
+  chapter_title: Photography and Brand Elements
+- name: segment-based art direction
+  chapter: ch-04-01
+  chapter_title: Photography Directions
+- name: asset-format decision tree
+  chapter: ch-04-02
+  chapter_title: File Formats and Sterling Metros
+- name: touchpoint application library
+  chapter: ch-05
+  chapter_title: Applications
+- name: support escalation path
+  chapter: ch-06
+  chapter_title: Support
+patterns:
+- name: 成長、活力、使命
+  chapter: ch-01
+  chapter_title: Introduction and New Identity
+- name: 該怎麼做
+  chapter: ch-02
+  chapter_title: Visual Identity
+- name: 哪些行為破壞品牌
+  chapter: ch-02
+  chapter_title: Visual Identity
+- name: primary-horizontal + constrained-stacked + monochrome fallback。
+  chapter: ch-02-01
+  chapter_title: Logo Forms and Colour Versions
+- name: 用內部元素作比例尺，用反例建立檢查清單。
+  chapter: ch-02-02
+  chapter_title: Clear Space, Minimum Size and Incorrect Use
+- name: 用 co-branding zone 限定 partner logo 尺寸與位置。
+  chapter: ch-02-03
+  chapter_title: Co-Branding
+- name: primary palette 建立核心印象，secondary palette 提供 collateral 活力。
+  chapter: ch-03
+  chapter_title: Colour and Typography
+- name: 依 studio/outdoor/retail/SME/private 區分 art direction。
+  chapter: ch-04
+  chapter_title: Photography and Brand Elements
+- name: 白底 studio、自然生活 outdoor、紅色導向 retail/SME、奢華 private。
+  chapter: ch-04-01
+  chapter_title: Photography Directions
+- name: vector for scale、raster for screens、pattern as subtle texture。
+  chapter: ch-04-02
+  chapter_title: File Formats and Sterling Metros
+- name: template-first execution：簡報、簽名、名片、卡片與廣告皆以範例啟動。
+  chapter: ch-05
+  chapter_title: Applications
+- name: guideline 結尾列出品牌聯絡方式。
+  chapter: ch-06
+  chapter_title: Support
+rules_ai_checkable:
+- module: ''
+  criterion: AI 可檢查：任何 Sterling rebrand 相關說明須提及 Rising Sun、敏捷/進步定位與一致性目的；不得只描述為 logo refresh。
+  chapter: ch-01
+  chapter_title: Introduction and New Identity
+- module: ''
+  criterion: AI 可檢查：只能使用 horizontal 或 stacked 兩種基本形式；有限色彩或低品質複製時只能用 black、white、light gray 單色版本；logo 不得拉伸、壓縮、反轉色、旋轉、使用漸層、加
+    3D/陰影或錯放在紅底上；digital 不得低於 32px，print 不得低於 25mm。
+  chapter: ch-02
+  chapter_title: Visual Identity
+- module: ''
+  criterion: AI 可檢查：安全區內不得有圖像、文字或元素侵入；digital logo 寬高不得低於指定像素；A4 print ad 需至少 60mm x 32mm；不得 stretch、condense、reverse colours、rotate、use
+    gradients、3D effects 或 shadows。
+  chapter: ch-02-02
+  chapter_title: Clear Space, Minimum Size and Incorrect Use
+- module: Brand Strategy
+  criterion: AI 可檢查：partner logo 必須置於指定 co-branding zone；其高度不得超出 Sterling wordmark 高度；vertical 空間時 partner logo 置於 Sterling
+    logo 上方。
+  chapter: ch-02-03
+  chapter_title: Co-Branding
+- module: Typography System
+  criterion: AI 可檢查：Sterling Red 使用 Pantone 1795 M / C10 M100 Y100 K0 / R219 G53 B58；logo typeface 是 FF Cocon；advertising
+    typeface 是 Museo Sans；email 字體是 Century Gothic，官方 font size 為 10。
+  chapter: ch-03
+  chapter_title: Colour and Typography
+- module: ''
+  criterion: AI 可檢查：照片不得過度擺拍；人物年齡與衣著需符合目標客群；背景需支撐職業或生活脈絡；至少在 retail/SME 使用紅色作為基底或 accent。
+  chapter: ch-04-01
+  chapter_title: Photography Directions
+- module: ''
+  criterion: AI 可檢查：簡報應簡單、彩色、彈性且維持一致 voice；email signature 應強化品牌訊息；卡片可用 Metro elements 區分類型；應用素材不得偏離前述 logo、色彩與字體規則。
+  chapter: ch-05
+  chapter_title: Applications
+chapters:
+- id: ch-01
+  title: Introduction and New Identity
+  modules:
+  - Brand Strategy
+  - Knowledge Architecture
+- id: ch-02
+  title: Visual Identity
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+  - Governance
+- id: ch-02-01
+  title: Logo Forms and Colour Versions
+  modules:
+  - Examples
+  - Visual Identity
+- id: ch-02-02
+  title: Clear Space, Minimum Size and Incorrect Use
+  modules:
+  - AI-Checkable Rules
+  - Compliance
+- id: ch-02-03
+  title: Co-Branding
+  modules:
+  - Layout System
+  - Governance
+- id: ch-03
+  title: Colour and Typography
+  modules:
+  - Typography System
+  - Color System
+  - Design Tokens
+- id: ch-04
+  title: Photography and Brand Elements
+  modules:
+  - Photography System
+  - Visual Language
+- id: ch-04-01
+  title: Photography Directions
+  modules:
+  - Photography System
+  - Content Design
+- id: ch-04-02
+  title: File Formats and Sterling Metros
+  modules:
+  - Visual Language
+  - Operations
+- id: ch-05
+  title: Applications
+  modules:
+  - Examples
+  - Operations
+- id: ch-06
+  title: Support
+  modules:
+  - Operations
+  - Governance

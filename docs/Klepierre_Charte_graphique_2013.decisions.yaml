@@ -1,0 +1,95 @@
+# L3 決策卡 sidecar — Klépierre（商業中心圖形憲章）
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: Klepierre_Charte_graphique_2013
+decisions:
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 把背景分成 light、dark、corporate colour、confused image 四類，對每類給明確 logo 版本
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - logo 規範可將背景分成 light、dark、corporate colour、confused image，對每類給明確版本
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: Klepierre_Charte_graphique_2013
+        chapter: ch-01
+        excerpt: "彩色 logo 不得放深色背景；白色 logo 需在 corporate colours 存在時使用；用不同背景情境區分 positif、négatif、cartouche 與 monochrome exception。"
+    status: extracted
+
+  - id: dp-system-toolkit-over-template
+    title: 企業視覺系統給「可組合工具箱」而非僵硬模板
+    problem:
+      statement: 要求每個版面長得完全相同會扼殺多元內容；但完全自由又會失去一致性。
+      signals: [many_teams, many_agencies, diverse_content, system_consistency, mass_touchpoints]
+    solution:
+      module: Visual Language
+      move: 從 logo 的 K symbol 萃取圖形語言（K fenêtre / K calque），以「來源、可用色、透明度、禁用」治理可延展但有限定來源的圖形系統
+      layer: visual_core
+    reason:
+      - 彈性必須被結構化；系統不靠固定模板，而靠固定決策順序
+      - 圖形元素必須源自 logo，並保持角度與圓角語彙一致
+      - 品牌圖形語言可從 logo 幾何特徵萃取，再以「來源、可用色、透明度、禁用」治理
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, consumer_retail_hospitality]
+      brand_types: [mass_consumer, category_creator]
+      conditions: []
+      archetypes: [full_brand_system, corporate_toolkit, brand_experience_guide]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Layout System, Examples]
+    examples:
+      - 同一 K symbol 可在 photo mask、overlay、illustration motif 中重複
+    anti_patterns:
+      - 一次使用所有元素造成過載
+      - 只提供單一固定版型，使用者只會複製貼上
+    evidence:
+      - brand_id: Klepierre_Charte_graphique_2013
+        chapter: ch-04
+        excerpt: "把 logo symbol 轉化為可延展的視覺語言；以 logo 局部形狀建立非窮盡圖形清單，允許變化但限定來源、可用色與透明度。"
+      - brand_id: Klepierre_Charte_graphique_2013
+        chapter: ch-04-01
+        excerpt: "K fenêtre 可裝載一或多張照片，K calque 可用白色 80% 或漸層覆蓋；若 K symbol 內照片與外部照片不同或造成不可讀，應判定不合格。"
+    status: extracted
+
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 為內部品牌與子品牌定義不同的母品牌可見度（marques internes 用 symbol gradient、marques filles 用完整 logo）
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - 不同品牌層級應有不同的母品牌可見度與獨立性
+      - guideline 應定義母品牌、內部品牌、子品牌各自的識別繼承規則
+    applicable_when:
+      industries: [public_sector, education]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [multi_unit_consistency, multi_entity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 各單位自行創造分支品牌與專屬識別
+    evidence:
+      - brand_id: Klepierre_Charte_graphique_2013
+        chapter: ch-07
+        excerpt: "marques internes 使用 symbol gradient 且不附 Klépierre typography；marques filles 使用完整 logo（symbol + typo + colours）；不同品牌層級應有不同的母品牌可見度與獨立性。"
+    status: extracted

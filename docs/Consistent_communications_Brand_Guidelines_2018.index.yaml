@@ -1,0 +1,142 @@
+title: 'Commonwealth Foundation Brand Guidelines'
+source: 'sources/Consistent_communications_Brand_Guidelines_2018.pdf'
+date: 'Updated March 2018'
+language: 'en'
+summary: 'Commonwealth Foundation 的品牌與一致溝通規範，整合使命價值、視覺識別、模板、可及性、影像、house style、web writing 與 partner/grant visibility。'
+chapters:
+  - id: 'ch-01'
+    title: 'Introduction'
+    level: 1
+    order: 1
+    pages: '1-2'
+    summary: '定義 brand、visual identity、logo、vision、mission 與 core values。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Consistent communications'
+        level: 2
+        order: 1
+        pages: '1'
+        summary: '說明一致語氣、品牌人格與 visual identity 的角色。'
+      - id: 'ch-01-02'
+        title: 'Vision and mission'
+        level: 2
+        order: 2
+        pages: '2'
+        summary: '以 civic voices、participatory governance 與核心價值定義品牌基礎。'
+  - id: 'ch-02'
+    title: 'Our visual identity'
+    level: 1
+    order: 2
+    pages: '3-23'
+    summary: '用 weave metaphor 建立 logo、pattern、typefaces、colour、special uses、sub-brand 與 examples/templates。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Logo'
+        level: 2
+        order: 1
+        pages: '4-6'
+        summary: '定義 logo elements、orientation、minimum sizes、safe area、alternate versions 與 incorrect uses。'
+      - id: 'ch-02-02'
+        title: 'Pattern'
+        level: 2
+        order: 2
+        pages: '7'
+        summary: '定義 weave pattern 的使用、翻轉、裁切與不可旋轉限制。'
+      - id: 'ch-02-03'
+        title: 'Typefaces'
+        level: 2
+        order: 3
+        pages: '8-9'
+        summary: '規範 PMN Caecilia 專業用途與 Trebuchet MS in-house 用途。'
+      - id: 'ch-02-04'
+        title: 'Colour'
+        level: 2
+        order: 4
+        pages: '10'
+        summary: '定義 primary/enhanced palette、CMYK/RGB/HEX 與 gradient 條件。'
+      - id: 'ch-02-05'
+        title: 'Special uses and Sub-brand'
+        level: 2
+        order: 5
+        pages: '11-15'
+        summary: '規範分離 logo elements、bespoke colour versions 與 Commonwealth Writers lock-up。'
+      - id: 'ch-02-06'
+        title: 'Examples and templates'
+        level: 2
+        order: 6
+        pages: '16-23'
+        summary: '展示 professional applications 與 in-house letterhead/report/PowerPoint templates。'
+  - id: 'ch-03'
+    title: 'Accessibility'
+    level: 1
+    order: 3
+    pages: '24'
+    summary: '規範對比、字級、大小寫、行距、對齊、圖片疊字、紙張與非色彩資訊標示。'
+  - id: 'ch-04'
+    title: 'Using images'
+    level: 1
+    order: 4
+    pages: '25-26'
+    summary: '規範 caption、credit/copyright、cropping、photography selection 與 in-house image quality。'
+  - id: 'ch-05'
+    title: 'House style'
+    level: 1
+    order: 5
+    pages: '27-34'
+    summary: '定義標準介紹文字、術語、tone of voice、代名詞、UK English、數字、標點、大小寫、縮寫、italics、references、contact details 與 web writing。'
+    children:
+      - id: 'ch-05-01'
+        title: 'Standard text and terms'
+        level: 2
+        order: 1
+        pages: '27'
+        summary: '提供 Foundation 標準敘述、短描述、strapline 與 civil society/governance 等術語。'
+      - id: 'ch-05-02'
+        title: 'Tone of voice and use of English'
+        level: 2
+        order: 2
+        pages: '28-29'
+        summary: '規範 approachable、inclusive、succinct、simple、authoritative 與 UK English。'
+      - id: 'ch-05-03'
+        title: 'Numbers and punctuation'
+        level: 2
+        order: 3
+        pages: '30-32'
+        summary: '定義數字、時間、日期、金錢、apostrophes、commas、lists、quotation marks、capitals、symbols、abbreviations 與 italics。'
+      - id: 'ch-05-04'
+        title: 'Contact details and Writing for the web'
+        level: 2
+        order: 4
+        pages: '33-34'
+        summary: '定義聯絡資訊格式與 web writing 的 12 項可掃描寫作規則。'
+  - id: 'ch-06'
+    title: 'Visibility guidelines'
+    level: 1
+    order: 6
+    pages: '35-37'
+    summary: '定義 partner organisations 與 grant recipients 的 logo、text、approval、web、social、photo/audio/video visibility requirements。'
+    children:
+      - id: 'ch-06-01'
+        title: 'Partners'
+        level: 2
+        order: 1
+        pages: '35-36'
+        summary: '規範合作夥伴 materials 的 logo lock-up、standard text、press approval 與 reciprocal visibility。'
+      - id: 'ch-06-02'
+        title: 'Grant recipients'
+        level: 2
+        order: 2
+        pages: '37'
+        summary: '規範受補助者使用 Supported by logo lock-up、文字承認與報告素材。'
+  - id: 'ch-07'
+    title: 'Digital files'
+    level: 1
+    order: 7
+    pages: '38-39'
+    summary: '說明 JPEG/PNG、TIFF、Illustrator EPS/AI 用途與 logo file index。'
+  - id: 'ch-08'
+    title: 'Contact'
+    level: 1
+    order: 8
+    pages: 'iii'
+    summary: '提供 Commonwealth Foundation 地址、電話、email 與網址。'

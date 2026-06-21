@@ -1,0 +1,67 @@
+# L3 決策卡 sidecar — IBM Think Summit Brand Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: IBM_ThinkSummit_2020
+decisions:
+  - id: dp-modular-manual-for-public-units
+    title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
+    problem:
+      statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
+      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+    solution:
+      module: Brand Architecture
+      move: 先建立「誰在說話」的判斷層，再以 umbrella → member → VPU/GP → lockup → special case 的層級把組織結構視覺化
+      layer: governance
+    reason:
+      - 局部單位可以被識別，但不能競爭或替代母品牌
+      - 多層活動品牌應用 lockup taxonomy 管理主從關係
+      - 大型會議的子活動可以用同一 lockup grammar 建立可辨識家族
+    applicable_when:
+      industries: [public_sector, education, tech_software]
+      brand_types: [institutional_public_trust, platform_ecosystem]
+      conditions: [multi_unit_consistency, multi_entity]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy, Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 各單位自行創造分支品牌與專屬 tagline
+      - 只列 logo 圖檔卻不給「何時用 umbrella、何時用單一機構」的判斷規則
+    evidence:
+      - brand_id: IBM_ThinkSummit_2020
+        chapter: ch-02-02
+        excerpt: "建立 Think、Think Summit、Think Leadership 與 PartnerWorld 的層級關係，用 lockup family 管理全球活動 portfolio；命名層級必須能被視覺層級準確反映，子活動以同一 lockup grammar 建立可辨識家族。"
+      - brand_id: IBM_ThinkSummit_2020
+        chapter: ch-02
+        excerpt: "把母品牌 IBM、Think 字標、活動名稱與 PartnerWorld 等關係拆成可核准的 lockup；品牌一致性來自可控組合，而不是禁止所有變體。"
+    status: extracted
+
+  - id: dp-approval-gate-for-exceptions
+    title: 例外不是漏洞，用審核閘門把差異收進可治理的模組
+    problem:
+      statement: 規則無法窮舉所有情境，現實組織總會有例外；若放任各單位自行決定，例外會逐步擴張成破壞系統的破口。
+      signals: [exception_handling, multi_unit_consistency, governance, scaling_risk]
+    solution:
+      module: Governance
+      move: 例外章節須明確寫出「為何例外／何時可用／不可擴張到哪裡」，並交由品牌管理單位審核
+      layer: governance
+    reason:
+      - 例外章節應寫出「為何例外」「何時可用」「不可擴張到哪裡」
+      - 任何大型活動 guideline 都應包含外部夥伴品牌露出的審核規則
+    applicable_when:
+      industries: [public_sector, finance, tech_software]
+      brand_types: [institutional_public_trust, platform_ecosystem, heritage_legacy]
+      conditions: [multi_unit_consistency, exception_handling]
+      archetypes: [multi_brand_architecture, corporate_toolkit]
+    dependencies:
+      requires: [Governance]
+      enables: []
+    anti_patterns:
+      - 例外只寫「可以這樣做」卻不寫適用邊界與審核者
+      - 各單位把一次性例外當成通用替代方案沿用
+    evidence:
+      - brand_id: IBM_ThinkSummit_2020
+        chapter: ch-08
+        excerpt: "贊助露出、內容 activation 與新增細節應通過 review and approval process，使用者依 contacts 尋求核准；贊助與內容是最容易偏離的部分，因此放在 toolkit 末尾建立 escalation and approval module。"
+    status: extracted

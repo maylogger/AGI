@@ -1,0 +1,180 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Santander_EN
+index_ref: docs/Santander_EN.index.yaml
+note_ref: docs/Santander_EN.note.md
+archetype: brand_experience_guide
+industry: null
+modules:
+- Operations
+- Visual Identity
+- AI-Checkable Rules
+- Design Tokens
+- Layout System
+- Brand Architecture
+- Knowledge Architecture
+- Color System
+- Governance
+depth:
+  strategy: low
+  visual: medium
+  governance: medium
+  top_level_chapter_count: 4
+  section_count: 4
+chapter_sequence:
+- id: ch-01
+  title: Introduction
+  order: 1
+  level: 1
+- id: ch-02
+  title: Logotype
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Meaning and Versions
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Clear Space and Minimum Size
+  order: 2
+  level: 2
+- id: ch-02-03
+  title: Cobranding
+  order: 3
+  level: 2
+- id: ch-02-04
+  title: Final Artworks Nomenclature
+  order: 4
+  level: 2
+- id: ch-03
+  title: Color Palette
+  order: 3
+  level: 1
+- id: ch-04
+  title: Contact
+  order: 4
+  level: 1
+frameworks:
+- name: brand resources -> final artwork -> implementation
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 使用情境 -> 版本 -> condition -> color mode -> format
+  chapter: ch-02
+  chapter_title: Logotype
+- name: brand meaning -> version priority -> technical exception
+  chapter: ch-02-01
+  chapter_title: Meaning and Versions
+- name: Logo type -> clear space unit -> minimum size
+  chapter: ch-02-02
+  chapter_title: Clear Space and Minimum Size
+- name: lockup version -> modules -> distance -> separator height
+  chapter: ch-02-03
+  chapter_title: Cobranding
+- name: PV/SV/SY + POS/NEG + CMYK/PMS/RGB/BW + AI/EPS/JPG/PNG/PDF
+  chapter: ch-02-04
+  chapter_title: Final Artworks Nomenclature
+- name: primary color token + usage percentage + medium values
+  chapter: ch-03
+  chapter_title: Color Palette
+- name: uncertainty -> brand team contact
+  chapter: ch-04
+  chapter_title: Contact
+patterns:
+- name: 必要資源 + 選擇規則 + 檔名系統
+  chapter: ch-01
+  chapter_title: Introduction
+- name: 大型企業可用 logo version taxonomy 與 file nomenclature 讓素材管理機器化。
+  chapter: ch-02
+  chapter_title: Logotype
+- name: preferred
+  chapter: ch-02-01
+  chapter_title: Meaning and Versions
+- name: fallback
+  chapter: ch-02-01
+  chapter_title: Meaning and Versions
+- name: extreme fallback
+  chapter: ch-02-01
+  chapter_title: Meaning and Versions
+- name: symbol 以 grid 管理，wordmark 以核心圖形寬度管理。
+  chapter: ch-02-02
+  chapter_title: Clear Space and Minimum Size
+- name: cobranding 常用 separator line 與 module spacing 解決權重問題。
+  chapter: ch-02-03
+  chapter_title: Cobranding
+- name: 以縮寫碼建立可排序、可搜尋、可驗證的 asset taxonomy。
+  chapter: ch-02-04
+  chapter_title: Final Artworks Nomenclature
+- name: 色彩 guideline 不只給色值，也給大致比例，能避免主色過度使用。
+  chapter: ch-03
+  chapter_title: Color Palette
+- name: 短版 guideline 可用 contact page 處理例外與疑義。
+  chapter: ch-04
+  chapter_title: Contact
+rules_ai_checkable:
+- module: Visual Identity
+  criterion: AI 可檢查準則：main version 應優先用於所有 communication；secondary version 僅尺寸限制導致 main version 不夠清楚時使用；symbol 僅小空間且 main/secondary
+    不可用時使用；無法印紅色時才用黑白 Logo。
+  chapter: ch-02
+  chapter_title: Logotype
+- module: ''
+  criterion: AI 可檢查準則：credit cards 到大格式 communication 優先 main version；sponsorship 等尺寸受限可 secondary；app pictogram 或促銷小物等極小空間可
+    symbol。
+  chapter: ch-02-01
+  chapter_title: Meaning and Versions
+- module: ''
+  criterion: AI 可檢查準則：main version 最小 25px/3mm；secondary 50px/5mm；symbol 16px/3mm；main/secondary 理想 clear space 為 flame width，最低為半個
+    flame width；symbol security space 為 28x28 grid 中上左右 5 modules、下方 6 modules，最低上左右 3、下方 4。
+  chapter: ch-02-02
+  chapter_title: Clear Space and Minimum Size
+- module: Brand Strategy
+  criterion: AI 可檢查準則：兩 Logo 間距為 4 modules；中央加入 1pt line；break line 高度依所選 lockup version 高度變化。
+  chapter: ch-02-03
+  chapter_title: Cobranding
+- module: Color System
+  criterion: 'AI 可檢查準則：Red HEX #EC0000；White #FFFFFF；Sky #DEEDF2；Black #000000；建議色彩比例為 White 50%、Red 40%、Sky 5%、Black 5%。'
+  chapter: ch-03
+  chapter_title: Color Palette
+chapters:
+- id: ch-01
+  title: Introduction
+  modules:
+  - Operations
+  - Visual Identity
+- id: ch-02
+  title: Logotype
+  modules:
+  - AI-Checkable Rules
+  - Design Tokens
+- id: ch-02-01
+  title: Meaning and Versions
+  modules:
+  - Visual Identity
+- id: ch-02-02
+  title: Clear Space and Minimum Size
+  modules:
+  - AI-Checkable Rules
+  - Layout System
+- id: ch-02-03
+  title: Cobranding
+  modules:
+  - Brand Architecture
+  - Layout System
+- id: ch-02-04
+  title: Final Artworks Nomenclature
+  modules:
+  - Design Tokens
+  - Operations
+  - Knowledge Architecture
+- id: ch-03
+  title: Color Palette
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-04
+  title: Contact
+  modules:
+  - Operations
+  - Governance

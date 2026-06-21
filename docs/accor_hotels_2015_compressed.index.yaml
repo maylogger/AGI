@@ -1,0 +1,140 @@
+title: "AccorHotels Graphic Guidelines"
+source: "sources/accor_hotels_2015_compressed.pdf"
+date: "2015-06"
+language: "en"
+summary: "AccorHotels 圖形規範以 Feel Welcome 作為品牌精神，定義企業 statement、logo、色彩、字體、brand frieze、pictograms、artwork，以及 email、名片、信紙、PowerPoint 與新聞稿等辦公應用模板。"
+chapters:
+  - id: "ch-01"
+    title: "User Guide"
+    level: 1
+    order: 1
+    pages: "3"
+    summary: "說明 Guidelines 的使用方式、平台下載路徑、檔案類型、字體授權、色彩準確性、印刷與聯絡窗口。"
+  - id: "ch-02"
+    title: "Fundamentals"
+    level: 1
+    order: 2
+    pages: "4-17"
+    summary: "定義 AccorHotels 的核心識別元素，包括 Feel Welcome statement、logo、色彩、字體、品牌 frieze、pictograms 與攝影 artwork。"
+    children:
+      - id: "ch-02-01"
+        title: "Generic Statement"
+        level: 2
+        order: 1
+        pages: "5"
+        summary: "規範代表 Feel Welcome 精神的 generic statement，包含全大寫、字體、對齊、顏色與寬度不可超過 logo 的規則。"
+      - id: "ch-02-02"
+        title: "Employees, Customers and Franchisees Statements"
+        level: 2
+        order: 2
+        pages: "6"
+        summary: "提供面向員工、顧客與加盟者的 statement 版本，並沿用 generic statement 的書寫與呈現規則。"
+      - id: "ch-02-03"
+        title: "Logo"
+        level: 2
+        order: 3
+        pages: "7"
+        summary: "定義 AccorHotels logo 的 goose cutout、AccorHotels 名稱、Feel Welcome tagline、顏色版本、單色版本與 crisis communication 無 tagline 版本。"
+      - id: "ch-02-04"
+        title: "Logo Protection Area, Minimum Sizes and Positioning"
+        level: 2
+        order: 4
+        pages: "8"
+        summary: "以 Hotels 的 H 定義 logo 保護區，規範最小尺寸、置中位置與 header 中的使用方式。"
+      - id: "ch-02-05"
+        title: "Logo Use With a Background"
+        level: 2
+        order: 5
+        pages: "9"
+        summary: "規範 logo 在白色、品牌色、深藍與照片背景上的使用方式，要求背景足夠明或暗且避免複雜對比。"
+      - id: "ch-02-06"
+        title: "Logo Don'ts"
+        level: 2
+        order: 6
+        pages: "10"
+        summary: "列出禁止改色、移動 goose、變形、改 tagline 字體或顏色、侵入保護區與錯誤背景使用。"
+      - id: "ch-02-07"
+        title: "The Color Palette"
+        level: 2
+        order: 7
+        pages: "11"
+        summary: "定義 dark blue、honey、white 三個品牌主色與 frost grey、nacarat red、tapenade green 三個輔助色，並列出 CMYK、Pantone、RGB 與 HEX。"
+      - id: "ch-02-08"
+        title: "Fonts"
+        level: 2
+        order: 8
+        pages: "12"
+        summary: "規範 Gotham HTF、Dala Floda 及 office replacement fonts Georgia、Trebuchet 的角色。"
+      - id: "ch-02-09"
+        title: "Horizontal Brand Frieze"
+        level: 2
+        order: 9
+        pages: "13"
+        summary: "定義可依品牌數量與空間調整為一、二或三行的水平品牌 frieze，使用簡化單色 logo。"
+      - id: "ch-02-10"
+        title: "Vertical Brand Frieze"
+        level: 2
+        order: 10
+        pages: "14"
+        summary: "沿用水平 brand frieze 規則，提供垂直或單欄品牌排列方式。"
+      - id: "ch-02-11"
+        title: "Pictograms"
+        level: 2
+        order: 11
+        pages: "15"
+        summary: "定義專為 AccorHotels 設計的 pictograms，要求使用既有檔案以維持圖形表述一致性。"
+      - id: "ch-02-12"
+        title: "Artwork Principles"
+        level: 2
+        order: 12
+        pages: "16"
+        summary: "定義以 Feel Welcome 為共同主軸的 artwork，透過員工與顧客或員工之間的小型互動劇情傳達關懷、分享與正向情緒。"
+      - id: "ch-02-13"
+        title: "Artwork Examples of Visuals"
+        level: 2
+        order: 13
+        pages: "17"
+        summary: "展示符合 artwork principles 的視覺範例。"
+  - id: "ch-03"
+    title: "Stationery & Office Applications"
+    level: 1
+    order: 3
+    pages: "18-24"
+    summary: "提供 email tagline、名片、note card、信紙、PowerPoint 與 press release 的格式、印刷、紙張、字體與模板使用規則。"
+    children:
+      - id: "ch-03-01"
+        title: "Email Tagline"
+        level: 2
+        order: 1
+        pages: "19"
+        summary: "提供三種可客製的 email tagline 模型，包含標準完整版本與 event banner 版本。"
+      - id: "ch-03-02"
+        title: "Business Cards"
+        level: 2
+        order: 2
+        pages: "20"
+        summary: "規範 90 x 55 mm 名片、雙面雙特別色印刷、350g 白卡、Gotham HTF 與雙語職稱及地址欄位。"
+      - id: "ch-03-03"
+        title: "Note Cards"
+        level: 2
+        order: 3
+        pages: "21"
+        summary: "規範 100 x 210 mm note card、雙特別色印刷、標準與客製版本，並可依敏感或危機溝通移除 Feel Welcome tagline。"
+      - id: "ch-03-04"
+        title: "Letterhead and Following Page"
+        level: 2
+        order: 4
+        pages: "22"
+        summary: "規範 A4 信紙、紙張、Gotham HTF 印刷模板與 Trebuchet Word 內文模板。"
+      - id: "ch-03-05"
+        title: "Internal PowerPoint Presentation"
+        level: 2
+        order: 5
+        pages: "23"
+        summary: "提供 4:3 與 16:9 PowerPoint 模板、Georgia/Trebuchet 字體與標題頁、圖文頁、分隔頁、datavision 頁與結尾頁。"
+      - id: "ch-03-06"
+        title: "Press Releases"
+        level: 2
+        order: 6
+        pages: "24"
+        summary: "規範 A4 press release、CMYK 或 PDF 發布、紙張、Trebuchet 字體與標準或活動版本模板。"

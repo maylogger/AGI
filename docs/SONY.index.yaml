@@ -1,0 +1,87 @@
+title: "Sony Electronics USA Brand Identity Guidelines"
+source: "sources/SONY.pdf"
+version: "#03"
+language: "en"
+summary: "Sony Electronics USA Brand Identity Guidelines 以 Sony logo、open frame、Sony black、tagline 為 foundation，延伸至 typography、color、photography、advertising layout、retail、online 與 tv/film environments。"
+chapters:
+  - id: "ch-01"
+    title: "Building a Foundation"
+    level: 1
+    order: 1
+    pages: "6-19"
+    summary: "定義 Sony name、Sony logo、open frame、Sony black 與 taglines 四個固定元素。"
+    children:
+      - id: "ch-01-01"
+        title: "Sony Logo"
+        level: 2
+        order: 1
+        pages: "7-11"
+        summary: "logo 為 central visual cue，需保護 prominence、isolation zone 與 print/online placement。"
+      - id: "ch-01-02"
+        title: "Open Frame, Sony Black and Taglines"
+        level: 2
+        order: 2
+        pages: "12-19"
+        summary: "open frame 承載驚喜與產品訊息；Sony black 建立 premium technology feel；tagline 補足語意。"
+  - id: "ch-02"
+    title: "Building Tools"
+    level: 1
+    order: 2
+    pages: "20-48"
+    summary: "建立 typography、color 與 photography 工具，讓訊息清楚、情緒強烈且具 Sony amazement。"
+    children:
+      - id: "ch-02-01"
+        title: "Typography"
+        level: 2
+        order: 1
+        pages: "20-32"
+        summary: "說明 typography clarity、hierarchy 與文字系統。"
+      - id: "ch-02-02"
+        title: "Color"
+        level: 2
+        order: 2
+        pages: "33-39"
+        summary: "以高情緒衝擊與功能性吸引力管理色彩。"
+      - id: "ch-02-03"
+        title: "Photography"
+        level: 2
+        order: 3
+        pages: "40-48"
+        summary: "規範 iconic、unexpected perspective、rich color/emotion 的 Sony 攝影。"
+  - id: "ch-03"
+    title: "Building Guidelines for Advertisements"
+    level: 1
+    order: 3
+    pages: "49-76"
+    summary: "規範 single-page、double-page、open frame execution、reference、newspaper/special formats 與 product logos。"
+  - id: "ch-04"
+    title: "Environments"
+    level: 1
+    order: 4
+    pages: "77-99"
+    summary: "將系統套用於 retail、online 與 tv/film，確保不同環境中的 Sony 語言一致。"
+    children:
+      - id: "ch-04-01"
+        title: "Retail"
+        level: 2
+        order: 1
+        pages: "77-89"
+        summary: "以 clarity、focus、simplicity 降低零售噪音。"
+      - id: "ch-04-02"
+        title: "Online"
+        level: 2
+        order: 2
+        pages: "90-98"
+        summary: "把 online 視為與消費者長期對話與探索的環境。"
+      - id: "ch-04-03"
+        title: "TV/Film"
+        level: 2
+        order: 3
+        pages: "99"
+        summary: "在 screen-based media 結尾以 Sony logotype on Sony black 建立一致印象。"
+  - id: "ch-05"
+    title: "Closing Principle"
+    level: 1
+    order: 5
+    pages: "100"
+    summary: "以 Akio Morita 引言收束 creativity、intuition 與 courage。"

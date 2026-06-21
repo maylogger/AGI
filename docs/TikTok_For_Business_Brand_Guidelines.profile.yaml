@@ -1,0 +1,276 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: TikTok_For_Business_Brand_Guidelines
+index_ref: docs/TikTok_For_Business_Brand_Guidelines.index.yaml
+note_ref: docs/TikTok_For_Business_Brand_Guidelines.note.md
+archetype: product_design_system
+industry: null
+modules:
+- Product Language
+- Brand Strategy
+- Content Design
+- Voice and Tone
+- Messaging
+- AI-Checkable Rules
+- Legal and Trademark
+- Visual Language
+- Design Tokens
+- Knowledge Architecture
+- Motion Identity
+- Visual Identity
+- Typography System
+- Accessibility
+- Color System
+- UI Components
+- Photography System
+- Examples
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 6
+  section_count: 6
+chapter_sequence:
+- id: ch-01
+  title: Platform Overview
+  order: 1
+  level: 1
+- id: ch-02
+  title: Messaging
+  order: 2
+  level: 1
+- id: ch-02-01
+  title: Personality and Tone of Voice
+  order: 1
+  level: 2
+- id: ch-02-02
+  title: Brand Treatment in Copy
+  order: 2
+  level: 2
+- id: ch-03
+  title: Design System
+  order: 3
+  level: 1
+- id: ch-03-01
+  title: Logo
+  order: 1
+  level: 2
+- id: ch-03-02
+  title: Typography
+  order: 2
+  level: 2
+- id: ch-03-03
+  title: Color
+  order: 3
+  level: 2
+- id: ch-03-04
+  title: Design Toolkit
+  order: 4
+  level: 2
+- id: ch-04
+  title: Imagery
+  order: 4
+  level: 1
+- id: ch-05
+  title: Advertising Campaign Guidelines
+  order: 5
+  level: 1
+- id: ch-06
+  title: Brand Story
+  order: 6
+  level: 1
+frameworks:
+- name: platform mission → business mission → creative behavior → brand execution
+  chapter: ch-01
+  chapter_title: Platform Overview
+- name: funnel-sensitive tone：awareness 可更有 personality，越靠近轉換越直接，但仍保留品牌特質
+  chapter: ch-02
+  chapter_title: Messaging
+- name: tone guardrail：playful energy + business relevance + direct outcome
+  chapter: ch-02-01
+  chapter_title: Personality and Tone of Voice
+- name: public name vs internal shorthand
+  chapter: ch-02-02
+  chapter_title: Brand Treatment in Copy
+- name: logo-derived visual language：circle → bubble / pattern / emphasis / rounded phone shape
+  chapter: ch-03
+  chapter_title: Design System
+- name: logo behavior matrix：orientation、background、minimum size、clearspace、placement、motion state
+  chapter: ch-03-01
+  chapter_title: Logo
+- name: type scale：H1 4
+  chapter: ch-03-02
+  chapter_title: Typography
+- name: color control：brand equity colors + accessibility exceptions + overload prevention
+  chapter: ch-03-03
+  chapter_title: Color
+- name: toolkit component model：origin → variation → use case → scale → accessibility → don’ts
+  chapter: ch-03-04
+  chapter_title: Design Toolkit
+- name: native content framework：real business context + action + vertical format + sound-first + platform effects
+  chapter: ch-04
+  chapter_title: Imagery
+- name: asset flow：intro → phone-contained TikTok footage → dynamic supers → glitch transition → color-corresponding end card
+  chapter: ch-05
+  chapter_title: Advertising Campaign Guidelines
+- name: business creator framework：audience need to be noticed → platform-native discovery → creative empowerment → portfolio...
+  chapter: ch-06
+  chapter_title: Brand Story
+patterns:
+- name: 使用者在平台上的原生行為
+  chapter: ch-01
+  chapter_title: Platform Overview
+- name: B2B tone matrix：professional partner × creative platform × measurable results。
+  chapter: ch-02
+  chapter_title: Messaging
+- name: 同一訊息的好 / 壞寫法
+  chapter: ch-02-01
+  chapter_title: Personality and Tone of Voice
+- name: 命名規範應把縮寫使用權明確分成 public / internal。
+  chapter: ch-02-02
+  chapter_title: Brand Treatment in Copy
+- name: product and logo primitives 可生成 toolkit，讓品牌在多格式中保持一致但不僵硬。
+  chapter: ch-03
+  chapter_title: Design System
+- name: rotation rule 與 animation rule 將 playful identity 轉成可測量參數。
+  chapter: ch-03-01
+  chapter_title: Logo
+- name: emphasis 可以由字體 + 色彩雙重變化構成，但需限制顏色數量。
+  chapter: ch-03-02
+  chapter_title: Typography
+- name: 可用
+  chapter: ch-03-03
+  chapter_title: Color
+- name: 過量使用
+  chapter: ch-03-03
+  chapter_title: Color
+- name: 品牌圖形元件可像 UI component 一樣定義 props：fill/stroke、color、roundness、size、placement。
+  chapter: ch-03-04
+  chapter_title: Design Toolkit
+- name: 真實感
+  chapter: ch-04
+  chapter_title: Imagery
+- name: 把 slogan 拆成固定文字、動畫方式、版面位置與媒介變體，可支援批量產出。
+  chapter: ch-05
+  chapter_title: Advertising Campaign Guidelines
+- name: Don’t make ads. Make \_\_\_
+  chapter: ch-06
+  chapter_title: Brand Story
+rules_ai_checkable:
+- module: ''
+  criterion: 文案應 confident yet humble、playful、direct、casual、conversational、provocative；不得 brag、try too hard、sloppy、mean、過度
+    jargon 或只像傳統廣告平台。
+  chapter: ch-02
+  chapter_title: Messaging
+- module: Voice and Tone
+  criterion: 不得使用過度俚語使品牌顯得 try hard；不得使用會貶低他人的語氣；若使用 business terms，應用口語方式軟化。
+  chapter: ch-02-01
+  chapter_title: Personality and Tone of Voice
+- module: Brand Strategy
+  criterion: 公開或 consumer-facing copy 必須寫 `TikTok For Business`，且 `For` 的 F 必須大寫；`TT4B` 或 `TTFB` 僅可內部使用。
+  chapter: ch-02-02
+  chapter_title: Brand Treatment in Copy
+- module: Visual Identity
+  criterion: horizontal logo 最小高度 5px，vertical logo 最小高度 14px；clearspace 等於 T 的 cap height；rotation 必須以 10 度增量且不可倒置；end state
+    不得 distortion；不可重打、拉伸、改色、加陰影、加漸層、描邊或放在低可讀背景上。
+  chapter: ch-03-01
+  chapter_title: Logo
+- module: Typography System
+  criterion: headline highlight 只能用 Razzmatazz 與 Sofia Pro Soft；不得用 Splash highlight text；highlight punctuation 需跟隨被強調片語；色彩最多兩色；tracking
+    遵循 -10pts；headline 不得全大寫或全小寫，文字不可拉伸、堆疊、套漸層、套圖案、加陰影或使用未核准字體。
+  chapter: ch-03-02
+  chapter_title: Typography
+- module: Color System
+  criterion: digital 使用 RGB；stationery / logo print 使用 Pantone；背景每個 composition 限一個 brand color；highlight text 不得超過一個 emphasis
+    color；不得用 Splash 強調白底文字；不得使用 gradients、新顏色、灰色或中性色背景。
+  chapter: ch-03-03
+  chapter_title: Color
+- module: ''
+  criterion: bubbles digital 最小 30px、print 最小 .2in；rounded rectangle roundness 限 25%、50%、100%；100% roundness 在 digital 主要保留給
+    CTA；patterns 最小圓直徑 20px 或 50px；patterns 不得放在圖片、競爭色、相近色或文字下；emphasis marks 尺寸與對齊以 headline x-height 為單位，句尾只能用 square marks。
+  chapter: ch-03-04
+  chapter_title: Design Toolkit
+- module: Photography System
+  criterion: 不得過度 staged、cheesy、overproduced；不得使用忙亂前景 / 背景、靜態無互動瞬間、blown-out 邊緣、過度戲劇燈光或單一性別 / 種族；影片應拍 9:16，避免水平 / 方形格式與長時間固定鏡頭。
+  chapter: ch-04
+  chapter_title: Imagery
+- module: ''
+  criterion: '`Don’t Make Ads.` 必須在黑底白字上並 word-by-word 動畫；TikToks 必須置於 phone graphic；stills 應取自清晰、帶動作與效果的 video frame；graphics
+    中 supers 必須在白色 bubbles 內並用 Sofia Pro Bold；banners 至少顯示 phone graphic 一角，CTA 顏色需與 phone outline 相反；所有 talent、music、location、brand/IP
+    rights 必須取得授權。'
+  chapter: ch-05
+  chapter_title: Advertising Campaign Guidelines
+chapters:
+- id: ch-01
+  title: Platform Overview
+  modules:
+  - Product Language
+  - Brand Strategy
+- id: ch-02
+  title: Messaging
+  modules:
+  - Content Design
+  - Voice and Tone
+  - Messaging
+- id: ch-02-01
+  title: Personality and Tone of Voice
+  modules:
+  - AI-Checkable Rules
+  - Voice and Tone
+- id: ch-02-02
+  title: Brand Treatment in Copy
+  modules:
+  - Legal and Trademark
+  - Content Design
+- id: ch-03
+  title: Design System
+  modules:
+  - Visual Language
+  - Design Tokens
+  - Knowledge Architecture
+- id: ch-03-01
+  title: Logo
+  modules:
+  - AI-Checkable Rules
+  - Motion Identity
+  - Visual Identity
+- id: ch-03-02
+  title: Typography
+  modules:
+  - AI-Checkable Rules
+  - Typography System
+  - Accessibility
+- id: ch-03-03
+  title: Color
+  modules:
+  - Color System
+  - Design Tokens
+  - Accessibility
+- id: ch-03-04
+  title: Design Toolkit
+  modules:
+  - AI-Checkable Rules
+  - Visual Language
+  - UI Components
+  - Design Tokens
+- id: ch-04
+  title: Imagery
+  modules:
+  - Photography System
+  - Motion Identity
+  - Content Design
+  - Accessibility
+- id: ch-05
+  title: Advertising Campaign Guidelines
+  modules:
+  - Legal and Trademark
+  - Examples
+  - Motion Identity
+- id: ch-06
+  title: Brand Story
+  modules:
+  - Brand Strategy
+  - Messaging

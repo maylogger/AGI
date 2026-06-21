@@ -1,0 +1,90 @@
+title: 'BNP Paribas Brand Creative Guide'
+source: 'sources/BNPP_Brand_creative_bd_2012.pdf'
+version: 'Brand Creative Guide'
+date: 'Avril 2012'
+language: 'fr'
+summary: 'BNP Paribas 的創意工具指南，集中規範攝影、色彩、字體與編輯語氣，協助創作者把品牌 personality 轉成一致視覺與內容表現。'
+chapters:
+  - id: 'ch-01'
+    title: 'Iconographie'
+    level: 1
+    order: 1
+    pages: '8-48'
+    summary: '定義攝影目的、五項影像原則、選圖方法與禁忌。'
+    children:
+      - id: 'ch-01-01'
+        title: 'La photographie chez BNP Paribas'
+        level: 2
+        order: 1
+        pages: '8-10'
+        summary: '說明攝影如何表達 positive change 與品牌人格。'
+      - id: 'ch-01-02'
+        title: 'Les principes de notre iconographie'
+        level: 2
+        order: 2
+        pages: '10-18'
+        summary: '以 Authenticité、Humanité、Instantanéité、Imperfection、Interprétation 定義影像判準。'
+      - id: 'ch-01-03'
+        title: 'Rechercher une photo et les interdits'
+        level: 2
+        order: 3
+        pages: '20-48'
+        summary: '規範選圖、裁切、人物、場景、retouch 與不可用影像。'
+  - id: 'ch-02'
+    title: 'Couleurs'
+    level: 1
+    order: 2
+    pages: '50-72'
+    summary: '說明品牌色、主色、輔助色、總色盤與使用案例。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Nos couleurs de marque et principales'
+        level: 2
+        order: 1
+        pages: '52-58'
+        summary: '定義核心綠色與主要色彩的角色。'
+      - id: 'ch-02-02'
+        title: 'Couleurs additionnelles et palette générale'
+        level: 2
+        order: 2
+        pages: '60-68'
+        summary: '擴展輔助色與整體色彩使用系統。'
+  - id: 'ch-03'
+    title: 'Typographies'
+    level: 1
+    order: 3
+    pages: '74-98'
+    summary: '建立品牌字體系統、字體集合、使用範例與 pictogrammes。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Typographies et collection'
+        level: 2
+        order: 1
+        pages: '74-90'
+        summary: '說明主要與輔助字體如何支援品牌語氣。'
+      - id: 'ch-03-02'
+        title: 'Exemples et pictogrammes'
+        level: 2
+        order: 2
+        pages: '92-98'
+        summary: '展示字體應用與圖示系統。'
+  - id: 'ch-04'
+    title: 'Style éditorial'
+    level: 1
+    order: 4
+    pages: '100-104'
+    summary: '定義 BNP Paribas 的文字語氣與編輯規則。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Tonalité et règles éditoriales'
+        level: 2
+        order: 1
+        pages: '102-104'
+        summary: '把品牌人格轉成文案語氣與可檢核規則。'
+  - id: 'ch-05'
+    title: 'Questions et supports'
+    level: 1
+    order: 5
+    pages: '106-112'
+    summary: '提供關鍵問題、困難排查、支援物總覽與致謝。'
+    children: []

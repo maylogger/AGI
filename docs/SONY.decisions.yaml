@@ -1,0 +1,89 @@
+# L3 決策卡 sidecar — Sony Electronics USA Brand Identity Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: SONY
+decisions:
+  - id: dp-asset-protection-for-legacy
+    title: 把歷史品牌的核心識別當成不可妥協的資產來保護
+    problem:
+      statement: 歷史悠久的品牌，其 logo、版面與基底色是長期累積的資產；任何輸出都可能在不經意間稀釋它。
+      signals: [heritage, asset_protection, consistency_over_time, brand_dilution_risk]
+    solution:
+      module: Visual Identity
+      move: 把 Sony logo、open frame、Sony black、tagline 四個固定元素定為不可動搖的 foundation，所有後續工具與應用都在保護這四個元素
+      layer: visual_core
+    reason:
+      - 長壽品牌需要少量不可動搖元素來支撐大量產品變化
+      - Logo prominence 必須高於產品子品牌與版面裝飾
+      - 品牌 foundation 可抽象為 invariant elements
+    applicable_when:
+      industries: [luxury_premium, media_entertainment]
+      brand_types: [heritage_legacy, premium_luxury]
+      conditions: [heritage, asset_protection]
+      archetypes: [brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Governance]
+    anti_patterns:
+      - 讓其他元素凌駕 Sony master brand
+    evidence:
+      - brand_id: SONY
+        chapter: ch-01
+        excerpt: "用四個固定元素（Sony logo、open frame、Sony black、tagline）建立最低一致性；長壽品牌需要少量不可動搖元素來支撐大量產品變化，不可讓其他元素凌駕 master brand。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以 isolation zone 與 h-based formula 控制 logo 與 open frame 的留白與間距
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: []
+    evidence:
+      - brand_id: SONY
+        chapter: ch-01-01
+        excerpt: "logo 周圍 isolation zone 無其他元素；logo 與 frame spacing 遵循 h-based formula，print 中 logo 置於 open frame top right。"
+    status: extracted
+
+  - id: dp-system-toolkit-over-template
+    title: 企業視覺系統給「可組合工具箱」而非僵硬模板
+    problem:
+      statement: 要求每個版面長得完全相同會扼殺多元內容；但完全自由又會失去一致性。
+      signals: [many_teams, many_agencies, diverse_content, system_consistency, mass_touchpoints]
+    solution:
+      module: Layout System
+      move: 用 h-based parametric formula 建構 open frame，並把 reference layouts 當作彈性邊界而非單一模板
+      layer: visual_core
+    reason:
+      - 彈性必須被結構化；把 reference guide 當作彈性邊界，而非單一模板，是成熟版面系統模式
+      - 更多空間不代表需要更多內容；Sony black 本身就是有力內容
+      - 廣告 guideline 可抽象為 parametric layout system
+    applicable_when:
+      industries: [industrial_materials_science, tech_software, media_entertainment]
+      brand_types: [mass_consumer, category_creator, heritage_legacy]
+      conditions: []
+      archetypes: [full_brand_system, corporate_toolkit, brand_experience_guide]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Layout System, Examples]
+    anti_patterns:
+      - 只提供單一固定版型，使用者只會複製貼上
+    evidence:
+      - brand_id: SONY
+        chapter: ch-03
+        excerpt: "ad execution framework：format → frame formula（h = 0.022 x format height）→ content zone → copy/legal；把 reference guide 當作彈性邊界而非單一模板。"
+    status: extracted

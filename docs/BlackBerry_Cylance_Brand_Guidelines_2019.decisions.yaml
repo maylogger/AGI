@@ -1,0 +1,199 @@
+# L3 決策卡 sidecar — BlackBerry Cylance Branding Guidelines
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: BlackBerry_Cylance_Brand_Guidelines_2019
+decisions:
+  - id: dp-from-to-voice-translation
+    title: 技術品牌語氣指南要給「轉譯規則」，不只是列形容詞
+    problem:
+      statement: 科學與技術公司容易陷入術語化，受眾停在「所以呢？」而非「原來如此」。
+      signals: [technical_jargon_risk, expert_audience, b2b]
+    solution:
+      module: Voice and Tone
+      move: 把品牌聲音拆成「公司做什麼」與「使用者因此能做什麼」，把技術可信度轉為使用者信心
+      layer: language
+    reason:
+      - 科學溝通應讓人理解「所以呢」，而不是只展示知識量
+      - 安全品牌應以信心、預防、清晰與業務價值說服，而不是只放大威脅
+    applicable_when:
+      industries: [tech_software, industrial_materials_science, finance]
+      brand_types: [category_creator, challenger]
+      conditions: [expert_audience, technical_translation, b2b]
+      archetypes: [full_brand_system, brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Messaging]
+      enables: [Content Design]
+    anti_patterns:
+      - 只列 tone adjectives 卻沒有轉譯方法
+      - 把 AI/ML 同句重複堆疊
+    evidence:
+      - brand_id: BlackBerry_Cylance_Brand_Guidelines_2019
+        chapter: ch-01
+        excerpt: "Messaging Stack：mission → mantra → position → pillars → value → allowed claims，把品牌聲音拆成『公司做什麼』與『使用者因此能做什麼』，避免恐懼行銷與術語堆疊。"
+    status: extracted
+
+  - id: dp-message-hierarchy-by-persona
+    title: 把訊息依來源分層，避免所有文案都變成同一種品牌腔
+    problem:
+      statement: 同一品牌在不同情境若用同一種訊息密度與口吻，文案會全變成單一「品牌腔」，無法服務不同受眾層。
+      signals: [multi_audience, content_forward_identity, community]
+    solution:
+      module: Messaging
+      move: 用 buyer persona（executive value vs. practitioner utility）把同一產品價值翻譯成不同利益與語氣
+      layer: language
+    reason:
+      - 將語氣與訊息來源分離，可避免所有文案都變成同一種「品牌腔」
+      - 同一產品價值需依 buyer role 翻譯成不同利益
+    applicable_when:
+      industries: [tech_software, media_entertainment]
+      brand_types: [challenger, platform_ecosystem]
+      conditions: [multi_audience]
+      archetypes: [brand_experience_guide, full_brand_system]
+    dependencies:
+      requires: [Brand Strategy, Voice and Tone]
+      enables: [Content Design]
+    evidence:
+      - brand_id: BlackBerry_Cylance_Brand_Guidelines_2019
+        chapter: ch-02
+        excerpt: "以 Frank（預算/策略 owner）與 Preston（實作 owner）兩個 persona 分流訊息：Frank 內容量化成效並避免 breach scare，Preston 內容短、務實、避免 jargon。"
+    status: extracted
+
+  - id: dp-bold-contrast-for-challenger
+    title: 用單一高彩度主色建立 equity，並以可用／禁用配色維持張力
+    problem:
+      statement: 挑戰者品牌需要在飽和市場中快速被認出並表達鮮明個性，溫和保守的配色會被淹沒。
+      signals: [differentiation, breakthrough_attention, personality_expression]
+    solution:
+      module: Color System
+      move: 以單一高彩度品牌主色建立辨識 equity，secondary palette sparingly，並規範 gradient 角度
+      layer: visual_core
+    reason:
+      - 以 signature 主色作品牌 equity，secondary palette 只能輔助而非取代
+      - 高飽和 accent colors 用於 charts、buttons、產品差異，不應濫用
+    applicable_when:
+      industries: [tech_software]
+      brand_types: [challenger, category_creator]
+      conditions: [personality_expression]
+      archetypes: [brand_experience_guide, full_brand_system]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Color System, Accessibility]
+    anti_patterns:
+      - 開放任意配色稀釋主色 equity
+    evidence:
+      - brand_id: BlackBerry_Cylance_Brand_Guidelines_2019
+        chapter: ch-03-01
+        excerpt: "Cylance Green #2EEF37 為品牌主色與設計 foundation，secondary palette 應 sparingly 使用，gradients 只能用 45°、60° 或 -60° 角度。"
+    status: extracted
+
+  - id: dp-system-toolkit-over-template
+    title: 企業視覺系統給「可組合工具箱」而非僵硬模板
+    problem:
+      statement: 要求每個版面長得完全相同會扼殺多元內容；但完全自由又會失去一致性。
+      signals: [many_teams, diverse_content, system_consistency]
+    solution:
+      module: Visual Language
+      move: 對快速擴張的產品線提供 construction formula 與 tier hierarchy，讓差異發生在受控模組內
+      layer: visual_core
+    reason:
+      - 彈性必須被結構化；產品差異應發生在受控模組內，不能破壞 master brand
+      - 當產品多且變動快，guideline 需要提供 construction formula 而非逐一客製
+    applicable_when:
+      industries: [tech_software, industrial_materials_science]
+      brand_types: [category_creator, platform_ecosystem]
+      conditions: [system_consistency]
+      archetypes: [full_brand_system, corporate_toolkit, brand_experience_guide]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Layout System, Examples]
+    anti_patterns:
+      - 對每個產品逐一客製，產生孤島
+    evidence:
+      - brand_id: BlackBerry_Cylance_Brand_Guidelines_2019
+        chapter: ch-03-02
+        excerpt: "Brand Hierarchy Framework：tier → shield/icon → name style → trademark rule，用 shared shield 作 grounding，product icon 可變但品牌根系一致。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以固定 logo 比例、間距與主導位置定義 partner lockup，並設審核閘門
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+      - 共同品牌指南需同時寫 visual ratio、legal responsibility、approval flow
+    applicable_when:
+      industries: [tech_software, finance]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding, partner_governance]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: BlackBerry_Cylance_Brand_Guidelines_2019
+        chapter: ch-03-04
+        excerpt: "partner logo 建議 1:1 等大、左／上方 dominant position、維持 0.5 in / 72 px spacing；digital properties 使用 powered-by logo 前需 approval。"
+    status: extracted
+
+  - id: dp-responsible-framing-for-regulated-category
+    title: 用「禁止聯想清單＋責任框架」治理受規範或高敏感類別的文案
+    problem:
+      statement: 金融、健康、資安等受規範或高風險類別的品牌，若只放大威脅或誇大功效，文案容易變成恐懼行銷、誤導或無法佐證的宣稱。
+      signals: [regulatory_compliance, content_safety, misleading_risk]
+    solution:
+      module: Content Design
+      move: 對高風險語義先建立 decision rule（何時用 broad term、何時需 citation），並把 fear 排除為購買誘因
+      layer: language
+    reason:
+      - 描述能力時必須保留精確與可佐證性，避免誤導
+      - cybersecurity 詞彙很容易擴大或混用，fear 不應作為購買誘因
+    applicable_when:
+      industries: [tech_software, finance]
+      brand_types: [platform_ecosystem, challenger]
+      conditions: [regulatory_compliance, content_safety]
+      archetypes: [brand_experience_guide, corporate_toolkit]
+    dependencies:
+      requires: [Brand Strategy, Messaging]
+      enables: [Content Design]
+    anti_patterns:
+      - 用 superlatives 卻無第三方 citation
+      - 用恐懼放大作為購買誘因
+    evidence:
+      - brand_id: BlackBerry_Cylance_Brand_Guidelines_2019
+        chapter: ch-04-01
+        excerpt: "Semantic Precision Framework：superlatives 需第三方 citation，不確定 tactic 時用 threat，fear 不作為購買誘因，並規範 malware/threat/attack、AI/ML 的使用情境。"
+    status: extracted
+
+  - id: dp-one-brand-one-voice-governance
+    title: 以「one brand, one voice」治理目標收束跨產品跨夥伴的一致性
+    problem:
+      statement: 跨地區、跨產品、跨商戶的大型品牌，若缺乏統一治理目標，每個團隊各自詮釋會讓品牌在不同媒介中碎裂。
+      signals: [consistency_across_partners, ecosystem_consistency, brand_fragmentation_risk]
+    solution:
+      module: Governance
+      move: 把規範拆成 term dictionary、trademark rules、approved boilerplates，並以交付前 checklist 自我審核
+      layer: governance
+    reason:
+      - 將品牌規範拆成可被非品牌專家使用、可檢查的知識結構管理一致性
+      - 品牌治理的最後一步不應依賴記憶，而應依賴檢查清單
+    applicable_when:
+      industries: [tech_software, finance]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [consistency_across_partners]
+      archetypes: [corporate_toolkit, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Governance]
+    anti_patterns:
+      - 只給視覺風格而無交付前審核點
+    evidence:
+      - brand_id: BlackBerry_Cylance_Brand_Guidelines_2019
+        chapter: ch-05
+        excerpt: "以 Preflight Checklist Framework 收斂規則：交付前檢查 trademark、company/product name distinction、cybersecurity 詞形、Oxford comma、AI/ML 重複、updated assets。"
+    status: extracted

@@ -1,0 +1,80 @@
+title: 'Destination Canada: The Brand Story'
+source: 'sources/destination_canada_brand_booklet.pdf'
+language: 'en'
+summary: 'Destination Canada 的品牌故事手冊，將國家旅遊敘事、品牌架構、標誌、字體、色彩與行為準則串成一套面向內部傳播者的品牌基礎。'
+chapters:
+  - id: 'ch-01'
+    title: 'Welcome and Brand Narrative'
+    level: 1
+    order: 1
+    pages: '1-29'
+    summary: '以詩性短句鋪陳 Canada is more than a place on a map，建立情感敘事與 For Glowing Hearts 的核心語氣。'
+  - id: 'ch-02'
+    title: 'Brand Architecture'
+    level: 1
+    order: 2
+    pages: '30-34'
+    summary: '定義故事、信念、承諾與 signature，讓 Destination Canada 的品牌敘事能被一致地複製。'
+    children:
+      - id: 'ch-02-01'
+        title: 'Our Belief'
+        level: 2
+        order: 1
+        pages: '32'
+        summary: '以 Travel should change you 作為決策北極星。'
+      - id: 'ch-02-02'
+        title: 'Our Promise'
+        level: 2
+        order: 2
+        pages: '33'
+        summary: '承諾 Canada will leave a lasting mark on your heart。'
+      - id: 'ch-02-03'
+        title: 'Our Signature'
+        level: 2
+        order: 3
+        pages: '34'
+        summary: '以 Canada. For Glowing Hearts 作為品牌對外分享熱情的語句。'
+  - id: 'ch-03'
+    title: 'Visual Identity'
+    level: 1
+    order: 3
+    pages: '35-40'
+    summary: '說明新 logo、官方與反白版本、安全空間、最小尺寸、頭文字體、主字體與色彩系統。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Our Logo'
+        level: 2
+        order: 1
+        pages: '35-37'
+        summary: '標誌以加拿大紅與楓葉脈動承載熱情，並規範紅色、反白、avatar、favicon 與最小尺寸。'
+      - id: 'ch-03-02'
+        title: 'Our Typography'
+        level: 2
+        order: 2
+        pages: '38'
+        summary: '以 Separat Black 作為標題字，Suisse Int’l 作為多市場主字體。'
+      - id: 'ch-03-03'
+        title: 'Our Colours'
+        level: 2
+        order: 3
+        pages: '39-40'
+        summary: '以 Canada Red 為主色，搭配取自加拿大地景的次色盤與印刷及數位色值。'
+  - id: 'ch-04'
+    title: 'Brand Behaviour'
+    level: 1
+    order: 4
+    pages: '41-47'
+    summary: '以六個行為準則定義品牌如何在世界中說話、行動與待人。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Behaviour Set'
+        level: 2
+        order: 1
+        pages: '42-47'
+        summary: '包含 Spark change from within、Invite love、Unleash pride、Stay open、Be helpful、Speak from the heart。'
+  - id: 'ch-05'
+    title: 'Au Revoir / Goodbye'
+    level: 1
+    order: 5
+    pages: '48-55'
+    summary: '以召喚內部故事分享作結，要求使用者透過 #ForGlowingHearts 延續品牌故事。'

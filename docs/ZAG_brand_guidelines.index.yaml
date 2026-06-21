@@ -1,0 +1,106 @@
+title: 'Zagreb Airport Brand Guidelines'
+source: 'sources/ZAG_brand_guidelines.pdf'
+date: 'unknown'
+language: 'en'
+summary: '這份指南把 Zagreb Airport 的三角建築結構轉化為 logo、logotype、輔助圖形、色彩、字體、標語與各類應用素材規則。'
+chapters:
+  - id: 'ch-01'
+    title: 'Intro'
+    level: 1
+    order: 1
+    pages: '3'
+    summary: '說明品牌指南用於維持視覺識別邏輯，基本元素包含 logo、logotype、colour、typography 與應用邏輯。'
+  - id: 'ch-02'
+    title: 'Concept'
+    level: 1
+    order: 2
+    pages: '4-7'
+    summary: '以航廈三角玻璃結構、Zagreb skyline 與 St. Mark’s Church roof 建立視覺概念。'
+  - id: 'ch-03'
+    title: 'Logo and Logotype Variations'
+    level: 1
+    order: 3
+    pages: '8-22'
+    summary: '定義 logo 與 horizontal logotype 的正負片、黑白、尺寸、clear space 與不同背景表面上的應用。'
+    children:
+      - id: 'ch-03-01'
+        title: 'Logo'
+        level: 2
+        order: 1
+        pages: '9-15'
+        summary: '規範 logo 的 positive、negative、black-white 版本、最小高度、clear space 與 achromatic/chromatic/discontinuous surfaces。'
+      - id: 'ch-03-02'
+        title: 'Horizontal Logotype'
+        level: 2
+        order: 2
+        pages: '16-22'
+        summary: '規範 horizontal logotype 的版本、最小尺寸、clear space 與表面應用。'
+  - id: 'ch-04'
+    title: 'Typography, Slogan and Colour'
+    level: 1
+    order: 4
+    pages: '23-25'
+    summary: '指定 Typonine Sans Pro、可替代字體情境、Choose your path 標語系統，以及 ZAG Blue/Red/Light Blue/Silver/Gold。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Typography'
+        level: 2
+        order: 1
+        pages: '23'
+        summary: 'Typonine Sans Pro 是唯一推薦字體，只有不同文字系統或插畫性用法才允許 secondary typography。'
+      - id: 'ch-04-02'
+        title: 'Slogan'
+        level: 2
+        order: 2
+        pages: '24'
+        summary: '核心標語 Choose your path 可依目的地或活動語境延伸。'
+      - id: 'ch-04-03'
+        title: 'Colour'
+        level: 2
+        order: 3
+        pages: '25'
+        summary: '定義 ZAG Blue、Red、Light Blue、Silver、Gold 的 Pantone 與 RGB/CMYK。'
+  - id: 'ch-05'
+    title: 'Primary Communication Materials'
+    level: 1
+    order: 5
+    pages: '26-33'
+    summary: '規範 memo、American envelope、B5/B4 envelope、business cards 與 PowerPoint 等行政與直接溝通素材。'
+    children:
+      - id: 'ch-05-01'
+        title: 'Stationery'
+        level: 2
+        order: 1
+        pages: '27-32'
+        summary: '提供 memo、信封與名片的尺寸、字體大小、紙材與位置數值。'
+      - id: 'ch-05-02'
+        title: 'PowerPoint Template'
+        level: 2
+        order: 2
+        pages: '33'
+        summary: '建立簡報模板以保持跨平台視覺一致與品牌訊息傳達。'
+  - id: 'ch-06'
+    title: 'Secondary Communication Materials'
+    level: 1
+    order: 6
+    pages: '34-44'
+    summary: '使用 Zagreb 城市圖形、St. Mark’s Church roof 與 grid，規範 folder、bags、shirts、protective clothing、vehicles、planner 與 ads。'
+    children:
+      - id: 'ch-06-01'
+        title: 'Merchandise and Wearables'
+        level: 2
+        order: 1
+        pages: '35-41'
+        summary: '規範 folder、cotton bag、gift bag、T-shirts、protective vest/clothes/t-shirt 的圖形與材質應用。'
+      - id: 'ch-06-02'
+        title: 'Vehicle, Planner and Ads'
+        level: 2
+        order: 2
+        pages: '42-44'
+        summary: '規範 vehicles、planner 與 ads 使用 grid、logotype、標語與至少 1/4 頁高 grid 的廣告版面。'
+  - id: 'ch-07'
+    title: 'Author'
+    level: 1
+    order: 7
+    pages: '45'
+    summary: '標示作者 Aljoša Lijić / graphein design studio。'

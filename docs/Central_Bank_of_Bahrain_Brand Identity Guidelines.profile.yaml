@@ -1,0 +1,146 @@
+# AGI Profile — 聚合層（跨語料可查詢欄位）
+# 結構層：index_ref | 研究層：note_ref
+# 產生：python scripts/generate_profiles.py
+# archetype：python scripts/assign_archetypes.py
+
+brand_id: Central_Bank_of_Bahrain_Brand Identity Guidelines
+index_ref: docs/Central_Bank_of_Bahrain_Brand Identity Guidelines.index.yaml
+note_ref: docs/Central_Bank_of_Bahrain_Brand Identity Guidelines.note.md
+archetype: brand_experience_guide
+industry: finance
+modules:
+- AI-Checkable Rules
+- Visual Identity
+- Governance
+- Content Design
+- Messaging
+- Color System
+- Design Tokens
+- Localization
+- Typography System
+- Operations
+depth:
+  strategy: medium
+  visual: high
+  governance: medium
+  top_level_chapter_count: 6
+  section_count: 0
+chapter_sequence:
+- id: ch-01
+  title: Primary Logos
+  order: 1
+  level: 1
+- id: ch-02
+  title: Improper Usage
+  order: 2
+  level: 1
+- id: ch-03
+  title: Our Name
+  order: 3
+  level: 1
+- id: ch-04
+  title: Colours
+  order: 4
+  level: 1
+- id: ch-05
+  title: Typeface
+  order: 5
+  level: 1
+- id: ch-06
+  title: Contact Us
+  order: 6
+  level: 1
+frameworks:
+- name: '`background brightness / reproduction mode -> approved logo version`'
+  chapter: ch-01
+  chapter_title: Primary Logos
+- name: '`identity invariant -> forbidden transformation`'
+  chapter: ch-02
+  chapter_title: Improper Usage
+- name: '`first mention -> short form -> banned variants`'
+  chapter: ch-03
+  chapter_title: Our Name
+- name: '`palette role -> HEX -> RGB -> CMYK`'
+  chapter: ch-04
+  chapter_title: Colours
+- name: '`language -> content role -> typeface -> weight`'
+  chapter: ch-05
+  chapter_title: Typeface
+- name: '`uncertainty -> external communications unit -> email/website`'
+  chapter: ch-06
+  chapter_title: Contact Us
+patterns:
+- name: 極簡 logo decision tree：light 使用 primary，dark 使用 white reverse，黑白/灰階使用 black-only。
+  chapter: ch-01
+  chapter_title: Primary Logos
+- name: 短版 guideline 可用 improper usage page 作為最重要的 compliance safeguard。
+  chapter: ch-02
+  chapter_title: Improper Usage
+- name: name governance page 可複用於任何有正式名稱與縮寫的機構。
+  chapter: ch-03
+  chapter_title: Our Name
+- name: 用同一色彩 token 同時記錄多媒體值，是設計系統 token 的早期形式。
+  chapter: ch-04
+  chapter_title: Colours
+- name: 英文 heading/subheading/body 與阿拉伯 heading/body 分開指定，是 bilingual typography governance pattern。
+  chapter: ch-05
+  chapter_title: Typeface
+- name: contact chapter 是 governance fallback。
+  chapter: ch-06
+  chapter_title: Contact Us
+rules_ai_checkable:
+- module: ''
+  criterion: AI-checkable criteria：logo bounding box aspect ratio 不得改變；logo rotation angle 應為 0；logo color values 必須來自本文件；logo
+    element order 不得變更；不得使用 coloured background 放置 logo。
+  chapter: ch-02
+  chapter_title: Improper Usage
+- module: ''
+  criterion: AI-checkable criteria：文件第一次提及應為 `Central Bank of Bahrain`；第二次以後可用 `CBB`；不得出現 `Bahrain’s Central Bank`、`Central
+    Bank`、`CB of Bahrain`、`CB` 作為品牌稱謂。
+  chapter: ch-03
+  chapter_title: Our Name
+- module: ''
+  criterion: AI-checkable criteria：digital color 應符合指定 HEX/RGB；print artwork 應使用指定 CMYK；不得使用文件外色彩替代 primary/secondary palette。
+  chapter: ch-04
+  chapter_title: Colours
+- module: Typography System
+  criterion: AI-checkable criteria：English main headings 使用 Zona Pro Bold；English subheadings/body 使用 Maven Pro family；Arabic
+    headings/body 使用 Cairo；不得以未指定字體替代正式品牌排版。
+  chapter: ch-05
+  chapter_title: Typeface
+- module: ''
+  criterion: AI-checkable criteria：若使用情境未被本指南涵蓋，應向 External Communications Unit 確認；公開資料中的 contact email 應使用 `ecu@cbb.gov.bh`。
+  chapter: ch-06
+  chapter_title: Contact Us
+chapters:
+- id: ch-01
+  title: Primary Logos
+  modules:
+  - AI-Checkable Rules
+  - Visual Identity
+- id: ch-02
+  title: Improper Usage
+  modules:
+  - AI-Checkable Rules
+  - Governance
+- id: ch-03
+  title: Our Name
+  modules:
+  - AI-Checkable Rules
+  - Content Design
+  - Messaging
+- id: ch-04
+  title: Colours
+  modules:
+  - Color System
+  - Design Tokens
+- id: ch-05
+  title: Typeface
+  modules:
+  - Localization
+  - Typography System
+- id: ch-06
+  title: Contact Us
+  modules:
+  - Operations
+  - Governance

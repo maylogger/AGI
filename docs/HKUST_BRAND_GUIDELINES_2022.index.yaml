@@ -1,0 +1,139 @@
+title: 'HKUST Brand Guidelines'
+source: 'sources/HKUST_BRAND_GUIDELINES_2022.pdf'
+version: 'Jan 2022'
+date: '2022-01'
+language: 'en'
+summary: '這份文件為 HKUST 與 HKUST(GZ) 建立共同品牌敘事、語氣、標誌、附屬單位識別、影像與傳播應用規範。'
+chapters:
+  - id: 'ch-01'
+    title: 'Brand Overview'
+    level: 1
+    order: 1
+    pages: '3-16'
+    summary: '定義品牌原則、核心價值、定位、屬性、學生人格與品牌資產模型。'
+    children:
+      - id: 'ch-01-01'
+        title: 'Principle'
+        level: 2
+        order: 1
+        pages: '3'
+        summary: '說明一致溝通如何避免稀釋品牌形象。'
+      - id: 'ch-01-02'
+        title: 'Core Values and Positioning'
+        level: 2
+        order: 2
+        pages: '4-8'
+        summary: '以使命、願景、創造價值與新型領導者定義品牌核心。'
+      - id: 'ch-01-03'
+        title: 'Students and Brand Equity'
+        level: 2
+        order: 3
+        pages: '9-16'
+        summary: '用學生人格與 awareness-to-loyalty 模型連接品牌體驗。'
+  - id: 'ch-02'
+    title: 'The Voice'
+    level: 1
+    order: 2
+    pages: '18-24'
+    summary: '將品牌人格轉為語氣、用字、敘事方法、編輯提示與 style guide。'
+    children:
+      - id: 'ch-02-01'
+        title: 'How Do We Communicate'
+        level: 2
+        order: 1
+        pages: '18-21'
+        summary: '建立 passionate、confident、friendly、inspiring、intelligent 的寫作準則。'
+      - id: 'ch-02-02'
+        title: 'Brand Expression and Editorial Tips'
+        level: 2
+        order: 2
+        pages: '22-24'
+        summary: '提供品牌詞彙、寫作前提問與外部 style guide 參照。'
+  - id: 'ch-03'
+    title: 'University Logo'
+    level: 1
+    order: 3
+    pages: '26-103'
+    summary: '規範 HKUST 與 HKUST(GZ) 標誌版本、名稱、留白、最小尺寸、字體、色彩、logomark、Red Bird Sundial 與禁用情境。'
+    children:
+      - id: 'ch-03-01'
+        title: 'HKUST and HKUST(GZ) Logo Systems'
+        level: 2
+        order: 1
+        pages: '26-86'
+        summary: '以雙語、英文、中文、簡稱、logotype、留白與最小尺寸管理兩校區標誌。'
+      - id: 'ch-03-02'
+        title: 'Typeface and Color Palette'
+        level: 2
+        order: 2
+        pages: '87-96'
+        summary: '定義官方字體、替代字體、主色、輔助色與避免色系。'
+      - id: 'ch-03-03'
+        title: 'Logomark, Sundial and Prohibited Use'
+        level: 2
+        order: 3
+        pages: '97-103'
+        summary: '規範符號與 Red Bird Sundial 的語義、使用權限與錯誤用法。'
+  - id: 'ch-04'
+    title: 'University Affiliated Units and Partnership Logos'
+    level: 1
+    order: 4
+    pages: '105-107'
+    summary: '治理附屬單位與合作標誌的結構、審批、尺寸、順序與官方登錄。'
+    children:
+      - id: 'ch-04-01'
+        title: 'Affiliated Unit Logos'
+        level: 2
+        order: 1
+        pages: '105-106'
+        summary: '要求附屬單位標誌納入大學身份並遵守字體、間距與審核流程。'
+      - id: 'ch-04-02'
+        title: 'Partnership Logos'
+        level: 2
+        order: 2
+        pages: '107'
+        summary: '要求大學與合作方標誌等高、按空間規則配置並經治理流程核准。'
+  - id: 'ch-05'
+    title: 'Visual Elements'
+    level: 1
+    order: 5
+    pages: '110-114'
+    summary: '把品牌 DNA 轉成攝影風格、技術規格、影像裁切、色調與不建議素材。'
+    children:
+      - id: 'ch-05-01'
+        title: 'Photography Style and Technical Guidelines'
+        level: 2
+        order: 1
+        pages: '110-112'
+        summary: '要求自然光、真實人物、情感、多元文化與高解析格式。'
+      - id: 'ch-05-02'
+        title: 'Image Usage and Not Recommended Style'
+        level: 2
+        order: 2
+        pages: '113-114'
+        summary: '規範裁切、色調、焦點與避免 stock、雜亂、低品質影像。'
+  - id: 'ch-06'
+    title: 'Communications'
+    level: 1
+    order: 6
+    pages: '116-140'
+    summary: '將品牌系統延伸到印刷品、紀念品、網站、email、簡報、app 與影片。'
+    children:
+      - id: 'ch-06-01'
+        title: 'Printed Materials and Souvenirs'
+        level: 2
+        order: 1
+        pages: '116-126'
+        summary: '規範版面、紙材、名片、信紙、廣告、活動物料與紀念品授權。'
+      - id: 'ch-06-02'
+        title: 'Digital Materials'
+        level: 2
+        order: 2
+        pages: '127-137'
+        summary: '規範線上廣告、網站、email signature、EDM、PowerPoint 與 app。'
+      - id: 'ch-06-03'
+        title: 'University Video'
+        level: 2
+        order: 3
+        pages: '138-140'
+        summary: '規範影片開頭結尾、品牌露出、長度、品質、授權與字幕。'

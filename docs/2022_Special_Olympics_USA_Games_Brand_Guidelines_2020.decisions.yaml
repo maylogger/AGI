@@ -1,0 +1,142 @@
+# L3 決策卡 sidecar — 2022 Special Olympics USA Games
+# schema：research/schemas/decision_pattern.schema.yaml
+# 由 note.md 反向工程萃取；strict evidence 連回本檔 index.yaml 章節。
+
+brand_id: 2022_Special_Olympics_USA_Games_Brand_Guidelines_2020
+decisions:
+  - id: dp-origin-story-before-rules
+    title: 先把使命變成共用語言系統，再進入視覺規範
+    problem:
+      statement: 公益／使命型品牌若一開始就談視覺規範，色彩、攝影與字體會失去策略根基，淪為各自詮釋的風格選擇。
+      signals: [mission_communication, no_strategic_foundation, participation, new_identity]
+    solution:
+      module: Brand Strategy
+      move: 先用 voice attributes → mission → tagline → short/long description 把使命轉成可被全員共用的語言系統，再讓視覺承接其意義
+      layer: strategy
+    reason:
+      - 先把使命從公益願景變成可被員工、設計師與文案共同使用的語言系統，避免後續視覺規範失去策略根基
+      - 語言章節是後續 visual identity 的意義來源，讓色彩與影像不只是風格而承載使命
+    applicable_when:
+      industries: [nonprofit_social]
+      brand_types: [mission_driven]
+      conditions: [new_identity, mission_communication]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: []
+      enables: [Visual Identity, Voice and Tone, Messaging]
+    anti_patterns:
+      - 先寫 logo／色彩規格，把使命只放在封面口號
+    evidence:
+      - brand_id: 2022_Special_Olympics_USA_Games_Brand_Guidelines_2020
+        chapter: ch-01
+        excerpt: "此章先建立 Special Olympics 的道德與歷史正當性；若沒有它，後續標誌、色彩與語言規則會缺少『為誰而做、為何而做』的判準。社會使命型品牌指南必須先定義價值來源，否則視覺規則容易與使命脫節。"
+    status: extracted
+
+  - id: dp-clearspace-from-logo-geometry
+    title: 用標誌自身幾何定義留白，讓 spacing 隨縮放成立
+    problem:
+      statement: 用固定像素定義 clear space，在不同尺寸與媒介會失效。
+      signals: [scaling_inconsistency, multi_media]
+    solution:
+      module: Visual Identity
+      move: 以標誌幾何（logo height）作為相對留白與尺寸基準
+      layer: visual_core
+    reason:
+      - 版面一致性來自比例關係，不只是絕對尺寸
+      - 留白以標誌自身元素為單位，可隨縮放維持比例
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: [multi_media]
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+    evidence:
+      - brand_id: 2022_Special_Olympics_USA_Games_Brand_Guidelines_2020
+        chapter: ch-03-05
+        excerpt: "以中央 Special Olympics symbol 的 X-height 作為量測單位，使尺寸改變時留白規則仍成立；clear space 應用相對單位定義，才能跨尺寸、跨媒介使用。"
+    status: extracted
+
+  - id: dp-cobranding-grid-governance
+    title: 用 grid 與固定模距治理聯名 lockup
+    problem:
+      statement: 聯名情境若沒有空間規則，夥伴標誌的相對大小與距離會失控，混淆主從關係。
+      signals: [cobranding, partner_governance, multi_brand]
+    solution:
+      module: Brand Architecture
+      move: 以 grid、固定 module 距離與分隔線定義 master brand 與 partner brand 的 lockup
+      layer: strategy
+    reason:
+      - 聯名需先界定空間與主從，才能維持品牌資產權重
+    applicable_when:
+      industries: [finance, tech_software]
+      brand_types: [platform_ecosystem, institutional_public_trust]
+      conditions: [cobranding]
+      archetypes: [multi_brand_architecture, brand_experience_guide]
+    dependencies:
+      requires: [Brand Architecture, Visual Identity]
+      enables: [Governance]
+    evidence:
+      - brand_id: 2022_Special_Olympics_USA_Games_Brand_Guidelines_2020
+        chapter: ch-03-06
+        excerpt: "co-branding guideline 需明確定義主從關係、距離、分隔、色彩與贊助等級文字：event logo + 黑色垂直分隔線 + partner logo，兩側保留 1X spacing。"
+    status: extracted
+
+  - id: dp-monochrome-logo-by-contrast
+    title: 用背景對比決定單色標誌，而非開放自由配色
+    problem:
+      statement: 開放彩色標誌會被任意彩色化，破壞辨識與一致性。
+      signals: [logo_misuse_risk, photo_backgrounds]
+    solution:
+      module: Visual Identity
+      move: 以背景明暗與照片複雜度建立對比決策樹，限定白／深色兩種標誌
+      layer: visual_core
+    reason:
+      - 標誌辨識與對比優先；單色策略比多色變體更能保護一致性
+      - Logo 顏色規範應基於對比與背景風險，而非只列色票
+    applicable_when:
+      industries: []
+      brand_types: []
+      conditions: []
+      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+    dependencies:
+      requires: [Visual Identity]
+      enables: [Accessibility]
+    evidence:
+      - brand_id: 2022_Special_Olympics_USA_Games_Brand_Guidelines_2020
+        chapter: ch-03-02
+        excerpt: "標誌版本應由媒介條件與對比需求決定，不由個人喜好決定；深色或低對比背景使用 white logo。"
+      - brand_id: 2022_Special_Olympics_USA_Games_Brand_Guidelines_2020
+        chapter: ch-04-02
+        excerpt: "漸層背景上只使用 white single color logo，以維持對比與清晰度。"
+    status: extracted
+
+  - id: dp-inclusive-language-governance
+    title: 把尊重性／包容性語言寫成可審核的用語規則，而非僅靠善意
+    problem:
+      statement: 涉及身分、障礙或弱勢群體的品牌，若只靠寫作者善意，容易在描述時使用污名化、悲情化或幼化的語言，違背品牌的包容使命。
+      signals: [inclusive_audience, content_safety, mission_communication, vulnerable_groups]
+    solution:
+      module: Content Design
+      move: 提供 person-first 合適術語與「應避免用語」清單，並把語言倫理寫成可被內容審查工具檢查的規則
+      layer: language
+    reason:
+      - 人優先於診斷；描述應尊重個體、避免悲情化與物化
+      - 任何涉及身分、障礙或弱勢群體的 guideline 都應提供語言倫理規則，且最好可被工具檢查
+      - 包容使命需要落到日常書寫規則，否則視覺合格卻在文字上傷害群體
+    applicable_when:
+      industries: [nonprofit_social, public_sector]
+      brand_types: [mission_driven, institutional_public_trust]
+      conditions: [inclusive_audience, mission_communication]
+      archetypes: [full_brand_system, brand_experience_guide]
+    dependencies:
+      requires: [Brand Strategy]
+      enables: [Content Design, Accessibility]
+    anti_patterns:
+      - 只說「請尊重」卻不提供合適／避免用語清單
+      - 使用 suffering from、victim of、confined to 等污名化措辭
+    evidence:
+      - brand_id: 2022_Special_Olympics_USA_Games_Brand_Guidelines_2020
+        chapter: ch-05-02
+        excerpt: "防止品牌在描述 intellectual disabilities 時使用污名、幼化或過度英雄化的語言；使用 person-first terms，並列 appropriate terminology 與 terminology to avoid，且最好可被內容審查工具檢查。"
+    status: extracted
