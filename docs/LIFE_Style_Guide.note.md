@@ -177,7 +177,7 @@
 6. **Frameworks**：Theme-indexed asset library。
 7. **Patterns**：將靈感頁與素材索引分離，可避免設計師只能從 mockup 反推素材。
 8. **Rules**：每個使用中的照片應保留檔名；選片需符合對應主題；若用於人物或地標，仍需權利確認。
-9. **Reusable Knowledge**：Design guideline 可同時是 creative brief 與 asset lookup map。
+9. **Reusable Knowledge**：Brand Guideline 可同時是 creative brief 與 asset lookup map。
 10. **Abstraction**：Photography System、Operations、Knowledge Architecture。
 11. **Visual Evidence**：本章視覺以縮圖或檔名矩陣為核心，功能是素材治理而非審美說明。
 

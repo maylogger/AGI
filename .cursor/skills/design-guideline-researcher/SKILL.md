@@ -3,7 +3,7 @@ name: design-guideline-researcher
 description: 當使用者想把 brand、design、identity、product、UI、content、voice、marketing 或 design-system guideline PDF 轉成可重複使用的 Agentic Guideline Intelligence 時使用此 skill。此 skill 會從 sources/ 讀取 PDF，輸出 docs/<PDF-name>.index.yaml 與 docs/<PDF-name>.note.md；會跳過已完成的輸出以節省 token，並將 note.md 寫成 Design Infrastructure Researcher 的反向工程分析，而不是一般摘要。適用於整理 guideline 章節、從 PDF 建立 docs、分析 guideline 為什麼被設計成這樣、或建立設計知識庫。
 ---
 
-# Design Guideline Researcher
+# Brand Guideline Researcher
 
 使用此 skill 將設計相關 guideline PDF 轉換成結構化知識檔。
 

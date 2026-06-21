@@ -3,7 +3,7 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "幫我新客戶弄一份 design guideline。",
+      "prompt": "幫我新客戶弄一份 Brand Guideline。",
       "expected_output": "進入 Intake，一次只問一個問題（先問客戶名稱或第一個還沒填的欄位）。在所有 intake 問題答完之前，不會丟出完整 plan，也不會寫任何 clients/ 底下的檔案。",
       "files": []
     },

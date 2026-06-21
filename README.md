@@ -1,30 +1,30 @@
 # AGI — Agentic Guideline Intelligence
 
-本專案從上百份國際品牌 Design Guideline 蒸餾成可檢索、可統計、**可推理** 的 Design Guideline 知識圖譜，主要使用 **agi** Skill：直接協助 **新客戶** 規劃並產生接近完整版的 Design Guideline 具體建議初稿。
+本專案從上百份國際品牌 Brand Guideline 蒸餾成可檢索、可統計、**可推理** 的 Brand Guideline 知識圖譜，主要使用 **agi** Skill：直接協助 **新客戶** 規劃並產生接近完整版的 Brand Guideline 具體建議初稿。
 
 本專案不是傳統 Web 應用，而是 **內容庫 + Skills + 研究層 YAML**；能力來自 Agent 讀取使用者 brief 並依 Skill 規範產出檔案。
 
-本專案製作的核心目標不是「學其他品牌長什麼樣」，而是「學品牌 **為什麼** 長這樣」：從 128 份語料抽取設計決策知識 → 建立知識圖譜 → AI 推理 → 為新客戶產生合適的 Design Guideline 架構與初稿。所有推薦都連回真實先例證據，不幻覺不自幹。
+本專案製作的核心目標不是「學其他品牌長什麼樣」，而是「學品牌 **為什麼** 長這樣」：從 128 份語料抽取設計決策知識 → 建立知識圖譜 → AI 推理 → 為新客戶產生合適的 Brand Guideline 架構與初稿。所有推薦都連回真實先例證據，不幻覺不自幹。
 
 知識庫是如何被建立與維護的、安裝、原理與架構，請見 [MAINTENANCE.md](MAINTENANCE.md)。一般使用者可以直接看使用方法即可：
 
 ---
 
-## 為新客戶規劃 Design Guideline
+## 為新客戶規劃 Brand Guideline
 
 **Skill：** `agi`  
 路徑：`.cursor/skills/agi/SKILL.md`
 
 > 建議：CLAUDE CODE 使用者可以請 CLAUDE 轉為 CLAUDE SKILL 格式。
 
-使用 Agent 模擬世界頂尖高階設計師的決策順序：先理解客戶情境，再推薦 Guideline 原型與章節結構，引用 AGI 中 128 份國際品牌指南的 **結構與邏輯**，最後產出接近可交付的 Design Guideline 初稿。
+使用 Agent 模擬世界頂尖高階設計師的決策順序：先理解客戶情境，再推薦 Guideline 原型與章節結構，引用 AGI 中 128 份國際品牌指南的 **結構與邏輯**，最後產出接近可交付的 Brand Guideline 初稿。
 
 ### 開始設計，起手 Prompt
 
 在 Agent 對話中說：
 
 ```text
-幫新客戶規劃 Design Guideline
+幫新客戶規劃 Brand Guideline
 ```
 
 或帶更多背景：
@@ -51,7 +51,7 @@ clients/<客戶名稱資料夾>/
   blueprint.yaml        # 原型、模組、章節計畫、先例 ID
   coach_session.md      # 問答與決策紀錄
   <客戶名稱資料夾>.index.yaml
-  <客戶名稱資料夾>.note.md # Design Guideline 初稿在此
+  <客戶名稱資料夾>.note.md # Brand Guideline 初稿在此
 ```
 
 ### 繼續未完成專案

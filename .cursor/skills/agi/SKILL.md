@@ -1,6 +1,6 @@
 ---
 name: agi
-description: 當使用者要為新客戶規劃或撰寫全新的 design guideline、品牌手冊、視覺識別規範時使用。互動教練模式：一次只問一題完成 intake，全部問完後產出由知識圖譜推理驅動的 Plan 供確認，使用者確認後才 Build 並寫入 clients/ 下的 blueprint、index.yaml 與 note.md 初稿。Plan 階段以 Design Strategy 推理鏈（產業 → 品牌類型 → 商業問題 → 匹配決策卡 → 架構）運作，並引用 research/decision_patterns.yaml、contexts、modules、archetypes、module_graph 與 docs/*.profile.yaml 的證據。
+description: 當使用者要為新客戶規劃或撰寫全新的 Brand Guideline、品牌手冊、視覺識別規範時使用。互動教練模式：一次只問一題完成 intake，全部問完後產出由知識圖譜推理驅動的 Plan 供確認，使用者確認後才 Build 並寫入 clients/ 下的 blueprint、index.yaml 與 note.md 初稿。Plan 階段以 Design Strategy 推理鏈（產業 → 品牌類型 → 商業問題 → 匹配決策卡 → 架構）運作，並引用 research/decision_patterns.yaml、contexts、modules、archetypes、module_graph 與 docs/*.profile.yaml 的證據。
 ---
 
 # Agentic Guideline Intelligence（AGI）
@@ -343,7 +343,7 @@ open_tbd: [...]
 
 ## 觸發範例
 
-- 「幫新客戶規劃 design guideline（互動教練模式）」→ 從 Intake 第一題開始
+- 「幫新客戶規劃 Brand Guideline（互動教練模式）」→ 從 Intake 第一題開始
 - 「繼續 clients/acme-corp」→ 讀既有檔案：若只有 `plan.md` 且 pending，繼續等確認；若已 build，可補章節
 - 使用者未確認 Plan 就要求寫稿 → 提醒先確認 Plan
 
