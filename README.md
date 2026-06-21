@@ -2,7 +2,7 @@
 
 本專案從上百份國際品牌 Design Guideline 蒸餾成可檢索、可統計、**可推理** 的 Design Guideline 知識圖譜，主要使用 **agi** Skill：直接協助 **新客戶** 規劃並產生接近完整版的 Design Guideline 具體建議初稿。
 
-本專案不是傳統 Web 應用，而是 **內容庫 + Cursor Skills + 研究層 YAML**；能力來自 Agent 讀取使用者 brief 並依 Skill 規範產出檔案。
+本專案不是傳統 Web 應用，而是 **內容庫 + Skills + 研究層 YAML**；能力來自 Agent 讀取使用者 brief 並依 Skill 規範產出檔案。
 
 本專案製作的核心目標不是「學其他品牌長什麼樣」，而是「學品牌 **為什麼** 長這樣」：從 128 份語料抽取設計決策知識 → 建立知識圖譜 → AI 推理 → 為新客戶產生合適的 Design Guideline 架構與初稿。所有推薦都連回真實先例證據，不幻覺不自幹。
 

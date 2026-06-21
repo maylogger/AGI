@@ -6,7 +6,7 @@
 
 ## 環境準備
 
-1. Clone 本 repo，在 **Cursor** 中開啟專案
+1. Clone 本 repo，在本機中開啟專案
 2. （Researcher 用）將 guideline PDF 放入 `sources/`（已 gitignore，不入庫）
 3. （維護腳本用）Python 3 + PyYAML：`pip install pyyaml`
 
@@ -239,4 +239,4 @@ python scripts/apply_taiwan_zh_terms.py      # 依台灣繁體用語對照表修
 | 分析既有 PDF                         | `.cursor/skills/design-guideline-researcher/SKILL.md` |
 | 把 note 升級成決策卡                 | `.cursor/skills/design-strategy-extractor/SKILL.md`   |
 
-在 Cursor 中以自然語言觸發即可；Agent 會依 description 自動選用對應 skill。
+在 Agent 中以自然語言觸發即可；Agent 會依 description 自動選用對應 skill。
